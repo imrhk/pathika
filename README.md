@@ -1,2 +1,2 @@
-# pathika-app
+# Pathika
 App about beautiful places 
