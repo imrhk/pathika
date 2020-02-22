@@ -1,0 +1,14 @@
+{
+    "items": [
+        {
+            "from": "ARS",
+            "to": "INR",
+            "value": 1.16
+        },
+        {
+            "from": "INR",
+            "to": "ARS",
+            "value": 0.86
+        }
+    ]
+}

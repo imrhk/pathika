@@ -1,0 +1,29 @@
+{
+    "type": "Subtropical",
+    "items": [
+        {
+            "emoji": "☀",
+            "name": "Summer",
+            "temp": "25°C to 22°C",
+            "duration": "Jan-Feb"
+        },
+        {
+            "emoji": "🍁",
+            "name": "Automn",
+            "temp": "22°C to 15°C",
+            "duration": "Mar-May"
+        },
+        {
+            "emoji": "❄️️",
+            "name": "Winter",
+            "temp": "12°C to 14°C",
+            "duration": "Jun-Aug"
+        },
+        {
+            "emoji": "🌼",
+            "name": "Spring",
+            "temp": "18°C to 23°C",
+            "duration": "Oct-Dec"
+        }
+    ]
+}

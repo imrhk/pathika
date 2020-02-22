@@ -1,0 +1,33 @@
+name: pathika
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.2
+  intl: ^0.16.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/background.jpg
+    - assets/images/icons8-autumn-48.png
+    - assets/images/icons8-spring-48.png
+    - assets/images/icons8-summer-48.png
+    - assets/images/icons8-winter-48.png
+    - assets/data/climate.json
+    - assets/data/country.json
+    - assets/data/language.json
+    - assets/data/currency.json
+    - assets/data/currency_conversion.json
+    - assets/data/time_to_visit.json
+    
+    
