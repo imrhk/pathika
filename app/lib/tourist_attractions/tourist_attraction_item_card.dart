@@ -26,7 +26,7 @@ class TouristAttractionItemCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
       ),
       child: Container(
-        width: 350,
+        width: 300,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -46,17 +46,23 @@ class TouristAttractionItemCard extends StatelessWidget {
             SizedBox(height: 5),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 10),
-              child: Text(name,
-                  style: TextStyle(
-                    fontSize: 18,
-                  )),
+              child: FittedBox(
+                fit: BoxFit.fitWidth,
+                child: Text(name,
+                    style: TextStyle(
+                      fontSize: 18,
+                    )),
+              ),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 10),
-              child: Text(description ?? "",
-                  style: TextStyle(
-                    fontSize: 14,
-                  )),
+              child: FittedBox(
+                fit: BoxFit.fitWidth,
+                child: Text(description ?? "",
+                    style: TextStyle(
+                      fontSize: 14,
+                    )),
+              ),
             ),
             if (attribution != null && attribution != "")
               Padding(
@@ -74,7 +80,7 @@ class TouristAttractionItemCard extends StatelessWidget {
 
     final startIndexUrl = attribution.indexOf('https');
     final endIndexUrl = attribution.indexOf('"', startIndexUrl);
-    if(startIndexUrl == -1 || endIndexUrl == -1)  {
+    if (startIndexUrl == -1 || endIndexUrl == -1) {
       return Container();
     }
 
@@ -82,10 +88,10 @@ class TouristAttractionItemCard extends StatelessWidget {
     final startIndexContributor = attribution.indexOf('>') + 1;
     final endIndexContributor = attribution.indexOf('<', startIndexContributor);
 
-    if(startIndexContributor == 0 || endIndexContributor == -1) {
+    if (startIndexContributor == 0 || endIndexContributor == -1) {
       return Container();
     }
-    
+
     final contributorName =
         attribution.substring(startIndexContributor, endIndexContributor);
     return Container(

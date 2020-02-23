@@ -18,7 +18,6 @@ class CurrencyValue extends StatelessWidget {
           print(snapshot.error.toString());
           return Container();
         } else {
-          print(snapshot.data);
           final value = snapshot.data.items.firstWhere((element) => element.from == from && element.to == to).value;
           return Text(
             '${symbol}1 = ₹${value.toStringAsPrecision(2)}',

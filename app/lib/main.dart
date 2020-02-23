@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pathika/app_drawer.dart';
 import 'package:pathika/currency/currency_card.dart';
 import 'package:pathika/detail_page_app_bar.dart';
+import 'package:pathika/food/food_items_list_card.dart';
 import 'package:pathika/movie_item_card.dart';
 import 'package:pathika/time/current_time_card.dart';
 import 'package:pathika/time_to_visit/time_to_visit_card.dart';
@@ -10,7 +11,6 @@ import 'package:pathika/tourist_attractions/tourist_attractions_card.dart';
 import 'climate/climate_card.dart';
 import 'common/info_card.dart';
 import 'country/country_card.dart';
-import 'food_item_card.dart';
 import 'language/language_card.dart';
 import 'people_item_card.dart';
 
@@ -53,7 +53,7 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
 
   changeAppTheme(
       {ThemeData appTheme, Color textColor, bool useColorsOnCard = false}) {
-      setState(() {
+    setState(() {
       this.appTheme = appTheme;
       this.textColor = textColor;
       this.useColorsOnCard = useColorsOnCard;
@@ -98,80 +98,16 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                 ),
                 LanguageCard(useColorsOnCard: useColorsOnCard),
                 CurrencyCard(useColorsOnCard: useColorsOnCard),
-                CurrentTimeCard(useColorsOnCard: useColorsOnCard, timezoneOffsetInMinute: -180,),
-                ClimateCard(useColorsOnCard: useColorsOnCard,),
+                CurrentTimeCard(
+                  useColorsOnCard: useColorsOnCard,
+                  timezoneOffsetInMinute: -180,
+                ),
+                ClimateCard(
+                  useColorsOnCard: useColorsOnCard,
+                ),
                 TimeToVisitCard(useColorsOnCard: useColorsOnCard),
                 TouristAttractionsCard(useColorsOnCard: useColorsOnCard),
-                InfoCard(
-                  color: useColorsOnCard ? Colors.teal : null,
-                  heading: 'Food',
-                  body: Column(
-                    children: [
-                      Container(
-                        width: double.infinity,
-                        height: 175,
-                        child: ListView(
-                          scrollDirection: Axis.horizontal,
-                          children: <Widget>[
-                            FoodItemCard(
-                              label: 'Alfajores de Maicena',
-                              url:
-                                  'https://live.staticflickr.com/2592/3946003859_e4dddc50b4_n.jpg',
-                              isVeg: true,
-                            ),
-                            FoodItemCard(
-                              label: 'Dulce de leche',
-                              url:
-                                  'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Dulce_de_leche_2007.jpg/120px-Dulce_de_leche_2007.jpg',
-                              isVeg: true,
-                            ),
-                            FoodItemCard(
-                              label: 'Pizza',
-                              url:
-                                  'https://upload.wikimedia.org/wikipedia/commons/2/23/Pizza_Argentina_04.jpg',
-                              isNonVeg: true,
-                              isVeg: true,
-                            ),
-                            FoodItemCard(
-                              label: 'Asado',
-                              url:
-                                  'https://upload.wikimedia.org/wikipedia/commons/3/3c/Parrillada_argentina.jpg',
-                              isNonVeg: true,
-                              isVeg: false,
-                            ),
-                            FoodItemCard(
-                              label: 'Empanadillas de queso y cebolla',
-                              url:
-                                  'https://spoonacular.com/recipeImages/tuna-and-goat-cheese-empanadillas-2-89174.png',
-                              isNonVeg: true,
-                              isVeg: false,
-                            ),
-                            FoodItemCard(
-                              label: 'Steak with Chimichurri Sauce',
-                              url:
-                                  'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Steak_with_Chimichurri_Sauce_%2813316528445%29.jpg/120px-Steak_with_Chimichurri_Sauce_%2813316528445%29.jpg',
-                              isNonVeg: true,
-                              isVeg: false,
-                            ),
-                          ],
-                        ),
-                      ),
-                      ButtonBar(
-                        children: <Widget>[
-                          Text('Show Veg Only'),
-                          Switch(
-                            value: showVeg,
-                            onChanged: (value) {
-                              setState(() {
-                                showVeg = !showVeg;
-                              });
-                            },
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
+                FoodItemsListCard(useColorsOnCard: useColorsOnCard),
                 InfoCard(
                   color: useColorsOnCard ? Colors.cyan : null,
                   heading: 'Famous People',
