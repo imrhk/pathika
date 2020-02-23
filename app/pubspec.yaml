@@ -11,6 +11,9 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^0.1.2
   intl: ^0.16.1
+  url_launcher: ^5.4.2
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -29,5 +32,7 @@ flutter:
     - assets/data/currency.json
     - assets/data/currency_conversion.json
     - assets/data/time_to_visit.json
+    - assets/data/tourist_places.json
+    
     
     

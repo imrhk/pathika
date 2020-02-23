@@ -1,0 +1,895 @@
+{
+    "html_attributions" : [],
+    "next_page_token" : "CpQCDgEAAK9FQKrHkovDvpnbJplMBOYWl0Dxo-pXw-pK6Wiczt1C2ZGh_fHBjb9knJeOnJ98wEpWJUcGvHSIFQ214f4XF--LV-SVesjokl5KeVDStvE9wVHBnQRh3NcyeasGuB2cg0RFJVhVj22-TA-ysL9Fro26Go9GejKzyXISJsOfPy-g3TYSlG3KNQgXfVJSXKLXMQXXsm2MaC9gUY4WWqr_1H10kqsIrRLfsuV1JcLK77H3OnFBDEhxkm9yPQec8qDwN3C5Dixj28s2ZQR5PPKDw4x4OWST6zIT4bupdSdyDmswJO539ktfcySjOZdYi2YFOtJAe2YIEBlwr-5AG6zExFeFN7e4TDOn68I8Mu-FuCnrEhCoMJZ2C9pFpWrUNTsioTW4GhQ24UqDMAcXQN7Jyx1i9MOBmOYMJg",
+    "results" : [
+       {
+          "formatted_address" : "Humberto 1º 400, C1103 CABA, Argentina",
+          "geometry" : {
+             "location" : {
+                "lat" : -34.6205105,
+                "lng" : -58.371756
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : -34.61922912010728,
+                   "lng" : -58.37024512010728
+                },
+                "southwest" : {
+                   "lat" : -34.62192877989273,
+                   "lng" : -58.37294477989273
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "513283ed822044659054bfbaa608cb39b2b199fd",
+          "name" : "Plaza Dorrego",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 3024,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/104267496437014350291\"\u003eFranci Castro\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAAVr9vKX4NGui0GtVtq5tpzSqn-uEJpfvLhiQsWJUW0EUP-LT2Sjz5BAoRd6kmBGVnjjyw3Vzde-POPnCt9yg6_EsziQe7XEeOX5T13n66jgYR05uqd8dZD7vdIAOQOzJwEhDeZEiPznR9HieAWJMheQbqGhT9c6sbbVM47MMlQ42RUcP0Lv0_ag",
+                "width" : 4032
+             }
+          ],
+          "place_id" : "ChIJifSktCzLvJURsTMaMFXLu3E",
+          "plus_code" : {
+             "compound_code" : "9JHH+Q7 Buenos Aires, Argentina",
+             "global_code" : "48Q39JHH+Q7"
+          },
+          "rating" : 4.4,
+          "reference" : "ChIJifSktCzLvJURsTMaMFXLu3E",
+          "types" : [ "tourist_attraction", "park", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 21314
+       },
+       {
+          "formatted_address" : "Cerrito 628, C1010 CABA, Argentina",
+          "geometry" : {
+             "location" : {
+                "lat" : -34.6010406,
+                "lng" : -58.3830786
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : -34.59971182010728,
+                   "lng" : -58.38165405000001
+                },
+                "southwest" : {
+                   "lat" : -34.60241147989272,
+                   "lng" : -58.38478625
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "4b94176be9779bb1b0da41aef143a9cff0eb6719",
+          "name" : "Teatro Colón",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 2340,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/107102346199209990197\"\u003eA Google User\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAAAHObiYyhFztHrq0B2uwu19-mRFJ4MUQMBVYB66tO9KND_C4CCmcJWMJiVpWhxnSwFcxEZqLVdFUa0cZQGOUGY7yGTPmxcpIJ3b7BjaSrd2OlFO7S0F6nnnqk02qUepuGEhCPog3ND7uUxEsdPdIZBKQzGhRlVcxURceNCyzN1PUoYszz_STQ_A",
+                "width" : 4160
+             }
+          ],
+          "place_id" : "ChIJIxYSMMbKvJURqZGJyCpvOFM",
+          "plus_code" : {
+             "compound_code" : "9JX8+HQ Buenos Aires, Argentina",
+             "global_code" : "48Q39JX8+HQ"
+          },
+          "rating" : 4.8,
+          "reference" : "ChIJIxYSMMbKvJURqZGJyCpvOFM",
+          "types" : [ "tourist_attraction", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 49029
+       },
+       {
+          "formatted_address" : "Av. Hipólito Yrigoyen s/n, C1087 CABA, Argentina",
+          "geometry" : {
+             "location" : {
+                "lat" : -34.6083667,
+                "lng" : -58.3722832
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : -34.60706527010728,
+                   "lng" : -58.37086427010727
+                },
+                "southwest" : {
+                   "lat" : -34.60976492989273,
+                   "lng" : -58.37356392989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "547877e81d6fac0e110d6c0d803988dac79985ec",
+          "name" : "Plaza de Mayo",
+          "photos" : [
+             {
+                "height" : 3024,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/107033512916853113541\"\u003eAbel Mauricio Ramirez\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAAB9GoPiBwP1vhnglg7Lp5SdmfcnPuTcoPk9fKbYcYrjp6Au27DYsg--Z5EEFzQ6ovHt_Hve4tVzMDDVSYSTDC733kOKAIqOl6uLzefLxyUPFl2JpZtYj6RuGmzXuWTkOqEhDAyDGlSkdjTzEBYN9dUP-bGhST7Igf_yWkZqrfWuvxmSH-rJkXHQ",
+                "width" : 4032
+             }
+          ],
+          "place_id" : "ChIJXx79V9vKvJURS2GosE58c8w",
+          "plus_code" : {
+             "compound_code" : "9JRH+M3 Buenos Aires, Argentina",
+             "global_code" : "48Q39JRH+M3"
+          },
+          "rating" : 4.6,
+          "reference" : "ChIJXx79V9vKvJURS2GosE58c8w",
+          "types" : [ "tourist_attraction", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 76369
+       },
+       {
+          "formatted_address" : "Av. Casares 2966, C1425 CABA, Argentina",
+          "geometry" : {
+             "location" : {
+                "lat" : -34.5748165,
+                "lng" : -58.4083367
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : -34.5733069,
+                   "lng" : -58.40765169999999
+                },
+                "southwest" : {
+                   "lat" : -34.5775677,
+                   "lng" : -58.4103557
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "7f1aba657a5f9d7dd688981360ac2285f0059cda",
+          "name" : "Jardín Japonés",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 4032,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/117406744208527544075\"\u003eOmar Ghaffar\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAADxh-CQUb6E0NkS2mnb0VCM49W2Bmt7HHx22NorDnsjGZ4drTTAT8i2FI8eH65oA7PwKUDtMbZivpY-l0J8qoFY8Xp_seL_pdjmbs_aTKbJMq7GHLsYd8QCqs3MIDeoewEhA-sb3ti08vNMEOBo0fgWkjGhSmU0Q-KUaSZiw5CuHGZROHfMU7JQ",
+                "width" : 3024
+             }
+          ],
+          "place_id" : "ChIJx8VHQXq1vJURH4ffL_cLk_w",
+          "plus_code" : {
+             "compound_code" : "CHGR+3M Buenos Aires, Argentina",
+             "global_code" : "48Q3CHGR+3M"
+          },
+          "rating" : 4.6,
+          "reference" : "ChIJx8VHQXq1vJURH4ffL_cLk_w",
+          "types" : [ "tourist_attraction", "park", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 68381
+       },
+       {
+          "formatted_address" : "Av. de Mayo 1370, C1085 CABA, Argentina",
+          "geometry" : {
+             "location" : {
+                "lat" : -34.6095914,
+                "lng" : -58.3858428
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : -34.60810717010727,
+                   "lng" : -58.38450457010728
+                },
+                "southwest" : {
+                   "lat" : -34.61080682989272,
+                   "lng" : -58.38720422989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "6006162db117c32c07eb9fb2ab75449956bc4f0f",
+          "name" : "Palacio Barolo",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 3418,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/103045405142099756192\"\u003eFederico Nicolas Graf sundberg\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAA92IQQ_bUOx8tEpIT1ZyMj8RUMbnqia_BN4cb_Uh4hgKlbBAzslk6tGed-SjEh56arVAG3j1ENpn9VCr-H-DjQ6aogHjuWENeX0JwQvYKQ0kRl_5rH8JSCL37z0CG6PQJEhBBqKU0tzlmWQj9lAdhnYPIGhT5v3Ip-MhQnrsJBh_BFsgz3TtG5g",
+                "width" : 3024
+             }
+          ],
+          "place_id" : "ChIJW3Va2NrKvJUROiaH5K0ualk",
+          "plus_code" : {
+             "compound_code" : "9JR7+5M Buenos Aires, Argentina",
+             "global_code" : "48Q39JR7+5M"
+          },
+          "rating" : 4.6,
+          "reference" : "ChIJW3Va2NrKvJUROiaH5K0ualk",
+          "types" : [ "tourist_attraction", "premise", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 12873
+       },
+       {
+          "formatted_address" : "C1425 Buenos Aires, Argentina",
+          "geometry" : {
+             "location" : {
+                "lat" : -34.5825491,
+                "lng" : -58.41735
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : -34.58169442010728,
+                   "lng" : -58.41411325000001
+                },
+                "southwest" : {
+                   "lat" : -34.58439407989272,
+                   "lng" : -58.42085105000001
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_recreational-71.png",
+          "id" : "f70bb18b666404d050d431fec5a5b3e1bd488ccb",
+          "name" : "Jardín Botánico Carlos Thays",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 3024,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/116882934571321163898\"\u003eGabriel Sorozabal\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAAUmPpRi6L_BQVQcIvDwc8yYYoAAw9Zm9KnwYF_v1LnSyjDzqaWuz9K3tQFhRRr7OhZmsVWNWv9Dm10Kc13T1eRzUzAPgnfpoLagyj4MDljfWYAu62-rdZfct5B1jY_GAcEhC2jFa1b1BWppAuox3KWqKYGhTZM0_b-sVXCIhWDx7JtVjxwMYnvA",
+                "width" : 4032
+             }
+          ],
+          "place_id" : "ChIJX1k1_oG1vJURXnF498N2HoA",
+          "plus_code" : {
+             "compound_code" : "CH8M+X3 Buenos Aires, Argentina",
+             "global_code" : "48Q3CH8M+X3"
+          },
+          "rating" : 4.6,
+          "reference" : "ChIJX1k1_oG1vJURXnF498N2HoA",
+          "types" : [ "tourist_attraction", "park", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 33635
+       },
+       {
+          "formatted_address" : "Av. 9 de Julio s/n, C1043 CABA, Argentina",
+          "geometry" : {
+             "location" : {
+                "lat" : -34.6037389,
+                "lng" : -58.3815704
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : -34.60236032010728,
+                   "lng" : -58.38025112010727
+                },
+                "southwest" : {
+                   "lat" : -34.60505997989272,
+                   "lng" : -58.38295077989271
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png",
+          "id" : "f175ef0be2d055ea839119897a47e26fce98899c",
+          "name" : "Obelisco",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 2448,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/107748311001852495080\"\u003eAdriano Sousa\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAAiHyKMcLEOcBW3UqrjpyDneFlUKjVaPQcd6NEOxOA_66C1HJC9Y9fpmPKwnceMR0-HLRLEFsz_yZ1a5OlnZV34r6xcCvNiiIyPo2xs1SaiwqAqMWomcsZlU94VaU-Pja6EhD1v8E5kqJnJ_gpFyaNYnSrGhQqQ4-2IYUvHo_3mVdr4JgniOkJ2w",
+                "width" : 3264
+             }
+          ],
+          "place_id" : "ChIJ217apvCpSgARi1VOI06tvhE",
+          "plus_code" : {
+             "compound_code" : "9JW9+G9 Buenos Aires, Argentina",
+             "global_code" : "48Q39JW9+G9"
+          },
+          "rating" : 4.6,
+          "reference" : "ChIJ217apvCpSgARi1VOI06tvhE",
+          "types" : [ "tourist_attraction", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 89477
+       },
+       {
+          "formatted_address" : "Av. del Libertador 1473, Buenos Aires, Argentina",
+          "geometry" : {
+             "location" : {
+                "lat" : -34.5839894,
+                "lng" : -58.3930044
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : -34.58282272010728,
+                   "lng" : -58.39165677010728
+                },
+                "southwest" : {
+                   "lat" : -34.58552237989272,
+                   "lng" : -58.39435642989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png",
+          "id" : "a4246b984e13f1a50a8ccc4b49bd4c9681f09781",
+          "name" : "Museo Nacional de Bellas Artes",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 1080,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/103307352151100797974\"\u003eFelipe Oliveira\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAAZA7_cmrWtQIeXntG80I6F6MFsyui8hnKNjBq2P19JcfmywqLZVHUpk2wOygvvrzNax6UspGVPW_Y3RXvWOuXJJr6EBy_QGPCuPKura7DZdvI5n8nGpM_JuX-NsVPo6gXEhBgiwvxmUGz37_vRzOwVN1ZGhSsDsDrvQf_xQ7UJURcDRxiMYZYTQ",
+                "width" : 1620
+             }
+          ],
+          "place_id" : "ChIJQ_bCmaHKvJURfb4aM7hD5Uk",
+          "plus_code" : {
+             "compound_code" : "CJ84+CQ Buenos Aires, Argentina",
+             "global_code" : "48Q3CJ84+CQ"
+          },
+          "rating" : 4.7,
+          "reference" : "ChIJQ_bCmaHKvJURfb4aM7hD5Uk",
+          "types" : [
+             "art_gallery",
+             "tourist_attraction",
+             "museum",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total" : 20170
+       },
+       {
+          "formatted_address" : "Junín 1760, C1113 CABA, Argentina",
+          "geometry" : {
+             "location" : {
+                "lat" : -34.5874834,
+                "lng" : -58.3934409
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : -34.58619692010728,
+                   "lng" : -58.39139685
+                },
+                "southwest" : {
+                   "lat" : -34.58889657989272,
+                   "lng" : -58.39412225
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cemetery_grave-71.png",
+          "id" : "6131a1f046145df4cde49e4fa08cbc468cc1c17e",
+          "name" : "Recoleta Cemetery",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 334,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/115118851937052032752\"\u003eA Google User\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAAweyGPfxAuPF-MoGloG-VKQysRJA3tnIZKds9ExOfaqjxYvuiQ9pltPyd0Y1AhBso9spHVAmySCk1k83DNYSrDRv5-2w2LIEkADph4Xh5RKuZgXjJnYwybZM9l7I1xtEHEhBGk238TRGNitVCIiZPo4ytGhSZ7QKJTIIPmENM3VTGav6_a1aJ2w",
+                "width" : 500
+             }
+          ],
+          "place_id" : "ChIJs5EH8aLKvJURw6UX3MYKGKE",
+          "plus_code" : {
+             "compound_code" : "CJ74+2J Buenos Aires, Argentina",
+             "global_code" : "48Q3CJ74+2J"
+          },
+          "rating" : 4.6,
+          "reference" : "ChIJs5EH8aLKvJURw6UX3MYKGKE",
+          "types" : [
+             "cemetery",
+             "tourist_attraction",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total" : 3185
+       },
+       {
+          "formatted_address" : "Riobamba 750, C1025 ABP, Buenos Aires, Argentina",
+          "geometry" : {
+             "location" : {
+                "lat" : -34.6003241,
+                "lng" : -58.394513
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : -34.59895052010728,
+                   "lng" : -58.3935474
+                },
+                "southwest" : {
+                   "lat" : -34.60165017989272,
+                   "lng" : -58.39665020000001
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png",
+          "id" : "0e973eae17f5268541abe17cd74f5ad0eef98aba",
+          "name" : "Museo del Agua y de la Historia Sanitaria - Palacio de Aguas Corrientes",
+          "opening_hours" : {
+             "open_now" : false
+          },
+          "photos" : [
+             {
+                "height" : 2358,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/116957314846935854649\"\u003eAnastasiya Volkova\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAAZ2Ymzx6hn25KPfmrRIMrtDUFRcWXo0JC4-fT5aKJ2iaHMDTZ5rsVw8Xp1huWUiVKAbNMBWVsiGrvmvIC1jbWM8CKET0aqKoIsMKKohJ1fdkS3WqAN0Fi5qeA9fK5bx07EhA-0S2ooYI6XAwIh5meTfyTGhTsDOcY858a4DGea8r3k0BhGfzgkA",
+                "width" : 3527
+             }
+          ],
+          "place_id" : "ChIJO14_4r_KvJURzzWyrR7-kG8",
+          "plus_code" : {
+             "compound_code" : "9JX4+V5 Buenos Aires, Argentina",
+             "global_code" : "48Q39JX4+V5"
+          },
+          "rating" : 4.6,
+          "reference" : "ChIJO14_4r_KvJURzzWyrR7-kG8",
+          "types" : [ "tourist_attraction", "museum", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 5242
+       },
+       {
+          "formatted_address" : "Bolívar 65, C1066 CABA, Argentina",
+          "geometry" : {
+             "location" : {
+                "lat" : -34.6087392,
+                "lng" : -58.3737862
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : -34.60746632010727,
+                   "lng" : -58.37234432010727
+                },
+                "southwest" : {
+                   "lat" : -34.61016597989271,
+                   "lng" : -58.37504397989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png",
+          "id" : "41a97b386bffef0062bd6e930f6eb26afb06f82e",
+          "name" : "Museo Histórico Nacional del Cabildo y la Revolución de Mayo",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 3120,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/116325699353194068018\"\u003eGerardo Dominguez\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAA8NKF2C0XW2EJ-032iHdsJAeFbFnPXKNcsx0-X9HjiwBEyiKBSNREpN44brQ6bOXyRR7y1IkHw7D4VXzUIXVTNx3rqoKGRUKA_PQaY_FDpzc8cypeUhsVy3rC3qJd8bdrEhCuDa8SCXg89lx6GxThukxRGhSwIBxdL36znQsixu2HOZ7wEqVvhg",
+                "width" : 4160
+             }
+          ],
+          "place_id" : "ChIJiWKwE9PKvJURb6neokWdC4o",
+          "plus_code" : {
+             "compound_code" : "9JRG+GF Buenos Aires, Argentina",
+             "global_code" : "48Q39JRG+GF"
+          },
+          "rating" : 4.5,
+          "reference" : "ChIJiWKwE9PKvJURb6neokWdC4o",
+          "types" : [ "tourist_attraction", "museum", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 8248
+       },
+       {
+          "formatted_address" : "Av. Infanta Isabel 410, Buenos Aires, Argentina",
+          "geometry" : {
+             "location" : {
+                "lat" : -34.5712762,
+                "lng" : -58.41729640000001
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : -34.5694429,
+                   "lng" : -58.41216470000001
+                },
+                "southwest" : {
+                   "lat" : -34.5758449,
+                   "lng" : -58.42448149999999
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_recreational-71.png",
+          "id" : "f21767c7fb81ed82fc10aaeecd8912ea16c90f10",
+          "name" : "Bosques De Palermo",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 3024,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/115687633502439533694\"\u003eFabian Costa\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAAfLfiJtdUwRr7rwtOixEQKXBVU-Scoke_OuY50PAHLvcqIq8_zv77-MsujBlq6AHvLitgXgQPiRUCO48t481ZagfxFzj-AJJjGjM-SR8hILAZeSHr7RJCom4htlEiY-8JEhChS720Y-r33caM3mZzFqf8GhRWpcb-SN5i415RSpkE6xw8gE_21A",
+                "width" : 4032
+             }
+          ],
+          "place_id" : "ChIJsQqBvZ-1vJURbm-7dxt8fgM",
+          "plus_code" : {
+             "compound_code" : "CHHM+F3 Buenos Aires, Argentina",
+             "global_code" : "48Q3CHHM+F3"
+          },
+          "rating" : 4.7,
+          "reference" : "ChIJsQqBvZ-1vJURbm-7dxt8fgM",
+          "types" : [ "park", "tourist_attraction", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 18977
+       },
+       {
+          "formatted_address" : "Buenos Aires, Argentina",
+          "geometry" : {
+             "location" : {
+                "lat" : -34.5706506,
+                "lng" : -58.4172996
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : -34.56753560000001,
+                   "lng" : -58.4142698
+                },
+                "southwest" : {
+                   "lat" : -34.57473039999999,
+                   "lng" : -58.420597
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_recreational-71.png",
+          "id" : "44703284b18b5144e10d664951230b27f9a0c8a4",
+          "name" : "Paseo El Rosedal",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 3456,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/113351499973227146414\"\u003eCésar José Rizzuto\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAAg8XZzgjobPkmbhY6Zn69MGEjWHFkYxXOsZcLwmXPphv-t4Xr2bE8yiYPZCXoWp6sa-wUxvxwCTF5w4PUuYEB-WE39IUbfLKWTOq1n2mziCFwaW62lP-8LdHJ1-4nr9MPEhBNOv397H9V0ab-7oUUejm9GhSyR2SlE-jvW0yU3mrMGSazk0srgA",
+                "width" : 4608
+             }
+          ],
+          "place_id" : "ChIJ10xgN561vJURkon23PB48-E",
+          "plus_code" : {
+             "compound_code" : "CHHM+P3 Buenos Aires, Argentina",
+             "global_code" : "48Q3CHHM+P3"
+          },
+          "rating" : 4.7,
+          "reference" : "ChIJ10xgN561vJURkon23PB48-E",
+          "types" : [ "tourist_attraction", "park", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 29801
+       },
+       {
+          "formatted_address" : "Av. del Libertador 1902, C1425 CABA, Argentina",
+          "geometry" : {
+             "location" : {
+                "lat" : -34.5826725,
+                "lng" : -58.4010755
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : -34.58118472010728,
+                   "lng" : -58.39939842010727
+                },
+                "southwest" : {
+                   "lat" : -34.58388437989272,
+                   "lng" : -58.40209807989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png",
+          "id" : "6ceebfac95cd9f4de4592814ae8d9e944c48f5a0",
+          "name" : "Museo Nacional de Arte Decorativo",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 3456,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/107330506307418915518\"\u003eA Google User\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAAzNXXhRXHecAlBAx61vACZEeNYPqkfGPrKW_AdWhvjXKCyPMtzGMOLuC_NF-kQT6IfSgFcCutvma6Lsf1UDPYQLwrtCh5JBY_35DSbCA929aTjfO8s5elG8ljVH4LBFIsEhAQwJ3KMvPeqh9hNCzp6iSVGhSU4Os2Z2z1Hk9di0YaNKMtKpy7Jg",
+                "width" : 4608
+             }
+          ],
+          "place_id" : "ChIJ-TTbA2K1vJURG1oy4SQwOA4",
+          "plus_code" : {
+             "compound_code" : "CH8X+WH Buenos Aires, Argentina",
+             "global_code" : "48Q3CH8X+WH"
+          },
+          "rating" : 4.7,
+          "reference" : "ChIJ-TTbA2K1vJURG1oy4SQwOA4",
+          "types" : [ "museum", "tourist_attraction", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 5653
+       },
+       {
+          "formatted_address" : "Av. Angel Gallardo 470, C1405 DJR, Buenos Aires, Argentina",
+          "geometry" : {
+             "location" : {
+                "lat" : -34.6051091,
+                "lng" : -58.4375564
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : -34.60371182010728,
+                   "lng" : -58.43626277010728
+                },
+                "southwest" : {
+                   "lat" : -34.60641147989272,
+                   "lng" : -58.43896242989273
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "9f09e39e6a933e4ecfe173bbdeb7f48fda024a22",
+          "name" : "Bernardino Rivadavia Museum of Natural Science",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 3004,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/114264257147186524262\"\u003eCleider Rafael Herrera Murillo\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAARZ4s2PgzKjl6mSTOd0df0lyVsPaSD4QkzwlmE2Aik8RCEZ3FXtB4away85KXqO4sFZgEkSVqiAZcGvS6gTTNnq4GS83MX5JbS7Voxx4KKbowhhUXEdndr0baH8DvGGMKEhA8M0o-7yTn6J8dXQLbkUlsGhQYV22ckHfRg9FI9J7d5L6Bjctb6w",
+                "width" : 5325
+             }
+          ],
+          "place_id" : "ChIJgZtFc23KvJURbgTQDeWNfoo",
+          "plus_code" : {
+             "compound_code" : "9HV6+XX Buenos Aires, Argentina",
+             "global_code" : "48Q39HV6+XX"
+          },
+          "rating" : 4.5,
+          "reference" : "ChIJgZtFc23KvJURbgTQDeWNfoo",
+          "types" : [ "tourist_attraction", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 13652
+       },
+       {
+          "formatted_address" : "C1113 Buenos Aires, Argentina",
+          "geometry" : {
+             "location" : {
+                "lat" : -34.607987,
+                "lng" : -58.3651371
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : -34.60663717010728,
+                   "lng" : -58.36378727010728
+                },
+                "southwest" : {
+                   "lat" : -34.60933682989273,
+                   "lng" : -58.36648692989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "b418dcc848f043b7701e47bdbba557c4e61ba0e0",
+          "name" : "Puente De La Mujer",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 2340,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/117688706421109104060\"\u003eSilvio Fávaro Antunes\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAArKeTpRGTmdYzNIF2128y6hugzmsmN5LGBfnG82YEfnf8qWrQzwmAH5PpPbvnPVQ4DELuPg_Aygw3KWEUf_coXv-5f0TLGcGNwvwkj4Gbh4d4agarov9DGDBIIIEBc8TdEhBHTp8nhv0p5IAqK4HDuD5eGhR1kEfwudkoLeE1sLckw_OXc4w91Q",
+                "width" : 4160
+             }
+          ],
+          "place_id" : "ChIJbSLzQyk1o5URPBMjt-fRU98",
+          "plus_code" : {
+             "compound_code" : "9JRM+RW Buenos Aires, Argentina",
+             "global_code" : "48Q39JRM+RW"
+          },
+          "rating" : 4.6,
+          "reference" : "ChIJbSLzQyk1o5URPBMjt-fRU98",
+          "types" : [ "tourist_attraction", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 47916
+       },
+       {
+          "formatted_address" : "Av. Pres. Figueroa Alcorta 3415, C1425 CLA, Buenos Aires, Argentina",
+          "geometry" : {
+             "location" : {
+                "lat" : -34.5771629,
+                "lng" : -58.40353709999999
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : -34.57589502010727,
+                   "lng" : -58.40233862010728
+                },
+                "southwest" : {
+                   "lat" : -34.57859467989272,
+                   "lng" : -58.40503827989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png",
+          "id" : "b0bbcd091169d7bf6b33330b28689b4f147ffac4",
+          "name" : "MALBA",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 2340,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/116069703150902160227\"\u003eA Google User\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAAMhHTbehXPPK4AaV5vFw50ex0PJ-mTAe75rSNZ_H3_ElSqiC4wfH_YMlc9ZVYl-U44ENcpu2Cmy46RV3DjOCTa2pzTKDYTzujUPb5IOPVhTwKu-h0-nXei9-__e4wVforEhCzi6wBG1nigr7FfVjw8t1DGhQpaTr7dV68waQ90cjHKIyB8ILPlg",
+                "width" : 4160
+             }
+          ],
+          "place_id" : "ChIJw2lP92S1vJUR0oZeeeJ7qO4",
+          "plus_code" : {
+             "compound_code" : "CHFW+4H Buenos Aires, Argentina",
+             "global_code" : "48Q3CHFW+4H"
+          },
+          "rating" : 4.6,
+          "reference" : "ChIJw2lP92S1vJUR0oZeeeJ7qO4",
+          "types" : [ "tourist_attraction", "museum", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 21773
+       },
+       {
+          "formatted_address" : "AAF, Perú 294, C1067 AAF, Buenos Aires, Argentina",
+          "geometry" : {
+             "location" : {
+                "lat" : -34.6105903,
+                "lng" : -58.3747968
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : -34.60907707010728,
+                   "lng" : -58.37295487010728
+                },
+                "southwest" : {
+                   "lat" : -34.61177672989272,
+                   "lng" : -58.37565452989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+          "id" : "ce27b3a1faf9bec39571f50c2d670108e8506d22",
+          "name" : "Manzana de las Luces",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 4160,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/113012239368900633581\"\u003eA Google User\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAASmIUjmpV7e8pRc05kNiUH3ItkE8SlEuSmXPJmb4-6UHCWRVMsUxP1MFp_I-Ocfo-IcofyZlTCWu4f8BMcBniEvStHRwgE-yzSDwX58GE9xogNKo8b-61tVyIorv0pvrJEhA_BF2ITAgp5k6V_msTcHaZGhSi3nSB8Ibj4OAuQedB_pK0xXOCGg",
+                "width" : 3120
+             }
+          ],
+          "place_id" : "ChIJfb4NY9TKvJURcgEHRKvcNf4",
+          "plus_code" : {
+             "compound_code" : "9JQG+Q3 Buenos Aires, Argentina",
+             "global_code" : "48Q39JQG+Q3"
+          },
+          "rating" : 4.4,
+          "reference" : "ChIJfb4NY9TKvJURcgEHRKvcNf4",
+          "types" : [ "tourist_attraction", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 5711
+       },
+       {
+          "formatted_address" : "Defensa 755, C1065 AAM, Buenos Aires, Argentina",
+          "geometry" : {
+             "location" : {
+                "lat" : -34.6167218,
+                "lng" : -58.37180799999999
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : -34.61537132010728,
+                   "lng" : -58.37039342010726
+                },
+                "southwest" : {
+                   "lat" : -34.61807097989272,
+                   "lng" : -58.3730930798927
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png",
+          "id" : "631dc4a1bf6fd343fab4d124093a23018fa634fb",
+          "name" : "El Zanjon",
+          "opening_hours" : {
+             "open_now" : false
+          },
+          "photos" : [
+             {
+                "height" : 4623,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/111197696478138680182\"\u003eDaniel Lenton\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAA1uOmy7kg48nNJyTyhQ-SOpD8RZIuIFw6LD9GkskYQ7xMkBGR94TASrS035-PwIQwO-4yqyAVvUmmjRsLmLoO6UPn_DHM4bfb4h3bWX6riNIM7LQUzUnC5yDPuR_b_z5cEhDfn8vBiEca0e2cCV8Xz7mBGhRT8VG5HD6SH6wvGp0c2jHovuocUQ",
+                "width" : 3461
+             }
+          ],
+          "place_id" : "ChIJxWZS0yrLvJUREyl88eDpbeM",
+          "plus_code" : {
+             "compound_code" : "9JMH+87 Buenos Aires, Argentina",
+             "global_code" : "48Q39JMH+87"
+          },
+          "rating" : 4.6,
+          "reference" : "ChIJxWZS0yrLvJUREyl88eDpbeM",
+          "types" : [ "museum", "tourist_attraction", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 1614
+       },
+       {
+          "formatted_address" : "7549, Av. Pres. Figueroa Alcorta 7509, Buenos Aires, Argentina",
+          "geometry" : {
+             "location" : {
+                "lat" : -34.5465963,
+                "lng" : -58.4484825
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : -34.54537082010727,
+                   "lng" : -58.44711582010726
+                },
+                "southwest" : {
+                   "lat" : -34.54807047989271,
+                   "lng" : -58.44981547989271
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png",
+          "id" : "0fa3f680fe6603ab7a6781252995da7066e6b0c2",
+          "name" : "River Plate Museum",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 3024,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/103656486556344725329\"\u003eDario Saeed\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAAwmTje3vI_3qsyXCFP_rqqCPbUmYIPMFUL_TBODqvd7XdHPrGGXzvL1F8sRP6fE487WlMMXoJcMzcNs2GJ_SfIrfuVD2n3eEnDPljypi4ySlMPpuy1nxgltY69C4JMTHHEhA-ipM6zPEQ3dA2DCZ60i8tGhR8rqBKFfw7v4cGNNYNfhdqHCgKYw",
+                "width" : 4032
+             }
+          ],
+          "place_id" : "ChIJTS3Tfzq0vJURctvjC_CFE1o",
+          "plus_code" : {
+             "compound_code" : "FH32+9J Buenos Aires, Argentina",
+             "global_code" : "48Q3FH32+9J"
+          },
+          "rating" : 4.7,
+          "reference" : "ChIJTS3Tfzq0vJURctvjC_CFE1o",
+          "types" : [ "museum", "tourist_attraction", "point_of_interest", "establishment" ],
+          "user_ratings_total" : 11117
+       }
+    ],
+    "status" : "OK"
+ }

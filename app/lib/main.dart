@@ -5,8 +5,8 @@ import 'package:pathika/detail_page_app_bar.dart';
 import 'package:pathika/movie_item_card.dart';
 import 'package:pathika/time/current_time_card.dart';
 import 'package:pathika/time_to_visit/time_to_visit_card.dart';
+import 'package:pathika/tourist_attractions/tourist_attractions_card.dart';
 
-import 'attraction_item_card.dart';
 import 'climate/climate_card.dart';
 import 'common/info_card.dart';
 import 'country/country_card.dart';
@@ -101,45 +101,7 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                 CurrentTimeCard(useColorsOnCard: useColorsOnCard, timezoneOffsetInMinute: -180,),
                 ClimateCard(useColorsOnCard: useColorsOnCard,),
                 TimeToVisitCard(useColorsOnCard: useColorsOnCard),
-                InfoCard(
-                  color: useColorsOnCard ? Colors.green : null,
-                  heading: 'Tourist Attractions',
-                  body: Column(
-                    children: [
-                      Container(
-                        width: double.infinity,
-                        height: 300,
-                        child: ListView(
-                          scrollDirection: Axis.horizontal,
-                          children: <Widget>[
-                            AttractionItemCard(
-                              name: 'Plaza de Mayo',
-                              posterUrl:
-                                  'https://lh3.googleusercontent.com/p/AF1QipNAR-22SdDBVKcr5YbgUo1N2M5J3mRSAlHd9v3p=s1600-w900',
-                              description: 'Iconic 19th-century central square',
-                              cardColor: Theme.of(context).brightness == Brightness.dark || useColorsOnCard ? Colors.transparent : null ,
-                            ),
-                            AttractionItemCard(
-                              name: 'La Boca',
-                              posterUrl:
-                                  'https://lh3.googleusercontent.com/p/AF1QipOLUhLwscxdga2R6AP0HbufGXUgXLg3OUptoocB=s1600-w900',
-                              description:
-                                  'Caminito alley & La Bombonera stadium',
-                              cardColor: Theme.of(context).brightness == Brightness.dark || useColorsOnCard ? Colors.transparent : null ,
-                            ),
-                            AttractionItemCard(
-                              name: 'Obelisco',
-                              posterUrl:
-                                  'https://lh3.googleusercontent.com/p/AF1QipNjVDJsb7nwnkEYSs6n9vf3-coGoepNxJVOpvxE=s1600-w900',
-                              description: 'Iconic 67m-high white obelisk',
-                              cardColor: Theme.of(context).brightness == Brightness.dark || useColorsOnCard ? Colors.transparent : null ,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+                TouristAttractionsCard(useColorsOnCard: useColorsOnCard),
                 InfoCard(
                   color: useColorsOnCard ? Colors.teal : null,
                   heading: 'Food',
