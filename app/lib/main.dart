@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pathika/app_drawer.dart';
 import 'package:pathika/currency/currency_card.dart';
 import 'package:pathika/detail_page_app_bar.dart';
+import 'package:pathika/famous_people/person_list_card.dart';
 import 'package:pathika/food/food_items_list_card.dart';
 import 'package:pathika/movie_item_card.dart';
 import 'package:pathika/time/current_time_card.dart';
@@ -12,7 +13,6 @@ import 'climate/climate_card.dart';
 import 'common/info_card.dart';
 import 'country/country_card.dart';
 import 'language/language_card.dart';
-import 'people_item_card.dart';
 
 void main() => runApp(PathikaApp2());
 
@@ -108,48 +108,7 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                 TimeToVisitCard(useColorsOnCard: useColorsOnCard),
                 TouristAttractionsCard(useColorsOnCard: useColorsOnCard),
                 FoodItemsListCard(useColorsOnCard: useColorsOnCard),
-                InfoCard(
-                  color: useColorsOnCard ? Colors.cyan : null,
-                  heading: 'Famous People',
-                  body: Column(
-                    children: <Widget>[
-                      PeopleItemCard(
-                        name: 'Pope Fransis',
-                        avatarUrl:
-                            'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Pope_Francis_Korea_Haemi_Castle_19.jpg/362px-Pope_Francis_Korea_Haemi_Castle_19.jpg',
-                      ),
-                      Divider(),
-                      PeopleItemCard(
-                        name: 'Che Guevara',
-                        avatarUrl:
-                            'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/CheHigh.jpg/374px-CheHigh.jpg',
-                        place: 'Rosario, 278 km from Buenos Aires',
-                      ),
-                      Divider(),
-                      PeopleItemCard(
-                        name: 'Lionel Messi',
-                        avatarUrl:
-                            'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lionel_Messi_20180626.jpg/336px-Lionel_Messi_20180626.jpg',
-                        work: 'Footballer',
-                        place: 'Rosario',
-                      ),
-                      Divider(),
-                      PeopleItemCard(
-                        name: 'Diego Maradona ',
-                        avatarUrl:
-                            'https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Diego_Maradona_2012_2.jpg/389px-Diego_Maradona_2012_2.jpg',
-                        work: 'Footballer',
-                      ),
-                      Divider(),
-                      PeopleItemCard(
-                        name: 'Jorge Luis Borges',
-                        avatarUrl:
-                            'https://upload.wikimedia.org/wikipedia/commons/c/c6/Jorge_Luis_Borges.jpg',
-                        work: 'Argentine short story writer',
-                      ),
-                    ],
-                  ),
-                ),
+                PersonListCard(useColorsOnCard: useColorsOnCard),
                 InfoCard(
                   color: useColorsOnCard ? Colors.indigo : null,
                   heading: 'Movies from Argentina',

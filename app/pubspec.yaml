@@ -35,6 +35,8 @@ flutter:
     - assets/data/time_to_visit.json
     - assets/data/tourist_places.json
     - assets/data/food.json
+    - assets/data/persons.json
+    
     
     
     

@@ -1,0 +1,44 @@
+{
+    "items" : [
+        {
+            "name" : "Pope Francis",
+            "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.jpg/815px-Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.jpg",
+            "work" :"Head of the Catholic Church and sovereign of the Vatican City State",
+            "place" : "Flores, Buenos Aires",
+            "licence" : "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 2.0</a>",
+            "photo_by" :"Jeffrey Bruno",
+            "attribution_url" : "https://commons.wikimedia.org/wiki/File:Canonization_2014-_The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_(14036966124).jpg"
+        },
+        {
+            "name" : "Che Guevara",
+            "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/CheHigh.jpg/599px-CheHigh.jpg",
+            "work" : " Argentine Marxist revolutionary",
+            "place" : "Rosario, 278 km from Buenos Aires"
+        },
+        {
+            "name" : "Lionel Messi",
+            "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lionel_Messi_20180626.jpg/420px-Lionel_Messi_20180626.jpg",
+            "work" : "Professional Footballer",
+            "place" : "Rosario",
+            "licence" : "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+            "photo_by" :"Кирилл Венедиктов",
+            "attribution_url" : "https://www.soccer.ru/galery/1055457/photo/733439"
+        },
+        {
+            "name" : "Diego Maradona",
+            "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Diego_Maradona_2012_2.jpg/622px-Diego_Maradona_2012_2.jpg",
+            "work" : "Retired Professional Footballer",
+            "place" : "Lanús Oeste, Buenos Aires Province",
+            "licence" : "<a href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY 2.0</a>",
+            "photo_by" :"Doha Stadium Plus Qatar",
+            "attribution_url" : "https://www.flickr.com/photos/66463488@N06/7448907672"
+
+        },
+        {
+            "name" : "Jorge Luis Borges",
+            "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/c/c6/Jorge_Luis_Borges.jpg",
+            "work" : "Argentine short story writer",
+            "place" : "Buenos Aires"
+        }
+    ]
+}
