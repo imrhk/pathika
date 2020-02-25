@@ -15,7 +15,7 @@ class TimeToVisitCard extends StatelessWidget {
     return FutureBuilder<TimeToVisitDetails>(
       builder: (context, snapshot) {
         if (snapshot.connectionState != ConnectionState.done) {
-          return Container();
+          return Container(height: 40);
         } else if (snapshot.hasError) {
           print(snapshot.error.toString());
           return Container();

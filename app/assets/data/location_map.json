@@ -1,0 +1,9 @@
+{
+    "items" : [
+        "https://maps.googleapis.com/maps/api/staticmap?center=0,0&zoom=1&size=515x300&maptype=terrain&markers=color:yellow%7Clabel:Aires%7C-34.6157437,-58.5733832&key=AIzaSyDGjnsYLLibMsr_Wg_A5MC7EK5dRSdXdtY",
+        "https://maps.googleapis.com/maps/api/staticmap?center=-8.7832,-55.4915&zoom=2&size=515x300&maptype=terrain&markers=color:yellow%7Clabel:Aires%7C-34.6157437,-58.5733832&key=AIzaSyDGjnsYLLibMsr_Wg_A5MC7EK5dRSdXdtY",
+        "https://maps.googleapis.com/maps/api/staticmap?center=-38.4161,%20-63.6167&zoom=3&size=515x300&maptype=terrain&markers=color:yellow%7Clabel:Aires%7C-34.6157437,-58.5733832&key=AIzaSyDGjnsYLLibMsr_Wg_A5MC7EK5dRSdXdtY",
+        "https://maps.googleapis.com/maps/api/staticmap?center=-34.6037,-58.3816&zoom=6&size=515x300&maptype=terrain&markers=color:yellow%7Clabel:Aires%7C-34.6157437,-58.5733832&key=AIzaSyDGjnsYLLibMsr_Wg_A5MC7EK5dRSdXdtY",
+        "https://maps.googleapis.com/maps/api/staticmap?center=-34.6037,-58.3816&zoom=9&size=515x300&maptype=terrain&markers=color:yellow%7Clabel:Aires%7C-34.5956756,-58.380913&key=AIzaSyDGjnsYLLibMsr_Wg_A5MC7EK5dRSdXdtY"
+    ]
+}

@@ -18,7 +18,7 @@ class ClimateCard extends StatelessWidget {
     return FutureBuilder<ClimateDetails>(
       builder: (context, snapshot) {
         if (snapshot.connectionState != ConnectionState.done) {
-          return Container();
+          return Container(height: 40);
         } else if (snapshot.hasError) {
           print(snapshot.error.toString());
           return Container();

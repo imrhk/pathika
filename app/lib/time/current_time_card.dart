@@ -17,7 +17,7 @@ class CurrentTimeCard extends StatelessWidget {
     return FutureBuilder<Duration>(
       builder: (context, snapshot) {
         if (snapshot.connectionState != ConnectionState.done) {
-          return Container();
+          return Container(height: 40);
         } else if (snapshot.hasError) {
           print(snapshot.error.toString());
           return Container();

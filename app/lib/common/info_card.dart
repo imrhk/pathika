@@ -11,6 +11,7 @@ class InfoCard extends StatelessWidget {
   final Widget footer;
   final Widget body;
   final EdgeInsets padding;
+  final bool isAudiable;
   const InfoCard({
     Key key,
     this.color,
@@ -22,6 +23,7 @@ class InfoCard extends StatelessWidget {
     this.footer,
     this.body,
     this.padding,
+    this.isAudiable = false,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -54,6 +56,7 @@ class InfoCard extends StatelessWidget {
         ),
         child: Stack(
           children: [
+            if(isAudiable)
             Align(
               alignment: Alignment.topRight,
               child: Material(

@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:pathika/airport/airport_details.dart';
 
 import '../common/info_card.dart';
-import 'country_details.dart';
 
-class CountryCard extends StatelessWidget {
+class AirportCard extends StatelessWidget {
   final bool useColorsOnCard;
-  CountryCard({
+  AirportCard({
     Key key,
     @required this.useColorsOnCard,
   })  : assert(useColorsOnCard != null),
         super(key: key);
    @override
   Widget build(BuildContext context) {
-    return FutureBuilder<CountryDetails>(
+    return FutureBuilder<AirportDetails>(
       builder: (context, snapshot) {
         if (snapshot.connectionState != ConnectionState.done) {
           return Container(height: 40);
@@ -21,21 +21,20 @@ class CountryCard extends StatelessWidget {
           return Container();
         } else {
           return InfoCard(
-            color: useColorsOnCard ? Colors.amber : null,
-            heading: 'Country',
+            color: useColorsOnCard ? Colors.cyan : null,
+            heading: 'Airport',
             title: snapshot.data.name,
-            subtitle: snapshot.data.continent,
           );
         }
       },
-      initialData: CountryDetails.empty(),
+      initialData: AirportDetails.empty(),
       future: _getData(context),
     );
   }
 
-  Future<CountryDetails> _getData(BuildContext context) async {
+  Future<AirportDetails> _getData(BuildContext context) async {
     return DefaultAssetBundle.of(context)
-        .loadString("assets/data/country.json")
-        .then((source) => Future.value(CountryDetails.fromJson(source)));
+        .loadString("assets/data/airport.json")
+        .then((source) => Future.value(AirportDetails.fromJson(source)));
   }
 }

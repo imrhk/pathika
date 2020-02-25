@@ -3,12 +3,13 @@ import 'package:flutter/material.dart';
 class MovieItemCard extends StatelessWidget {
   final String name;
   final String posterUrl;
+  final Color cardColor;
 
-  const MovieItemCard({Key key, this.name, this.posterUrl}) : super(key: key);
+  const MovieItemCard({Key key, this.name, this.posterUrl, this.cardColor = Colors.transparent}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Colors.transparent,
+      color: cardColor,
       clipBehavior: Clip.antiAlias,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10),

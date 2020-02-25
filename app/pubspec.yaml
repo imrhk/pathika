@@ -36,6 +36,18 @@ flutter:
     - assets/data/tourist_places.json
     - assets/data/food.json
     - assets/data/persons.json
+    - assets/data/movies.json
+    - assets/data/dance.json
+    - assets/data/sports.json
+    - assets/data/industries.json
+    - assets/data/airport.json
+    - assets/data/location_map.json
+    - assets/data/basic_info.json
+    
+    
+    
+    
+    
     
     
     

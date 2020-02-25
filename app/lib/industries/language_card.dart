@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
 import '../common/info_card.dart';
-import 'country_details.dart';
+import 'industry_details.dart';
 
-class CountryCard extends StatelessWidget {
+class IndustriesCard extends StatelessWidget {
   final bool useColorsOnCard;
-  CountryCard({
+  IndustriesCard({
     Key key,
     @required this.useColorsOnCard,
   })  : assert(useColorsOnCard != null),
         super(key: key);
    @override
   Widget build(BuildContext context) {
-    return FutureBuilder<CountryDetails>(
+    return FutureBuilder<IndustryDetails>(
       builder: (context, snapshot) {
         if (snapshot.connectionState != ConnectionState.done) {
           return Container(height: 40);
@@ -21,21 +21,21 @@ class CountryCard extends StatelessWidget {
           return Container();
         } else {
           return InfoCard(
-            color: useColorsOnCard ? Colors.amber : null,
-            heading: 'Country',
-            title: snapshot.data.name,
-            subtitle: snapshot.data.continent,
+            color: useColorsOnCard ? Colors.yellow : null,
+            heading: 'Industries',
+            title: snapshot.data.primary,
+            subtitle: snapshot.data.secondary.join(','),
           );
         }
       },
-      initialData: CountryDetails.empty(),
+      initialData: IndustryDetails.empty(),
       future: _getData(context),
     );
   }
 
-  Future<CountryDetails> _getData(BuildContext context) async {
+  Future<IndustryDetails> _getData(BuildContext context) async {
     return DefaultAssetBundle.of(context)
-        .loadString("assets/data/country.json")
-        .then((source) => Future.value(CountryDetails.fromJson(source)));
+        .loadString("assets/data/industries.json")
+        .then((source) => Future.value(IndustryDetails.fromJson(source)));
   }
 }

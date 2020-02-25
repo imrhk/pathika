@@ -15,14 +15,14 @@ class LanguageCard extends StatelessWidget {
     return FutureBuilder<LanguageDetails>(
       builder: (context, snapshot) {
         if (snapshot.connectionState != ConnectionState.done) {
-          return Container();
+          return Container(height: 40);
         } else if (snapshot.hasError) {
           print(snapshot.error.toString());
           return Container();
         } else {
           return InfoCard(
             color: useColorsOnCard ? Colors.lightBlue : null,
-            heading: 'Country',
+            heading: 'Language',
             title: snapshot.data.primary,
             subtitle: snapshot.data.secondary.join(','),
           );

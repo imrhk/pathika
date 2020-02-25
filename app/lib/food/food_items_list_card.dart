@@ -18,7 +18,7 @@ class FoodItemsListCard extends StatelessWidget {
     return FutureBuilder<FoodItemsList>(
       builder: (context, snapshot) {
         if (snapshot.connectionState != ConnectionState.done) {
-          return Container();
+          return Container(height: 40);
         } else if (snapshot.hasError) {
           print(snapshot.error.toString());
           return Container();
