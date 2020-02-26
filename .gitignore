@@ -23,3 +23,14 @@ doc/api/
 *.iml
 .idea
 api_urls.txt
+.flutter-plugins
+.flutter-plugins-dependencies
+
+#iOS related file
+Podfile.*
+Podfile
+generated_plugin_registrant.dart
+Debug.xcconfig
+Release.xcconfig
+project.pbxproj
+contents.xcworkspacedata
