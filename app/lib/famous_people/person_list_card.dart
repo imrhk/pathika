@@ -1,22 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:pathika/famous_people/person_list.dart';
-import 'package:pathika/famous_people/person_tile.dart';
 
 import '../common/info_card.dart';
+import 'person_list.dart';
+import 'person_tile.dart';
 
 class PersonListCard extends StatelessWidget {
   final bool useColorsOnCard;
+  final PersonList details;
   PersonListCard({
     Key key,
     @required this.useColorsOnCard,
-  })  : assert(useColorsOnCard != null),
+    @required this.details,
+  })  : assert(useColorsOnCard != null && details != null),
         super(key: key);
 
   List<Widget> getChildren(PersonList personList) {
-    final list =  personList.items
+    final list = personList.items
         .map<Widget>(
-          (item) => Padding( padding: EdgeInsets.symmetric(vertical: 5),
-                      child: PersonTile(
+          (item) => Padding(
+            padding: EdgeInsets.symmetric(vertical: 5),
+            child: PersonTile(
               name: item.name,
               avatarUrl: item.avatarUrl,
               work: item.work,
@@ -27,11 +30,16 @@ class PersonListCard extends StatelessWidget {
             ),
           ),
         )
-        .map<List<Widget>>((item) => [item, Divider(thickness: 2,)])
+        .map<List<Widget>>((item) => [
+              item,
+              Divider(
+                thickness: 2,
+              )
+            ])
         .toList()
         .expand((element) => element)
         .toList();
-    if(list.length > 0) {
+    if (list.length > 0) {
       list.removeLast();
     }
     return list;
@@ -39,34 +47,15 @@ class PersonListCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<PersonList>(
-      builder: (context, snapshot) {
-        if (snapshot.connectionState != ConnectionState.done) {
-          return Container(height: 40);
-        } else if (snapshot.hasError) {
-          print(snapshot.error.toString());
-          return Container();
-        } else {
-          return InfoCard(
-            color: useColorsOnCard ? Colors.cyan : null,
-            heading: 'Famous People',
-            body: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
-              children: getChildren(snapshot.data),
-            ),
-          );
-        }
-      },
-      initialData: PersonList.empty(),
-      future: _getData(context),
+    return InfoCard(
+      color: useColorsOnCard ? Colors.cyan : null,
+      heading: 'Famous People',
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: getChildren(details),
+      ),
     );
-  }
-
-  Future<PersonList> _getData(BuildContext context) async {
-    return DefaultAssetBundle.of(context)
-        .loadString("assets/data/persons.json")
-        .then((source) => Future.value(PersonList.fromJson(source)));
   }
 }

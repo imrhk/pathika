@@ -5,37 +5,20 @@ import 'country_details.dart';
 
 class CountryCard extends StatelessWidget {
   final bool useColorsOnCard;
+  final CountryDetails details;
   CountryCard({
     Key key,
+    @required this.details,
     @required this.useColorsOnCard,
-  })  : assert(useColorsOnCard != null),
+  })  : assert(useColorsOnCard != null && details != null),
         super(key: key);
-   @override
+  @override
   Widget build(BuildContext context) {
-    return FutureBuilder<CountryDetails>(
-      builder: (context, snapshot) {
-        if (snapshot.connectionState != ConnectionState.done) {
-          return Container(height: 40);
-        } else if (snapshot.hasError) {
-          print(snapshot.error.toString());
-          return Container();
-        } else {
-          return InfoCard(
-            color: useColorsOnCard ? Colors.amber : null,
-            heading: 'Country',
-            title: snapshot.data.name,
-            subtitle: snapshot.data.continent,
-          );
-        }
-      },
-      initialData: CountryDetails.empty(),
-      future: _getData(context),
+    return InfoCard(
+      color: useColorsOnCard ? Colors.amber : null,
+      heading: 'Country',
+      title: details.name,
+      subtitle: details.continent,
     );
-  }
-
-  Future<CountryDetails> _getData(BuildContext context) async {
-    return DefaultAssetBundle.of(context)
-        .loadString("assets/data/country.json")
-        .then((source) => Future.value(CountryDetails.fromJson(source)));
   }
 }

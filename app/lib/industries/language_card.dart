@@ -5,37 +5,20 @@ import 'industry_details.dart';
 
 class IndustriesCard extends StatelessWidget {
   final bool useColorsOnCard;
+  final IndustryDetails details;
   IndustriesCard({
     Key key,
     @required this.useColorsOnCard,
-  })  : assert(useColorsOnCard != null),
+    @required this.details,
+  })  : assert(useColorsOnCard != null && details != null),
         super(key: key);
-   @override
+  @override
   Widget build(BuildContext context) {
-    return FutureBuilder<IndustryDetails>(
-      builder: (context, snapshot) {
-        if (snapshot.connectionState != ConnectionState.done) {
-          return Container(height: 40);
-        } else if (snapshot.hasError) {
-          print(snapshot.error.toString());
-          return Container();
-        } else {
-          return InfoCard(
-            color: useColorsOnCard ? Colors.yellow : null,
-            heading: 'Industries',
-            title: snapshot.data.primary,
-            subtitle: snapshot.data.secondary.join(','),
-          );
-        }
-      },
-      initialData: IndustryDetails.empty(),
-      future: _getData(context),
+    return InfoCard(
+      color: useColorsOnCard ? Colors.yellow : null,
+      heading: 'Industries',
+      title: details.primary,
+      subtitle: details.secondary.join(','),
     );
-  }
-
-  Future<IndustryDetails> _getData(BuildContext context) async {
-    return DefaultAssetBundle.of(context)
-        .loadString("assets/data/industries.json")
-        .then((source) => Future.value(IndustryDetails.fromJson(source)));
   }
 }

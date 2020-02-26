@@ -1,22 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:pathika/airport/airport_card.dart';
-import 'package:pathika/app_drawer.dart';
-import 'package:pathika/basic_info/basic_info_loader.dart';
-import 'package:pathika/currency/currency_card.dart';
-import 'package:pathika/dance/dance_card.dart';
-import 'package:pathika/famous_people/person_list_card.dart';
-import 'package:pathika/food/food_items_list_card.dart';
-import 'package:pathika/industries/language_card.dart';
-import 'package:pathika/location_map/location_map_card.dart';
-import 'package:pathika/movies/movies_list_card.dart';
-import 'package:pathika/sports/sports_card.dart';
-import 'package:pathika/time/current_time_card.dart';
-import 'package:pathika/time_to_visit/time_to_visit_card.dart';
-import 'package:pathika/tourist_attractions/tourist_attractions_card.dart';
+import 'package:pathika/basic_info/basic_info_app_bar.dart';
 
+import 'airport/airport_card.dart';
+import 'app_drawer.dart';
+import 'basic_info/basic_info_app_bar.dart';
 import 'climate/climate_card.dart';
 import 'country/country_card.dart';
+import 'currency/currency_card.dart';
+import 'dance/dance_card.dart';
+import 'famous_people/person_list_card.dart';
+import 'food/food_items_list_card.dart';
+import 'industries/language_card.dart';
 import 'language/language_card.dart';
+import 'location_map/location_map_card.dart';
+import 'movies/movies_list_card.dart';
+import 'place_details.dart';
+import 'sports/sports_card.dart';
+import 'time/current_time_card.dart';
+import 'time_to_visit/time_to_visit_card.dart';
+import 'tourist_attractions/tourist_attractions_card.dart';
 
 void main() => runApp(PathikaApp2());
 
@@ -55,8 +57,12 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
 
   String climateValue;
 
-  changeAppTheme(
-      {ThemeData appTheme, Color textColor, bool useColorsOnCard = false}) {
+  changeAppTheme({
+    ThemeData appTheme,
+    Color textColor,
+    bool useColorsOnCard = false,
+  }) {
+    Navigator.pop(context);
     setState(() {
       this.appTheme = appTheme;
       this.textColor = textColor;
@@ -66,63 +72,138 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
 
   @override
   Widget build(BuildContext context) {
-    final mQuery = MediaQuery.of(context);
-    final orientation = mQuery.orientation;
-    final height = mQuery.size.height;
-    return Theme(
-      data: textColor == null
-          ? appTheme
-          : appTheme.copyWith(
-              textTheme: appTheme.textTheme
-                  .apply(bodyColor: textColor, displayColor: textColor),
-            ),
-      child: Scaffold(
-        drawer: AppDrawer(
-          changeAppTheme: changeAppTheme,
-        ),
-        body: NestedScrollView(
-          headerSliverBuilder: (ctx, innerBoxIsScrolled) {
-            return [
-              SliverAppBar(
-                expandedHeight: height * 0.5,
-                floating: false,
-                pinned: true,
-                flexibleSpace: BasicInfoLoader(
-                  height: height,
-                  orientation: orientation,
-                ),
+    return AnimatedSwitcher(
+      duration: const Duration(
+        milliseconds: 1000,
+      ),
+      transitionBuilder: (Widget child, Animation<double> animation) {
+        return FadeTransition(child: child, opacity: animation);
+      },
+      child: Theme(
+        key: ValueKey<String>("$useColorsOnCard$textColor$appTheme"),
+        data: textColor == null
+            ? appTheme
+            : appTheme.copyWith(
+                textTheme: appTheme.textTheme
+                    .apply(bodyColor: textColor, displayColor: textColor),
               ),
-            ];
-          },
-          body: SliverList(
-            delegate: SliverChildListDelegate.fixed(
-              [
-                SizedBox(height: 0),
-                CountryCard(useColorsOnCard: useColorsOnCard),
-                LanguageCard(useColorsOnCard: useColorsOnCard),
-                CurrencyCard(useColorsOnCard: useColorsOnCard),
-                CurrentTimeCard(
-                  useColorsOnCard: useColorsOnCard,
-                  timezoneOffsetInMinute: -180,
-                ),
-                ClimateCard(
-                  useColorsOnCard: useColorsOnCard,
-                ),
-                TimeToVisitCard(useColorsOnCard: useColorsOnCard),
-                TouristAttractionsCard(useColorsOnCard: useColorsOnCard),
-                FoodItemsListCard(useColorsOnCard: useColorsOnCard),
-                PersonListCard(useColorsOnCard: useColorsOnCard),
-                MoviesListCard(useColorsOnCard: useColorsOnCard),
-                DanceCard(useColorsOnCard: useColorsOnCard),
-                SportsCard(useColorsOnCard: useColorsOnCard),
-                IndustriesCard(useColorsOnCard: useColorsOnCard),
-                AirportCard(useColorsOnCard: useColorsOnCard),
-                LocationMapCard(useColorsOnCard: useColorsOnCard)
-              ],
-            ),
+        child: Scaffold(
+          drawer: AppDrawer(
+            changeAppTheme: changeAppTheme,
+          ),
+          body: FutureBuilder<PlaceDetails>(
+            builder: (context, snapshot) {
+              if (snapshot.connectionState != ConnectionState.done) {
+                return Center(
+                  child: CircularProgressIndicator(),
+                );
+              } else if (snapshot.hasError) {
+                return Center(
+                  child: Text('Error occured.\n ${snapshot.error.toString()}'),
+                );
+              } else {
+                return mapPlaceDetailsDataToUI(context, snapshot.data);
+              }
+            },
+            initialData: PlaceDetails.empty(),
+            future: _getData(context),
           ),
         ),
       ),
     );
+  }
+
+  Widget mapPlaceDetailsDataToUI(
+      BuildContext context, PlaceDetails placeDetails) {
+    final mQuery = MediaQuery.of(context);
+    final orientation = mQuery.orientation;
+    final height = mQuery.size.height;
+
+    return CustomScrollView(
+      slivers: <Widget>[
+        SliverAppBar(
+          expandedHeight: height * 0.5,
+          floating: false,
+          pinned: true,
+          flexibleSpace: BasicInfoAppBar(
+            height: height,
+            orientation: orientation,
+            basicInfo: placeDetails.basicInfo,
+          ),
+        ),
+        SliverList(
+          delegate: SliverChildListDelegate.fixed(
+            [
+              SizedBox(height: 0),
+              CountryCard(
+                details: placeDetails.countryDetails,
+                useColorsOnCard: useColorsOnCard,
+              ),
+              LanguageCard(
+                details: placeDetails.languageDetails,
+                useColorsOnCard: useColorsOnCard,
+              ),
+              CurrencyCard(
+                details: placeDetails.currencyDetails,
+                useColorsOnCard: useColorsOnCard,
+              ),
+              CurrentTimeCard(
+                  useColorsOnCard: useColorsOnCard,
+                  timezoneOffsetInMinute: placeDetails.timezoneOffsetInMinutes),
+              ClimateCard(
+                details: placeDetails.climateDetails,
+                useColorsOnCard: useColorsOnCard,
+              ),
+              TimeToVisitCard(
+                details: placeDetails.timeToVisitDetails,
+                useColorsOnCard: useColorsOnCard,
+              ),
+              TouristAttractionsCard(
+                details: placeDetails.touristPlacesList,
+                useColorsOnCard: useColorsOnCard,
+              ),
+              FoodItemsListCard(
+                details: placeDetails.foodItemsList,
+                useColorsOnCard: useColorsOnCard,
+              ),
+              PersonListCard(
+                details: placeDetails.personsList,
+                useColorsOnCard: useColorsOnCard,
+              ),
+              MoviesListCard(
+                details: placeDetails.moviesList,
+                useColorsOnCard: useColorsOnCard,
+              ),
+              DanceCard(
+                details: placeDetails.danceDetails,
+                useColorsOnCard: useColorsOnCard,
+              ),
+              SportsCard(
+                details: placeDetails.sportsDetails,
+                useColorsOnCard: useColorsOnCard,
+              ),
+              IndustriesCard(
+                details: placeDetails.industriesDetails,
+                useColorsOnCard: useColorsOnCard,
+              ),
+              AirportCard(
+                details: placeDetails.airport,
+                useColorsOnCard: useColorsOnCard,
+              ),
+              LocationMapCard(
+                details: placeDetails.locationMapList,
+                useColorsOnCard: useColorsOnCard,
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  Future<PlaceDetails> _getData(BuildContext context) async {
+    return DefaultAssetBundle.of(context)
+        .loadString("assets/data/details.json")
+        .then((source) => Future.value(PlaceDetails.fromJson(source)));
   }
 }

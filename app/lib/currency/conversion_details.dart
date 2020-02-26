@@ -9,7 +9,7 @@ class ConversionDetails {
   });
 
   factory ConversionDetails.empty() {
-    return ConversionDetails(items: []);
+    return ConversionDetails(items: [ConversionItem.empty()]);
   }
 
   ConversionDetails copyWith({

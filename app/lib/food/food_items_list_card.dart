@@ -1,47 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:pathika/food/food_item_card.dart';
-import 'package:pathika/food/food_item_details.dart';
-import 'package:pathika/food/food_items_list.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../common/info_card.dart';
+import 'food_item_card.dart';
+import 'food_item_details.dart';
+import 'food_items_list.dart';
 
 class FoodItemsListCard extends StatelessWidget {
   final bool useColorsOnCard;
+  final FoodItemsList details;
   FoodItemsListCard({
     Key key,
     @required this.useColorsOnCard,
-  })  : assert(useColorsOnCard != null),
+    @required this.details,
+  })  : assert(useColorsOnCard != null && details != null),
         super(key: key);
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<FoodItemsList>(
-      builder: (context, snapshot) {
-        if (snapshot.connectionState != ConnectionState.done) {
-          return Container(height: 40);
-        } else if (snapshot.hasError) {
-          print(snapshot.error.toString());
-          return Container();
-        } else {
-          return InfoCard(
-            color: useColorsOnCard ? Colors.teal : null,
-            heading: 'Food',
-            body: _FoodItemsListCardInternal(
-              useColorsOnCard: useColorsOnCard,
-              items: snapshot.data.items,
-            ),
-          );
-        }
-      },
-      initialData: FoodItemsList.empty(),
-      future: _getData(context),
+    return InfoCard(
+      color: useColorsOnCard ? Colors.teal : null,
+      heading: 'Food',
+      body: _FoodItemsListCardInternal(
+        useColorsOnCard: useColorsOnCard,
+        items: details.items,
+      ),
     );
-  }
-
-  Future<FoodItemsList> _getData(BuildContext context) async {
-    return DefaultAssetBundle.of(context)
-        .loadString("assets/data/food.json")
-        .then((source) => Future.value(FoodItemsList.fromJson(source)));
   }
 }
 
@@ -94,12 +77,11 @@ class __FoodItemsListCardInternalState
     setState(() {
       showVegOnly = !showVegOnly;
       if (showVegOnly) {
-          _filteredItems = widget.items
-              .where((element) => element.isNonVeg == false)
-              .toList();
-        } else {
-          _filteredItems = []..addAll(widget.items);
-        }
+        _filteredItems =
+            widget.items.where((element) => element.isNonVeg == false).toList();
+      } else {
+        _filteredItems = []..addAll(widget.items);
+      }
     });
     SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.setBool('FOOD_VEG_NON_VEG_FILTER', showVegOnly);

@@ -6,19 +6,20 @@ class CurrencyValue extends StatelessWidget {
   final String to;
   final String symbol;
 
-  const CurrencyValue({Key key, this.from, this.to, this.symbol}) : super(key: key);
+  const CurrencyValue({Key key, this.from, this.to, this.symbol})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<ConversionDetails>(
       builder: (context, snapshot) {
-        if (snapshot.connectionState != ConnectionState.done) {
-          return Container(height: 40);
-        } else if (snapshot.hasError) {
+        if (snapshot.hasError) {
           print(snapshot.error.toString());
           return Container();
         } else {
-          final value = snapshot.data.items.firstWhere((element) => element.from == from && element.to == to).value;
+          final value = snapshot.data.items
+              .firstWhere((element) => element.from == from && element.to == to, orElse: () => snapshot.data.items[0],)
+              .value;
           return Text(
             '${symbol}1 = ₹${value.toStringAsPrecision(2)}',
             style: TextStyle(

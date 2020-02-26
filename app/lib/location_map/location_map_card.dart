@@ -5,37 +5,19 @@ import 'location_map_details.dart';
 
 class LocationMapCard extends StatelessWidget {
   final bool useColorsOnCard;
+  final LocationMapDetails details;
   LocationMapCard({
     Key key,
     @required this.useColorsOnCard,
-  })  : assert(useColorsOnCard != null),
+    @required this.details,
+  })  : assert(useColorsOnCard != null && details != null),
         super(key: key);
   @override
   Widget build(BuildContext context) {
-    print('locationmapcard build called');
-    return FutureBuilder<LocationMapDetails>(
-      builder: (context, snapshot) {
-        if (snapshot.connectionState != ConnectionState.done) {
-          return Container(height: 40);
-        } else if (snapshot.hasError) {
-          print(snapshot.error.toString());
-          return Container();
-        } else {
-          return _LocationMapStackCardInternal(
-            useColorsOnCard: useColorsOnCard,
-            items: snapshot.data.items,
-          );
-        }
-      },
-      initialData: LocationMapDetails.empty(),
-      future: _getData(context),
+    return _LocationMapStackCardInternal(
+      useColorsOnCard: useColorsOnCard,
+      items: details.items,
     );
-  }
-
-  Future<LocationMapDetails> _getData(BuildContext context) async {
-    return DefaultAssetBundle.of(context)
-        .loadString("assets/data/location_map.json")
-        .then((source) => Future.value(LocationMapDetails.fromJson(source)));
   }
 }
 
