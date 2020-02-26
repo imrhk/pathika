@@ -95,8 +95,9 @@ class __FoodItemsListCardInternalState
           width: double.infinity,
           height: 250,
           child: ListView.builder(
+            physics: BouncingScrollPhysics(),
             scrollDirection: Axis.horizontal,
-            shrinkWrap: true,
+            shrinkWrap: false,
             itemBuilder: (context, index) {
               final item = _filteredItems[index];
               return FoodItemCard(

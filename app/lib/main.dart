@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pathika/basic_info/basic_info_app_bar.dart';
+import 'package:flutter/rendering.dart';
 
 import 'airport/airport_card.dart';
 import 'app_drawer.dart';
@@ -19,6 +19,7 @@ import 'sports/sports_card.dart';
 import 'time/current_time_card.dart';
 import 'time_to_visit/time_to_visit_card.dart';
 import 'tourist_attractions/tourist_attractions_card.dart';
+import 'widgets/translate_list_item.dart';
 
 void main() => runApp(PathikaApp2());
 
@@ -57,6 +58,36 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
 
   String climateValue;
 
+  double _previousOffset = -1;
+  ScrollController _scrollController = ScrollController();
+  ScrollDirection _verticalScrollDirection = ScrollDirection.idle;
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  ScrollDirection getVerticalScrollDirection() {
+    return _verticalScrollDirection;
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _scrollController.addListener(() {
+      double currentOffset = _scrollController.offset;
+      if (currentOffset > _previousOffset) {
+        _verticalScrollDirection = ScrollDirection.forward;
+      } else if (currentOffset < _previousOffset) {
+        _verticalScrollDirection = ScrollDirection.reverse;
+      } else {
+        _verticalScrollDirection = ScrollDirection.idle;
+      }
+      _previousOffset = currentOffset;
+    });
+  }
+
   changeAppTheme({
     ThemeData appTheme,
     Color textColor,
@@ -72,6 +103,7 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
 
   @override
   Widget build(BuildContext context) {
+    _previousOffset = 0;
     return AnimatedSwitcher(
       duration: const Duration(
         milliseconds: 1000,
@@ -120,6 +152,8 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
     final height = mQuery.size.height;
 
     return CustomScrollView(
+      controller: _scrollController,
+      physics: BouncingScrollPhysics(),
       slivers: <Widget>[
         SliverAppBar(
           expandedHeight: height * 0.5,
@@ -194,7 +228,14 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                 details: placeDetails.locationMapList,
                 useColorsOnCard: useColorsOnCard,
               ),
-            ],
+            ]
+                .map((widget) => TranslateListItem(
+                    traslateHeight: 600,
+                    child: widget,
+                    duration: Duration(seconds: 1),
+                    axis: Axis.vertical,
+                    getScrollDirection: getVerticalScrollDirection))
+                .toList(),
           ),
         ),
       ],

@@ -22,9 +22,10 @@ class TouristAttractionsCard extends StatelessWidget {
       body: Container(
         height: 300,
         child: ListView.builder(
+          physics: BouncingScrollPhysics(),
           scrollDirection: Axis.horizontal,
           padding: EdgeInsets.all(0),
-          shrinkWrap: true,
+          shrinkWrap: false,
           itemBuilder: (ctx, index) {
             final item = details.items[index];
             return TouristAttractionItemCard(
