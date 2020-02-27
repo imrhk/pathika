@@ -24,6 +24,8 @@ flutter:
   assets:
     - assets/data/details.json
     - assets/data/currency_conversion.json
+    - assets/data/languages.json
+    - assets/data/places.json
     
     
     

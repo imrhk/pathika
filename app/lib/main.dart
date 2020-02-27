@@ -1,8 +1,12 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'airport/airport_card.dart';
 import 'app_drawer.dart';
+import 'app_language/select_language_page.dart';
 import 'basic_info/basic_info_app_bar.dart';
 import 'climate/climate_card.dart';
 import 'country/country_card.dart';
@@ -33,14 +37,78 @@ class PathikaApp2 extends StatelessWidget {
           primaryColor: Colors.black,
           textTheme: Theme.of(context).textTheme),
       // theme: ThemeData.dark(),
-      home: PlaceDetailsPage(placeId: 'buenos_aires'),
+      home: InitPage(),
     );
+  }
+}
+
+class InitPage extends StatefulWidget {
+  @override
+  _InitPageState createState() => _InitPageState();
+}
+
+class _InitPageState extends State<InitPage> {
+  String _language;
+  String _placeId;
+  @override
+  void initState() {
+    super.initState();
+    _getLanguage(context);
+  }
+
+  _getLanguage(BuildContext context) async {
+    final sharedPref = await SharedPreferences.getInstance();
+    if (sharedPref.containsKey(APP_LANGUAGE)) {
+      String language = sharedPref.getString(APP_LANGUAGE);
+      if (language != null && language.trim() != "") {
+        _language = language;
+        _getLatestPlace(context);
+        return;
+      }
+    }
+    await Navigator.of(context)
+        .push(MaterialPageRoute(builder: (ctx) => SelectLanguagePage()));
+    _getLanguage(context);
+  }
+
+  _getLatestPlace(BuildContext context) async {
+    try {
+      String data = await DefaultAssetBundle.of(context)
+          .loadString("assets/data/places.json");
+      List<String> places =
+          (json.decode(data) as List).map((e) => e.toString()).toList();
+      if (places.length > 0) {
+        setState(() {
+          _placeId = places[places.length - 1];
+        });
+      }
+    } catch (onError) {}
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (_placeId != null && _language != null) {
+      return PlaceDetailsPage(
+        placeId: _placeId,
+        language: _language,
+      );
+    } else {
+      return Scaffold(
+        body: Container(
+          child: Center(
+            child: CircularProgressIndicator(),
+          ),
+        ),
+      );
+    }
   }
 }
 
 class PlaceDetailsPage extends StatefulWidget {
   final String placeId;
-  const PlaceDetailsPage({Key key, @required this.placeId})
+  final String language;
+  const PlaceDetailsPage(
+      {Key key, @required this.placeId, this.language = "en"})
       : assert(placeId != null),
         super(key: key);
 
