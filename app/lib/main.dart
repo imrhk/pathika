@@ -234,34 +234,6 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
             basicInfo: placeDetails.basicInfo,
           ),
         ),
-        SliverToBoxAdapter(
-          child: Container(
-            padding: EdgeInsets.only(
-              bottom: 4,
-              right: 10,
-            ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                SizedBox(height: 10),
-                Container(
-                  width: double.infinity,
-                  child: Text(
-                    'Above photo is from: ${placeDetails.basicInfo.place}',
-                    textAlign: TextAlign.end,
-                  ),
-                ),
-                getAttributionWidget(
-                    context,
-                    placeDetails.basicInfo.photoBy,
-                    placeDetails.basicInfo.attributionUrl,
-                    placeDetails.basicInfo.licence),
-              ],
-            ),
-          ),
-        ),
         SliverList(
           delegate: SliverChildListDelegate.fixed(
             [
@@ -332,6 +304,36 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                     axis: Axis.vertical,
                     getScrollDirection: getVerticalScrollDirection))
                 .toList(),
+          ),
+        ),
+         SliverToBoxAdapter(
+          child: Container(
+            padding: EdgeInsets.only(
+              bottom: 4,
+              right: 10,
+              left: 10,
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                SizedBox(height: 4),
+                Divider(thickness: 2,),
+                Container(
+                  width: double.infinity,
+                  child: Text(
+                    'Cover photo location: ${placeDetails.basicInfo.place}',
+                    textAlign: TextAlign.end,
+                  ),
+                ),
+                getAttributionWidget(
+                    context,
+                    placeDetails.basicInfo.photoBy,
+                    placeDetails.basicInfo.attributionUrl,
+                    placeDetails.basicInfo.licence),
+              ],
+            ),
           ),
         ),
       ],
