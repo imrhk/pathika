@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:pathika/common/attributions.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'airport/airport_card.dart';
@@ -233,10 +234,37 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
             basicInfo: placeDetails.basicInfo,
           ),
         ),
+        SliverToBoxAdapter(
+          child: Container(
+            padding: EdgeInsets.only(
+              bottom: 4,
+              right: 10,
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                SizedBox(height: 10),
+                Container(
+                  width: double.infinity,
+                  child: Text(
+                    'Above photo is from: ${placeDetails.basicInfo.place}',
+                    textAlign: TextAlign.end,
+                  ),
+                ),
+                getAttributionWidget(
+                    context,
+                    placeDetails.basicInfo.photoBy,
+                    placeDetails.basicInfo.attributionUrl,
+                    placeDetails.basicInfo.licence),
+              ],
+            ),
+          ),
+        ),
         SliverList(
           delegate: SliverChildListDelegate.fixed(
             [
-              SizedBox(height: 0),
               CountryCard(
                 details: placeDetails.countryDetails,
                 useColorsOnCard: useColorsOnCard,
