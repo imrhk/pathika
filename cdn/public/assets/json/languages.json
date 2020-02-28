@@ -1,0 +1,42 @@
+[
+    {
+        "id": "en",
+        "name": "English",
+        "msg": "Hello!"
+    },
+    {
+        "id": "hi",
+        "name": "हिंदी",
+        "msg": "नमस्ते!"
+    },
+    {
+        "id": "es",
+        "name": "Español",
+        "msg": "Hola!"
+    },
+    {
+        "id": "fr",
+        "name": "Français",
+        "msg": "Bonjour!"
+    },
+    {
+        "id": "ja",
+        "name": "日本語",
+        "msg": "こんにちは！"
+    },
+    {
+        "id": "pa",
+        "name": "ਪੰਜਾਬੀ",
+        "msg": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ!"
+    },
+    {
+        "id": "it",
+        "msg": "Ciao!",
+        "name": "Italiano"
+    },
+    {
+        "id" : "de",
+        "msg" : "Hallo!",
+        "name" : "Deutsch"
+    }
+]
