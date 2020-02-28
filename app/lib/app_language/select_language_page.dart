@@ -1,10 +1,16 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:pathika/app_language/app_language.dart';
+import 'package:pathika/core/repository.dart';
+import 'app_language.dart';
+import '../common/constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SelectLanguagePage extends StatefulWidget {
+  final HttpClient httpClient;
+
+  const SelectLanguagePage({Key key, this.httpClient}) : super(key: key);
   @override
   _SelectLanguagePageState createState() => _SelectLanguagePageState();
 }
@@ -131,9 +137,10 @@ class _SelectLanguagePageState extends State<SelectLanguagePage> {
   }
 
   Future<List<AppLanguage>> _getData(BuildContext context) async {
-    return DefaultAssetBundle.of(context)
-        .loadString("assets/data/languages.json")
-        .then((source) =>
-            Future.value(AppLanguage.fromList(json.decode(source))));
+    return Repository.getResponse(
+      httpClient: widget.httpClient,
+      url: '$BASE_URL/assets/json/languages.json',
+      cacheTime: Duration(days: 1),
+    ).then((source) => Future.value(AppLanguage.fromList(json.decode(source))));
   }
 }

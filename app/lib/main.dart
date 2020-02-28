@@ -4,6 +4,8 @@ import 'dart:io' show HttpClient;
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:pathika/common/attributions.dart';
+import 'package:pathika/common/constants.dart';
+import 'package:pathika/core/repository.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'airport/airport_card.dart';
@@ -27,14 +29,15 @@ import 'time_to_visit/time_to_visit_card.dart';
 import 'tourist_attractions/tourist_attractions_card.dart';
 import 'widgets/translate_list_item.dart';
 
-void main() => runApp(PathikaApp2(httpClient: HttpClient(),));
-
+void main() => runApp(PathikaApp2(
+      httpClient: HttpClient(),
+    ));
 
 class PathikaApp2 extends StatelessWidget {
   final HttpClient httpClient;
 
   const PathikaApp2({Key key, this.httpClient}) : super(key: key);
-  
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -77,15 +80,19 @@ class _InitPageState extends State<InitPage> {
         return;
       }
     }
-    await Navigator.of(context)
-        .push(MaterialPageRoute(builder: (ctx) => SelectLanguagePage()));
+    await Navigator.of(context).push(MaterialPageRoute(
+        builder: (ctx) => SelectLanguagePage(
+              httpClient: widget.httpClient,
+            )));
     _getLanguage(context);
   }
 
   _getLatestPlace(BuildContext context) async {
     try {
-      String data = await DefaultAssetBundle.of(context)
-          .loadString("assets/data/places.json");
+      String data = await Repository.getResponse(
+        httpClient: widget.httpClient,
+        url: '$BASE_URL/assets/json/places.json',
+      );
       List<String> places =
           (json.decode(data) as List).map((e) => e.toString()).toList();
       if (places.length > 0) {
@@ -351,13 +358,21 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
             ),
           ),
         ),
+        SliverToBoxAdapter(
+          child: Container(
+            width: double.infinity,
+          ),
+        )
       ],
     );
   }
 
   Future<PlaceDetails> _getData(BuildContext context) async {
-    return DefaultAssetBundle.of(context)
-        .loadString("assets/data/details.json")
-        .then((source) => Future.value(PlaceDetails.fromJson(source)));
+    return Repository.getResponse(
+      httpClient: widget.httpClient,
+      url:
+          '$BASE_URL/assets/json/${widget.placeId}/details_${widget.language}.json',
+      cacheTime: Duration(days: 7),
+    ).then((source) => Future.value(PlaceDetails.fromJson(source)));
   }
 }
