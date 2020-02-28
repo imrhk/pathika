@@ -65,7 +65,6 @@ class _SelectLanguagePageState extends State<SelectLanguagePage> {
             );
           } else {
             final appLanguages = snapshot.data;
-            print(snapshot.data);
             return Padding(
               padding: const EdgeInsets.only(left: 8, right: 8),
               child: GridView.builder(

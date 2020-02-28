@@ -1,3 +1,5 @@
+import 'dart:io' show HttpClient;
+
 import 'package:flutter/material.dart';
 
 import '../common/info_card.dart';
@@ -7,10 +9,12 @@ import 'currency_value.dart';
 class CurrencyCard extends StatelessWidget {
   final bool useColorsOnCard;
   final CurrencyDetails details;
+  final HttpClient httpclient;
   CurrencyCard({
     Key key,
     @required this.useColorsOnCard,
     @required this.details,
+    this.httpclient,
   })  : assert(useColorsOnCard != null && details != null),
         super(key: key);
   @override
@@ -21,9 +25,9 @@ class CurrencyCard extends StatelessWidget {
       title: details.name,
       symbol: details.symbol,
       footer: CurrencyValue(
-        from: "ARS",
-        to: "INR",
-        symbol: "\$",
+        from: details.code,
+        symbol: details.symbol,
+        httpClient: httpclient,
       ),
     );
   }

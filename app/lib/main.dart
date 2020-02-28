@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io' show HttpClient;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -26,9 +27,14 @@ import 'time_to_visit/time_to_visit_card.dart';
 import 'tourist_attractions/tourist_attractions_card.dart';
 import 'widgets/translate_list_item.dart';
 
-void main() => runApp(PathikaApp2());
+void main() => runApp(PathikaApp2(httpClient: HttpClient(),));
+
 
 class PathikaApp2 extends StatelessWidget {
+  final HttpClient httpClient;
+
+  const PathikaApp2({Key key, this.httpClient}) : super(key: key);
+  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -38,12 +44,16 @@ class PathikaApp2 extends StatelessWidget {
           primaryColor: Colors.black,
           textTheme: Theme.of(context).textTheme),
       // theme: ThemeData.dark(),
-      home: InitPage(),
+      home: InitPage(httpClient: httpClient),
     );
   }
 }
 
 class InitPage extends StatefulWidget {
+  final HttpClient httpClient;
+
+  const InitPage({Key key, this.httpClient}) : super(key: key);
+
   @override
   _InitPageState createState() => _InitPageState();
 }
@@ -92,6 +102,7 @@ class _InitPageState extends State<InitPage> {
       return PlaceDetailsPage(
         placeId: _placeId,
         language: _language,
+        httpClient: widget.httpClient,
       );
     } else {
       return Scaffold(
@@ -108,8 +119,9 @@ class _InitPageState extends State<InitPage> {
 class PlaceDetailsPage extends StatefulWidget {
   final String placeId;
   final String language;
+  final HttpClient httpClient;
   const PlaceDetailsPage(
-      {Key key, @required this.placeId, this.language = "en"})
+      {Key key, @required this.placeId, this.language = "en", this.httpClient})
       : assert(placeId != null),
         super(key: key);
 
@@ -248,6 +260,7 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
               CurrencyCard(
                 details: placeDetails.currencyDetails,
                 useColorsOnCard: useColorsOnCard,
+                httpclient: widget.httpClient,
               ),
               CurrentTimeCard(
                   useColorsOnCard: useColorsOnCard,
@@ -306,7 +319,7 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                 .toList(),
           ),
         ),
-         SliverToBoxAdapter(
+        SliverToBoxAdapter(
           child: Container(
             padding: EdgeInsets.only(
               bottom: 4,
@@ -319,7 +332,9 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 SizedBox(height: 4),
-                Divider(thickness: 2,),
+                Divider(
+                  thickness: 2,
+                ),
                 Container(
                   width: double.infinity,
                   child: Text(
