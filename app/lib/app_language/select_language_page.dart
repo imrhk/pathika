@@ -139,7 +139,7 @@ class _SelectLanguagePageState extends State<SelectLanguagePage> {
   Future<List<AppLanguage>> _getData(BuildContext context) async {
     return Repository.getResponse(
       httpClient: widget.httpClient,
-      url: '$BASE_URL/assets/json/languages.json',
+      url: '$BASE_URL/assets/json/$API_VERSION/languages.json',
       cacheTime: Duration(days: 1),
     ).then((source) => Future.value(AppLanguage.fromList(json.decode(source))));
   }

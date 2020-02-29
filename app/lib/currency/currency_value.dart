@@ -24,14 +24,20 @@ class CurrencyValue extends StatelessWidget {
       builder: (context, snapshot) {
         if (snapshot.hasError) {
           print(snapshot.error.toString());
-          return Container();
+          return Text(
+            ' ',
+            style : TextStyle(
+              fontSize: 20,
+            ),
+            textAlign: TextAlign.end,
+          );
         } else {
           final conversionItem = snapshot.data;
           final symbolTo = NumberFormat.simpleCurrency(name: conversionItem.to);
           final symbolFrom =
               NumberFormat.simpleCurrency(name: conversionItem.from);
           final quantity = conversionItem.quantity;
-          final valueTo =  conversionItem.value * quantity;
+          final valueTo = conversionItem.value * quantity;
           final valueFrom = quantity;
           final currencySymbolTextTo =
               symbolTo.currencySymbol == symbolFrom.currencySymbol
@@ -98,7 +104,7 @@ class CurrencyValue extends StatelessWidget {
         int quantity = 1;
         double v = value[0];
         while (v < 1.0) {
-          quantity*=10;
+          quantity *= 10;
           v *= 10;
         }
         return ConversionItem(

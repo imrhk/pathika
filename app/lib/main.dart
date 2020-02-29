@@ -6,6 +6,7 @@ import 'package:flutter/rendering.dart';
 import 'package:pathika/common/attributions.dart';
 import 'package:pathika/common/constants.dart';
 import 'package:pathika/core/repository.dart';
+import 'package:pathika/theme/app_theme.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'airport/airport_card.dart';
@@ -33,29 +34,53 @@ void main() => runApp(PathikaApp2(
       httpClient: HttpClient(),
     ));
 
-class PathikaApp2 extends StatelessWidget {
+class PathikaApp2 extends StatefulWidget {
   final HttpClient httpClient;
-
   const PathikaApp2({Key key, this.httpClient}) : super(key: key);
+
+  @override
+  _PathikaApp2State createState() => _PathikaApp2State();
+}
+
+class _PathikaApp2State extends State<PathikaApp2> {
+
+  AppTheme appTheme;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadUserTheme();
+  }
+
+  _loadUserTheme() async {
+    SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+    if(sharedPreferences.containsKey('APP_THEME')) {
+      final appThemeValue = sharedPreferences.getString('APP_THEME');
+      setState(() {
+        appTheme = appThemeMap[appThemeValue]();      
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
+      theme: appTheme.themeData ?? ThemeData(
           accentColor: Colors.white,
           primaryColor: Colors.black,
           textTheme: Theme.of(context).textTheme),
       // theme: ThemeData.dark(),
-      home: InitPage(httpClient: httpClient),
+      home: InitPage(httpClient: widget.httpClient, appTheme: appTheme ?? AppTheme.Light(),),
     );
   }
 }
 
 class InitPage extends StatefulWidget {
   final HttpClient httpClient;
+  final AppTheme appTheme;
 
-  const InitPage({Key key, this.httpClient}) : super(key: key);
+  const InitPage({Key key, this.httpClient, this.appTheme}) : super(key: key);
 
   @override
   _InitPageState createState() => _InitPageState();
@@ -67,6 +92,7 @@ class _InitPageState extends State<InitPage> {
   @override
   void initState() {
     super.initState();
+    
     _getLanguage(context);
   }
 
@@ -91,7 +117,7 @@ class _InitPageState extends State<InitPage> {
     try {
       String data = await Repository.getResponse(
         httpClient: widget.httpClient,
-        url: '$BASE_URL/assets/json/places.json',
+        url: '$BASE_URL/assets/json/$API_VERSION/places.json',
       );
       List<String> places =
           (json.decode(data) as List).map((e) => e.toString()).toList();
@@ -110,6 +136,7 @@ class _InitPageState extends State<InitPage> {
         placeId: _placeId,
         language: _language,
         httpClient: widget.httpClient,
+        appTheme: widget.appTheme,
       );
     } else {
       return Scaffold(
@@ -127,20 +154,27 @@ class PlaceDetailsPage extends StatefulWidget {
   final String placeId;
   final String language;
   final HttpClient httpClient;
+  final AppTheme appTheme;
   const PlaceDetailsPage(
-      {Key key, @required this.placeId, this.language = "en", this.httpClient})
+      {Key key,
+      @required this.placeId,
+      this.language = "en",
+      this.httpClient,
+      this.appTheme})
       : assert(placeId != null),
         super(key: key);
 
   @override
-  _PlaceDetailsPageState createState() => _PlaceDetailsPageState();
+  _PlaceDetailsPageState createState() => _PlaceDetailsPageState(
+      appTheme: appTheme.themeData,
+      textColor: appTheme.textColor,
+      useColorsOnCard: appTheme.useColorsOnCard);
 }
 
 class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
-  ThemeData appTheme = ThemeData.light()
-      .copyWith(primaryColor: Colors.black, accentColor: Colors.lightBlue);
+  ThemeData appTheme;
   Color textColor;
-  bool useColorsOnCard = false;
+  bool useColorsOnCard;
   bool isFirst = false;
   bool showVeg = true;
 
@@ -149,6 +183,9 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
   double _previousOffset = -1;
   ScrollController _scrollController = ScrollController();
   ScrollDirection _verticalScrollDirection = ScrollDirection.idle;
+
+  _PlaceDetailsPageState(
+      {this.appTheme, this.textColor, this.useColorsOnCard = false});
 
   @override
   void dispose() {
@@ -176,17 +213,17 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
     });
   }
 
-  changeAppTheme({
-    ThemeData appTheme,
-    Color textColor,
-    bool useColorsOnCard = false,
-  }) {
+  changeAppTheme(AppTheme appTheme) async {
     Navigator.pop(context);
     setState(() {
-      this.appTheme = appTheme;
-      this.textColor = textColor;
-      this.useColorsOnCard = useColorsOnCard;
+      this.appTheme = appTheme.themeData;
+      this.textColor = appTheme.textColor;
+      this.useColorsOnCard = appTheme.useColorsOnCard;
     });
+
+    SharedPreferences.getInstance().then(
+        (sharedPref) => sharedPref.setString('APP_THEME', appTheme.label));
+    //todo save theme
   }
 
   @override
@@ -371,7 +408,7 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
     return Repository.getResponse(
       httpClient: widget.httpClient,
       url:
-          '$BASE_URL/assets/json/${widget.placeId}/details_${widget.language}.json',
+          '$BASE_URL/assets/json/$API_VERSION/${widget.placeId}/details_${widget.language}.json',
       cacheTime: Duration(days: 7),
     ).then((source) => Future.value(PlaceDetails.fromJson(source)));
   }

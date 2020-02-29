@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'theme/app_theme.dart';
+
 class AppDrawer extends StatelessWidget {
   final Function changeAppTheme;
 
@@ -20,56 +22,31 @@ class AppDrawer extends StatelessWidget {
                 ListTile(
                     title: Text('Light'),
                     onTap: () {
-                      changeAppTheme(
-                          appTheme: ThemeData.light().copyWith(
-                              primaryColor: Colors.black,
-                              accentColor: Colors.lightBlue),
-                          useColorsOnCard: false,
-                          textColor: null);
+                      changeAppTheme(AppTheme.Light());
                     }),
                 Divider(),
                 ListTile(
                     title: Text('Colorful Light'),
                     onTap: () {
-                      changeAppTheme(
-                          appTheme: ThemeData.light().copyWith(
-                              primaryColor: Colors.black,
-                              accentColor: Colors.pinkAccent),
-                          useColorsOnCard: true,
-                          textColor: null);
+                      changeAppTheme(AppTheme.ColorfulLight());
                     }),
                 Divider(),
                 ListTile(
                     title: Text('Dark'),
                     onTap: () {
-                      changeAppTheme(
-                          appTheme: ThemeData.dark()
-                              .copyWith(primaryColor: Colors.black),
-                          useColorsOnCard: false,
-                          textColor: null);
+                      changeAppTheme(AppTheme.Dark());
                     }),
                 Divider(),
                 ListTile(
                     title: Text('Colorful Dark'),
                     onTap: () {
-                      changeAppTheme(
-                          appTheme: ThemeData.dark()
-                              .copyWith(primaryColor: Colors.black),
-                          useColorsOnCard: true,
-                          textColor: null);
+                      changeAppTheme(AppTheme.ColorfulDark());
                     }),
                 Divider(),
                 ListTile(
                     title: Text('Gold Dark'),
                     onTap: () {
-                      changeAppTheme(
-                        appTheme: ThemeData.dark().copyWith(
-                          primaryColor: Colors.black,
-                          accentColor: Color.fromARGB(255, 255, 215, 0),
-                        ),
-                        useColorsOnCard: false,
-                        textColor: Color.fromARGB(255, 255, 215, 0),
-                      );
+                      changeAppTheme(AppTheme.GoldDark());
                     }),
                 Divider(),
               ],
