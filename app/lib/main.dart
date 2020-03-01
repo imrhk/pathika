@@ -44,7 +44,7 @@ class PathikaApp2 extends StatefulWidget {
 
 class _PathikaApp2State extends State<PathikaApp2> {
 
-  AppTheme appTheme;
+  AppTheme appTheme = AppTheme.Light();
 
   @override
   void initState() {

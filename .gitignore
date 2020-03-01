@@ -34,3 +34,4 @@ Debug.xcconfig
 Release.xcconfig
 project.pbxproj
 contents.xcworkspacedata
+settings_aar.gradle

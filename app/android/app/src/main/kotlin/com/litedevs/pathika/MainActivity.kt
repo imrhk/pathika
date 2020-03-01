@@ -1,4 +1,4 @@
-package com.example.pathika
+package com.litedevs.pathika
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
