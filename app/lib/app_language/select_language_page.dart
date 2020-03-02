@@ -13,8 +13,10 @@ import 'app_language.dart';
 
 class SelectLanguagePage extends StatefulWidget {
   final HttpClient httpClient;
+  final String currentLanguage;
+  final bool fromSettings;
 
-  const SelectLanguagePage({Key key, this.httpClient}) : super(key: key);
+  const SelectLanguagePage({Key key, this.httpClient, this.currentLanguage, this.fromSettings = false}) : super(key: key);
   @override
   _SelectLanguagePageState createState() => _SelectLanguagePageState();
 }
@@ -32,6 +34,12 @@ class _SelectLanguagePageState extends State<SelectLanguagePage> {
   }
 
   _checkForAppLanguage() async {
+    if(widget.fromSettings) {
+      setState(() {
+        appLanguageChecked = true;
+      });
+      return;
+    }
     final sharedPref = await SharedPreferences.getInstance();
     if (sharedPref.containsKey(APP_LANGUAGE)) {
       appLangauge = sharedPref.getString(APP_LANGUAGE);
@@ -44,8 +52,6 @@ class _SelectLanguagePageState extends State<SelectLanguagePage> {
   }
 
   _saveAppLanguage(String id) async {
-    final sharedPref = await SharedPreferences.getInstance();
-    sharedPref.setString(APP_LANGUAGE, id);
     Navigator.of(context).pop(id);
   }
 
@@ -56,12 +62,14 @@ class _SelectLanguagePageState extends State<SelectLanguagePage> {
         body: Center(
           child: CircularProgressIndicator(),
         ),
+        
       );
     }
 
     return Scaffold(
       appBar: AppBar(
         title: Text('Select Language'),
+        automaticallyImplyLeading: widget.currentLanguage != null, 
       ),
       body: FutureBuilder<List<AppLanguage>>(
         builder: (ctx, snapshot) {

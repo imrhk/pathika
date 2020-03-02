@@ -113,11 +113,34 @@ class _InitPageState extends State<InitPage> {
         return;
       }
     }
-    await Navigator.of(context).push(MaterialPageRoute(
+    String language = await Navigator.of(context).push(
+      MaterialPageRoute(
         builder: (ctx) => SelectLanguagePage(
-              httpClient: widget.httpClient,
-            )));
-    _getLanguage(context);
+          httpClient: widget.httpClient,
+        ),
+      ),
+    );
+    if(language != null && language.trim() != "") {
+      sharedPref.setString(APP_LANGUAGE, language);
+      _language = language;
+      _getLatestPlace(context);
+    }
+    else {
+      _getLanguage(context);
+    }
+  }
+
+  void _appLanguageChanged(String language)async {
+    final sharedPref = await SharedPreferences.getInstance();
+    if(language != null && language.trim() != "") {
+      sharedPref.setString(APP_LANGUAGE, language);
+      _language = language;
+      _getLatestPlace(context);
+    }
+    else {
+      _getLanguage(context);
+    }
+    setState(() {});
   }
 
   _getLatestPlace(BuildContext context) async {
@@ -144,6 +167,7 @@ class _InitPageState extends State<InitPage> {
         language: _language,
         httpClient: widget.httpClient,
         appTheme: widget.appTheme,
+        appLanguageChanged: _appLanguageChanged,
       );
     } else {
       return Scaffold(
@@ -162,12 +186,14 @@ class PlaceDetailsPage extends StatefulWidget {
   final String language;
   final HttpClient httpClient;
   final AppTheme appTheme;
+  final Function appLanguageChanged;
   const PlaceDetailsPage(
       {Key key,
       @required this.placeId,
       this.language = "en",
       this.httpClient,
-      this.appTheme})
+      this.appTheme,
+      this.appLanguageChanged})
       : assert(placeId != null),
         super(key: key);
 
@@ -253,7 +279,10 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
               ),
         child: Scaffold(
           drawer: AppDrawer(
+            httpClient: widget.httpClient,
+            appLanguageChanged: widget.appLanguageChanged,
             changeAppTheme: changeAppTheme,
+            currentLanguge: widget.language,
           ),
           body: FutureBuilder<PlaceDetails>(
             builder: (context, snapshot) {
