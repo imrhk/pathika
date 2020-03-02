@@ -2,9 +2,11 @@ import 'dart:convert';
 import 'dart:io' show HttpClient;
 
 import 'package:flutter/foundation.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'airport/airport_card.dart';
 import 'app_drawer.dart';
@@ -97,7 +99,7 @@ class _InitPageState extends State<InitPage> {
   @override
   void initState() {
     super.initState();
-    
+
     _getLanguage(context);
   }
 
@@ -400,17 +402,71 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                     placeDetails.basicInfo.photoBy,
                     placeDetails.basicInfo.attributionUrl,
                     placeDetails.basicInfo.licence),
+                SizedBox(height: 4),
+                Divider(
+                  thickness: 2,
+                ),
+                SizedBox(height: 4),
+                RichText(
+                  text: TextSpan(
+                    style: TextStyle(fontStyle: FontStyle.italic),
+                    children: [
+                      WidgetSpan(
+                        child: Icon(Icons.info_outline,
+                            size: 14,
+                            color: Theme.of(context).textTheme.caption.color),
+                      ),
+                      TextSpan(
+                        text:
+                            ' If you believe there is translation issue or any other issue with the content, please report ',
+                        style: Theme.of(context).textTheme.caption,
+                      ),
+                      TextSpan(
+                        text: 'here',
+                        style: Theme.of(context).textTheme.caption.apply(
+                              decoration: TextDecoration.underline,
+                            ),
+                        recognizer: TapGestureRecognizer()
+                          ..onTap = () {
+                            _openForm();
+                          },
+                      ),
+                      WidgetSpan(
+                        child: GestureDetector(
+                          child: Icon(
+                            Icons.open_in_new,
+                            size: 14,
+                            color: Theme.of(context).textTheme.caption.color,
+                          ),
+                          onTap: _openForm,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 4),
+                Divider(
+                  thickness: 2,
+                ),
+                SizedBox(height: 20),
+                Center(
+                  child: Text(
+                    'Made with ❤️ in India',
+                    style: TextStyle(fontSize: 16),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+                SizedBox(height: 10),
               ],
             ),
           ),
         ),
-        SliverToBoxAdapter(
-          child: Container(
-            width: double.infinity,
-          ),
-        )
       ],
     );
+  }
+
+  _openForm() async {
+    launch('https://forms.gle/bb3LZhreSfeHHy1f6');
   }
 
   Future<PlaceDetails> _getData(BuildContext context) async {
