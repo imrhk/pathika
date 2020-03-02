@@ -286,5 +286,19 @@
             }
         ]
     },
-    "timezone_offset_in_minutes": -180
+    "timezone_offset_in_minutes": -180,
+    "trivia": {
+        "items": [
+            "It is the capital and largest city of Argentina.",
+            "It is located on estuary of the Rio de la Plata.",
+            "It is regarded as the 'Paris of South America'",
+            "The climate is subtropical with extreme temperatures being rare",
+            "The Buenos Aires Underground (Metro) is the oldest underground system in the Southern Hemisphere and oldest in the Spanish-speaking world",
+            "Top football clubs include Boca Juniors and River Plate and the match between them is known as Superclásico.",
+            "It hosted 1978 FIFA World Cup which Argetina won by defeating Netherlands by 5-1 in finals.",
+            "Two movies 'La historia oficial' and 'El Secreto de sus Ojos' have won Oscar in 'Best Foreign Movie' category",
+            "University of Buenos Aires has produced five Nobel Prize winners",
+            "Tango is part of the world's cultural heritage."
+        ]
+    }
 }

@@ -1,20 +1,21 @@
 import 'dart:convert';
 
-import 'package:pathika/airport/airport_details.dart';
-import 'package:pathika/basic_info/basic_info.dart';
-import 'package:pathika/climate/climate_details.dart';
-import 'package:pathika/country/country_details.dart';
-import 'package:pathika/currency/currency_details.dart';
-import 'package:pathika/dance/dance_details.dart';
-import 'package:pathika/famous_people/person_list.dart';
-import 'package:pathika/food/food_items_list.dart';
-import 'package:pathika/industries/industry_details.dart';
-import 'package:pathika/language/language_details.dart';
-import 'package:pathika/location_map/location_map_details.dart';
-import 'package:pathika/movies/movie_list.dart';
-import 'package:pathika/sports/sports_details.dart';
-import 'package:pathika/time_to_visit/time_to_visit_details.dart';
-import 'package:pathika/tourist_attractions/tourist_attractions.list.dart';
+import 'airport/airport_details.dart';
+import 'basic_info/basic_info.dart';
+import 'climate/climate_details.dart';
+import 'country/country_details.dart';
+import 'currency/currency_details.dart';
+import 'dance/dance_details.dart';
+import 'famous_people/person_list.dart';
+import 'food/food_items_list.dart';
+import 'industries/industry_details.dart';
+import 'language/language_details.dart';
+import 'location_map/location_map_details.dart';
+import 'movies/movie_list.dart';
+import 'sports/sports_details.dart';
+import 'time_to_visit/time_to_visit_details.dart';
+import 'tourist_attractions/tourist_attractions.list.dart';
+import 'trivia/trivia_list_details.dart';
 
 class PlaceDetails {
   AirportDetails airport;
@@ -33,6 +34,7 @@ class PlaceDetails {
   TimeToVisitDetails timeToVisitDetails;
   int timezoneOffsetInMinutes;
   TouristAttractionsList touristPlacesList;
+  TriviaListDetails triviaListDetails;
   PlaceDetails({
     this.airport,
     this.basicInfo,
@@ -50,6 +52,7 @@ class PlaceDetails {
     this.timeToVisitDetails,
     this.timezoneOffsetInMinutes,
     this.touristPlacesList,
+    this.triviaListDetails,
   });
 
   factory PlaceDetails.empty() {
@@ -70,6 +73,7 @@ class PlaceDetails {
       timeToVisitDetails: TimeToVisitDetails.empty(),
       timezoneOffsetInMinutes: 0,
       touristPlacesList: TouristAttractionsList.empty(),
+      triviaListDetails: TriviaListDetails.empty(),
     );
   }
 
@@ -90,6 +94,7 @@ class PlaceDetails {
     TimeToVisitDetails timeToVisit,
     int timezoneOffsetInMunites,
     TouristAttractionsList touristPlaces,
+    TriviaListDetails triviaList,
   }) {
     return PlaceDetails(
       airport: airport ?? this.airport,
@@ -106,8 +111,10 @@ class PlaceDetails {
       personsList: persons ?? this.personsList,
       sportsDetails: sports ?? this.sportsDetails,
       timeToVisitDetails: timeToVisit ?? this.timeToVisitDetails,
-      timezoneOffsetInMinutes: timezoneOffsetInMunites ?? this.timezoneOffsetInMinutes,
+      timezoneOffsetInMinutes:
+          timezoneOffsetInMunites ?? this.timezoneOffsetInMinutes,
       touristPlacesList: touristPlaces ?? this.touristPlacesList,
+      triviaListDetails: triviaList ?? this.triviaListDetails,
     );
   }
 
@@ -127,8 +134,9 @@ class PlaceDetails {
       'persons': personsList.toMap(),
       'sports': sportsDetails.toMap(),
       'time_to_visit': timeToVisitDetails.toMap(),
-      'timezone_offset_in_minutes' : timezoneOffsetInMinutes,
+      'timezone_offset_in_minutes': timezoneOffsetInMinutes,
       'tourist_places': touristPlacesList.toMap(),
+      'trivia': triviaListDetails.toMap(),
     };
   }
 
@@ -152,6 +160,7 @@ class PlaceDetails {
       timeToVisitDetails: TimeToVisitDetails.fromMap(map['time_to_visit']),
       timezoneOffsetInMinutes: map['timezone_offset_in_minutes'],
       touristPlacesList: TouristAttractionsList.fromMap(map['tourist_places']),
+      triviaListDetails: TriviaListDetails.fromMap(map['trivia']),
     );
   }
 
@@ -161,7 +170,7 @@ class PlaceDetails {
 
   @override
   String toString() {
-    return 'PlaceDetails airport: $airport, basic_info: $basicInfo, climate: $climateDetails, country: $countryDetails, currency: $currencyDetails, dance: $danceDetails, food: $foodItemsList, industries: $industriesDetails, language: $languageDetails, location_map: $locationMapList, movies: $moviesList, persons: $personsList, sports: $sportsDetails, time_to_visit: $timeToVisitDetails, timezone_offset_in_minutes: $timezoneOffsetInMinutes, tourist_places: $touristPlacesList';
+    return 'PlaceDetails airport: $airport, basic_info: $basicInfo, climate: $climateDetails, country: $countryDetails, currency: $currencyDetails, dance: $danceDetails, food: $foodItemsList, industries: $industriesDetails, language: $languageDetails, location_map: $locationMapList, movies: $moviesList, persons: $personsList, sports: $sportsDetails, time_to_visit: $timeToVisitDetails, timezone_offset_in_minutes: $timezoneOffsetInMinutes, tourist_places: $touristPlacesList, triviaListDetails: $triviaListDetails';
   }
 
   @override
@@ -184,7 +193,8 @@ class PlaceDetails {
         o.sportsDetails == sportsDetails &&
         o.timeToVisitDetails == timeToVisitDetails &&
         o.timezoneOffsetInMinutes == timezoneOffsetInMinutes &&
-        o.touristPlacesList == touristPlacesList;
+        o.touristPlacesList == touristPlacesList &&
+        o.triviaListDetails == triviaListDetails;
   }
 
   @override
@@ -204,6 +214,7 @@ class PlaceDetails {
         sportsDetails.hashCode ^
         timeToVisitDetails.hashCode ^
         timezoneOffsetInMinutes.hashCode ^
-        touristPlacesList.hashCode;
+        touristPlacesList.hashCode ^
+        triviaListDetails.hashCode;
   }
 }

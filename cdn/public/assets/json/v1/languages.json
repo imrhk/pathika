@@ -2,41 +2,49 @@
     {
         "id": "en",
         "name": "English",
-        "msg": "Hello!"
+        "msg": "Hello!",
+        "color" : [255, 144, 202, 249]
     },
     {
         "id": "hi",
         "name": "हिंदी",
-        "msg": "नमस्ते!"
+        "msg": "नमस्ते!",
+        "color" : [255, 255, 204, 128]
     },
     {
         "id": "es",
         "name": "Español",
-        "msg": "Hola!"
+        "msg": "Hola!",
+        "color": [255,255, 245, 157]
     },
     {
         "id": "fr",
         "name": "Français",
-        "msg": "Bonjour!"
+        "msg": "Bonjour!",
+        "color": [255, 159, 168, 218]
     },
     {
         "id": "ja",
         "name": "日本語",
-        "msg": "こんにちは！"
+        "msg": "こんにちは！",
+        "color" : [255, 239, 154, 154]
     },
     {
         "id": "pa",
         "name": "ਪੰਜਾਬੀ",
-        "msg": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ!"
+        "msg": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ!",
+        "color": [255, 128, 222, 234]
     },
     {
         "id": "it",
         "msg": "Ciao!",
-        "name": "Italiano"
+        "name": "Italiano",
+        "color": [255, 165, 214, 167]
     },
     {
         "id" : "de",
         "msg" : "Hallo!",
-        "name" : "Deutsch"
+        "name" : "Deutsch",
+        "color" : [255, 206, 147, 216]
     }
 ]

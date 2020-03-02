@@ -1,12 +1,9 @@
 import 'dart:convert';
 import 'dart:io' show HttpClient;
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:pathika/common/attributions.dart';
-import 'package:pathika/common/constants.dart';
-import 'package:pathika/core/repository.dart';
-import 'package:pathika/theme/app_theme.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'airport/airport_card.dart';
@@ -14,6 +11,9 @@ import 'app_drawer.dart';
 import 'app_language/select_language_page.dart';
 import 'basic_info/basic_info_app_bar.dart';
 import 'climate/climate_card.dart';
+import 'common/attributions.dart';
+import 'common/constants.dart';
+import 'core/repository.dart';
 import 'country/country_card.dart';
 import 'currency/currency_card.dart';
 import 'dance/dance_card.dart';
@@ -25,9 +25,11 @@ import 'location_map/location_map_card.dart';
 import 'movies/movies_list_card.dart';
 import 'place_details.dart';
 import 'sports/sports_card.dart';
+import 'theme/app_theme.dart';
 import 'time/current_time_card.dart';
 import 'time_to_visit/time_to_visit_card.dart';
 import 'tourist_attractions/tourist_attractions_card.dart';
+import 'trivia/trivia_card.dart';
 import 'widgets/translate_list_item.dart';
 
 void main() => runApp(PathikaApp2(
@@ -43,7 +45,6 @@ class PathikaApp2 extends StatefulWidget {
 }
 
 class _PathikaApp2State extends State<PathikaApp2> {
-
   AppTheme appTheme = AppTheme.Light();
 
   @override
@@ -54,10 +55,10 @@ class _PathikaApp2State extends State<PathikaApp2> {
 
   _loadUserTheme() async {
     SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
-    if(sharedPreferences.containsKey('APP_THEME')) {
+    if (sharedPreferences.containsKey('APP_THEME')) {
       final appThemeValue = sharedPreferences.getString('APP_THEME');
       setState(() {
-        appTheme = appThemeMap[appThemeValue]();      
+        appTheme = appThemeMap[appThemeValue]();
       });
     }
   }
@@ -66,12 +67,16 @@ class _PathikaApp2State extends State<PathikaApp2> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: appTheme.themeData ?? ThemeData(
-          accentColor: Colors.white,
-          primaryColor: Colors.black,
-          textTheme: Theme.of(context).textTheme),
+      theme: appTheme.themeData ??
+          ThemeData(
+              accentColor: Colors.white,
+              primaryColor: Colors.black,
+              textTheme: Theme.of(context).textTheme),
       // theme: ThemeData.dark(),
-      home: InitPage(httpClient: widget.httpClient, appTheme: appTheme ?? AppTheme.Light(),),
+      home: InitPage(
+        httpClient: widget.httpClient,
+        appTheme: appTheme ?? AppTheme.Light(),
+      ),
     );
   }
 }
@@ -353,6 +358,10 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                 details: placeDetails.locationMapList,
                 useColorsOnCard: useColorsOnCard,
               ),
+              TriviaListCard(
+                details: placeDetails.triviaListDetails,
+                useColorsOnCard: useColorsOnCard,
+              ),
             ]
                 .map((widget) => TranslateListItem(
                     traslateHeight: 600,
@@ -405,11 +414,16 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
   }
 
   Future<PlaceDetails> _getData(BuildContext context) async {
-    return Repository.getResponse(
-      httpClient: widget.httpClient,
-      url:
-          '$BASE_URL/assets/json/$API_VERSION/${widget.placeId}/details_${widget.language}.json',
-      cacheTime: Duration(days: 7),
-    ).then((source) => Future.value(PlaceDetails.fromJson(source)));
+    Future<String> response = kDebugMode
+        ? DefaultAssetBundle.of(context).loadString(
+            'assets_remote/assets/json/$API_VERSION/${widget.placeId}/details_${widget.language}.json')
+        : Repository.getResponse(
+            httpClient: widget.httpClient,
+            url:
+                '$BASE_URL/assets/json/$API_VERSION/${widget.placeId}/details_${widget.language}.json',
+            cacheTime: Duration(days: 7));
+
+    return response
+        .then((source) => Future.value(PlaceDetails.fromJson(source)));
   }
 }

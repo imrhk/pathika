@@ -21,6 +21,10 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets_remote/assets/json/v1/languages.json
+    - assets_remote/assets/json/v1/buenos_aires/details_en.json
     
     
     

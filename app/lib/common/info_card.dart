@@ -56,34 +56,35 @@ class InfoCard extends StatelessWidget {
         ),
         child: Stack(
           children: [
-            if(isAudiable)
-            Align(
-              alignment: Alignment.topRight,
-              child: Material(
-                color: Colors.transparent,
-                child: InkWell(
-                  customBorder: CircleBorder(),
-                  hoverColor: bgColor ?? color,
-                  splashColor: bgColor ?? color,
-                  focusColor: bgColor ?? color,
-                  child: Container(
-                    padding: EdgeInsets.all(5),
-                    child: Icon(Icons.volume_up),
+            if (isAudiable)
+              Align(
+                alignment: Alignment.topRight,
+                child: Material(
+                  color: Colors.transparent,
+                  child: InkWell(
+                    customBorder: CircleBorder(),
+                    hoverColor: bgColor ?? color,
+                    splashColor: bgColor ?? color,
+                    focusColor: bgColor ?? color,
+                    child: Container(
+                      padding: EdgeInsets.all(5),
+                      child: Icon(Icons.volume_up),
+                    ),
+                    onTap: () {
+                      print('tapped');
+                    },
                   ),
-                  onTap: () {
-                    print('tapped');
-                  },
                 ),
               ),
-            ),
-            Align(
-              heightFactor: 1.5,
-              alignment: Alignment.bottomLeft,
-              child: Text(
-                symbol ?? "",
-                style: Theme.of(context).textTheme.headline2,
+            if (symbol != null && symbol != "")
+              Align(
+                heightFactor: 1.5,
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  symbol,
+                  style: Theme.of(context).textTheme.headline2,
+                ),
               ),
-            ),
             Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.stretch,
