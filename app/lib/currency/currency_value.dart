@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:pathika/common/constants.dart';
 import 'package:universal_io/io.dart' show HttpClient;
 
 import 'package:flutter/material.dart';
@@ -88,7 +89,7 @@ class CurrencyValue extends StatelessWidget {
           (numberFormat) => Repository.getResponse(
             httpClient: httpClient,
             url:
-                'https://free.currconv.com/api/v7/convert?q=$from\_${numberFormat.currencyName}&compact=ultra&apiKey=7fe0bb93f75ab677bafa',
+                '$API_URL/convertCurrency?from=$from&to=${numberFormat.currencyName}',
             cacheTime: Duration(days: 1),
           ),
         )

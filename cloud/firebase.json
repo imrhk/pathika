@@ -6,7 +6,10 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ]
+    ],
+    "rewrites": [{
+      "source": "/api/convertCurrency", "function": "convertCurrency"
+    }]
   },
   "functions": {
     "predeploy": [

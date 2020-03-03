@@ -1,13 +1,64 @@
 const functions = require('firebase-functions');
+const request = require('request');
 
 const admin = require('firebase-admin');
 admin.initializeApp();
 
-const currencyList = ['DZD','NAD','QAR','EGP','BGN','BMD','PAB','BOB','DKK','BWP','LBP','TZS','VND','AOA','KHR','MYR','KYD','LYD','UAH','JOD','AWG','SAR','XAG','HKD','CHF','GIP','BYR','CDF','BYN','MRO','HRK','DJF','THB','XAF','BND','VUV','UYU','NIO','LAK','GHS','SYP','MAD','MZN','PHP','ZAR','NPR','ZWL','NGN','CRC','AED','GBP','MWK','LKR','PKR','HUF','RON','LSL','MNT','AMD','UGX','XDR','JMD','GEL','SHP','AFN','SBD','KPW','TRY','BDT','YER','GGP','HTG','SLL','MGA','ANG','LRD','RWF','NOK','MOP','INR','MXN','CZK','TJS','BTC','BTN','COP','TMT','MUR','IDR','HNL','ETB','FJD','ISK','PEN','BZD','ILS','DOP','AZN','MDL','BSD','SEK','ZMK','MVR','AUD','SRD','CUP','CLF','BBD','KMF','KRW','GMD','VEF','GTQ','CUC','CLP','ZMW','EUR','ALL','XCD','KZT','XPF','RUB','TTD','OMR','BRL','MMK','PLN','PYG','KES','SVC','MKD','TWD','TOP','JEP','GNF','WST','IQD','ERN','BAM','SCR','CAD','CVE','KWD','BIF','PGK','SOS','SGD','UZS','STD','IRR','CNY','XOF','TND','GYD','NZD','FKP','LVL','USD','KGS','ARS','SZL','IMP','RSD','BHD','JPY','SDG'];
+const currencyList = ['AED', 'AFN', 'ALL', 'AMD', 'ANG', 'AOA', 'ARS', 'AUD', 'AWG', 'AZN', 'BAM', 'BBD', 'BDT', 'BGN', 'BHD', 'BIF', 'BND', 'BOB', 'BRL', 'BSD', 'BWP', 'BYN', 'BZD', 'CAD', 'CDF', 'CHF', 'CLP', 'CNY', 'COP', 'CRC', 'CUP', 'CVE', 'CZK', 'DJF', 'DKK', 'DOP', 'DZD', 'EGP', 'ERN', 'ETB', 'EUR', 'FJD', 'GBP', 'GEL', 'GHS', 'GIP', 'GMD', 'GNF', 'GTQ', 'GYD', 'HKD', 'HNL', 'HRK', 'HTG', 'HUF', 'IDR', 'ILS', 'INR', 'IQD', 'IRR', 'ISK', 'JMD', 'JOD', 'JPY', 'KES', 'KGS', 'KHR', 'KMF', 'KRW', 'KWD', 'KZT', 'LAK', 'LBP', 'LKR', 'LRD', 'LSL', 'LYD', 'MAD', 'MDL', 'MGA', 'MKD', 'MMK', 'MNT', 'MOP', 'MRO', 'MRU', 'MUR', 'MVR', 'MWK', 'MXN', 'MYR', 'MZN', 'NAD', 'NGN', 'NIO', 'NOK', 'NPR', 'NZD', 'OMR', 'PAB', 'PEN', 'PGK', 'PHP', 'PKR', 'PLN', 'PYG', 'QAR', 'RON', 'RSD', 'RUB', 'RWF', 'SAR', 'SBD', 'SCR', 'SDG', 'SEK', 'SGD', 'SLL', 'SOS', 'SRD', 'SSP', 'STN', 'SVC', 'SYP', 'SZL', 'THB', 'TJS', 'TMT', 'TND', 'TOP', 'TRY', 'TTD', 'TWD', 'TZS', 'UAH', 'UGX', 'USD', 'UYU', 'UZS', 'VES', 'VND', 'VUV', 'WST', 'XAF', 'XCD', 'XOF', 'XPF', 'YER', 'ZAR', 'ZMW']
 exports.convertCurrency = functions.https.onRequest(async (req, res) => {
     const to = req.query.to;
     const from = req.query.from;
-    if(to === undefined || from === undefined || !currencyList.includes(to.toUpperCase()) || !currencyList.includes(from.toUpperCase())){
-
+    if (to === undefined || from === undefined || !currencyList.includes(to.toUpperCase())
+        || !currencyList.includes(from.toUpperCase())) {
+        res.status(404).send();
+        return;
     }
- });
+    const now = admin.firestore.Timestamp.now();
+    const node = from + '_' + to;
+    const ref = admin.firestore().collection('currency_conversion')
+        .doc(node);
+
+    ref.get()
+        .then(doc => {
+            if (!doc.exists || (doc.data().timestamp.seconds + 24 * 60 * 60) < now.seconds) {
+                request('http://www.floatrates.com/daily/' + from.toLowerCase() + '.json', function (error, response, b) {
+                    if (!error && response.statusCode === 200) {
+                        var body = JSON.parse(b.toString());
+                        var result = body[to.toLowerCase()].rate;
+                        if (result !== undefined) {
+                            ref.set({
+                                value: result,
+                                timestamp: now
+                            });
+                            var responseBody = {};
+                            responseBody[node] = result;
+                            res.status(200).send(responseBody);
+                        }
+                        for (var key in body) {
+                            if (body.hasOwnProperty(key)) {
+                                admin.firestore().collection('currency_conversion')
+                                    .doc(from.toUpperCase() + '_' + key.toUpperCase())
+                                    .set({
+                                        value: body[key].rate,
+                                        timestamp: now
+                                    });
+                            }
+                        }
+                    }
+                    else {
+                        res.status(404).send();
+                    }
+                });
+            }
+            else {
+                var responseBody = {};
+                responseBody[node] = doc.data().value;
+                res.status(200).send(responseBody);
+            }
+            return null;
+        })
+        .catch(err => {
+            console.log('Error getting document', err);
+            res.status(404).send();
+        });
+});
