@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'dart:io' show HttpClient;
+import 'package:universal_io/io.dart' show HttpClient;
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';

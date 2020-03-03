@@ -1,7 +1,7 @@
 {
   "hosting": {
-    "site": "pathika-cdn",
-    "public": "public",
+    "site": "pathika",  
+    "public": "web",
     "ignore": [
       "firebase.json",
       "**/.*",
