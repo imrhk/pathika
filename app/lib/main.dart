@@ -120,24 +120,22 @@ class _InitPageState extends State<InitPage> {
         ),
       ),
     );
-    if(language != null && language.trim() != "") {
+    if (language != null && language.trim() != "") {
       sharedPref.setString(APP_LANGUAGE, language);
       _language = language;
       _getLatestPlace(context);
-    }
-    else {
+    } else {
       _getLanguage(context);
     }
   }
 
-  void _appLanguageChanged(String language)async {
+  void _appLanguageChanged(String language) async {
     final sharedPref = await SharedPreferences.getInstance();
-    if(language != null && language.trim() != "") {
+    if (language != null && language.trim() != "") {
       sharedPref.setString(APP_LANGUAGE, language);
       _language = language;
       _getLatestPlace(context);
-    }
-    else {
+    } else {
       _getLanguage(context);
     }
     setState(() {});
@@ -440,11 +438,12 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                   text: TextSpan(
                     style: TextStyle(fontStyle: FontStyle.italic),
                     children: [
-                      WidgetSpan(
-                        child: Icon(Icons.info_outline,
-                            size: 14,
-                            color: Theme.of(context).textTheme.caption.color),
-                      ),
+                      if (!kIsWeb)  //web not working for widget span
+                        WidgetSpan(
+                          child: Icon(Icons.info_outline,
+                              size: 14,
+                              color: Theme.of(context).textTheme.caption.color),
+                        ),
                       TextSpan(
                         text:
                             ' If you believe there is translation issue or any other issue with the content, please report ',
@@ -460,6 +459,7 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                             _openForm();
                           },
                       ),
+                      if(!kIsWeb) 
                       WidgetSpan(
                         child: GestureDetector(
                           child: Icon(

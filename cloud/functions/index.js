@@ -19,46 +19,46 @@ exports.convertCurrency = functions.https.onRequest(async (req, res) => {
         .doc(node);
 
     ref.get()
-        .then(doc => {
-            if (!doc.exists || (doc.data().timestamp.seconds + 24 * 60 * 60) < now.seconds) {
-                request('http://www.floatrates.com/daily/' + from.toLowerCase() + '.json', function (error, response, b) {
-                    if (!error && response.statusCode === 200) {
-                        var body = JSON.parse(b.toString());
-                        var result = body[to.toLowerCase()].rate;
-                        if (result !== undefined) {
-                            ref.set({
-                                value: result,
-                                timestamp: now
-                            });
-                            var responseBody = {};
-                            responseBody[node] = result;
-                            res.status(200).send(responseBody);
-                        }
-                        for (var key in body) {
-                            if (body.hasOwnProperty(key)) {
-                                admin.firestore().collection('currency_conversion')
-                                    .doc(from.toUpperCase() + '_' + key.toUpperCase())
-                                    .set({
-                                        value: body[key].rate,
-                                        timestamp: now
-                                    });
-                            }
+    .then(doc => {
+        if (!doc.exists || (doc.data().timestamp.seconds + 24 * 60 * 60) < now.seconds) {
+            request('http://www.floatrates.com/daily/' + from.toLowerCase() + '.json', function (error, response, b) {
+                if (!error && response.statusCode === 200) {
+                    var body = JSON.parse(b.toString());
+                    var result = body[to.toLowerCase()].rate;
+                    if (result !== undefined) {
+                        ref.set({
+                            value: result,
+                            timestamp: now
+                        });
+                        var responseBody = {};
+                        responseBody[node] = result;
+                        res.status(200).send(responseBody);
+                    }
+                    for (var key in body) {
+                        if (body.hasOwnProperty(key)) {
+                            admin.firestore().collection('currency_conversion')
+                                .doc(from.toUpperCase() + '_' + key.toUpperCase())
+                                .set({
+                                    value: body[key].rate,
+                                    timestamp: now
+                                });
                         }
                     }
-                    else {
-                        res.status(404).send();
-                    }
-                });
-            }
-            else {
-                var responseBody = {};
-                responseBody[node] = doc.data().value;
-                res.status(200).send(responseBody);
-            }
-            return null;
-        })
-        .catch(err => {
-            console.log('Error getting document', err);
-            res.status(404).send();
-        });
+                }
+                else {
+                    res.status(404).send();
+                }
+            });
+        }
+        else {
+            var responseBody = {};
+            responseBody[node] = doc.data().value;
+            res.status(200).send(responseBody);
+        }
+        return null;
+    })
+    .catch(err => {
+        console.log('Error getting document', err);
+        res.status(404).send();
+    });
 });
