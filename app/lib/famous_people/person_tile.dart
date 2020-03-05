@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../common/attributions.dart';
@@ -65,19 +66,28 @@ class PersonTile extends StatelessWidget {
               ),
               if (place != null && place.isNotEmpty) SizedBox(height: 5),
               if (place != null && place.isNotEmpty)
-                Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Icon(
-                      Icons.place,
-                      size: 12,
-                    ),
-                    SizedBox(width: 5),
-                    Text(
-                      place,
-                      softWrap: true,
-                    )
-                  ],
+                RichText(
+                  softWrap: true,
+                  text: TextSpan(
+                    children: [
+                      if (!kIsWeb) //web not working for widget span
+                        WidgetSpan(
+                          child: Icon(Icons.place,
+                              size: 14,
+                              color: Theme.of(context).textTheme.caption.color),
+                        ),
+                      TextSpan(
+                        text: ' ',
+                      ),
+                      TextSpan(
+                        text: place,
+                        style: Theme.of(context)
+                            .textTheme
+                            .bodyText2
+                            .copyWith(textBaseline: TextBaseline.ideographic),
+                      ),
+                    ],
+                  ),
                 ),
               if (photoBy != null && photoBy != "")
                 SizedBox(
@@ -85,8 +95,9 @@ class PersonTile extends StatelessWidget {
                 ),
               if (photoBy != null && photoBy != "")
                 Padding(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 4,),
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 4,
+                  ),
                   child: getAttributionWidget(
                       context, photoBy, attributionUrl, licence),
                 ),
