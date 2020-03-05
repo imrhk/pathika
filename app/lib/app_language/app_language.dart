@@ -5,11 +5,13 @@ class AppLanguage {
   final String name;
   final String msg;
   final List<int> color;
+  final bool rtl;
   AppLanguage({
     this.id,
     this.name,
     this.msg,
     this.color = const [0,0,0,0],
+    this.rtl = false,
   });
 
   AppLanguage copyWith({
@@ -17,12 +19,14 @@ class AppLanguage {
     String name,
     String msg,
     List<int> color,
+    bool rtl,
   }) {
     return AppLanguage(
       id: id ?? this.id,
       name: name ?? this.name,
       msg: msg ?? this.msg,
       color: color ?? this.color,
+      rtl: rtl ?? this.rtl,
     );
   }
 
@@ -32,6 +36,7 @@ class AppLanguage {
       'name': name,
       'msg': msg,
       'color': List<dynamic>.from(color.map((x) => x)),
+      'rtl' : rtl
     };
   }
 
@@ -47,6 +52,7 @@ class AppLanguage {
       name: map['name'],
       msg: map['msg'],
       color: map['color'] != null ? List<int>.from(map['color']) : [0,0,0,0],
+      rtl : map['rtl'] ,
     );
   }
 
@@ -56,7 +62,7 @@ class AppLanguage {
 
   @override
   String toString() {
-    return 'AppLanguage(id: $id, name: $name, msg: $msg, color: $color)';
+    return 'AppLanguage(id: $id, name: $name, msg: $msg, color: $color, rtl: $rtl)';
   }
 
   @override
@@ -67,7 +73,8 @@ class AppLanguage {
       o.id == id &&
       o.name == name &&
       o.msg == msg &&
-      o.color == color;
+      o.color == color &&
+      o.rtl == rtl;
   }
 
   @override
@@ -75,6 +82,7 @@ class AppLanguage {
     return id.hashCode ^
       name.hashCode ^
       msg.hashCode ^
-      color.hashCode;
+      color.hashCode ^
+      rtl.hashCode;
   }
 }

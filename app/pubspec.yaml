@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
   cupertino_icons: ^0.1.2
   intl: ^0.16.1
   url_launcher: ^5.4.2
@@ -26,6 +28,7 @@ flutter:
   assets:
     - assets_remote/assets/json/v1/languages.json
     - assets_remote/assets/json/v1/buenos_aires/details_en.json
+    - assets_remote/assets/json/v1/buenos_aires/details_ar.json
     
     
     

@@ -65,7 +65,7 @@ class AppDrawer extends StatelessWidget {
               leading: Icon(Icons.language),
               title: Text('Change Language'),
               onTap: () async {
-                String id = await Navigator.of(context).push(
+                final response = await Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (ctx) => SelectLanguagePage(
                       httpClient: httpClient,
@@ -75,7 +75,7 @@ class AppDrawer extends StatelessWidget {
                   ),
                 );
                 if(appLanguageChanged != null)
-                  appLanguageChanged(id);
+                  appLanguageChanged(response);
               },
             ),
           ],

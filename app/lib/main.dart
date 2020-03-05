@@ -95,6 +95,7 @@ class InitPage extends StatefulWidget {
 
 class _InitPageState extends State<InitPage> {
   String _language;
+  bool _isRtl;
   String _placeId;
   @override
   void initState() {
@@ -107,38 +108,39 @@ class _InitPageState extends State<InitPage> {
     final sharedPref = await SharedPreferences.getInstance();
     if (sharedPref.containsKey(APP_LANGUAGE)) {
       String language = sharedPref.getString(APP_LANGUAGE);
+      _isRtl = false;
+      if (sharedPref.containsKey('APP_LANGUAGE_IS_RTL'))
+        _isRtl = sharedPref.getBool('APP_LANGUAGE_IS_RTL');
+
       if (language != null && language.trim() != "") {
         _language = language;
         _getLatestPlace(context);
         return;
       }
     }
-    String language = await Navigator.of(context).push(
+    Map<String, dynamic> languageDetails = await Navigator.of(context).push(
       MaterialPageRoute(
         builder: (ctx) => SelectLanguagePage(
           httpClient: widget.httpClient,
         ),
       ),
     );
-    if (language != null && language.trim() != "") {
-      sharedPref.setString(APP_LANGUAGE, language);
-      _language = language;
-      _getLatestPlace(context);
-    } else {
-      _getLanguage(context);
-    }
+    _appLanguageChanged(languageDetails);
   }
 
-  void _appLanguageChanged(String language) async {
+  void _appLanguageChanged(Map<String, dynamic> map) async {
     final sharedPref = await SharedPreferences.getInstance();
+    final language = map['language'];
+    final isRTL = map['rtl'] ?? false;
     if (language != null && language.trim() != "") {
       sharedPref.setString(APP_LANGUAGE, language);
+      sharedPref.setBool('APP_LANGUAGE_IS_RTL', isRTL);
       _language = language;
+      _isRtl = isRTL;
       _getLatestPlace(context);
     } else {
       _getLanguage(context);
     }
-    setState(() {});
   }
 
   _getLatestPlace(BuildContext context) async {
@@ -160,12 +162,15 @@ class _InitPageState extends State<InitPage> {
   @override
   Widget build(BuildContext context) {
     if (_placeId != null && _language != null) {
-      return PlaceDetailsPage(
-        placeId: _placeId,
-        language: _language,
-        httpClient: widget.httpClient,
-        appTheme: widget.appTheme,
-        appLanguageChanged: _appLanguageChanged,
+      return Directionality(
+        textDirection: _isRtl ? TextDirection.rtl : TextDirection.ltr,
+        child: PlaceDetailsPage(
+          placeId: _placeId,
+          language: _language,
+          httpClient: widget.httpClient,
+          appTheme: widget.appTheme,
+          appLanguageChanged: _appLanguageChanged,
+        ),
       );
     } else {
       return Scaffold(
@@ -438,7 +443,7 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                   text: TextSpan(
                     style: TextStyle(fontStyle: FontStyle.italic),
                     children: [
-                      if (!kIsWeb)  //web not working for widget span
+                      if (!kIsWeb) //web not working for widget span
                         WidgetSpan(
                           child: Icon(Icons.info_outline,
                               size: 14,
@@ -459,17 +464,17 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                             _openForm();
                           },
                       ),
-                      if(!kIsWeb) 
-                      WidgetSpan(
-                        child: GestureDetector(
-                          child: Icon(
-                            Icons.open_in_new,
-                            size: 14,
-                            color: Theme.of(context).textTheme.caption.color,
+                      if (!kIsWeb)
+                        WidgetSpan(
+                          child: GestureDetector(
+                            child: Icon(
+                              Icons.open_in_new,
+                              size: 14,
+                              color: Theme.of(context).textTheme.caption.color,
+                            ),
+                            onTap: _openForm,
                           ),
-                          onTap: _openForm,
                         ),
-                      ),
                     ],
                   ),
                 ),

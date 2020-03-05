@@ -43,7 +43,11 @@ class _SelectLanguagePageState extends State<SelectLanguagePage> {
     final sharedPref = await SharedPreferences.getInstance();
     if (sharedPref.containsKey(APP_LANGUAGE)) {
       appLangauge = sharedPref.getString(APP_LANGUAGE);
-      Navigator.of(context).pop(appLangauge);
+      bool isRTL = false;
+      if(sharedPref.containsKey('APP_LANGUAGE_IS_RTL')) {
+        isRTL = sharedPref.getBool('APP_LANGUAGE_IS_RTL');
+      }
+      Navigator.of(context).pop({'rtl' : isRTL, 'language': appLangauge});
     } else {
       setState(() {
         appLanguageChecked = true;
@@ -51,8 +55,8 @@ class _SelectLanguagePageState extends State<SelectLanguagePage> {
     }
   }
 
-  _saveAppLanguage(String id) async {
-    Navigator.of(context).pop(id);
+  _saveAppLanguage(String id, bool isRTL) async {
+    Navigator.of(context).pop({'rtl' : isRTL, 'language': id});
   }
 
   @override
@@ -83,6 +87,14 @@ class _SelectLanguagePageState extends State<SelectLanguagePage> {
             );
           } else {
             final appLanguages = snapshot.data;
+            appLanguages.sort((a, b) => a.id.compareTo(b.id));
+            //put english at top
+            final indexOfEnglish = appLanguages.indexWhere((element) => element.id == "en");
+            if(indexOfEnglish != -1) {
+              final en = appLanguages[indexOfEnglish];
+              appLanguages.removeAt(indexOfEnglish);
+              appLanguages.insert(0, en);
+            }
             return Padding(
               padding: const EdgeInsets.only(left: 8, right: 8),
               child: GridView.builder(
@@ -112,7 +124,7 @@ class _SelectLanguagePageState extends State<SelectLanguagePage> {
                       child: InkWell(
                         onTap: () {
                           final language = item.id;
-                          _saveAppLanguage(language);
+                          _saveAppLanguage(language, item.rtl);
                         },
                         child: Stack(
                           children: <Widget>[
