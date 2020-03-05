@@ -1,0 +1,304 @@
+{
+    "basic_info": {
+        "name": "بوينس ايرس",
+        "id": "buenos_aires",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Puerto_Madero%2C_Buenos_Aires_%2840689219792%29.jpg/1280px-Puerto_Madero%2C_Buenos_Aires_%2840689219792%29.jpg",
+        "place": "بويرتو ماديرو , بوينس آيرس",
+        "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.ar\">CC BY 2.0</a>",
+        "photo_by": "دينسيل",
+        "attribution_url": "https://www.flickr.com/photos/deensel/40689219792/"
+    },
+    "airport": {
+        "name": "مطار مينيسترو بيستاريني الدولي"
+    },
+    "climate": {
+        "type": "شبه استوائي",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "الصيف",
+                "temp": "25°C to 22°C",
+                "duration": "يناير فبراير"
+            },
+            {
+                "emoji": "🍁",
+                "name": "أوتن",
+                "temp": "22°C to 15°C",
+                "duration": "قد المسيرة"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "شتاء",
+                "temp": "12°C to 14°C",
+                "duration": "يونيو أغسطس"
+            },
+            {
+                "emoji": "🌼",
+                "name": "ربيع",
+                "temp": "18°C to 23°C",
+                "duration": "اكتوبر ديسمبر"
+            }
+        ]
+    },
+    "country": {
+        "name": "الأَرْجَنْتين 🇦🇷",
+        "continent": "جنوب امريكا"
+    },
+    "currency": {
+        "name": "بيزو أرجنتيني",
+        "symbol": "$",
+        "code": "ARS"
+    },
+    "dance": {
+        "name": "رقصة التانغو"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "Alfajores triples de chocolate y glaseado",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/f/f0/AlfajoresTriples.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Julgon",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:AlfajoresTriples.jpg"
+            },
+            {
+                "label": "دولسي دي ليش",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Dulce_de_leche_2007.jpg/640px-Dulce_de_leche_2007.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Kai Hendry",
+                "attribution_url": "https://www.flickr.com/photos/16105436@N00/362655239"
+            },
+            {
+                "label": "بيتزا",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/2/23/Pizza_Argentina_04.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Carlosdisogra",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Pizza_Argentina_04.jpg"
+            },
+            {
+                "label": "أسادو",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Parrillada_argentina.jpg/1024px-Parrillada_argentina.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Eduardo P",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Parrillada_argentina.jpg"
+            },
+            {
+                "label": "امباناداس",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Empanadas_cordobesas_%28Argentina%29_caseras.JPG/1024px-Empanadas_cordobesas_%28Argentina%29_caseras.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Carlosdisogra",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Empanadas_cordobesas_(Argentina)_caseras.JPG"
+            },
+            {
+                "label": "ستيك مع صلصة تشيميشوري",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Steak_with_Chimichurri_Sauce_%2813316528445%29.jpg/1024px-Steak_with_Chimichurri_Sauce_%2813316528445%29.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Dominic Lockyer",
+                "attribution_url": "https://www.flickr.com/photos/farehamwine/13316528445/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "معالجة الغذاء",
+        "secondary": [
+            "السيارات",
+            "تشغيل المعادن",
+            "المنسوجات"
+        ]
+    },
+    "language": {
+        "primary": "الأسبانية",
+        "secondary": [
+            "الإنجليزية",
+            "الإيطالي"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_01.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_02.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_03.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_04.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_05.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "حكايات برية",
+                "poster_url": "https://image.tmdb.org/t/p/w300/aNlTNuLvm0mFbVvmayLvEq1qF84.jpg"
+            },
+            {
+                "title": "سر عينيه",
+                "poster_url": "https://image.tmdb.org/t/p/w300/j8tqe0Xk8fbi8RvU5Bb1x1cOmgo.jpg"
+            },
+            {
+                "title": "العشيرة",
+                "poster_url": "https://image.tmdb.org/t/p/w300/t85v4agr03AdvuD2HcqhXKxV7II.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "البابا فرانسيس",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.jpg/815px-Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.jpg",
+                "work": "رئيس الكنيسة الكاثوليكية وسيادة دولة مدينة الفاتيكان",
+                "place": "فلوريس , بوينس آيرس",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 2.0</a>",
+                "photo_by": "Jeffrey Bruno",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Canonization_2014-_The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_(14036966124).jpg"
+            },
+            {
+                "name": "تشي جيفارا",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/CheHigh.jpg/599px-CheHigh.jpg",
+                "work": "الماركسي الأرجنتيني ثوري",
+                "place": "روزاريو , 278 كم من بوينس آيرس"
+            },
+            {
+                "name": "ليونيل ميسي",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lionel_Messi_20180626.jpg/420px-Lionel_Messi_20180626.jpg",
+                "work": "لاعب كرة القدم المحترف",
+                "place": "روزاريو",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Кирилл Венедиктов",
+                "attribution_url": "https://www.soccer.ru/galery/1055457/photo/733439"
+            },
+            {
+                "name": "دييغو مارادونا",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Diego_Maradona_2012_2.jpg/622px-Diego_Maradona_2012_2.jpg",
+                "work": "متقاعد لاعب كرة قدم",
+                "place": "Lanús Oeste ، مقاطعة بوينس آيرس",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY 2.0</a>",
+                "photo_by": "Doha Stadium Plus Qatar",
+                "attribution_url": "https://www.flickr.com/photos/66463488@N06/7448907672"
+            },
+            {
+                "name": "خورخي لويس بورخيس",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Jorge_Luis_Borges.jpg",
+                "work": "الكاتب قصة قصيرة الأرجنتين",
+                "place": "بوينس ايرس"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ كرة القدم",
+        "footer": "فازت الأرجنتين بكأس العالم لكرة القدم 2 مرات (1986 , 1978)"
+    },
+    "time_to_visit": {
+        "primary": "ابريل-يونيو",
+        "secondary": "من سبتمبر إلى ديسمبر"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "الفم",
+                "description": "ملعب كامينيتو واستاد لا بومبونيرا",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOXp0TkuBJu2fFsZYdLPBej0dX06nZ2Z6COU8Y0=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115635279769083588516\">André Magdalena</a>"
+                ],
+                "place_id": "ChIJpfBfv7A0o5URoJl1DYymWDg"
+            },
+            {
+                "name": "مقبرة ريكوليتا",
+                "description": "موقع غني بالفن مع ضريح مشهور",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNNW6wP5SvK1ngY2-KTdpCCxZuvsIEedXAPH-3_=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115118851937052032752\">مستخدم Google</a>"
+                ],
+                "place_id": "ChIJs5EH8aLKvJURw6UX3MYKGKE"
+            },
+            {
+                "name": "ساحة مايو",
+                "description": "الساحة المركزية الشهيرة من القرن 19",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOFbzwuXtzJJTorIo_2FVTIS6n__Cqny8MIFwrI=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102862970682232404616\">Leonardo Cazón</a>"
+                ],
+                "place_id": "ChIJXx79V9vKvJURS2GosE58c8w"
+            },
+            {
+                "name": "البيت الوردي",
+                "description": "القصر الرئاسي الشهير مع جولات",
+                "place_id": "ChIJdW8nviw1o5URbfhFBe8haeE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNLAYkgz7tAiMc9o4wxHcd7mRHiFI0tniM6pVe3=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115118851937052032752\">Lazaro Huizinga</a>"
+                ]
+            },
+            {
+                "name": "Obelisco",
+                "description": "مسلة بيضاء أيقونية 67 م",
+                "place_id": "ChIJ217apvCpSgARi1VOI06tvhE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMZNuzy7DxxmEFKxxG1vNNb7_VJBM-202XwvITE=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/111127317868746618272\">Yami Iv</a>"
+                ]
+            },
+            {
+                "name": "مسرح القولون",
+                "description": "المسرح الكلاسيكي للفنون المسرحية",
+                "place_id": "ChIJIxYSMMbKvJURqZGJyCpvOFM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM41odtdP1AGChzQHlbHWAGkzzSDC622GX5qDYf=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115635432213531829732\">Sabrina Vainschtok</a>"
+                ]
+            },
+            {
+                "name": "تريس دي Febrero بارك",
+                "description": "حديقة واسعة مع البحيرات وحديقة الورود",
+                "place_id": "ChIJsQqBvZ-1vJURbm-7dxt8fgM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM9daX3n_ygsOy3uufpA9yuJt0WvJ_NYyZ27hUP=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112185936974765972473\">Liliana Lovato</a>"
+                ]
+            },
+            {
+                "name": "ساحة دريغو",
+                "description": "معالم بارزة بالمقاهي وسوق الأحد",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNJJXjcS9nc_56FO_BL8qcAl_6A95f0_n-Gll-6=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110377337430439271628\">M. Martín</a>"
+                ],
+                "place_id": "ChIJifSktCzLvJURsTMaMFXLu3E"
+            },
+            {
+                "name": "جسر المرأة",
+                "description": "معلما الدورية الجسر",
+                "place_id": "ChIJbSLzQyk1o5URPBMjt-fRU98",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM_K_jeJqzurv0UoBe8sPlF4vflfeApUCgBcB7w=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102506221278284370139\">مستخدم Google</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": -180,
+    "trivia": {
+        "items": [
+            "إنها عاصمة وأكبر مدينة في الأرجنتين." ,
+             "يقع في مصب نهر ريو دي لا بلاتا." ,
+             "يعتبر باريس أمريكا الجنوبية" ,
+             "المناخ شبه استوائي مع درجات الحرارة القصوى النادرة" ,
+             "إن مترو بوينس آيرس (المترو) هو أقدم نظام مترو أنفاق في نصف الكرة الجنوبي وأقدم في العالم الناطق بالإسبانية" ,
+             "تشمل أفضل أندية كرة القدم بوكا جونيورز وريفر بلايت والمباراة بينهما معروفة باسم سوبر كلاسيكو." ,
+             "استضافت كأس العالم 1978 FIFA التي فازت بها أرتجينا بفوزها على هولندا 5-1 في النهائيات." ,
+             "فيلمان ، فازت القصة الرسمية وسرقة عينيه بجائزة أوسكار في فئة أفضل فيلم أجنبي" ,
+             "أنتجت جامعة بوينس آيرس خمسة فائزين بجائزة نوبل" ,
+             "تانجو جزء من التراث الثقافي العالمي."
+        ]
+    }
+}
