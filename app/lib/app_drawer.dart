@@ -1,3 +1,5 @@
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pathika/localization/localization_bloc.dart';
 import 'package:universal_io/io.dart';
 
 import 'package:flutter/material.dart';
@@ -27,10 +29,14 @@ class AppDrawer extends StatelessWidget {
           children: [
             ExpansionTile(
               leading: Icon(Icons.palette),
-              title: Text('Theme'),
+              title: Text(BlocProvider.of<LocalizationBloc>(context)
+                          .localize('theme', 'Theme'),),
               children: <Widget>[
                 ListTile(
-                    title: Text('Light'),
+                    title: Text(
+                      BlocProvider.of<LocalizationBloc>(context)
+                          .localize('light', 'Light'),
+                    ),
                     onTap: () {
                       changeAppTheme(AppTheme.Light());
                     }),

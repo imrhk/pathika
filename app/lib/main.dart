@@ -1,11 +1,12 @@
 import 'dart:convert';
-import 'package:universal_io/io.dart' show HttpClient;
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:universal_io/io.dart' show HttpClient;
 import 'package:url_launcher/url_launcher.dart';
 
 import 'airport/airport_card.dart';
@@ -15,6 +16,7 @@ import 'basic_info/basic_info_app_bar.dart';
 import 'climate/climate_card.dart';
 import 'common/attributions.dart';
 import 'common/constants.dart';
+import 'core/flutter_assets_client.dart';
 import 'core/repository.dart';
 import 'country/country_card.dart';
 import 'currency/currency_card.dart';
@@ -23,6 +25,9 @@ import 'famous_people/person_list_card.dart';
 import 'food/food_items_list_card.dart';
 import 'industries/language_card.dart';
 import 'language/language_card.dart';
+import 'localization/localization.dart';
+import 'localization/localization_bloc.dart';
+import 'localization/localization_event.dart';
 import 'location_map/location_map_card.dart';
 import 'movies/movies_list_card.dart';
 import 'place_details.dart';
@@ -75,9 +80,19 @@ class _PathikaApp2State extends State<PathikaApp2> {
               primaryColor: Colors.black,
               textTheme: Theme.of(context).textTheme),
       // theme: ThemeData.dark(),
-      home: InitPage(
-        httpClient: widget.httpClient,
-        appTheme: appTheme ?? AppTheme.Light(),
+      home: BlocProvider(
+        create: (context) => LocalizationBloc(
+          httpClient: widget.httpClient,
+          assetsClient: FlutterAssetsClient(
+            assetBundle: DefaultAssetBundle.of(context),
+          ),
+        )..add(
+            FetchLocalization(LOCALE_DEFAULT),
+          ),
+        child: InitPage(
+          httpClient: widget.httpClient,
+          appTheme: appTheme ?? AppTheme.Light(),
+        ),
       ),
     );
   }
@@ -115,6 +130,8 @@ class _InitPageState extends State<InitPage> {
       if (language != null && language.trim() != "") {
         _language = language;
         _getLatestPlace(context);
+        BlocProvider.of<LocalizationBloc>(context).add(FetchLocalization(_language));
+    } else {
         return;
       }
     }
@@ -138,6 +155,7 @@ class _InitPageState extends State<InitPage> {
       _language = language;
       _isRtl = isRTL;
       _getLatestPlace(context);
+      BlocProvider.of<LocalizationBloc>(context).add(ChangeLocalization(_language));
     } else {
       _getLanguage(context);
     }
@@ -161,26 +179,40 @@ class _InitPageState extends State<InitPage> {
 
   @override
   Widget build(BuildContext context) {
-    if (_placeId != null && _language != null) {
-      return Directionality(
-        textDirection: _isRtl ? TextDirection.rtl : TextDirection.ltr,
-        child: PlaceDetailsPage(
-          placeId: _placeId,
-          language: _language,
-          httpClient: widget.httpClient,
-          appTheme: widget.appTheme,
-          appLanguageChanged: _appLanguageChanged,
+    return BlocBuilder<LocalizationBloc, LocalizationState>(
+        builder: (ctx, state) {
+      if (state is LocalizationUnintialized || state is LocalizationLoading) {
+        return _buildLoadingScaffold();
+      } else if (state is LocalizationError) {
+        BlocProvider.of<LocalizationBloc>(context).add(FetchLocalization(LOCALE_DEFAULT));
+        return _buildLoadingScaffold();
+      } else if (state is LocalizationLoaded) {
+        if (_placeId == null) {
+          return _buildLoadingScaffold();
+        } else {
+          return Directionality(
+            textDirection: _isRtl ? TextDirection.rtl : TextDirection.ltr,
+            child: PlaceDetailsPage(
+              placeId: _placeId,
+              language: _language,
+              httpClient: widget.httpClient,
+              appTheme: widget.appTheme,
+              appLanguageChanged: _appLanguageChanged,
+            ),
+          );
+        }
+      }
+    });
+  }
+
+  Widget _buildLoadingScaffold() {
+    return Scaffold(
+      body: Container(
+        child: Center(
+          child: CircularProgressIndicator(),
         ),
-      );
-    } else {
-      return Scaffold(
-        body: Container(
-          child: Center(
-            child: CircularProgressIndicator(),
-          ),
-        ),
-      );
-    }
+      ),
+    );
   }
 }
 
