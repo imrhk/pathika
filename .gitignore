@@ -36,3 +36,6 @@ project.pbxproj
 contents.xcworkspacedata
 settings_aar.gradle
 .vscode
+
+#secrets 
+secrets

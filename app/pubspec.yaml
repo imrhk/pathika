@@ -19,8 +19,8 @@ dependencies:
   universal_io: ^1.0.1
   bloc: ^3.0.0
   flutter_bloc: ^3.2.0
-  equatable: ^1.0.0
-  http: ^0.12.0
+  equatable: ^1.1.1
+  http: ^0.12.0+4
   
 dev_dependencies:
   flutter_test:
@@ -32,12 +32,9 @@ flutter:
   assets:
     - assets_remote/assets/json/v1/languages.json
     - assets_remote/assets/json/v1/buenos_aires/details_en.json
-    - assets_remote/assets/json/v1/buenos_aires/details_ar.json
     - assets_remote/assets/json/v1/buenos_aires/details_hi.json
-    - resources/localization/ar.json
     - resources/localization/en.json
-    - resources/localization/hi.json
-    
+     
     
     
     

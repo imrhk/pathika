@@ -9,43 +9,43 @@
         "attribution_url": "https://www.flickr.com/photos/deensel/40689219792/"
     },
     "airport": {
-        "name": "Ministro Pistarini International Airport"
+        "name": "Aeropuerto Internacional Ministro Pistarini"
     },
     "climate": {
         "type": "Subtropical",
         "items": [
             {
                 "emoji": "☀",
-                "name": "Summer",
-                "temp": "25°C to 22°C",
-                "duration": "Jan-Feb"
+                "name": "Verano",
+                "temp": "25 ° C a 22 ° C",
+                "duration": "Enero-febrero"
             },
             {
                 "emoji": "🍁",
-                "name": "Autumn",
-                "temp": "22°C to 15°C",
-                "duration": "Mar-May"
+                "name": "Otoño",
+                "temp": "22 ° C a 15 ° C",
+                "duration": "Marzo-mayo"
             },
             {
                 "emoji": "❄️️",
-                "name": "Winter",
-                "temp": "12°C to 14°C",
-                "duration": "Jun-Aug"
+                "name": "Invierno",
+                "temp": "12 ° C a 14 ° C",
+                "duration": "Jun-ago"
             },
             {
                 "emoji": "🌼",
-                "name": "Spring",
-                "temp": "18°C to 23°C",
-                "duration": "Oct-Dec"
+                "name": "Primavera",
+                "temp": "18 ° C a 23 ° C",
+                "duration": "Oct-dic"
             }
         ]
     },
     "country": {
         "name": "Argentina 🇦🇷",
-        "continent": "South America"
+        "continent": "Sudamerica"
     },
     "currency": {
-        "name": "Argentine Peso",
+        "name": "Peso argentino",
         "symbol": "$",
         "code": "ARS"
     },
@@ -100,7 +100,7 @@
                 "attribution_url": "https://commons.wikimedia.org/wiki/File:Empanadas_cordobesas_(Argentina)_caseras.JPG"
             },
             {
-                "label": "Steak with Chimichurri Sauce",
+                "label": "Filete con Salsa Chimichurri",
                 "is_veg": false,
                 "is_non_veg": true,
                 "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Steak_with_Chimichurri_Sauce_%2813316528445%29.jpg/1024px-Steak_with_Chimichurri_Sauce_%2813316528445%29.jpg",
@@ -111,18 +111,18 @@
         ]
     },
     "industries": {
-        "primary": "Food Processing",
+        "primary": "Procesamiento de alimentos",
         "secondary": [
-            "Motor Vehicles",
-            "Metalworking",
+            "Vehículos de motor",
+            "Metalurgia",
             "Textiles"
         ]
     },
     "language": {
-        "primary": "Spanish",
+        "primary": "Español",
         "secondary": [
-            "English",
-            "Italian"
+            "Inglés",
+            "italiano"
         ]
     },
     "location_map": {
@@ -153,9 +153,9 @@
     "persons": {
         "items": [
             {
-                "name": "Pope Francis",
+                "name": "Papa Francisco",
                 "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.jpg/815px-Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.jpg",
-                "work": "Head of the Catholic Church and sovereign of the Vatican City State",
+                "work": "Jefe de la Iglesia Católica y soberano del Estado de la Ciudad del Vaticano.",
                 "place": "Flores, Buenos Aires",
                 "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 2.0</a>",
                 "photo_by": "Jeffrey Bruno",
@@ -164,13 +164,13 @@
             {
                 "name": "Che Guevara",
                 "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/CheHigh.jpg/599px-CheHigh.jpg",
-                "work": " Argentine Marxist revolutionary",
+                "work": " Revolucionario marxista argentino",
                 "place": "Rosario, 278 km from Buenos Aires"
             },
             {
                 "name": "Lionel Messi",
                 "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lionel_Messi_20180626.jpg/420px-Lionel_Messi_20180626.jpg",
-                "work": "Professional Footballer",
+                "work": "Futbolista profesional",
                 "place": "Rosario",
                 "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
                 "photo_by": "Кирилл Венедиктов",
@@ -179,7 +179,7 @@
             {
                 "name": "Diego Maradona",
                 "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Diego_Maradona_2012_2.jpg/622px-Diego_Maradona_2012_2.jpg",
-                "work": "Retired Professional Footballer",
+                "work": "Futbolista profesional retirado",
                 "place": "Lanús Oeste, Buenos Aires Province",
                 "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY 2.0</a>",
                 "photo_by": "Doha Stadium Plus Qatar",
@@ -188,18 +188,18 @@
             {
                 "name": "Jorge Luis Borges",
                 "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Jorge_Luis_Borges.jpg",
-                "work": "Argentine short story writer",
+                "work": "Escritor argentino de cuentos",
                 "place": "Buenos Aires"
             }
         ]
     },
     "sports": {
-        "title": "⚽ Football",
-        "footer": "Argentina have won football world cup 2 times (1986, 1978)"
+        "title": "⚽ fútbol",
+        "footer": "Argentina ha ganado el mundial de fútbol 2 veces (1986, 1978)"
     },
     "time_to_visit": {
-        "primary": "April-June",
-        "secondary": "September-December"
+        "primary": "Abril junio",
+        "secondary": "Septiembre-diciembre"
     },
     "tourist_places": {
         "items": [
@@ -213,8 +213,8 @@
                 "place_id": "ChIJpfBfv7A0o5URoJl1DYymWDg"
             },
             {
-                "name": "Recoleta Cemetery",
-                "description": "Art-rich site with famous mausoleums",
+                "name": "Cementerio de la Recoleta",
+                "description": "Sitio rico en arte con famosos mausoleos",
                 "photos": "https://lh3.googleusercontent.com/p/AF1QipNNW6wP5SvK1ngY2-KTdpCCxZuvsIEedXAPH-3_=s1600-w900",
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/115118851937052032752\">A Google User</a>"
@@ -223,7 +223,7 @@
             },
             {
                 "name": "Plaza de Mayo",
-                "description": "Iconic 19th-century central square",
+                "description": "Icónica plaza central del siglo XIX",
                 "photos": "https://lh3.googleusercontent.com/p/AF1QipOFbzwuXtzJJTorIo_2FVTIS6n__Cqny8MIFwrI=s1600-w900",
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/102862970682232404616\">Leonardo Cazón</a>"
@@ -232,7 +232,7 @@
             },
             {
                 "name": "Casa Rosada",
-                "description": "Famed presidential palace with tours",
+                "description": "Palacio presidencial famoso con tours",
                 "place_id": "ChIJdW8nviw1o5URbfhFBe8haeE",
                 "photos": "https://lh3.googleusercontent.com/p/AF1QipNLAYkgz7tAiMc9o4wxHcd7mRHiFI0tniM6pVe3=s1600-w900",
                 "html_attributions": [
@@ -241,7 +241,7 @@
             },
             {
                 "name": "Obelisco",
-                "description": "Iconic 67m-high white obelisk",
+                "description": "Obelisco blanco icónico de 67 m de altura",
                 "place_id": "ChIJ217apvCpSgARi1VOI06tvhE",
                 "photos": "https://lh3.googleusercontent.com/p/AF1QipMZNuzy7DxxmEFKxxG1vNNb7_VJBM-202XwvITE=s1600-w900",
                 "html_attributions": [
@@ -250,7 +250,7 @@
             },
             {
                 "name": "Teatro Colón",
-                "description": "Classic, ornate performing-arts theater",
+                "description": "Teatro clásico y adornado de artes escénicas",
                 "place_id": "ChIJIxYSMMbKvJURqZGJyCpvOFM",
                 "photos": "https://lh3.googleusercontent.com/p/AF1QipM41odtdP1AGChzQHlbHWAGkzzSDC622GX5qDYf=s1600-w900",
                 "html_attributions": [
@@ -259,7 +259,7 @@
             },
             {
                 "name": "Parque Tres de Febrero",
-                "description": "Vast park with lakes & a rose garden",
+                "description": "Amplio parque con lagos y un jardín de rosas",
                 "place_id": "ChIJsQqBvZ-1vJURbm-7dxt8fgM",
                 "photos": "https://lh3.googleusercontent.com/p/AF1QipM9daX3n_ygsOy3uufpA9yuJt0WvJ_NYyZ27hUP=s1600-w900",
                 "html_attributions": [
@@ -268,7 +268,7 @@
             },
             {
                 "name": "Plaza Dorrego",
-                "description": "Landmark with cafes & a Sunday market",
+                "description": "Punto de referencia con cafeterías y un mercado dominical",
                 "photos": "https://lh3.googleusercontent.com/p/AF1QipNJJXjcS9nc_56FO_BL8qcAl_6A95f0_n-Gll-6=s1600-w900",
                 "html_attributions": [
                     "<a href=\"https://maps.google.com/maps/contrib/110377337430439271628\">M. Martín</a>"
@@ -277,7 +277,7 @@
             },
             {
                 "name": "Puente de la Mujer",
-                "description": "Landmark rotating footbridge",
+                "description": "Pasarela giratoria de referencia",
                 "place_id": "ChIJbSLzQyk1o5URPBMjt-fRU98",
                 "photos": "https://lh3.googleusercontent.com/p/AF1QipM_K_jeJqzurv0UoBe8sPlF4vflfeApUCgBcB7w=s1600-w900",
                 "html_attributions": [
@@ -289,16 +289,16 @@
     "timezone_offset_in_minutes": -180,
     "trivia": {
         "items": [
-            "It is the capital and largest city of Argentina.",
-            "It is located on estuary of the Rio de la Plata.",
-            "It is regarded as the 'Paris of South America'",
-            "The climate is subtropical with extreme temperatures being rare",
-            "The Buenos Aires Underground (Metro) is the oldest underground system in the Southern Hemisphere and oldest in the Spanish-speaking world",
-            "Top football clubs include Boca Juniors and River Plate and the match between them is known as Superclásico.",
-            "It hosted 1978 FIFA World Cup which Argetina won by defeating Netherlands by 5-1 in finals.",
+            "Es la capital y ciudad más grande de Argentina.",
+            "Está ubicado en el estuario del Río de la Plata.",
+            "Es considerado como el 'París de América del Sur'",
+            "El clima es subtropical y las temperaturas extremas son raras.",
+            "El Metro de Buenos Aires (Metro) es el sistema subterráneo más antiguo del hemisferio sur y el más antiguo del mundo de habla hispana.",
+            "Los mejores clubes de fútbol incluyen Boca Juniors y River Plate y el partido entre ellos se conoce como Superclásico.",
+            "Fue sede de la Copa Mundial de la FIFA 1978 que Argetina ganó al derrotar a Holanda por 5-1 en la final.",
             "Two movies 'La historia oficial' and 'El Secreto de sus Ojos' have won Oscar in 'Best Foreign Movie' category",
-            "University of Buenos Aires has produced five Nobel Prize winners",
-            "Tango is part of the world's cultural heritage."
+            "Universidad de Buenos Aires ha producido cinco ganadores del Premio Nobel",
+            "El tango es parte del patrimonio cultural mundial."
         ]
     }
 }
