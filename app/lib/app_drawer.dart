@@ -6,6 +6,7 @@ import 'package:pathika/places/place_info.dart';
 import 'package:universal_io/io.dart';
 
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'app_language/select_language_page.dart';
 import 'common/constants.dart';
@@ -115,7 +116,17 @@ class AppDrawer extends StatelessWidget {
               changePlace: changePlace,
               currentLanguage: currentLanguge,
               httpClient: httpClient,
-            )
+            ),
+            ListTile(
+              leading: Icon(Icons.info_outline),
+              title: Text(
+                BlocProvider.of<LocalizationBloc>(context)
+                    .localize('privacy_policy', 'Privacy Policy'),
+              ),
+              onTap: () async {
+                launch(PRIVACY_POLICY_URL);
+              }
+            ),
           ],
         ),
       ),
