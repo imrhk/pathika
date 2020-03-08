@@ -1,10 +1,15 @@
+import 'dart:convert';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pathika/localization/localization_bloc.dart';
+import 'package:pathika/places/place_info.dart';
 import 'package:universal_io/io.dart';
 
 import 'package:flutter/material.dart';
 
 import 'app_language/select_language_page.dart';
+import 'common/constants.dart';
+import 'core/repository.dart';
 import 'theme/app_theme.dart';
 
 class AppDrawer extends StatelessWidget {
@@ -12,6 +17,7 @@ class AppDrawer extends StatelessWidget {
   final Function appLanguageChanged;
   final HttpClient httpClient;
   final String currentLanguge;
+  final Function changePlace;
 
   const AppDrawer({
     Key key,
@@ -19,13 +25,17 @@ class AppDrawer extends StatelessWidget {
     this.appLanguageChanged,
     this.httpClient,
     this.currentLanguge,
+    this.changePlace,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Drawer(
       child: SafeArea(
-        child: ListView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
           children: [
             ExpansionTile(
               leading: Icon(Icons.palette),
@@ -97,14 +107,73 @@ class AppDrawer extends StatelessWidget {
                     ),
                   ),
                 );
-                if (appLanguageChanged != null) 
-                  appLanguageChanged(response);
+                if (appLanguageChanged != null) appLanguageChanged(response);
                 Navigator.of(context).pop();
               },
             ),
+            PlacesList(
+              changePlace: changePlace,
+              currentLanguage: currentLanguge,
+              httpClient: httpClient,
+            )
           ],
         ),
       ),
     );
+  }
+}
+
+class PlacesList extends StatelessWidget {
+  final HttpClient httpClient;
+  final String currentLanguage;
+  final Function changePlace;
+
+  const PlacesList({
+    Key key,
+    this.httpClient,
+    this.currentLanguage,
+    this.changePlace,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return FutureBuilder<List<PlaceInfo>>(
+      builder: (ctx, snapshot) {
+        if (snapshot.connectionState == ConnectionState.done &&
+            snapshot.data != null) {
+          List<PlaceInfo> places = snapshot.data;
+          return ExpansionTile(
+              leading: Icon(Icons.history),
+              title: Text(
+                BlocProvider.of<LocalizationBloc>(context)
+                    .localize('archive', 'Archive'),
+              ),
+              children: places
+                  .map(
+                    (item) => ListTile(
+                      title: Text(item.name),
+                      onTap: () {
+                        changePlace(item.id);
+                        Navigator.of(context).pop();
+                      },
+                    ),
+                  )
+                  .toList());
+        }
+        return Container();
+      },
+      future: getPlaces(),
+    );
+  }
+
+  Future<List<PlaceInfo>> getPlaces() async {
+    String data = await Repository.getResponse(
+      httpClient: httpClient,
+      url: '$BASE_URL/assets/json/$API_VERSION/places_$currentLanguage.json',
+    );
+    List<PlaceInfo> places = (json.decode(data) as List)
+        .map<PlaceInfo>((item) => PlaceInfo.fromMap(item))
+        .toList();
+    return places;
   }
 }

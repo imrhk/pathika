@@ -179,6 +179,13 @@ class _InitPageState extends State<InitPage> {
     } catch (onError) {}
   }
 
+  void changePlace(String placeId) {
+    if (placeId != _placeId)
+      setState(() {
+        _placeId = placeId;
+      });
+  }
+
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<LocalizationBloc, LocalizationState>(
@@ -199,6 +206,7 @@ class _InitPageState extends State<InitPage> {
               httpClient: widget.httpClient,
               appTheme: widget.appTheme,
               appLanguageChanged: _appLanguageChanged,
+              changePlace: changePlace,
             ),
           );
         }
@@ -225,14 +233,16 @@ class PlaceDetailsPage extends StatefulWidget {
   final HttpClient httpClient;
   final AppTheme appTheme;
   final Function appLanguageChanged;
-  const PlaceDetailsPage(
-      {Key key,
-      @required this.placeId,
-      this.language = "en",
-      this.httpClient,
-      this.appTheme,
-      this.appLanguageChanged})
-      : assert(placeId != null),
+  final Function changePlace;
+  const PlaceDetailsPage({
+    Key key,
+    @required this.placeId,
+    this.language = "en",
+    this.httpClient,
+    this.appTheme,
+    this.appLanguageChanged,
+    this.changePlace,
+  })  : assert(placeId != null),
         super(key: key);
 
   @override
@@ -321,6 +331,7 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
             appLanguageChanged: widget.appLanguageChanged,
             changeAppTheme: changeAppTheme,
             currentLanguge: widget.language,
+            changePlace: widget.changePlace,
           ),
           body: FutureBuilder<PlaceDetails>(
             builder: (context, snapshot) {
