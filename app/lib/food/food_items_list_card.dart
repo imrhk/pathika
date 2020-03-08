@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pathika/localization/localization.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../common/info_card.dart';
@@ -119,7 +121,10 @@ class __FoodItemsListCardInternalState
         ),
         ButtonBar(
           children: <Widget>[
-            Text('Show Veg Only'),
+            Text(
+              BlocProvider.of<LocalizationBloc>(context)
+                  .localize('veg_only', 'Show Veg Only'),
+            ),
             Switch(
               value: showVegOnly,
               onChanged: (_) => _toggleFilterValue(),

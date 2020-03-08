@@ -29,8 +29,10 @@ class AppDrawer extends StatelessWidget {
           children: [
             ExpansionTile(
               leading: Icon(Icons.palette),
-              title: Text(BlocProvider.of<LocalizationBloc>(context)
-                          .localize('theme', 'Theme'),),
+              title: Text(
+                BlocProvider.of<LocalizationBloc>(context)
+                    .localize('theme', 'Theme'),
+              ),
               children: <Widget>[
                 ListTile(
                     title: Text(
@@ -42,25 +44,37 @@ class AppDrawer extends StatelessWidget {
                     }),
                 Divider(),
                 ListTile(
-                    title: Text('Colorful Light'),
+                    title: Text(
+                      BlocProvider.of<LocalizationBloc>(context)
+                          .localize('colorful_light', 'Colorful Light'),
+                    ),
                     onTap: () {
                       changeAppTheme(AppTheme.ColorfulLight());
                     }),
                 Divider(),
                 ListTile(
-                    title: Text('Dark'),
+                    title: Text(
+                      BlocProvider.of<LocalizationBloc>(context)
+                          .localize('dark', 'Dark'),
+                    ),
                     onTap: () {
                       changeAppTheme(AppTheme.Dark());
                     }),
                 Divider(),
                 ListTile(
-                    title: Text('Colorful Dark'),
+                    title: Text(
+                      BlocProvider.of<LocalizationBloc>(context)
+                          .localize('colorful_dark', 'Colorful Dark'),
+                    ),
                     onTap: () {
                       changeAppTheme(AppTheme.ColorfulDark());
                     }),
                 Divider(),
                 ListTile(
-                    title: Text('Gold Dark'),
+                    title: Text(
+                      BlocProvider.of<LocalizationBloc>(context)
+                          .localize('gold_dark', 'Gold Dark'),
+                    ),
                     onTap: () {
                       changeAppTheme(AppTheme.GoldDark());
                     }),
@@ -69,7 +83,10 @@ class AppDrawer extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(Icons.language),
-              title: Text('Change Language'),
+              title: Text(
+                BlocProvider.of<LocalizationBloc>(context)
+                    .localize('change_langauge', 'Change Language'),
+              ),
               onTap: () async {
                 final response = await Navigator.of(context).push(
                   MaterialPageRoute(
@@ -80,8 +97,7 @@ class AppDrawer extends StatelessWidget {
                     ),
                   ),
                 );
-                if(appLanguageChanged != null)
-                  appLanguageChanged(response);
+                if (appLanguageChanged != null) appLanguageChanged(response);
               },
             ),
           ],

@@ -130,8 +130,9 @@ class _InitPageState extends State<InitPage> {
       if (language != null && language.trim() != "") {
         _language = language;
         _getLatestPlace(context);
-        BlocProvider.of<LocalizationBloc>(context).add(FetchLocalization(_language));
-    } else {
+        BlocProvider.of<LocalizationBloc>(context)
+            .add(FetchLocalization(_language));
+      } else {
         return;
       }
     }
@@ -155,7 +156,8 @@ class _InitPageState extends State<InitPage> {
       _language = language;
       _isRtl = isRTL;
       _getLatestPlace(context);
-      BlocProvider.of<LocalizationBloc>(context).add(ChangeLocalization(_language));
+      BlocProvider.of<LocalizationBloc>(context)
+          .add(ChangeLocalization(_language));
     } else {
       _getLanguage(context);
     }
@@ -184,7 +186,8 @@ class _InitPageState extends State<InitPage> {
       if (state is LocalizationUnintialized || state is LocalizationLoading) {
         return _buildLoadingScaffold();
       } else if (state is LocalizationError) {
-        BlocProvider.of<LocalizationBloc>(context).add(FetchLocalization(LOCALE_DEFAULT));
+        BlocProvider.of<LocalizationBloc>(context)
+            .add(FetchLocalization(LOCALE_DEFAULT));
         return _buildLoadingScaffold();
       } else if (state is LocalizationLoaded) {
         if (_placeId == null) {
@@ -327,7 +330,8 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                 );
               } else if (snapshot.hasError) {
                 return Center(
-                  child: Text('Error occured.\n ${snapshot.error.toString()}'),
+                  child: Text(
+                      '${BlocProvider.of<LocalizationBloc>(context).localize('error_occured', 'Error occured')}\n ${snapshot.error.toString()}'),
                 );
               } else {
                 return mapPlaceDetailsDataToUI(context, snapshot.data);
@@ -457,7 +461,7 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                 Container(
                   width: double.infinity,
                   child: Text(
-                    'Cover photo location: ${placeDetails.basicInfo.place}',
+                    '${BlocProvider.of<LocalizationBloc>(context).localize('cover_photo_location', 'Cover photo location')}: ${placeDetails.basicInfo.place}',
                     textAlign: TextAlign.end,
                   ),
                 ),
@@ -517,7 +521,8 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                 SizedBox(height: 20),
                 Center(
                   child: Text(
-                    'Made with ❤️ in India',
+                    BlocProvider.of<LocalizationBloc>(context)
+                        .localize('made_in_india', 'Made with ❤️ in India'),
                     style: TextStyle(fontSize: 16),
                     textAlign: TextAlign.center,
                   ),

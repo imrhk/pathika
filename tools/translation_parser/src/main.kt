@@ -26,6 +26,9 @@ fun main() {
             }
     }
 
+    getEntries(File("./data/app_localization/$DEFAULT_LANGUAGE.json"))
+        .forEach { entry -> masterMap.putIfAbsent(entry.key, entry.value) }
+
     val masterJson = JSONObject()
     masterMap.filterNot { it.value is String && ((it.value as String).startsWith("http") || (it.value as String).contains("href")) }
         .entries.forEach {entry->
@@ -34,9 +37,10 @@ fun main() {
 
     masterFile.writeText(masterJson.toString(4))
 
-    val languages = JSONArray(File("./data/input/languages.json").readText())
-        .let { return@let List<String> (it.length()) {index -> it.getJSONObject(index).getString("id") } }.filterNot { it == DEFAULT_LANGUAGE }.toList()
+//    val languages = JSONArray(File("./data/input/languages.json").readText())
+//        .let { return@let List<String> (it.length()) {index -> it.getJSONObject(index).getString("id") } }.filterNot { it == DEFAULT_LANGUAGE }.toList()
 
+    val languages = listOf("fr")
 
     languages.forEach {language->
         val translationFile = File("./data/output/translations_$language.json")
@@ -57,18 +61,29 @@ fun main() {
 
     languages.forEach {language ->
         val translationFile = File("./data/output/translations_$language.json")
-        val translationJson = if (translationFile.exists())  JSONObject(File("./data/output/translations_$language.json").readText()) else JSONObject()
+        val translationJson = if (translationFile.exists())  JSONObject(translationFile.readText()) else JSONObject()
 
-        places.forEach {place->
-            val sourceFile = File("./data/input/$place/details_$DEFAULT_LANGUAGE.json")
-            val targetFile = File("./data/output/release/$place/details_$language.json")
+        val copyTranslatedContent = { sourceFile : File, targetFile: File ->
             var targetFileContent = sourceFile.readText()
             translationJson.keySet().forEach {key ->
                 targetFileContent = targetFileContent.replace("\"$key\"", "\"${translationJson.getString(key)}\"")
             }
             targetFile.writeText(targetFileContent)
         }
+
+        places.forEach {place->
+            val sourceFile = File("./data/input/$place/details_$DEFAULT_LANGUAGE.json")
+            val targetFile = File("./data/output/release/$place/details_$language.json")
+            copyTranslatedContent(sourceFile, targetFile)
+        }
+
+        val sourceFile = File("./data/app_localization/$DEFAULT_LANGUAGE.json")
+        val targetFile = File("./data/app_localization/$language.json")
+        copyTranslatedContent(sourceFile, targetFile)
+
     }
+
+
 
     println("Total Api Calls: $totalApiCalls")
     println("Total Cached Calls: $totalCachedCalls")

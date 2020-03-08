@@ -1,14 +1,15 @@
 import 'dart:convert';
-import 'package:universal_io/io.dart';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:universal_io/io.dart';
 
 import '../common/constants.dart';
 import '../common/material_card.dart';
 import '../core/repository.dart';
+import '../localization/localization.dart';
 import 'app_language.dart';
 
 class SelectLanguagePage extends StatefulWidget {
@@ -16,7 +17,12 @@ class SelectLanguagePage extends StatefulWidget {
   final String currentLanguage;
   final bool fromSettings;
 
-  const SelectLanguagePage({Key key, this.httpClient, this.currentLanguage, this.fromSettings = false}) : super(key: key);
+  const SelectLanguagePage(
+      {Key key,
+      this.httpClient,
+      this.currentLanguage,
+      this.fromSettings = false})
+      : super(key: key);
   @override
   _SelectLanguagePageState createState() => _SelectLanguagePageState();
 }
@@ -34,7 +40,7 @@ class _SelectLanguagePageState extends State<SelectLanguagePage> {
   }
 
   _checkForAppLanguage() async {
-    if(widget.fromSettings) {
+    if (widget.fromSettings) {
       setState(() {
         appLanguageChecked = true;
       });
@@ -44,10 +50,10 @@ class _SelectLanguagePageState extends State<SelectLanguagePage> {
     if (sharedPref.containsKey(APP_LANGUAGE)) {
       appLangauge = sharedPref.getString(APP_LANGUAGE);
       bool isRTL = false;
-      if(sharedPref.containsKey('APP_LANGUAGE_IS_RTL')) {
+      if (sharedPref.containsKey('APP_LANGUAGE_IS_RTL')) {
         isRTL = sharedPref.getBool('APP_LANGUAGE_IS_RTL');
       }
-      Navigator.of(context).pop({'rtl' : isRTL, 'language': appLangauge});
+      Navigator.of(context).pop({'rtl': isRTL, 'language': appLangauge});
     } else {
       setState(() {
         appLanguageChecked = true;
@@ -56,7 +62,7 @@ class _SelectLanguagePageState extends State<SelectLanguagePage> {
   }
 
   _saveAppLanguage(String id, bool isRTL) async {
-    Navigator.of(context).pop({'rtl' : isRTL, 'language': id});
+    Navigator.of(context).pop({'rtl': isRTL, 'language': id});
   }
 
   @override
@@ -66,20 +72,25 @@ class _SelectLanguagePageState extends State<SelectLanguagePage> {
         body: Center(
           child: CircularProgressIndicator(),
         ),
-        
       );
     }
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Select Language'),
-        automaticallyImplyLeading: widget.currentLanguage != null, 
+        title: Text(
+          BlocProvider.of<LocalizationBloc>(context)
+              .localize('select_language', 'Select Language'),
+        ),
+        automaticallyImplyLeading: widget.currentLanguage != null,
       ),
       body: FutureBuilder<List<AppLanguage>>(
         builder: (ctx, snapshot) {
           if (snapshot.hasError) {
             return Center(
-              child: Text('Error. Please check your connection'),
+              child: Text(
+                BlocProvider.of<LocalizationBloc>(context).localize(
+                    'check_connection', 'Error. Please check your connection'),
+              ),
             );
           } else if (snapshot.connectionState != ConnectionState.done) {
             return Center(
@@ -89,8 +100,9 @@ class _SelectLanguagePageState extends State<SelectLanguagePage> {
             final appLanguages = snapshot.data;
             appLanguages.sort((a, b) => a.id.compareTo(b.name));
             //put english at top
-            final indexOfEnglish = appLanguages.indexWhere((element) => element.id == "en");
-            if(indexOfEnglish != -1) {
+            final indexOfEnglish =
+                appLanguages.indexWhere((element) => element.id == "en");
+            if (indexOfEnglish != -1) {
               final en = appLanguages[indexOfEnglish];
               appLanguages.removeAt(indexOfEnglish);
               appLanguages.insert(0, en);

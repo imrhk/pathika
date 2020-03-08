@@ -31,9 +31,12 @@ flutter:
 
   assets:
     - assets_remote/assets/json/v1/languages.json
-    - assets_remote/assets/json/v1/buenos_aires/details_en.json
-    - assets_remote/assets/json/v1/buenos_aires/details_hi.json
     - resources/localization/en.json
+    - resources/localization/hi.json
+    - resources/localization/es.json
+    - resources/localization/fr.json
+    
+    
      
     
     
