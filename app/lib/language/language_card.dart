@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../common/info_card.dart';
+import '../localization/localization.dart';
 import 'language_details.dart';
 
 class LanguageCard extends StatelessWidget {
@@ -16,7 +18,8 @@ class LanguageCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InfoCard(
       color: useColorsOnCard ? Colors.lightBlue : null,
-      heading: 'Language',
+      heading: BlocProvider.of<LocalizationBloc>(context)
+          .localize('language', 'Language'),
       title: details.primary,
       subtitle: details.secondary.join(','),
     );

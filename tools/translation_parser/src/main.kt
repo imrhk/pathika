@@ -8,7 +8,7 @@ const val DEFAULT_LANGUAGE = "en"
 const val SECRET_KEY = "./data/GOOGLE_COULD_API_KEY.txt"
 const val CACHE_PREFIX = "P_"
 
-val NO_TRANSLATION = listOf("place_id", "emoji", "symbol", "photo_by", "id", "movies")
+val NO_TRANSLATION = listOf("place_id", "emoji", "symbol", "photo_by", "id", "movies", "code")
 
 var totalApiCalls = 0
 var totalCachedCalls = 0
@@ -37,10 +37,10 @@ fun main() {
 
     masterFile.writeText(masterJson.toString(4))
 
-//    val languages = JSONArray(File("./data/input/languages.json").readText())
-//        .let { return@let List<String> (it.length()) {index -> it.getJSONObject(index).getString("id") } }.filterNot { it == DEFAULT_LANGUAGE }.toList()
+    val languages = JSONArray(File("./data/input/languages.json").readText())
+        .let { return@let List<String> (it.length()) {index -> it.getJSONObject(index).getString("id") } }.filterNot { it == DEFAULT_LANGUAGE }.toList()
 
-    val languages = listOf("fr")
+    //val languages = listOf("fr")
 
     languages.forEach {language->
         val translationFile = File("./data/output/translations_$language.json")

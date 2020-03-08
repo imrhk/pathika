@@ -21,7 +21,8 @@ class FoodItemsListCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InfoCard(
       color: useColorsOnCard ? Colors.teal : null,
-      heading: 'Food',
+      heading:
+          BlocProvider.of<LocalizationBloc>(context).localize('food', 'Food'),
       body: _FoodItemsListCardInternal(
         useColorsOnCard: useColorsOnCard,
         items: details.items,

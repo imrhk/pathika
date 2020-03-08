@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pathika/localization/localization.dart';
 
 import '../common/info_card.dart';
 import 'trivia_list_details.dart';
@@ -52,7 +54,8 @@ class TriviaListCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InfoCard(
       color: useColorsOnCard ? Colors.blueGrey : null,
-      heading: 'Trivia',
+      heading: BlocProvider.of<LocalizationBloc>(context)
+          .localize('trivia', 'Trivia'),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,

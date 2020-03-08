@@ -23,7 +23,7 @@ import 'currency/currency_card.dart';
 import 'dance/dance_card.dart';
 import 'famous_people/person_list_card.dart';
 import 'food/food_items_list_card.dart';
-import 'industries/language_card.dart';
+import 'industries/industry_card.dart';
 import 'language/language_card.dart';
 import 'localization/localization.dart';
 import 'localization/localization_bloc.dart';
@@ -80,7 +80,7 @@ class _PathikaApp2State extends State<PathikaApp2> {
               primaryColor: Colors.black,
               textTheme: Theme.of(context).textTheme),
       // theme: ThemeData.dark(),
-      home: BlocProvider(
+      home: BlocProvider<LocalizationBloc>(
         create: (context) => LocalizationBloc(
           httpClient: widget.httpClient,
           assetsClient: FlutterAssetsClient(
@@ -183,9 +183,7 @@ class _InitPageState extends State<InitPage> {
   Widget build(BuildContext context) {
     return BlocBuilder<LocalizationBloc, LocalizationState>(
         builder: (ctx, state) {
-      if (state is LocalizationUnintialized || state is LocalizationLoading) {
-        return _buildLoadingScaffold();
-      } else if (state is LocalizationError) {
+      if (state is LocalizationError) {
         BlocProvider.of<LocalizationBloc>(context)
             .add(FetchLocalization(LOCALE_DEFAULT));
         return _buildLoadingScaffold();
@@ -204,6 +202,8 @@ class _InitPageState extends State<InitPage> {
             ),
           );
         }
+      } else {
+        return _buildLoadingScaffold();
       }
     });
   }
@@ -407,6 +407,7 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
               MoviesListCard(
                 details: placeDetails.moviesList,
                 useColorsOnCard: useColorsOnCard,
+                countryName: placeDetails.countryDetails.name,
               ),
               DanceCard(
                 details: placeDetails.danceDetails,
@@ -486,12 +487,14 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                               color: Theme.of(context).textTheme.caption.color),
                         ),
                       TextSpan(
-                        text:
-                            ' If you believe there is translation issue or any other issue with the content, please report ',
+                        text: BlocProvider.of<LocalizationBloc>(context).localize(
+                            'report_issue',
+                            ' If you believe there is translation issue or any other issue with the content, please report '),
                         style: Theme.of(context).textTheme.caption,
                       ),
                       TextSpan(
-                        text: 'here',
+                        text: ' ${BlocProvider.of<LocalizationBloc>(context)
+                            .localize('_here', ' here')} ',
                         style: Theme.of(context).textTheme.caption.apply(
                               decoration: TextDecoration.underline,
                             ),
@@ -541,10 +544,12 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
   }
 
   Future<PlaceDetails> _getData(BuildContext context) async {
-    Future<String> response = kDebugMode
-        ? DefaultAssetBundle.of(context).loadString(
-            'assets_remote/assets/json/$API_VERSION/${widget.placeId}/details_${widget.language}.json')
-        : Repository.getResponse(
+    Future<String> response =
+        // kDebugMode
+        //     ? DefaultAssetBundle.of(context).loadString(
+        //         'assets_remote/assets/json/$API_VERSION/${widget.placeId}/details_${widget.language}.json')
+        //     :
+        Repository.getResponse(
             httpClient: widget.httpClient,
             url:
                 '$BASE_URL/assets/json/$API_VERSION/${widget.placeId}/details_${widget.language}.json',

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../common/info_card.dart';
+import '../localization/localization.dart';
 import 'airport_details.dart';
 
 class AirportCard extends StatelessWidget {
@@ -16,7 +18,8 @@ class AirportCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InfoCard(
       color: useColorsOnCard ? Colors.cyan : null,
-      heading: 'Airport',
+      heading: BlocProvider.of<LocalizationBloc>(context)
+          .localize('airport', 'Airport'),
       title: details.name,
     );
   }

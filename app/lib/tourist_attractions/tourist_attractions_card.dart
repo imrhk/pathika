@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pathika/localization/localization.dart';
 
 import '../common/info_card.dart';
 import 'tourist_attraction_item_card.dart';
@@ -18,7 +20,8 @@ class TouristAttractionsCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InfoCard(
       color: useColorsOnCard ? Colors.green : null,
-      heading: 'Tourist Attractions',
+      heading: BlocProvider.of<LocalizationBloc>(context)
+          .localize('tourist_attractions', 'Tourist Attractions'),
       body: Container(
         height: 300,
         child: ListView.builder(

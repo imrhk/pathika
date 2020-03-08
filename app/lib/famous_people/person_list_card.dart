@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../common/info_card.dart';
+import '../localization/localization.dart';
 import 'person_list.dart';
 import 'person_tile.dart';
 
@@ -49,7 +51,8 @@ class PersonListCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InfoCard(
       color: useColorsOnCard ? Colors.cyan : null,
-      heading: 'Famous People',
+      heading: BlocProvider.of<LocalizationBloc>(context)
+          .localize('famous_people', 'Famous People'),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,

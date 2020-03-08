@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../common/info_card.dart';
+import '../localization/localization.dart';
 import 'sports_details.dart';
 
 class SportsCard extends StatelessWidget {
@@ -16,7 +18,8 @@ class SportsCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InfoCard(
       color: useColorsOnCard ? Colors.lightBlue : null,
-      heading: 'Most Popular Sports',
+      heading: BlocProvider.of<LocalizationBloc>(context)
+          .localize('most_popular_sports', 'Most Popular Sports'),
       title: details.title,
       footer: Text(details.footer),
     );

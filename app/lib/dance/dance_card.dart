@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../common/info_card.dart';
+import '../localization/localization.dart';
 import 'dance_details.dart';
 
 class DanceCard extends StatelessWidget {
@@ -16,7 +18,7 @@ class DanceCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InfoCard(
       color: useColorsOnCard ? Colors.red : null,
-      heading: 'Dance',
+      heading: BlocProvider.of<LocalizationBloc>(context).localize('dance', 'Dance'),
       title: details.title,
     );
   }
