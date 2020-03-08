@@ -23,29 +23,30 @@ if (flutterVersionName == null) {
 
 def secretProperties =  new Properties()
 def secretPropertiesFile = rootProject.file('secret.properties')
-if(secretPropertiesFile.exists) {
+if(secretPropertiesFile.exists()) {
     secretPropertiesFile.withReader('UTF-8') { reader ->
         secretProperties.load(reader)
     }
 }
 
 def keystoreFile = secretProperties.getProperty('store.file')
-if(keystore == null) {
+if(keystoreFile == null) {
      throw new GradleException("Keystore file not found")
 }
 
 def keystorePassword = secretProperties.getProperty('store.password')
-if(keyPassword == null) {
-    keyPassword = ""
+if(keystorePassword == null) {
+    keystorePassword = ""
 }
 
-def keyAlias = secretProperties.getProperty('key.alias')
-if(keyAlias == null) {
-    keyAlias = ""
+def keyAliasValue = secretProperties.getProperty('key.alias')
+if(keyAliasValue == null) {
+    keyAliasValue = ""
 }
 
-def keyPassword = secretProperties.getProperty('key.password') {
-    keyPassword = ""
+def keyPasswordValue = secretProperties.getProperty('key.password') 
+if(keyPasswordValue == null) {
+    keyPasswordValue = ""
 }
 
 apply plugin: 'com.android.application'
@@ -78,8 +79,8 @@ android {
         releaseConfig {
             storeFile file(keystoreFile)
             storePassword keystorePassword
-            keyAlias keyAlias
-            keyPassword keyPassword
+            keyAlias keyAliasValue
+            keyPassword keyPasswordValue
             v2SigningEnabled true
         }
     }
