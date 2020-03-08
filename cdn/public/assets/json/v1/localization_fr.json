@@ -1,0 +1,15 @@
+{
+    "theme" : "Thème",
+    "light" : "Lumière",
+    "colorful_light" : "Lumière colorée",
+    "dark" : "Foncé",
+    "colorful_dark" : "Coloré foncé",
+    "gold_dark" : "Or foncé",
+    "change_langauge" : "Changer de langue",
+    "error_occured" : "Erreur est survenue",
+    "cover_photo_location" : "Emplacement de la photo de couverture",
+    "made_in_india" : "Fabriqué avec ❤️ en Inde",
+    "select_language" : "Choisir la langue",
+    "check_connection" : "Erreur. Veuillez vérifier votre connexion",
+    "veg_only" : "Afficher uniquement les légumes"
+}
