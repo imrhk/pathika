@@ -32,5 +32,6 @@
     "_hours" : "hours",
     "_or" : "or",
     "report_issue" : " If you believe there is translation issue or any other issue with the content, please report ",
-    "_here" : "here"
+    "_here" : "here",
+    "_archive" : "Archive"
 }

@@ -146,7 +146,7 @@ class PlacesList extends StatelessWidget {
               leading: Icon(Icons.history),
               title: Text(
                 BlocProvider.of<LocalizationBloc>(context)
-                    .localize('archive', 'Archive'),
+                    .localize('_archive', 'Archive'),
               ),
               children: places
                   .map(
