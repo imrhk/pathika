@@ -97,7 +97,9 @@ class AppDrawer extends StatelessWidget {
                     ),
                   ),
                 );
-                if (appLanguageChanged != null) appLanguageChanged(response);
+                if (appLanguageChanged != null) 
+                  appLanguageChanged(response);
+                Navigator.of(context).pop();
               },
             ),
           ],

@@ -72,24 +72,24 @@ class _PathikaApp2State extends State<PathikaApp2> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: appTheme.themeData ??
-          ThemeData(
-              accentColor: Colors.white,
-              primaryColor: Colors.black,
-              textTheme: Theme.of(context).textTheme),
-      // theme: ThemeData.dark(),
-      home: BlocProvider<LocalizationBloc>(
-        create: (context) => LocalizationBloc(
-          httpClient: widget.httpClient,
-          assetsClient: FlutterAssetsClient(
-            assetBundle: DefaultAssetBundle.of(context),
-          ),
-        )..add(
-            FetchLocalization(LOCALE_DEFAULT),
-          ),
-        child: InitPage(
+    return BlocProvider<LocalizationBloc>(
+      create: (context) => LocalizationBloc(
+        httpClient: widget.httpClient,
+        assetsClient: FlutterAssetsClient(
+          assetBundle: DefaultAssetBundle.of(context),
+        ),
+      )..add(
+          FetchLocalization(LOCALE_DEFAULT),
+        ),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: appTheme.themeData ??
+            ThemeData(
+                accentColor: Colors.white,
+                primaryColor: Colors.black,
+                textTheme: Theme.of(context).textTheme),
+        // theme: ThemeData.dark(),
+        home: InitPage(
           httpClient: widget.httpClient,
           appTheme: appTheme ?? AppTheme.Light(),
         ),
@@ -493,8 +493,8 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                         style: Theme.of(context).textTheme.caption,
                       ),
                       TextSpan(
-                        text: ' ${BlocProvider.of<LocalizationBloc>(context)
-                            .localize('_here', ' here')} ',
+                        text:
+                            ' ${BlocProvider.of<LocalizationBloc>(context).localize('_here', ' here')} ',
                         style: Theme.of(context).textTheme.caption.apply(
                               decoration: TextDecoration.underline,
                             ),
