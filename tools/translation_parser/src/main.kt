@@ -81,6 +81,13 @@ fun main() {
         val targetFile = File("./data/app_localization/$language.json")
         copyTranslatedContent(sourceFile, targetFile)
 
+        val remoteTargetFile = File("./data/output/release/localization_$language.json")
+        targetFile.copyTo(remoteTargetFile, overwrite = true)
+
+        val placesListSourceFile = File("./data/input/places_$DEFAULT_LANGUAGE.json")
+        val placesListTargetFile = File("./data/input/places_$language.json")
+        copyTranslatedContent(placesListSourceFile, placesListTargetFile)
+
     }
 
 
@@ -98,7 +105,7 @@ fun getResponse(text : String, language: String) : String {
         totalCachedCalls++
         val content = cacheFile.readText()
         val contentJson = JSONObject(content)
-        contentJson.getJSONObject("data").toString()
+        contentJson.getString("data")
     }
     else {
         totalApiCalls++

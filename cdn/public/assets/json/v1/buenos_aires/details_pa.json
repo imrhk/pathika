@@ -1,0 +1,304 @@
+{
+    "basic_info": {
+        "name": "ਬੁਏਨਸ ਆਇਰਸ",
+        "id": "buenos_aires",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Puerto_Madero%2C_Buenos_Aires_%2840689219792%29.jpg/1280px-Puerto_Madero%2C_Buenos_Aires_%2840689219792%29.jpg",
+        "place": "ਪੋਰਟੋ ਮੈਡੀਰੋ, ਬੁਏਨਸ ਆਇਰਸ",
+        "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+        "photo_by": "Deensel",
+        "attribution_url": "https://www.flickr.com/photos/deensel/40689219792/"
+    },
+    "airport": {
+        "name": "ਮਿਨੀਸਟ੍ਰੋ ਪਿਸਤਾਰੀਨੀ ਅੰਤਰਰਾਸ਼ਟਰੀ ਹਵਾਈ ਅੱਡਾ"
+    },
+    "climate": {
+        "type": "ਸਬਟ੍ਰੋਪਿਕਲ",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "ਗਰਮੀ",
+                "temp": "25 ਡਿਗਰੀ ਸੈਲਸੀਅਸ 22 ਡਿਗਰੀ ਸੈਲਸੀਅਸ",
+                "duration": "ਜਨ-ਫਰਵਰੀ"
+            },
+            {
+                "emoji": "🍁",
+                "name": "ਪਤਝੜ",
+                "temp": "22 ਡਿਗਰੀ ਸੈਲਸੀਅਸ ਤੋਂ 15 ਡਿਗਰੀ ਸੈਲਸੀਅਸ",
+                "duration": "ਮਾਰਚ-ਮਈ"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "ਸਰਦੀਆਂ",
+                "temp": "12 ਡਿਗਰੀ ਸੈਂਟੀਗ੍ਰੇਡ ਤੋਂ 14 ਡਿਗਰੀ ਸੈਲਸੀਅਸ",
+                "duration": "ਜੂਨ-ਅਗਸਤ"
+            },
+            {
+                "emoji": "🌼",
+                "name": "ਬਸੰਤ",
+                "temp": "18 ਡਿਗਰੀ ਸੈਲਸੀਅਸ ਤੋਂ 23 ਡਿਗਰੀ ਸੈਲਸੀਅਸ",
+                "duration": "ਅਕਤੂਬਰ-ਦਸੰਬਰ"
+            }
+        ]
+    },
+    "country": {
+        "name": "ਅਰਜਨਟੀਨਾ 🇦🇷",
+        "continent": "ਸਾਉਥ ਅਮਰੀਕਾ"
+    },
+    "currency": {
+        "name": "ਅਰਜਨਟੀਨਾ ਪੇਸੋ",
+        "symbol": "$",
+        "code": "ARS"
+    },
+    "dance": {
+        "name": "ਟੈਂਗੋ"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "ਟ੍ਰਿਪਲ ਚਾਕਲੇਟ ਅਤੇ ਗਲੇਜ਼ ਸੈਂਡਵਿਚ ਕੂਕੀਜ਼",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/f/f0/AlfajoresTriples.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Julgon",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:AlfajoresTriples.jpg"
+            },
+            {
+                "label": "ਦੁਲਸ ਡੀ ਲੇਚੇ",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Dulce_de_leche_2007.jpg/640px-Dulce_de_leche_2007.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Kai Hendry",
+                "attribution_url": "https://www.flickr.com/photos/16105436@N00/362655239"
+            },
+            {
+                "label": "ਪੀਜ਼ਾ",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/2/23/Pizza_Argentina_04.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Carlosdisogra",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Pizza_Argentina_04.jpg"
+            },
+            {
+                "label": "ਭੁੰਨੋ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Parrillada_argentina.jpg/1024px-Parrillada_argentina.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Eduardo P",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Parrillada_argentina.jpg"
+            },
+            {
+                "label": "ਐਮਪਨਦਾਸ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Empanadas_cordobesas_%28Argentina%29_caseras.JPG/1024px-Empanadas_cordobesas_%28Argentina%29_caseras.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Carlosdisogra",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Empanadas_cordobesas_(Argentina)_caseras.JPG"
+            },
+            {
+                "label": "ਚਿਮੀਚੂਰੀ ਸਾਸ ਨਾਲ ਸਟੈੱਕ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Steak_with_Chimichurri_Sauce_%2813316528445%29.jpg/1024px-Steak_with_Chimichurri_Sauce_%2813316528445%29.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Dominic Lockyer",
+                "attribution_url": "https://www.flickr.com/photos/farehamwine/13316528445/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "ਫੂਡ ਪ੍ਰੋਸੈਸਿੰਗ",
+        "secondary": [
+            "ਮੋਟਰ ਵਾਹਨ",
+            "ਮੈਟਲਵਰਕਿੰਗ",
+            "ਟੈਕਸਟਾਈਲ"
+        ]
+    },
+    "language": {
+        "primary": "ਸਪੈਨਿਸ਼",
+        "secondary": [
+            "ਅੰਗਰੇਜ਼ੀ",
+            "ਇਤਾਲਵੀ"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_01.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_02.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_03.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_04.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_05.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Relatos salvajes",
+                "poster_url": "https://image.tmdb.org/t/p/w300/aNlTNuLvm0mFbVvmayLvEq1qF84.jpg"
+            },
+            {
+                "title": "El secreto de sus ojos",
+                "poster_url": "https://image.tmdb.org/t/p/w300/j8tqe0Xk8fbi8RvU5Bb1x1cOmgo.jpg"
+            },
+            {
+                "title": "El Clan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/t85v4agr03AdvuD2HcqhXKxV7II.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "ਪੋਪ ਫ੍ਰਾਂਸਿਸ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.jpg/815px-Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.jpg",
+                "work": "ਕੈਥੋਲਿਕ ਚਰਚ ਦੇ ਮੁਖੀ ਅਤੇ ਵੈਟੀਕਨ ਸਿਟੀ ਸਟੇਟ ਦੇ ਪ੍ਰਭੂਸੱਤਾ",
+                "place": "ਫਲੋਰਸ, ਬੁਏਨਸ ਆਇਰਸ",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 2.0</a>",
+                "photo_by": "Jeffrey Bruno",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Canonization_2014-_The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_(14036966124).jpg"
+            },
+            {
+                "name": "ਚੇ ਗਵੇਰਾ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/CheHigh.jpg/599px-CheHigh.jpg",
+                "work": " ਅਰਜਨਟੀਨਾ ਦਾ ਮਾਰਕਸਵਾਦੀ ਇਨਕਲਾਬੀ",
+                "place": "ਰੋਸਾਰਿਓ, ਬੁਏਨਸ ਆਇਰਸ ਤੋਂ 278 ਕਿਮੀ"
+            },
+            {
+                "name": "ਲਿਓਨਲ ਮੇਸੀ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lionel_Messi_20180626.jpg/420px-Lionel_Messi_20180626.jpg",
+                "work": "ਪੇਸ਼ੇਵਰ ਫੁਟਬਾਲਰ",
+                "place": "ਮਾਲਾ",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Кирилл Венедиктов",
+                "attribution_url": "https://www.soccer.ru/galery/1055457/photo/733439"
+            },
+            {
+                "name": "ਡੀਏਗੋ ਮਰਾਡੋਨਾ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Diego_Maradona_2012_2.jpg/622px-Diego_Maradona_2012_2.jpg",
+                "work": "ਸੇਵਾਮੁਕਤ ਪੇਸ਼ੇਵਰ ਫੁੱਟਬਾਲਰ",
+                "place": "ਲੈਨਜ਼ ਓਏਸਟ, ਬੁਏਨਸ ਆਇਰਸ ਪ੍ਰਾਂਤ",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY 2.0</a>",
+                "photo_by": "Doha Stadium Plus Qatar",
+                "attribution_url": "https://www.flickr.com/photos/66463488@N06/7448907672"
+            },
+            {
+                "name": "ਜੋਰਜ ਲੁਈਸ ਬੋਰਗੇਸ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Jorge_Luis_Borges.jpg",
+                "work": "ਅਰਜਨਟੀਨਾ ਦੀ ਲਘੂ ਕਹਾਣੀਕਾਰ",
+                "place": "ਬੁਏਨਸ ਆਇਰਸ"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ ਫੁਟਬਾਲ",
+        "footer": "ਅਰਜਨਟੀਨਾ ਨੇ 2 ਵਾਰ ਫੁਟਬਾਲ ਦਾ ਵਿਸ਼ਵ ਕੱਪ ਜਿੱਤਿਆ (1986, 1978)"
+    },
+    "time_to_visit": {
+        "primary": "ਅਪ੍ਰੈਲ-ਜੂਨ",
+        "secondary": "ਸਤੰਬਰ-ਦਸੰਬਰ"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "ਮੂੰਹ",
+                "description": "ਕੈਮੀਨੀਟੋ ਐਲੀ ਅਤੇ ਲਾ ਬੰਬੋਨੇਰਾ ਸਟੇਡੀਅਮ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOXp0TkuBJu2fFsZYdLPBej0dX06nZ2Z6COU8Y0=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115635279769083588516\">André Magdalena</a>"
+                ],
+                "place_id": "ChIJpfBfv7A0o5URoJl1DYymWDg"
+            },
+            {
+                "name": "ਰੀਕੋਲੇਟਾ ਕਬਰਸਤਾਨ",
+                "description": "ਮਸ਼ਹੂਰ ਮਜ਼ਾਰਾਂ ਵਾਲੀ ਕਲਾ ਨਾਲ ਭਰੀ ਸਾਈਟ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNNW6wP5SvK1ngY2-KTdpCCxZuvsIEedXAPH-3_=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115118851937052032752\">A Google User</a>"
+                ],
+                "place_id": "ChIJs5EH8aLKvJURw6UX3MYKGKE"
+            },
+            {
+                "name": "ਪਲਾਜ਼ਾ ਡੀ ਮੇਯੋ",
+                "description": "ਆਈਕਾਨਿਕ 19 ਵੀਂ ਸਦੀ ਦਾ ਕੇਂਦਰੀ ਵਰਗ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOFbzwuXtzJJTorIo_2FVTIS6n__Cqny8MIFwrI=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102862970682232404616\">Leonardo Cazón</a>"
+                ],
+                "place_id": "ChIJXx79V9vKvJURS2GosE58c8w"
+            },
+            {
+                "name": "ਪਿੰਕ ਹਾ Houseਸ",
+                "description": "ਯਾਤਰਾ ਦੇ ਨਾਲ ਪ੍ਰਸਿੱਧ ਰਾਸ਼ਟਰਪਤੀ ਮਹਿਲ",
+                "place_id": "ChIJdW8nviw1o5URbfhFBe8haeE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNLAYkgz7tAiMc9o4wxHcd7mRHiFI0tniM6pVe3=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115118851937052032752\">Lazaro Huizinga</a>"
+                ]
+            },
+            {
+                "name": "ਓਬਲੀਸਕ",
+                "description": "ਆਈਕੋਨਿਕ 67 ਮੀਟਰ-ਉੱਚ ਚਿੱਟਾ ਓਬਲੀਸਕ",
+                "place_id": "ChIJ217apvCpSgARi1VOI06tvhE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMZNuzy7DxxmEFKxxG1vNNb7_VJBM-202XwvITE=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/111127317868746618272\">Yami Iv</a>"
+                ]
+            },
+            {
+                "name": "ਕੋਲਨ ਥੀਏਟਰ",
+                "description": "ਕਲਾਸਿਕ, ਸਜਾਵਟੀ ਪ੍ਰਦਰਸ਼ਨ-ਕਲਾ ਥੀਏਟਰ",
+                "place_id": "ChIJIxYSMMbKvJURqZGJyCpvOFM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM41odtdP1AGChzQHlbHWAGkzzSDC622GX5qDYf=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115635432213531829732\">Sabrina Vainschtok</a>"
+                ]
+            },
+            {
+                "name": "ਟਰੇਸ ਡੀ ਫਰੈਬਰੋ ਪਾਰਕ",
+                "description": "ਝੀਲਾਂ ਅਤੇ ਗੁਲਾਬ ਦੇ ਬਾਗ ਨਾਲ ਵਿਸ਼ਾਲ ਪਾਰਕ",
+                "place_id": "ChIJsQqBvZ-1vJURbm-7dxt8fgM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM9daX3n_ygsOy3uufpA9yuJt0WvJ_NYyZ27hUP=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112185936974765972473\">Liliana Lovato</a>"
+                ]
+            },
+            {
+                "name": "ਡੌਰਰੇਗੋ ਵਰਗ",
+                "description": "ਕੈਫੇ ਅਤੇ ਐਤਵਾਰ ਦੀ ਮਾਰਕੀਟ ਵਾਲਾ ਲੈਂਡਮਾਰਕ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNJJXjcS9nc_56FO_BL8qcAl_6A95f0_n-Gll-6=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110377337430439271628\">M. Martín</a>"
+                ],
+                "place_id": "ChIJifSktCzLvJURsTMaMFXLu3E"
+            },
+            {
+                "name": "Bridgeਰਤ ਦਾ ਬ੍ਰਿਜ",
+                "description": "ਲੈਂਡਮਾਰਕ ਘੁੰਮਾਉਣ ਵਾਲਾ ਫੁੱਟਬ੍ਰਿਜ",
+                "place_id": "ChIJbSLzQyk1o5URPBMjt-fRU98",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM_K_jeJqzurv0UoBe8sPlF4vflfeApUCgBcB7w=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102506221278284370139\">A Google User</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": -180,
+    "trivia": {
+        "items": [
+            "ਇਹ ਅਰਜਨਟੀਨਾ ਦੀ ਰਾਜਧਾਨੀ ਅਤੇ ਸਭ ਤੋਂ ਵੱਡਾ ਸ਼ਹਿਰ ਹੈ.",
+            "ਇਹ ਰੀਓ ਡੀ ਲਾ ਪਲਾਟਾ ਦੀ ਮਹਾਂਮਾਰੀ ਉੱਤੇ ਸਥਿਤ ਹੈ.",
+            "ਇਸ ਨੂੰ 'ਦੱਖਣੀ ਅਮਰੀਕਾ ਦਾ ਪੈਰਿਸ' ਮੰਨਿਆ ਜਾਂਦਾ ਹੈ",
+            "ਮੌਸਮ ਸਬਟ੍ਰੋਪਿਕਲ ਹੈ ਅਤਿਅੰਤ ਤਾਪਮਾਨ ਬਹੁਤ ਘੱਟ ਹੁੰਦਾ ਹੈ",
+            "ਬੁਏਨੋਸ ਆਇਰਸ ਅੰਡਰਗ੍ਰਾਉਂਡ (ਮੈਟਰੋ) ਦੱਖਣੀ ਅਰਧ ਹਿੱਸੇ ਦਾ ਸਭ ਤੋਂ ਪੁਰਾਣਾ ਭੂਮੀਗਤ ਪ੍ਰਣਾਲੀ ਹੈ ਅਤੇ ਸਪੈਨਿਸ਼ ਬੋਲਣ ਵਾਲੀ ਦੁਨੀਆਂ ਦਾ ਸਭ ਤੋਂ ਪੁਰਾਣਾ ਹੈ.",
+            "ਚੋਟੀ ਦੇ ਫੁੱਟਬਾਲ ਕਲੱਬਾਂ ਵਿੱਚ ਬੋਕਾ ਜੂਨੀਅਰਜ਼ ਅਤੇ ਰਿਵਰ ਪਲੇਟ ਸ਼ਾਮਲ ਹਨ ਅਤੇ ਉਨ੍ਹਾਂ ਵਿਚਕਾਰ ਮੈਚ ਸੁਪਰਕਲਸੀਕੋ ਵਜੋਂ ਜਾਣਿਆ ਜਾਂਦਾ ਹੈ.",
+            "ਇਸ ਨੇ 1978 ਦੇ ਫੀਫਾ ਵਰਲਡ ਕੱਪ ਦੀ ਮੇਜ਼ਬਾਨੀ ਕੀਤੀ ਜਿਸ ਨੂੰ ਅਰਗੇਟੀਨਾ ਨੇ ਫਾਈਨਲ ਵਿਚ ਨੀਦਰਲੈਂਡਜ਼ ਨੇ 5-1 ਨਾਲ ਹਰਾ ਕੇ ਜਿੱਤੀ.",
+            "ਦੋ ਫਿਲਮਾਂ 'ਦਿ ਆਫੀਸ਼ੀਅਲ ਸਟੋਰੀ' ਅਤੇ 'ਉਨ੍ਹਾਂ ਦੀਆਂ ਅੱਖਾਂ' ਚ ਦਾ ਰਾਜ਼ 'ਨੇ' ਬੈਸਟ ਵਿਦੇਸ਼ੀ ਫਿਲਮ 'ਸ਼੍ਰੇਣੀ ਵਿਚ ਆਸਕਰ ਜਿੱਤਿਆ ਹੈ।",
+            "ਬੁਏਨਸ ਆਇਰਸ ਯੂਨੀਵਰਸਿਟੀ ਨੇ ਪੰਜ ਨੋਬਲ ਪੁਰਸਕਾਰ ਜੇਤੂਆਂ ਨੂੰ ਤਿਆਰ ਕੀਤੇ ਹਨ",
+            "ਟੈਂਗੋ ਵਿਸ਼ਵ ਦੀ ਸਭਿਆਚਾਰਕ ਵਿਰਾਸਤ ਦਾ ਹਿੱਸਾ ਹੈ."
+        ]
+    }
+}

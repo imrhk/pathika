@@ -43,3 +43,4 @@ app/android/.project
 app/android/.settings/org.eclipse.buildship.core.prefs
 app/android/app/.classpath
 app/android/app/.project
+*.aab

@@ -32,5 +32,7 @@
     "_hours" : "heures",
     "_or" : "ou",
     "report_issue" : " Si vous pensez qu'il y a un problème de traduction ou tout autre problème avec le contenu, veuillez signaler",
-    "_here" : "ici"
+    "_here" : "ici",
+    "_archive" : "Archiver",
+    "privacy_policy" : "Politique de confidentialité"
 }
