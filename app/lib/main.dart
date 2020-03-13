@@ -82,7 +82,6 @@ class _PathikaApp2State extends State<PathikaApp2> {
           FetchLocalization(LOCALE_DEFAULT),
         ),
       child: MaterialApp(
-        debugShowCheckedModeBanner: false,
         theme: appTheme.themeData ??
             ThemeData(
                 accentColor: Colors.white,
@@ -556,10 +555,6 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
 
   Future<PlaceDetails> _getData(BuildContext context) async {
     Future<String> response =
-        // kDebugMode
-        //     ? DefaultAssetBundle.of(context).loadString(
-        //         'assets_remote/assets/json/$API_VERSION/${widget.placeId}/details_${widget.language}.json')
-        //     :
         Repository.getResponse(
             httpClient: widget.httpClient,
             url:

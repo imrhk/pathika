@@ -51,28 +51,25 @@ class __FoodItemsListCardInternalState
   @override
   void initState() {
     _filteredItems = []..addAll(widget.items);
-    _getFilterValue();
+    _setFilteredItems();
     super.initState();
   }
 
-  Future _getFilterValue() async {
+  Future _setFilteredItems() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     bool filterValue = true;
     if (prefs.containsKey('FOOD_VEG_NON_VEG_FILTER')) {
       filterValue = prefs.getBool('FOOD_VEG_NON_VEG_FILTER');
     }
-    if (filterValue != showVegOnly) {
-      setState(() {
-        showVegOnly = filterValue;
-        if (showVegOnly) {
-          _filteredItems = widget.items
-              .where((element) => element.isNonVeg == false)
-              .toList();
-        } else {
-          _filteredItems = []..addAll(widget.items);
-        }
-      });
-    }
+    setState(() {
+      showVegOnly = filterValue;
+      if (showVegOnly) {
+        _filteredItems =
+            widget.items.where((element) => element.isNonVeg == false).toList();
+      } else {
+        _filteredItems = []..addAll(widget.items);
+      }
+    });
     return Future.value();
   }
 
