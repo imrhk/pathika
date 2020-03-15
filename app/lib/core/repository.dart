@@ -13,9 +13,9 @@ class Repository {
     String url,
     Duration cacheTime = const Duration(),
   }) async {
-    if (kIsWeb) {
+    if (kIsWeb || kDebugMode) {
        return await _getResponseForWeb(
-        httpClient: httpClient, cacheTime: cacheTime, url: url);
+        httpClient: httpClient, url: url);
     } else {
       return _getResponseForMobile(
           httpClient: httpClient, cacheTime: cacheTime, url: url);
@@ -24,9 +24,7 @@ class Repository {
 
   static Future<String> _getResponseForWeb({
     UIO.HttpClient httpClient,
-    String url,
-    Duration cacheTime = const Duration(),
-  }) async {
+    String url, }) async {
     try {
       var request = await httpClient.getUrl(Uri.parse(url));
       var response = await request.close();
@@ -64,7 +62,7 @@ class Repository {
       }
     }
     String json = await _getResponseForWeb(
-        httpClient: httpClient, cacheTime: cacheTime, url: url);
+        httpClient: httpClient, url: url);
     if (json != null) {
       await cacheFile.writeAsString(json);
       return json;

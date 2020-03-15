@@ -1,0 +1,326 @@
+{
+    "basic_info": {
+        "name": "Munich",
+        "id": "munich",
+        "background_image": "https://cdn.pixabay.com/photo/2019/12/21/10/19/munich-4710182_1280.jpg",
+        "place": "Munich New Town Hall",
+        "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+        "photo_by": "schliff",
+        "attribution_url": "https://pixabay.com/photos/munich-marienplatz-bavaria-4710182/"
+    },
+    "airport": {
+        "name": "Flughafen München"
+    },
+    "climate": {
+        "type": "Oceanic",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "Summer",
+                "temp": "14°C to 24°C",
+                "duration": "Jun-Aug"
+            },
+            {
+                "emoji": "🍁",
+                "name": "Autumn",
+                "temp": "19°C to 7°C",
+                "duration": "Sep-Oct"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "Winter",
+                "temp": "7°C to -2°C",
+                "duration": "Nov-Feb"
+            },
+            {
+                "emoji": "🌼",
+                "name": "Spring",
+                "temp": "2°C to 18°C",
+                "duration": "Mar-May"
+            }
+        ]
+    },
+    "country": {
+        "name": "Germany 🇩🇪",
+        "continent": "Europe"
+    },
+    "currency": {
+        "name": "Euro",
+        "symbol": "€",
+        "code": "EUR"
+    },
+    "dance": {
+        "name": "Schuhplattler"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "Schweinsbraten",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Krustenbraten_mit_Dunkelbierso%C3%9Fe.jpg/1024px-Krustenbraten_mit_Dunkelbierso%C3%9Fe.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Takeaway",
+                "attribution_url": "https://de.wikipedia.org/wiki/Datei:Krustenbraten_mit_Dunkelbierso%C3%9Fe.jpg"
+            },
+            {
+                "label": "Weisswurst",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Weisswurst_Brezn_Senf.jpg/1024px-Weisswurst_Brezn_Senf.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Takeaway",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Weisswurst_Brezn_Senf.jpg"
+            },
+            {
+                "label": "Brezen",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Fastenbrezel.JPG/1008px-Fastenbrezel.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Manuela Paki-Costa",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Fastenbrezel.JPG"
+            },
+            {
+                "label": "Potato Dumplings",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2017/09/22/18/59/dumpling-2776725_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "RitaE",
+                "attribution_url": "https://pixabay.com/photos/dumpling-potato-dumplings-sauce-2776725/"
+            },
+            {
+                "label": "Wheat beer",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/2013_Augustiner_Weissbier_Munich_pub.jpg/768px-2013_Augustiner_Weissbier_Munich_pub.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Takeaway",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:2013_Augustiner_Weissbier_Munich_pub.jpg"
+            },
+            {
+                "label": "Roasted Chicken",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2019/04/07/17/20/chicken-4110208_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "RitaE",
+                "attribution_url": "https://pixabay.com/de/photos/h%C3%A4hnchen-brath%C3%A4hnchen-grillh%C3%A4hnchen-4110208/"
+            },
+            {
+                "label": "Spätzle",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2014/12/24/13/01/cheese-noodles-579077_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "moerschy",
+                "attribution_url": "https://pixabay.com/photos/cheese-noodles-swabian-579077/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "Automotive",
+        "secondary": [
+            "IT",
+            "Aerospace"
+        ]
+    },
+    "language": {
+        "primary": "German",
+        "secondary": [
+            "English"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/munich_map_en_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/munich_map_en_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/munich_map_en_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/munich_map_en_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/munich_map_en_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Das Boot",
+                "poster_url": "https://image.tmdb.org/t/p/original/5y7JboNZuCy2fgPQJflh3CemTSt.jpg"
+            },
+            {
+                "title": "Der Untergang",
+                "poster_url": "https://image.tmdb.org/t/p/original/tWkYcchUuh0rdm94Zcv9BhXJpNt.jpg"
+            },
+            {
+                "title": "Das Leben der Anderen",
+                "poster_url": "https://image.tmdb.org/t/p/original/qOE1jywObYhereKoTE7Ahuq7CTc.jpg"
+            },
+            {
+                "title" : "Good Bye, Lenin!",
+                "poster_url" : "https://image.tmdb.org/t/p/original/bkiK9X3oTBQKJyXYXynbD1ptTdQ.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name" : "Wassily Leontief",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Wassily_Leontief_1973.jpg/450px-Wassily_Leontief_1973.jpg",
+                "work" : "Noble prize winner economist known for his research on input-output analysis",
+                "place" : "Munich"
+            },
+
+            {
+                "name" : "Rudolf Mössbauer",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/e/e2/Mossbauer.jpg",
+                "work" : "Nobiel prize winner physicist known for discovering Mossbauer Effect",
+                "place" : "Munich"
+            },
+            {
+                "name" : "Philipp Lahm",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Philipp_Lahm_Training_2017-05_FC_Bayern_Muenchen-1.jpg/373px-Philipp_Lahm_Training_2017-05_FC_Bayern_Muenchen-1.jpg",
+                "work" : "Retired footballer known for leading Germany to win 2014 FIFA World Cup.",
+                "place" : "Munich",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by" : "Rufus46"
+            },
+
+            {
+                "name" : "Michael Haneke",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/3/3c/Michael_Haneke_2009.jpg",
+                "work" : "Movie director",
+                "place" : "Munich",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by" : "Georges Biard"
+            },
+            {
+                "name": "Eva Braun",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Eva_Braun_walking_dog.jpg",
+                "work": "Adolf hitler wife for less than 40 hours",
+                "place": "Munich",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 3.0 de</a>",
+                "photo_by": "Unknown",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Eva_Braun_walking_dog.jpg"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ Football",
+        "footer": "Munich is home to Germany's most popular club, FC Bayern"
+    },
+    "time_to_visit": {
+        "primary": "March-May",
+        "secondary": "September-October"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "Marienplatz",
+                "description": "Central square & landmark buildings",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOdpQAkGzw1aqkrVybXVCRY_Et_Tw1TuTwop8tn=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113347838338291289972\">hidekichi jelly</a>"
+                ],
+                "place_id": "ChIJLWM3jSROqEcRswsOX7NRrd4"
+            },
+            {
+                "name": "English Garden",
+                "description": "Huge urban park with a beer garden",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNfbQK2EAFu-3PZeuKKFjIXf5dzP4ZgYnZyuw69=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100718423266761419520\">Kadir Simsek</a>"
+                ],
+                "place_id": "ChIJayv4lZd1nkcR0e_vfGLfm8k"
+            },
+            {
+                "name": "Munich Residenz",
+                "description": "Museum complex in an old royal residence",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPt2bPWXaYXZLVzizIAkQTVfAVIZk5NOw_RNUjj=s1600-w800",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114060614283218056078\">Sumontra Pongdam</a>"
+                ],
+                "place_id": "ChIJrWV_DYx1nkcRD_tKgCHVad4"
+            },
+            {
+                "name": "Nymphenburg Palace",
+                "description": "Regal 18th-century palace & coach museum",
+                "place_id": "ChIJLWiif8x3nkcRZm0epRZWTCc",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOguMOqSKVvixv1V3Mp4y2De7Busk4a2XJeYIIz=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100285512816371724866\">wendy finn</a>"
+                ]
+            },
+            {
+                "name": "New Town Hall",
+                "description": "Neo-Gothic town hall with 85m tower",
+                "place_id": "ChIJ_0T5Jot1nkcRZ3kV_GGLAFE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPTYZSk7Ou68PGan-BeMBMLcp7bKtURish6Gk5A=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115196292285063528742\">Pia P</a>"
+                ]
+            },
+            {
+                "name": "Olympiapark",
+                "description": "Olympic stadium with tours & attractions",
+                "place_id": "ChIJM7U-OGN2nkcRS91BCoGkObE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMTh7fqk_SFFKot35FyzJVknXPMLU49fAC_PKBk=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117148199602544876966\">Shi-Ting</a>"
+                ]
+            },
+            {
+                "name": "BMW Museum",
+                "description": "Space-age steel venue with cars & bikes",
+                "place_id": "ChIJsQqBvZ-1vJURbm-7dxt8fgM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipN_RZ41IwEOsMvpOogbNOi078W8TLw2BmS6SRFr=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100728289776000960260\">Maria Georgieva</a>"
+                ]
+            },
+            {
+                "name": "Allianz Arena",
+                "description": "Home ground for FC Bayern Munich",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP_Bs8wZt5OvgtgW5qSguiJiRrqFVFlBvXrsFHQ=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/103324609948188488729\">goran dadic</a>"
+                ],
+                "place_id": "ChIJHyWKEoVznkcRI8QyjkJgTe0"
+            },
+            {
+                "name": "Neuschwanstein Castle",
+                "description": "19th-century hilltop fairytale castle",
+                "place_id": "ChIJXaNOxMr3nEcRo7ud02uGpsg",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNXgrJRHJ3YD2n7VFoztW_chl6de5cFpto03ezs=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113795522519382697104\">Слава Паршин</a>"
+                ]
+            },
+            {
+                "name": "Siegestor",
+                "description": "Historic triumphal arch with statues",
+                "place_id": "ChIJtXQ2VI11nkcR4DsvByLfq1k",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPUq3iguvntOQ0RQUMP5cZtsXdVEyCriK1BOsM0=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100792641303588681874\">Tom Hsia</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 60,
+    "trivia": {
+        "items": [
+            "It is the capital and most populous city of Bavaria state of Germany.",
+            "It is third larget city in Germany after Berlin and Hamburg.",
+            "It is situated at the banks of River Isar.",
+            "The climate is Oceanic with winter being very cold.",
+            "The English Garden is one of the largest gardens in the world.",
+            "The white sausage is really famous here. They are server befone noon only.",
+            "Oktoberfest is the world's largest Volksfest. It is 16-18 days folk festival.",
+            "More than 6 million people attend Oktoberfest every year.",
+            "It hosted the 1972 Summer Olympics",
+            "The largest beer pub in the world, Hofbräuhaus, is here.",
+            "Its transport system consists of underground metro, trams, buses and high-speed rail.",
+            "It is home to the German car company BMW and has a large museum dedicated to the manufacturer."
+        ]
+    }
+}

@@ -12,18 +12,22 @@ val NO_TRANSLATION = listOf("place_id", "emoji", "symbol", "photo_by", "id", "mo
 
 var totalApiCalls = 0
 var totalCachedCalls = 0
+var totalMapsCalls = 0
+var totalMapsCachedCalls = 0
 
 fun main() {
-    //val places = JSONArray(File("./data/input/places.json").readText())
-    val places = JSONArray("[\"buenos_aires\"]")
+    val places = JSONArray(File("./data/input/places.json").readText())
+    //val places = JSONArray("[\"buenos_aires\"]")
     //create the master file
     val masterFile = File("./data/output/translations_$DEFAULT_LANGUAGE.json")
     val masterMap = mutableMapOf<String, Any>()
     places.forEach {place ->
-        getEntries(File("./data/input/$place/details_$DEFAULT_LANGUAGE.json"))
+        val placeDetails = File("./data/input/$place/details_$DEFAULT_LANGUAGE.json")
+        getEntries(placeDetails)
             .forEach {entry ->
                 masterMap.putIfAbsent(entry.key, entry.value);
             }
+        processMapData(place.toString(), DEFAULT_LANGUAGE, placeDetails);
     }
 
     getEntries(File("./data/app_localization/$DEFAULT_LANGUAGE.json"))
@@ -75,6 +79,7 @@ fun main() {
             val sourceFile = File("./data/input/$place/details_$DEFAULT_LANGUAGE.json")
             val targetFile = File("./data/output/release/$place/details_$language.json")
             copyTranslatedContent(sourceFile, targetFile)
+            processMapData(place.toString(), language, targetFile)
         }
 
         val sourceFile = File("./data/app_localization/$DEFAULT_LANGUAGE.json")
@@ -92,8 +97,12 @@ fun main() {
 
 
 
+
     println("Total Api Calls: $totalApiCalls")
     println("Total Cached Calls: $totalCachedCalls")
+
+    println("Total Maps Api Calls: $totalMapsCalls")
+    println("Total Maps Cached Calls: $totalMapsCachedCalls")
 }
 
 fun getResponse(text : String, language: String) : String {
@@ -159,4 +168,44 @@ fun getEntries(jsonArray: JSONArray) : Map<String, Any> {
         }
     }
     return map
+}
+
+fun processMapData(place: String, language: String, outputFile: File) {
+    val mapDataFile = File("./data/input/$place/mapdata.json")
+    if(!mapDataFile.exists())
+        return
+    val secretKey = File(SECRET_KEY).readText().replace("\n", "")
+    val levels = JSONArray(mapDataFile.readText())
+    for(i in 0 until levels.length()) {
+        val level = levels.getJSONObject(i)
+        val centerJson = level.getJSONArray("center")
+        val zoom = level.getInt("zoom")
+        val marker = level.getJSONArray("marker")
+
+        val centerLat = centerJson.getDouble(0)
+        val centerLang = centerJson.getDouble(1)
+
+        val markerLat =marker.getDouble(0)
+        val markerLang = marker.getDouble(1)
+
+        val url = "https://maps.googleapis.com/maps/api/staticmap?center=$centerLat,$centerLang&zoom=$zoom&size=515x300&maptype=terrain&markers=color:yellow%7C$markerLat,$markerLang&key=$secretKey&language=$language&scale=2"
+        val hashCode = url.hashCode()
+        val cacheFile = File("./data/cache/$CACHE_PREFIX$hashCode")
+        val imageFileName = "${place}_map_${language}_${i+1}.png"
+        if(cacheFile.exists()) {
+            totalMapsCachedCalls++
+            cacheFile.copyTo(File("./data/images/$imageFileName"), overwrite = true)
+        }
+        else {
+            totalMapsCalls++
+            val response = URL(url).readBytes()
+            cacheFile.writeBytes(response)
+            cacheFile.copyTo(File("./data/images/$imageFileName"), overwrite = true)
+        }
+
+        val content = outputFile.readText()
+        val newContent = content.replace("${place}_map_${DEFAULT_LANGUAGE}_${i+1}.png", imageFileName)
+        outputFile.writeText(newContent)
+    }
+
 }

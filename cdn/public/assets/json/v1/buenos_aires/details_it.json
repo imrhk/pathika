@@ -127,11 +127,11 @@
     },
     "location_map": {
         "items": [
-            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_01.png",
-            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_02.png",
-            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_03.png",
-            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_04.png",
-            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_05.png"
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_it_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_it_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_it_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_it_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_it_5.png"
         ]
     },
     "movies": {

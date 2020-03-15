@@ -2,5 +2,9 @@
     {
         "id" : "buenos_aires",
         "name" : "Буэнос-Айрес"
+    },
+    {
+        "id" : "munich",
+        "name": "Мюнхен"
     }
 ]
