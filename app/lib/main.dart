@@ -39,7 +39,9 @@ class _PathikaAppState extends State<PathikaApp> {
   @override
   void initState() {
     super.initState();
-    FirebaseAdMob.instance.initialize(appId: getAdConfig().appId);
+    final adConfig = getAdConfig();
+    if(adConfig != null)
+      FirebaseAdMob.instance.initialize(appId: getAdConfig().appId);
     _loadUserTheme();
   }
 

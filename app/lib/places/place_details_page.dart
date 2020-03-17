@@ -73,22 +73,26 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
   ScrollController _scrollController = ScrollController();
   ScrollDirection _verticalScrollDirection = ScrollDirection.idle;
 
-  BannerAd bottomBarPromoAd = BannerAd(
-    adUnitId: getAdConfig().adsId[PLACES_BOTTOM_BAR_PROMO],
-    size: AdSize.banner,
-    targetingInfo: targetingInfo,
-    listener: (MobileAdEvent event) {
-      print("BannerAd event is $event");
-    },
-  );
-
+  final adConfig = getAdConfig();
+  BannerAd bottomBarPromoAd;
   _PlaceDetailsPageState(
-      {this.appTheme, this.textColor, this.useColorsOnCard = false});
+      {this.appTheme, this.textColor, this.useColorsOnCard = false}) {
+    bottomBarPromoAd = adConfig == null
+        ? null
+        : BannerAd(
+            adUnitId: getAdConfig().adsId[PLACES_BOTTOM_BAR_PROMO],
+            size: AdSize.banner,
+            targetingInfo: targetingInfo,
+            listener: (MobileAdEvent event) {
+              print("BannerAd event is $event");
+            },
+          );
+  }
 
   @override
   void dispose() {
     _scrollController.dispose();
-    bottomBarPromoAd.dispose();
+    bottomBarPromoAd?.dispose();
     super.dispose();
   }
 
@@ -110,13 +114,12 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
       }
       _previousOffset = currentOffset;
     });
-    bottomBarPromoAd
-      ..load()
-      ..show();
-
+    if (bottomBarPromoAd != null) {
+      bottomBarPromoAd
+        ..load()
+        ..show();
+    }
   }
-
-  
 
   changeAppTheme(AppTheme appTheme) async {
     Navigator.pop(context);
@@ -379,12 +382,11 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
   }
 
   Future<PlaceDetails> _getData(BuildContext context) async {
-    Future<String> response =
-        Repository.getResponse(
-            httpClient: widget.httpClient,
-            url:
-                '$BASE_URL/assets/json/$API_VERSION/${widget.placeId}/details_${widget.language}.json',
-            cacheTime: Duration(days: 7));
+    Future<String> response = Repository.getResponse(
+        httpClient: widget.httpClient,
+        url:
+            '$BASE_URL/assets/json/$API_VERSION/${widget.placeId}/details_${widget.language}.json',
+        cacheTime: Duration(days: 7));
 
     return response
         .then((source) => Future.value(PlaceDetails.fromJson(source)));
