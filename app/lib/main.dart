@@ -1,11 +1,13 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:firebase_admob/firebase_admob.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pathika/ads/ad_config.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:universal_io/io.dart' show HttpClient;
 import 'app_language/select_language_page.dart';
@@ -19,24 +21,25 @@ import 'localization/localization_event.dart';
 import 'places/place_details_page.dart';
 import 'theme/app_theme.dart';
 
-void main() => runApp(PathikaApp2(
+void main() => runApp(PathikaApp(
       httpClient: HttpClient(),
     ));
 
-class PathikaApp2 extends StatefulWidget {
+class PathikaApp extends StatefulWidget {
   final HttpClient httpClient;
-  const PathikaApp2({Key key, this.httpClient}) : super(key: key);
+  const PathikaApp({Key key, this.httpClient}) : super(key: key);
 
   @override
-  _PathikaApp2State createState() => _PathikaApp2State();
+  _PathikaAppState createState() => _PathikaAppState();
 }
 
-class _PathikaApp2State extends State<PathikaApp2> {
+class _PathikaAppState extends State<PathikaApp> {
   AppTheme appTheme = AppTheme.Light();
 
   @override
   void initState() {
     super.initState();
+    FirebaseAdMob.instance.initialize(appId: getAdConfig().appId);
     _loadUserTheme();
   }
 
@@ -143,6 +146,10 @@ class _InitPageState extends State<InitPage> {
     _appLanguageChanged(languageDetails);
   }
 
+  String get notificationTopicPrefix {
+    return kDebugMode ? 'testLocale_' : 'locale_';
+  }
+
   void _appLanguageChanged(Map<String, dynamic> map) async {
     final previousLanguage = _language;
     final sharedPref = await SharedPreferences.getInstance();
@@ -156,8 +163,8 @@ class _InitPageState extends State<InitPage> {
       _getLatestPlace(context);
       if (Platform.isAndroid || Platform.isIOS) {
         if (previousLanguage != null && previousLanguage.trim() != "")
-          _firebaseMessaging.unsubscribeFromTopic('locale_$previousLanguage');
-        _firebaseMessaging.subscribeToTopic('locale_$language');
+          _firebaseMessaging.unsubscribeFromTopic('$notificationTopicPrefix$previousLanguage');
+        _firebaseMessaging.subscribeToTopic('$notificationTopicPrefix$language');
       }
       BlocProvider.of<LocalizationBloc>(context)
           .add(ChangeLocalization(_language));

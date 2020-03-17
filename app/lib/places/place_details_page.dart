@@ -1,8 +1,10 @@
+import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pathika/ads/ad_config.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:universal_io/io.dart' show HttpClient;
 import 'package:url_launcher/url_launcher.dart';
@@ -71,12 +73,22 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
   ScrollController _scrollController = ScrollController();
   ScrollDirection _verticalScrollDirection = ScrollDirection.idle;
 
+  BannerAd bottomBarPromoAd = BannerAd(
+    adUnitId: getAdConfig().adsId[PLACES_BOTTOM_BAR_PROMO],
+    size: AdSize.banner,
+    targetingInfo: targetingInfo,
+    listener: (MobileAdEvent event) {
+      print("BannerAd event is $event");
+    },
+  );
+
   _PlaceDetailsPageState(
       {this.appTheme, this.textColor, this.useColorsOnCard = false});
 
   @override
   void dispose() {
     _scrollController.dispose();
+    bottomBarPromoAd.dispose();
     super.dispose();
   }
 
@@ -98,7 +110,13 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
       }
       _previousOffset = currentOffset;
     });
+    bottomBarPromoAd
+      ..load()
+      ..show();
+
   }
+
+  
 
   changeAppTheme(AppTheme appTheme) async {
     Navigator.pop(context);
@@ -347,7 +365,7 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                     textAlign: TextAlign.center,
                   ),
                 ),
-                SizedBox(height: 10),
+                SizedBox(height: 70),
               ],
             ),
           ),

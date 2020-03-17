@@ -4,3 +4,4 @@ const BASE_URL = kDebugMode ? "http://192.168.1.22" : "https://cdn.pathika.lited
 const API_URL = "https://pathika.litedevs.com/api";
 const API_VERSION = 'v1';
 const PRIVACY_POLICY_URL = "https://pathika.litedevs.com/privacy_policy.html";
+const WEB_APP_URL = 'https://pathika.litedevs.com/';

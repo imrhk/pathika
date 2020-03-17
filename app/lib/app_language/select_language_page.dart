@@ -108,7 +108,7 @@ class _SelectLanguagePageState extends State<SelectLanguagePage> {
               appLanguages.insert(0, en);
             }
             return Padding(
-              padding: const EdgeInsets.only(left: 8, right: 8),
+              padding: const EdgeInsets.only(left: 8, right: 8, bottom: 60),
               child: GridView.builder(
                 gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
                   maxCrossAxisExtent: 225,
