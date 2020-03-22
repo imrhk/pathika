@@ -54,11 +54,14 @@ class CurrentTimeCard extends StatelessWidget {
   }
 
   String getTimeFromDuration(Duration duration) {
-    return '${twoDigits(duration.inHours)}:${twoDigits(duration.inMinutes.remainder(60))}';
+    return '${twoDigits(duration.inHours)}:${twoDigits(duration.inMinutes.remainder(60).abs())}';
   }
 
   String twoDigits(int n) {
-    if (n >= 10) return "$n";
-    return "0$n";
+    print(n);
+    if (n >= 10 || n <= -10) return "${n.abs()}";
+    if(n > 0) return "0$n";
+    else if(n == 0) return "00";
+    else return "0${n.abs()}";
   }
 }
