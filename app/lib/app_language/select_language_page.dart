@@ -98,7 +98,12 @@ class _SelectLanguagePageState extends State<SelectLanguagePage> {
             );
           } else {
             final appLanguages = snapshot.data;
-            appLanguages.sort((a, b) => a.id.compareTo(b.name));
+            appLanguages.sort((a, b) {
+              if (a.rtl == b.rtl)
+                return a.name.compareTo(b.name);
+              else
+                return a.rtl ?? false ? 1 : -1;
+            });
             //put english at top
             final indexOfEnglish =
                 appLanguages.indexWhere((element) => element.id == "en");

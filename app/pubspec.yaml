@@ -1,7 +1,7 @@
 name: pathika
 description: A new Flutter project.
 
-version: 1.0.2+3
+version: 1.0.3+4
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -33,10 +33,7 @@ flutter:
 
   assets:
     - assets_remote/assets/json/v1/languages.json
-    - resources/localization/en.json
-    - resources/localization/hi.json
-    - resources/localization/es.json
-    - resources/localization/fr.json
+    - resources/localization/
     
     
      

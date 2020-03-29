@@ -33,101 +33,103 @@ class AppDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: SafeArea(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            ExpansionTile(
-              leading: Icon(Icons.palette),
-              title: Text(
-                BlocProvider.of<LocalizationBloc>(context)
-                    .localize('theme', 'Theme'),
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              ExpansionTile(
+                leading: Icon(Icons.palette),
+                title: Text(
+                  BlocProvider.of<LocalizationBloc>(context)
+                      .localize('theme', 'Theme'),
+                ),
+                children: <Widget>[
+                  Divider(),
+                  ListTile(
+                      title: Text(
+                        BlocProvider.of<LocalizationBloc>(context)
+                            .localize('light', 'Light'),
+                      ),
+                      onTap: () {
+                        changeAppTheme(AppTheme.Light());
+                      }),
+                  Divider(),
+                  ListTile(
+                      title: Text(
+                        BlocProvider.of<LocalizationBloc>(context)
+                            .localize('colorful_light', 'Colorful Light'),
+                      ),
+                      onTap: () {
+                        changeAppTheme(AppTheme.ColorfulLight());
+                      }),
+                  Divider(),
+                  ListTile(
+                      title: Text(
+                        BlocProvider.of<LocalizationBloc>(context)
+                            .localize('dark', 'Dark'),
+                      ),
+                      onTap: () {
+                        changeAppTheme(AppTheme.Dark());
+                      }),
+                  Divider(),
+                  ListTile(
+                      title: Text(
+                        BlocProvider.of<LocalizationBloc>(context)
+                            .localize('colorful_dark', 'Colorful Dark'),
+                      ),
+                      onTap: () {
+                        changeAppTheme(AppTheme.ColorfulDark());
+                      }),
+                  Divider(),
+                  ListTile(
+                      title: Text(
+                        BlocProvider.of<LocalizationBloc>(context)
+                            .localize('gold_dark', 'Gold Dark'),
+                      ),
+                      onTap: () {
+                        changeAppTheme(AppTheme.GoldDark());
+                      }),
+                ],
               ),
-              children: <Widget>[
-                ListTile(
-                    title: Text(
-                      BlocProvider.of<LocalizationBloc>(context)
-                          .localize('light', 'Light'),
+              ListTile(
+                leading: Icon(Icons.language),
+                title: Text(
+                  BlocProvider.of<LocalizationBloc>(context)
+                      .localize('change_langauge', 'Change Language'),
+                ),
+                onTap: () async {
+                  final response = await Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (ctx) => SelectLanguagePage(
+                        httpClient: httpClient,
+                        currentLanguage: currentLanguge,
+                        fromSettings: true,
+                      ),
                     ),
-                    onTap: () {
-                      changeAppTheme(AppTheme.Light());
-                    }),
-                Divider(),
-                ListTile(
-                    title: Text(
-                      BlocProvider.of<LocalizationBloc>(context)
-                          .localize('colorful_light', 'Colorful Light'),
-                    ),
-                    onTap: () {
-                      changeAppTheme(AppTheme.ColorfulLight());
-                    }),
-                Divider(),
-                ListTile(
-                    title: Text(
-                      BlocProvider.of<LocalizationBloc>(context)
-                          .localize('dark', 'Dark'),
-                    ),
-                    onTap: () {
-                      changeAppTheme(AppTheme.Dark());
-                    }),
-                Divider(),
-                ListTile(
-                    title: Text(
-                      BlocProvider.of<LocalizationBloc>(context)
-                          .localize('colorful_dark', 'Colorful Dark'),
-                    ),
-                    onTap: () {
-                      changeAppTheme(AppTheme.ColorfulDark());
-                    }),
-                Divider(),
-                ListTile(
-                    title: Text(
-                      BlocProvider.of<LocalizationBloc>(context)
-                          .localize('gold_dark', 'Gold Dark'),
-                    ),
-                    onTap: () {
-                      changeAppTheme(AppTheme.GoldDark());
-                    }),
-                Divider(),
-              ],
-            ),
-            ListTile(
-              leading: Icon(Icons.language),
-              title: Text(
-                BlocProvider.of<LocalizationBloc>(context)
-                    .localize('change_langauge', 'Change Language'),
+                  );
+                  if (appLanguageChanged != null && response != null)
+                    appLanguageChanged(response);
+                  Navigator.of(context).pop();
+                },
               ),
-              onTap: () async {
-                final response = await Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (ctx) => SelectLanguagePage(
-                      httpClient: httpClient,
-                      currentLanguage: currentLanguge,
-                      fromSettings: true,
-                    ),
+              PlacesList(
+                changePlace: changePlace,
+                currentLanguage: currentLanguge,
+                httpClient: httpClient,
+              ),
+              ListTile(
+                  leading: Icon(Icons.info_outline),
+                  title: Text(
+                    BlocProvider.of<LocalizationBloc>(context)
+                        .localize('privacy_policy', 'Privacy Policy'),
                   ),
-                );
-                if (appLanguageChanged != null && response != null) appLanguageChanged(response);
-                Navigator.of(context).pop();
-              },
-            ),
-            PlacesList(
-              changePlace: changePlace,
-              currentLanguage: currentLanguge,
-              httpClient: httpClient,
-            ),
-            ListTile(
-              leading: Icon(Icons.info_outline),
-              title: Text(
-                BlocProvider.of<LocalizationBloc>(context)
-                    .localize('privacy_policy', 'Privacy Policy'),
-              ),
-              onTap: () async {
-                launch(PRIVACY_POLICY_URL);
-              }
-            ),
-          ],
+                  onTap: () async {
+                    launch(PRIVACY_POLICY_URL);
+                  }),
+            ],
+          ),
         ),
       ),
     );
@@ -160,15 +162,17 @@ class PlacesList extends StatelessWidget {
                     .localize('_archive', 'Archive'),
               ),
               children: places
-                  .map(
-                    (item) => ListTile(
-                      title: Text(item.name),
-                      onTap: () {
-                        changePlace(item.id);
-                        Navigator.of(context).pop();
-                      },
-                    ),
-                  )
+                  .map((item) => [
+                        Divider(),
+                        ListTile(
+                          title: Text(item.name),
+                          onTap: () {
+                            changePlace(item.id);
+                            Navigator.of(context).pop();
+                          },
+                        )
+                      ])
+                  .expand((element) => element)
                   .toList());
         }
         return Container();
@@ -184,6 +188,8 @@ class PlacesList extends StatelessWidget {
     );
     List<PlaceInfo> places = (json.decode(data) as List)
         .map<PlaceInfo>((item) => PlaceInfo.fromMap(item))
+        .toList()
+        .reversed
         .toList();
     return places;
   }

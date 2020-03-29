@@ -65,7 +65,7 @@ class __FoodItemsListCardInternalState
       showVegOnly = filterValue;
       if (showVegOnly) {
         _filteredItems =
-            widget.items.where((element) => element.isNonVeg == false).toList();
+            widget.items.where((element) => element.isVeg).toList();
       } else {
         _filteredItems = []..addAll(widget.items);
       }
@@ -78,7 +78,7 @@ class __FoodItemsListCardInternalState
       showVegOnly = !showVegOnly;
       if (showVegOnly) {
         _filteredItems =
-            widget.items.where((element) => element.isNonVeg == false).toList();
+            widget.items.where((element) => element.isVeg).toList();
       } else {
         _filteredItems = []..addAll(widget.items);
       }
@@ -92,31 +92,40 @@ class __FoodItemsListCardInternalState
     return Column(
       children: [
         Container(
-          width: double.infinity,
-          height: 250,
-          child: ListView.builder(
-            physics: BouncingScrollPhysics(),
-            scrollDirection: Axis.horizontal,
-            shrinkWrap: false,
-            itemBuilder: (context, index) {
-              final item = _filteredItems[index];
-              return FoodItemCard(
-                label: item.label,
-                photoUrl: item.photo,
-                isVeg: item.isVeg,
-                isNonVeg: item.isNonVeg,
-                licence: item.licence,
-                attributionUrl: item.attributionUrl,
-                photoBy: item.photoBy,
-                cardColor: Theme.of(context).brightness == Brightness.dark ||
-                        widget.useColorsOnCard
-                    ? Colors.transparent
-                    : null,
-              );
-            },
-            itemCount: _filteredItems.length,
-          ),
-        ),
+            width: double.infinity,
+            height: 250,
+            child: _filteredItems.length != 0
+                ? ListView.builder(
+                    physics: BouncingScrollPhysics(),
+                    scrollDirection: Axis.horizontal,
+                    shrinkWrap: false,
+                    itemBuilder: (context, index) {
+                      final item = _filteredItems[index];
+                      return FoodItemCard(
+                        label: item.label,
+                        photoUrl: item.photo,
+                        isVeg: item.isVeg,
+                        isNonVeg: item.isNonVeg,
+                        licence: item.licence,
+                        attributionUrl: item.attributionUrl,
+                        photoBy: item.photoBy,
+                        cardColor:
+                            Theme.of(context).brightness == Brightness.dark ||
+                                    widget.useColorsOnCard
+                                ? Colors.transparent
+                                : null,
+                      );
+                    },
+                    itemCount: _filteredItems.length,
+                  )
+                : showVegOnly
+                    ? Center(
+                        child: Text(
+                          BlocProvider.of<LocalizationBloc>(context)
+                              .localize('no_veg_available', 'Vegetarian foods are not popular here.'),
+                        ),
+                      )
+                    : Center(child: Text(''))),
         ButtonBar(
           children: <Widget>[
             Text(
