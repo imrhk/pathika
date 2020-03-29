@@ -6,5 +6,9 @@
     {
         "id" : "munich",
         "name": "Munich"
+    },
+    {
+        "id" : "osaka",
+        "name": "Osaka"
     }
 ]

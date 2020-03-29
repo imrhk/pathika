@@ -1,0 +1,333 @@
+{
+    "basic_info": {
+        "name": "ઓસાકા",
+        "id": "osaka",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Central_Osaka.jpg/1280px-Central_Osaka.jpg",
+        "place": "મધ્ય ઓસાકા",
+        "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+        "photo_by": "Type specimen",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Central_Osaka.jpg"
+    },
+    "airport": {
+        "name": "કંસાઈ આંતરરાષ્ટ્રીય હવાઇમથક"
+    },
+    "climate": {
+        "type": "સબટ્રોપિકલ",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "ઉનાળો",
+                "temp": "21 ° સે થી 33. સે",
+                "duration": "Jun-Aug"
+            },
+            {
+                "emoji": "🍁",
+                "name": "પાનખર",
+                "temp": "23 ° સે થી 9 ડિગ્રી સે",
+                "duration": "Octક્ટો-નવે"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "શિયાળો",
+                "temp": "12 ° સે થી 2 ડિગ્રી સે",
+                "duration": "ડિસે-ફેબ્રુ"
+            },
+            {
+                "emoji": "🌼",
+                "name": "વસંત",
+                "temp": "5 ° સે થી 25 ડિગ્રી સે",
+                "duration": "માર્-મે"
+            },
+            {
+                "emoji": "⛈️",
+                "name": "વરસાદી",
+                "temp": "185 મીમી - 155 મીમી",
+                "duration": "જૂન-જુલાઈ"
+            },
+            {
+                "emoji": "🌀",
+                "name": "ટાયફૂન સાથે વરસાદ",
+                "temp": "160 મીમી - 110 મીમી",
+                "duration": "સપ્ટેમ્બર-.ક્ટો"
+            }
+        ]
+    },
+    "country": {
+        "name": "જાપાન 🇯🇵",
+        "continent": "એશિયા"
+    },
+    "currency": {
+        "name": "યેન",
+        "symbol": "¥",
+        "code": "JPY"
+    },
+    "dance": {
+        "name": "જિન્તા માઇ"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "સુશી અને સશીમી",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Sushi_Kanagawa_Japan_%282013%29.JPG/1024px-Sushi_Kanagawa_Japan_%282013%29.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Nandaro",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Sushi_Kanagawa_Japan_(2013).JPG"
+            },
+            {
+                "label": "કુશિકાત્સુ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/KushikatsuDaruma01.jpg/1024px-KushikatsuDaruma01.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Aiko99ann",
+                "attribution_url": "http://wikitravel.org/shared/File:KushikatsuDaruma01.jpg"
+            },
+            {
+                "label": "ટાકોયકી",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Takoyaki.jpg/1024px-Takoyaki.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.5/deed.en\">CC BY-SA 2.5</a>",
+                "photo_by": "Keith Pomakis",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Takoyaki.jpg"
+            },
+            {
+                "label": "યાકીનીકુ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2016/05/22/17/00/yakiniku-1408821_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "lalah_jp",
+                "attribution_url": "https://pixabay.com/photos/yakiniku-beef-japanese-japan-fresh-1408821/"
+            },
+            {
+                "label": "વિન્ડોઝ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2019/11/23/15/26/ramen-4647407_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "allybally4b",
+                "attribution_url": "https://pixabay.com/photos/ramen-japanese-ramen-lamen-soy-if-4647407/"
+            },
+            {
+                "label": "ઓકોનોમિઆકી",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Okonomiyaki_in_Osaka.JPG/1024px-Okonomiyaki_in_Osaka.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "ZhengZhou",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Okonomiyaki_in_Osaka.JPG"
+            },
+            {
+                "label": "ફુગુ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/8/89/Fugu_sashimi.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Suguri F",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Fugu_sashimi.jpg"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "વેપાર",
+        "secondary": [
+            "સેવાઓ",
+            "ઉત્પાદન"
+        ]
+    },
+    "language": {
+        "primary": "કેન્સાઈ જાપાનીઓ",
+        "secondary": []
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_gu_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_gu_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_gu_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_gu_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_gu_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Your Name",
+                "poster_url": "https://image.tmdb.org/t/p/w300/xq1Ugd62d23K2knRUx6xxuALTZB.jpg"
+            },
+            {
+                "title": "Akira",
+                "poster_url": "https://image.tmdb.org/t/p/w300/5KlRFKKSbyCiyYpZSS3A6G5bW0K.jpg"
+            },
+            {
+                "title": "Tokyo Story",
+                "poster_url": "https://image.tmdb.org/t/p/w300/g2YbTYKpY7N2yDSk7BfXZ18I5QV.jpg"
+            },
+            {
+                "title": "Ikiru",
+                "poster_url": "https://image.tmdb.org/t/p/w300/dgNTS4EQDDVfkzJI5msKuHu2Ei3.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "મીનાટોઝકી સના",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/180717_%EC%97%B4%EB%A6%B0%EC%9D%8C%EC%95%85%ED%9A%8C_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_%282%29_%28cropped%29.jpg/320px-180717_%EC%97%B4%EB%A6%B0%EC%9D%8C%EC%95%85%ED%9A%8C_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_%282%29_%28cropped%29.jpg",
+                "work": "પોપ ગાયક",
+                "place": "ટેનીજી-કુ, ઓસાકા",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY 4.0</a>",
+                "photo_by": "월아조운",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:180717_%EC%97%B4%EB%A6%B0%EC%9D%8C%EC%95%85%ED%9A%8C_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_(2)_(cropped).jpg"
+            },
+            {
+                "name": "યુતા નાકામોટો",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Yuta_Nakamoto_at_24th_Dream_Concert_02.png/535px-Yuta_Nakamoto_at_24th_Dream_Concert_02.png",
+                "work": "પોપ ગાયક",
+                "place": "કડોમા, ઓસાકા",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/3.0/deed.en\">CC BY 3.0</a>",
+                "photo_by": "Nine Stars",
+                "attribution_url": "https://pt.wikipedia.org/wiki/Ficheiro:Yuta_Nakamoto_at_24th_Dream_Concert_02.png"
+            },
+            {
+                "name": "નાઓમી ઓસાકા",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Naomi_Osaka_%2833948760861%29_%28cropped%29_3.jpg/479px-Naomi_Osaka_%2833948760861%29_%28cropped%29_3.jpg",
+                "work": "વ્યવસાયિક ટેનિસ પ્લેયર",
+                "place": "ચ-કુ, ઓસાકા",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0/deed.en\">CC BY-SA 2.0</a>",
+                "photo_by": "Carine06",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Naomi_Osaka_(33948760861)_(cropped)_3.jpg"
+            },
+            {
+                "name": "યુજી નાકા",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Yuji_Naka%27_-_Magic_-_Monaco_-_2015-03-21-_P1030036_%28cropped%29.jpg/512px-Yuji_Naka%27_-_Magic_-_Monaco_-_2015-03-21-_P1030036_%28cropped%29.jpg",
+                "work": "ગેમ ડિઝાઇનર, નિર્માતા, પ્રોગ્રામર",
+                "place": "હીરાકાતા, ઓસાકા, જાપાન",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Yves Tennevin",
+                "attribution_url": "https://en.wikipedia.org/wiki/Yuji_Naka#/media/File:Yuji_Naka'_-_Magic_-_Monaco_-_2015-03-21-_P1030036_(cropped).jpg"
+            },
+            {
+                "name": "હિડો નામ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/%E6%8A%95%E3%81%92%E3%81%BE%E3%81%99_%2831879540%29.jpg/640px-%E6%8A%95%E3%81%92%E3%81%BE%E3%81%99_%2831879540%29.jpg",
+                "work": "નિવૃત્ત વ્યવસાયિક બેઝબોલ પ્લેયર",
+                "place": "ઓસાકા",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Ryosuke Yagi",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:%E6%8A%95%E3%81%92%E3%81%BE%E3%81%99_(31879540).jpg"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚾ બેઝબ .લ",
+        "footer": "ફૂટબ ,લ, ટેનિસ અને સુમો પણ લોકપ્રિય છે"
+    },
+    "time_to_visit": {
+        "primary": "Octoberક્ટોબર-નવેમ્બર",
+        "secondary": "માર્ચ-મે"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "યુનિવર્સલ સ્ટુડિયો જાપાન",
+                "description": "સવારી સાથે મૂવી-થીમ આધારિત મનોરંજન પાર્ક",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOZETYVRhbxj8aEDOTKEQCig6vwCa99U2WwUoY=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/107688045126827240408\">T C</a>"
+                ],
+                "place_id": "ChIJXeLVg9DgAGARqlIyMCX-BTY"
+            },
+            {
+                "name": "ઓસાકા કેસલ",
+                "description": "સંગ્રહાલય સાથે જાણીતું, historicતિહાસિક કિલ્લો",
+                "place_id": "ChIJ_TooXM3gAGARQR6hXH3QAQ8",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPBqyIpGT93sG7JRrtsrTmAprhXBThMBclYCDja=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/107973990932680175499\">Jallen Shir</a>"
+                ]
+            },
+            {
+                "name": "ડોટોનબરી",
+                "description": "ડાઇનિંગ અને થિયેટર માટે લોકપ્રિય જિલ્લા",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOtZqwkzAxSay_NglebtmKH0RmbSZ7tVRgkKJLH=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/118021410362534801605\">Davis Wu</a>"
+                ],
+                "place_id": "ChIJ_fmKgRPnAGARkKWLtCYTu7g"
+            },
+            {
+                "name": "ઓસાકા એક્વેરિયમ કૈયુકન",
+                "description": "દરિયાઇ-જીવન પ્રદર્શનો માટે વિશાળ સીમાચિહ્ન",
+                "place_id": "ChIJzakNjPToAGARzCwIriDFg28",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPP0eNc0TPl_WbY8xtetLEuLWzse2TPo8pvw9W8=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104826993864633596144\">104826993864633596144</a>"
+                ]
+            },
+            {
+                "name": "ઉમેડા સ્કાય બિલ્ડિંગ",
+                "description": "છત-બગીચો વેધશાળા સાથે ઉચ્ચ વધારો",
+                "place_id": "ChIJbyd0kIjmAGAR_crecCbjwlc",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMAbNW4mRLzv-xq6enOmKzvyVNv7Qb80IdYBbVo=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100096084254815534374\">Navy Globe</a>"
+                ]
+            },
+            {
+                "name": "શીન્સાઇબાશિસુજી",
+                "description": "ખરીદી, ફેશન અને ગરમ વસંત",
+                "place_id": "ChIJcxIbNhHnAGARl8cKu_vPFMA",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPihS5ErIPbQffCkz_Vx259vvyN7ahRx-6kXXgX=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113728677825526491017\">Rahma Adam</a>"
+                ]
+            },
+            {
+                "name": "ઓસાકા કેસલ પાર્ક",
+                "description": "બગીચાઓ અને કિલ્લો સાથે મોટું શહેરી ઉદ્યાન",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPwfCBVHzknH5I7-epLsSZsUQFjkvBRGFQbpvFn=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/103374023271191038993\">POU asovent</a>"
+                ],
+                "place_id": "ChIJVVVld8ngAGARi9mE-a6e9mc"
+            },
+            {
+                "name": "કપ નૂડલ્સ મ્યુઝિયમ ઓસાકા આઈકેડા",
+                "description": "ટેસ્ટિંગ રૂમ સાથે રામેન નૂડલ સંગ્રહાલય",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM2YDxtgweXUtXRGABBgiRKcckk8SDadRtXYYrg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115407479400150035219\">ヒツ·ジャイアン</a>"
+                ],
+                "place_id": "ChIJp2oJD8bwAGARqttJH_AeWA4"
+            },
+            {
+                "name": "હરૂકાસ 300",
+                "description": "મનોહર દૃષ્ટિકોણથી અવલોકન ડેક",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOLzANMJSVozfaeqsBAbfxtc5KQOM54kURgKV4K=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113540333109083819899\">仲卓真</a>"
+                ],
+                "place_id": "ChIJ3eA7J_DdAGARil7_EwUaR_I"
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 540,
+    "trivia": {
+        "items": [
+            "તે જાપાનના હોન્શુના કંસાઈ ક્ષેત્રમાં નિયુક્ત શહેર છે.",
+            "7 મી અને 8 મી સદીમાં, તે શાહી પાટનગર તરીકે થોડા સમય માટે સેવા આપી.",
+            "શહેરની પશ્ચિમ બાજુ ઓસાકા ખાડી માટે ખુલ્લી છે.",
+            "વરસાદની seasonતુને 'tsuyu' કહેવામાં આવે છે, જે જૂનના પ્રારંભથી અને જુલાઈના અંતમાં થાય છે.",
+            "સેન્ટ્રલ ઓસાકા આશરે ડાઉનટાઉન અને અપટાઉન વિસ્તારોમાં કેટા (北, 'ઉત્તર') અને મીનામી (南, 'દક્ષિણ') તરીકે ઓળખાય છે",
+            "'ડેન ડેન ટાઉન' વિસ્તાર ઇલેક્ટ્રોનિક અને મંગા / એનાઇમ દૂર છે",
+            "ઓસાકા જાપાન અને વિદેશમાં તેના ખોરાક માટે જાણીતા છે. પરંતુ ત્યાં ખૂબ ઓછી શાકાહારી પસંદગીઓ છે.",
+            "જિન્તા માઇ ડાન્સ ફોર્મ ફક્ત મહિલાઓ દ્વારા જ રજૂ કરવાનો છે.",
+            "ઓસાકામાં લોકો જ્યારે ખરીદી કરે ત્યારે સોદો કરવાનું પસંદ કરે છે.",
+            "ટોક્યો અને યોકોહામા પછી તે જાપાનનું ત્રીજું સૌથી મોટું શહેર છે.",
+            "ટાકોયાકી એ બોલના આકારનું જાપાનીઝ નાસ્તા છે જે નાજુકાઈવાળા અથવા પાસાવાળા ઓક્ટોપસ, ટેમ્પુરા સ્ક્રેપ્સ, અથાણાંના આદુ અને લીલા ડુંગળીથી ભરેલું છે.",
+            "કંસાઈ આંતરરાષ્ટ્રીય વિમાનમથક સંપૂર્ણપણે કૃત્રિમ ટાપુ પર બનાવવામાં આવ્યું છે."
+        ]
+    }
+}

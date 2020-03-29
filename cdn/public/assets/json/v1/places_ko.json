@@ -6,5 +6,9 @@
     {
         "id" : "munich",
         "name": "뮌헨"
+    },
+    {
+        "id" : "osaka",
+        "name": "오사카"
     }
 ]

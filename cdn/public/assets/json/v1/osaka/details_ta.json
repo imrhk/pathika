@@ -1,0 +1,333 @@
+{
+    "basic_info": {
+        "name": "ஒசாகா",
+        "id": "osaka",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Central_Osaka.jpg/1280px-Central_Osaka.jpg",
+        "place": "மத்திய ஒசாகா",
+        "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+        "photo_by": "Type specimen",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Central_Osaka.jpg"
+    },
+    "airport": {
+        "name": "கன்சாய் சர்வதேச விமான நிலையம்"
+    },
+    "climate": {
+        "type": "துணை வெப்பமண்டல",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "கோடை",
+                "temp": "21 ° C முதல் 33. C வரை",
+                "duration": "ஜூன்-ஆகஸ்ட்"
+            },
+            {
+                "emoji": "🍁",
+                "name": "இலையுதிர் காலம்",
+                "temp": "23 ° C முதல் 9. C வரை",
+                "duration": "அக்-நவ"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "குளிர்காலம்",
+                "temp": "12 ° C முதல் 2. C வரை",
+                "duration": "டிசம்பர்-பிப்ரவரி"
+            },
+            {
+                "emoji": "🌼",
+                "name": "வசந்த",
+                "temp": "5 ° C முதல் 25. C வரை",
+                "duration": "மார்-மே"
+            },
+            {
+                "emoji": "⛈️",
+                "name": "மழை",
+                "temp": "185 மி.மீ - 155 மி.மீ.",
+                "duration": "ஜூன்-ஜூலை"
+            },
+            {
+                "emoji": "🌀",
+                "name": "சூறாவளியுடன் மழை",
+                "temp": "160 மி.மீ - 110 மி.மீ.",
+                "duration": "செப்டம்பர்-அக்"
+            }
+        ]
+    },
+    "country": {
+        "name": "ஜப்பான்",
+        "continent": "ஆசியா"
+    },
+    "currency": {
+        "name": "யென்",
+        "symbol": "¥",
+        "code": "JPY"
+    },
+    "dance": {
+        "name": "ஜிந்தா மை"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "சுஷி & சஷிமி",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Sushi_Kanagawa_Japan_%282013%29.JPG/1024px-Sushi_Kanagawa_Japan_%282013%29.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Nandaro",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Sushi_Kanagawa_Japan_(2013).JPG"
+            },
+            {
+                "label": "குஷிகாட்சு",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/KushikatsuDaruma01.jpg/1024px-KushikatsuDaruma01.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Aiko99ann",
+                "attribution_url": "http://wikitravel.org/shared/File:KushikatsuDaruma01.jpg"
+            },
+            {
+                "label": "டகோயாகி",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Takoyaki.jpg/1024px-Takoyaki.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.5/deed.en\">CC BY-SA 2.5</a>",
+                "photo_by": "Keith Pomakis",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Takoyaki.jpg"
+            },
+            {
+                "label": "யாகினிகு",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2016/05/22/17/00/yakiniku-1408821_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "lalah_jp",
+                "attribution_url": "https://pixabay.com/photos/yakiniku-beef-japanese-japan-fresh-1408821/"
+            },
+            {
+                "label": "விண்டோஸ்",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2019/11/23/15/26/ramen-4647407_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "allybally4b",
+                "attribution_url": "https://pixabay.com/photos/ramen-japanese-ramen-lamen-soy-if-4647407/"
+            },
+            {
+                "label": "ஒகோனோமியாகி",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Okonomiyaki_in_Osaka.JPG/1024px-Okonomiyaki_in_Osaka.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "ZhengZhou",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Okonomiyaki_in_Osaka.JPG"
+            },
+            {
+                "label": "ஃபுகு",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/8/89/Fugu_sashimi.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Suguri F",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Fugu_sashimi.jpg"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "வர்த்தகம்",
+        "secondary": [
+            "சேவைகள்",
+            "உற்பத்தி"
+        ]
+    },
+    "language": {
+        "primary": "கன்சாய் ஜப்பானிய",
+        "secondary": []
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_ta_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_ta_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_ta_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_ta_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_ta_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Your Name",
+                "poster_url": "https://image.tmdb.org/t/p/w300/xq1Ugd62d23K2knRUx6xxuALTZB.jpg"
+            },
+            {
+                "title": "Akira",
+                "poster_url": "https://image.tmdb.org/t/p/w300/5KlRFKKSbyCiyYpZSS3A6G5bW0K.jpg"
+            },
+            {
+                "title": "Tokyo Story",
+                "poster_url": "https://image.tmdb.org/t/p/w300/g2YbTYKpY7N2yDSk7BfXZ18I5QV.jpg"
+            },
+            {
+                "title": "Ikiru",
+                "poster_url": "https://image.tmdb.org/t/p/w300/dgNTS4EQDDVfkzJI5msKuHu2Ei3.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "மினாடோசாகி சனா",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/180717_%EC%97%B4%EB%A6%B0%EC%9D%8C%EC%95%85%ED%9A%8C_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_%282%29_%28cropped%29.jpg/320px-180717_%EC%97%B4%EB%A6%B0%EC%9D%8C%EC%95%85%ED%9A%8C_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_%282%29_%28cropped%29.jpg",
+                "work": "பா பாடகர்",
+                "place": "டென்னஜி-கு, ஒசாகா",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY 4.0</a>",
+                "photo_by": "월아조운",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:180717_%EC%97%B4%EB%A6%B0%EC%9D%8C%EC%95%85%ED%9A%8C_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_(2)_(cropped).jpg"
+            },
+            {
+                "name": "யூட்டா நகமோட்டோ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Yuta_Nakamoto_at_24th_Dream_Concert_02.png/535px-Yuta_Nakamoto_at_24th_Dream_Concert_02.png",
+                "work": "பா பாடகர்",
+                "place": "கடோமா, ஒசாகா",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/3.0/deed.en\">CC BY 3.0</a>",
+                "photo_by": "Nine Stars",
+                "attribution_url": "https://pt.wikipedia.org/wiki/Ficheiro:Yuta_Nakamoto_at_24th_Dream_Concert_02.png"
+            },
+            {
+                "name": "நவோமி ஒசாகா",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Naomi_Osaka_%2833948760861%29_%28cropped%29_3.jpg/479px-Naomi_Osaka_%2833948760861%29_%28cropped%29_3.jpg",
+                "work": "தொழில்முறை டென்னிஸ் வீரர்",
+                "place": "சா-கு, ஒசாகா",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0/deed.en\">CC BY-SA 2.0</a>",
+                "photo_by": "Carine06",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Naomi_Osaka_(33948760861)_(cropped)_3.jpg"
+            },
+            {
+                "name": "யுஜி நாகா",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Yuji_Naka%27_-_Magic_-_Monaco_-_2015-03-21-_P1030036_%28cropped%29.jpg/512px-Yuji_Naka%27_-_Magic_-_Monaco_-_2015-03-21-_P1030036_%28cropped%29.jpg",
+                "work": "விளையாட்டு வடிவமைப்பாளர், தயாரிப்பாளர், புரோகிராமர்",
+                "place": "ஹிரகாட்டா, ஒசாகா, ஜப்பான்",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Yves Tennevin",
+                "attribution_url": "https://en.wikipedia.org/wiki/Yuji_Naka#/media/File:Yuji_Naka'_-_Magic_-_Monaco_-_2015-03-21-_P1030036_(cropped).jpg"
+            },
+            {
+                "name": "வீடியோ பெயர்",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/%E6%8A%95%E3%81%92%E3%81%BE%E3%81%99_%2831879540%29.jpg/640px-%E6%8A%95%E3%81%92%E3%81%BE%E3%81%99_%2831879540%29.jpg",
+                "work": "ஓய்வுபெற்ற தொழில்முறை பேஸ்பால் வீரர்",
+                "place": "ஒசாகா",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Ryosuke Yagi",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:%E6%8A%95%E3%81%92%E3%81%BE%E3%81%99_(31879540).jpg"
+            }
+        ]
+    },
+    "sports": {
+        "title": "பேஸ்பால்",
+        "footer": "கால்பந்து, டென்னிஸ் மற்றும் சுமோ ஆகியவையும் பிரபலமாக உள்ளன"
+    },
+    "time_to_visit": {
+        "primary": "அக்டோபர்-நவம்பர்",
+        "secondary": "மார்ச்-மே"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "யுனிவர்சல் ஸ்டுடியோஸ் ஜப்பான்",
+                "description": "சவாரிகளுடன் திரைப்பட-கருப்பொருள் பொழுதுபோக்கு பூங்கா",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOZETYVRhbxj8aEDOTKEQCig6vwCa99U2WwUoY=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/107688045126827240408\">T C</a>"
+                ],
+                "place_id": "ChIJXeLVg9DgAGARqlIyMCX-BTY"
+            },
+            {
+                "name": "ஒசாகா கோட்டை",
+                "description": "புகழ்பெற்ற, வரலாற்று அரண்மனை ஒரு அருங்காட்சியகம்",
+                "place_id": "ChIJ_TooXM3gAGARQR6hXH3QAQ8",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPBqyIpGT93sG7JRrtsrTmAprhXBThMBclYCDja=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/107973990932680175499\">Jallen Shir</a>"
+                ]
+            },
+            {
+                "name": "டெட்டன்போரி",
+                "description": "சாப்பாட்டு மற்றும் நாடகத்திற்கான பிரபலமான மாவட்டம்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOtZqwkzAxSay_NglebtmKH0RmbSZ7tVRgkKJLH=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/118021410362534801605\">Davis Wu</a>"
+                ],
+                "place_id": "ChIJ_fmKgRPnAGARkKWLtCYTu7g"
+            },
+            {
+                "name": "ஒசாகா அக்வாரியம் கயுகான்",
+                "description": "கடல் வாழ் கண்காட்சிகளுக்கு மிகப்பெரிய மைல்கல்",
+                "place_id": "ChIJzakNjPToAGARzCwIriDFg28",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPP0eNc0TPl_WbY8xtetLEuLWzse2TPo8pvw9W8=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104826993864633596144\">104826993864633596144</a>"
+                ]
+            },
+            {
+                "name": "உமேடா ஸ்கை கட்டிடம்",
+                "description": "கூரை-தோட்டக் கண்காணிப்பகத்துடன் உயரமான இடம்",
+                "place_id": "ChIJbyd0kIjmAGAR_crecCbjwlc",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMAbNW4mRLzv-xq6enOmKzvyVNv7Qb80IdYBbVo=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100096084254815534374\">Navy Globe</a>"
+                ]
+            },
+            {
+                "name": "ஷின்சாய்பாசிசுஜி",
+                "description": "ஷாப்பிங், ஃபேஷன் மற்றும் சூடான நீரூற்று",
+                "place_id": "ChIJcxIbNhHnAGARl8cKu_vPFMA",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPihS5ErIPbQffCkz_Vx259vvyN7ahRx-6kXXgX=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113728677825526491017\">Rahma Adam</a>"
+                ]
+            },
+            {
+                "name": "ஒசாகா கோட்டை பூங்கா",
+                "description": "தோட்டங்கள் மற்றும் ஒரு கோட்டையுடன் கூடிய பெரிய நகர்ப்புற பூங்கா",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPwfCBVHzknH5I7-epLsSZsUQFjkvBRGFQbpvFn=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/103374023271191038993\">POU asovent</a>"
+                ],
+                "place_id": "ChIJVVVld8ngAGARi9mE-a6e9mc"
+            },
+            {
+                "name": "கோப்பை நூடுல்ஸ் அருங்காட்சியகம் ஒசாகா இக்கேடா",
+                "description": "ருசிக்கும் அறை கொண்ட ராமன் நூடுல் அருங்காட்சியகம்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM2YDxtgweXUtXRGABBgiRKcckk8SDadRtXYYrg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115407479400150035219\">ヒツ·ジャイアン</a>"
+                ],
+                "place_id": "ChIJp2oJD8bwAGARqttJH_AeWA4"
+            },
+            {
+                "name": "ஹருகாஸ் 300",
+                "description": "பரந்த காட்சிகளைக் கொண்ட அவதானிப்பு தளங்கள்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOLzANMJSVozfaeqsBAbfxtc5KQOM54kURgKV4K=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113540333109083819899\">仲卓真</a>"
+                ],
+                "place_id": "ChIJ3eA7J_DdAGARil7_EwUaR_I"
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 540,
+    "trivia": {
+        "items": [
+            "இது ஜப்பானின் ஹொன்ஷுவின் கன்சாய் பகுதியில் நியமிக்கப்பட்ட நகரமாகும்.",
+            "7 மற்றும் 8 ஆம் நூற்றாண்டுகளில், இது சுருக்கமாக ஏகாதிபத்திய தலைநகராக செயல்பட்டது.",
+            "நகரின் மேற்குப் பகுதி ஒசாகா விரிகுடாவிற்கு திறந்திருக்கும்.",
+            "மழைக்காலம் ஜூன் தொடக்கத்தில் இருந்து ஜூலை பிற்பகுதியில் நிகழும் 'சுயூ' என்று அழைக்கப்படுகிறது.",
+            "மத்திய ஒசாகா கிட்டா (北, 'வடக்கு') மற்றும் மினாமி (南, 'தெற்கு') என அழைக்கப்படும் நகர மற்றும் மேல் பகுதிகளாக பிரிக்கப்பட்டுள்ளது.",
+            "'டென் டென் டவுன்' பகுதி மின்னணு மற்றும் மங்கா / அனிம் டிஸ்ட்ரிக் ஆகும்",
+            "ஜப்பானிலும் வெளிநாட்டிலும் ஒசாக்கா உணவுக்காக அறியப்படுகிறது. ஆனால் சைவ தேர்வுகள் மிகக் குறைவு.",
+            "ஜிந்தா மை நடன வடிவம் பெண்களால் மட்டுமே நிகழ்த்தப்பட வேண்டும்.",
+            "ஒசாக்காவில் உள்ளவர்கள் வாங்கும்போது பேரம் பேச விரும்புகிறார்கள்.",
+            "டோக்கியோ மற்றும் யோகோகாமாவிற்கு அடுத்தபடியாக இது ஜப்பானில் மூன்றாவது பெரிய நகரமாகும்.",
+            "டகோயாகி என்பது பந்து வடிவ ஜப்பானிய சிற்றுண்டாகும், இது துண்டு துண்தாக வெட்டப்பட்ட அல்லது துண்டுகளாக்கப்பட்ட ஆக்டோபஸ், டெம்புரா ஸ்கிராப், ஊறுகாய் இஞ்சி மற்றும் பச்சை வெங்காயம் ஆகியவற்றால் நிரப்பப்படுகிறது.",
+            "கன்சாய் சர்வதேச விமான நிலையம் முற்றிலும் ஒரு செயற்கை தீவில் கட்டப்பட்டுள்ளது."
+        ]
+    }
+}

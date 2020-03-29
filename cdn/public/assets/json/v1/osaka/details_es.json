@@ -1,0 +1,333 @@
+{
+    "basic_info": {
+        "name": "Osaka",
+        "id": "osaka",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Central_Osaka.jpg/1280px-Central_Osaka.jpg",
+        "place": "Osaka central",
+        "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+        "photo_by": "Type specimen",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Central_Osaka.jpg"
+    },
+    "airport": {
+        "name": "Aeropuerto internacional de Kansai"
+    },
+    "climate": {
+        "type": "Subtropical",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "Verano",
+                "temp": "21 ° C a 33 ° C",
+                "duration": "Jun-ago"
+            },
+            {
+                "emoji": "🍁",
+                "name": "Otoño",
+                "temp": "23 ° C a 9 ° C",
+                "duration": "Oct-nov"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "Invierno",
+                "temp": "12 ° C a 2 ° C",
+                "duration": "Diciembre-febrero"
+            },
+            {
+                "emoji": "🌼",
+                "name": "Primavera",
+                "temp": "5 ° C a 25 ° C",
+                "duration": "Marzo-mayo"
+            },
+            {
+                "emoji": "⛈️",
+                "name": "Lluvioso",
+                "temp": "185mm - 155mm",
+                "duration": "Jun-jul"
+            },
+            {
+                "emoji": "🌀",
+                "name": "Lluvia con tifones",
+                "temp": "160mm - 110mm",
+                "duration": "Septiembre-octubre"
+            }
+        ]
+    },
+    "country": {
+        "name": "Japón 🇯🇵",
+        "continent": "Asia"
+    },
+    "currency": {
+        "name": "Yen",
+        "symbol": "¥",
+        "code": "JPY"
+    },
+    "dance": {
+        "name": "Jinta mai"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "Sushi y Sashimi",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Sushi_Kanagawa_Japan_%282013%29.JPG/1024px-Sushi_Kanagawa_Japan_%282013%29.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Nandaro",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Sushi_Kanagawa_Japan_(2013).JPG"
+            },
+            {
+                "label": "Kushikatsu",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/KushikatsuDaruma01.jpg/1024px-KushikatsuDaruma01.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Aiko99ann",
+                "attribution_url": "http://wikitravel.org/shared/File:KushikatsuDaruma01.jpg"
+            },
+            {
+                "label": "Takoyaki",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Takoyaki.jpg/1024px-Takoyaki.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.5/deed.en\">CC BY-SA 2.5</a>",
+                "photo_by": "Keith Pomakis",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Takoyaki.jpg"
+            },
+            {
+                "label": "Yakiniku",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2016/05/22/17/00/yakiniku-1408821_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "lalah_jp",
+                "attribution_url": "https://pixabay.com/photos/yakiniku-beef-japanese-japan-fresh-1408821/"
+            },
+            {
+                "label": "Ventanas",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2019/11/23/15/26/ramen-4647407_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "allybally4b",
+                "attribution_url": "https://pixabay.com/photos/ramen-japanese-ramen-lamen-soy-if-4647407/"
+            },
+            {
+                "label": "Okonomiyaki",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Okonomiyaki_in_Osaka.JPG/1024px-Okonomiyaki_in_Osaka.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "ZhengZhou",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Okonomiyaki_in_Osaka.JPG"
+            },
+            {
+                "label": "Fugu",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/8/89/Fugu_sashimi.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Suguri F",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Fugu_sashimi.jpg"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "Comercio",
+        "secondary": [
+            "Servicios",
+            "Fabricación"
+        ]
+    },
+    "language": {
+        "primary": "Kansai japonés",
+        "secondary": []
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_es_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_es_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_es_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_es_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_es_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Your Name",
+                "poster_url": "https://image.tmdb.org/t/p/w300/xq1Ugd62d23K2knRUx6xxuALTZB.jpg"
+            },
+            {
+                "title": "Akira",
+                "poster_url": "https://image.tmdb.org/t/p/w300/5KlRFKKSbyCiyYpZSS3A6G5bW0K.jpg"
+            },
+            {
+                "title": "Tokyo Story",
+                "poster_url": "https://image.tmdb.org/t/p/w300/g2YbTYKpY7N2yDSk7BfXZ18I5QV.jpg"
+            },
+            {
+                "title": "Ikiru",
+                "poster_url": "https://image.tmdb.org/t/p/w300/dgNTS4EQDDVfkzJI5msKuHu2Ei3.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "Minatozaki Sana",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/180717_%EC%97%B4%EB%A6%B0%EC%9D%8C%EC%95%85%ED%9A%8C_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_%282%29_%28cropped%29.jpg/320px-180717_%EC%97%B4%EB%A6%B0%EC%9D%8C%EC%95%85%ED%9A%8C_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_%282%29_%28cropped%29.jpg",
+                "work": "Cantante pop",
+                "place": "Tennōji-ku, Osaka",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY 4.0</a>",
+                "photo_by": "월아조운",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:180717_%EC%97%B4%EB%A6%B0%EC%9D%8C%EC%95%85%ED%9A%8C_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_(2)_(cropped).jpg"
+            },
+            {
+                "name": "Yuta Nakamoto",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Yuta_Nakamoto_at_24th_Dream_Concert_02.png/535px-Yuta_Nakamoto_at_24th_Dream_Concert_02.png",
+                "work": "Cantante pop",
+                "place": "Kadoma, Osaka",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/3.0/deed.en\">CC BY 3.0</a>",
+                "photo_by": "Nine Stars",
+                "attribution_url": "https://pt.wikipedia.org/wiki/Ficheiro:Yuta_Nakamoto_at_24th_Dream_Concert_02.png"
+            },
+            {
+                "name": "Naomi Osaka",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Naomi_Osaka_%2833948760861%29_%28cropped%29_3.jpg/479px-Naomi_Osaka_%2833948760861%29_%28cropped%29_3.jpg",
+                "work": "Tenista profesional",
+                "place": "Chūō-ku, Osaka",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0/deed.en\">CC BY-SA 2.0</a>",
+                "photo_by": "Carine06",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Naomi_Osaka_(33948760861)_(cropped)_3.jpg"
+            },
+            {
+                "name": "Yuji Naka",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Yuji_Naka%27_-_Magic_-_Monaco_-_2015-03-21-_P1030036_%28cropped%29.jpg/512px-Yuji_Naka%27_-_Magic_-_Monaco_-_2015-03-21-_P1030036_%28cropped%29.jpg",
+                "work": "Diseñador de juegos, productor, programador",
+                "place": "Hirakata, Osaka, Japón",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Yves Tennevin",
+                "attribution_url": "https://en.wikipedia.org/wiki/Yuji_Naka#/media/File:Yuji_Naka'_-_Magic_-_Monaco_-_2015-03-21-_P1030036_(cropped).jpg"
+            },
+            {
+                "name": "Nombre del video",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/%E6%8A%95%E3%81%92%E3%81%BE%E3%81%99_%2831879540%29.jpg/640px-%E6%8A%95%E3%81%92%E3%81%BE%E3%81%99_%2831879540%29.jpg",
+                "work": "Jugador de béisbol profesional retirado",
+                "place": "Osaka",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Ryosuke Yagi",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:%E6%8A%95%E3%81%92%E3%81%BE%E3%81%99_(31879540).jpg"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚾ Béisbol",
+        "footer": "Fútbol, tenis y sumo también son populares"
+    },
+    "time_to_visit": {
+        "primary": "Octubre-noviembre",
+        "secondary": "Marzo mayo"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "Universal Studios Japan",
+                "description": "Parque de atracciones de temática cinematográfica con atracciones",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOZETYVRhbxj8aEDOTKEQCig6vwCa99U2WwUoY=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/107688045126827240408\">T C</a>"
+                ],
+                "place_id": "ChIJXeLVg9DgAGARqlIyMCX-BTY"
+            },
+            {
+                "name": "Castillo de Osaka",
+                "description": "Reconocido castillo histórico con museo",
+                "place_id": "ChIJ_TooXM3gAGARQR6hXH3QAQ8",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPBqyIpGT93sG7JRrtsrTmAprhXBThMBclYCDja=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/107973990932680175499\">Jallen Shir</a>"
+                ]
+            },
+            {
+                "name": "Dōtonbori",
+                "description": "Barrio popular para cenar y teatro",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOtZqwkzAxSay_NglebtmKH0RmbSZ7tVRgkKJLH=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/118021410362534801605\">Davis Wu</a>"
+                ],
+                "place_id": "ChIJ_fmKgRPnAGARkKWLtCYTu7g"
+            },
+            {
+                "name": "Osaka Aquarium Kaiyukan",
+                "description": "Gran hito para exhibiciones de vida marina",
+                "place_id": "ChIJzakNjPToAGARzCwIriDFg28",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPP0eNc0TPl_WbY8xtetLEuLWzse2TPo8pvw9W8=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104826993864633596144\">104826993864633596144</a>"
+                ]
+            },
+            {
+                "name": "Edificio Umeda Sky",
+                "description": "Edificio de gran altura con un observatorio en el jardín de la azotea.",
+                "place_id": "ChIJbyd0kIjmAGAR_crecCbjwlc",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMAbNW4mRLzv-xq6enOmKzvyVNv7Qb80IdYBbVo=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100096084254815534374\">Navy Globe</a>"
+                ]
+            },
+            {
+                "name": "Shinsaibashisuji",
+                "description": "Compras, moda y aguas termales.",
+                "place_id": "ChIJcxIbNhHnAGARl8cKu_vPFMA",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPihS5ErIPbQffCkz_Vx259vvyN7ahRx-6kXXgX=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113728677825526491017\">Rahma Adam</a>"
+                ]
+            },
+            {
+                "name": "Parque del castillo de Osaka",
+                "description": "Gran parque urbano con jardines y un castillo.",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPwfCBVHzknH5I7-epLsSZsUQFjkvBRGFQbpvFn=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/103374023271191038993\">POU asovent</a>"
+                ],
+                "place_id": "ChIJVVVld8ngAGARi9mE-a6e9mc"
+            },
+            {
+                "name": "Taza De Fideos Museo Osaka Ikeda",
+                "description": "Museo de fideos ramen con sala de degustación",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM2YDxtgweXUtXRGABBgiRKcckk8SDadRtXYYrg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115407479400150035219\">ヒツ·ジャイアン</a>"
+                ],
+                "place_id": "ChIJp2oJD8bwAGARqttJH_AeWA4"
+            },
+            {
+                "name": "Harukas 300",
+                "description": "Plataformas de observación con vistas panorámicas.",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOLzANMJSVozfaeqsBAbfxtc5KQOM54kURgKV4K=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113540333109083819899\">仲卓真</a>"
+                ],
+                "place_id": "ChIJ3eA7J_DdAGARil7_EwUaR_I"
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 540,
+    "trivia": {
+        "items": [
+            "Es una ciudad designada en la región de Kansai de Honshu en Japón.",
+            "En los siglos VII y VIII, sirvió brevemente como la capital imperial.",
+            "El lado oeste de la ciudad está abierto a la bahía de Osaka.",
+            "La temporada de lluvias se llama 'tsuyu' que ocurre entre principios de junio y finales de julio.",
+            "El centro de Osaka se divide aproximadamente en áreas del centro y zonas altas conocidas como Kita (北, 'norte') y Minami (南, 'sur')",
+            "El área de 'Den Den Town' es el distrito electrónico y de manga / anime",
+            "Osaka es conocida por su comida en Japón y en el extranjero. Pero hay muy pocas opciones vegetarianas.",
+            "La forma de danza Jinta mai está destinada a ser realizada solo por mujeres.",
+            "A la gente de Osaka le gusta regatear cuando compra.",
+            "Es la tercera ciudad más grande de Japón después de Tokio y Yokohama.",
+            "Takoyaki es una merienda japonesa en forma de bola llena de pulpo picado o en cubitos, trozos de tempura, jengibre encurtido y cebolla verde.",
+            "El aeropuerto internacional de Kansai está construido completamente en una isla artificial."
+        ]
+    }
+}
