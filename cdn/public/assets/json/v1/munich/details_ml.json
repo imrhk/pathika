@@ -1,0 +1,326 @@
+{
+    "basic_info": {
+        "name": "മ്യൂണിച്ച്",
+        "id": "munich",
+        "background_image": "https://cdn.pixabay.com/photo/2019/12/21/10/19/munich-4710182_1280.jpg",
+        "place": "മ്യൂണിച്ച് ന്യൂ ടൗൺ ഹാൾ",
+        "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+        "photo_by": "schliff",
+        "attribution_url": "https://pixabay.com/photos/munich-marienplatz-bavaria-4710182/"
+    },
+    "airport": {
+        "name": "മ്യൂണിച്ച് വിമാനത്താവളം"
+    },
+    "climate": {
+        "type": "ഓഷ്യാനിക്",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "വേനൽ",
+                "temp": "14 ° C മുതൽ 24. C വരെ",
+                "duration": "ജൂൺ-ഓഗസ്റ്റ്"
+            },
+            {
+                "emoji": "🍁",
+                "name": "ശരത്കാലം",
+                "temp": "19 ° C മുതൽ 7. C വരെ",
+                "duration": "സെപ്റ്റംബർ-ഒക്ടോബർ"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "വിന്റർ",
+                "temp": "7 ° C മുതൽ -22. C വരെ",
+                "duration": "നവംബർ-ഫെബ്രുവരി"
+            },
+            {
+                "emoji": "🌼",
+                "name": "സ്പ്രിംഗ്",
+                "temp": "2 ° C മുതൽ 18. C വരെ",
+                "duration": "മാർ-മെയ്"
+            }
+        ]
+    },
+    "country": {
+        "name": "ജർമ്മനി",
+        "continent": "യൂറോപ്പ്"
+    },
+    "currency": {
+        "name": "യൂറോ",
+        "symbol": "€",
+        "code": "EUR"
+    },
+    "dance": {
+        "name": "ഷൂപ്ലാറ്റ്‌ലർ"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "പന്നിയിറച്ചി വറുക്കുക",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Krustenbraten_mit_Dunkelbierso%C3%9Fe.jpg/1024px-Krustenbraten_mit_Dunkelbierso%C3%9Fe.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Takeaway",
+                "attribution_url": "https://de.wikipedia.org/wiki/Datei:Krustenbraten_mit_Dunkelbierso%C3%9Fe.jpg"
+            },
+            {
+                "label": "വെയ്‌സ്വർസ്റ്റ്",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Weisswurst_Brezn_Senf.jpg/1024px-Weisswurst_Brezn_Senf.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Takeaway",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Weisswurst_Brezn_Senf.jpg"
+            },
+            {
+                "label": "ബ്രസൻ",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Fastenbrezel.JPG/1008px-Fastenbrezel.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Manuela Paki-Costa",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Fastenbrezel.JPG"
+            },
+            {
+                "label": "ഉരുളക്കിഴങ്ങ് പറഞ്ഞല്ലോ",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2017/09/22/18/59/dumpling-2776725_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "RitaE",
+                "attribution_url": "https://pixabay.com/photos/dumpling-potato-dumplings-sauce-2776725/"
+            },
+            {
+                "label": "ഗോതമ്പ് ബിയർ",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/2013_Augustiner_Weissbier_Munich_pub.jpg/768px-2013_Augustiner_Weissbier_Munich_pub.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Takeaway",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:2013_Augustiner_Weissbier_Munich_pub.jpg"
+            },
+            {
+                "label": "വറുത്ത ചിക്കൻ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2019/04/07/17/20/chicken-4110208_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "RitaE",
+                "attribution_url": "https://pixabay.com/de/photos/h%C3%A4hnchen-brath%C3%A4hnchen-grillh%C3%A4hnchen-4110208/"
+            },
+            {
+                "label": "സ്‌പെയ്‌റ്റ്‌സിൽ",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2014/12/24/13/01/cheese-noodles-579077_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "moerschy",
+                "attribution_url": "https://pixabay.com/photos/cheese-noodles-swabian-579077/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "ഓട്ടോമോട്ടീവ്",
+        "secondary": [
+            "ഐ.ടി.",
+            "എയ്‌റോസ്‌പേസ്"
+        ]
+    },
+    "language": {
+        "primary": "ജർമ്മൻ",
+        "secondary": [
+            "ഇംഗ്ലീഷ്"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/munich_map_ml_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/munich_map_ml_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/munich_map_ml_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/munich_map_ml_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/munich_map_ml_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Das Boot",
+                "poster_url": "https://image.tmdb.org/t/p/original/5y7JboNZuCy2fgPQJflh3CemTSt.jpg"
+            },
+            {
+                "title": "Der Untergang",
+                "poster_url": "https://image.tmdb.org/t/p/original/tWkYcchUuh0rdm94Zcv9BhXJpNt.jpg"
+            },
+            {
+                "title": "Das Leben der Anderen",
+                "poster_url": "https://image.tmdb.org/t/p/original/qOE1jywObYhereKoTE7Ahuq7CTc.jpg"
+            },
+            {
+                "title" : "Good Bye, Lenin!",
+                "poster_url" : "https://image.tmdb.org/t/p/original/bkiK9X3oTBQKJyXYXynbD1ptTdQ.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name" : "വാസിലി ലിയോണിഫ്",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Wassily_Leontief_1973.jpg/450px-Wassily_Leontief_1973.jpg",
+                "work" : "ഇൻപുട്ട്- output ട്ട്‌പുട്ട് വിശകലനത്തെക്കുറിച്ചുള്ള ഗവേഷണത്തിന് പേരുകേട്ട നോബൽ സമ്മാന ജേതാവ് സാമ്പത്തിക ശാസ്ത്രജ്ഞൻ",
+                "place" : "മ്യൂണിച്ച്"
+            },
+
+            {
+                "name" : "റുഡോൾഫ് മസ്ബവർ",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/e/e2/Mossbauer.jpg",
+                "work" : "നോബിയൽ‌ സമ്മാന ജേതാവായ ഭൗതികശാസ്ത്രജ്ഞൻ‌ മോസ്ബ au ർ‌ ഇഫക്റ്റ് കണ്ടെത്തിയതിന് പേരുകേട്ടതാണ്",
+                "place" : "മ്യൂണിച്ച്"
+            },
+            {
+                "name" : "ഫിലിപ്പ് ലാം",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Philipp_Lahm_Training_2017-05_FC_Bayern_Muenchen-1.jpg/373px-Philipp_Lahm_Training_2017-05_FC_Bayern_Muenchen-1.jpg",
+                "work" : "2014 ഫിഫ ലോകകപ്പ് നേടിയ ജർമ്മനിയെ നയിച്ച പ്രശസ്തനായ വിരമിച്ച ഫുട്ബോൾ താരം.",
+                "place" : "മ്യൂണിച്ച്",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by" : "Rufus46"
+            },
+
+            {
+                "name" : "മൈക്കൽ ഹാനകെ",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/3/3c/Michael_Haneke_2009.jpg",
+                "work" : "സിനിമാ സംവിധായകൻ",
+                "place" : "മ്യൂണിച്ച്",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by" : "Georges Biard"
+            },
+            {
+                "name": "ഇവാ ബ്ര un ൺ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Eva_Braun_walking_dog.jpg",
+                "work": "അഡോൾഫ് ഹിറ്റ്ലർ ഭാര്യ 40 മണിക്കൂറിൽ താഴെ",
+                "place": "മ്യൂണിച്ച്",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 3.0 de</a>",
+                "photo_by": "Unknown",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Eva_Braun_walking_dog.jpg"
+            }
+        ]
+    },
+    "sports": {
+        "title": "ഫുട്ബോൾ",
+        "footer": "ജർമ്മനിയിലെ ഏറ്റവും ജനപ്രിയ ക്ലബ്ബായ എഫ്‌സി ബയേണിന്റെ ആസ്ഥാനമാണ് മ്യൂണിച്ച്"
+    },
+    "time_to_visit": {
+        "primary": "മാർച്ച്-മെയ്",
+        "secondary": "സെപ്റ്റംബർ-ഒക്ടോബർ"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "മരിയൻ‌പ്ലാറ്റ്സ്",
+                "description": "സെൻട്രൽ സ്ക്വയറും ലാൻഡ്മാർക്ക് കെട്ടിടങ്ങളും",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOdpQAkGzw1aqkrVybXVCRY_Et_Tw1TuTwop8tn=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113347838338291289972\">hidekichi jelly</a>"
+                ],
+                "place_id": "ChIJLWM3jSROqEcRswsOX7NRrd4"
+            },
+            {
+                "name": "ഇംഗ്ലീഷ് പൂന്തോട്ടം",
+                "description": "ബിയർ ഗാർഡനുള്ള വലിയ നഗര പാർക്ക്",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNfbQK2EAFu-3PZeuKKFjIXf5dzP4ZgYnZyuw69=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100718423266761419520\">Kadir Simsek</a>"
+                ],
+                "place_id": "ChIJayv4lZd1nkcR0e_vfGLfm8k"
+            },
+            {
+                "name": "മ്യൂണിച്ച് റെസിഡെൻസ്",
+                "description": "പഴയ രാജകീയ വസതിയിലെ മ്യൂസിയം സമുച്ചയം",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPt2bPWXaYXZLVzizIAkQTVfAVIZk5NOw_RNUjj=s1600-w800",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114060614283218056078\">Sumontra Pongdam</a>"
+                ],
+                "place_id": "ChIJrWV_DYx1nkcRD_tKgCHVad4"
+            },
+            {
+                "name": "നിംഫെൻബർഗ് കൊട്ടാരം",
+                "description": "റീഗൽ പതിനെട്ടാം നൂറ്റാണ്ടിലെ കൊട്ടാരവും കോച്ച് മ്യൂസിയവും",
+                "place_id": "ChIJLWiif8x3nkcRZm0epRZWTCc",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOguMOqSKVvixv1V3Mp4y2De7Busk4a2XJeYIIz=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100285512816371724866\">wendy finn</a>"
+                ]
+            },
+            {
+                "name": "പുതിയ ടൗൺ ഹാൾ",
+                "description": "85 മീറ്റർ ടവറുള്ള നിയോ-ഗോതിക് ടൗൺ ഹാൾ",
+                "place_id": "ChIJ_0T5Jot1nkcRZ3kV_GGLAFE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPTYZSk7Ou68PGan-BeMBMLcp7bKtURish6Gk5A=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115196292285063528742\">Pia P</a>"
+                ]
+            },
+            {
+                "name": "ഒളിമ്പിക് പാർക്ക്",
+                "description": "ടൂറുകളും ആകർഷണങ്ങളുമുള്ള ഒളിമ്പിക് സ്റ്റേഡിയം",
+                "place_id": "ChIJM7U-OGN2nkcRS91BCoGkObE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMTh7fqk_SFFKot35FyzJVknXPMLU49fAC_PKBk=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117148199602544876966\">Shi-Ting</a>"
+                ]
+            },
+            {
+                "name": "ബിഎംഡബ്ല്യു മ്യൂസിയം",
+                "description": "കാറുകളും ബൈക്കുകളും ഉള്ള സ്പേസ്-ഏജ് സ്റ്റീൽ വേദി",
+                "place_id": "ChIJsQqBvZ-1vJURbm-7dxt8fgM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipN_RZ41IwEOsMvpOogbNOi078W8TLw2BmS6SRFr=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100728289776000960260\">Maria Georgieva</a>"
+                ]
+            },
+            {
+                "name": "അലയൻസ് അരീന",
+                "description": "എഫ്‌സി ബയേൺ മ്യൂണിക്കിന്റെ ഹോം ഗ്ര ground ണ്ട്",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP_Bs8wZt5OvgtgW5qSguiJiRrqFVFlBvXrsFHQ=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/103324609948188488729\">goran dadic</a>"
+                ],
+                "place_id": "ChIJHyWKEoVznkcRI8QyjkJgTe0"
+            },
+            {
+                "name": "ന്യൂഷ്വാൻ‌സ്റ്റൈൻ കാസിൽ",
+                "description": "പത്തൊൻപതാം നൂറ്റാണ്ടിലെ ഹിൽ‌ടോപ്പ് ഫെയറിടെയിൽ കോട്ട",
+                "place_id": "ChIJXaNOxMr3nEcRo7ud02uGpsg",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNXgrJRHJ3YD2n7VFoztW_chl6de5cFpto03ezs=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113795522519382697104\">Слава Паршин</a>"
+                ]
+            },
+            {
+                "name": "വിക്ടറി ഗേറ്റ്",
+                "description": "പ്രതിമകളുള്ള ചരിത്രപരമായ വിജയ കമാനം",
+                "place_id": "ChIJtXQ2VI11nkcR4DsvByLfq1k",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPUq3iguvntOQ0RQUMP5cZtsXdVEyCriK1BOsM0=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100792641303588681874\">Tom Hsia</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 60,
+    "trivia": {
+        "items": [
+            "ജർമ്മനിയിലെ ബവേറിയ സംസ്ഥാനത്തിന്റെ തലസ്ഥാനവും ഏറ്റവും ജനസംഖ്യയുള്ള നഗരവുമാണിത്.",
+            "ബെർലിനിനും ഹാംബർഗിനും ശേഷം ജർമ്മനിയിലെ മൂന്നാമത്തെ വലിയ നഗരമാണിത്.",
+            "ഇസാർ നദിയുടെ തീരത്താണ് ഇത് സ്ഥിതിചെയ്യുന്നത്.",
+            "ശീതകാലം വളരെ തണുപ്പുള്ളതിനാൽ കാലാവസ്ഥ ഓഷ്യാനിക് ആണ്.",
+            "ലോകത്തിലെ ഏറ്റവും വലിയ പൂന്തോട്ടങ്ങളിലൊന്നാണ് ഇംഗ്ലീഷ് ഗാർഡൻ.",
+            "വൈറ്റ് സോസേജ് ഇവിടെ പ്രസിദ്ധമാണ്. ഉച്ചയ്ക്ക് മുമ്പ് മാത്രമാണ് അവ വിളമ്പുന്നത്.",
+            "ലോകത്തിലെ ഏറ്റവും വലിയ ഫോക്സ് ഫെസ്റ്റാണ് ഒക്ടോബർ ഫെസ്റ്റ്. 16-18 ദിവസത്തെ നാടോടി ഉത്സവമാണിത്.",
+            "പ്രതിവർഷം 6 ദശലക്ഷത്തിലധികം ആളുകൾ ഒക്ടോബർ ഫെസ്റ്റിൽ പങ്കെടുക്കുന്നു.",
+            "ലോകത്തിലെ ഏറ്റവും വലിയ ബിയർ പബ് ഹോഫ്ബ്ര ä ഹ us സ് ഇവിടെയുണ്ട്.",
+            "1972 ലെ സമ്മർ ഒളിമ്പിക്സിന് ആതിഥേയത്വം വഹിച്ചു",
+            "ഭൂഗർഭ മെട്രോ, ട്രാമുകൾ, ബസുകൾ, അതിവേഗ റെയിൽ എന്നിവ ഉൾക്കൊള്ളുന്നതാണ് ഇതിന്റെ ഗതാഗത സംവിധാനം.",
+            "ജർമ്മൻ കാർ കമ്പനിയായ ബി‌എം‌ഡബ്ല്യുവിന്റെ ആസ്ഥാനമായ ഇത് ഒരു വലിയ മ്യൂസിയമുണ്ട്."
+        ]
+    }
+}

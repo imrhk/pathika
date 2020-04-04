@@ -1,0 +1,333 @@
+{
+    "basic_info": {
+        "name": "Osaka",
+        "id": "osaka",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Central_Osaka.jpg/1280px-Central_Osaka.jpg",
+        "place": "Središnja Osaka",
+        "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+        "photo_by": "Type specimen",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Central_Osaka.jpg"
+    },
+    "airport": {
+        "name": "Međunarodna zračna luka Kansai"
+    },
+    "climate": {
+        "type": "suptropski",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "Ljeto",
+                "temp": "21 ° C do 33 ° C",
+                "duration": "Lipanj-kolovoz"
+            },
+            {
+                "emoji": "🍁",
+                "name": "Jesen",
+                "temp": "23 ° C do 9 ° C",
+                "duration": "Listopad-studeni"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "Zima",
+                "temp": "12 ° C do 2 ° C",
+                "duration": "Prosinac-veljača"
+            },
+            {
+                "emoji": "🌼",
+                "name": "Proljeće",
+                "temp": "5 ° C do 25 ° C",
+                "duration": "Mar-svibnja"
+            },
+            {
+                "emoji": "⛈️",
+                "name": "kišni",
+                "temp": "185mm - 155mm",
+                "duration": "Jun-srpnja"
+            },
+            {
+                "emoji": "🌀",
+                "name": "Kiša s tajfunima",
+                "temp": "160mm - 110mm",
+                "duration": "Rujan-listopad"
+            }
+        ]
+    },
+    "country": {
+        "name": "Japan 🇯🇵",
+        "continent": "Azija"
+    },
+    "currency": {
+        "name": "Jen",
+        "symbol": "¥",
+        "code": "JPY"
+    },
+    "dance": {
+        "name": "Jinta mai"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "Sushi & Sashimi",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Sushi_Kanagawa_Japan_%282013%29.JPG/1024px-Sushi_Kanagawa_Japan_%282013%29.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Nandaro",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Sushi_Kanagawa_Japan_(2013).JPG"
+            },
+            {
+                "label": "Kushikatsu",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/KushikatsuDaruma01.jpg/1024px-KushikatsuDaruma01.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Aiko99ann",
+                "attribution_url": "http://wikitravel.org/shared/File:KushikatsuDaruma01.jpg"
+            },
+            {
+                "label": "Takoyaki",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Takoyaki.jpg/1024px-Takoyaki.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.5/deed.en\">CC BY-SA 2.5</a>",
+                "photo_by": "Keith Pomakis",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Takoyaki.jpg"
+            },
+            {
+                "label": "Yakiniku",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2016/05/22/17/00/yakiniku-1408821_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "lalah_jp",
+                "attribution_url": "https://pixabay.com/photos/yakiniku-beef-japanese-japan-fresh-1408821/"
+            },
+            {
+                "label": "procjena",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2019/11/23/15/26/ramen-4647407_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "allybally4b",
+                "attribution_url": "https://pixabay.com/photos/ramen-japanese-ramen-lamen-soy-if-4647407/"
+            },
+            {
+                "label": "Okonomiyaki",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Okonomiyaki_in_Osaka.JPG/1024px-Okonomiyaki_in_Osaka.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "ZhengZhou",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Okonomiyaki_in_Osaka.JPG"
+            },
+            {
+                "label": "Fugu",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/8/89/Fugu_sashimi.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Suguri F",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Fugu_sashimi.jpg"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "Trgovina",
+        "secondary": [
+            "usluge",
+            "Proizvodnja"
+        ]
+    },
+    "language": {
+        "primary": "Kansai Japanci",
+        "secondary": []
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_hr_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_hr_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_hr_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_hr_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_hr_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Your Name",
+                "poster_url": "https://image.tmdb.org/t/p/w300/xq1Ugd62d23K2knRUx6xxuALTZB.jpg"
+            },
+            {
+                "title": "Akira",
+                "poster_url": "https://image.tmdb.org/t/p/w300/5KlRFKKSbyCiyYpZSS3A6G5bW0K.jpg"
+            },
+            {
+                "title": "Tokyo Story",
+                "poster_url": "https://image.tmdb.org/t/p/w300/g2YbTYKpY7N2yDSk7BfXZ18I5QV.jpg"
+            },
+            {
+                "title": "Ikiru",
+                "poster_url": "https://image.tmdb.org/t/p/w300/dgNTS4EQDDVfkzJI5msKuHu2Ei3.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "Minatozaki Sana",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/180717_%EC%97%B4%EB%A6%B0%EC%9D%8C%EC%95%85%ED%9A%8C_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_%282%29_%28cropped%29.jpg/320px-180717_%EC%97%B4%EB%A6%B0%EC%9D%8C%EC%95%85%ED%9A%8C_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_%282%29_%28cropped%29.jpg",
+                "work": "Pop pjevač",
+                "place": "Tennōji-ku, Osaka",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY 4.0</a>",
+                "photo_by": "월아조운",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:180717_%EC%97%B4%EB%A6%B0%EC%9D%8C%EC%95%85%ED%9A%8C_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_(2)_(cropped).jpg"
+            },
+            {
+                "name": "Yuta Nakamoto",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Yuta_Nakamoto_at_24th_Dream_Concert_02.png/535px-Yuta_Nakamoto_at_24th_Dream_Concert_02.png",
+                "work": "Pop pjevač",
+                "place": "Kadoma, Osaka",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/3.0/deed.en\">CC BY 3.0</a>",
+                "photo_by": "Nine Stars",
+                "attribution_url": "https://pt.wikipedia.org/wiki/Ficheiro:Yuta_Nakamoto_at_24th_Dream_Concert_02.png"
+            },
+            {
+                "name": "Naomi Osaka",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Naomi_Osaka_%2833948760861%29_%28cropped%29_3.jpg/479px-Naomi_Osaka_%2833948760861%29_%28cropped%29_3.jpg",
+                "work": "Profesionalni tenisač",
+                "place": "Chūō-ku, Osaka",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0/deed.en\">CC BY-SA 2.0</a>",
+                "photo_by": "Carine06",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Naomi_Osaka_(33948760861)_(cropped)_3.jpg"
+            },
+            {
+                "name": "Yuji Naka",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Yuji_Naka%27_-_Magic_-_Monaco_-_2015-03-21-_P1030036_%28cropped%29.jpg/512px-Yuji_Naka%27_-_Magic_-_Monaco_-_2015-03-21-_P1030036_%28cropped%29.jpg",
+                "work": "Dizajner igara, producent, programer",
+                "place": "Hirakata, Osaka, Japan",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Yves Tennevin",
+                "attribution_url": "https://en.wikipedia.org/wiki/Yuji_Naka#/media/File:Yuji_Naka'_-_Magic_-_Monaco_-_2015-03-21-_P1030036_(cropped).jpg"
+            },
+            {
+                "name": "Naziv Hideo",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/%E6%8A%95%E3%81%92%E3%81%BE%E3%81%99_%2831879540%29.jpg/640px-%E6%8A%95%E3%81%92%E3%81%BE%E3%81%99_%2831879540%29.jpg",
+                "work": "Umirovljeni profesionalni igrač bejzbola",
+                "place": "Osaka",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Ryosuke Yagi",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:%E6%8A%95%E3%81%92%E3%81%BE%E3%81%99_(31879540).jpg"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚾ Baseball",
+        "footer": "Nogomet, tenis i sumo također su popularni"
+    },
+    "time_to_visit": {
+        "primary": "Listopad-studeni",
+        "secondary": "Ožujak-svibanj"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "Universal Studios Japan",
+                "description": "Zabavni park s filmskim temama s vožnjama",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOZETYVRhbxj8aEDOTKEQCig6vwCa99U2WwUoY=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/107688045126827240408\">T C</a>"
+                ],
+                "place_id": "ChIJXeLVg9DgAGARqlIyMCX-BTY"
+            },
+            {
+                "name": "Dvorac Osaka",
+                "description": "Poznati, povijesni dvorac s muzejem",
+                "place_id": "ChIJ_TooXM3gAGARQR6hXH3QAQ8",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPBqyIpGT93sG7JRrtsrTmAprhXBThMBclYCDja=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/107973990932680175499\">Jallen Shir</a>"
+                ]
+            },
+            {
+                "name": "Dotonbori",
+                "description": "Popularno područje za blagovanje i kazalište",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOtZqwkzAxSay_NglebtmKH0RmbSZ7tVRgkKJLH=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/118021410362534801605\">Davis Wu</a>"
+                ],
+                "place_id": "ChIJ_fmKgRPnAGARkKWLtCYTu7g"
+            },
+            {
+                "name": "Akvarij Osaka Kaiyukan",
+                "description": "Ogromna znamenitost eksponata u moru",
+                "place_id": "ChIJzakNjPToAGARzCwIriDFg28",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPP0eNc0TPl_WbY8xtetLEuLWzse2TPo8pvw9W8=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104826993864633596144\">104826993864633596144</a>"
+                ]
+            },
+            {
+                "name": "Zgrada Umeda Sky",
+                "description": "Visok s promatračnicom na krovu i vrtu",
+                "place_id": "ChIJbyd0kIjmAGAR_crecCbjwlc",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMAbNW4mRLzv-xq6enOmKzvyVNv7Qb80IdYBbVo=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100096084254815534374\">Navy Globe</a>"
+                ]
+            },
+            {
+                "name": "Shinsaibashisuji",
+                "description": "Shopping, moda i vruće proljeće",
+                "place_id": "ChIJcxIbNhHnAGARl8cKu_vPFMA",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPihS5ErIPbQffCkz_Vx259vvyN7ahRx-6kXXgX=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113728677825526491017\">Rahma Adam</a>"
+                ]
+            },
+            {
+                "name": "Park dvorca Osaka",
+                "description": "Veliki urbani park s vrtovima i dvorac",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPwfCBVHzknH5I7-epLsSZsUQFjkvBRGFQbpvFn=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/103374023271191038993\">POU asovent</a>"
+                ],
+                "place_id": "ChIJVVVld8ngAGARi9mE-a6e9mc"
+            },
+            {
+                "name": "Muzej rezanci sa šalicama Osaka Ikeda",
+                "description": "Muzej rezanci Ramen s degustacijskom sobom",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM2YDxtgweXUtXRGABBgiRKcckk8SDadRtXYYrg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115407479400150035219\">ヒツ·ジャイアン</a>"
+                ],
+                "place_id": "ChIJp2oJD8bwAGARqttJH_AeWA4"
+            },
+            {
+                "name": "Harukas 300",
+                "description": "Promatranje palube s panoramskim pogledom",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOLzANMJSVozfaeqsBAbfxtc5KQOM54kURgKV4K=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113540333109083819899\">仲卓真</a>"
+                ],
+                "place_id": "ChIJ3eA7J_DdAGARil7_EwUaR_I"
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 540,
+    "trivia": {
+        "items": [
+            "To je označeni grad u regiji Kansai u Honshu u Japanu.",
+            "U 7. i 8. stoljeću služio je na kratko kao carska prijestolnica.",
+            "Gradska zapadna strana otvorena je zaljevu Osaka.",
+            "Kišna sezona naziva se \"tsuyu\" koja se javlja između početka lipnja i kraja srpnja.",
+            "Središnja Osaka otprilike je podijeljena na središta grada i grada koja su poznata kao Kita (北, „sjever“) i Minami (南, „jug“)",
+            "Područje 'Den Den Town' je distrikt elektronike i manga / anime",
+            "Osaka je poznata po hrani u Japanu i inozemstvu. Ali vrlo je malo izbora za vegetarijance.",
+            "Zamjensku plesnu formu Jinta mai izvode samo žene.",
+            "Ljudi u Osaki vole se baviti kupnjom.",
+            "Treći je najveći grad u Japanu nakon Tokija i Jokohame.",
+            "Takoyaki je japanska grickalica u obliku kuglice punjena mljevenom ili kockicom hobotnice, ostacima tempura, kiselim đumbirom i zelenim lukom.",
+            "Međunarodna zračna luka Kansai izgrađena je u cijelosti na umjetnom otoku."
+        ]
+    }
+}

@@ -1,0 +1,333 @@
+{
+    "basic_info": {
+        "name": "ओसाका",
+        "id": "osaka",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Central_Osaka.jpg/1280px-Central_Osaka.jpg",
+        "place": "मध्य ओसाका",
+        "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+        "photo_by": "Type specimen",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Central_Osaka.jpg"
+    },
+    "airport": {
+        "name": "कन्साई आंतरराष्ट्रीय विमानतळ"
+    },
+    "climate": {
+        "type": "उपोष्णकटिबंधीय",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "उन्हाळा",
+                "temp": "21 डिग्री सेल्सियस ते 33 डिग्री सेल्सियस",
+                "duration": "जून-ऑगस्ट"
+            },
+            {
+                "emoji": "🍁",
+                "name": "शरद .तूतील",
+                "temp": "23 डिग्री सेल्सियस ते 9 डिग्री सेल्सियस",
+                "duration": "ऑक्टोबर-नोव्हेंबर"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "हिवाळा",
+                "temp": "12 डिग्री सेल्सियस ते 2 डिग्री सेल्सियस",
+                "duration": "डिसेंबर-फेब्रुवारी"
+            },
+            {
+                "emoji": "🌼",
+                "name": "वसंत ऋतू",
+                "temp": "5 डिग्री सेल्सियस ते 25 डिग्री सेल्सियस",
+                "duration": "मार्च-मे"
+            },
+            {
+                "emoji": "⛈️",
+                "name": "पावसाळी",
+                "temp": "185 मिमी - 155 मिमी",
+                "duration": "जून-जुलै"
+            },
+            {
+                "emoji": "🌀",
+                "name": "टायफूनसह पाऊस",
+                "temp": "160 मिमी - 110 मिमी",
+                "duration": "सप्टेंबर-ऑक्टोबर"
+            }
+        ]
+    },
+    "country": {
+        "name": "जपान 🇯🇵",
+        "continent": "आशिया"
+    },
+    "currency": {
+        "name": "येन",
+        "symbol": "¥",
+        "code": "JPY"
+    },
+    "dance": {
+        "name": "जिन्ता माई"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "सुशी आणि सशिमी",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Sushi_Kanagawa_Japan_%282013%29.JPG/1024px-Sushi_Kanagawa_Japan_%282013%29.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Nandaro",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Sushi_Kanagawa_Japan_(2013).JPG"
+            },
+            {
+                "label": "कुशिकात्सु",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/KushikatsuDaruma01.jpg/1024px-KushikatsuDaruma01.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Aiko99ann",
+                "attribution_url": "http://wikitravel.org/shared/File:KushikatsuDaruma01.jpg"
+            },
+            {
+                "label": "टाकोयाकी",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Takoyaki.jpg/1024px-Takoyaki.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.5/deed.en\">CC BY-SA 2.5</a>",
+                "photo_by": "Keith Pomakis",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Takoyaki.jpg"
+            },
+            {
+                "label": "याकिनीकू",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2016/05/22/17/00/yakiniku-1408821_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "lalah_jp",
+                "attribution_url": "https://pixabay.com/photos/yakiniku-beef-japanese-japan-fresh-1408821/"
+            },
+            {
+                "label": "विंडोज",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2019/11/23/15/26/ramen-4647407_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "allybally4b",
+                "attribution_url": "https://pixabay.com/photos/ramen-japanese-ramen-lamen-soy-if-4647407/"
+            },
+            {
+                "label": "ओकोनोमीयाकी",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Okonomiyaki_in_Osaka.JPG/1024px-Okonomiyaki_in_Osaka.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "ZhengZhou",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Okonomiyaki_in_Osaka.JPG"
+            },
+            {
+                "label": "फुगु",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/8/89/Fugu_sashimi.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Suguri F",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Fugu_sashimi.jpg"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "व्यापार",
+        "secondary": [
+            "सेवा",
+            "उत्पादन"
+        ]
+    },
+    "language": {
+        "primary": "कानसाई जपानी",
+        "secondary": []
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_mr_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_mr_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_mr_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_mr_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_mr_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Your Name",
+                "poster_url": "https://image.tmdb.org/t/p/w300/xq1Ugd62d23K2knRUx6xxuALTZB.jpg"
+            },
+            {
+                "title": "Akira",
+                "poster_url": "https://image.tmdb.org/t/p/w300/5KlRFKKSbyCiyYpZSS3A6G5bW0K.jpg"
+            },
+            {
+                "title": "Tokyo Story",
+                "poster_url": "https://image.tmdb.org/t/p/w300/g2YbTYKpY7N2yDSk7BfXZ18I5QV.jpg"
+            },
+            {
+                "title": "Ikiru",
+                "poster_url": "https://image.tmdb.org/t/p/w300/dgNTS4EQDDVfkzJI5msKuHu2Ei3.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "मिनाटोझाकी सना",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/180717_%EC%97%B4%EB%A6%B0%EC%9D%8C%EC%95%85%ED%9A%8C_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_%282%29_%28cropped%29.jpg/320px-180717_%EC%97%B4%EB%A6%B0%EC%9D%8C%EC%95%85%ED%9A%8C_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_%282%29_%28cropped%29.jpg",
+                "work": "पॉप गायक",
+                "place": "टेन्नेजी-कु, ओसाका",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY 4.0</a>",
+                "photo_by": "월아조운",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:180717_%EC%97%B4%EB%A6%B0%EC%9D%8C%EC%95%85%ED%9A%8C_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_(2)_(cropped).jpg"
+            },
+            {
+                "name": "युटा नाकामोटो",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Yuta_Nakamoto_at_24th_Dream_Concert_02.png/535px-Yuta_Nakamoto_at_24th_Dream_Concert_02.png",
+                "work": "पॉप गायक",
+                "place": "कडोमा, ओसाका",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/3.0/deed.en\">CC BY 3.0</a>",
+                "photo_by": "Nine Stars",
+                "attribution_url": "https://pt.wikipedia.org/wiki/Ficheiro:Yuta_Nakamoto_at_24th_Dream_Concert_02.png"
+            },
+            {
+                "name": "नाओमी ओसाका",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Naomi_Osaka_%2833948760861%29_%28cropped%29_3.jpg/479px-Naomi_Osaka_%2833948760861%29_%28cropped%29_3.jpg",
+                "work": "व्यावसायिक टेनिस प्लेअर",
+                "place": "चा-कु, ओसाका",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0/deed.en\">CC BY-SA 2.0</a>",
+                "photo_by": "Carine06",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Naomi_Osaka_(33948760861)_(cropped)_3.jpg"
+            },
+            {
+                "name": "युजी नाका",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Yuji_Naka%27_-_Magic_-_Monaco_-_2015-03-21-_P1030036_%28cropped%29.jpg/512px-Yuji_Naka%27_-_Magic_-_Monaco_-_2015-03-21-_P1030036_%28cropped%29.jpg",
+                "work": "गेम डिझायनर, निर्माता, प्रोग्रामर",
+                "place": "हिरकटा, ओसाका, जपान",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Yves Tennevin",
+                "attribution_url": "https://en.wikipedia.org/wiki/Yuji_Naka#/media/File:Yuji_Naka'_-_Magic_-_Monaco_-_2015-03-21-_P1030036_(cropped).jpg"
+            },
+            {
+                "name": "हिडिओ नाव",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/%E6%8A%95%E3%81%92%E3%81%BE%E3%81%99_%2831879540%29.jpg/640px-%E6%8A%95%E3%81%92%E3%81%BE%E3%81%99_%2831879540%29.jpg",
+                "work": "सेवानिवृत्त व्यावसायिक बेसबॉल प्लेयर",
+                "place": "ओसाका",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Ryosuke Yagi",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:%E6%8A%95%E3%81%92%E3%81%BE%E3%81%99_(31879540).jpg"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚾ बेसबॉल",
+        "footer": "फुटबॉल, टेनिस आणि सुमो देखील लोकप्रिय आहेत"
+    },
+    "time_to_visit": {
+        "primary": "ऑक्टोबर-नोव्हेंबर",
+        "secondary": "मार्च-मे"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "युनिव्हर्सल स्टुडिओ जपान",
+                "description": "राईडसह चित्रपट-थीम असलेली मनोरंजन पार्क",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOZETYVRhbxj8aEDOTKEQCig6vwCa99U2WwUoY=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/107688045126827240408\">T C</a>"
+                ],
+                "place_id": "ChIJXeLVg9DgAGARqlIyMCX-BTY"
+            },
+            {
+                "name": "ओसाका किल्ला",
+                "description": "संग्रहालयासह प्रसिद्ध, ऐतिहासिक वाडा",
+                "place_id": "ChIJ_TooXM3gAGARQR6hXH3QAQ8",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPBqyIpGT93sG7JRrtsrTmAprhXBThMBclYCDja=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/107973990932680175499\">Jallen Shir</a>"
+                ]
+            },
+            {
+                "name": "डॉटनबोरी",
+                "description": "जेवणाचे व नाट्यगृहासाठी लोकप्रिय जिल्हा",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOtZqwkzAxSay_NglebtmKH0RmbSZ7tVRgkKJLH=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/118021410362534801605\">Davis Wu</a>"
+                ],
+                "place_id": "ChIJ_fmKgRPnAGARkKWLtCYTu7g"
+            },
+            {
+                "name": "ओसाका एक्वैरियम कैयुकन",
+                "description": "सागरी-जीवनाच्या प्रदर्शनांसाठी मोठा खुणा",
+                "place_id": "ChIJzakNjPToAGARzCwIriDFg28",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPP0eNc0TPl_WbY8xtetLEuLWzse2TPo8pvw9W8=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104826993864633596144\">104826993864633596144</a>"
+                ]
+            },
+            {
+                "name": "उम्दा स्काय इमारत",
+                "description": "छप्पर-बाग वेधशाळेसह उच्च-उदय",
+                "place_id": "ChIJbyd0kIjmAGAR_crecCbjwlc",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMAbNW4mRLzv-xq6enOmKzvyVNv7Qb80IdYBbVo=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100096084254815534374\">Navy Globe</a>"
+                ]
+            },
+            {
+                "name": "शिन्साबाशीसुजी",
+                "description": "खरेदी, फॅशन आणि गरम वसंत .तु",
+                "place_id": "ChIJcxIbNhHnAGARl8cKu_vPFMA",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPihS5ErIPbQffCkz_Vx259vvyN7ahRx-6kXXgX=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113728677825526491017\">Rahma Adam</a>"
+                ]
+            },
+            {
+                "name": "ओसाका कॅसल पार्क",
+                "description": "बगिचा आणि वाडा असलेले मोठे शहरी उद्यान",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPwfCBVHzknH5I7-epLsSZsUQFjkvBRGFQbpvFn=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/103374023271191038993\">POU asovent</a>"
+                ],
+                "place_id": "ChIJVVVld8ngAGARi9mE-a6e9mc"
+            },
+            {
+                "name": "कप नूडल्स संग्रहालय ओसाका इकेदा",
+                "description": "टेमेनिंग रूमसह रामेन नूडल संग्रहालय",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM2YDxtgweXUtXRGABBgiRKcckk8SDadRtXYYrg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115407479400150035219\">ヒツ·ジャイアン</a>"
+                ],
+                "place_id": "ChIJp2oJD8bwAGARqttJH_AeWA4"
+            },
+            {
+                "name": "हरुकास 300",
+                "description": "पॅनोरामिक दृश्यांसह निरीक्षण डेक",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOLzANMJSVozfaeqsBAbfxtc5KQOM54kURgKV4K=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113540333109083819899\">仲卓真</a>"
+                ],
+                "place_id": "ChIJ3eA7J_DdAGARil7_EwUaR_I"
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 540,
+    "trivia": {
+        "items": [
+            "हे जपानमधील होन्शुच्या कानसाई प्रदेशातील नामित शहर आहे.",
+            "7th व्या आणि centuries व्या शतकात शाही राजधानी म्हणून थोडक्यात सेवा बजावली.",
+            "शहराची पश्चिमेकडील ओसाका खाडी खुली आहे.",
+            "जूनच्या सुरूवातीस आणि जुलैच्या अखेरीस पावसाळ्यास 'tsuyu' म्हणतात.",
+            "मध्य ओसाका साधारणपणे किटा (北, 'उत्तर') आणि मिनामी (南, 'दक्षिण') म्हणून ओळखल्या जाणार्‍या डाउनटाउन आणि अपटाऊन भागात विभागले गेले आहे",
+            "'डेन डेन टाउन' क्षेत्र इलेक्ट्रॉनिक आणि मंगा / imeनामे डिस्ट्रिक आहे",
+            "ओसाका जपानमध्ये आणि परदेशात आपल्या खाण्यासाठी प्रसिद्ध आहे. पण शाकाहारी निवडी फारच कमी आहेत.",
+            "जिन्ता माई नृत्य प्रकार फक्त महिलांनी सादर केला पाहिजे.",
+            "ओसाकामधील लोक जेव्हा खरेदी करतात तेव्हा करार करणे पसंत करतात.",
+            "हे टोकियो आणि योकोहामा नंतर जपानमधील तिसर्‍या क्रमांकाचे शहर आहे.",
+            "तकोयाकी हा बॉल-आकाराचा जपानी स्नॅक्स आहे जो तोडलेला किंवा डाइसड ऑक्टोपस, टेम्पुरा स्क्रॅप्स, लोणचे आले आणि हिरव्या कांद्याने भरलेला आहे.",
+            "कानसाई आंतरराष्ट्रीय विमानतळ संपूर्णपणे कृत्रिम बेटावर बांधले गेले आहे."
+        ]
+    }
+}

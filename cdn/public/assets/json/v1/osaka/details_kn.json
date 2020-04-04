@@ -1,0 +1,333 @@
+{
+    "basic_info": {
+        "name": "ಒಸಾಕಾ",
+        "id": "osaka",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Central_Osaka.jpg/1280px-Central_Osaka.jpg",
+        "place": "ಮಧ್ಯ ಒಸಾಕಾ",
+        "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+        "photo_by": "Type specimen",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Central_Osaka.jpg"
+    },
+    "airport": {
+        "name": "ಕನ್ಸಾಯ್ ಅಂತರಾಷ್ಟ್ರೀಯ ವಿಮಾನ ನಿಲ್ದಾಣ"
+    },
+    "climate": {
+        "type": "ಉಪೋಷ್ಣವಲಯ",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "ಬೇಸಿಗೆ",
+                "temp": "21 ° C ನಿಂದ 33. C ಗೆ",
+                "duration": "ಜೂನ್-ಆಗಸ್ಟ್"
+            },
+            {
+                "emoji": "🍁",
+                "name": "ಶರತ್ಕಾಲ",
+                "temp": "23 ° C ನಿಂದ 9. C.",
+                "duration": "ಅಕ್ಟೋಬರ್-ನವೆಂಬರ್"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "ಚಳಿಗಾಲ",
+                "temp": "12 ° C ನಿಂದ 2. C.",
+                "duration": "ಡಿಸೆಂಬರ್-ಫೆಬ್ರುವರಿ"
+            },
+            {
+                "emoji": "🌼",
+                "name": "ವಸಂತ",
+                "temp": "5 ° C ನಿಂದ 25. C ವರೆಗೆ",
+                "duration": "ಮಾರ್ಚ್-ಮೇ"
+            },
+            {
+                "emoji": "⛈️",
+                "name": "ಮಳೆಯ",
+                "temp": "185 ಮಿಮೀ - 155 ಮಿಮೀ",
+                "duration": "ಜೂನ್-ಜುಲೈ"
+            },
+            {
+                "emoji": "🌀",
+                "name": "ಟೈಫೂನ್ಗಳೊಂದಿಗೆ ಮಳೆ",
+                "temp": "160 ಮಿಮೀ - 110 ಮಿಮೀ",
+                "duration": "ಸೆಪ್ಟೆಂಬರ್-ಅಕ್ಟೋಬರ್"
+            }
+        ]
+    },
+    "country": {
+        "name": "ಜಪಾನ್",
+        "continent": "ಏಷ್ಯಾ"
+    },
+    "currency": {
+        "name": "ಯೆನ್",
+        "symbol": "¥",
+        "code": "JPY"
+    },
+    "dance": {
+        "name": "ಜಿಂಟಾ ಮಾಯ್"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "ಸುಶಿ ಮತ್ತು ಸಶಿಮಿ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Sushi_Kanagawa_Japan_%282013%29.JPG/1024px-Sushi_Kanagawa_Japan_%282013%29.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Nandaro",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Sushi_Kanagawa_Japan_(2013).JPG"
+            },
+            {
+                "label": "ಕುಶಿಕತ್ಸು",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/KushikatsuDaruma01.jpg/1024px-KushikatsuDaruma01.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Aiko99ann",
+                "attribution_url": "http://wikitravel.org/shared/File:KushikatsuDaruma01.jpg"
+            },
+            {
+                "label": "ಟಕೋಯಾಕಿ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Takoyaki.jpg/1024px-Takoyaki.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.5/deed.en\">CC BY-SA 2.5</a>",
+                "photo_by": "Keith Pomakis",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Takoyaki.jpg"
+            },
+            {
+                "label": "ಯಾಕಿನಿಕು",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2016/05/22/17/00/yakiniku-1408821_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "lalah_jp",
+                "attribution_url": "https://pixabay.com/photos/yakiniku-beef-japanese-japan-fresh-1408821/"
+            },
+            {
+                "label": "ವಿಂಡೋಸ್",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2019/11/23/15/26/ramen-4647407_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "allybally4b",
+                "attribution_url": "https://pixabay.com/photos/ramen-japanese-ramen-lamen-soy-if-4647407/"
+            },
+            {
+                "label": "ಒಕೊನೊಮಿಯಾಕಿ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Okonomiyaki_in_Osaka.JPG/1024px-Okonomiyaki_in_Osaka.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "ZhengZhou",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Okonomiyaki_in_Osaka.JPG"
+            },
+            {
+                "label": "ಫುಗು",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/8/89/Fugu_sashimi.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Suguri F",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Fugu_sashimi.jpg"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "ವ್ಯಾಪಾರ",
+        "secondary": [
+            "ಸೇವೆಗಳು",
+            "ಉತ್ಪಾದನೆ"
+        ]
+    },
+    "language": {
+        "primary": "ಕನ್ಸೈ ಜಪಾನೀಸ್",
+        "secondary": []
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_kn_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_kn_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_kn_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_kn_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/osaka_map_kn_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Your Name",
+                "poster_url": "https://image.tmdb.org/t/p/w300/xq1Ugd62d23K2knRUx6xxuALTZB.jpg"
+            },
+            {
+                "title": "Akira",
+                "poster_url": "https://image.tmdb.org/t/p/w300/5KlRFKKSbyCiyYpZSS3A6G5bW0K.jpg"
+            },
+            {
+                "title": "Tokyo Story",
+                "poster_url": "https://image.tmdb.org/t/p/w300/g2YbTYKpY7N2yDSk7BfXZ18I5QV.jpg"
+            },
+            {
+                "title": "Ikiru",
+                "poster_url": "https://image.tmdb.org/t/p/w300/dgNTS4EQDDVfkzJI5msKuHu2Ei3.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "ಮಿನಾಟೋಜಾಕಿ ಸನಾ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/180717_%EC%97%B4%EB%A6%B0%EC%9D%8C%EC%95%85%ED%9A%8C_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_%282%29_%28cropped%29.jpg/320px-180717_%EC%97%B4%EB%A6%B0%EC%9D%8C%EC%95%85%ED%9A%8C_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_%282%29_%28cropped%29.jpg",
+                "work": "ಪಾಪ್ ಸಿಂಗರ್",
+                "place": "ಟೆನ್ನಜಿ-ಕು, ಒಸಾಕಾ",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY 4.0</a>",
+                "photo_by": "월아조운",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:180717_%EC%97%B4%EB%A6%B0%EC%9D%8C%EC%95%85%ED%9A%8C_%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4_(2)_(cropped).jpg"
+            },
+            {
+                "name": "ಯುಟಾ ನಕಮೊಟೊ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Yuta_Nakamoto_at_24th_Dream_Concert_02.png/535px-Yuta_Nakamoto_at_24th_Dream_Concert_02.png",
+                "work": "ಪಾಪ್ ಸಿಂಗರ್",
+                "place": "ಕಡೋಮಾ, ಒಸಾಕಾ",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/3.0/deed.en\">CC BY 3.0</a>",
+                "photo_by": "Nine Stars",
+                "attribution_url": "https://pt.wikipedia.org/wiki/Ficheiro:Yuta_Nakamoto_at_24th_Dream_Concert_02.png"
+            },
+            {
+                "name": "ನವೋಮಿ ಒಸಾಕಾ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Naomi_Osaka_%2833948760861%29_%28cropped%29_3.jpg/479px-Naomi_Osaka_%2833948760861%29_%28cropped%29_3.jpg",
+                "work": "ವೃತ್ತಿಪರ ಟೆನಿಸ್ ಆಟಗಾರ",
+                "place": "ಚಾ-ಕು, ಒಸಾಕಾ",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0/deed.en\">CC BY-SA 2.0</a>",
+                "photo_by": "Carine06",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Naomi_Osaka_(33948760861)_(cropped)_3.jpg"
+            },
+            {
+                "name": "ಯುಜಿ ನಾಕಾ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Yuji_Naka%27_-_Magic_-_Monaco_-_2015-03-21-_P1030036_%28cropped%29.jpg/512px-Yuji_Naka%27_-_Magic_-_Monaco_-_2015-03-21-_P1030036_%28cropped%29.jpg",
+                "work": "ಗೇಮ್ ಡಿಸೈನರ್, ನಿರ್ಮಾಪಕ, ಪ್ರೋಗ್ರಾಮರ್",
+                "place": "ಹಿರಕಟಾ, ಒಸಾಕಾ, ಜಪಾನ್",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Yves Tennevin",
+                "attribution_url": "https://en.wikipedia.org/wiki/Yuji_Naka#/media/File:Yuji_Naka'_-_Magic_-_Monaco_-_2015-03-21-_P1030036_(cropped).jpg"
+            },
+            {
+                "name": "ವೀಡಿಯೊ ಹೆಸರು",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/%E6%8A%95%E3%81%92%E3%81%BE%E3%81%99_%2831879540%29.jpg/640px-%E6%8A%95%E3%81%92%E3%81%BE%E3%81%99_%2831879540%29.jpg",
+                "work": "ನಿವೃತ್ತ ವೃತ್ತಿಪರ ಬೇಸ್‌ಬಾಲ್ ಆಟಗಾರ",
+                "place": "ಒಸಾಕಾ",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Ryosuke Yagi",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:%E6%8A%95%E3%81%92%E3%81%BE%E3%81%99_(31879540).jpg"
+            }
+        ]
+    },
+    "sports": {
+        "title": "Ase ಬೇಸ್‌ಬಾಲ್",
+        "footer": "ಫುಟ್ಬಾಲ್, ಟೆನಿಸ್ ಮತ್ತು ಸುಮೋ ಕೂಡ ಜನಪ್ರಿಯವಾಗಿವೆ"
+    },
+    "time_to_visit": {
+        "primary": "ಅಕ್ಟೋಬರ್-ನವೆಂಬರ್",
+        "secondary": "ಮಾರ್ಚ್-ಮೇ"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "ಯುನಿವರ್ಸಲ್ ಸ್ಟುಡಿಯೋಸ್ ಜಪಾನ್",
+                "description": "ಸವಾರಿಗಳೊಂದಿಗೆ ಚಲನಚಿತ್ರ-ವಿಷಯದ ಮನೋರಂಜನಾ ಉದ್ಯಾನ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOZETYVRhbxj8aEDOTKEQCig6vwCa99U2WwUoY=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/107688045126827240408\">T C</a>"
+                ],
+                "place_id": "ChIJXeLVg9DgAGARqlIyMCX-BTY"
+            },
+            {
+                "name": "ಒಸಾಕಾ ಕ್ಯಾಸಲ್",
+                "description": "ಮ್ಯೂಸಿಯಂನೊಂದಿಗೆ ಪ್ರಸಿದ್ಧ, ಐತಿಹಾಸಿಕ ಕೋಟೆ",
+                "place_id": "ChIJ_TooXM3gAGARQR6hXH3QAQ8",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPBqyIpGT93sG7JRrtsrTmAprhXBThMBclYCDja=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/107973990932680175499\">Jallen Shir</a>"
+                ]
+            },
+            {
+                "name": "ಡಾಟನ್‌ಬೋರಿ",
+                "description": "District ಟ ಮತ್ತು ರಂಗಭೂಮಿಗೆ ಜನಪ್ರಿಯ ಜಿಲ್ಲೆ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOtZqwkzAxSay_NglebtmKH0RmbSZ7tVRgkKJLH=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/118021410362534801605\">Davis Wu</a>"
+                ],
+                "place_id": "ChIJ_fmKgRPnAGARkKWLtCYTu7g"
+            },
+            {
+                "name": "ಒಸಾಕಾ ಅಕ್ವೇರಿಯಂ ಕೈಯುಕನ್",
+                "description": "ಸಮುದ್ರ-ಜೀವನ ಪ್ರದರ್ಶನಗಳಿಗೆ ದೊಡ್ಡ ಹೆಗ್ಗುರುತು",
+                "place_id": "ChIJzakNjPToAGARzCwIriDFg28",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPP0eNc0TPl_WbY8xtetLEuLWzse2TPo8pvw9W8=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104826993864633596144\">104826993864633596144</a>"
+                ]
+            },
+            {
+                "name": "ಉಮೆಡಾ ಸ್ಕೈ ಕಟ್ಟಡ",
+                "description": "Roof ಾವಣಿಯ-ಉದ್ಯಾನ ವೀಕ್ಷಣಾಲಯದೊಂದಿಗೆ ಎತ್ತರದ",
+                "place_id": "ChIJbyd0kIjmAGAR_crecCbjwlc",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMAbNW4mRLzv-xq6enOmKzvyVNv7Qb80IdYBbVo=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100096084254815534374\">Navy Globe</a>"
+                ]
+            },
+            {
+                "name": "ಶಿನ್ಸೈಬಶಿಸುಜಿ",
+                "description": "ಶಾಪಿಂಗ್, ಫ್ಯಾಷನ್ ಮತ್ತು ಬಿಸಿ ವಸಂತ",
+                "place_id": "ChIJcxIbNhHnAGARl8cKu_vPFMA",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPihS5ErIPbQffCkz_Vx259vvyN7ahRx-6kXXgX=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113728677825526491017\">Rahma Adam</a>"
+                ]
+            },
+            {
+                "name": "ಒಸಾಕಾ ಕ್ಯಾಸಲ್ ಪಾರ್ಕ್",
+                "description": "ಉದ್ಯಾನಗಳು ಮತ್ತು ಕೋಟೆಯೊಂದಿಗೆ ದೊಡ್ಡ ನಗರ ಉದ್ಯಾನ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPwfCBVHzknH5I7-epLsSZsUQFjkvBRGFQbpvFn=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/103374023271191038993\">POU asovent</a>"
+                ],
+                "place_id": "ChIJVVVld8ngAGARi9mE-a6e9mc"
+            },
+            {
+                "name": "ಕಪ್ ನೂಡಲ್ಸ್ ಮ್ಯೂಸಿಯಂ ಒಸಾಕಾ ಇಕೆಡಾ",
+                "description": "ರುಚಿಯ ಕೋಣೆಯನ್ನು ಹೊಂದಿರುವ ರಾಮೆನ್ ನೂಡಲ್ ಮ್ಯೂಸಿಯಂ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM2YDxtgweXUtXRGABBgiRKcckk8SDadRtXYYrg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115407479400150035219\">ヒツ·ジャイアン</a>"
+                ],
+                "place_id": "ChIJp2oJD8bwAGARqttJH_AeWA4"
+            },
+            {
+                "name": "ಹರುಕಾ 300",
+                "description": "ವಿಹಂಗಮ ನೋಟಗಳೊಂದಿಗೆ ವೀಕ್ಷಣೆ ಡೆಕ್ಗಳು",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOLzANMJSVozfaeqsBAbfxtc5KQOM54kURgKV4K=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113540333109083819899\">仲卓真</a>"
+                ],
+                "place_id": "ChIJ3eA7J_DdAGARil7_EwUaR_I"
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 540,
+    "trivia": {
+        "items": [
+            "ಇದು ಜಪಾನ್‌ನ ಹೊನ್ಷುವಿನ ಕನ್ಸಾಯ್ ಪ್ರದೇಶದಲ್ಲಿ ಗೊತ್ತುಪಡಿಸಿದ ನಗರವಾಗಿದೆ.",
+            "7 ಮತ್ತು 8 ನೇ ಶತಮಾನಗಳಲ್ಲಿ, ಇದು ಸಂಕ್ಷಿಪ್ತವಾಗಿ ಸಾಮ್ರಾಜ್ಯಶಾಹಿ ರಾಜಧಾನಿಯಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸಿತು.",
+            "ನಗರದ ಪಶ್ಚಿಮ ಭಾಗವು ಒಸಾಕಾ ಕೊಲ್ಲಿಗೆ ತೆರೆದಿರುತ್ತದೆ.",
+            "ಮಳೆಗಾಲವನ್ನು ಜೂನ್ ಆರಂಭದಲ್ಲಿ ಮತ್ತು ಜುಲೈ ಅಂತ್ಯದ ನಡುವೆ ಸಂಭವಿಸುವ 'ಟ್ಸುಯು' ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ.",
+            "ಮಧ್ಯ ಒಸಾಕಾವನ್ನು ಸರಿಸುಮಾರು ಡೌನ್ಟೌನ್ ಮತ್ತು ಅಪ್ಟೌನ್ ಪ್ರದೇಶಗಳಾಗಿ ಕಿಟಾ (北, 'ಉತ್ತರ') ಮತ್ತು ಮಿನಾಮಿ (南, 'ದಕ್ಷಿಣ') ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ.",
+            "'ಡೆನ್ ಡೆನ್ ಟೌನ್' ಪ್ರದೇಶವು ಎಲೆಕ್ಟ್ರಾನಿಕ್ ಮತ್ತು ಮಂಗಾ / ಅನಿಮೆ ಡಿಸ್ಟ್ರಿಕ್ ಆಗಿದೆ",
+            "ಒಸಾಕಾ ಜಪಾನ್ ಮತ್ತು ವಿದೇಶಗಳಲ್ಲಿ ಆಹಾರಕ್ಕಾಗಿ ಹೆಸರುವಾಸಿಯಾಗಿದೆ. ಆದರೆ ಸಸ್ಯಾಹಾರಿ ಆಯ್ಕೆಗಳು ಬಹಳ ಕಡಿಮೆ.",
+            "ಜಿಂಟಾ ಮಾಯ್ ನೃತ್ಯ ಪ್ರಕಾರವನ್ನು ಮಹಿಳೆಯರು ಮಾತ್ರ ಪ್ರದರ್ಶಿಸಲು ಉದ್ದೇಶಿಸಲಾಗಿದೆ.",
+            "ಒಸಾಕಾದ ಜನರು ಖರೀದಿಸಿದಾಗ ಚೌಕಾಶಿ ಮಾಡಲು ಇಷ್ಟಪಡುತ್ತಾರೆ.",
+            "ಟೋಕಿಯೊ ಮತ್ತು ಯೊಕೊಹಾಮಾ ನಂತರ ಇದು ಜಪಾನ್‌ನ ಮೂರನೇ ಅತಿದೊಡ್ಡ ನಗರವಾಗಿದೆ.",
+            "ಟಕೊಯಾಕಿ ಚೆಂಡು ಆಕಾರದ ಜಪಾನೀಸ್ ತಿಂಡಿ, ಕೊಚ್ಚಿದ ಅಥವಾ ಚೌಕವಾಗಿರುವ ಆಕ್ಟೋಪಸ್, ಟೆಂಪೂರ ಸ್ಕ್ರ್ಯಾಪ್ಗಳು, ಉಪ್ಪಿನಕಾಯಿ ಶುಂಠಿ ಮತ್ತು ಹಸಿರು ಈರುಳ್ಳಿ ತುಂಬಿರುತ್ತದೆ.",
+            "ಕನ್ಸೈ ಅಂತರಾಷ್ಟ್ರೀಯ ವಿಮಾನ ನಿಲ್ದಾಣವನ್ನು ಸಂಪೂರ್ಣವಾಗಿ ಕೃತಕ ದ್ವೀಪದಲ್ಲಿ ನಿರ್ಮಿಸಲಾಗಿದೆ."
+        ]
+    }
+}

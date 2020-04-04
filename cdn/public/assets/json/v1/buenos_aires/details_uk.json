@@ -1,0 +1,304 @@
+{
+    "basic_info": {
+        "name": "Буенос-Айрес",
+        "id": "buenos_aires",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Puerto_Madero%2C_Buenos_Aires_%2840689219792%29.jpg/1280px-Puerto_Madero%2C_Buenos_Aires_%2840689219792%29.jpg",
+        "place": "Пуерто-Мадеро, Буенос-Айрес",
+        "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+        "photo_by": "Deensel",
+        "attribution_url": "https://www.flickr.com/photos/deensel/40689219792/"
+    },
+    "airport": {
+        "name": "Міжнародний аеропорт Ministro Pistarini"
+    },
+    "climate": {
+        "type": "Субтропічний",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "Літо",
+                "temp": "Від 25 ° C до 22 ° C",
+                "duration": "Січень-лютий"
+            },
+            {
+                "emoji": "🍁",
+                "name": "Осінь",
+                "temp": "Від 22 ° C до 15 ° C",
+                "duration": "Березень-травень"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "Зима",
+                "temp": "Від 12 ° C до 14 ° C",
+                "duration": "Червень-серпень"
+            },
+            {
+                "emoji": "🌼",
+                "name": "Весна",
+                "temp": "Від 18 ° C до 23 ° C",
+                "duration": "Жовтень-Грудень"
+            }
+        ]
+    },
+    "country": {
+        "name": "Аргентина 🇦🇷",
+        "continent": "Південна Америка"
+    },
+    "currency": {
+        "name": "Аргентинське песо",
+        "symbol": "$",
+        "code": "ARS"
+    },
+    "dance": {
+        "name": "Танго"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "Потрійне печиво з шоколаду та глазурі",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/f/f0/AlfajoresTriples.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Julgon",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:AlfajoresTriples.jpg"
+            },
+            {
+                "label": "Dulce de leche",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Dulce_de_leche_2007.jpg/640px-Dulce_de_leche_2007.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Kai Hendry",
+                "attribution_url": "https://www.flickr.com/photos/16105436@N00/362655239"
+            },
+            {
+                "label": "Піца",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/2/23/Pizza_Argentina_04.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Carlosdisogra",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Pizza_Argentina_04.jpg"
+            },
+            {
+                "label": "Смажена",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Parrillada_argentina.jpg/1024px-Parrillada_argentina.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Eduardo P",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Parrillada_argentina.jpg"
+            },
+            {
+                "label": "Empanadas",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Empanadas_cordobesas_%28Argentina%29_caseras.JPG/1024px-Empanadas_cordobesas_%28Argentina%29_caseras.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Carlosdisogra",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Empanadas_cordobesas_(Argentina)_caseras.JPG"
+            },
+            {
+                "label": "Стейк з соусом Чимічуррі",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Steak_with_Chimichurri_Sauce_%2813316528445%29.jpg/1024px-Steak_with_Chimichurri_Sauce_%2813316528445%29.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Dominic Lockyer",
+                "attribution_url": "https://www.flickr.com/photos/farehamwine/13316528445/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "Приготування їжі",
+        "secondary": [
+            "Автомобілі",
+            "Металообробка",
+            "Текстиль"
+        ]
+    },
+    "language": {
+        "primary": "Іспанська",
+        "secondary": [
+            "Англійська",
+            "Італійська"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_uk_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_uk_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_uk_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_uk_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_uk_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Relatos salvajes",
+                "poster_url": "https://image.tmdb.org/t/p/w300/aNlTNuLvm0mFbVvmayLvEq1qF84.jpg"
+            },
+            {
+                "title": "El secreto de sus ojos",
+                "poster_url": "https://image.tmdb.org/t/p/w300/j8tqe0Xk8fbi8RvU5Bb1x1cOmgo.jpg"
+            },
+            {
+                "title": "El Clan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/t85v4agr03AdvuD2HcqhXKxV7II.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "Папа Франциск",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.jpg/815px-Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.jpg",
+                "work": "Глава Католицької Церкви та суверен міста Ватикану",
+                "place": "Флорес, Буенос-Айрес",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 2.0</a>",
+                "photo_by": "Jeffrey Bruno",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Canonization_2014-_The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_(14036966124).jpg"
+            },
+            {
+                "name": "Че Гевара",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/CheHigh.jpg/599px-CheHigh.jpg",
+                "work": " Аргентинський марксистський революціонер",
+                "place": "Росаріо, 278 км від Буенос-Айреса"
+            },
+            {
+                "name": "Ліонель Мессі",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lionel_Messi_20180626.jpg/420px-Lionel_Messi_20180626.jpg",
+                "work": "Професійний футболіст",
+                "place": "Розарій",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Кирилл Венедиктов",
+                "attribution_url": "https://www.soccer.ru/galery/1055457/photo/733439"
+            },
+            {
+                "name": "Дієго Марадона",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Diego_Maradona_2012_2.jpg/622px-Diego_Maradona_2012_2.jpg",
+                "work": "Пенсійний професійний футболіст",
+                "place": "Ланус Оесте, провінція Буенос-Айрес",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY 2.0</a>",
+                "photo_by": "Doha Stadium Plus Qatar",
+                "attribution_url": "https://www.flickr.com/photos/66463488@N06/7448907672"
+            },
+            {
+                "name": "Хорхе Луїс Борхес",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Jorge_Luis_Borges.jpg",
+                "work": "Аргентинський автор оповідань",
+                "place": "Буенос-Айрес"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ Футбол",
+        "footer": "Аргентина двічі вигравала кубок світу з футболу (1986, 1978)"
+    },
+    "time_to_visit": {
+        "primary": "Квітень-червень",
+        "secondary": "Вересень-грудень"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "Рот",
+                "description": "Алея Камініто та стадіон Ла Бомбонера",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOXp0TkuBJu2fFsZYdLPBej0dX06nZ2Z6COU8Y0=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115635279769083588516\">André Magdalena</a>"
+                ],
+                "place_id": "ChIJpfBfv7A0o5URoJl1DYymWDg"
+            },
+            {
+                "name": "Кладовище Реколета",
+                "description": "Багатий мистецтвом сайт із відомими мавзолеями",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNNW6wP5SvK1ngY2-KTdpCCxZuvsIEedXAPH-3_=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115118851937052032752\">A Google User</a>"
+                ],
+                "place_id": "ChIJs5EH8aLKvJURw6UX3MYKGKE"
+            },
+            {
+                "name": "Площа де Майо",
+                "description": "Знакова центральна площа 19 століття",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOFbzwuXtzJJTorIo_2FVTIS6n__Cqny8MIFwrI=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102862970682232404616\">Leonardo Cazón</a>"
+                ],
+                "place_id": "ChIJXx79V9vKvJURS2GosE58c8w"
+            },
+            {
+                "name": "Рожевий дім",
+                "description": "Знаменитий президентський палац з турами",
+                "place_id": "ChIJdW8nviw1o5URbfhFBe8haeE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNLAYkgz7tAiMc9o4wxHcd7mRHiFI0tniM6pVe3=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115118851937052032752\">Lazaro Huizinga</a>"
+                ]
+            },
+            {
+                "name": "Обеліск",
+                "description": "Знаменний білий обеліск висотою 67 м",
+                "place_id": "ChIJ217apvCpSgARi1VOI06tvhE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMZNuzy7DxxmEFKxxG1vNNb7_VJBM-202XwvITE=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/111127317868746618272\">Yami Iv</a>"
+                ]
+            },
+            {
+                "name": "Театр Колон",
+                "description": "Класичний, прикрашений театрально-мистецький театр",
+                "place_id": "ChIJIxYSMMbKvJURqZGJyCpvOFM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM41odtdP1AGChzQHlbHWAGkzzSDC622GX5qDYf=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115635432213531829732\">Sabrina Vainschtok</a>"
+                ]
+            },
+            {
+                "name": "Парк Tres de Febrero",
+                "description": "Просторий парк з озерами та трояндовим садом",
+                "place_id": "ChIJsQqBvZ-1vJURbm-7dxt8fgM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM9daX3n_ygsOy3uufpA9yuJt0WvJ_NYyZ27hUP=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112185936974765972473\">Liliana Lovato</a>"
+                ]
+            },
+            {
+                "name": "Площа Доррего",
+                "description": "Орієнтир з кафе та недільний ринок",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNJJXjcS9nc_56FO_BL8qcAl_6A95f0_n-Gll-6=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110377337430439271628\">M. Martín</a>"
+                ],
+                "place_id": "ChIJifSktCzLvJURsTMaMFXLu3E"
+            },
+            {
+                "name": "Міст жінки",
+                "description": "Орієнтир обертового мосту",
+                "place_id": "ChIJbSLzQyk1o5URPBMjt-fRU98",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM_K_jeJqzurv0UoBe8sPlF4vflfeApUCgBcB7w=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102506221278284370139\">A Google User</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": -180,
+    "trivia": {
+        "items": [
+            "Це столиця і найбільше місто Аргентини.",
+            "Він розташований на лимані Ріо-де-ла-Плата.",
+            "Це вважається \"Парижем Південної Америки\"",
+            "Клімат субтропічний, екстремальні температури рідкісні",
+            "Метро Буенос-Айреса (метро) - найдавніша підземна система в Південній півкулі і найстаріша в іспаномовному світі",
+            "Найкращими футбольними клубами є Бока Хуніорс та Рівер Плейт, а матч між ними відомий як Суперкласіко.",
+            "Тут відбувся Чемпіонат світу з футболу 1978 року, який Аргетіна виграла, перемігши Нідерланди 5-1 у фіналі.",
+            "Два фільми «Офіційна історія» та «Таємниця в їх очах» отримали «Оскар» у категорії «Кращий іноземний фільм».",
+            "Університет Буенос-Айреса підготував п'ять лауреатів Нобелівської премії",
+            "Танго є частиною світової культурної спадщини."
+        ]
+    }
+}

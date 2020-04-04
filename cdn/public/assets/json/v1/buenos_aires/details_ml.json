@@ -1,0 +1,304 @@
+{
+    "basic_info": {
+        "name": "ബ്യൂണസ് അയേഴ്സ്",
+        "id": "buenos_aires",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Puerto_Madero%2C_Buenos_Aires_%2840689219792%29.jpg/1280px-Puerto_Madero%2C_Buenos_Aires_%2840689219792%29.jpg",
+        "place": "പ്യൂർട്ടോ മഡെറോ, ബ്യൂണസ് അയേഴ്സ്",
+        "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+        "photo_by": "Deensel",
+        "attribution_url": "https://www.flickr.com/photos/deensel/40689219792/"
+    },
+    "airport": {
+        "name": "മിനിസ്ട്രോ പിസ്റ്റാരിനി അന്താരാഷ്ട്ര വിമാനത്താവളം"
+    },
+    "climate": {
+        "type": "ഉപ ഉഷ്ണമേഖലാ",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "വേനൽ",
+                "temp": "25 ° C മുതൽ 22. C വരെ",
+                "duration": "ജനുവരി-ഫെബ്രുവരി"
+            },
+            {
+                "emoji": "🍁",
+                "name": "ശരത്കാലം",
+                "temp": "22 ° C മുതൽ 15. C വരെ",
+                "duration": "മാർ-മെയ്"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "വിന്റർ",
+                "temp": "12 ° C മുതൽ 14 ° C വരെ",
+                "duration": "ജൂൺ-ഓഗസ്റ്റ്"
+            },
+            {
+                "emoji": "🌼",
+                "name": "സ്പ്രിംഗ്",
+                "temp": "18 ° C മുതൽ 23. C വരെ",
+                "duration": "ഒക്ടോബർ-ഡിസംബർ"
+            }
+        ]
+    },
+    "country": {
+        "name": "അർജന്റീന",
+        "continent": "തെക്കേ അമേരിക്ക"
+    },
+    "currency": {
+        "name": "അർജന്റീന പെസോ",
+        "symbol": "$",
+        "code": "ARS"
+    },
+    "dance": {
+        "name": "ടാംഗോ"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "ട്രിപ്പിൾ ചോക്ലേറ്റും ഗ്ലേസ് സാൻഡ്‌വിച്ച് കുക്കികളും",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/f/f0/AlfajoresTriples.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Julgon",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:AlfajoresTriples.jpg"
+            },
+            {
+                "label": "ഡൽ‌സ് ഡി ലെച്ചെ",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Dulce_de_leche_2007.jpg/640px-Dulce_de_leche_2007.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Kai Hendry",
+                "attribution_url": "https://www.flickr.com/photos/16105436@N00/362655239"
+            },
+            {
+                "label": "പിസ്സ",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/2/23/Pizza_Argentina_04.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Carlosdisogra",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Pizza_Argentina_04.jpg"
+            },
+            {
+                "label": "വറുക്കുക",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Parrillada_argentina.jpg/1024px-Parrillada_argentina.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Eduardo P",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Parrillada_argentina.jpg"
+            },
+            {
+                "label": "എംപാനദാസ്",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Empanadas_cordobesas_%28Argentina%29_caseras.JPG/1024px-Empanadas_cordobesas_%28Argentina%29_caseras.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Carlosdisogra",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Empanadas_cordobesas_(Argentina)_caseras.JPG"
+            },
+            {
+                "label": "ചിമിചുറി സോസ് ഉപയോഗിച്ച് സ്റ്റീക്ക്",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Steak_with_Chimichurri_Sauce_%2813316528445%29.jpg/1024px-Steak_with_Chimichurri_Sauce_%2813316528445%29.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Dominic Lockyer",
+                "attribution_url": "https://www.flickr.com/photos/farehamwine/13316528445/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "ഭക്ഷ്യ സംസ്കരണം",
+        "secondary": [
+            "മോട്ടോർ വാഹനങ്ങൾ",
+            "മെറ്റൽ വർക്കിംഗ്",
+            "തുണിത്തരങ്ങൾ"
+        ]
+    },
+    "language": {
+        "primary": "സ്പാനിഷ്",
+        "secondary": [
+            "ഇംഗ്ലീഷ്",
+            "ഇറ്റാലിയൻ"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_ml_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_ml_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_ml_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_ml_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_ml_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Relatos salvajes",
+                "poster_url": "https://image.tmdb.org/t/p/w300/aNlTNuLvm0mFbVvmayLvEq1qF84.jpg"
+            },
+            {
+                "title": "El secreto de sus ojos",
+                "poster_url": "https://image.tmdb.org/t/p/w300/j8tqe0Xk8fbi8RvU5Bb1x1cOmgo.jpg"
+            },
+            {
+                "title": "El Clan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/t85v4agr03AdvuD2HcqhXKxV7II.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "ഫ്രാൻസിസ് മാർപാപ്പ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.jpg/815px-Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.jpg",
+                "work": "കത്തോലിക്കാ സഭയുടെ തലവനും വത്തിക്കാൻ സിറ്റി സ്റ്റേറ്റിന്റെ പരമാധികാരിയും",
+                "place": "ഫ്ലോറസ്, ബ്യൂണസ് അയേഴ്സ്",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 2.0</a>",
+                "photo_by": "Jeffrey Bruno",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Canonization_2014-_The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_(14036966124).jpg"
+            },
+            {
+                "name": "ചെ ഗുവേര",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/CheHigh.jpg/599px-CheHigh.jpg",
+                "work": " അർജന്റീന മാർക്സിസ്റ്റ് വിപ്ലവകാരി",
+                "place": "റൊസാരിയോ, ബ്യൂണസ് അയേഴ്സിൽ നിന്ന് 278 കി"
+            },
+            {
+                "name": "ലയണൽ മെസ്സി",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lionel_Messi_20180626.jpg/420px-Lionel_Messi_20180626.jpg",
+                "work": "പ്രൊഫഷണൽ ഫുട്ബോൾ",
+                "place": "ജപമാല",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Кирилл Венедиктов",
+                "attribution_url": "https://www.soccer.ru/galery/1055457/photo/733439"
+            },
+            {
+                "name": "ഡീഗോ മറഡോണ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Diego_Maradona_2012_2.jpg/622px-Diego_Maradona_2012_2.jpg",
+                "work": "റിട്ടയേർഡ് പ്രൊഫഷണൽ ഫുട്ബോൾ",
+                "place": "ലാനസ് ഓസ്റ്റെ, ബ്യൂണസ് അയേഴ്സ് പ്രവിശ്യ",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY 2.0</a>",
+                "photo_by": "Doha Stadium Plus Qatar",
+                "attribution_url": "https://www.flickr.com/photos/66463488@N06/7448907672"
+            },
+            {
+                "name": "ജോർജ്ജ് ലൂയിസ് ബോർജസ്",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Jorge_Luis_Borges.jpg",
+                "work": "അർജന്റീനിയൻ ചെറുകഥാകൃത്ത്",
+                "place": "ബ്യൂണസ് അയേഴ്സ്"
+            }
+        ]
+    },
+    "sports": {
+        "title": "ഫുട്ബോൾ",
+        "footer": "അർജന്റീന 2 തവണ ഫുട്ബോൾ ലോകകപ്പ് നേടിയിട്ടുണ്ട് (1986, 1978)"
+    },
+    "time_to_visit": {
+        "primary": "ഏപ്രിൽ-ജൂൺ",
+        "secondary": "സെപ്റ്റംബർ-ഡിസംബർ"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "വായ",
+                "description": "കാമിനിറ്റോ അല്ലി & ലാ ബോംബൊനെറ സ്റ്റേഡിയം",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOXp0TkuBJu2fFsZYdLPBej0dX06nZ2Z6COU8Y0=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115635279769083588516\">André Magdalena</a>"
+                ],
+                "place_id": "ChIJpfBfv7A0o5URoJl1DYymWDg"
+            },
+            {
+                "name": "റെക്കോലെറ്റ സെമിത്തേരി",
+                "description": "പ്രശസ്തമായ ശവകുടീരങ്ങളുള്ള കല സമ്പന്നമായ സൈറ്റ്",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNNW6wP5SvK1ngY2-KTdpCCxZuvsIEedXAPH-3_=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115118851937052032752\">A Google User</a>"
+                ],
+                "place_id": "ChIJs5EH8aLKvJURw6UX3MYKGKE"
+            },
+            {
+                "name": "പ്ലാസ ഡി മായോ",
+                "description": "പത്തൊൻപതാം നൂറ്റാണ്ടിലെ മധ്യ ചതുരം",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOFbzwuXtzJJTorIo_2FVTIS6n__Cqny8MIFwrI=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102862970682232404616\">Leonardo Cazón</a>"
+                ],
+                "place_id": "ChIJXx79V9vKvJURS2GosE58c8w"
+            },
+            {
+                "name": "പിങ്ക് ഹ .സ്",
+                "description": "ടൂറുകളുള്ള പ്രശസ്തമായ പ്രസിഡന്റ് കൊട്ടാരം",
+                "place_id": "ChIJdW8nviw1o5URbfhFBe8haeE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNLAYkgz7tAiMc9o4wxHcd7mRHiFI0tniM6pVe3=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115118851937052032752\">Lazaro Huizinga</a>"
+                ]
+            },
+            {
+                "name": "വൃദ്ധൻ",
+                "description": "ഐക്കണിക് 67 മീറ്റർ ഉയരമുള്ള വെളുത്ത വൃദ്ധൻ",
+                "place_id": "ChIJ217apvCpSgARi1VOI06tvhE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMZNuzy7DxxmEFKxxG1vNNb7_VJBM-202XwvITE=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/111127317868746618272\">Yami Iv</a>"
+                ]
+            },
+            {
+                "name": "കോളൻ തിയേറ്റർ",
+                "description": "ക്ലാസിക്, അലങ്കരിച്ച പെർഫോമൻസ് ആർട്സ് തിയേറ്റർ",
+                "place_id": "ChIJIxYSMMbKvJURqZGJyCpvOFM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM41odtdP1AGChzQHlbHWAGkzzSDC622GX5qDYf=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115635432213531829732\">Sabrina Vainschtok</a>"
+                ]
+            },
+            {
+                "name": "ട്രെസ് ഡി ഫെബ്രെറോ പാർക്ക്",
+                "description": "തടാകങ്ങളും റോസ് ഗാർഡനും ഉള്ള വിശാലമായ പാർക്ക്",
+                "place_id": "ChIJsQqBvZ-1vJURbm-7dxt8fgM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM9daX3n_ygsOy3uufpA9yuJt0WvJ_NYyZ27hUP=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112185936974765972473\">Liliana Lovato</a>"
+                ]
+            },
+            {
+                "name": "ഡോറെഗോ സ്ക്വയർ",
+                "description": "കഫേകളുള്ള ലാൻഡ്മാർക്ക് & സൺ‌ഡേ മാർക്കറ്റ്",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNJJXjcS9nc_56FO_BL8qcAl_6A95f0_n-Gll-6=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110377337430439271628\">M. Martín</a>"
+                ],
+                "place_id": "ChIJifSktCzLvJURsTMaMFXLu3E"
+            },
+            {
+                "name": "സ്ത്രീയുടെ പാലം",
+                "description": "ലാൻഡ്മാർക്ക് കറങ്ങുന്ന ഫുട്ബ്രിഡ്ജ്",
+                "place_id": "ChIJbSLzQyk1o5URPBMjt-fRU98",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM_K_jeJqzurv0UoBe8sPlF4vflfeApUCgBcB7w=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102506221278284370139\">A Google User</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": -180,
+    "trivia": {
+        "items": [
+            "അർജന്റീനയുടെ തലസ്ഥാനവും ഏറ്റവും വലിയ നഗരവുമാണ് ഇത്.",
+            "റിയോ ഡി ലാ പ്ലാറ്റയുടെ എസ്റ്റുറിയിലാണ് ഇത് സ്ഥിതിചെയ്യുന്നത്.",
+            "'തെക്കേ അമേരിക്കയിലെ പാരീസ്' എന്നാണ് ഇതിനെ കണക്കാക്കുന്നത്",
+            "കാലാവസ്ഥ ഉഷ്ണമേഖലാ പ്രദേശമാണ്, അങ്ങേയറ്റത്തെ താപനില അപൂർവമാണ്",
+            "തെക്കൻ അർദ്ധഗോളത്തിലെ ഏറ്റവും പഴക്കം ചെന്നതും സ്പാനിഷ് സംസാരിക്കുന്ന ലോകത്തിലെ ഏറ്റവും പഴക്കം ചെന്നതുമായ ഭൂഗർഭ സംവിധാനമാണ് ബ്യൂണസ് അയേഴ്സ് അണ്ടർഗ്ര ground ണ്ട് (മെട്രോ)",
+            "മികച്ച ഫുട്ബോൾ ക്ലബ്ബുകളിൽ ബോക ജൂനിയേഴ്സ്, റിവർ പ്ലേറ്റ് എന്നിവ ഉൾപ്പെടുന്നു, അവ തമ്മിലുള്ള മത്സരം സൂപ്പർക്ലാസിക്കോ എന്നറിയപ്പെടുന്നു.",
+            "1978 ലെ ഫിഫ ലോകകപ്പിന് ഇത് ആതിഥേയത്വം വഹിച്ചു, ഫൈനലിൽ നെതർലാൻഡിനെ 5-1 ന് പരാജയപ്പെടുത്തി അർജറ്റീന വിജയിച്ചു.",
+            "'The ദ്യോഗിക കഥ', 'ദ സീക്രട്ട് ഇൻ ദെയർ ഐസ്' എന്നീ രണ്ട് സിനിമകൾ 'മികച്ച വിദേശ സിനിമ' വിഭാഗത്തിൽ ഓസ്കാർ നേടി",
+            "ബ്യൂണസ് അയേഴ്സ് യൂണിവേഴ്സിറ്റി അഞ്ച് നോബൽ സമ്മാന ജേതാക്കളെ സൃഷ്ടിച്ചു",
+            "ലോക സാംസ്കാരിക പൈതൃകത്തിന്റെ ഭാഗമാണ് ടാംഗോ."
+        ]
+    }
+}

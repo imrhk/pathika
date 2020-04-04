@@ -1,0 +1,326 @@
+{
+    "basic_info": {
+        "name": "Munich",
+        "id": "munich",
+        "background_image": "https://cdn.pixabay.com/photo/2019/12/21/10/19/munich-4710182_1280.jpg",
+        "place": "Münchenin uusi kaupungintalo",
+        "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+        "photo_by": "schliff",
+        "attribution_url": "https://pixabay.com/photos/munich-marienplatz-bavaria-4710182/"
+    },
+    "airport": {
+        "name": "Münchenin lentokenttä"
+    },
+    "climate": {
+        "type": "meri-",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "Kesä",
+                "temp": "14 ° C - 24 ° C",
+                "duration": "Jun-elokuu"
+            },
+            {
+                "emoji": "🍁",
+                "name": "Syksy",
+                "temp": "19 - 7 ° C",
+                "duration": "Syyskuu-lokakuu"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "Talvi",
+                "temp": "7 ° C - -2 ° C",
+                "duration": "Nov-helmikuu"
+            },
+            {
+                "emoji": "🌼",
+                "name": "kevät",
+                "temp": "2 - 18 ° C",
+                "duration": "Mar-toukokuussa"
+            }
+        ]
+    },
+    "country": {
+        "name": "Saksa 🇩🇪",
+        "continent": "Eurooppa"
+    },
+    "currency": {
+        "name": "euro",
+        "symbol": "€",
+        "code": "EUR"
+    },
+    "dance": {
+        "name": "Schuhplattler"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "Paistettua sianlihaa",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Krustenbraten_mit_Dunkelbierso%C3%9Fe.jpg/1024px-Krustenbraten_mit_Dunkelbierso%C3%9Fe.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Takeaway",
+                "attribution_url": "https://de.wikipedia.org/wiki/Datei:Krustenbraten_mit_Dunkelbierso%C3%9Fe.jpg"
+            },
+            {
+                "label": "Weisswurst",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Weisswurst_Brezn_Senf.jpg/1024px-Weisswurst_Brezn_Senf.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Takeaway",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Weisswurst_Brezn_Senf.jpg"
+            },
+            {
+                "label": "Brezen",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Fastenbrezel.JPG/1008px-Fastenbrezel.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Manuela Paki-Costa",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Fastenbrezel.JPG"
+            },
+            {
+                "label": "Peruna-nyytit",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2017/09/22/18/59/dumpling-2776725_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "RitaE",
+                "attribution_url": "https://pixabay.com/photos/dumpling-potato-dumplings-sauce-2776725/"
+            },
+            {
+                "label": "Vehnäolut",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/2013_Augustiner_Weissbier_Munich_pub.jpg/768px-2013_Augustiner_Weissbier_Munich_pub.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Takeaway",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:2013_Augustiner_Weissbier_Munich_pub.jpg"
+            },
+            {
+                "label": "Paahdettu kana",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2019/04/07/17/20/chicken-4110208_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "RitaE",
+                "attribution_url": "https://pixabay.com/de/photos/h%C3%A4hnchen-brath%C3%A4hnchen-grillh%C3%A4hnchen-4110208/"
+            },
+            {
+                "label": "spaetzle",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2014/12/24/13/01/cheese-noodles-579077_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "moerschy",
+                "attribution_url": "https://pixabay.com/photos/cheese-noodles-swabian-579077/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "Autoteollisuus",
+        "secondary": [
+            "SE",
+            "ilmailu"
+        ]
+    },
+    "language": {
+        "primary": "Saksan kieli",
+        "secondary": [
+            "Englanti"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/munich_map_fi_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/munich_map_fi_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/munich_map_fi_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/munich_map_fi_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/munich_map_fi_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Das Boot",
+                "poster_url": "https://image.tmdb.org/t/p/original/5y7JboNZuCy2fgPQJflh3CemTSt.jpg"
+            },
+            {
+                "title": "Der Untergang",
+                "poster_url": "https://image.tmdb.org/t/p/original/tWkYcchUuh0rdm94Zcv9BhXJpNt.jpg"
+            },
+            {
+                "title": "Das Leben der Anderen",
+                "poster_url": "https://image.tmdb.org/t/p/original/qOE1jywObYhereKoTE7Ahuq7CTc.jpg"
+            },
+            {
+                "title" : "Good Bye, Lenin!",
+                "poster_url" : "https://image.tmdb.org/t/p/original/bkiK9X3oTBQKJyXYXynbD1ptTdQ.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name" : "Wassily Leontief",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Wassily_Leontief_1973.jpg/450px-Wassily_Leontief_1973.jpg",
+                "work" : "Noble-voittaja-taloustieteilijä, joka tunnetaan panos-tuotos-analyysin tutkimuksesta",
+                "place" : "Munich"
+            },
+
+            {
+                "name" : "Rudolf Mössbauer",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/e/e2/Mossbauer.jpg",
+                "work" : "Nobiel-palkinnon saanut fyysikko, joka tunnetaan Mossbauer-ilmiön löytämisestä",
+                "place" : "Munich"
+            },
+            {
+                "name" : "Philipp Lahm",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Philipp_Lahm_Training_2017-05_FC_Bayern_Muenchen-1.jpg/373px-Philipp_Lahm_Training_2017-05_FC_Bayern_Muenchen-1.jpg",
+                "work" : "Eläkkeellä oleva jalkapalloilija, joka tunnetaan johtavan Saksan voittamiseen 2014 FIFA: n maailmancup.",
+                "place" : "Munich",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by" : "Rufus46"
+            },
+
+            {
+                "name" : "Michael Haneke",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/3/3c/Michael_Haneke_2009.jpg",
+                "work" : "Elokuvaohjaaja",
+                "place" : "Munich",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by" : "Georges Biard"
+            },
+            {
+                "name": "Eva Braun",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Eva_Braun_walking_dog.jpg",
+                "work": "Adolf-hitlervaimo alle 40 tuntia",
+                "place": "Munich",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 3.0 de</a>",
+                "photo_by": "Unknown",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Eva_Braun_walking_dog.jpg"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ Jalkapallo",
+        "footer": "Münchenissä asuu Saksan suosituin klubi, FC Bayern"
+    },
+    "time_to_visit": {
+        "primary": "Maalis-toukokuussa",
+        "secondary": "Syyskuu lokakuu"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "Marienplatz",
+                "description": "Keski-aukio ja maamerkkirakennukset",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOdpQAkGzw1aqkrVybXVCRY_Et_Tw1TuTwop8tn=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113347838338291289972\">hidekichi jelly</a>"
+                ],
+                "place_id": "ChIJLWM3jSROqEcRswsOX7NRrd4"
+            },
+            {
+                "name": "Englantilainen puutarha",
+                "description": "Valtava kaupunkipuisto, jossa on puutarhapuutarha",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNfbQK2EAFu-3PZeuKKFjIXf5dzP4ZgYnZyuw69=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100718423266761419520\">Kadir Simsek</a>"
+                ],
+                "place_id": "ChIJayv4lZd1nkcR0e_vfGLfm8k"
+            },
+            {
+                "name": "München Residenz",
+                "description": "Museokompleksi vanhassa kuninkaallisessa asunnossa",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPt2bPWXaYXZLVzizIAkQTVfAVIZk5NOw_RNUjj=s1600-w800",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114060614283218056078\">Sumontra Pongdam</a>"
+                ],
+                "place_id": "ChIJrWV_DYx1nkcRD_tKgCHVad4"
+            },
+            {
+                "name": "Nymphenburgin palatsi",
+                "description": "Regal 1700-luvun palatsi ja valmentajamuseo",
+                "place_id": "ChIJLWiif8x3nkcRZm0epRZWTCc",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOguMOqSKVvixv1V3Mp4y2De7Busk4a2XJeYIIz=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100285512816371724866\">wendy finn</a>"
+                ]
+            },
+            {
+                "name": "Uusi kaupungintalo",
+                "description": "Neogoottinen kaupungintalo 85m torni",
+                "place_id": "ChIJ_0T5Jot1nkcRZ3kV_GGLAFE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPTYZSk7Ou68PGan-BeMBMLcp7bKtURish6Gk5A=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115196292285063528742\">Pia P</a>"
+                ]
+            },
+            {
+                "name": "Olympiapuisto",
+                "description": "Olympiastadion retkiä ja nähtävyyksiä",
+                "place_id": "ChIJM7U-OGN2nkcRS91BCoGkObE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMTh7fqk_SFFKot35FyzJVknXPMLU49fAC_PKBk=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117148199602544876966\">Shi-Ting</a>"
+                ]
+            },
+            {
+                "name": "BMW-museo",
+                "description": "Avaruusajan teräspaikka autoilla ja polkupyörillä",
+                "place_id": "ChIJsQqBvZ-1vJURbm-7dxt8fgM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipN_RZ41IwEOsMvpOogbNOi078W8TLw2BmS6SRFr=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100728289776000960260\">Maria Georgieva</a>"
+                ]
+            },
+            {
+                "name": "Allianz-areena",
+                "description": "Koti kentällä Münchenin FC Bayernille",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP_Bs8wZt5OvgtgW5qSguiJiRrqFVFlBvXrsFHQ=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/103324609948188488729\">goran dadic</a>"
+                ],
+                "place_id": "ChIJHyWKEoVznkcRI8QyjkJgTe0"
+            },
+            {
+                "name": "Neuschwansteinin linna",
+                "description": "1800-luvun mäen päällä oleva satulinna",
+                "place_id": "ChIJXaNOxMr3nEcRo7ud02uGpsg",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNXgrJRHJ3YD2n7VFoztW_chl6de5cFpto03ezs=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113795522519382697104\">Слава Паршин</a>"
+                ]
+            },
+            {
+                "name": "Voiton portti",
+                "description": "Historiallinen voittajakaari patsaita",
+                "place_id": "ChIJtXQ2VI11nkcR4DsvByLfq1k",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPUq3iguvntOQ0RQUMP5cZtsXdVEyCriK1BOsM0=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100792641303588681874\">Tom Hsia</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 60,
+    "trivia": {
+        "items": [
+            "Se on pääkaupunki ja väkirikkain kaupunki Baijerin osavaltiossa Saksassa.",
+            "Se on Saksan kolmanneksi suurin kaupunki Berliinin ja Hampurin jälkeen.",
+            "Se sijaitsee Isar-joen rannoilla.",
+            "Ilmasto on valtameri ja talvi on hyvin kylmää.",
+            "English Garden on yksi suurimmista puutarhoista maailmassa.",
+            "Valkoinen makkara on täällä kuuluisa. He tarjoillaan vain ennen keskipäivää.",
+            "Oktoberfest on maailman suurin Volksfest. Se on 16-18 päivän folk-festivaali.",
+            "Yli 6 miljoonaa ihmistä käy Oktoberfestissä vuosittain.",
+            "Täällä on maailman suurin olutpubi, Hofbräuhaus.",
+            "Se isännöi vuoden 1972 kesäolympialaisia",
+            "Sen kuljetusjärjestelmä koostuu metro, raitiovaunut, bussit ja suurnopeusjunaverkko.",
+            "Se on saksalaisen autoyhtiön BMW koti ja sillä on suuri valmistajalle omistettu museo."
+        ]
+    }
+}

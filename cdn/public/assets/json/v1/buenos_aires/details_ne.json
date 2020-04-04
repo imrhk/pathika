@@ -1,0 +1,304 @@
+{
+    "basic_info": {
+        "name": "ब्यूनस आयर्स",
+        "id": "buenos_aires",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Puerto_Madero%2C_Buenos_Aires_%2840689219792%29.jpg/1280px-Puerto_Madero%2C_Buenos_Aires_%2840689219792%29.jpg",
+        "place": "प्यूर्टो माडेरो, ब्यूनस आयर्स",
+        "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+        "photo_by": "Deensel",
+        "attribution_url": "https://www.flickr.com/photos/deensel/40689219792/"
+    },
+    "airport": {
+        "name": "Ministro Pistarini अन्तर्राष्ट्रिय एयरपोर्ट"
+    },
+    "climate": {
+        "type": "उपोष्णकटिबंधीय",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "गर्मी",
+                "temp": "२° डिग्री सेल्सियस to २२ डिग्री सेल्सियस",
+                "duration": "जनवरी-Feb"
+            },
+            {
+                "emoji": "🍁",
+                "name": "शरद .तु",
+                "temp": "२२ डिग्री सेल्सियस १ 15 डिग्री सेल्सियस",
+                "duration": "मार्च - मे"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "जाडो",
+                "temp": "१२ डिग्री सेल्सियस १ 14 डिग्री सेल्सियस",
+                "duration": "जुन-अगस्ट"
+            },
+            {
+                "emoji": "🌼",
+                "name": "वसन्त",
+                "temp": "१° डिग्री सेल्सियस २ 23 डिग्री सेल्सियस",
+                "duration": "अक्टूबर-डिसेम्बर"
+            }
+        ]
+    },
+    "country": {
+        "name": "अर्जेन्टिना 🇦🇷",
+        "continent": "दक्षिण अमेरिका"
+    },
+    "currency": {
+        "name": "अर्जेन्टिना पेसो",
+        "symbol": "$",
+        "code": "ARS"
+    },
+    "dance": {
+        "name": "ट्याang्गो"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "ट्रिपल चकलेट र ग्लेज सैंडविच कुकीज",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/f/f0/AlfajoresTriples.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Julgon",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:AlfajoresTriples.jpg"
+            },
+            {
+                "label": "Dulce de leche",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Dulce_de_leche_2007.jpg/640px-Dulce_de_leche_2007.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Kai Hendry",
+                "attribution_url": "https://www.flickr.com/photos/16105436@N00/362655239"
+            },
+            {
+                "label": "पिज्जा",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/2/23/Pizza_Argentina_04.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Carlosdisogra",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Pizza_Argentina_04.jpg"
+            },
+            {
+                "label": "रोस्ट",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Parrillada_argentina.jpg/1024px-Parrillada_argentina.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Eduardo P",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Parrillada_argentina.jpg"
+            },
+            {
+                "label": "इम्पानाडास",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Empanadas_cordobesas_%28Argentina%29_caseras.JPG/1024px-Empanadas_cordobesas_%28Argentina%29_caseras.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Carlosdisogra",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Empanadas_cordobesas_(Argentina)_caseras.JPG"
+            },
+            {
+                "label": "चिमीचुरी सॉसको साथ स्टेक",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Steak_with_Chimichurri_Sauce_%2813316528445%29.jpg/1024px-Steak_with_Chimichurri_Sauce_%2813316528445%29.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Dominic Lockyer",
+                "attribution_url": "https://www.flickr.com/photos/farehamwine/13316528445/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "खाना प्रशोधन",
+        "secondary": [
+            "मोटर गाडी",
+            "मेटलवर्किंग",
+            "कपडा"
+        ]
+    },
+    "language": {
+        "primary": "स्पेनिश",
+        "secondary": [
+            "अंग्रेजी",
+            "इटालियन"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_ne_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_ne_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_ne_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_ne_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_ne_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Relatos salvajes",
+                "poster_url": "https://image.tmdb.org/t/p/w300/aNlTNuLvm0mFbVvmayLvEq1qF84.jpg"
+            },
+            {
+                "title": "El secreto de sus ojos",
+                "poster_url": "https://image.tmdb.org/t/p/w300/j8tqe0Xk8fbi8RvU5Bb1x1cOmgo.jpg"
+            },
+            {
+                "title": "El Clan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/t85v4agr03AdvuD2HcqhXKxV7II.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "पोप फ्रान्सिस",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.jpg/815px-Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.jpg",
+                "work": "क्याथोलिक चर्च प्रमुख र भ्याटिकन सिटी राज्य को सार्वभौम",
+                "place": "फ्लोरेस, ब्यूनस आयर्स",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 2.0</a>",
+                "photo_by": "Jeffrey Bruno",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Canonization_2014-_The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_(14036966124).jpg"
+            },
+            {
+                "name": "चे गुवेरा",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/CheHigh.jpg/599px-CheHigh.jpg",
+                "work": " अर्जेन्टिना मार्क्सवादी क्रान्तिकारी",
+                "place": "रोजारियो, ब्यूनस आयर्सबाट २ 278 किलोमिटर"
+            },
+            {
+                "name": "लियोनेल मेसी",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lionel_Messi_20180626.jpg/420px-Lionel_Messi_20180626.jpg",
+                "work": "प्रोफेशनल फुटबलर",
+                "place": "रोजारी",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Кирилл Венедиктов",
+                "attribution_url": "https://www.soccer.ru/galery/1055457/photo/733439"
+            },
+            {
+                "name": "डिएगो माराडोना",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Diego_Maradona_2012_2.jpg/622px-Diego_Maradona_2012_2.jpg",
+                "work": "रिटायर्ड प्रोफेशनल फुटबलर",
+                "place": "ल्यान्स ओस्टे, ब्यूनस आयर्स प्रान्त",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY 2.0</a>",
+                "photo_by": "Doha Stadium Plus Qatar",
+                "attribution_url": "https://www.flickr.com/photos/66463488@N06/7448907672"
+            },
+            {
+                "name": "जर्ज लुइस बोर्जेस",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Jorge_Luis_Borges.jpg",
+                "work": "अर्जेन्टिनी छोटो कथा लेखक",
+                "place": "ब्यूनस आयर्स"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ फुटबल",
+        "footer": "अर्जेन्टिनाले २ पटक फुटबल विश्व कप जितेका छन् (१ 198 66, १ 8 88)"
+    },
+    "time_to_visit": {
+        "primary": "अप्रिल-जून",
+        "secondary": "सेप्टेम्बर - डिसेम्बर"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "मुख",
+                "description": "कामिनीटो गल्ली र ला बमबोनेरा स्टेडियम",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOXp0TkuBJu2fFsZYdLPBej0dX06nZ2Z6COU8Y0=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115635279769083588516\">André Magdalena</a>"
+                ],
+                "place_id": "ChIJpfBfv7A0o5URoJl1DYymWDg"
+            },
+            {
+                "name": "रिकोलिटा कब्रिस्तान",
+                "description": "प्रसिद्ध समाधिस्थलहरूको साथ कला-धनी साइट",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNNW6wP5SvK1ngY2-KTdpCCxZuvsIEedXAPH-3_=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115118851937052032752\">A Google User</a>"
+                ],
+                "place_id": "ChIJs5EH8aLKvJURw6UX3MYKGKE"
+            },
+            {
+                "name": "प्लाजा डे मेयो",
+                "description": "आइकोनिक १ th औं शताब्दीको केन्द्रीय वर्ग",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOFbzwuXtzJJTorIo_2FVTIS6n__Cqny8MIFwrI=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102862970682232404616\">Leonardo Cazón</a>"
+                ],
+                "place_id": "ChIJXx79V9vKvJURS2GosE58c8w"
+            },
+            {
+                "name": "गुलाबी घर",
+                "description": "पर्यटन सहित प्रसिद्ध राष्ट्रपति पद",
+                "place_id": "ChIJdW8nviw1o5URbfhFBe8haeE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNLAYkgz7tAiMc9o4wxHcd7mRHiFI0tniM6pVe3=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115118851937052032752\">Lazaro Huizinga</a>"
+                ]
+            },
+            {
+                "name": "ओबेलिस्क",
+                "description": "आइकोनिक m 67 मी उच्च उर्जा सेतो ओबेलिस्क",
+                "place_id": "ChIJ217apvCpSgARi1VOI06tvhE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMZNuzy7DxxmEFKxxG1vNNb7_VJBM-202XwvITE=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/111127317868746618272\">Yami Iv</a>"
+                ]
+            },
+            {
+                "name": "कोलन थिएटर",
+                "description": "क्लासिक, सजावटी प्रदर्शन कला थियेटर",
+                "place_id": "ChIJIxYSMMbKvJURqZGJyCpvOFM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM41odtdP1AGChzQHlbHWAGkzzSDC622GX5qDYf=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115635432213531829732\">Sabrina Vainschtok</a>"
+                ]
+            },
+            {
+                "name": "Tres डे फेबेरो पार्क",
+                "description": "ताल र गुलाब बगैचा सहित विशाल पार्क",
+                "place_id": "ChIJsQqBvZ-1vJURbm-7dxt8fgM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM9daX3n_ygsOy3uufpA9yuJt0WvJ_NYyZ27hUP=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112185936974765972473\">Liliana Lovato</a>"
+                ]
+            },
+            {
+                "name": "डोर्रेगो स्क्वायर",
+                "description": "क्याफेहरू र आइतबार बजारको साथ ल्याण्डमार्क",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNJJXjcS9nc_56FO_BL8qcAl_6A95f0_n-Gll-6=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110377337430439271628\">M. Martín</a>"
+                ],
+                "place_id": "ChIJifSktCzLvJURsTMaMFXLu3E"
+            },
+            {
+                "name": "महिला को पुल",
+                "description": "ल्यान्डमार्क घुम्ने फुटब्रिज",
+                "place_id": "ChIJbSLzQyk1o5URPBMjt-fRU98",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM_K_jeJqzurv0UoBe8sPlF4vflfeApUCgBcB7w=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102506221278284370139\">A Google User</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": -180,
+    "trivia": {
+        "items": [
+            "यो अर्जेन्टिनाको राजधानी र सबैभन्दा ठूलो शहर हो।",
+            "यो रियो दे ला प्लाटाको ईस्टुरीमा अवस्थित छ।",
+            "यसलाई 'दक्षिण अमेरिकाको पेरिस' को रूपमा लिइन्छ",
+            "मौसम उपोष्णकटिबंधीयको साथ चरम तापक्रम विरलै हुन्छ",
+            "ब्यूनस आयर्स भूमिगत (मेट्रो) दक्षिणी गोलार्द्धको सब भन्दा पुरानो भूमिगत प्रणाली हो र स्पेनीभाषी संसारमा सब भन्दा पुरानो।",
+            "शीर्ष फुटबल क्लबहरूले बोका जुनियर्स र नदी प्लेट समावेश गर्दछन् र उनीहरू बीचको खेललाई सुपरक्लाइसीको भनेर चिनिन्छ।",
+            "यसले १ 197 88 फिफा विश्वकप आयोजना गर्यो जुन अर्जेटिनाले फाइनलमा नेदरल्याण्डलाई -1-१ ले हराएर जित्यो।",
+            "दुईवटा फिल्म 'आधिकारिक कहानी' र 'आफ्नो आँखामा भएको रहस्य'ले' सर्वश्रेष्ठ विदेशी चलचित्र 'कोटिमा ओस्कार जित्यो।",
+            "ब्यूनस आयर्स विश्वविद्यालयले पाँच नोबेल पुरस्कार विजेता उत्पादन गरेको छ",
+            "टान्गो विश्वको सांस्कृतिक सम्पदाको एक हिस्सा हो।"
+        ]
+    }
+}

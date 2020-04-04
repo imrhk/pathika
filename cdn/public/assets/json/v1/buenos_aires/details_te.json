@@ -1,0 +1,304 @@
+{
+    "basic_info": {
+        "name": "బ్యూనస్ ఎయిర్స్",
+        "id": "buenos_aires",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Puerto_Madero%2C_Buenos_Aires_%2840689219792%29.jpg/1280px-Puerto_Madero%2C_Buenos_Aires_%2840689219792%29.jpg",
+        "place": "ప్యూర్టో మాడెరో, బ్యూనస్ ఎయిర్స్",
+        "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+        "photo_by": "Deensel",
+        "attribution_url": "https://www.flickr.com/photos/deensel/40689219792/"
+    },
+    "airport": {
+        "name": "మినిస్ట్రో పిస్తారిని అంతర్జాతీయ విమానాశ్రయం"
+    },
+    "climate": {
+        "type": "ఉపఉష్ణమండల",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "వేసవి",
+                "temp": "25 ° C నుండి 22. C వరకు",
+                "duration": "జనవరి-ఫిబ్రవరి"
+            },
+            {
+                "emoji": "🍁",
+                "name": "ఆటం",
+                "temp": "22 ° C నుండి 15. C వరకు",
+                "duration": "Mar-మే"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "వింటర్",
+                "temp": "12 ° C నుండి 14. C వరకు",
+                "duration": "Jun-Aug"
+            },
+            {
+                "emoji": "🌼",
+                "name": "స్ప్రింగ్",
+                "temp": "18 ° C నుండి 23. C వరకు",
+                "duration": "Oct-Dec"
+            }
+        ]
+    },
+    "country": {
+        "name": "అర్జెంటీనా",
+        "continent": "దక్షిణ అమెరికా"
+    },
+    "currency": {
+        "name": "అర్జెంటీనా పెసో",
+        "symbol": "$",
+        "code": "ARS"
+    },
+    "dance": {
+        "name": "టాంగో"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "ట్రిపుల్ చాక్లెట్ మరియు గ్లేజ్ శాండ్విచ్ కుకీలు",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/f/f0/AlfajoresTriples.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Julgon",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:AlfajoresTriples.jpg"
+            },
+            {
+                "label": "డుల్సే డి లేచే",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Dulce_de_leche_2007.jpg/640px-Dulce_de_leche_2007.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Kai Hendry",
+                "attribution_url": "https://www.flickr.com/photos/16105436@N00/362655239"
+            },
+            {
+                "label": "పిజ్జా",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/2/23/Pizza_Argentina_04.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Carlosdisogra",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Pizza_Argentina_04.jpg"
+            },
+            {
+                "label": "కాల్చిన",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Parrillada_argentina.jpg/1024px-Parrillada_argentina.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Eduardo P",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Parrillada_argentina.jpg"
+            },
+            {
+                "label": "ఎమ్పనదలు",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Empanadas_cordobesas_%28Argentina%29_caseras.JPG/1024px-Empanadas_cordobesas_%28Argentina%29_caseras.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Carlosdisogra",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Empanadas_cordobesas_(Argentina)_caseras.JPG"
+            },
+            {
+                "label": "చిమిచుర్రి సాస్‌తో స్టీక్",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Steak_with_Chimichurri_Sauce_%2813316528445%29.jpg/1024px-Steak_with_Chimichurri_Sauce_%2813316528445%29.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Dominic Lockyer",
+                "attribution_url": "https://www.flickr.com/photos/farehamwine/13316528445/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "ఆహర తయారీ",
+        "secondary": [
+            "మోటారు వాహనములు",
+            "లోహపు పనిచేసే",
+            "టెక్స్టైల్స్"
+        ]
+    },
+    "language": {
+        "primary": "స్పానిష్",
+        "secondary": [
+            "ఆంగ్ల",
+            "ఇటాలియన్"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_te_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_te_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_te_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_te_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_te_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Relatos salvajes",
+                "poster_url": "https://image.tmdb.org/t/p/w300/aNlTNuLvm0mFbVvmayLvEq1qF84.jpg"
+            },
+            {
+                "title": "El secreto de sus ojos",
+                "poster_url": "https://image.tmdb.org/t/p/w300/j8tqe0Xk8fbi8RvU5Bb1x1cOmgo.jpg"
+            },
+            {
+                "title": "El Clan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/t85v4agr03AdvuD2HcqhXKxV7II.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "పోప్ ఫ్రాన్సిస్",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.jpg/815px-Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.jpg",
+                "work": "కాథలిక్ చర్చి అధిపతి మరియు వాటికన్ సిటీ స్టేట్ యొక్క సార్వభౌముడు",
+                "place": "ఫ్లోర్స్, బ్యూనస్ ఎయిర్స్",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 2.0</a>",
+                "photo_by": "Jeffrey Bruno",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Canonization_2014-_The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_(14036966124).jpg"
+            },
+            {
+                "name": "చే గువేరా",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/CheHigh.jpg/599px-CheHigh.jpg",
+                "work": " అర్జెంటీనా మార్క్సిస్ట్ విప్లవకారుడు",
+                "place": "రోసారియో, బ్యూనస్ ఎయిర్స్ నుండి 278 కి.మీ."
+            },
+            {
+                "name": "లియోనెల్ మెస్సీ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lionel_Messi_20180626.jpg/420px-Lionel_Messi_20180626.jpg",
+                "work": "ప్రొఫెషనల్ ఫుట్‌బాల్ క్రీడాకారుడు",
+                "place": "జపమాల",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Кирилл Венедиктов",
+                "attribution_url": "https://www.soccer.ru/galery/1055457/photo/733439"
+            },
+            {
+                "name": "డియెగో మారడోనా",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Diego_Maradona_2012_2.jpg/622px-Diego_Maradona_2012_2.jpg",
+                "work": "రిటైర్డ్ ప్రొఫెషనల్ ఫుట్‌బాల్ క్రీడాకారుడు",
+                "place": "లానెస్ ఓస్టే, బ్యూనస్ ఎయిర్స్ ప్రావిన్స్",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY 2.0</a>",
+                "photo_by": "Doha Stadium Plus Qatar",
+                "attribution_url": "https://www.flickr.com/photos/66463488@N06/7448907672"
+            },
+            {
+                "name": "జార్జ్ లూయిస్ బోర్గెస్",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Jorge_Luis_Borges.jpg",
+                "work": "అర్జెంటీనా చిన్న కథ రచయిత",
+                "place": "బ్యూనస్ ఎయిర్స్"
+            }
+        ]
+    },
+    "sports": {
+        "title": "ఫుట్‌బాల్",
+        "footer": "అర్జెంటీనా 2 సార్లు ఫుట్‌బాల్ ప్రపంచ కప్‌ను గెలుచుకుంది (1986, 1978)"
+    },
+    "time_to_visit": {
+        "primary": "ఏప్రిల్-జూన్",
+        "secondary": "సెప్టెంబర్-డిసెంబర్"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "నోరు",
+                "description": "కామినిటో అల్లే & లా బొంబోనెరా స్టేడియం",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOXp0TkuBJu2fFsZYdLPBej0dX06nZ2Z6COU8Y0=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115635279769083588516\">André Magdalena</a>"
+                ],
+                "place_id": "ChIJpfBfv7A0o5URoJl1DYymWDg"
+            },
+            {
+                "name": "రెకోలెటా స్మశానవాటిక",
+                "description": "ప్రసిద్ధ సమాధులతో కళ అధికంగా ఉన్న సైట్",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNNW6wP5SvK1ngY2-KTdpCCxZuvsIEedXAPH-3_=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115118851937052032752\">A Google User</a>"
+                ],
+                "place_id": "ChIJs5EH8aLKvJURw6UX3MYKGKE"
+            },
+            {
+                "name": "ప్లాజా డి మాయో",
+                "description": "ఐకానిక్ 19 వ శతాబ్దపు సెంట్రల్ స్క్వేర్",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOFbzwuXtzJJTorIo_2FVTIS6n__Cqny8MIFwrI=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102862970682232404616\">Leonardo Cazón</a>"
+                ],
+                "place_id": "ChIJXx79V9vKvJURS2GosE58c8w"
+            },
+            {
+                "name": "పింక్ హౌస్",
+                "description": "పర్యటనలతో ప్రసిద్ధ అధ్యక్ష భవనం",
+                "place_id": "ChIJdW8nviw1o5URbfhFBe8haeE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNLAYkgz7tAiMc9o4wxHcd7mRHiFI0tniM6pVe3=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115118851937052032752\">Lazaro Huizinga</a>"
+                ]
+            },
+            {
+                "name": "స్తంభాన్ని",
+                "description": "ఐకానిక్ 67 మీటర్ల ఎత్తైన తెల్లటి ఒబెలిస్క్",
+                "place_id": "ChIJ217apvCpSgARi1VOI06tvhE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMZNuzy7DxxmEFKxxG1vNNb7_VJBM-202XwvITE=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/111127317868746618272\">Yami Iv</a>"
+                ]
+            },
+            {
+                "name": "కోలన్ థియేటర్",
+                "description": "క్లాసిక్, అలంకరించిన ప్రదర్శన-కళల థియేటర్",
+                "place_id": "ChIJIxYSMMbKvJURqZGJyCpvOFM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM41odtdP1AGChzQHlbHWAGkzzSDC622GX5qDYf=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115635432213531829732\">Sabrina Vainschtok</a>"
+                ]
+            },
+            {
+                "name": "ట్రెస్ డి ఫెబ్రెరో పార్క్",
+                "description": "సరస్సులు & గులాబీ తోటలతో విస్తారమైన పార్క్",
+                "place_id": "ChIJsQqBvZ-1vJURbm-7dxt8fgM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM9daX3n_ygsOy3uufpA9yuJt0WvJ_NYyZ27hUP=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112185936974765972473\">Liliana Lovato</a>"
+                ]
+            },
+            {
+                "name": "డోరెగో స్క్వేర్",
+                "description": "కేఫ్‌లు మరియు ఆదివారం మార్కెట్‌తో మైలురాయి",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNJJXjcS9nc_56FO_BL8qcAl_6A95f0_n-Gll-6=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110377337430439271628\">M. Martín</a>"
+                ],
+                "place_id": "ChIJifSktCzLvJURsTMaMFXLu3E"
+            },
+            {
+                "name": "వంతెన యొక్క స్త్రీ",
+                "description": "మైలురాయి తిరిగే ఫుట్‌బ్రిడ్జ్",
+                "place_id": "ChIJbSLzQyk1o5URPBMjt-fRU98",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM_K_jeJqzurv0UoBe8sPlF4vflfeApUCgBcB7w=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102506221278284370139\">A Google User</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": -180,
+    "trivia": {
+        "items": [
+            "ఇది అర్జెంటీనా రాజధాని మరియు అతిపెద్ద నగరం.",
+            "ఇది రియో డి లా ప్లాటా యొక్క ఈస్ట్యూరీలో ఉంది.",
+            "దీనిని 'దక్షిణ అమెరికా పారిస్' గా పరిగణిస్తారు",
+            "విపరీతమైన ఉష్ణోగ్రతలు చాలా అరుదుగా ఉండటంతో వాతావరణం ఉపఉష్ణమండలంగా ఉంటుంది",
+            "బ్యూనస్ ఎయిర్స్ భూగర్భ (మెట్రో) దక్షిణ అర్ధగోళంలో పురాతన భూగర్భ వ్యవస్థ మరియు స్పానిష్ మాట్లాడే ప్రపంచంలో పురాతనమైనది",
+            "అగ్ర ఫుట్‌బాల్ క్లబ్‌లలో బోకా జూనియర్స్ మరియు రివర్ ప్లేట్ ఉన్నాయి మరియు వాటి మధ్య మ్యాచ్‌ను సూపర్క్లాసికో అంటారు.",
+            "ఇది 1978 ఫిఫా ప్రపంచ కప్‌కు ఆతిథ్యం ఇచ్చింది, ఫైనల్స్‌లో నెదర్లాండ్స్‌ను 5-1 తేడాతో ఓడించి అర్జెటినా గెలిచింది.",
+            "'ది అఫీషియల్ స్టోరీ' మరియు 'ది సీక్రెట్ ఇన్ దెయిర్ ఐస్' అనే రెండు సినిమాలు 'ఉత్తమ విదేశీ సినిమా' విభాగంలో ఆస్కార్ అవార్డును గెలుచుకున్నాయి",
+            "బ్యూనస్ ఎయిర్స్ విశ్వవిద్యాలయం ఐదు నోబెల్ బహుమతి విజేతలను ఉత్పత్తి చేసింది",
+            "టాంగో ప్రపంచ సాంస్కృతిక వారసత్వంలో భాగం."
+        ]
+    }
+}

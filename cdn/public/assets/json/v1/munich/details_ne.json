@@ -1,0 +1,326 @@
+{
+    "basic_info": {
+        "name": "म्युनिक",
+        "id": "munich",
+        "background_image": "https://cdn.pixabay.com/photo/2019/12/21/10/19/munich-4710182_1280.jpg",
+        "place": "म्यूनिख नयाँ टाउन हल",
+        "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+        "photo_by": "schliff",
+        "attribution_url": "https://pixabay.com/photos/munich-marienplatz-bavaria-4710182/"
+    },
+    "airport": {
+        "name": "म्यूनिख एयरपोर्ट"
+    },
+    "climate": {
+        "type": "समुद्री",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "गर्मी",
+                "temp": "१° डिग्री सेल्सियस २ 24 डिग्री सेल्सियस",
+                "duration": "जुन-अगस्ट"
+            },
+            {
+                "emoji": "🍁",
+                "name": "शरद .तु",
+                "temp": "19 डिग्री सेल्सियस 7 डिग्री सेल्सियस",
+                "duration": "सेप्टेम्बर"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "जाडो",
+                "temp": "7 ° C to -2। C",
+                "duration": "नोभेम्बर - फेब्रुअरी"
+            },
+            {
+                "emoji": "🌼",
+                "name": "वसन्त",
+                "temp": "२ डिग्री सेल्सियस १ 18 डिग्री सेल्सियस",
+                "duration": "मार्च - मे"
+            }
+        ]
+    },
+    "country": {
+        "name": "जर्मनी 🇩🇪",
+        "continent": "युरोप"
+    },
+    "currency": {
+        "name": "यूरो",
+        "symbol": "€",
+        "code": "EUR"
+    },
+    "dance": {
+        "name": "Schuhplattler"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "पोष्ट सुँगुर",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Krustenbraten_mit_Dunkelbierso%C3%9Fe.jpg/1024px-Krustenbraten_mit_Dunkelbierso%C3%9Fe.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Takeaway",
+                "attribution_url": "https://de.wikipedia.org/wiki/Datei:Krustenbraten_mit_Dunkelbierso%C3%9Fe.jpg"
+            },
+            {
+                "label": "Weisswurst",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Weisswurst_Brezn_Senf.jpg/1024px-Weisswurst_Brezn_Senf.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Takeaway",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Weisswurst_Brezn_Senf.jpg"
+            },
+            {
+                "label": "ब्रेजेन",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Fastenbrezel.JPG/1008px-Fastenbrezel.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Manuela Paki-Costa",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Fastenbrezel.JPG"
+            },
+            {
+                "label": "आलु Dumplings",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2017/09/22/18/59/dumpling-2776725_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "RitaE",
+                "attribution_url": "https://pixabay.com/photos/dumpling-potato-dumplings-sauce-2776725/"
+            },
+            {
+                "label": "गहुँ बियर",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/2013_Augustiner_Weissbier_Munich_pub.jpg/768px-2013_Augustiner_Weissbier_Munich_pub.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Takeaway",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:2013_Augustiner_Weissbier_Munich_pub.jpg"
+            },
+            {
+                "label": "भुटेको कुखुरा",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2019/04/07/17/20/chicken-4110208_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "RitaE",
+                "attribution_url": "https://pixabay.com/de/photos/h%C3%A4hnchen-brath%C3%A4hnchen-grillh%C3%A4hnchen-4110208/"
+            },
+            {
+                "label": "Spaetzle",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2014/12/24/13/01/cheese-noodles-579077_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "moerschy",
+                "attribution_url": "https://pixabay.com/photos/cheese-noodles-swabian-579077/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "मोटर वाहन",
+        "secondary": [
+            "IT",
+            "एयरोस्पेस"
+        ]
+    },
+    "language": {
+        "primary": "जर्मन",
+        "secondary": [
+            "अंग्रेजी"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/munich_map_ne_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/munich_map_ne_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/munich_map_ne_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/munich_map_ne_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/munich_map_ne_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Das Boot",
+                "poster_url": "https://image.tmdb.org/t/p/original/5y7JboNZuCy2fgPQJflh3CemTSt.jpg"
+            },
+            {
+                "title": "Der Untergang",
+                "poster_url": "https://image.tmdb.org/t/p/original/tWkYcchUuh0rdm94Zcv9BhXJpNt.jpg"
+            },
+            {
+                "title": "Das Leben der Anderen",
+                "poster_url": "https://image.tmdb.org/t/p/original/qOE1jywObYhereKoTE7Ahuq7CTc.jpg"
+            },
+            {
+                "title" : "Good Bye, Lenin!",
+                "poster_url" : "https://image.tmdb.org/t/p/original/bkiK9X3oTBQKJyXYXynbD1ptTdQ.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name" : "Wassily Leontief",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Wassily_Leontief_1973.jpg/450px-Wassily_Leontief_1973.jpg",
+                "work" : "नोबल पुरस्कार विजेता अर्थशास्त्री इनपुट-आउटपुट विश्लेषणमा आफ्नो शोधको लागि परिचित छ",
+                "place" : "म्युनिक"
+            },
+
+            {
+                "name" : "रुडोल्फ मसबाउर",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/e/e2/Mossbauer.jpg",
+                "work" : "नोबिएल पुरस्कार विजेता भौतिक विज्ञ जो मोसबाउर प्रभाव पत्ता लगाउनका लागि परिचित थिए",
+                "place" : "म्युनिक"
+            },
+            {
+                "name" : "फिलिप लहम",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Philipp_Lahm_Training_2017-05_FC_Bayern_Muenchen-1.jpg/373px-Philipp_Lahm_Training_2017-05_FC_Bayern_Muenchen-1.jpg",
+                "work" : "सेवानिवृत्त फुटबलर २०१ 2014 फिफा वर्ल्ड कप जित्न जर्मनीको नेतृत्वका लागि परिचित।",
+                "place" : "म्युनिक",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by" : "Rufus46"
+            },
+
+            {
+                "name" : "माइकल Haneke",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/3/3c/Michael_Haneke_2009.jpg",
+                "work" : "चलचित्र निर्देशक",
+                "place" : "म्युनिक",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by" : "Georges Biard"
+            },
+            {
+                "name": "इवा ब्राउन",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Eva_Braun_walking_dog.jpg",
+                "work": "Olf० घण्टा भन्दा कमको लागि एडोल्फ हिटलर पत्नी",
+                "place": "म्युनिक",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 3.0 de</a>",
+                "photo_by": "Unknown",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Eva_Braun_walking_dog.jpg"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ फुटबल",
+        "footer": "म्यूनिख जर्मनीको सबैभन्दा लोकप्रिय क्लब एफसी बायरनको घर हो"
+    },
+    "time_to_visit": {
+        "primary": "मार्च - मे",
+        "secondary": "सेप्टेम्बर-अक्टुबर"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "मारिएनप्लाट्ज",
+                "description": "केन्द्रीय वर्ग र ल्यान्डमार्क भवनहरू",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOdpQAkGzw1aqkrVybXVCRY_Et_Tw1TuTwop8tn=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113347838338291289972\">hidekichi jelly</a>"
+                ],
+                "place_id": "ChIJLWM3jSROqEcRswsOX7NRrd4"
+            },
+            {
+                "name": "अंग्रेजी बगैचा",
+                "description": "बियर बगैचाको साथ विशाल शहरी पार्क",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNfbQK2EAFu-3PZeuKKFjIXf5dzP4ZgYnZyuw69=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100718423266761419520\">Kadir Simsek</a>"
+                ],
+                "place_id": "ChIJayv4lZd1nkcR0e_vfGLfm8k"
+            },
+            {
+                "name": "म्यूनिख रेसिडेन्ज",
+                "description": "पुरानो शाही निवासमा संग्रहालय परिसर",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPt2bPWXaYXZLVzizIAkQTVfAVIZk5NOw_RNUjj=s1600-w800",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114060614283218056078\">Sumontra Pongdam</a>"
+                ],
+                "place_id": "ChIJrWV_DYx1nkcRD_tKgCHVad4"
+            },
+            {
+                "name": "Nymphenburg दरबार",
+                "description": "रीगल १th औं शताब्दीको दरबार र कोच संग्रहालय",
+                "place_id": "ChIJLWiif8x3nkcRZm0epRZWTCc",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOguMOqSKVvixv1V3Mp4y2De7Busk4a2XJeYIIz=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100285512816371724866\">wendy finn</a>"
+                ]
+            },
+            {
+                "name": "नयाँ टाउन हल",
+                "description": "निओ-गोथिक टाउन हल 85 85 मीटर टावरको साथ",
+                "place_id": "ChIJ_0T5Jot1nkcRZ3kV_GGLAFE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPTYZSk7Ou68PGan-BeMBMLcp7bKtURish6Gk5A=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115196292285063528742\">Pia P</a>"
+                ]
+            },
+            {
+                "name": "ओलम्पिक पार्क",
+                "description": "टुरहरू र आकर्षणहरूको साथ ओलम्पिक स्टेडियम",
+                "place_id": "ChIJM7U-OGN2nkcRS91BCoGkObE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMTh7fqk_SFFKot35FyzJVknXPMLU49fAC_PKBk=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117148199602544876966\">Shi-Ting</a>"
+                ]
+            },
+            {
+                "name": "BMW संग्रहालय",
+                "description": "कार र बाइकको साथ स्पेस-एज इस्पात स्थल",
+                "place_id": "ChIJsQqBvZ-1vJURbm-7dxt8fgM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipN_RZ41IwEOsMvpOogbNOi078W8TLw2BmS6SRFr=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100728289776000960260\">Maria Georgieva</a>"
+                ]
+            },
+            {
+                "name": "Allianz Arena",
+                "description": "एफसी बायरन म्युनिकको लागि होम ग्राउन्ड",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP_Bs8wZt5OvgtgW5qSguiJiRrqFVFlBvXrsFHQ=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/103324609948188488729\">goran dadic</a>"
+                ],
+                "place_id": "ChIJHyWKEoVznkcRI8QyjkJgTe0"
+            },
+            {
+                "name": "Neuschwanstein महल",
+                "description": "१ th औं शताब्दीको पहाडी टेकु कहानी",
+                "place_id": "ChIJXaNOxMr3nEcRo7ud02uGpsg",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNXgrJRHJ3YD2n7VFoztW_chl6de5cFpto03ezs=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113795522519382697104\">Слава Паршин</a>"
+                ]
+            },
+            {
+                "name": "विजय ढोका",
+                "description": "मूर्तिहरूको साथ ऐतिहासिक विजयी आर्च",
+                "place_id": "ChIJtXQ2VI11nkcR4DsvByLfq1k",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPUq3iguvntOQ0RQUMP5cZtsXdVEyCriK1BOsM0=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100792641303588681874\">Tom Hsia</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 60,
+    "trivia": {
+        "items": [
+            "यो जर्मनीको बाभेरिया राज्यको राजधानी र सबैभन्दा जनसंख्या भएको शहर हो।",
+            "यो बर्लिन र ह्याम्बर्ग पछि जर्मनीको तेस्रो ठूलो शहर हो।",
+            "यो ईसारको किनारमा अवस्थित छ।",
+            "मौसम ओशनिक हो र जाडो धेरै चिसो भएको छ।",
+            "अ Garden्ग्रेजी बगैचा संसारको सबैभन्दा ठूलो बगैंचा हो।",
+            "सेतो सॉसेज यहाँ प्रसिद्ध छ। ती दिउँसो मात्र सेवा गरिन्छ।",
+            "Oktoberfest विश्वको सबैभन्दा ठूलो वोक्सफेस्ट हो। यो १-18-१-18 दिनको लोक उत्सव हो।",
+            "To मिलियन भन्दा बढी मानिसहरू प्रत्येक वर्ष Oktoberfest मा उपस्थित हुन्छन्।",
+            "संसारको सब भन्दा ठूलो बियर पब Hofbräuhaus यहाँ छ।",
+            "यसले १ 2 2२ को ग्रीष्म ओलम्पिक आयोजना गर्यो",
+            "यसको यातायात प्रणालीमा भूमिगत मेट्रो, ट्रामहरू, बसहरू र उच्च-गति रेल छन्।",
+            "यो जर्मन कार कम्पनी BMW को घर हो र निर्मातालाई समर्पित ठूलो संग्रहालय छ।"
+        ]
+    }
+}

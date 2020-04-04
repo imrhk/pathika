@@ -1,0 +1,14 @@
+[
+    {
+        "id" : "buenos_aires",
+        "name" : "بیونس آئرس"
+    },
+    {
+        "id" : "munich",
+        "name": "میونخ"
+    },
+    {
+        "id" : "osaka",
+        "name": "اوساکا"
+    }
+]

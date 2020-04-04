@@ -1,0 +1,304 @@
+{
+    "basic_info": {
+        "name": "ಬ್ಯೂನಸ್ ಐರಿಸ್",
+        "id": "buenos_aires",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Puerto_Madero%2C_Buenos_Aires_%2840689219792%29.jpg/1280px-Puerto_Madero%2C_Buenos_Aires_%2840689219792%29.jpg",
+        "place": "ಪೋರ್ಟೊ ಮ್ಯಾಡೆರೊ, ಬ್ಯೂನಸ್ ಐರಿಸ್",
+        "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+        "photo_by": "Deensel",
+        "attribution_url": "https://www.flickr.com/photos/deensel/40689219792/"
+    },
+    "airport": {
+        "name": "ಮಿನಿಸ್ಟ್ರೋ ಪಿಸ್ತಾರಿ ಅಂತರಾಷ್ಟ್ರೀಯ ವಿಮಾನ ನಿಲ್ದಾಣ"
+    },
+    "climate": {
+        "type": "ಉಪೋಷ್ಣವಲಯ",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "ಬೇಸಿಗೆ",
+                "temp": "25 ° C ನಿಂದ 22. C ವರೆಗೆ",
+                "duration": "ಜನವರಿ-ಫೆಬ್ರುವರಿ"
+            },
+            {
+                "emoji": "🍁",
+                "name": "ಶರತ್ಕಾಲ",
+                "temp": "22 ° C ನಿಂದ 15 ° C ವರೆಗೆ",
+                "duration": "ಮಾರ್ಚ್-ಮೇ"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "ಚಳಿಗಾಲ",
+                "temp": "12 ° C ನಿಂದ 14 ° C ವರೆಗೆ",
+                "duration": "ಜೂನ್-ಆಗಸ್ಟ್"
+            },
+            {
+                "emoji": "🌼",
+                "name": "ವಸಂತ",
+                "temp": "18 ° C ನಿಂದ 23. C ವರೆಗೆ",
+                "duration": "ಅಕ್ಟೋಬರ್-ಡಿಸೆಂಬರ್"
+            }
+        ]
+    },
+    "country": {
+        "name": "ಅರ್ಜೆಂಟೀನಾ",
+        "continent": "ದಕ್ಷಿಣ ಅಮೇರಿಕ"
+    },
+    "currency": {
+        "name": "ಅರ್ಜೆಂಟೀನಾ ಪೆಸೊ",
+        "symbol": "$",
+        "code": "ARS"
+    },
+    "dance": {
+        "name": "ಟ್ಯಾಂಗೋ"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "ಟ್ರಿಪಲ್ ಚಾಕೊಲೇಟ್ ಮತ್ತು ಮೆರುಗು ಸ್ಯಾಂಡ್‌ವಿಚ್ ಕುಕೀಗಳು",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/f/f0/AlfajoresTriples.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Julgon",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:AlfajoresTriples.jpg"
+            },
+            {
+                "label": "ಡುಲ್ಸೆ ಡೆ ಲೆಚೆ",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Dulce_de_leche_2007.jpg/640px-Dulce_de_leche_2007.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Kai Hendry",
+                "attribution_url": "https://www.flickr.com/photos/16105436@N00/362655239"
+            },
+            {
+                "label": "ಪಿಜ್ಜಾ",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/2/23/Pizza_Argentina_04.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Carlosdisogra",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Pizza_Argentina_04.jpg"
+            },
+            {
+                "label": "ಹುರಿದ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Parrillada_argentina.jpg/1024px-Parrillada_argentina.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Eduardo P",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Parrillada_argentina.jpg"
+            },
+            {
+                "label": "ಎಂಪನಾಡಾಸ್",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Empanadas_cordobesas_%28Argentina%29_caseras.JPG/1024px-Empanadas_cordobesas_%28Argentina%29_caseras.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Carlosdisogra",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Empanadas_cordobesas_(Argentina)_caseras.JPG"
+            },
+            {
+                "label": "ಚಿಮಿಚುರ್ರಿ ಸಾಸ್‌ನೊಂದಿಗೆ ಸ್ಟೀಕ್ ಮಾಡಿ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Steak_with_Chimichurri_Sauce_%2813316528445%29.jpg/1024px-Steak_with_Chimichurri_Sauce_%2813316528445%29.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Dominic Lockyer",
+                "attribution_url": "https://www.flickr.com/photos/farehamwine/13316528445/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "ಆಹಾರ ಸಂಸ್ಕರಣೆ",
+        "secondary": [
+            "ಮೋಟಾರು ವಾಹನಗಳು",
+            "ಲೋಹ ಕೆಲಸ",
+            "ಜವಳಿ"
+        ]
+    },
+    "language": {
+        "primary": "ಸ್ಪ್ಯಾನಿಷ್",
+        "secondary": [
+            "ಆಂಗ್ಲ",
+            "ಇಟಾಲಿಯನ್"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_kn_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_kn_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_kn_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_kn_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_kn_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Relatos salvajes",
+                "poster_url": "https://image.tmdb.org/t/p/w300/aNlTNuLvm0mFbVvmayLvEq1qF84.jpg"
+            },
+            {
+                "title": "El secreto de sus ojos",
+                "poster_url": "https://image.tmdb.org/t/p/w300/j8tqe0Xk8fbi8RvU5Bb1x1cOmgo.jpg"
+            },
+            {
+                "title": "El Clan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/t85v4agr03AdvuD2HcqhXKxV7II.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "ಪೋಪ್ ಫ್ರಾನ್ಸಿಸ್",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.jpg/815px-Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.jpg",
+                "work": "ಕ್ಯಾಥೊಲಿಕ್ ಚರ್ಚ್ ಮುಖ್ಯಸ್ಥ ಮತ್ತು ವ್ಯಾಟಿಕನ್ ಸಿಟಿ ಸ್ಟೇಟ್ನ ಸಾರ್ವಭೌಮ",
+                "place": "ಫ್ಲೋರ್ಸ್, ಬ್ಯೂನಸ್ ಐರಿಸ್",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 2.0</a>",
+                "photo_by": "Jeffrey Bruno",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Canonization_2014-_The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_(14036966124).jpg"
+            },
+            {
+                "name": "ಚೆ ಗುವೇರಾ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/CheHigh.jpg/599px-CheHigh.jpg",
+                "work": " ಅರ್ಜೆಂಟೀನಾದ ಮಾರ್ಕ್ಸ್ವಾದಿ ಕ್ರಾಂತಿಕಾರಿ",
+                "place": "ರೊಸಾರಿಯೋ, ಬ್ಯೂನಸ್‌ನಿಂದ 278 ಕಿ.ಮೀ."
+            },
+            {
+                "name": "ಲಿಯೋನೆಲ್ ಮೆಸ್ಸಿ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lionel_Messi_20180626.jpg/420px-Lionel_Messi_20180626.jpg",
+                "work": "ವೃತ್ತಿಪರ ಫುಟ್ಬಾಲ್ ಆಟಗಾರ",
+                "place": "ರೋಸರಿ",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Кирилл Венедиктов",
+                "attribution_url": "https://www.soccer.ru/galery/1055457/photo/733439"
+            },
+            {
+                "name": "ಡಿಯಾಗೋ ಮರಡೋನಾ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Diego_Maradona_2012_2.jpg/622px-Diego_Maradona_2012_2.jpg",
+                "work": "ನಿವೃತ್ತ ವೃತ್ತಿಪರ ಫುಟ್ಬಾಲ್ ಆಟಗಾರ",
+                "place": "ಲ್ಯಾನಸ್ ಓಸ್ಟೆ, ಬ್ಯೂನಸ್ ಪ್ರಾಂತ್ಯ",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY 2.0</a>",
+                "photo_by": "Doha Stadium Plus Qatar",
+                "attribution_url": "https://www.flickr.com/photos/66463488@N06/7448907672"
+            },
+            {
+                "name": "ಜಾರ್ಜ್ ಲೂಯಿಸ್ ಬೊರ್ಗೆಸ್",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Jorge_Luis_Borges.jpg",
+                "work": "ಅರ್ಜೆಂಟೀನಾದ ಸಣ್ಣಕಥೆಗಾರ",
+                "place": "ಬ್ಯೂನಸ್ ಐರಿಸ್"
+            }
+        ]
+    },
+    "sports": {
+        "title": "ಫುಟ್‌ಬಾಲ್",
+        "footer": "ಅರ್ಜೆಂಟೀನಾ 2 ಬಾರಿ ಫುಟ್ಬಾಲ್ ವಿಶ್ವಕಪ್ ಗೆದ್ದಿದೆ (1986, 1978)"
+    },
+    "time_to_visit": {
+        "primary": "ಏಪ್ರಿಲ್-ಜೂನ್",
+        "secondary": "September-December"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "ಬಾಯಿ",
+                "description": "ಕ್ಯಾಮಿನಿತೊ ಅಲ್ಲೆ ಮತ್ತು ಲಾ ಬೊಂಬೊನೆರಾ ಕ್ರೀಡಾಂಗಣ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOXp0TkuBJu2fFsZYdLPBej0dX06nZ2Z6COU8Y0=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115635279769083588516\">André Magdalena</a>"
+                ],
+                "place_id": "ChIJpfBfv7A0o5URoJl1DYymWDg"
+            },
+            {
+                "name": "ರೆಕೊಲೆಟಾ ಸ್ಮಶಾನ",
+                "description": "ಪ್ರಸಿದ್ಧ ಸಮಾಧಿಗಳೊಂದಿಗೆ ಕಲೆ-ಸಮೃದ್ಧ ತಾಣ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNNW6wP5SvK1ngY2-KTdpCCxZuvsIEedXAPH-3_=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115118851937052032752\">A Google User</a>"
+                ],
+                "place_id": "ChIJs5EH8aLKvJURw6UX3MYKGKE"
+            },
+            {
+                "name": "ಪ್ಲಾಜಾ ಡಿ ಮಾಯೊ",
+                "description": "ಸಾಂಪ್ರದಾಯಿಕ 19 ನೇ ಶತಮಾನದ ಕೇಂದ್ರ ಚೌಕ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOFbzwuXtzJJTorIo_2FVTIS6n__Cqny8MIFwrI=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102862970682232404616\">Leonardo Cazón</a>"
+                ],
+                "place_id": "ChIJXx79V9vKvJURS2GosE58c8w"
+            },
+            {
+                "name": "ಪಿಂಕ್ ಹೌಸ್",
+                "description": "ಪ್ರವಾಸಗಳೊಂದಿಗೆ ಪ್ರಸಿದ್ಧ ಅಧ್ಯಕ್ಷೀಯ ಅರಮನೆ",
+                "place_id": "ChIJdW8nviw1o5URbfhFBe8haeE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNLAYkgz7tAiMc9o4wxHcd7mRHiFI0tniM6pVe3=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115118851937052032752\">Lazaro Huizinga</a>"
+                ]
+            },
+            {
+                "name": "ಒಬೆಲಿಸ್ಕ್",
+                "description": "ಐಕಾನಿಕ್ 67 ಮೀ ಎತ್ತರದ ಬಿಳಿ ಒಬೆಲಿಸ್ಕ್",
+                "place_id": "ChIJ217apvCpSgARi1VOI06tvhE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMZNuzy7DxxmEFKxxG1vNNb7_VJBM-202XwvITE=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/111127317868746618272\">Yami Iv</a>"
+                ]
+            },
+            {
+                "name": "ಕೋಲನ್ ಥಿಯೇಟರ್",
+                "description": "ಕ್ಲಾಸಿಕ್, ಅಲಂಕೃತ ಪ್ರದರ್ಶನ-ಕಲಾ ರಂಗಮಂದಿರ",
+                "place_id": "ChIJIxYSMMbKvJURqZGJyCpvOFM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM41odtdP1AGChzQHlbHWAGkzzSDC622GX5qDYf=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115635432213531829732\">Sabrina Vainschtok</a>"
+                ]
+            },
+            {
+                "name": "ಟ್ರೆಸ್ ಡಿ ಫೆಬ್ರೆರೋ ಪಾರ್ಕ್",
+                "description": "ಸರೋವರಗಳು ಮತ್ತು ಗುಲಾಬಿ ಉದ್ಯಾನವನದ ವಿಶಾಲ ಉದ್ಯಾನವನ",
+                "place_id": "ChIJsQqBvZ-1vJURbm-7dxt8fgM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM9daX3n_ygsOy3uufpA9yuJt0WvJ_NYyZ27hUP=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112185936974765972473\">Liliana Lovato</a>"
+                ]
+            },
+            {
+                "name": "ಡೊರೆಗೊ ಸ್ಕ್ವೇರ್",
+                "description": "ಕೆಫೆಗಳು ಮತ್ತು ಭಾನುವಾರ ಮಾರುಕಟ್ಟೆಯೊಂದಿಗೆ ಹೆಗ್ಗುರುತು",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNJJXjcS9nc_56FO_BL8qcAl_6A95f0_n-Gll-6=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110377337430439271628\">M. Martín</a>"
+                ],
+                "place_id": "ChIJifSktCzLvJURsTMaMFXLu3E"
+            },
+            {
+                "name": "ಮಹಿಳೆಯ ಸೇತುವೆ",
+                "description": "ಹೆಗ್ಗುರುತು ತಿರುಗುವ ಫುಟ್ಬ್ರಿಡ್ಜ್",
+                "place_id": "ChIJbSLzQyk1o5URPBMjt-fRU98",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM_K_jeJqzurv0UoBe8sPlF4vflfeApUCgBcB7w=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102506221278284370139\">A Google User</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": -180,
+    "trivia": {
+        "items": [
+            "ಇದು ಅರ್ಜೆಂಟೀನಾದ ರಾಜಧಾನಿ ಮತ್ತು ದೊಡ್ಡ ನಗರ.",
+            "ಇದು ರಿಯೊ ಡೆ ಲಾ ಪ್ಲಾಟಾದ ನದೀಮುಖದಲ್ಲಿದೆ.",
+            "ಇದನ್ನು 'ದಕ್ಷಿಣ ಅಮೆರಿಕದ ಪ್ಯಾರಿಸ್' ಎಂದು ಪರಿಗಣಿಸಲಾಗಿದೆ",
+            "ಹವಾಮಾನವು ಉಪೋಷ್ಣವಲಯವಾಗಿದ್ದು, ವಿಪರೀತ ತಾಪಮಾನವು ಅಪರೂಪ",
+            "ಬ್ಯೂನಸ್ ಅಂಡರ್ಗ್ರೌಂಡ್ (ಮೆಟ್ರೋ) ದಕ್ಷಿಣ ಗೋಳಾರ್ಧದಲ್ಲಿ ಅತ್ಯಂತ ಹಳೆಯ ಭೂಗತ ವ್ಯವಸ್ಥೆಯಾಗಿದೆ ಮತ್ತು ಸ್ಪ್ಯಾನಿಷ್ ಮಾತನಾಡುವ ಜಗತ್ತಿನಲ್ಲಿ ಅತ್ಯಂತ ಹಳೆಯದು",
+            "ಉನ್ನತ ಫುಟ್ಬಾಲ್ ಕ್ಲಬ್‌ಗಳಲ್ಲಿ ಬೊಕಾ ಜೂನಿಯರ್ಸ್ ಮತ್ತು ರಿವರ್ ಪ್ಲೇಟ್ ಸೇರಿವೆ ಮತ್ತು ಅವುಗಳ ನಡುವಿನ ಪಂದ್ಯವನ್ನು ಸೂಪರ್‌ಕ್ಲಾಸಿಕೊ ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ.",
+            "ಇದು 1978 ರ ಫಿಫಾ ವಿಶ್ವಕಪ್ ಅನ್ನು ಆಯೋಜಿಸಿತು, ಫೈನಲ್ನಲ್ಲಿ ನೆದರ್ಲ್ಯಾಂಡ್ಸ್ ಅನ್ನು 5-1 ಗೋಲುಗಳಿಂದ ಸೋಲಿಸುವ ಮೂಲಕ ಅರ್ಜೆಟಿನಾ ಜಯಗಳಿಸಿತು.",
+            "'ದಿ ಅಫೀಶಿಯಲ್ ಸ್ಟೋರಿ' ಮತ್ತು 'ದಿ ಸೀಕ್ರೆಟ್ ಇನ್ ದೇರ್ ಐಸ್' ಎಂಬ ಎರಡು ಚಲನಚಿತ್ರಗಳು 'ಅತ್ಯುತ್ತಮ ವಿದೇಶಿ ಚಲನಚಿತ್ರ' ವಿಭಾಗದಲ್ಲಿ ಆಸ್ಕರ್ ಪ್ರಶಸ್ತಿ ಪಡೆದಿವೆ",
+            "ಯೂನಿವರ್ಸಿಟಿ ಆಫ್ ಬ್ಯೂನಸ್ ಐರಿಸ್ ಐದು ನೊಬೆಲ್ ಪ್ರಶಸ್ತಿ ವಿಜೇತರನ್ನು ಉತ್ಪಾದಿಸಿದೆ",
+            "ಟ್ಯಾಂಗೋ ವಿಶ್ವದ ಸಾಂಸ್ಕೃತಿಕ ಪರಂಪರೆಯ ಭಾಗವಾಗಿದೆ."
+        ]
+    }
+}

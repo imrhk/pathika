@@ -1,0 +1,304 @@
+{
+    "basic_info": {
+        "name": "Buenos Aires",
+        "id": "buenos_aires",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Puerto_Madero%2C_Buenos_Aires_%2840689219792%29.jpg/1280px-Puerto_Madero%2C_Buenos_Aires_%2840689219792%29.jpg",
+        "place": "Puerto Madero, Buenos Aires",
+        "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+        "photo_by": "Deensel",
+        "attribution_url": "https://www.flickr.com/photos/deensel/40689219792/"
+    },
+    "airport": {
+        "name": "Ministro Pistarini အပြည်ပြည်ဆိုင်ရာလေဆိပ်"
+    },
+    "climate": {
+        "type": "အပူပိုင်းဒေသ",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "နွေရာသီ",
+                "temp": "22 ဒီဂရီစင်တီဂရိတ်မှ 25 ဒီဂရီစင်တီဂရိတ်",
+                "duration": "ဇန်နဝါရီ-ဖေဖော်ဝါရီ"
+            },
+            {
+                "emoji": "🍁",
+                "name": "ဆောင်း ဦး",
+                "temp": "22 ဒီဂရီစင်တီဂရိတ်မှ 15 ဒီဂရီစင်တီဂရိတ်",
+                "duration": "မတ် - မေ"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "ဆောင်းရာသီ",
+                "temp": "14 ဒီဂရီစင်တီဂရိတ်မှ 12 ဒီဂရီစင်တီဂရိတ်",
+                "duration": "ဇွန် - သြဂုတ်"
+            },
+            {
+                "emoji": "🌼",
+                "name": "နွေ ဦး",
+                "temp": "23 ဒီဂရီစင်တီဂရိတ်မှ 18 ဒီဂရီစင်တီဂရိတ်",
+                "duration": "အောက်တိုဘာဒီဇင်ဘာ"
+            }
+        ]
+    },
+    "country": {
+        "name": "အာဂျင်တီးနား🇦🇷",
+        "continent": "တောင်အမေရိက"
+    },
+    "currency": {
+        "name": "အာဂျင်တီးနားပီဆို",
+        "symbol": "$",
+        "code": "ARS"
+    },
+    "dance": {
+        "name": "တန်ဂို"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "Triple ချောကလက်နှင့် glaze သားညှပ်ပေါင်မု cookies များကို",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/f/f0/AlfajoresTriples.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Julgon",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:AlfajoresTriples.jpg"
+            },
+            {
+                "label": "Dulce က de leche",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Dulce_de_leche_2007.jpg/640px-Dulce_de_leche_2007.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Kai Hendry",
+                "attribution_url": "https://www.flickr.com/photos/16105436@N00/362655239"
+            },
+            {
+                "label": "ပီဇာ",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/2/23/Pizza_Argentina_04.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Carlosdisogra",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Pizza_Argentina_04.jpg"
+            },
+            {
+                "label": "လှော်",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Parrillada_argentina.jpg/1024px-Parrillada_argentina.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Eduardo P",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Parrillada_argentina.jpg"
+            },
+            {
+                "label": "Empanadas",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Empanadas_cordobesas_%28Argentina%29_caseras.JPG/1024px-Empanadas_cordobesas_%28Argentina%29_caseras.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Carlosdisogra",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Empanadas_cordobesas_(Argentina)_caseras.JPG"
+            },
+            {
+                "label": "Chimichurri Sauce နှင့်အတူကင်",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Steak_with_Chimichurri_Sauce_%2813316528445%29.jpg/1024px-Steak_with_Chimichurri_Sauce_%2813316528445%29.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Dominic Lockyer",
+                "attribution_url": "https://www.flickr.com/photos/farehamwine/13316528445/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "အစားသောက်ထုတ်လုပ်မှု",
+        "secondary": [
+            "မော်တော်ယာဉ်များ",
+            "သတ္တု",
+            "အထည်အလိပ်"
+        ]
+    },
+    "language": {
+        "primary": "စပိန်ဘာသာစကား",
+        "secondary": [
+            "အင်္ဂလိပ်",
+            "အီတလီ"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_my_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_my_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_my_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_my_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_my_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Relatos salvajes",
+                "poster_url": "https://image.tmdb.org/t/p/w300/aNlTNuLvm0mFbVvmayLvEq1qF84.jpg"
+            },
+            {
+                "title": "El secreto de sus ojos",
+                "poster_url": "https://image.tmdb.org/t/p/w300/j8tqe0Xk8fbi8RvU5Bb1x1cOmgo.jpg"
+            },
+            {
+                "title": "El Clan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/t85v4agr03AdvuD2HcqhXKxV7II.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "ပုပ်ရဟန်းမင်းကြီး Francis",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.jpg/815px-Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.jpg",
+                "work": "ကက်သလစ်ဘုရားကျောင်းနှင့်ဗာတီကန်စီးတီးပြည်နယ်၏အချုပ်အခြာအာဏာပိုင်",
+                "place": "Flores, Buenos Aires",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 2.0</a>",
+                "photo_by": "Jeffrey Bruno",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Canonization_2014-_The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_(14036966124).jpg"
+            },
+            {
+                "name": "Che Guevara",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/CheHigh.jpg/599px-CheHigh.jpg",
+                "work": " အာဂျင်တီးနားမာက်စ်ဝါဒီတော်လှန်ရေး",
+                "place": "Rosario, Buenos Aires မှ 278 ကီလိုမီတာ"
+            },
+            {
+                "name": "Lionel Messi",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lionel_Messi_20180626.jpg/420px-Lionel_Messi_20180626.jpg",
+                "work": "ပရော်ဖက်ရှင်နယ်ဘောလုံးသမား",
+                "place": "ပုတီး",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Кирилл Венедиктов",
+                "attribution_url": "https://www.soccer.ru/galery/1055457/photo/733439"
+            },
+            {
+                "name": "Diego Maradona",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Diego_Maradona_2012_2.jpg/622px-Diego_Maradona_2012_2.jpg",
+                "work": "အငြိမ်းစားပရော်ဖက်ရှင်နယ်ဘောလုံးသမား",
+                "place": "Lanús Oeste, Buenos Aires ပြည်နယ်",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY 2.0</a>",
+                "photo_by": "Doha Stadium Plus Qatar",
+                "attribution_url": "https://www.flickr.com/photos/66463488@N06/7448907672"
+            },
+            {
+                "name": "Jorge Luis Borg",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Jorge_Luis_Borges.jpg",
+                "work": "အာဂျင်တီးနားဇာတ်လမ်းတိုစာရေးဆရာ",
+                "place": "Buenos Aires"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ဘောလုံး",
+        "footer": "အာဂျင်တီးနားဘောလုံးကမ္ဘာ့ဖလားကို (၂) ကြိမ် (၁၉၈၆၊ ၁၉၇၈) အနိုင်ရရှိခဲ့သည်။"
+    },
+    "time_to_visit": {
+        "primary": "-ပြီ - ဇွန်",
+        "secondary": "စက်တင်ဘာ - ဒီဇင်ဘာ"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "ပါးစပ်",
+                "description": "Caminito လမ်းကြားနှင့် La Bombonera အားကစားကွင်း",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOXp0TkuBJu2fFsZYdLPBej0dX06nZ2Z6COU8Y0=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115635279769083588516\">André Magdalena</a>"
+                ],
+                "place_id": "ChIJpfBfv7A0o5URoJl1DYymWDg"
+            },
+            {
+                "name": "Recoleta သုသာန်",
+                "description": "နာမည်ကြီး mausoleums နှင့်အတူအနုပညာကြွယ်ဝသော site ကို",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNNW6wP5SvK1ngY2-KTdpCCxZuvsIEedXAPH-3_=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115118851937052032752\">A Google User</a>"
+                ],
+                "place_id": "ChIJs5EH8aLKvJURw6UX3MYKGKE"
+            },
+            {
+                "name": "ပလာဇာက Mayo",
+                "description": "အထင်ကရ 19 ရာစုအလယ်ပိုင်းစတုရန်း",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOFbzwuXtzJJTorIo_2FVTIS6n__Cqny8MIFwrI=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102862970682232404616\">Leonardo Cazón</a>"
+                ],
+                "place_id": "ChIJXx79V9vKvJURS2GosE58c8w"
+            },
+            {
+                "name": "ပန်းရောင်အိမ်",
+                "description": "ခရီးစဉ်နှင့်အတူသမ္မတနန်းတော်",
+                "place_id": "ChIJdW8nviw1o5URbfhFBe8haeE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNLAYkgz7tAiMc9o4wxHcd7mRHiFI0tniM6pVe3=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115118851937052032752\">Lazaro Huizinga</a>"
+                ]
+            },
+            {
+                "name": "Obelisk",
+                "description": "အထင်ကရ 67m အမြင့်အဖြူ obelisk",
+                "place_id": "ChIJ217apvCpSgARi1VOI06tvhE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMZNuzy7DxxmEFKxxG1vNNb7_VJBM-202XwvITE=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/111127317868746618272\">Yami Iv</a>"
+                ]
+            },
+            {
+                "name": "အူမကြီးပြဇာတ်ရုံ",
+                "description": "ဂန္ထဝင်, မရနိုင်ပါဘူးဖျော်ဖြေ - အနုပညာပြဇာတ်ရုံ",
+                "place_id": "ChIJIxYSMMbKvJURqZGJyCpvOFM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM41odtdP1AGChzQHlbHWAGkzzSDC622GX5qDYf=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115635432213531829732\">Sabrina Vainschtok</a>"
+                ]
+            },
+            {
+                "name": "Tres က de Febrero ပန်းခြံ",
+                "description": "ရေကန်များနှင့်နှင်းဆီဥယျာဉ်နှင့်အတူကျယ်ပြန့်ပန်းခြံ",
+                "place_id": "ChIJsQqBvZ-1vJURbm-7dxt8fgM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM9daX3n_ygsOy3uufpA9yuJt0WvJ_NYyZ27hUP=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112185936974765972473\">Liliana Lovato</a>"
+                ]
+            },
+            {
+                "name": "Dorrego ရင်ပြင်",
+                "description": "ကဖေးများနှင့်တနင်္ဂနွေစျေးကွက်နှင့်အတူမှတ်တိုင်",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNJJXjcS9nc_56FO_BL8qcAl_6A95f0_n-Gll-6=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110377337430439271628\">M. Martín</a>"
+                ],
+                "place_id": "ChIJifSktCzLvJURsTMaMFXLu3E"
+            },
+            {
+                "name": "အမျိုးသမီးတံတား",
+                "description": "ခြေလျင်လှည့်မှတ်တိုင်",
+                "place_id": "ChIJbSLzQyk1o5URPBMjt-fRU98",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM_K_jeJqzurv0UoBe8sPlF4vflfeApUCgBcB7w=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102506221278284370139\">A Google User</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": -180,
+    "trivia": {
+        "items": [
+            "၎င်းသည်မြို့တော်နှင့်အာဂျင်တီးနား၏အကြီးဆုံးမြို့ဖြစ်သည်။",
+            "၎င်းသည် Rio de la Plata မြစ်ဝတွင်တည်ရှိသည်။",
+            "၎င်းကို 'တောင်အမေရိကပဲရစ်' အဖြစ်သတ်မှတ်သည်",
+            "ရာသီဥတုသည်အပူပိုင်းဒေသဖြစ်ပြီးအပူချိန်အလွန်ရှားပါးသည်",
+            "Buenos Aires Underground (Metro) သည်တောင်ဘက်ခြမ်းရှိသက်တမ်းအရင့်မြေအောက်စနစ်ဖြစ်ပြီးစပိန်စကားပြောကမ္ဘာတွင်အသက်အကြီးဆုံး",
+            "ထိပ်တန်းကလပ်အသင်းများဖြစ်သော Boca Juniors နှင့် River Plate တို့ပါ ၀ င်ပြီး၎င်းတို့အကြားပြိုင်ပွဲကိုSuperclásicoဟုလူသိများသည်။",
+            "၎င်းသည် 1978 FIFA ကမ္ဘာ့ဖလားကိုအိမ်ရှင်အဖြစ်လက်ခံကျင်းပခဲ့ပြီး Argetina သည်နယ်သာလန်ကို ၅-၁ ဖြင့်အနိုင်ရရှိပြီးအနိုင်ရရှိခဲ့သည်။",
+            "The Official Story နှင့် The Secret of the Eyes in the Eyes ဇာတ်ကားနှစ်ကားသည်အော်စကာဆုကိုအကောင်းဆုံးနိုင်ငံခြားရုပ်ရှင်ဇာတ်ကားတွင်ရရှိခဲ့သည်။",
+            "Buenos Aires တက္ကသိုလ်သည်နိုဘယ်ဆု ၅ ခုကိုထုတ်လုပ်ခဲ့သည်",
+            "တန်ဂိုသည်ကမ္ဘာ့ယဉ်ကျေးမှုအမွေအနှစ်ဖြစ်သည်။"
+        ]
+    }
+}

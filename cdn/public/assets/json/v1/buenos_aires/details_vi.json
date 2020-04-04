@@ -1,0 +1,304 @@
+{
+    "basic_info": {
+        "name": "Thủ đô",
+        "id": "buenos_aires",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Puerto_Madero%2C_Buenos_Aires_%2840689219792%29.jpg/1280px-Puerto_Madero%2C_Buenos_Aires_%2840689219792%29.jpg",
+        "place": "Puerto Madero, Buenos Aires",
+        "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+        "photo_by": "Deensel",
+        "attribution_url": "https://www.flickr.com/photos/deensel/40689219792/"
+    },
+    "airport": {
+        "name": "Sân bay quốc tế Ministro Pistarini"
+    },
+    "climate": {
+        "type": "Cận nhiệt đới",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "Mùa hè",
+                "temp": "25 ° C đến 22 ° C",
+                "duration": "Jan-Feb"
+            },
+            {
+                "emoji": "🍁",
+                "name": "Mùa thu",
+                "temp": "22 ° C đến 15 ° C",
+                "duration": "Tháng ba-tháng năm"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "Mùa đông",
+                "temp": "12 ° C đến 14 ° C",
+                "duration": "Tháng Sáu-Tháng Tám"
+            },
+            {
+                "emoji": "🌼",
+                "name": "Mùa xuân",
+                "temp": "18 ° C đến 23 ° C",
+                "duration": "Tháng mười-tháng mười hai"
+            }
+        ]
+    },
+    "country": {
+        "name": "Argentina",
+        "continent": "Nam Mỹ"
+    },
+    "currency": {
+        "name": "Argentina pto",
+        "symbol": "$",
+        "code": "ARS"
+    },
+    "dance": {
+        "name": "Tango"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "Ba bánh quy sô cô la và men",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/f/f0/AlfajoresTriples.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Julgon",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:AlfajoresTriples.jpg"
+            },
+            {
+                "label": "Dulce de leche",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Dulce_de_leche_2007.jpg/640px-Dulce_de_leche_2007.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Kai Hendry",
+                "attribution_url": "https://www.flickr.com/photos/16105436@N00/362655239"
+            },
+            {
+                "label": "pizza",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/2/23/Pizza_Argentina_04.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Carlosdisogra",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Pizza_Argentina_04.jpg"
+            },
+            {
+                "label": "Nướng",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Parrillada_argentina.jpg/1024px-Parrillada_argentina.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Eduardo P",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Parrillada_argentina.jpg"
+            },
+            {
+                "label": "Empanadas",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Empanadas_cordobesas_%28Argentina%29_caseras.JPG/1024px-Empanadas_cordobesas_%28Argentina%29_caseras.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Carlosdisogra",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Empanadas_cordobesas_(Argentina)_caseras.JPG"
+            },
+            {
+                "label": "Bít tết với sốt Chimichurri",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Steak_with_Chimichurri_Sauce_%2813316528445%29.jpg/1024px-Steak_with_Chimichurri_Sauce_%2813316528445%29.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Dominic Lockyer",
+                "attribution_url": "https://www.flickr.com/photos/farehamwine/13316528445/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "Chế biến thức ăn",
+        "secondary": [
+            "Xe cơ giới",
+            "Cơ khí",
+            "Tài liệu"
+        ]
+    },
+    "language": {
+        "primary": "người Tây Ban Nha",
+        "secondary": [
+            "Tiếng Anh",
+            "người Ý"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_vi_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_vi_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_vi_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_vi_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/buenos_aires_map_vi_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Relatos salvajes",
+                "poster_url": "https://image.tmdb.org/t/p/w300/aNlTNuLvm0mFbVvmayLvEq1qF84.jpg"
+            },
+            {
+                "title": "El secreto de sus ojos",
+                "poster_url": "https://image.tmdb.org/t/p/w300/j8tqe0Xk8fbi8RvU5Bb1x1cOmgo.jpg"
+            },
+            {
+                "title": "El Clan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/t85v4agr03AdvuD2HcqhXKxV7II.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "Giáo hoàng Phanxicô",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.jpg/815px-Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.jpg",
+                "work": "Người đứng đầu Giáo hội Công giáo và chủ quyền của Nhà nước Thành phố Vatican",
+                "place": "Flores, Buenos Aires",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 2.0</a>",
+                "photo_by": "Jeffrey Bruno",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Canonization_2014-_The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_(14036966124).jpg"
+            },
+            {
+                "name": "Che Guevara",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/CheHigh.jpg/599px-CheHigh.jpg",
+                "work": " Nhà cách mạng Marxist Argentina",
+                "place": "Rosario, cách thủ đô Buenos Aires 278 km"
+            },
+            {
+                "name": "Sư tử Messi",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lionel_Messi_20180626.jpg/420px-Lionel_Messi_20180626.jpg",
+                "work": "Cầu thủ chuyên nghiệp",
+                "place": "Mân côi",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Кирилл Венедиктов",
+                "attribution_url": "https://www.soccer.ru/galery/1055457/photo/733439"
+            },
+            {
+                "name": "Diego Maradona",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Diego_Maradona_2012_2.jpg/622px-Diego_Maradona_2012_2.jpg",
+                "work": "Cầu thủ chuyên nghiệp đã nghỉ hưu",
+                "place": "Lanús Oeste, tỉnh Buenos Aires",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY 2.0</a>",
+                "photo_by": "Doha Stadium Plus Qatar",
+                "attribution_url": "https://www.flickr.com/photos/66463488@N06/7448907672"
+            },
+            {
+                "name": "Jorge Luis Borges",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Jorge_Luis_Borges.jpg",
+                "work": "Nhà văn truyện ngắn Argentina",
+                "place": "Thủ đô"
+            }
+        ]
+    },
+    "sports": {
+        "title": "Bóng đá",
+        "footer": "Argentina đã vô địch bóng đá thế giới 2 lần (1986, 1978)"
+    },
+    "time_to_visit": {
+        "primary": "Tháng Tư và tháng Sáu",
+        "secondary": "Tháng 9-12"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "Cái miệng",
+                "description": "Caminito hẻm & sân vận động La Bombonera",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOXp0TkuBJu2fFsZYdLPBej0dX06nZ2Z6COU8Y0=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115635279769083588516\">André Magdalena</a>"
+                ],
+                "place_id": "ChIJpfBfv7A0o5URoJl1DYymWDg"
+            },
+            {
+                "name": "Nghĩa trang Recoleta",
+                "description": "Trang web giàu nghệ thuật với lăng mộ nổi tiếng",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNNW6wP5SvK1ngY2-KTdpCCxZuvsIEedXAPH-3_=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115118851937052032752\">A Google User</a>"
+                ],
+                "place_id": "ChIJs5EH8aLKvJURw6UX3MYKGKE"
+            },
+            {
+                "name": "Quảng trường Mayo",
+                "description": "Quảng trường trung tâm mang tính biểu tượng của thế kỷ 19",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOFbzwuXtzJJTorIo_2FVTIS6n__Cqny8MIFwrI=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102862970682232404616\">Leonardo Cazón</a>"
+                ],
+                "place_id": "ChIJXx79V9vKvJURS2GosE58c8w"
+            },
+            {
+                "name": "Ngôi nhà màu hồng",
+                "description": "Dinh tổng thống nổi tiếng với các tour du lịch",
+                "place_id": "ChIJdW8nviw1o5URbfhFBe8haeE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNLAYkgz7tAiMc9o4wxHcd7mRHiFI0tniM6pVe3=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115118851937052032752\">Lazaro Huizinga</a>"
+                ]
+            },
+            {
+                "name": "Obelisk",
+                "description": "Biểu tượng trắng cao 67m",
+                "place_id": "ChIJ217apvCpSgARi1VOI06tvhE",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMZNuzy7DxxmEFKxxG1vNNb7_VJBM-202XwvITE=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/111127317868746618272\">Yami Iv</a>"
+                ]
+            },
+            {
+                "name": "Nhà hát đại tràng",
+                "description": "Nhà hát biểu diễn nghệ thuật cổ điển",
+                "place_id": "ChIJIxYSMMbKvJURqZGJyCpvOFM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM41odtdP1AGChzQHlbHWAGkzzSDC622GX5qDYf=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115635432213531829732\">Sabrina Vainschtok</a>"
+                ]
+            },
+            {
+                "name": "Công viên Tres de Febrero",
+                "description": "Công viên rộng lớn với hồ và vườn hoa hồng",
+                "place_id": "ChIJsQqBvZ-1vJURbm-7dxt8fgM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM9daX3n_ygsOy3uufpA9yuJt0WvJ_NYyZ27hUP=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112185936974765972473\">Liliana Lovato</a>"
+                ]
+            },
+            {
+                "name": "Quảng trường Dorrego",
+                "description": "Cột mốc với các quán cà phê và một thị trường chủ nhật",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNJJXjcS9nc_56FO_BL8qcAl_6A95f0_n-Gll-6=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110377337430439271628\">M. Martín</a>"
+                ],
+                "place_id": "ChIJifSktCzLvJURsTMaMFXLu3E"
+            },
+            {
+                "name": "Cầu của người phụ nữ",
+                "description": "Cầu xoay",
+                "place_id": "ChIJbSLzQyk1o5URPBMjt-fRU98",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM_K_jeJqzurv0UoBe8sPlF4vflfeApUCgBcB7w=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102506221278284370139\">A Google User</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": -180,
+    "trivia": {
+        "items": [
+            "Đây là thủ đô và thành phố lớn nhất của Argentina.",
+            "Nó nằm trên cửa sông Rio de la Plata.",
+            "Nó được coi là 'Paris của Nam Mỹ'",
+            "Khí hậu cận nhiệt đới với nhiệt độ khắc nghiệt rất hiếm",
+            "Tàu điện ngầm Buenos Aires (Metro) là hệ thống ngầm lâu đời nhất ở Nam bán cầu và lâu đời nhất trong thế giới nói tiếng Tây Ban Nha",
+            "Các câu lạc bộ bóng đá hàng đầu bao gồm Boca Juniors và River Plate và trận đấu giữa họ được gọi là Superclásico.",
+            "Nó đã tổ chức FIFA World Cup 1978 mà Argetina giành chiến thắng bằng cách đánh bại Hà Lan với tỷ số 5-1 trong trận chung kết.",
+            "Hai bộ phim 'Câu chuyện chính thức' và 'Bí mật trong mắt họ' đã giành giải Oscar ở hạng mục 'Phim nước ngoài hay nhất'",
+            "Đại học Buenos Aires đã sản xuất năm giải thưởng Nobel",
+            "Tango là một phần của di sản văn hóa thế giới."
+        ]
+    }
+}
