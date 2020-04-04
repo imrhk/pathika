@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pathika/localization/localization.dart';
 
 import '../common/info_card.dart';
+import '../core/adt_details.dart';
+import '../localization/localization.dart';
 import 'trivia_list_details.dart';
 
-class TriviaListCard extends StatelessWidget {
+class TriviaListCard extends StatelessWidget implements Details<TriviaListDetails>{
   final bool useColorsOnCard;
   final TriviaListDetails details;
   TriviaListCard({

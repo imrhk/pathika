@@ -3,9 +3,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 
 import '../common/info_card.dart';
+import '../core/adt_details.dart';
 import '../localization/localization.dart';
 
-class CurrentTimeCard extends StatelessWidget {
+class CurrentTimeCard extends StatelessWidget implements Details<int> {
   final bool useColorsOnCard;
   final int timezoneOffsetInMinute;
   CurrentTimeCard({
@@ -14,6 +15,9 @@ class CurrentTimeCard extends StatelessWidget {
     this.timezoneOffsetInMinute = 0,
   })  : assert(useColorsOnCard != null),
         super(key: key);
+
+  int get details => timezoneOffsetInMinute;
+
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<Duration>(

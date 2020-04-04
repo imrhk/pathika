@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../common/info_card.dart';
+import '../core/adt_details.dart';
 import 'location_map_details.dart';
 
-class LocationMapCard extends StatelessWidget {
+class LocationMapCard extends StatelessWidget implements Details<LocationMapDetails>{
   final bool useColorsOnCard;
   final LocationMapDetails details;
   LocationMapCard({

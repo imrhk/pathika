@@ -4,17 +4,18 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pathika/ads/ad_config.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:universal_io/io.dart' show HttpClient;
 import 'package:url_launcher/url_launcher.dart';
 
+import '../ads/ad_config.dart';
 import '../airport/airport_card.dart';
 import '../app_drawer.dart';
 import '../basic_info/basic_info_app_bar.dart';
 import '../climate/climate_card.dart';
 import '../common/attributions.dart';
 import '../common/constants.dart';
+import '../core/adt_details.dart';
 import '../core/repository.dart';
 import '../country/country_card.dart';
 import '../currency/currency_card.dart';
@@ -205,7 +206,7 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
         ),
         SliverList(
           delegate: SliverChildListDelegate.fixed(
-            [
+            (<Widget>[
               CountryCard(
                 details: placeDetails.countryDetails,
                 useColorsOnCard: useColorsOnCard,
@@ -271,7 +272,8 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                 details: placeDetails.triviaListDetails,
                 useColorsOnCard: useColorsOnCard,
               ),
-            ]
+            ]..removeWhere((element) =>
+                    element is Details && (element as Details).details == null))
                 .map((widget) => TranslateListItem(
                     traslateHeight: 600,
                     child: widget,

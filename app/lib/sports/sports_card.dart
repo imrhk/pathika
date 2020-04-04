@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../common/info_card.dart';
+import '../core/adt_details.dart';
 import '../localization/localization.dart';
 import 'sports_details.dart';
 
-class SportsCard extends StatelessWidget {
+class SportsCard extends StatelessWidget implements Details<SportsDetails> {
   final bool useColorsOnCard;
   final SportsDetails details;
   SportsCard({

@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pathika/localization/localization.dart';
 
 import '../common/info_card.dart';
+import '../core/adt_details.dart';
+import '../localization/localization.dart';
 import 'tourist_attraction_item_card.dart';
 import 'tourist_attractions.list.dart';
 
-class TouristAttractionsCard extends StatelessWidget {
+class TouristAttractionsCard extends StatelessWidget implements Details<TouristAttractionsList>{
   final bool useColorsOnCard;
   final TouristAttractionsList details;
   TouristAttractionsCard({

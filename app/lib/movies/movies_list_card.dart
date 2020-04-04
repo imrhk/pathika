@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../common/info_card.dart';
+import '../core/adt_details.dart';
 import '../localization/localization.dart';
 import 'movie_item_card.dart';
 import 'movie_list.dart';
 
-class MoviesListCard extends StatelessWidget {
+class MoviesListCard extends StatelessWidget implements Details<MovieList> {
   final bool useColorsOnCard;
   final MovieList details;
   final String countryName;
