@@ -33,5 +33,6 @@
     "_or" : "or",
     "report_issue" : " If you believe there is translation issue or any other issue with the content, please report ",
     "_here" : "here",
-    "no_veg_available" : "Vegetarian foods are not popular here."
+    "no_veg_available" : "Vegetarian foods are not popular here.",
+    "_photo_by" : "Photo by"
 }

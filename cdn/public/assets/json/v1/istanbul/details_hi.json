@@ -1,0 +1,344 @@
+{
+    "basic_info": {
+        "name": "इस्तांबुल",
+        "id": "istanbul",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/%C4%B0stanbul-Ayasofya.JPG/1280px-%C4%B0stanbul-Ayasofya.JPG",
+        "place": "हागिया सोफिया, इस्तांबुल",
+        "licence": "<a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en/\">CC0 1.0</a>",
+        "photo_by": "Robster1983",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:%C4%B0stanbul-Ayasofya.JPG"
+    },
+    "airport": {
+        "name": "इस्तांबुल एयरपोर्ट"
+    },
+    "climate": {
+        "type": "संक्रमणकालीन भूमध्यसागरीय",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "गर्मी",
+                "temp": "20 ° C से 23 ° C",
+                "duration": "जून-अगस्त"
+            },
+            {
+                "emoji": "🍁",
+                "name": "पतझड़",
+                "temp": "11 ° C से 19 ° C",
+                "duration": "सितम्बर-नवम्बर"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "सर्दी",
+                "temp": "5 ° C से 8 ° C",
+                "duration": "दिसम्बर मार्च"
+            },
+            {
+                "emoji": "🌼",
+                "name": "वसंत",
+                "temp": "11 ° C से 16 ° C",
+                "duration": "अप्रैल-मई"
+            }
+        ]
+    },
+    "country": {
+        "name": "तुर्की 🇹🇷",
+        "continent": "यूरोप और एशिया"
+    },
+    "currency": {
+        "name": "तुर्की लीरा",
+        "symbol": "TL",
+        "code": "TRY"
+    },
+    "dance": {
+        "name": "हेली, Ciftetelli, स्वागत है"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "रोटरी",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Doner_kebab%2C_Istanbul%2C_Turkey.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "(WT-shared) Shoestring",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Doner_kebab,_Istanbul,_Turkey.JPG"
+            },
+            {
+                "label": "इस्तांबुल",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2018/10/25/09/08/menemen-3771970_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "Engin_Akyurt",
+                "attribution_url": "https://pixabay.com/photos/menemen-egg-casserole-table-wood-3771970/"
+            },
+            {
+                "label": "मछली की रोटी",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bal%C4%B1k-ekmek_in_Ankara.jpg/1024px-Bal%C4%B1k-ekmek_in_Ankara.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "E4024",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Bal%C4%B1k-ekmek_in_Ankara.jpg"
+            },
+            {
+                "label": "तुर्की चाय",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2019/02/28/08/18/tea-4025510_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "smuldur",
+                "attribution_url": "https://pixabay.com/photos/tea-table-turkish-beverage-4025510/"
+            },
+            {
+                "label": "तुर्की आनंद",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2017/10/27/10/00/turkish-2893751_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "itsbytespixels",
+                "attribution_url": "https://pixabay.com/photos/turkish-sweet-dessert-2893751/"
+            },
+            {
+                "label": "कच्चे मीटबॉल",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2017/08/10/16/13/cigkofte-2624336_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "iGlobalWeb",
+                "attribution_url": "https://pixabay.com/photos/cigkofte-turkish-food-bulgur-2624336/"
+            },
+            {
+                "label": "Lahmacun",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Lahmacun.jpg/1024px-Lahmacun.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": " Rainer Zenz (asumed)",
+                "attribution_url": "https://en.wikipedia.org/wiki/Lahmacun#/media/File:Lahmacun.jpg"
+            },
+            {
+                "label" : "शिश कबाब",
+                "is_veg": false,
+                "is_non_veg" : true,
+                "photo" : "https://cdn.pixabay.com/photo/2017/09/03/07/10/shish-kebab-2709499_1280.jpg",
+                "licence" : "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by" : "nikitozawr",
+                "attribution_url" : "https://pixabay.com/photos/shish-kebab-meat-kubny-plan-tasty-2709499/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "कपड़ा",
+        "secondary": [
+            "गलीचा",
+            "Food processing"
+        ]
+    },
+    "language": {
+        "primary": "तुर्की",
+        "secondary": [
+            "अंग्रेज़ी"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_hi_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_hi_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_hi_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_hi_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_hi_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Kis Uykusu",
+                "poster_url": "https://image.tmdb.org/t/p/w500/iHIS7FjHpj7JtBEuNzvHeTRIzEk.jpg"
+            },
+            {
+                "title": "Bir Zamanlar Anadolu'da",
+                "poster_url": "https://image.tmdb.org/t/p/w500/2V3JClFTjw4ToBIyBo2PxMdiyCS.jpg"
+            },
+            {
+                "title": "Mustang",
+                "poster_url": "https://image.tmdb.org/t/p/w500/lyoBiBKdCm4ed1yZJAo7llM3vdg.jpg"
+            },
+            {
+                "title" : "Kelebegin Rüyasi",
+                "poster_url" : "https://image.tmdb.org/t/p/w500/q3lx59mnABD1phQuSxswabamvpn.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name" : "तैयप एर्दोगन को रिसीव करें",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/6/65/Recep_Tayyip_Erdo%C4%9Fan_2019_%28cropped%29.jpg",
+                "work" : "तुर्की के राष्ट्रपति",
+                "place" : "कासिम्पसा, इस्तांबुल",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by" : "Mikhail Palinchak",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Recep_Tayyip_Erdo%C4%9Fan_2019_(cropped).jpg"
+            },
+            {
+                "name"     : "मेहमद VI",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Sultan_Mehmed_VI_of_the_Ottoman_Empire.jpg/576px-Sultan_Mehmed_VI_of_the_Ottoman_Empire.jpg",
+                "place" : "इस्तांबुल",
+                "work" : "ओटोमन साम्राज्य का अंतिम सुल्तान"
+                
+            },
+
+            {
+                "name" : "अरदा तुरन",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/AUT_vs._TUR_2016-03-29_%28283%29.jpg/512px-AUT_vs._TUR_2016-03-29_%28283%29.jpg",
+                "work" : "व्यावसायिक फुटबॉल खिलाड़ी",
+                "place" : "फातिह, इस्तांबुल",
+                "photo_by" : "Steindy",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url" : "https://en.wikipedia.org/wiki/File:AUT_vs._TUR_2016-03-29_(283).jpg"
+            },
+            {
+                "name" : "हैलीड एडिब एडवर",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/6/6c/Halide_adivar.jpg",
+                "work" : "उपन्यासकार, राष्ट्रवादी और महिला अधिकारों के लिए राजनीतिक नेता",
+                "place" : "इस्तांबुल"
+            },
+
+            {
+                "name" : "नूरी बिलगे सीलन",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/1/1a/Nuribilgeceylan.jpg",
+                "work" : "फिल्म निर्देशक",
+                "place" : "इस्तांबुल"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ फुटबॉल",
+        "footer": "बास्केटबॉल और वॉलीबॉल"
+    },
+    "time_to_visit": {
+        "primary": "अप्रैल मई",
+        "secondary": "सितंबर अक्टूबर"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "हागिया सोफिया संग्रहालय",
+                "description": "मोज़ाइक के साथ बीजान्टिन बेसिलिका संग्रहालय",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOuPf6PMw2jRqqdJPElxYE-wVKFyc8gWYFDpmaE=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114411208126953807978\">Wolfgang Unglaub</a>"
+                ],
+                "place_id": "ChIJJxwBkr65yhQRrk9EN29vbiM"
+            },
+            {
+                "name": "द ब्लू मस्जिद",
+                "description": "6 मीनारों के साथ प्रतिष्ठित ब्लू मस्जिद",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPs-6o2nVgLFk0c_OQFlOo4rGUhvZfwN2vqs7He=s1600-w800",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116568261039607681002\">Mohsin Ali</a>"
+                ],
+                "place_id": "ChIJ4fRwZb25yhQRpHwVijb3LeU"
+            },
+            {
+                "name": "टोपकापी पैलेस संग्रहालय",
+                "description": "ऐतिहासिक तुर्क-युग महल परिसर",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMIB4qi5U-HFY7HhzlJsyDL-TzZf_1d-yTcRs-3=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113253188086359121984\">Alex Massari</a>"
+                ],
+                "place_id": "ChIJM_ilr7i5yhQRAFMBw0MZqhU"
+            },
+            {
+                "name": "भव्य बाज़ार",
+                "description": "रंगीन कवर बाजारों की भूलभुलैया",
+                "place_id": "ChIJJwXXYpG5yhQRq5jBWgtoyGQ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP4-n_6Fkw99eiVom0-J71N5d3XQ1dkI6EDB5Rl=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112363346142702930782\">Juan Jurado</a>"
+                ]
+            },
+            {
+                "name" : "सुलेमानियां मस्जिद",
+                "description": "16 वीं शताब्दी के ओटोमन मस्जिद का मंजर",
+                "place_id" : "ChIJMRDAOo25yhQR7c9XIQT1zIo",
+                "photos" : "https://lh3.googleusercontent.com/p/AF1QipMdvPCASefEvJbMi_j4UC5bD75E3EkBbnhOaRKV=s1600-w900",
+                "html_attributions" : [
+                    "<a href=\"https://maps.google.com/maps/contrib/104937090589239040242\">Saleh MIL</a>"
+                ]
+            },
+            {
+                "name": "बोस्फोरस",
+                "description": "ऐतिहासिक जलमार्ग और महाद्वीपीय सीमा",
+                "place_id": "ChIJn5k8FGjKyhQRtd_p_WFbAGM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPFUHkaRVQiA-WSmzg2eNL0T4EPxIFOZYfT9mqq=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115855376794259556107\">Archon K</a>"
+                ]
+            },
+            {
+                "name": "महामंदिर का जलाशय",
+                "description": "542 A.D. वाटरवर्क्स का जीर्णोद्धार",
+                "place_id": "ChIJyWrG4L25yhQRcYRt7uEvwGA",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPyn_xYhodZyegis5K7nxGGASjSjh7adG5szJfU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108614338924270739269\">Marcello Marques</a>"
+                ]
+            },
+            {
+                "name": "डोलमाबाकी पैलेस",
+                "description": "अलंकृत ओटोमन सुल्तान के महल में संग्रहालय",
+                "place_id": "ChIJ4307Gna3yhQRC4M7zzg-09w",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNeK0l0FchFWjap4fuZQ-hV9_WFklgrcPNib1S4=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112288080342389239027\">Dolmabahçe Sarayı</a>"
+                ]
+            },
+            {
+                "name": "गलता टॉवर",
+                "description": "67-मीटर बीजान्टिन टॉवर और रेस्तरां",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPALjJCJBqgu7MiuGzbZ_f_acwm8oRfruxd4Rwu=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105671018490792374724\">tarek radwan</a>"
+                ],
+                "place_id": "ChIJQ3x3p-e5yhQRCzOLzD3Pdkw"
+            },
+            {
+                "name": "सुल्तानहेम स्क्वायर",
+                "description": "सार्वजनिक चौक जहां हिप्पोड्रोम खड़ा था",
+                "place_id": "ChIJ2XlLfO25yhQR8Hcxg0Af5V4",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipN0g7kypDV_QVGIOPtwgWkptI62rOmavXIM3T06=s1600-w845",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106989409402974863626\">Naci Gülaçmaz</a>"
+                ]
+            },
+            {
+                "name": "स्पाइस बाजार",
+                "description": "ऐतिहासिक कवर मसाला और कपड़ा बाजार",
+                "place_id": "ChIJn9t8b-u5yhQRXVCwl43vu0Q",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNZPBA6-TUrZnaun7dYvlvpim0TZ086qstuaetD=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115862629829929880484\">Alberto Gozzelino</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 180,
+    "trivia": {
+        "items": [
+            "इसे पहले बीजान्टियम और कॉन्स्टेंटिनोपल के नाम से जाना जाता था।",
+            "यह तुर्की का सबसे अधिक आबादी वाला शहर है।",
+            "यह तुर्की में आर्थिक, सांस्कृतिक और ऐतिहासिक केंद्र है।",
+            "इस्तांबुल यूरेशिया में एक अंतरमहाद्वीपीय शहर है, जो मार्मारा सागर और काला सागर के बीच बोस्पोरस जलडमरूमध्य (जो यूरोप और एशिया को अलग करता है) से टकराता है।",
+            "1923 में, तुर्की स्वतंत्रता संग्राम के बाद, अंकारा को नई तुर्की राजधानी के रूप में चुना गया था, और शहर का नाम बदलकर इस्तांबुल कर दिया गया था।",
+            "12 मिलियन से अधिक विदेशी आगंतुकों के साथ, यह शहर दुनिया का पांचवां सबसे लोकप्रिय पर्यटन स्थल है।",
+            "शहर का उत्तरी आधा भाग, साथ ही साथ बॉस्पोरस समुद्र तट, समुद्र और आर्द्र उपोष्णकटिबंधीय जलवायु की विशेषताओं को व्यक्त करता है।",
+            "उत्तर और दक्षिण तटों पर वार्षिक औसत तापमान के साथ-साथ बह्केकोय 12.8 ° C (55.0 ° F), कर्तल 15.03 ° C (59.05 ° F) के बीच एक महत्वपूर्ण अंतर है।",
+            "यह मुख्य रूप से बीजान्टिन और ओटोमन वास्तुकला के लिए जाना जाता है",
+            "ग्रांड बाजार दुनिया के सबसे बड़े और सबसे पुराने कवर बाजारों में से एक है।",
+            "हागिया सोफिया लगभग 900 वर्षों के लिए दुनिया का सबसे बड़ा चर्च था।",
+            "इस्तांबुल में दुनिया का तीसरा सबसे पुराना मेट्रो है, जिसे 1875 में बनाया गया था। यह 573 मीटर लंबा और बेयोग्लू जिले में स्थित है।"
+        ]
+    }
+}

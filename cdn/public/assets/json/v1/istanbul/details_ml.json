@@ -1,0 +1,344 @@
+{
+    "basic_info": {
+        "name": "ഇസ്താംബുൾ",
+        "id": "istanbul",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/%C4%B0stanbul-Ayasofya.JPG/1280px-%C4%B0stanbul-Ayasofya.JPG",
+        "place": "ഹാഗിയ സോഫിയ, ഇസ്താംബുൾ",
+        "licence": "<a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en/\">CC0 1.0</a>",
+        "photo_by": "Robster1983",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:%C4%B0stanbul-Ayasofya.JPG"
+    },
+    "airport": {
+        "name": "ഇസ്താംബുൾ വിമാനത്താവളം"
+    },
+    "climate": {
+        "type": "പരിവർത്തന മെഡിറ്ററേനിയൻ",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "വേനൽ",
+                "temp": "20 ° C മുതൽ 23. C വരെ",
+                "duration": "ജൂൺ-ഓഗസ്റ്റ്"
+            },
+            {
+                "emoji": "🍁",
+                "name": "ശരത്കാലം",
+                "temp": "11 ° C മുതൽ 19. C വരെ",
+                "duration": "സെപ്റ്റംബർ-നവം"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "വിന്റർ",
+                "temp": "5 ° C മുതൽ 8. C വരെ",
+                "duration": "ഡിസംബർ-മാർച്ച്"
+            },
+            {
+                "emoji": "🌼",
+                "name": "സ്പ്രിംഗ്",
+                "temp": "11 ° C മുതൽ 16. C വരെ",
+                "duration": "ഏപ്രിൽ-മെയ്"
+            }
+        ]
+    },
+    "country": {
+        "name": "തുർക്കി",
+        "continent": "യൂറോപ്പും ഏഷ്യയും"
+    },
+    "currency": {
+        "name": "ടർക്കിഷ് ലിറ",
+        "symbol": "TL",
+        "code": "TRY"
+    },
+    "dance": {
+        "name": "ഹേലി, സിഫെറ്റെല്ലി, സ്വാഗതം"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "റോട്ടറി",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Doner_kebab%2C_Istanbul%2C_Turkey.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "(WT-shared) Shoestring",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Doner_kebab,_Istanbul,_Turkey.JPG"
+            },
+            {
+                "label": "മെനെമെന്",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2018/10/25/09/08/menemen-3771970_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "Engin_Akyurt",
+                "attribution_url": "https://pixabay.com/photos/menemen-egg-casserole-table-wood-3771970/"
+            },
+            {
+                "label": "ഫിഷ് ബ്രെഡ്",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bal%C4%B1k-ekmek_in_Ankara.jpg/1024px-Bal%C4%B1k-ekmek_in_Ankara.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "E4024",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Bal%C4%B1k-ekmek_in_Ankara.jpg"
+            },
+            {
+                "label": "ടർക്കിഷ് ചായ",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2019/02/28/08/18/tea-4025510_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "smuldur",
+                "attribution_url": "https://pixabay.com/photos/tea-table-turkish-beverage-4025510/"
+            },
+            {
+                "label": "ടർക്കിഷ് ആനന്ദം",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2017/10/27/10/00/turkish-2893751_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "itsbytespixels",
+                "attribution_url": "https://pixabay.com/photos/turkish-sweet-dessert-2893751/"
+            },
+            {
+                "label": "അസംസ്കൃത മീറ്റ്ബോൾസ്",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2017/08/10/16/13/cigkofte-2624336_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "iGlobalWeb",
+                "attribution_url": "https://pixabay.com/photos/cigkofte-turkish-food-bulgur-2624336/"
+            },
+            {
+                "label": "ലഹ്മചുന്",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Lahmacun.jpg/1024px-Lahmacun.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": " Rainer Zenz (asumed)",
+                "attribution_url": "https://en.wikipedia.org/wiki/Lahmacun#/media/File:Lahmacun.jpg"
+            },
+            {
+                "label" : "ഷിഷ് കബാബുകൾ",
+                "is_veg": false,
+                "is_non_veg" : true,
+                "photo" : "https://cdn.pixabay.com/photo/2017/09/03/07/10/shish-kebab-2709499_1280.jpg",
+                "licence" : "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by" : "nikitozawr",
+                "attribution_url" : "https://pixabay.com/photos/shish-kebab-meat-kubny-plan-tasty-2709499/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "തുണിത്തരങ്ങൾ",
+        "secondary": [
+            "പരവതാനി",
+            "Food processing"
+        ]
+    },
+    "language": {
+        "primary": "ടർക്കിഷ്",
+        "secondary": [
+            "ഇംഗ്ലീഷ്"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_ml_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_ml_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_ml_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_ml_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_ml_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Kis Uykusu",
+                "poster_url": "https://image.tmdb.org/t/p/w500/iHIS7FjHpj7JtBEuNzvHeTRIzEk.jpg"
+            },
+            {
+                "title": "Bir Zamanlar Anadolu'da",
+                "poster_url": "https://image.tmdb.org/t/p/w500/2V3JClFTjw4ToBIyBo2PxMdiyCS.jpg"
+            },
+            {
+                "title": "Mustang",
+                "poster_url": "https://image.tmdb.org/t/p/w500/lyoBiBKdCm4ed1yZJAo7llM3vdg.jpg"
+            },
+            {
+                "title" : "Kelebegin Rüyasi",
+                "poster_url" : "https://image.tmdb.org/t/p/w500/q3lx59mnABD1phQuSxswabamvpn.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name" : "റീസെപ് തയ്യിപ് എർദോഗൻ",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/6/65/Recep_Tayyip_Erdo%C4%9Fan_2019_%28cropped%29.jpg",
+                "work" : "തുർക്കി പ്രസിഡന്റ്",
+                "place" : "കാസിമ്പാസ, ഇസ്താംബുൾ",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by" : "Mikhail Palinchak",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Recep_Tayyip_Erdo%C4%9Fan_2019_(cropped).jpg"
+            },
+            {
+                "name"     : "മെഹ്മദ് ആറാമൻ",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Sultan_Mehmed_VI_of_the_Ottoman_Empire.jpg/576px-Sultan_Mehmed_VI_of_the_Ottoman_Empire.jpg",
+                "place" : "ഇസ്താംബുൾ",
+                "work" : "ഓട്ടോമൻ സാമ്രാജ്യത്തിന്റെ അവസാന സുൽത്താൻ"
+                
+            },
+
+            {
+                "name" : "അർഡ ടുറാൻ",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/AUT_vs._TUR_2016-03-29_%28283%29.jpg/512px-AUT_vs._TUR_2016-03-29_%28283%29.jpg",
+                "work" : "പ്രൊഫഷണൽ ഫുട്ബോൾ",
+                "place" : "ഫാത്തിഹ്, ഇസ്താംബുൾ",
+                "photo_by" : "Steindy",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url" : "https://en.wikipedia.org/wiki/File:AUT_vs._TUR_2016-03-29_(283).jpg"
+            },
+            {
+                "name" : "ഹാലിഡ് എഡിബ് അദവർ",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/6/6c/Halide_adivar.jpg",
+                "work" : "നോവലിസ്റ്റ്, ദേശീയവാദി, സ്ത്രീകളുടെ അവകാശങ്ങൾക്കായി രാഷ്ട്രീയ നേതാവ്",
+                "place" : "ഇസ്താംബുൾ"
+            },
+
+            {
+                "name" : "നൂരി ബിൽജ് സിലാൻ",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/1/1a/Nuribilgeceylan.jpg",
+                "work" : "സിനിമാ സംവിധായകൻ",
+                "place" : "ഇസ്താംബുൾ"
+            }
+        ]
+    },
+    "sports": {
+        "title": "ഫുട്ബോൾ",
+        "footer": "ബാസ്ക്കറ്റ്ബോൾ, വോളിബോൾ"
+    },
+    "time_to_visit": {
+        "primary": "ഏപ്രിൽ-മെയ്",
+        "secondary": "സെപ്റ്റംബർ-ഒക്ടോബർ"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "ഹാഗിയ സോഫിയ മ്യൂസിയം",
+                "description": "മൊസൈക്കുകളുള്ള ബൈസന്റൈൻ ബസിലിക്ക മ്യൂസിയം",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOuPf6PMw2jRqqdJPElxYE-wVKFyc8gWYFDpmaE=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114411208126953807978\">Wolfgang Unglaub</a>"
+                ],
+                "place_id": "ChIJJxwBkr65yhQRrk9EN29vbiM"
+            },
+            {
+                "name": "നീല പള്ളി",
+                "description": "6 മിനാരങ്ങളുള്ള ഐക്കണിക് ബ്ലൂ മോസ്ക്",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPs-6o2nVgLFk0c_OQFlOo4rGUhvZfwN2vqs7He=s1600-w800",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116568261039607681002\">Mohsin Ali</a>"
+                ],
+                "place_id": "ChIJ4fRwZb25yhQRpHwVijb3LeU"
+            },
+            {
+                "name": "ടോപ്‌കാപ്പി പാലസ് മ്യൂസിയം",
+                "description": "ചരിത്രപരമായ ഓട്ടോമൻ കാലഘട്ടത്തിലെ കൊട്ടാരം സമുച്ചയം",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMIB4qi5U-HFY7HhzlJsyDL-TzZf_1d-yTcRs-3=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113253188086359121984\">Alex Massari</a>"
+                ],
+                "place_id": "ChIJM_ilr7i5yhQRAFMBw0MZqhU"
+            },
+            {
+                "name": "ഗ്രാൻഡ് ബസാർ",
+                "description": "വർണ്ണാഭമായ കവർ മാർക്കറ്റുകളുടെ ലാബിരിന്ത്",
+                "place_id": "ChIJJwXXYpG5yhQRq5jBWgtoyGQ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP4-n_6Fkw99eiVom0-J71N5d3XQ1dkI6EDB5Rl=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112363346142702930782\">Juan Jurado</a>"
+                ]
+            },
+            {
+                "name" : "സുലൈമാനിയേ പള്ളി",
+                "description": "പതിനാറാം നൂറ്റാണ്ടിലെ ഓട്ടോമൻ പള്ളി",
+                "place_id" : "ChIJMRDAOo25yhQR7c9XIQT1zIo",
+                "photos" : "https://lh3.googleusercontent.com/p/AF1QipMdvPCASefEvJbMi_j4UC5bD75E3EkBbnhOaRKV=s1600-w900",
+                "html_attributions" : [
+                    "<a href=\"https://maps.google.com/maps/contrib/104937090589239040242\">Saleh MIL</a>"
+                ]
+            },
+            {
+                "name": "ബോസ്ഫറസ്",
+                "description": "ലാൻഡ്മാർക്ക് ജലപാതയും ഭൂഖണ്ഡ അതിർത്തിയും",
+                "place_id": "ChIJn5k8FGjKyhQRtd_p_WFbAGM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPFUHkaRVQiA-WSmzg2eNL0T4EPxIFOZYfT9mqq=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115855376794259556107\">Archon K</a>"
+                ]
+            },
+            {
+                "name": "ബസിലിക്ക സിസ്റ്റേൺ",
+                "description": "542 A.D. വാട്ടർവർക്കുകൾ പുന ored സ്ഥാപിച്ചു",
+                "place_id": "ChIJyWrG4L25yhQRcYRt7uEvwGA",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPyn_xYhodZyegis5K7nxGGASjSjh7adG5szJfU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108614338924270739269\">Marcello Marques</a>"
+                ]
+            },
+            {
+                "name": "ഡോൾമാബാഹി കൊട്ടാരം",
+                "description": "അലങ്കരിച്ച ഓട്ടോമൻ സുൽത്താന്റെ കൊട്ടാരത്തിലെ മ്യൂസിയം",
+                "place_id": "ChIJ4307Gna3yhQRC4M7zzg-09w",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNeK0l0FchFWjap4fuZQ-hV9_WFklgrcPNib1S4=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112288080342389239027\">Dolmabahçe Sarayı</a>"
+                ]
+            },
+            {
+                "name": "ഗലാറ്റ ടവർ",
+                "description": "67 മീറ്റർ ബൈസന്റൈൻ ടവർ & റെസ്റ്റോറന്റ്",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPALjJCJBqgu7MiuGzbZ_f_acwm8oRfruxd4Rwu=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105671018490792374724\">tarek radwan</a>"
+                ],
+                "place_id": "ChIJQ3x3p-e5yhQRCzOLzD3Pdkw"
+            },
+            {
+                "name": "സുൽത്താനഹ്മത് സ്ക്വയർ",
+                "description": "ഹിപ്പോഡ്രോം നിലകൊള്ളുന്ന പൊതു സ്ക്വയർ",
+                "place_id": "ChIJ2XlLfO25yhQR8Hcxg0Af5V4",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipN0g7kypDV_QVGIOPtwgWkptI62rOmavXIM3T06=s1600-w845",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106989409402974863626\">Naci Gülaçmaz</a>"
+                ]
+            },
+            {
+                "name": "സ്പൈസ് ബസാർ",
+                "description": "ചരിത്രപരമായ കവർ ചെയ്ത സുഗന്ധവ്യഞ്ജന, തുണി വിപണി",
+                "place_id": "ChIJn9t8b-u5yhQRXVCwl43vu0Q",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNZPBA6-TUrZnaun7dYvlvpim0TZ086qstuaetD=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115862629829929880484\">Alberto Gozzelino</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 180,
+    "trivia": {
+        "items": [
+            "പണ്ട് ബൈസാന്റിയം, കോൺസ്റ്റാന്റിനോപ്പിൾ എന്നാണ് ഇത് അറിയപ്പെട്ടിരുന്നത്.",
+            "തുർക്കിയിലെ ഏറ്റവും ജനസംഖ്യയുള്ള നഗരമാണിത്.",
+            "തുർക്കിയിലെ സാമ്പത്തിക, സാംസ്കാരിക, ചരിത്ര കേന്ദ്രമാണിത്.",
+            "യുറേഷ്യയിലെ ഒരു ഭൂഖണ്ഡാന്തര നഗരമാണ് ഇസ്താംബുൾ, മസ്മാര കടലിനും കരിങ്കടലിനുമിടയിൽ ബോസ്പോറസ് കടലിടുക്ക് (യൂറോപ്പിനെയും ഏഷ്യയെയും വേർതിരിക്കുന്നു).",
+            "1923 ൽ തുർക്കി സ്വാതന്ത്ര്യയുദ്ധത്തിനുശേഷം അങ്കാറയെ പുതിയ തുർക്കി തലസ്ഥാനമായി തിരഞ്ഞെടുത്തു, നഗരത്തിന്റെ പേര് ഇസ്താംബുൾ എന്ന് മാറ്റി.",
+            "12 ദശലക്ഷത്തിലധികം വിദേശ സന്ദർശകരുള്ള ലോകത്തെ ഏറ്റവും പ്രശസ്തമായ അഞ്ചാമത്തെ വിനോദസഞ്ചാര കേന്ദ്രമാണ് ഇത്.",
+            "നഗരത്തിന്റെ വടക്കൻ ഭാഗവും ബോസ്പോറസ് തീരപ്രദേശവും സമുദ്രവും ഈർപ്പമുള്ളതുമായ ഉഷ്ണമേഖലാ കാലാവസ്ഥയുടെ സവിശേഷതകൾ പ്രകടിപ്പിക്കുന്നു.",
+            "വടക്ക്, തെക്ക് തീരങ്ങളിലെ വാർഷിക ശരാശരി താപനില, ബഹെക്കി 12.8 (C (55.0 ° F), കാർട്ടാൽ 15.03 (C (59.05 ° F) എന്നിവ തമ്മിൽ കാര്യമായ വ്യത്യാസമുണ്ട്.",
+            "ബൈസന്റൈൻ, ഓട്ടോമൻ വാസ്തുവിദ്യയ്ക്ക് ഇത് പ്രാഥമികമായി അറിയപ്പെടുന്നു",
+            "ലോകത്തിലെ ഏറ്റവും വലുതും പഴയതുമായ കവർ മാർക്കറ്റുകളിൽ ഒന്നാണ് ഗ്രാൻഡ് ബസാർ.",
+            "ഏകദേശം 900 വർഷമായി ലോകത്തിലെ ഏറ്റവും വലിയ പള്ളിയായിരുന്നു ഹാഗിയ സോഫിയ.",
+            "1875 ൽ നിർമ്മിച്ച ലോകത്തിലെ ഏറ്റവും പഴക്കം ചെന്ന മൂന്നാമത്തെ സബ്‌വേയാണ് ഇസ്താംബൂളിനുള്ളത്. 573 മീറ്റർ നീളവും ബിയോഗ്ലു ജില്ലയിലാണ് ഇത് സ്ഥിതിചെയ്യുന്നത്."
+        ]
+    }
+}

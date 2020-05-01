@@ -1,0 +1,344 @@
+{
+    "basic_info": {
+        "name": "Istanbul",
+        "id": "istanbul",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/%C4%B0stanbul-Ayasofya.JPG/1280px-%C4%B0stanbul-Ayasofya.JPG",
+        "place": "Hagia Sophia, Istanbul",
+        "licence": "<a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en/\">CC0 1.0</a>",
+        "photo_by": "Robster1983",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:%C4%B0stanbul-Ayasofya.JPG"
+    },
+    "airport": {
+        "name": "Sân bay Istanbul"
+    },
+    "climate": {
+        "type": "Địa Trung Hải chuyển tiếp",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "Mùa hè",
+                "temp": "20 ° C đến 23 ° C",
+                "duration": "Tháng Sáu-Tháng Tám"
+            },
+            {
+                "emoji": "🍁",
+                "name": "Mùa thu",
+                "temp": "11 ° C đến 19 ° C",
+                "duration": "Tháng Chín-Tháng Mười Một"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "Mùa đông",
+                "temp": "5 ° C đến 8 ° C",
+                "duration": "Dec-Mar"
+            },
+            {
+                "emoji": "🌼",
+                "name": "Mùa xuân",
+                "temp": "11 ° C đến 16 ° C",
+                "duration": "Tháng 4 tháng 5"
+            }
+        ]
+    },
+    "country": {
+        "name": "Thổ Nhĩ Kỳ",
+        "continent": "Châu âu và châu á"
+    },
+    "currency": {
+        "name": "Lira Thổ Nhĩ Kỳ",
+        "symbol": "TL",
+        "code": "TRY"
+    },
+    "dance": {
+        "name": "Haley, Ciftetelli, Chào mừng"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "quay",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Doner_kebab%2C_Istanbul%2C_Turkey.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "(WT-shared) Shoestring",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Doner_kebab,_Istanbul,_Turkey.JPG"
+            },
+            {
+                "label": "Menemen",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2018/10/25/09/08/menemen-3771970_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "Engin_Akyurt",
+                "attribution_url": "https://pixabay.com/photos/menemen-egg-casserole-table-wood-3771970/"
+            },
+            {
+                "label": "Bánh mì cá",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bal%C4%B1k-ekmek_in_Ankara.jpg/1024px-Bal%C4%B1k-ekmek_in_Ankara.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "E4024",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Bal%C4%B1k-ekmek_in_Ankara.jpg"
+            },
+            {
+                "label": "Trà Thổ Nhĩ Kỳ",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2019/02/28/08/18/tea-4025510_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "smuldur",
+                "attribution_url": "https://pixabay.com/photos/tea-table-turkish-beverage-4025510/"
+            },
+            {
+                "label": "Thổ Nhĩ Kỳ thỏa thích",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2017/10/27/10/00/turkish-2893751_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "itsbytespixels",
+                "attribution_url": "https://pixabay.com/photos/turkish-sweet-dessert-2893751/"
+            },
+            {
+                "label": "Thịt viên sống",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2017/08/10/16/13/cigkofte-2624336_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "iGlobalWeb",
+                "attribution_url": "https://pixabay.com/photos/cigkofte-turkish-food-bulgur-2624336/"
+            },
+            {
+                "label": "lahmacun",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Lahmacun.jpg/1024px-Lahmacun.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": " Rainer Zenz (asumed)",
+                "attribution_url": "https://en.wikipedia.org/wiki/Lahmacun#/media/File:Lahmacun.jpg"
+            },
+            {
+                "label" : "Thịt nướng Shish",
+                "is_veg": false,
+                "is_non_veg" : true,
+                "photo" : "https://cdn.pixabay.com/photo/2017/09/03/07/10/shish-kebab-2709499_1280.jpg",
+                "licence" : "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by" : "nikitozawr",
+                "attribution_url" : "https://pixabay.com/photos/shish-kebab-meat-kubny-plan-tasty-2709499/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "Dệt may",
+        "secondary": [
+            "Thảm",
+            "Food processing"
+        ]
+    },
+    "language": {
+        "primary": "Thổ Nhĩ Kỳ",
+        "secondary": [
+            "Tiếng Anh"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_vi_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_vi_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_vi_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_vi_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_vi_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Kis Uykusu",
+                "poster_url": "https://image.tmdb.org/t/p/w500/iHIS7FjHpj7JtBEuNzvHeTRIzEk.jpg"
+            },
+            {
+                "title": "Bir Zamanlar Anadolu'da",
+                "poster_url": "https://image.tmdb.org/t/p/w500/2V3JClFTjw4ToBIyBo2PxMdiyCS.jpg"
+            },
+            {
+                "title": "Mustang",
+                "poster_url": "https://image.tmdb.org/t/p/w500/lyoBiBKdCm4ed1yZJAo7llM3vdg.jpg"
+            },
+            {
+                "title" : "Kelebegin Rüyasi",
+                "poster_url" : "https://image.tmdb.org/t/p/w500/q3lx59mnABD1phQuSxswabamvpn.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name" : "Recep Tayyip Erdogan",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/6/65/Recep_Tayyip_Erdo%C4%9Fan_2019_%28cropped%29.jpg",
+                "work" : "Tổng thống Thổ Nhĩ Kỳ",
+                "place" : "Kasimpasa, Istanbul",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by" : "Mikhail Palinchak",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Recep_Tayyip_Erdo%C4%9Fan_2019_(cropped).jpg"
+            },
+            {
+                "name"     : "Mehmed VI",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Sultan_Mehmed_VI_of_the_Ottoman_Empire.jpg/576px-Sultan_Mehmed_VI_of_the_Ottoman_Empire.jpg",
+                "place" : "Istanbul",
+                "work" : "Quốc vương cuối cùng của Đế chế Ottoman"
+                
+            },
+
+            {
+                "name" : "Thổ Nhĩ Kỳ Arda",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/AUT_vs._TUR_2016-03-29_%28283%29.jpg/512px-AUT_vs._TUR_2016-03-29_%28283%29.jpg",
+                "work" : "Cầu thủ chuyên nghiệp",
+                "place" : "Fatih, Istanbul",
+                "photo_by" : "Steindy",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url" : "https://en.wikipedia.org/wiki/File:AUT_vs._TUR_2016-03-29_(283).jpg"
+            },
+            {
+                "name" : "Halide Edib Adıvar",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/6/6c/Halide_adivar.jpg",
+                "work" : "Tiểu thuyết, dân tộc chủ nghĩa, và lãnh đạo chính trị cho quyền của phụ nữ",
+                "place" : "Istanbul"
+            },
+
+            {
+                "name" : "Nuri Bilge Ceylan",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/1/1a/Nuribilgeceylan.jpg",
+                "work" : "Đạo diễn phim",
+                "place" : "Istanbul"
+            }
+        ]
+    },
+    "sports": {
+        "title": "Bóng đá",
+        "footer": "Bóng rổ và bóng chuyền"
+    },
+    "time_to_visit": {
+        "primary": "Tháng 4-tháng 5",
+        "secondary": "Tháng Chín-Octorber"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "Bảo tàng Hagia Sophia",
+                "description": "Bảo tàng Byzantine basilica với khảm",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOuPf6PMw2jRqqdJPElxYE-wVKFyc8gWYFDpmaE=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114411208126953807978\">Wolfgang Unglaub</a>"
+                ],
+                "place_id": "ChIJJxwBkr65yhQRrk9EN29vbiM"
+            },
+            {
+                "name": "Nhà thờ Hồi giáo Xanh",
+                "description": "Nhà thờ Hồi giáo Blue mang tính biểu tượng với 6 ngọn tháp",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPs-6o2nVgLFk0c_OQFlOo4rGUhvZfwN2vqs7He=s1600-w800",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116568261039607681002\">Mohsin Ali</a>"
+                ],
+                "place_id": "ChIJ4fRwZb25yhQRpHwVijb3LeU"
+            },
+            {
+                "name": "Bảo tàng cung điện Topkapi",
+                "description": "Quần thể cung điện lịch sử thời Ottoman",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMIB4qi5U-HFY7HhzlJsyDL-TzZf_1d-yTcRs-3=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113253188086359121984\">Alex Massari</a>"
+                ],
+                "place_id": "ChIJM_ilr7i5yhQRAFMBw0MZqhU"
+            },
+            {
+                "name": "Chợ lớn",
+                "description": "Mê cung của những khu chợ đầy màu sắc",
+                "place_id": "ChIJJwXXYpG5yhQRq5jBWgtoyGQ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP4-n_6Fkw99eiVom0-J71N5d3XQ1dkI6EDB5Rl=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112363346142702930782\">Juan Jurado</a>"
+                ]
+            },
+            {
+                "name" : "Nhà thờ Hồi giáo Suleymaniye",
+                "description": "Nhà thờ Hồi giáo Ottoman thế kỷ 16",
+                "place_id" : "ChIJMRDAOo25yhQR7c9XIQT1zIo",
+                "photos" : "https://lh3.googleusercontent.com/p/AF1QipMdvPCASefEvJbMi_j4UC5bD75E3EkBbnhOaRKV=s1600-w900",
+                "html_attributions" : [
+                    "<a href=\"https://maps.google.com/maps/contrib/104937090589239040242\">Saleh MIL</a>"
+                ]
+            },
+            {
+                "name": "Tiếng Anh",
+                "description": "Mốc nước và ranh giới lục địa",
+                "place_id": "ChIJn5k8FGjKyhQRtd_p_WFbAGM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPFUHkaRVQiA-WSmzg2eNL0T4EPxIFOZYfT9mqq=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115855376794259556107\">Archon K</a>"
+                ]
+            },
+            {
+                "name": "Nhà thờ thánh đường",
+                "description": "Đã khôi phục 542 A.D.",
+                "place_id": "ChIJyWrG4L25yhQRcYRt7uEvwGA",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPyn_xYhodZyegis5K7nxGGASjSjh7adG5szJfU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108614338924270739269\">Marcello Marques</a>"
+                ]
+            },
+            {
+                "name": "Cung điện Dolmabahçe",
+                "description": "Bảo tàng trong cung điện trang trí công phu của Ottoman",
+                "place_id": "ChIJ4307Gna3yhQRC4M7zzg-09w",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNeK0l0FchFWjap4fuZQ-hV9_WFklgrcPNib1S4=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112288080342389239027\">Dolmabahçe Sarayı</a>"
+                ]
+            },
+            {
+                "name": "Tháp Galata",
+                "description": "Tháp & nhà hàng Byzantine dài 67 mét",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPALjJCJBqgu7MiuGzbZ_f_acwm8oRfruxd4Rwu=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105671018490792374724\">tarek radwan</a>"
+                ],
+                "place_id": "ChIJQ3x3p-e5yhQRCzOLzD3Pdkw"
+            },
+            {
+                "name": "Quảng trường Sultanahmet",
+                "description": "Quảng trường công cộng nơi hà mã đứng",
+                "place_id": "ChIJ2XlLfO25yhQR8Hcxg0Af5V4",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipN0g7kypDV_QVGIOPtwgWkptI62rOmavXIM3T06=s1600-w845",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106989409402974863626\">Naci Gülaçmaz</a>"
+                ]
+            },
+            {
+                "name": "Chợ gia vị",
+                "description": "Lịch sử bao phủ gia vị & thị trường dệt may",
+                "place_id": "ChIJn9t8b-u5yhQRXVCwl43vu0Q",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNZPBA6-TUrZnaun7dYvlvpim0TZ086qstuaetD=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115862629829929880484\">Alberto Gozzelino</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 180,
+    "trivia": {
+        "items": [
+            "Nó trước đây được gọi là Byzantium và Constantinople.",
+            "Đây là thành phố đông dân nhất ở Thổ Nhĩ Kỳ.",
+            "Đây là trung tâm kinh tế, văn hóa và lịch sử ở Thổ Nhĩ Kỳ.",
+            "Istanbul là một thành phố xuyên lục địa ở Á-Âu, nằm trên eo biển Bosporus (ngăn cách Châu Âu và Châu Á) giữa Biển Marmara và Biển Đen.",
+            "Năm 1923, sau Chiến tranh giành độc lập của Thổ Nhĩ Kỳ, Ankara được chọn làm thủ đô mới của Thổ Nhĩ Kỳ và tên thành phố được đổi thành Istanbul.",
+            "Với hơn 12 triệu du khách nước ngoài, đây là thành phố điểm đến du lịch nổi tiếng thứ năm trên thế giới.",
+            "Nửa phía bắc của thành phố, cũng như bờ biển Bosporus, thể hiện đặc điểm của khí hậu cận nhiệt đới đại dương và ẩm ướt.",
+            "Có một sự khác biệt đáng kể giữa nhiệt độ trung bình hàng năm ở bờ biển phía bắc và phía nam, Bahçeköy 12,8 ° C (55,0 ° F), Kartal 15,03 ° C (59,05 ° F).",
+            "Nó chủ yếu được biết đến với kiến trúc Byzantine và Ottoman",
+            "Grand Bazaar là một trong những thị trường lớn nhất và lâu đời nhất trên thế giới.",
+            "Hagia Sophia là nhà thờ lớn nhất thế giới trong khoảng 900 năm.",
+            "Istanbul có tàu điện ngầm lâu đời thứ ba trên thế giới, được xây dựng vào năm 1875. Nó dài 573 mét và nằm ở quận Beyoglu."
+        ]
+    }
+}

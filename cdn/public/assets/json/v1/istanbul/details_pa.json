@@ -1,0 +1,344 @@
+{
+    "basic_info": {
+        "name": "ਇਸਤਾਂਬੁਲ",
+        "id": "istanbul",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/%C4%B0stanbul-Ayasofya.JPG/1280px-%C4%B0stanbul-Ayasofya.JPG",
+        "place": "ਹਾਗੀਆ ਸੋਫੀਆ, ਇਸਤਾਂਬੁਲ",
+        "licence": "<a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en/\">CC0 1.0</a>",
+        "photo_by": "Robster1983",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:%C4%B0stanbul-Ayasofya.JPG"
+    },
+    "airport": {
+        "name": "ਇਸਤਾਂਬੁਲ ਹਵਾਈ ਅੱਡਾ"
+    },
+    "climate": {
+        "type": "ਪਰਿਵਰਤਨਸ਼ੀਲ ਮੈਡੀਟੇਰੀਅਨ",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "ਗਰਮੀ",
+                "temp": "20 ਡਿਗਰੀ ਸੈਲਸੀਅਸ ਤੋਂ 23 ਡਿਗਰੀ ਸੈਲਸੀਅਸ",
+                "duration": "ਜੂਨ-ਅਗਸਤ"
+            },
+            {
+                "emoji": "🍁",
+                "name": "ਪਤਝੜ",
+                "temp": "11 ਡਿਗਰੀ ਸੈਂਟੀਗਰੇਡ ਤੋਂ 19 ਡਿਗਰੀ ਸੈਲਸੀਅਸ",
+                "duration": "ਸਤੰਬਰ-ਨਵੰਬਰ"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "ਸਰਦੀਆਂ",
+                "temp": "5 ਡਿਗਰੀ ਸੈਲਸੀਅਸ 8 ਡਿਗਰੀ ਸੈਲਸੀਅਸ",
+                "duration": "ਦਸੰਬਰ-ਮਾਰਚ"
+            },
+            {
+                "emoji": "🌼",
+                "name": "ਬਸੰਤ",
+                "temp": "11 ਡਿਗਰੀ ਸੈਂਟੀਗ੍ਰੇਡ ਤੋਂ 16 ਡਿਗਰੀ ਸੈਲਸੀਅਸ",
+                "duration": "ਅਪ੍ਰੈਲ-ਮਈ"
+            }
+        ]
+    },
+    "country": {
+        "name": "ਤੁਰਕੀ 🇹🇷",
+        "continent": "ਯੂਰਪ ਅਤੇ ਏਸ਼ੀਆ"
+    },
+    "currency": {
+        "name": "ਤੁਰਕੀ ਲੀਰਾ",
+        "symbol": "TL",
+        "code": "TRY"
+    },
+    "dance": {
+        "name": "ਹੈਲੀ, ਸਿਫਟੇਲੀ, ਜੀ ਆਇਆਂ ਨੂੰ"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "ਰੋਟਰੀ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Doner_kebab%2C_Istanbul%2C_Turkey.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "(WT-shared) Shoestring",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Doner_kebab,_Istanbul,_Turkey.JPG"
+            },
+            {
+                "label": "Menemen",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2018/10/25/09/08/menemen-3771970_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "Engin_Akyurt",
+                "attribution_url": "https://pixabay.com/photos/menemen-egg-casserole-table-wood-3771970/"
+            },
+            {
+                "label": "ਮੱਛੀ ਦੀ ਰੋਟੀ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bal%C4%B1k-ekmek_in_Ankara.jpg/1024px-Bal%C4%B1k-ekmek_in_Ankara.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "E4024",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Bal%C4%B1k-ekmek_in_Ankara.jpg"
+            },
+            {
+                "label": "ਤੁਰਕੀ ਚਾਹ",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2019/02/28/08/18/tea-4025510_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "smuldur",
+                "attribution_url": "https://pixabay.com/photos/tea-table-turkish-beverage-4025510/"
+            },
+            {
+                "label": "ਤੁਰਕੀ ਅਨੰਦ",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2017/10/27/10/00/turkish-2893751_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "itsbytespixels",
+                "attribution_url": "https://pixabay.com/photos/turkish-sweet-dessert-2893751/"
+            },
+            {
+                "label": "ਕੱਚੇ ਮੀਟਬਾਲ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2017/08/10/16/13/cigkofte-2624336_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "iGlobalWeb",
+                "attribution_url": "https://pixabay.com/photos/cigkofte-turkish-food-bulgur-2624336/"
+            },
+            {
+                "label": "lahmacun",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Lahmacun.jpg/1024px-Lahmacun.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": " Rainer Zenz (asumed)",
+                "attribution_url": "https://en.wikipedia.org/wiki/Lahmacun#/media/File:Lahmacun.jpg"
+            },
+            {
+                "label" : "ਸ਼ੀਸ਼ ਕਬਾਬ",
+                "is_veg": false,
+                "is_non_veg" : true,
+                "photo" : "https://cdn.pixabay.com/photo/2017/09/03/07/10/shish-kebab-2709499_1280.jpg",
+                "licence" : "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by" : "nikitozawr",
+                "attribution_url" : "https://pixabay.com/photos/shish-kebab-meat-kubny-plan-tasty-2709499/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "ਟੈਕਸਟਾਈਲ",
+        "secondary": [
+            "ਕਾਰਪੇਟ",
+            "Food processing"
+        ]
+    },
+    "language": {
+        "primary": "ਤੁਰਕੀ",
+        "secondary": [
+            "ਅੰਗਰੇਜ਼ੀ"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_pa_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_pa_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_pa_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_pa_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_pa_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Kis Uykusu",
+                "poster_url": "https://image.tmdb.org/t/p/w500/iHIS7FjHpj7JtBEuNzvHeTRIzEk.jpg"
+            },
+            {
+                "title": "Bir Zamanlar Anadolu'da",
+                "poster_url": "https://image.tmdb.org/t/p/w500/2V3JClFTjw4ToBIyBo2PxMdiyCS.jpg"
+            },
+            {
+                "title": "Mustang",
+                "poster_url": "https://image.tmdb.org/t/p/w500/lyoBiBKdCm4ed1yZJAo7llM3vdg.jpg"
+            },
+            {
+                "title" : "Kelebegin Rüyasi",
+                "poster_url" : "https://image.tmdb.org/t/p/w500/q3lx59mnABD1phQuSxswabamvpn.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name" : "ਰਿਸਪ ਤਯਿਪ ਅਰਦੋਗਨ",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/6/65/Recep_Tayyip_Erdo%C4%9Fan_2019_%28cropped%29.jpg",
+                "work" : "ਟਰਕੀ ਦੇ ਰਾਸ਼ਟਰਪਤੀ",
+                "place" : "ਕਸੀਮਪਾਸਾ, ਇਸਤਾਂਬੁਲ",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by" : "Mikhail Palinchak",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Recep_Tayyip_Erdo%C4%9Fan_2019_(cropped).jpg"
+            },
+            {
+                "name"     : "ਮਹਿਮਦ VI",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Sultan_Mehmed_VI_of_the_Ottoman_Empire.jpg/576px-Sultan_Mehmed_VI_of_the_Ottoman_Empire.jpg",
+                "place" : "ਇਸਤਾਂਬੁਲ",
+                "work" : "ਓਟੋਮੈਨ ਸਾਮਰਾਜ ਦਾ ਆਖਰੀ ਸੁਲਤਾਨ"
+                
+            },
+
+            {
+                "name" : "ਅਰਦਾ ਤੁਰਨ",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/AUT_vs._TUR_2016-03-29_%28283%29.jpg/512px-AUT_vs._TUR_2016-03-29_%28283%29.jpg",
+                "work" : "ਪੇਸ਼ੇਵਰ ਫੁਟਬਾਲਰ",
+                "place" : "ਫਾਤਿਹ, ਇਸਤਾਂਬੁਲ",
+                "photo_by" : "Steindy",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url" : "https://en.wikipedia.org/wiki/File:AUT_vs._TUR_2016-03-29_(283).jpg"
+            },
+            {
+                "name" : "ਹਾਲੀਡੇ ਐਡੀਬ ਅਦਾਵਰ",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/6/6c/Halide_adivar.jpg",
+                "work" : "ਨਾਵਲਕਾਰ, ਰਾਸ਼ਟਰਵਾਦੀ ਅਤੇ women'sਰਤਾਂ ਦੇ ਅਧਿਕਾਰਾਂ ਲਈ ਰਾਜਨੀਤਿਕ ਨੇਤਾ",
+                "place" : "ਇਸਤਾਂਬੁਲ"
+            },
+
+            {
+                "name" : "ਨੂਰੀ ਬਿਲਗੇ ਸੈਲਾਨ",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/1/1a/Nuribilgeceylan.jpg",
+                "work" : "ਫਿਲਮ ਨਿਰਦੇਸ਼ਕ",
+                "place" : "ਇਸਤਾਂਬੁਲ"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ ਫੁਟਬਾਲ",
+        "footer": "ਬਾਸਕੇਟਬਾਲ ਅਤੇ ਵਾਲੀਬਾਲ"
+    },
+    "time_to_visit": {
+        "primary": "ਅਪ੍ਰੈਲ-ਮਈ",
+        "secondary": "ਸਤੰਬਰ-ਅਕਤੂਬਰ"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "ਹਾਗੀਆ ਸੋਫੀਆ ਅਜਾਇਬ ਘਰ",
+                "description": "ਮੋਜ਼ੇਕ ਦੇ ਨਾਲ ਬਾਈਜੈਂਟਾਈਨ ਬੇਸਿਲਿਕਾ ਅਜਾਇਬ ਘਰ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOuPf6PMw2jRqqdJPElxYE-wVKFyc8gWYFDpmaE=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114411208126953807978\">Wolfgang Unglaub</a>"
+                ],
+                "place_id": "ChIJJxwBkr65yhQRrk9EN29vbiM"
+            },
+            {
+                "name": "ਨੀਲੀ ਮਸਜਿਦ",
+                "description": "ਆਈਕਾਨਿਕ ਬਲੂ ਮਸਜਿਦ 6 ਮਿਨਾਰਾਂ ਦੇ ਨਾਲ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPs-6o2nVgLFk0c_OQFlOo4rGUhvZfwN2vqs7He=s1600-w800",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116568261039607681002\">Mohsin Ali</a>"
+                ],
+                "place_id": "ChIJ4fRwZb25yhQRpHwVijb3LeU"
+            },
+            {
+                "name": "ਟੋਪਕਾਪੀ ਪੈਲੇਸ ਅਜਾਇਬ ਘਰ",
+                "description": "ਇਤਿਹਾਸਕ ਓਟੋਮੈਨ-ਯੁੱਗ ਦਾ ਪੈਲੇਸ ਕੰਪਲੈਕਸ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMIB4qi5U-HFY7HhzlJsyDL-TzZf_1d-yTcRs-3=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113253188086359121984\">Alex Massari</a>"
+                ],
+                "place_id": "ChIJM_ilr7i5yhQRAFMBw0MZqhU"
+            },
+            {
+                "name": "ਸ਼ਾਨਦਾਰ ਬਾਜ਼ਾਰ",
+                "description": "ਰੰਗੀਨ coveredੱਕੇ ਹੋਏ ਬਾਜ਼ਾਰਾਂ ਦੀ ਭੁੱਲ",
+                "place_id": "ChIJJwXXYpG5yhQRq5jBWgtoyGQ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP4-n_6Fkw99eiVom0-J71N5d3XQ1dkI6EDB5Rl=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112363346142702930782\">Juan Jurado</a>"
+                ]
+            },
+            {
+                "name" : "ਸੁਲੇਮਾਨੇਯ ਮਸਜਿਦ",
+                "description": "16 ਵੀਂ ਸਦੀ ਦੀ ਓਟੋਮੈਨ ਮਸਜਿਦ ਨੂੰ ਸਜਾਏ ਗਏ",
+                "place_id" : "ChIJMRDAOo25yhQR7c9XIQT1zIo",
+                "photos" : "https://lh3.googleusercontent.com/p/AF1QipMdvPCASefEvJbMi_j4UC5bD75E3EkBbnhOaRKV=s1600-w900",
+                "html_attributions" : [
+                    "<a href=\"https://maps.google.com/maps/contrib/104937090589239040242\">Saleh MIL</a>"
+                ]
+            },
+            {
+                "name": "ਬਾਸਫੋਰਸ",
+                "description": "ਲੈਂਡਮਾਰਕ ਵਾਟਰਵੇਅ ਅਤੇ ਮਹਾਂਦੀਪ ਦੀ ਸੀਮਾ",
+                "place_id": "ChIJn5k8FGjKyhQRtd_p_WFbAGM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPFUHkaRVQiA-WSmzg2eNL0T4EPxIFOZYfT9mqq=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115855376794259556107\">Archon K</a>"
+                ]
+            },
+            {
+                "name": "ਬੇਸਿਲਕਾ ਸਿਸਟਰਨ",
+                "description": "542 ਏ.ਡੀ. ਵਾਟਰ ਵਰਕਸ ਨੂੰ ਬਹਾਲ ਕੀਤਾ ਗਿਆ",
+                "place_id": "ChIJyWrG4L25yhQRcYRt7uEvwGA",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPyn_xYhodZyegis5K7nxGGASjSjh7adG5szJfU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108614338924270739269\">Marcello Marques</a>"
+                ]
+            },
+            {
+                "name": "ਡੌਲਮਬਾਹੀ ਪੈਲੇਸ",
+                "description": "ਸਜਾਵਟ ਓਟੋਮਨ ਸੁਲਤਾਨ ਦੇ ਮਹਿਲ ਵਿੱਚ ਅਜਾਇਬ ਘਰ",
+                "place_id": "ChIJ4307Gna3yhQRC4M7zzg-09w",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNeK0l0FchFWjap4fuZQ-hV9_WFklgrcPNib1S4=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112288080342389239027\">Dolmabahçe Sarayı</a>"
+                ]
+            },
+            {
+                "name": "ਗੈਲਟਾ ਟਾਵਰ",
+                "description": "67-ਮੀਟਰ ਬਾਈਜੈਂਟਾਈਨ ਟਾਵਰ ਅਤੇ ਰੈਸਟੋਰੈਂਟ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPALjJCJBqgu7MiuGzbZ_f_acwm8oRfruxd4Rwu=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105671018490792374724\">tarek radwan</a>"
+                ],
+                "place_id": "ChIJQ3x3p-e5yhQRCzOLzD3Pdkw"
+            },
+            {
+                "name": "ਸੁਲਤਾਨਾਹਮੇਟ ਵਰਗ",
+                "description": "ਪਬਲਿਕ ਵਰਗ ਜਿੱਥੇ ਹਿੱਪੋਡਰੋਮ ਖੜ੍ਹਾ ਸੀ",
+                "place_id": "ChIJ2XlLfO25yhQR8Hcxg0Af5V4",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipN0g7kypDV_QVGIOPtwgWkptI62rOmavXIM3T06=s1600-w845",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106989409402974863626\">Naci Gülaçmaz</a>"
+                ]
+            },
+            {
+                "name": "ਸਪਾਈਸ ਬਾਜ਼ਾਰ",
+                "description": "ਇਤਿਹਾਸਕ coveredੱਕਿਆ ਹੋਇਆ ਮਸਾਲਾ ਅਤੇ ਕੱਪੜਾ ਬਾਜ਼ਾਰ",
+                "place_id": "ChIJn9t8b-u5yhQRXVCwl43vu0Q",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNZPBA6-TUrZnaun7dYvlvpim0TZ086qstuaetD=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115862629829929880484\">Alberto Gozzelino</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 180,
+    "trivia": {
+        "items": [
+            "ਇਹ ਪਹਿਲਾਂ ਬਾਈਜੈਂਟੀਅਮ ਅਤੇ ਕਾਂਸਟੇਂਟਿਨੋਪਲ ਦੇ ਨਾਮ ਨਾਲ ਜਾਣਿਆ ਜਾਂਦਾ ਸੀ.",
+            "ਇਹ ਤੁਰਕੀ ਦਾ ਸਭ ਤੋਂ ਵੱਧ ਆਬਾਦੀ ਵਾਲਾ ਸ਼ਹਿਰ ਹੈ.",
+            "ਇਹ ਤੁਰਕੀ ਵਿੱਚ ਆਰਥਿਕ, ਸਭਿਆਚਾਰਕ ਅਤੇ ਇਤਿਹਾਸਕ ਕੇਂਦਰ ਹੈ.",
+            "ਇਸਤਾਂਬੁਲ ਯੂਰਸੀਆ ਦਾ ਇਕ ਟਰਾਂਸਕੌਂਟੀਨੈਂਟਲ ਸ਼ਹਿਰ ਹੈ, ਜੋ ਕਿ ਮਾਰਪਰਾ ਸਾਗਰ ਅਤੇ ਕਾਲੇ ਸਾਗਰ ਦੇ ਵਿਚਕਾਰ ਬੋਸਪੋਰਸ ਸਮੁੰਦਰੀ ਜਹਾਜ਼ (ਜੋ ਯੂਰਪ ਅਤੇ ਏਸ਼ੀਆ ਨੂੰ ਵੱਖ ਕਰਦਾ ਹੈ) ਵਿਚ ਫੈਲਿਆ ਹੋਇਆ ਹੈ.",
+            "1923 ਵਿਚ, ਤੁਰਕੀ ਦੀ ਆਜ਼ਾਦੀ ਦੀ ਲੜਾਈ ਤੋਂ ਬਾਅਦ, ਅੰਕਾਰਾ ਨੂੰ ਤੁਰਕੀ ਦੀ ਨਵੀਂ ਰਾਜਧਾਨੀ ਚੁਣਿਆ ਗਿਆ, ਅਤੇ ਸ਼ਹਿਰ ਦਾ ਨਾਮ ਬਦਲ ਕੇ ਇਸਤਾਂਬੁਲ ਕਰ ਦਿੱਤਾ ਗਿਆ.",
+            "12 ਮਿਲੀਅਨ ਤੋਂ ਵੱਧ ਵਿਦੇਸ਼ੀ ਯਾਤਰੀਆਂ ਦੇ ਨਾਲ, ਇਹ ਸ਼ਹਿਰ ਦੁਨੀਆ ਦਾ ਪੰਜਵਾਂ ਸਭ ਤੋਂ ਪ੍ਰਸਿੱਧ ਸੈਲਾਨੀ ਸਥਾਨ ਹੈ.",
+            "ਸ਼ਹਿਰ ਦਾ ਉੱਤਰੀ ਅੱਧਾ ਹਿੱਸਾ, ਅਤੇ ਨਾਲ ਹੀ ਬੋਸਪੋਰਸ ਸਮੁੰਦਰੀ ਕੰlineੇ, ਸਮੁੰਦਰੀ ਅਤੇ ਨਮੀ ਵਾਲੇ ਸਬਟ੍ਰੋਪਿਕਲ ਮੌਸਮ ਦੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਜ਼ਾਹਰ ਕਰਦੇ ਹਨ.",
+            "ਉੱਤਰ ਅਤੇ ਦੱਖਣ ਦੇ ਸਮੁੰਦਰੀ ਤੱਟ 'ਤੇ ਸਾਲਾਨਾ ਦੇ ਤਾਪਮਾਨ ਦੇ ਤਾਪਮਾਨ ਵਿਚ ਵੀ ਮਹੱਤਵਪੂਰਨ ਅੰਤਰ ਹੈ, ਬਹਿਕੇ 12.8 ਡਿਗਰੀ ਸੈਲਸੀਅਸ (55.0 ਡਿਗਰੀ ਸੈਲਸੀਅਸ), ਕਰਟਲ 15.03 ° C (59.05 ° F).",
+            "ਇਹ ਮੁੱਖ ਤੌਰ ਤੇ ਇਸਦੀ ਬਾਈਜੈਂਟਾਈਨ ਅਤੇ ਓਟੋਮੈਨ ਆਰਕੀਟੈਕਚਰ ਲਈ ਜਾਣਿਆ ਜਾਂਦਾ ਹੈ",
+            "ਗ੍ਰੈਂਡ ਬਾਜ਼ਾਰ ਦੁਨੀਆ ਦਾ ਸਭ ਤੋਂ ਵੱਡਾ ਅਤੇ ਪੁਰਾਣਾ ਕਵਰ ਕੀਤਾ ਬਾਜ਼ਾਰ ਹੈ.",
+            "ਹਾਗੀਆ ਸੋਫੀਆ ਲਗਭਗ 900 ਸਾਲਾਂ ਤੋਂ ਦੁਨੀਆ ਦਾ ਸਭ ਤੋਂ ਵੱਡਾ ਚਰਚ ਸੀ.",
+            "ਇਸਤਾਂਬੁਲ ਕੋਲ ਦੁਨੀਆ ਦਾ ਤੀਜਾ ਸਭ ਤੋਂ ਪੁਰਾਣਾ ਸਬਵੇਅ ਹੈ, ਜੋ 1875 ਵਿੱਚ ਬਣਾਇਆ ਗਿਆ ਸੀ। ਇਹ 573 ਮੀਟਰ ਲੰਬਾ ਹੈ ਅਤੇ ਬੇਯੋਗਲੂ ਜ਼ਿਲ੍ਹੇ ਵਿੱਚ ਸਥਿਤ ਹੈ।"
+        ]
+    }
+}

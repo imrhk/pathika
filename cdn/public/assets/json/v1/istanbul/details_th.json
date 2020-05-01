@@ -1,0 +1,344 @@
+{
+    "basic_info": {
+        "name": "อิสตันบูล",
+        "id": "istanbul",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/%C4%B0stanbul-Ayasofya.JPG/1280px-%C4%B0stanbul-Ayasofya.JPG",
+        "place": "สุเหร่าโซเฟียอิสตันบูล",
+        "licence": "<a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en/\">CC0 1.0</a>",
+        "photo_by": "Robster1983",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:%C4%B0stanbul-Ayasofya.JPG"
+    },
+    "airport": {
+        "name": "สนามบินที่อิสตันบูล"
+    },
+    "climate": {
+        "type": "เมดิเตอร์เรเนียนเฉพาะกาล",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "ฤดูร้อน",
+                "temp": "20 ° C ถึง 23 ° C",
+                "duration": "มิถุนายน ส.ค."
+            },
+            {
+                "emoji": "🍁",
+                "name": "ฤดูใบไม้ร่วง",
+                "temp": "11 ° C ถึง 19 ° C",
+                "duration": "ก.ย. พฤศจิกายน"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "ฤดูหนาว",
+                "temp": "5 ° C ถึง 8 ° C",
+                "duration": "ธ.ค. Mar"
+            },
+            {
+                "emoji": "🌼",
+                "name": "ฤดูใบไม้ผลิ",
+                "temp": "11 ° C ถึง 16 ° C",
+                "duration": "เม.ย. พ.ค."
+            }
+        ]
+    },
+    "country": {
+        "name": "ตุรกี🇹🇷",
+        "continent": "ยุโรปและเอเชีย"
+    },
+    "currency": {
+        "name": "ลีร่าตุรกี",
+        "symbol": "TL",
+        "code": "TRY"
+    },
+    "dance": {
+        "name": "เฮลีย์ Ciftetelli ยินดีต้อนรับ"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "สับเปลี่ยน",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Doner_kebab%2C_Istanbul%2C_Turkey.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "(WT-shared) Shoestring",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Doner_kebab,_Istanbul,_Turkey.JPG"
+            },
+            {
+                "label": "Menemen",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2018/10/25/09/08/menemen-3771970_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "Engin_Akyurt",
+                "attribution_url": "https://pixabay.com/photos/menemen-egg-casserole-table-wood-3771970/"
+            },
+            {
+                "label": "ขนมปังปลา",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bal%C4%B1k-ekmek_in_Ankara.jpg/1024px-Bal%C4%B1k-ekmek_in_Ankara.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "E4024",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Bal%C4%B1k-ekmek_in_Ankara.jpg"
+            },
+            {
+                "label": "ชาตุรกี",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2019/02/28/08/18/tea-4025510_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "smuldur",
+                "attribution_url": "https://pixabay.com/photos/tea-table-turkish-beverage-4025510/"
+            },
+            {
+                "label": "ความสุขของตุรกี",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2017/10/27/10/00/turkish-2893751_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "itsbytespixels",
+                "attribution_url": "https://pixabay.com/photos/turkish-sweet-dessert-2893751/"
+            },
+            {
+                "label": "ลูกชิ้นดิบ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2017/08/10/16/13/cigkofte-2624336_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "iGlobalWeb",
+                "attribution_url": "https://pixabay.com/photos/cigkofte-turkish-food-bulgur-2624336/"
+            },
+            {
+                "label": "Lahmacun",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Lahmacun.jpg/1024px-Lahmacun.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": " Rainer Zenz (asumed)",
+                "attribution_url": "https://en.wikipedia.org/wiki/Lahmacun#/media/File:Lahmacun.jpg"
+            },
+            {
+                "label" : "เคบับ Shish",
+                "is_veg": false,
+                "is_non_veg" : true,
+                "photo" : "https://cdn.pixabay.com/photo/2017/09/03/07/10/shish-kebab-2709499_1280.jpg",
+                "licence" : "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by" : "nikitozawr",
+                "attribution_url" : "https://pixabay.com/photos/shish-kebab-meat-kubny-plan-tasty-2709499/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "สิ่งทอ",
+        "secondary": [
+            "พรม",
+            "Food processing"
+        ]
+    },
+    "language": {
+        "primary": "ตุรกี",
+        "secondary": [
+            "อังกฤษ"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_th_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_th_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_th_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_th_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_th_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Kis Uykusu",
+                "poster_url": "https://image.tmdb.org/t/p/w500/iHIS7FjHpj7JtBEuNzvHeTRIzEk.jpg"
+            },
+            {
+                "title": "Bir Zamanlar Anadolu'da",
+                "poster_url": "https://image.tmdb.org/t/p/w500/2V3JClFTjw4ToBIyBo2PxMdiyCS.jpg"
+            },
+            {
+                "title": "Mustang",
+                "poster_url": "https://image.tmdb.org/t/p/w500/lyoBiBKdCm4ed1yZJAo7llM3vdg.jpg"
+            },
+            {
+                "title" : "Kelebegin Rüyasi",
+                "poster_url" : "https://image.tmdb.org/t/p/w500/q3lx59mnABD1phQuSxswabamvpn.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name" : "รับ Tayyip Erdogan",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/6/65/Recep_Tayyip_Erdo%C4%9Fan_2019_%28cropped%29.jpg",
+                "work" : "ประธานาธิบดีแห่งตุรกี",
+                "place" : "Kasimpasa อิสตันบูล",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by" : "Mikhail Palinchak",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Recep_Tayyip_Erdo%C4%9Fan_2019_(cropped).jpg"
+            },
+            {
+                "name"     : "เมห์เม็ดที่ VI",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Sultan_Mehmed_VI_of_the_Ottoman_Empire.jpg/576px-Sultan_Mehmed_VI_of_the_Ottoman_Empire.jpg",
+                "place" : "อิสตันบูล",
+                "work" : "สุลต่านแห่งจักรวรรดิออตโตมันครั้งสุดท้าย"
+                
+            },
+
+            {
+                "name" : "Arda Turan",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/AUT_vs._TUR_2016-03-29_%28283%29.jpg/512px-AUT_vs._TUR_2016-03-29_%28283%29.jpg",
+                "work" : "นักฟุตบอลอาชีพ",
+                "place" : "Fatih, Istanbul",
+                "photo_by" : "Steindy",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url" : "https://en.wikipedia.org/wiki/File:AUT_vs._TUR_2016-03-29_(283).jpg"
+            },
+            {
+                "name" : "Halide Edib Adıvar",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/6/6c/Halide_adivar.jpg",
+                "work" : "นักประพันธ์นักชาตินิยมและผู้นำทางการเมืองเพื่อสิทธิสตรี",
+                "place" : "อิสตันบูล"
+            },
+
+            {
+                "name" : "Nuri Bilge Ceylan",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/1/1a/Nuribilgeceylan.jpg",
+                "work" : "ผู้กำกับภาพยนตร์",
+                "place" : "อิสตันบูล"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ฟุตบอล",
+        "footer": "บาสเก็ตบอลและวอลเลย์บอล"
+    },
+    "time_to_visit": {
+        "primary": "เดือนเมษายนถึงพฤษภาคม",
+        "secondary": "กันยายนตุลาคม"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "พิพิธภัณฑ์ฮาเกียโซเฟีย",
+                "description": "พิพิธภัณฑ์มหาวิหารไบแซนไทน์มีโมเสก",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOuPf6PMw2jRqqdJPElxYE-wVKFyc8gWYFDpmaE=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114411208126953807978\">Wolfgang Unglaub</a>"
+                ],
+                "place_id": "ChIJJxwBkr65yhQRrk9EN29vbiM"
+            },
+            {
+                "name": "มัสยิดบลู",
+                "description": "Iconic Blue Mosque 6 minarets",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPs-6o2nVgLFk0c_OQFlOo4rGUhvZfwN2vqs7He=s1600-w800",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116568261039607681002\">Mohsin Ali</a>"
+                ],
+                "place_id": "ChIJ4fRwZb25yhQRpHwVijb3LeU"
+            },
+            {
+                "name": "พิพิธภัณฑ์พระราชวัง Topkapi",
+                "description": "พระราชวังในยุคออตโตมันอันเก่าแก่",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMIB4qi5U-HFY7HhzlJsyDL-TzZf_1d-yTcRs-3=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113253188086359121984\">Alex Massari</a>"
+                ],
+                "place_id": "ChIJM_ilr7i5yhQRAFMBw0MZqhU"
+            },
+            {
+                "name": "แกรนด์บาซาร์",
+                "description": "ตลาดที่เต็มไปด้วยสีสันของเขาวงกต",
+                "place_id": "ChIJJwXXYpG5yhQRq5jBWgtoyGQ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP4-n_6Fkw99eiVom0-J71N5d3XQ1dkI6EDB5Rl=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112363346142702930782\">Juan Jurado</a>"
+                ]
+            },
+            {
+                "name" : "มัสยิด Suleymaniye",
+                "description": "มัสยิดออตโตมันสมัยศตวรรษที่ 16",
+                "place_id" : "ChIJMRDAOo25yhQR7c9XIQT1zIo",
+                "photos" : "https://lh3.googleusercontent.com/p/AF1QipMdvPCASefEvJbMi_j4UC5bD75E3EkBbnhOaRKV=s1600-w900",
+                "html_attributions" : [
+                    "<a href=\"https://maps.google.com/maps/contrib/104937090589239040242\">Saleh MIL</a>"
+                ]
+            },
+            {
+                "name": "บอสฟอรัส",
+                "description": "สถานที่สำคัญทางน้ำและพรมแดน",
+                "place_id": "ChIJn5k8FGjKyhQRtd_p_WFbAGM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPFUHkaRVQiA-WSmzg2eNL0T4EPxIFOZYfT9mqq=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115855376794259556107\">Archon K</a>"
+                ]
+            },
+            {
+                "name": "โบสถ์ Cistern",
+                "description": "กู้คืน 542 A.D. การประปา",
+                "place_id": "ChIJyWrG4L25yhQRcYRt7uEvwGA",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPyn_xYhodZyegis5K7nxGGASjSjh7adG5szJfU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108614338924270739269\">Marcello Marques</a>"
+                ]
+            },
+            {
+                "name": "พระราชวังDolmabahçe",
+                "description": "พิพิธภัณฑ์ในพระราชวังสุลต่านออตโตมันอันหรูหรา",
+                "place_id": "ChIJ4307Gna3yhQRC4M7zzg-09w",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNeK0l0FchFWjap4fuZQ-hV9_WFklgrcPNib1S4=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112288080342389239027\">Dolmabahçe Sarayı</a>"
+                ]
+            },
+            {
+                "name": "หอคอยกาลาตา",
+                "description": "หอ Byzantine สูง 67 เมตร",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPALjJCJBqgu7MiuGzbZ_f_acwm8oRfruxd4Rwu=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105671018490792374724\">tarek radwan</a>"
+                ],
+                "place_id": "ChIJQ3x3p-e5yhQRCzOLzD3Pdkw"
+            },
+            {
+                "name": "จัตุรัสสุลต่านอาห์เมต",
+                "description": "จัตุรัสสาธารณะที่ฮิปโปโดรมยืนอยู่",
+                "place_id": "ChIJ2XlLfO25yhQR8Hcxg0Af5V4",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipN0g7kypDV_QVGIOPtwgWkptI62rOmavXIM3T06=s1600-w845",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106989409402974863626\">Naci Gülaçmaz</a>"
+                ]
+            },
+            {
+                "name": "Spice Bazaar",
+                "description": "ตลาดเครื่องเทศและตลาดสิ่งทอ",
+                "place_id": "ChIJn9t8b-u5yhQRXVCwl43vu0Q",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNZPBA6-TUrZnaun7dYvlvpim0TZ086qstuaetD=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115862629829929880484\">Alberto Gozzelino</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 180,
+    "trivia": {
+        "items": [
+            "มันเคยเป็นที่รู้จักกันในนามไบแซนเทียมและคอนสแตนติโนเปิล",
+            "มันเป็นเมืองที่มีประชากรมากที่สุดในตุรกี",
+            "มันเป็นศูนย์กลางทางเศรษฐกิจวัฒนธรรมและประวัติศาสตร์ในตุรกี",
+            "อิสตันบูลเป็นเมืองข้ามทวีปในยูเรเซียคร่อมช่องแคบ Bosporus (ซึ่งแยกยุโรปและเอเชีย) ระหว่างทะเลมาร์มาราและทะเลดำ",
+            "ในปี 1923 หลังจากสงครามอิสรภาพตุรกีอังการาได้รับเลือกให้เป็นเมืองหลวงของตุรกีใหม่และเปลี่ยนชื่อเมืองเป็นอิสตันบูล",
+            "ด้วยจำนวนนักท่องเที่ยวกว่า 12 ล้านคนทำให้เมืองนี้เป็นเมืองท่องเที่ยวอันดับห้าของโลก",
+            "ครึ่งทางตอนเหนือของเมืองเช่นเดียวกับแนวชายฝั่งของบอสปอรัสแสดงถึงลักษณะภูมิอากาศกึ่งเขตร้อนชื้นของมหาสมุทรและชื้น",
+            "มีความแตกต่างอย่างมีนัยสำคัญระหว่างอุณหภูมิเฉลี่ยต่อปีบนชายฝั่งทางเหนือและใต้เช่นกันBahçeköy 12.8 ° C (55.0 ° F), Kartal 15.03 ° C (59.05 ° F)",
+            "เป็นที่รู้จักกันเป็นหลักสำหรับสถาปัตยกรรมไบแซนไทน์และออตโตมัน",
+            "Grand Bazaar เป็นหนึ่งในตลาดที่ใหญ่ที่สุดและเก่าแก่ที่สุดในโลก",
+            "สุเหร่าโซเฟียเป็นโบสถ์ที่ใหญ่ที่สุดในโลกประมาณ 900 ปี",
+            "อิสตันบูลมีรถไฟใต้ดินที่เก่าแก่ที่สุดเป็นอันดับสามของโลกสร้างขึ้นในปี 1875 มีความยาว 573 เมตรและตั้งอยู่ในเขต Beyoglu"
+        ]
+    }
+}

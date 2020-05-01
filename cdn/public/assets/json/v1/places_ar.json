@@ -1,14 +1,42 @@
 [
     {
-        "id" : "buenos_aires",
-        "name" : "بوينس آيرس"
+        "name": "بوينس آيرس",
+        "id": "buenos_aires",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Puerto_Madero%2C_Buenos_Aires_%2840689219792%29.jpg/1280px-Puerto_Madero%2C_Buenos_Aires_%2840689219792%29.jpg",
+        "place": "بويرتو ماديرو ، بوينس آيرس",
+        "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+        "photo_by": "Deensel",
+        "attribution_url": "https://www.flickr.com/photos/deensel/40689219792/",
+        "country": "الأرجنتين 🇦🇷"
     },
     {
-        "id" : "munich",
-        "name": "ميونيخ"
+        "name": "ميونيخ",
+        "id": "munich",
+        "background_image": "https://cdn.pixabay.com/photo/2019/12/21/10/19/munich-4710182_1280.jpg",
+        "place": "ميونيخ تاون هول هول",
+        "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+        "photo_by": "schliff",
+        "attribution_url": "https://pixabay.com/photos/munich-marienplatz-bavaria-4710182/",
+        "country": "ألمانيا 🇩🇪"
     },
     {
-        "id" : "osaka",
-        "name": "أوساكا"
+        "name": "أوساكا",
+        "id": "osaka",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Central_Osaka.jpg/1280px-Central_Osaka.jpg",
+        "place": "وسط أوساكا",
+        "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+        "photo_by": "Type specimen",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Central_Osaka.jpg",
+        "country": "اليابان 🇯🇵"
+    },
+    {
+        "name": "اسطنبول",
+        "id": "istanbul",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/%C4%B0stanbul-Ayasofya.JPG/1280px-%C4%B0stanbul-Ayasofya.JPG",
+        "place": "آيا صوفيا ، اسطنبول",
+        "licence": "<a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en/\">CC0 1.0</a>",
+        "photo_by": "Robster1983",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:%C4%B0stanbul-Ayasofya.JPG",
+        "country": "تركيا 🇹🇷"
     }
 ]

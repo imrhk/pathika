@@ -1,0 +1,344 @@
+{
+    "basic_info": {
+        "name": "இஸ்தான்புல்",
+        "id": "istanbul",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/%C4%B0stanbul-Ayasofya.JPG/1280px-%C4%B0stanbul-Ayasofya.JPG",
+        "place": "ஹாகியா சோபியா, இஸ்தான்புல்",
+        "licence": "<a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en/\">CC0 1.0</a>",
+        "photo_by": "Robster1983",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:%C4%B0stanbul-Ayasofya.JPG"
+    },
+    "airport": {
+        "name": "இஸ்தான்புல் விமான நிலையம்"
+    },
+    "climate": {
+        "type": "இடைக்கால மத்தியதரைக் கடல்",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "கோடை",
+                "temp": "20 ° C முதல் 23. C வரை",
+                "duration": "ஜூன்-ஆகஸ்ட்"
+            },
+            {
+                "emoji": "🍁",
+                "name": "இலையுதிர் காலம்",
+                "temp": "11 ° C முதல் 19. C வரை",
+                "duration": "செப்-நவ"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "குளிர்காலம்",
+                "temp": "5 ° C முதல் 8. C வரை",
+                "duration": "டிசம்பர்-மார்ச்"
+            },
+            {
+                "emoji": "🌼",
+                "name": "வசந்த",
+                "temp": "11 ° C முதல் 16. C வரை",
+                "duration": "ஏப்ரல்-மே"
+            }
+        ]
+    },
+    "country": {
+        "name": "துருக்கி",
+        "continent": "ஐரோப்பா மற்றும் ஆசியா"
+    },
+    "currency": {
+        "name": "துருக்கிய லிரா",
+        "symbol": "TL",
+        "code": "TRY"
+    },
+    "dance": {
+        "name": "ஹேலி, சிஃப்டெல்லி, வரவேற்கிறோம்"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "ரோட்டரி",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Doner_kebab%2C_Istanbul%2C_Turkey.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "(WT-shared) Shoestring",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Doner_kebab,_Istanbul,_Turkey.JPG"
+            },
+            {
+                "label": "Menemen",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2018/10/25/09/08/menemen-3771970_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "Engin_Akyurt",
+                "attribution_url": "https://pixabay.com/photos/menemen-egg-casserole-table-wood-3771970/"
+            },
+            {
+                "label": "மீன் ரொட்டி",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bal%C4%B1k-ekmek_in_Ankara.jpg/1024px-Bal%C4%B1k-ekmek_in_Ankara.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "E4024",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Bal%C4%B1k-ekmek_in_Ankara.jpg"
+            },
+            {
+                "label": "துருக்கிய தேநீர்",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2019/02/28/08/18/tea-4025510_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "smuldur",
+                "attribution_url": "https://pixabay.com/photos/tea-table-turkish-beverage-4025510/"
+            },
+            {
+                "label": "துருக்கிய மகிழ்ச்சி",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2017/10/27/10/00/turkish-2893751_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "itsbytespixels",
+                "attribution_url": "https://pixabay.com/photos/turkish-sweet-dessert-2893751/"
+            },
+            {
+                "label": "மூல மீட்பால்ஸ்",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2017/08/10/16/13/cigkofte-2624336_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "iGlobalWeb",
+                "attribution_url": "https://pixabay.com/photos/cigkofte-turkish-food-bulgur-2624336/"
+            },
+            {
+                "label": "லாஹ்மகுன்",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Lahmacun.jpg/1024px-Lahmacun.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": " Rainer Zenz (asumed)",
+                "attribution_url": "https://en.wikipedia.org/wiki/Lahmacun#/media/File:Lahmacun.jpg"
+            },
+            {
+                "label" : "ஷிஷ் கபாப்ஸ்",
+                "is_veg": false,
+                "is_non_veg" : true,
+                "photo" : "https://cdn.pixabay.com/photo/2017/09/03/07/10/shish-kebab-2709499_1280.jpg",
+                "licence" : "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by" : "nikitozawr",
+                "attribution_url" : "https://pixabay.com/photos/shish-kebab-meat-kubny-plan-tasty-2709499/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "ஜவுளி",
+        "secondary": [
+            "கம்பளம்",
+            "Food processing"
+        ]
+    },
+    "language": {
+        "primary": "துருக்கியம்",
+        "secondary": [
+            "ஆங்கிலம்"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_ta_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_ta_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_ta_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_ta_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_ta_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Kis Uykusu",
+                "poster_url": "https://image.tmdb.org/t/p/w500/iHIS7FjHpj7JtBEuNzvHeTRIzEk.jpg"
+            },
+            {
+                "title": "Bir Zamanlar Anadolu'da",
+                "poster_url": "https://image.tmdb.org/t/p/w500/2V3JClFTjw4ToBIyBo2PxMdiyCS.jpg"
+            },
+            {
+                "title": "Mustang",
+                "poster_url": "https://image.tmdb.org/t/p/w500/lyoBiBKdCm4ed1yZJAo7llM3vdg.jpg"
+            },
+            {
+                "title" : "Kelebegin Rüyasi",
+                "poster_url" : "https://image.tmdb.org/t/p/w500/q3lx59mnABD1phQuSxswabamvpn.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name" : "ரெசெப் தயிப் எர்டோகன்",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/6/65/Recep_Tayyip_Erdo%C4%9Fan_2019_%28cropped%29.jpg",
+                "work" : "துருக்கி ஜனாதிபதி",
+                "place" : "காசிம்பசா, இஸ்தான்புல்",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by" : "Mikhail Palinchak",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Recep_Tayyip_Erdo%C4%9Fan_2019_(cropped).jpg"
+            },
+            {
+                "name"     : "மெஹ்மத் VI",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Sultan_Mehmed_VI_of_the_Ottoman_Empire.jpg/576px-Sultan_Mehmed_VI_of_the_Ottoman_Empire.jpg",
+                "place" : "இஸ்தான்புல்",
+                "work" : "ஒட்டோமான் பேரரசின் கடைசி சுல்தான்"
+                
+            },
+
+            {
+                "name" : "அர்தா துரான்",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/AUT_vs._TUR_2016-03-29_%28283%29.jpg/512px-AUT_vs._TUR_2016-03-29_%28283%29.jpg",
+                "work" : "தொழில்முறை கால்பந்து வீரர்",
+                "place" : "ஃபாத்திஹ், இஸ்தான்புல்",
+                "photo_by" : "Steindy",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url" : "https://en.wikipedia.org/wiki/File:AUT_vs._TUR_2016-03-29_(283).jpg"
+            },
+            {
+                "name" : "ஹாலிட் எடிப் அடவர்",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/6/6c/Halide_adivar.jpg",
+                "work" : "நாவலாசிரியர், தேசியவாதி, பெண்கள் உரிமைகளுக்கான அரசியல் தலைவர்",
+                "place" : "இஸ்தான்புல்"
+            },
+
+            {
+                "name" : "நூரி பில்ஜ் சிலான்",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/1/1a/Nuribilgeceylan.jpg",
+                "work" : "திரைப்பட இயக்குனர்",
+                "place" : "இஸ்தான்புல்"
+            }
+        ]
+    },
+    "sports": {
+        "title": "கால்பந்து",
+        "footer": "கூடைப்பந்து மற்றும் கைப்பந்து"
+    },
+    "time_to_visit": {
+        "primary": "ஏப்ரல்-மே",
+        "secondary": "செப்டம்பர்-அக்டோபர்"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "ஹாகியா சோபியா அருங்காட்சியகம்",
+                "description": "மொசைக் கொண்ட பைசண்டைன் பசிலிக்கா அருங்காட்சியகம்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOuPf6PMw2jRqqdJPElxYE-wVKFyc8gWYFDpmaE=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114411208126953807978\">Wolfgang Unglaub</a>"
+                ],
+                "place_id": "ChIJJxwBkr65yhQRrk9EN29vbiM"
+            },
+            {
+                "name": "நீல மசூதி",
+                "description": "6 மினாரெட்டுகளுடன் சின்னமான நீல மசூதி",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPs-6o2nVgLFk0c_OQFlOo4rGUhvZfwN2vqs7He=s1600-w800",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116568261039607681002\">Mohsin Ali</a>"
+                ],
+                "place_id": "ChIJ4fRwZb25yhQRpHwVijb3LeU"
+            },
+            {
+                "name": "டாப்காபி அரண்மனை அருங்காட்சியகம்",
+                "description": "வரலாற்று ஒட்டோமான் கால அரண்மனை வளாகம்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMIB4qi5U-HFY7HhzlJsyDL-TzZf_1d-yTcRs-3=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113253188086359121984\">Alex Massari</a>"
+                ],
+                "place_id": "ChIJM_ilr7i5yhQRAFMBw0MZqhU"
+            },
+            {
+                "name": "கிராண்ட் பஜார்",
+                "description": "வண்ணமயமான மூடப்பட்ட சந்தைகளின் லாபிரிந்த்",
+                "place_id": "ChIJJwXXYpG5yhQRq5jBWgtoyGQ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP4-n_6Fkw99eiVom0-J71N5d3XQ1dkI6EDB5Rl=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112363346142702930782\">Juan Jurado</a>"
+                ]
+            },
+            {
+                "name" : "சுலேமானியே மசூதி",
+                "description": "16 ஆம் நூற்றாண்டின் ஒட்டோமான் மசூதி",
+                "place_id" : "ChIJMRDAOo25yhQR7c9XIQT1zIo",
+                "photos" : "https://lh3.googleusercontent.com/p/AF1QipMdvPCASefEvJbMi_j4UC5bD75E3EkBbnhOaRKV=s1600-w900",
+                "html_attributions" : [
+                    "<a href=\"https://maps.google.com/maps/contrib/104937090589239040242\">Saleh MIL</a>"
+                ]
+            },
+            {
+                "name": "பாஸ்பரஸ்",
+                "description": "மைல்கல் நீர்வழி மற்றும் கண்ட எல்லை",
+                "place_id": "ChIJn5k8FGjKyhQRtd_p_WFbAGM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPFUHkaRVQiA-WSmzg2eNL0T4EPxIFOZYfT9mqq=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115855376794259556107\">Archon K</a>"
+                ]
+            },
+            {
+                "name": "பசிலிக்கா சிஸ்டர்ன்",
+                "description": "542 A.D. நீர்வழிகளை மீட்டெடுத்தது",
+                "place_id": "ChIJyWrG4L25yhQRcYRt7uEvwGA",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPyn_xYhodZyegis5K7nxGGASjSjh7adG5szJfU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108614338924270739269\">Marcello Marques</a>"
+                ]
+            },
+            {
+                "name": "டோல்மாபாஹி அரண்மனை",
+                "description": "அலங்கரிக்கப்பட்ட ஒட்டோமான் சுல்தானின் அரண்மனையில் உள்ள அருங்காட்சியகம்",
+                "place_id": "ChIJ4307Gna3yhQRC4M7zzg-09w",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNeK0l0FchFWjap4fuZQ-hV9_WFklgrcPNib1S4=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112288080342389239027\">Dolmabahçe Sarayı</a>"
+                ]
+            },
+            {
+                "name": "கலாட்டா டவர்",
+                "description": "67 மீட்டர் பைசண்டைன் டவர் & உணவகம்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPALjJCJBqgu7MiuGzbZ_f_acwm8oRfruxd4Rwu=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105671018490792374724\">tarek radwan</a>"
+                ],
+                "place_id": "ChIJQ3x3p-e5yhQRCzOLzD3Pdkw"
+            },
+            {
+                "name": "சுல்தானஹ்மெட் சதுக்கம்",
+                "description": "ஹிப்போட்ரோம் நின்ற பொது சதுரம்",
+                "place_id": "ChIJ2XlLfO25yhQR8Hcxg0Af5V4",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipN0g7kypDV_QVGIOPtwgWkptI62rOmavXIM3T06=s1600-w845",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106989409402974863626\">Naci Gülaçmaz</a>"
+                ]
+            },
+            {
+                "name": "ஸ்பைஸ் பஜார்",
+                "description": "வரலாற்று மூடப்பட்ட மசாலா மற்றும் ஜவுளி சந்தை",
+                "place_id": "ChIJn9t8b-u5yhQRXVCwl43vu0Q",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNZPBA6-TUrZnaun7dYvlvpim0TZ086qstuaetD=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115862629829929880484\">Alberto Gozzelino</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 180,
+    "trivia": {
+        "items": [
+            "இது முன்னர் பைசான்டியம் மற்றும் கான்ஸ்டான்டினோபிள் என்று அழைக்கப்பட்டது.",
+            "இது துருக்கியில் அதிக மக்கள் தொகை கொண்ட நகரம்.",
+            "இது துருக்கியில் பொருளாதார, கலாச்சார மற்றும் வரலாற்று மையமாகும்.",
+            "மஸ்தாரா கடலுக்கும் கருங்கடலுக்கும் இடையில் போஸ்போரஸ் ஜலசந்தியை (இது ஐரோப்பாவையும் ஆசியாவையும் பிரிக்கிறது) கடந்து யூரேசியாவில் உள்ள ஒரு கண்டம் விட்டு நகரம் இஸ்தான்புல் ஆகும்.",
+            "1923 ஆம் ஆண்டில், துருக்கிய சுதந்திரப் போருக்குப் பிறகு, அங்காரா புதிய துருக்கிய தலைநகராகத் தேர்ந்தெடுக்கப்பட்டது, மேலும் நகரத்தின் பெயர் இஸ்தான்புல் என மாற்றப்பட்டது.",
+            "12 மில்லியனுக்கும் அதிகமான வெளிநாட்டு பார்வையாளர்களைக் கொண்ட இது உலகின் ஐந்தாவது மிகவும் பிரபலமான சுற்றுலாத் தலமாகும்.",
+            "நகரின் வடக்குப் பகுதியும், போஸ்போரஸ் கடற்கரையும் கடல் மற்றும் ஈரப்பதமான வெப்பமண்டல காலநிலைகளின் சிறப்பியல்புகளை வெளிப்படுத்துகின்றன.",
+            "வடக்கு மற்றும் தெற்கு கடற்கரைகளில் ஆண்டு சராசரி வெப்பநிலைக்கும், பஹேகி 12.8 ° C (55.0 ° F), கர்தால் 15.03 ° C (59.05 ° F) க்கும் குறிப்பிடத்தக்க வேறுபாடு உள்ளது.",
+            "இது முதன்மையாக பைசண்டைன் மற்றும் ஒட்டோமான் கட்டிடக்கலைக்கு பெயர் பெற்றது",
+            "கிராண்ட் பஜார் உலகின் மிகப்பெரிய மற்றும் பழமையான மூடப்பட்ட சந்தைகளில் ஒன்றாகும்.",
+            "ஹாகியா சோபியா சுமார் 900 ஆண்டுகளாக உலகின் மிகப்பெரிய தேவாலயமாக இருந்தது.",
+            "1875 ஆம் ஆண்டில் கட்டப்பட்ட உலகின் மூன்றாவது பழமையான சுரங்கப்பாதையை இஸ்தான்புல் கொண்டுள்ளது. இது 573 மீட்டர் நீளமும் பியோக்லு மாவட்டத்தில் அமைந்துள்ளது."
+        ]
+    }
+}

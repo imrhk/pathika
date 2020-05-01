@@ -1,0 +1,344 @@
+{
+    "basic_info": {
+        "name": "איסטנבול",
+        "id": "istanbul",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/%C4%B0stanbul-Ayasofya.JPG/1280px-%C4%B0stanbul-Ayasofya.JPG",
+        "place": "האגיה סופיה, איסטנבול",
+        "licence": "<a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en/\">CC0 1.0</a>",
+        "photo_by": "Robster1983",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:%C4%B0stanbul-Ayasofya.JPG"
+    },
+    "airport": {
+        "name": "שדה תעופה באיסטנבול"
+    },
+    "climate": {
+        "type": "ים תיכוני מעבר",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "קיץ",
+                "temp": "20 ° C עד 23 ° C",
+                "duration": "יוני-אוגוסט"
+            },
+            {
+                "emoji": "🍁",
+                "name": "סתיו",
+                "temp": "11 ° C עד 19 ° C",
+                "duration": "ספטמבר-נובמבר"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "חורף",
+                "temp": "5 ° C עד 8 ° C",
+                "duration": "Dec-Mar"
+            },
+            {
+                "emoji": "🌼",
+                "name": "אביב",
+                "temp": "11 ° C עד 16 ° C",
+                "duration": "אפר-מאי"
+            }
+        ]
+    },
+    "country": {
+        "name": "טורקיה 🇹🇷",
+        "continent": "אירופה ואסיה"
+    },
+    "currency": {
+        "name": "לירה טורקית",
+        "symbol": "TL",
+        "code": "TRY"
+    },
+    "dance": {
+        "name": "היילי, צ'יפטלי, ברוך הבא"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "סיבובי",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Doner_kebab%2C_Istanbul%2C_Turkey.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "(WT-shared) Shoestring",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Doner_kebab,_Istanbul,_Turkey.JPG"
+            },
+            {
+                "label": "Menemen",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2018/10/25/09/08/menemen-3771970_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "Engin_Akyurt",
+                "attribution_url": "https://pixabay.com/photos/menemen-egg-casserole-table-wood-3771970/"
+            },
+            {
+                "label": "לחם דגים",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bal%C4%B1k-ekmek_in_Ankara.jpg/1024px-Bal%C4%B1k-ekmek_in_Ankara.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "E4024",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Bal%C4%B1k-ekmek_in_Ankara.jpg"
+            },
+            {
+                "label": "תה טורקי",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2019/02/28/08/18/tea-4025510_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "smuldur",
+                "attribution_url": "https://pixabay.com/photos/tea-table-turkish-beverage-4025510/"
+            },
+            {
+                "label": "רחת לוקום",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2017/10/27/10/00/turkish-2893751_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "itsbytespixels",
+                "attribution_url": "https://pixabay.com/photos/turkish-sweet-dessert-2893751/"
+            },
+            {
+                "label": "קציצות גולמיות",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2017/08/10/16/13/cigkofte-2624336_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "iGlobalWeb",
+                "attribution_url": "https://pixabay.com/photos/cigkofte-turkish-food-bulgur-2624336/"
+            },
+            {
+                "label": "lahmacun",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Lahmacun.jpg/1024px-Lahmacun.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": " Rainer Zenz (asumed)",
+                "attribution_url": "https://en.wikipedia.org/wiki/Lahmacun#/media/File:Lahmacun.jpg"
+            },
+            {
+                "label" : "קבב שיש",
+                "is_veg": false,
+                "is_non_veg" : true,
+                "photo" : "https://cdn.pixabay.com/photo/2017/09/03/07/10/shish-kebab-2709499_1280.jpg",
+                "licence" : "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by" : "nikitozawr",
+                "attribution_url" : "https://pixabay.com/photos/shish-kebab-meat-kubny-plan-tasty-2709499/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "טקסטיל",
+        "secondary": [
+            "שטיח",
+            "Food processing"
+        ]
+    },
+    "language": {
+        "primary": "טורקי",
+        "secondary": [
+            "אנגלית"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_he_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_he_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_he_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_he_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_he_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Kis Uykusu",
+                "poster_url": "https://image.tmdb.org/t/p/w500/iHIS7FjHpj7JtBEuNzvHeTRIzEk.jpg"
+            },
+            {
+                "title": "Bir Zamanlar Anadolu'da",
+                "poster_url": "https://image.tmdb.org/t/p/w500/2V3JClFTjw4ToBIyBo2PxMdiyCS.jpg"
+            },
+            {
+                "title": "Mustang",
+                "poster_url": "https://image.tmdb.org/t/p/w500/lyoBiBKdCm4ed1yZJAo7llM3vdg.jpg"
+            },
+            {
+                "title" : "Kelebegin Rüyasi",
+                "poster_url" : "https://image.tmdb.org/t/p/w500/q3lx59mnABD1phQuSxswabamvpn.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name" : "קבל את טייפ ארדואן",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/6/65/Recep_Tayyip_Erdo%C4%9Fan_2019_%28cropped%29.jpg",
+                "work" : "נשיא טורקיה",
+                "place" : "קאסימפאסה, איסטנבול",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by" : "Mikhail Palinchak",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Recep_Tayyip_Erdo%C4%9Fan_2019_(cropped).jpg"
+            },
+            {
+                "name"     : "מחמד השישי",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Sultan_Mehmed_VI_of_the_Ottoman_Empire.jpg/576px-Sultan_Mehmed_VI_of_the_Ottoman_Empire.jpg",
+                "place" : "איסטנבול",
+                "work" : "הסולטן האחרון של האימפריה העות'מאנית"
+                
+            },
+
+            {
+                "name" : "ארדה טוראן",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/AUT_vs._TUR_2016-03-29_%28283%29.jpg/512px-AUT_vs._TUR_2016-03-29_%28283%29.jpg",
+                "work" : "כדורגלן מקצועי",
+                "place" : "פאטיה, איסטנבול",
+                "photo_by" : "Steindy",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url" : "https://en.wikipedia.org/wiki/File:AUT_vs._TUR_2016-03-29_(283).jpg"
+            },
+            {
+                "name" : "הליד אדיב אדוויאר",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/6/6c/Halide_adivar.jpg",
+                "work" : "מנהיג רומן, לאומני ופוליטי לזכויות נשים",
+                "place" : "איסטנבול"
+            },
+
+            {
+                "name" : "נורי בילג 'סיילן",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/1/1a/Nuribilgeceylan.jpg",
+                "work" : "במאי",
+                "place" : "איסטנבול"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ כדורגל",
+        "footer": "כדורסל וכדורעף"
+    },
+    "time_to_visit": {
+        "primary": "אפריל מאי",
+        "secondary": "ספטמבר-אוקטורבר"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "מוזיאון האגיה סופיה",
+                "description": "מוזיאון בזיליקה ביזנטית עם פסיפסים",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOuPf6PMw2jRqqdJPElxYE-wVKFyc8gWYFDpmaE=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114411208126953807978\">Wolfgang Unglaub</a>"
+                ],
+                "place_id": "ChIJJxwBkr65yhQRrk9EN29vbiM"
+            },
+            {
+                "name": "המסגד הכחול",
+                "description": "מסגד כחול איקוני עם 6 מינרטים",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPs-6o2nVgLFk0c_OQFlOo4rGUhvZfwN2vqs7He=s1600-w800",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116568261039607681002\">Mohsin Ali</a>"
+                ],
+                "place_id": "ChIJ4fRwZb25yhQRpHwVijb3LeU"
+            },
+            {
+                "name": "מוזיאון ארמון טופקאפי",
+                "description": "מתחם ארמון היסטורי בן התקופה העות'מאנית",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMIB4qi5U-HFY7HhzlJsyDL-TzZf_1d-yTcRs-3=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113253188086359121984\">Alex Massari</a>"
+                ],
+                "place_id": "ChIJM_ilr7i5yhQRAFMBw0MZqhU"
+            },
+            {
+                "name": "השוק הגדול",
+                "description": "מבוך של שווקים מכוסים צבעוניים",
+                "place_id": "ChIJJwXXYpG5yhQRq5jBWgtoyGQ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP4-n_6Fkw99eiVom0-J71N5d3XQ1dkI6EDB5Rl=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112363346142702930782\">Juan Jurado</a>"
+                ]
+            },
+            {
+                "name" : "מסגד סולימאנייה",
+                "description": "המסגד העות'מאני בן המאה ה- 16",
+                "place_id" : "ChIJMRDAOo25yhQR7c9XIQT1zIo",
+                "photos" : "https://lh3.googleusercontent.com/p/AF1QipMdvPCASefEvJbMi_j4UC5bD75E3EkBbnhOaRKV=s1600-w900",
+                "html_attributions" : [
+                    "<a href=\"https://maps.google.com/maps/contrib/104937090589239040242\">Saleh MIL</a>"
+                ]
+            },
+            {
+                "name": "בוספורוס",
+                "description": "נתיב דרך וגבול יבשתי",
+                "place_id": "ChIJn5k8FGjKyhQRtd_p_WFbAGM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPFUHkaRVQiA-WSmzg2eNL0T4EPxIFOZYfT9mqq=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115855376794259556107\">Archon K</a>"
+                ]
+            },
+            {
+                "name": "בור מים בזיליקה",
+                "description": "שוחזר 542 עבודות מים A.D.",
+                "place_id": "ChIJyWrG4L25yhQRcYRt7uEvwGA",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPyn_xYhodZyegis5K7nxGGASjSjh7adG5szJfU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108614338924270739269\">Marcello Marques</a>"
+                ]
+            },
+            {
+                "name": "ארמון דולמבהה",
+                "description": "מוזיאון בארמון הסולטן העות'מאני המקושט",
+                "place_id": "ChIJ4307Gna3yhQRC4M7zzg-09w",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNeK0l0FchFWjap4fuZQ-hV9_WFklgrcPNib1S4=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112288080342389239027\">Dolmabahçe Sarayı</a>"
+                ]
+            },
+            {
+                "name": "מגדל גלטה",
+                "description": "מגדל ביזנטיני ומסעדה בגובה 67 מטרים",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPALjJCJBqgu7MiuGzbZ_f_acwm8oRfruxd4Rwu=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105671018490792374724\">tarek radwan</a>"
+                ],
+                "place_id": "ChIJQ3x3p-e5yhQRCzOLzD3Pdkw"
+            },
+            {
+                "name": "כיכר סולטן",
+                "description": "הכיכר הציבורית בה עמד ההיפודרום",
+                "place_id": "ChIJ2XlLfO25yhQR8Hcxg0Af5V4",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipN0g7kypDV_QVGIOPtwgWkptI62rOmavXIM3T06=s1600-w845",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106989409402974863626\">Naci Gülaçmaz</a>"
+                ]
+            },
+            {
+                "name": "תבלינים בזאר",
+                "description": "שוק תבלינים וטקסטיל מכוסה היסטורי",
+                "place_id": "ChIJn9t8b-u5yhQRXVCwl43vu0Q",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNZPBA6-TUrZnaun7dYvlvpim0TZ086qstuaetD=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115862629829929880484\">Alberto Gozzelino</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 180,
+    "trivia": {
+        "items": [
+            "זה היה ידוע בעבר בשם ביזנטיון וקונסטנטינופול.",
+            "זו העיר המאוכלסת ביותר בטורקיה.",
+            "זהו מרכז כלכלי, תרבותי והיסטורי בטורקיה.",
+            "איסטנבול היא עיר טרנס יבשתית ביורואסיה, המשתרעת על מיצר בוספורוס (המפריד בין אירופה לאסיה) בין ים מרמרה לים השחור.",
+            "בשנת 1923, לאחר מלחמת העצמאות הטורקית, נבחרה אנקרה לבירה הטורקית החדשה, ושמה של העיר שונה לאיסטנבול.",
+            "עם יותר מ 12 מיליון מבקרים זרים, היא העיר היעד התיירותי החמישי בעולם.",
+            "המחצית הצפונית של העיר, כמו גם קו החוף של הבוספורוס, מבטאים מאפיינים של אקלים אוקראיני וסובטרופי לח.",
+            "יש הבדל משמעותי בין טמפרטורות ממוצעות שנתיות גם לחוף הצפוני והדרומי, Bahçeköy 12.8 ° C (55.0 ° F), Kartal 15.03 ° C (59.05 ° F).",
+            "זה ידוע בעיקר בזכות הארכיטקטורה הביזנטית והעות'מאנית שלו",
+            "Grand Bazaar הוא אחד השווקים המכוסים הגדולים והוותיקים בעולם.",
+            "האגיה סופיה הייתה הכנסייה הגדולה בעולם מזה כ 900 שנה.",
+            "באיסטנבול יש את הרכבת התחתית השלישית העתיקה ביותר בעולם, שנבנתה בשנת 1875. אורכה 573 מטרים והיא ממוקמת ברובע ביוגלו."
+        ]
+    }
+}

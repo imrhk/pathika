@@ -145,19 +145,19 @@
         "items": [
             {
                 "title": "Das Boot",
-                "poster_url": "https://image.tmdb.org/t/p/original/5y7JboNZuCy2fgPQJflh3CemTSt.jpg"
+                "poster_url": "https://image.tmdb.org/t/p/w300/vHboKLUxK8tjxLwEenjWlwZt333.jpg"
             },
             {
                 "title": "Der Untergang",
-                "poster_url": "https://image.tmdb.org/t/p/original/tWkYcchUuh0rdm94Zcv9BhXJpNt.jpg"
+                "poster_url": "https://image.tmdb.org/t/p/w300/zz5PV5ZpKajEP7hHAxGtNfFdb8v.jpg"
             },
             {
                 "title": "Das Leben der Anderen",
-                "poster_url": "https://image.tmdb.org/t/p/original/qOE1jywObYhereKoTE7Ahuq7CTc.jpg"
+                "poster_url": "https://image.tmdb.org/t/p/w300/nGUlfL0vNQ4mTHzcfz1pf6fQrVa.jpg"
             },
             {
                 "title" : "Good Bye, Lenin!",
-                "poster_url" : "https://image.tmdb.org/t/p/original/bkiK9X3oTBQKJyXYXynbD1ptTdQ.jpg"
+                "poster_url" : "https://image.tmdb.org/t/p/w300/pGj9edDWW48DyLCadZJmZlO79PU.jpg"
             }
         ]
     },

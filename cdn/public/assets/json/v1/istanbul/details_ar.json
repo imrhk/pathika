@@ -1,0 +1,344 @@
+{
+    "basic_info": {
+        "name": "اسطنبول",
+        "id": "istanbul",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/%C4%B0stanbul-Ayasofya.JPG/1280px-%C4%B0stanbul-Ayasofya.JPG",
+        "place": "آيا صوفيا ، اسطنبول",
+        "licence": "<a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en/\">CC0 1.0</a>",
+        "photo_by": "Robster1983",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:%C4%B0stanbul-Ayasofya.JPG"
+    },
+    "airport": {
+        "name": "مطار اسطنبول"
+    },
+    "climate": {
+        "type": "البحر الأبيض المتوسط الانتقالي",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "الصيف",
+                "temp": "20 درجة مئوية إلى 23 درجة مئوية",
+                "duration": "يونيو-أغسطس"
+            },
+            {
+                "emoji": "🍁",
+                "name": "الخريف",
+                "temp": "11 درجة مئوية إلى 19 درجة مئوية",
+                "duration": "سبتمبر ونوفمبر"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "شتاء",
+                "temp": "5 درجات مئوية إلى 8 درجات مئوية",
+                "duration": "ديسمبر-مارس"
+            },
+            {
+                "emoji": "🌼",
+                "name": "ربيع",
+                "temp": "11 درجة مئوية إلى 16 درجة مئوية",
+                "duration": "أبريل-مايو"
+            }
+        ]
+    },
+    "country": {
+        "name": "تركيا 🇹🇷",
+        "continent": "أوروبا وآسيا"
+    },
+    "currency": {
+        "name": "الليرة التركية",
+        "symbol": "TL",
+        "code": "TRY"
+    },
+    "dance": {
+        "name": "هالي ، Ciftetelli ، مرحبا"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "دوار",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Doner_kebab%2C_Istanbul%2C_Turkey.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "(WT-shared) Shoestring",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Doner_kebab,_Istanbul,_Turkey.JPG"
+            },
+            {
+                "label": "Menemen",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2018/10/25/09/08/menemen-3771970_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "Engin_Akyurt",
+                "attribution_url": "https://pixabay.com/photos/menemen-egg-casserole-table-wood-3771970/"
+            },
+            {
+                "label": "خبز السمك",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bal%C4%B1k-ekmek_in_Ankara.jpg/1024px-Bal%C4%B1k-ekmek_in_Ankara.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "E4024",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Bal%C4%B1k-ekmek_in_Ankara.jpg"
+            },
+            {
+                "label": "شاي تركي",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2019/02/28/08/18/tea-4025510_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "smuldur",
+                "attribution_url": "https://pixabay.com/photos/tea-table-turkish-beverage-4025510/"
+            },
+            {
+                "label": "فرحة التركية",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2017/10/27/10/00/turkish-2893751_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "itsbytespixels",
+                "attribution_url": "https://pixabay.com/photos/turkish-sweet-dessert-2893751/"
+            },
+            {
+                "label": "كرات اللحم النيئة",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2017/08/10/16/13/cigkofte-2624336_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "iGlobalWeb",
+                "attribution_url": "https://pixabay.com/photos/cigkofte-turkish-food-bulgur-2624336/"
+            },
+            {
+                "label": "لحم بعجين",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Lahmacun.jpg/1024px-Lahmacun.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": " Rainer Zenz (asumed)",
+                "attribution_url": "https://en.wikipedia.org/wiki/Lahmacun#/media/File:Lahmacun.jpg"
+            },
+            {
+                "label" : "شيش كباب",
+                "is_veg": false,
+                "is_non_veg" : true,
+                "photo" : "https://cdn.pixabay.com/photo/2017/09/03/07/10/shish-kebab-2709499_1280.jpg",
+                "licence" : "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by" : "nikitozawr",
+                "attribution_url" : "https://pixabay.com/photos/shish-kebab-meat-kubny-plan-tasty-2709499/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "الغزل والنسيج",
+        "secondary": [
+            "سجادة",
+            "Food processing"
+        ]
+    },
+    "language": {
+        "primary": "اللغة التركية",
+        "secondary": [
+            "الإنجليزية"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_ar_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_ar_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_ar_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_ar_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_ar_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Kis Uykusu",
+                "poster_url": "https://image.tmdb.org/t/p/w500/iHIS7FjHpj7JtBEuNzvHeTRIzEk.jpg"
+            },
+            {
+                "title": "Bir Zamanlar Anadolu'da",
+                "poster_url": "https://image.tmdb.org/t/p/w500/2V3JClFTjw4ToBIyBo2PxMdiyCS.jpg"
+            },
+            {
+                "title": "Mustang",
+                "poster_url": "https://image.tmdb.org/t/p/w500/lyoBiBKdCm4ed1yZJAo7llM3vdg.jpg"
+            },
+            {
+                "title" : "Kelebegin Rüyasi",
+                "poster_url" : "https://image.tmdb.org/t/p/w500/q3lx59mnABD1phQuSxswabamvpn.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name" : "رجب طيب أردوغان",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/6/65/Recep_Tayyip_Erdo%C4%9Fan_2019_%28cropped%29.jpg",
+                "work" : "رئيس تركيا",
+                "place" : "Kasimpasa ، اسطنبول",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by" : "Mikhail Palinchak",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Recep_Tayyip_Erdo%C4%9Fan_2019_(cropped).jpg"
+            },
+            {
+                "name"     : "محمد السادس",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Sultan_Mehmed_VI_of_the_Ottoman_Empire.jpg/576px-Sultan_Mehmed_VI_of_the_Ottoman_Empire.jpg",
+                "place" : "اسطنبول",
+                "work" : "آخر سلطان للإمبراطورية العثمانية"
+                
+            },
+
+            {
+                "name" : "أردا توران",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/AUT_vs._TUR_2016-03-29_%28283%29.jpg/512px-AUT_vs._TUR_2016-03-29_%28283%29.jpg",
+                "work" : "لاعب كرة القدم المحترف",
+                "place" : "فاتح ، اسطنبول",
+                "photo_by" : "Steindy",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url" : "https://en.wikipedia.org/wiki/File:AUT_vs._TUR_2016-03-29_(283).jpg"
+            },
+            {
+                "name" : "هاليد إديب أديفار",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/6/6c/Halide_adivar.jpg",
+                "work" : "روائي ، قومي ، وزعيمة سياسية لحقوق المرأة",
+                "place" : "اسطنبول"
+            },
+
+            {
+                "name" : "نوري بيلج سيلان",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/1/1a/Nuribilgeceylan.jpg",
+                "work" : "مخرج الفيلم",
+                "place" : "اسطنبول"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ كرة القدم",
+        "footer": "كرة السلة والكرة الطائرة"
+    },
+    "time_to_visit": {
+        "primary": "أبريل مايو",
+        "secondary": "سبتمبر اكتوبر"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "متحف هاجيا صوفيا",
+                "description": "متحف بازيليك بيزنطي مع فسيفساء",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOuPf6PMw2jRqqdJPElxYE-wVKFyc8gWYFDpmaE=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114411208126953807978\">Wolfgang Unglaub</a>"
+                ],
+                "place_id": "ChIJJxwBkr65yhQRrk9EN29vbiM"
+            },
+            {
+                "name": "المسجد الازرق",
+                "description": "المسجد الأزرق الشهير مع 6 مآذن",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPs-6o2nVgLFk0c_OQFlOo4rGUhvZfwN2vqs7He=s1600-w800",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116568261039607681002\">Mohsin Ali</a>"
+                ],
+                "place_id": "ChIJ4fRwZb25yhQRpHwVijb3LeU"
+            },
+            {
+                "name": "متحف قصر توبكابي",
+                "description": "مجمّع قصور تاريخي من العصر العثماني",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMIB4qi5U-HFY7HhzlJsyDL-TzZf_1d-yTcRs-3=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113253188086359121984\">Alex Massari</a>"
+                ],
+                "place_id": "ChIJM_ilr7i5yhQRAFMBw0MZqhU"
+            },
+            {
+                "name": "البازار الكبير",
+                "description": "متاهة الأسواق المغطاة الملونة",
+                "place_id": "ChIJJwXXYpG5yhQRq5jBWgtoyGQ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP4-n_6Fkw99eiVom0-J71N5d3XQ1dkI6EDB5Rl=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112363346142702930782\">Juan Jurado</a>"
+                ]
+            },
+            {
+                "name" : "جامع السليمانية",
+                "description": "مسجد عثماني من القرن السادس عشر",
+                "place_id" : "ChIJMRDAOo25yhQR7c9XIQT1zIo",
+                "photos" : "https://lh3.googleusercontent.com/p/AF1QipMdvPCASefEvJbMi_j4UC5bD75E3EkBbnhOaRKV=s1600-w900",
+                "html_attributions" : [
+                    "<a href=\"https://maps.google.com/maps/contrib/104937090589239040242\">Saleh MIL</a>"
+                ]
+            },
+            {
+                "name": "البوسفور",
+                "description": "ممر مائي وحدود قارية",
+                "place_id": "ChIJn5k8FGjKyhQRtd_p_WFbAGM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPFUHkaRVQiA-WSmzg2eNL0T4EPxIFOZYfT9mqq=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115855376794259556107\">Archon K</a>"
+                ]
+            },
+            {
+                "name": "كنيسة سيسترن",
+                "description": "تم تجديد 542 م",
+                "place_id": "ChIJyWrG4L25yhQRcYRt7uEvwGA",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPyn_xYhodZyegis5K7nxGGASjSjh7adG5szJfU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108614338924270739269\">Marcello Marques</a>"
+                ]
+            },
+            {
+                "name": "قصر دولما بهجة",
+                "description": "متحف في قصر السلطان العثماني المزخرف",
+                "place_id": "ChIJ4307Gna3yhQRC4M7zzg-09w",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNeK0l0FchFWjap4fuZQ-hV9_WFklgrcPNib1S4=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112288080342389239027\">Dolmabahçe Sarayı</a>"
+                ]
+            },
+            {
+                "name": "برج جالاتا",
+                "description": "برج ومطعم بيزنطي بطول 67 متر",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPALjJCJBqgu7MiuGzbZ_f_acwm8oRfruxd4Rwu=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105671018490792374724\">tarek radwan</a>"
+                ],
+                "place_id": "ChIJQ3x3p-e5yhQRCzOLzD3Pdkw"
+            },
+            {
+                "name": "ساحة السلطان أحمد",
+                "description": "الساحة العامة حيث وقف ميدان سباق الخيل",
+                "place_id": "ChIJ2XlLfO25yhQR8Hcxg0Af5V4",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipN0g7kypDV_QVGIOPtwgWkptI62rOmavXIM3T06=s1600-w845",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106989409402974863626\">Naci Gülaçmaz</a>"
+                ]
+            },
+            {
+                "name": "السوق المصري",
+                "description": "سوق التوابل والمنسوجات المغطاة التاريخي",
+                "place_id": "ChIJn9t8b-u5yhQRXVCwl43vu0Q",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNZPBA6-TUrZnaun7dYvlvpim0TZ086qstuaetD=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115862629829929880484\">Alberto Gozzelino</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 180,
+    "trivia": {
+        "items": [
+            "كانت تعرف سابقًا باسم بيزنطة والقسطنطينية.",
+            "إنها المدينة الأكثر اكتظاظًا بالسكان في تركيا.",
+            "إنها مركز اقتصادي وثقافي وتاريخي في تركيا.",
+            "اسطنبول هي مدينة عابرة للقارات في أوراسيا ، تمتد على مضيق البوسفور (الذي يفصل بين أوروبا وآسيا) بين بحر مرمرة والبحر الأسود.",
+            "في عام 1923 ، بعد حرب الاستقلال التركية ، تم اختيار أنقرة كعاصمة تركية جديدة ، وتم تغيير اسم المدينة إلى اسطنبول.",
+            "مع أكثر من 12 مليون زائر أجنبي ، فهي المدينة خامس وجهة سياحية شعبية في العالم.",
+            "النصف الشمالي من المدينة ، وكذلك ساحل البوسفور ، يعبر عن خصائص المناخات المحيطية والرطبة شبه الاستوائية.",
+            "هناك فرق كبير بين متوسط درجات الحرارة السنوية على السواحل الشمالية والجنوبية أيضًا ، Bahçeköy 12.8 درجة مئوية (55.0 درجة فهرنهايت) ، كارتال 15.03 درجة مئوية (59.05 درجة فهرنهايت).",
+            "وهي معروفة في المقام الأول بالهندسة المعمارية البيزنطية والعثمانية",
+            "يعد البازار الكبير أحد أكبر وأقدم الأسواق المغطاة في العالم.",
+            "كانت آيا صوفيا أكبر كنيسة في العالم منذ حوالي 900 عام.",
+            "يوجد في اسطنبول ثالث أقدم مترو أنفاق في العالم ، تم بناؤه عام 1875. يبلغ طوله 573 مترًا ويقع في منطقة بيوغلو."
+        ]
+    }
+}

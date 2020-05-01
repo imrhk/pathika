@@ -10,5 +10,9 @@
     {
         "id" : "osaka",
         "name": "Osaka"
+    },
+    {
+        "id" : "istanbul",
+        "name" : "Istambul"
     }
 ]

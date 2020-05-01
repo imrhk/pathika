@@ -1,0 +1,344 @@
+{
+    "basic_info": {
+        "name": "ઇસ્તંબુલ",
+        "id": "istanbul",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/%C4%B0stanbul-Ayasofya.JPG/1280px-%C4%B0stanbul-Ayasofya.JPG",
+        "place": "હાગિયા સોફિયા, ઇસ્તંબુલ",
+        "licence": "<a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en/\">CC0 1.0</a>",
+        "photo_by": "Robster1983",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:%C4%B0stanbul-Ayasofya.JPG"
+    },
+    "airport": {
+        "name": "ઇસ્તંબુલ એરપોર્ટ"
+    },
+    "climate": {
+        "type": "સંક્રમિત ભૂમધ્ય",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "ઉનાળો",
+                "temp": "20 ° સે થી 23 ડિગ્રી સે",
+                "duration": "Jun-Aug"
+            },
+            {
+                "emoji": "🍁",
+                "name": "પાનખર",
+                "temp": "11 ° સે થી 19. સે",
+                "duration": "સપ્ટે-નવે"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "શિયાળો",
+                "temp": "5 8 સે થી 8 ડિગ્રી સે",
+                "duration": "ડિસે-માર્ચ"
+            },
+            {
+                "emoji": "🌼",
+                "name": "વસંત",
+                "temp": "11 ° સે થી 16 ડિગ્રી સે",
+                "duration": "એપ્રિલ-મે"
+            }
+        ]
+    },
+    "country": {
+        "name": "તુર્કી 🇹🇷",
+        "continent": "યુરોપ અને એશિયા"
+    },
+    "currency": {
+        "name": "ટર્કિશ લીરા",
+        "symbol": "TL",
+        "code": "TRY"
+    },
+    "dance": {
+        "name": "હેલી, સિફેટેલી, સ્વાગત છે"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "રોટરી",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Doner_kebab%2C_Istanbul%2C_Turkey.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "(WT-shared) Shoestring",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Doner_kebab,_Istanbul,_Turkey.JPG"
+            },
+            {
+                "label": "Menemen",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2018/10/25/09/08/menemen-3771970_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "Engin_Akyurt",
+                "attribution_url": "https://pixabay.com/photos/menemen-egg-casserole-table-wood-3771970/"
+            },
+            {
+                "label": "માછલીની બ્રેડ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bal%C4%B1k-ekmek_in_Ankara.jpg/1024px-Bal%C4%B1k-ekmek_in_Ankara.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "E4024",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Bal%C4%B1k-ekmek_in_Ankara.jpg"
+            },
+            {
+                "label": "ટર્કિશ ટી",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2019/02/28/08/18/tea-4025510_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "smuldur",
+                "attribution_url": "https://pixabay.com/photos/tea-table-turkish-beverage-4025510/"
+            },
+            {
+                "label": "તુર્કી આનંદ",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2017/10/27/10/00/turkish-2893751_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "itsbytespixels",
+                "attribution_url": "https://pixabay.com/photos/turkish-sweet-dessert-2893751/"
+            },
+            {
+                "label": "કાચો માંસબોલ્સ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2017/08/10/16/13/cigkofte-2624336_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "iGlobalWeb",
+                "attribution_url": "https://pixabay.com/photos/cigkofte-turkish-food-bulgur-2624336/"
+            },
+            {
+                "label": "lahmacun",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Lahmacun.jpg/1024px-Lahmacun.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": " Rainer Zenz (asumed)",
+                "attribution_url": "https://en.wikipedia.org/wiki/Lahmacun#/media/File:Lahmacun.jpg"
+            },
+            {
+                "label" : "શીશ કબાબો",
+                "is_veg": false,
+                "is_non_veg" : true,
+                "photo" : "https://cdn.pixabay.com/photo/2017/09/03/07/10/shish-kebab-2709499_1280.jpg",
+                "licence" : "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by" : "nikitozawr",
+                "attribution_url" : "https://pixabay.com/photos/shish-kebab-meat-kubny-plan-tasty-2709499/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "કાપડ",
+        "secondary": [
+            "કાર્પેટ",
+            "Food processing"
+        ]
+    },
+    "language": {
+        "primary": "ટર્કિશ",
+        "secondary": [
+            "અંગ્રેજી"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_gu_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_gu_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_gu_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_gu_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_gu_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Kis Uykusu",
+                "poster_url": "https://image.tmdb.org/t/p/w500/iHIS7FjHpj7JtBEuNzvHeTRIzEk.jpg"
+            },
+            {
+                "title": "Bir Zamanlar Anadolu'da",
+                "poster_url": "https://image.tmdb.org/t/p/w500/2V3JClFTjw4ToBIyBo2PxMdiyCS.jpg"
+            },
+            {
+                "title": "Mustang",
+                "poster_url": "https://image.tmdb.org/t/p/w500/lyoBiBKdCm4ed1yZJAo7llM3vdg.jpg"
+            },
+            {
+                "title" : "Kelebegin Rüyasi",
+                "poster_url" : "https://image.tmdb.org/t/p/w500/q3lx59mnABD1phQuSxswabamvpn.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name" : "રેસેપ તાયિપ એર્દોગન",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/6/65/Recep_Tayyip_Erdo%C4%9Fan_2019_%28cropped%29.jpg",
+                "work" : "તુર્કીના રાષ્ટ્રપતિ",
+                "place" : "કાસિમ્પાસા, ઇસ્તંબુલ",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by" : "Mikhail Palinchak",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Recep_Tayyip_Erdo%C4%9Fan_2019_(cropped).jpg"
+            },
+            {
+                "name"     : "મહેમદ VI",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Sultan_Mehmed_VI_of_the_Ottoman_Empire.jpg/576px-Sultan_Mehmed_VI_of_the_Ottoman_Empire.jpg",
+                "place" : "ઇસ્તંબુલ",
+                "work" : "ઓટ્ટોમન સામ્રાજ્યનો છેલ્લો સુલતાન"
+                
+            },
+
+            {
+                "name" : "અર્દા તુરણ",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/AUT_vs._TUR_2016-03-29_%28283%29.jpg/512px-AUT_vs._TUR_2016-03-29_%28283%29.jpg",
+                "work" : "પ્રોફેશનલ ફુટબોલર",
+                "place" : "ફાતિહ, ઇસ્તંબુલ",
+                "photo_by" : "Steindy",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url" : "https://en.wikipedia.org/wiki/File:AUT_vs._TUR_2016-03-29_(283).jpg"
+            },
+            {
+                "name" : "હેલિડે એડિબ અદાવર",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/6/6c/Halide_adivar.jpg",
+                "work" : "નવલકથાકાર, રાષ્ટ્રવાદી અને મહિલા અધિકારો માટે રાજકીય નેતા",
+                "place" : "ઇસ્તંબુલ"
+            },
+
+            {
+                "name" : "નૂરી બિલ્જ સેલેન",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/1/1a/Nuribilgeceylan.jpg",
+                "work" : "ચલચિત્ર દિગ્દર્શક",
+                "place" : "ઇસ્તંબુલ"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ ફૂટબ .લ",
+        "footer": "બાસ્કેટબ .લ અને વleyલીબ .લ"
+    },
+    "time_to_visit": {
+        "primary": "એપ્રિલ-મે",
+        "secondary": "સપ્ટેમ્બર-ઓક્ટોબર"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "હાગિયા સોફિયા મ્યુઝિયમ",
+                "description": "મોઝેક સાથે બાયઝેન્ટાઇન બેસિલિકા મ્યુઝિયમ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOuPf6PMw2jRqqdJPElxYE-wVKFyc8gWYFDpmaE=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114411208126953807978\">Wolfgang Unglaub</a>"
+                ],
+                "place_id": "ChIJJxwBkr65yhQRrk9EN29vbiM"
+            },
+            {
+                "name": "બ્લુ મસ્જિદ",
+                "description": "6 મીનારાઓ સાથે આઇકોનિક બ્લુ મસ્જિદ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPs-6o2nVgLFk0c_OQFlOo4rGUhvZfwN2vqs7He=s1600-w800",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116568261039607681002\">Mohsin Ali</a>"
+                ],
+                "place_id": "ChIJ4fRwZb25yhQRpHwVijb3LeU"
+            },
+            {
+                "name": "ટોપકાપી પેલેસ મ્યુઝિયમ",
+                "description": "Otતિહાસિક ઓટોમાન-યુગનો મહેલ સંકુલ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMIB4qi5U-HFY7HhzlJsyDL-TzZf_1d-yTcRs-3=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113253188086359121984\">Alex Massari</a>"
+                ],
+                "place_id": "ChIJM_ilr7i5yhQRAFMBw0MZqhU"
+            },
+            {
+                "name": "ભવ્ય બજાર",
+                "description": "રંગબેરંગી coveredંકાયેલ બજારોની ભુલભુલામણી",
+                "place_id": "ChIJJwXXYpG5yhQRq5jBWgtoyGQ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP4-n_6Fkw99eiVom0-J71N5d3XQ1dkI6EDB5Rl=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112363346142702930782\">Juan Jurado</a>"
+                ]
+            },
+            {
+                "name" : "સુલેમાનીયે મસ્જિદ",
+                "description": "સંગ્રહિત 16 મી સદીની ઓટ્ટોમન મસ્જિદ",
+                "place_id" : "ChIJMRDAOo25yhQR7c9XIQT1zIo",
+                "photos" : "https://lh3.googleusercontent.com/p/AF1QipMdvPCASefEvJbMi_j4UC5bD75E3EkBbnhOaRKV=s1600-w900",
+                "html_attributions" : [
+                    "<a href=\"https://maps.google.com/maps/contrib/104937090589239040242\">Saleh MIL</a>"
+                ]
+            },
+            {
+                "name": "બોસ્ફોરસ",
+                "description": "સીમાચિહ્ન જળમાર્ગ અને ખંડોની બાઉન્ડ્રી",
+                "place_id": "ChIJn5k8FGjKyhQRtd_p_WFbAGM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPFUHkaRVQiA-WSmzg2eNL0T4EPxIFOZYfT9mqq=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115855376794259556107\">Archon K</a>"
+                ]
+            },
+            {
+                "name": "બેસિલિકા સિસ્ટર્ન",
+                "description": "પુન2સ્થાપિત 542 એ.ડી. વોટર વર્કસ",
+                "place_id": "ChIJyWrG4L25yhQRcYRt7uEvwGA",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPyn_xYhodZyegis5K7nxGGASjSjh7adG5szJfU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108614338924270739269\">Marcello Marques</a>"
+                ]
+            },
+            {
+                "name": "ડોલ્માબેહ પેલેસ",
+                "description": "અલંકૃત ઓટ્ટોમન સુલતાનના મહેલમાં સંગ્રહાલય",
+                "place_id": "ChIJ4307Gna3yhQRC4M7zzg-09w",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNeK0l0FchFWjap4fuZQ-hV9_WFklgrcPNib1S4=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112288080342389239027\">Dolmabahçe Sarayı</a>"
+                ]
+            },
+            {
+                "name": "ગાલાતા ટાવર",
+                "description": "67-મીટર બાયઝેન્ટાઇન ટાવર અને રેસ્ટોરન્ટ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPALjJCJBqgu7MiuGzbZ_f_acwm8oRfruxd4Rwu=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105671018490792374724\">tarek radwan</a>"
+                ],
+                "place_id": "ChIJQ3x3p-e5yhQRCzOLzD3Pdkw"
+            },
+            {
+                "name": "સુલ્તાનાહમેટ સ્ક્વેર",
+                "description": "સાર્વજનિક ચોરસ જ્યાં હિપ્પોડ્રોમ .ભો હતો",
+                "place_id": "ChIJ2XlLfO25yhQR8Hcxg0Af5V4",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipN0g7kypDV_QVGIOPtwgWkptI62rOmavXIM3T06=s1600-w845",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106989409402974863626\">Naci Gülaçmaz</a>"
+                ]
+            },
+            {
+                "name": "સ્પાઈસ બઝાર",
+                "description": "Histતિહાસિક coveredંકાયેલ મસાલા અને કાપડ બજાર",
+                "place_id": "ChIJn9t8b-u5yhQRXVCwl43vu0Q",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNZPBA6-TUrZnaun7dYvlvpim0TZ086qstuaetD=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115862629829929880484\">Alberto Gozzelino</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 180,
+    "trivia": {
+        "items": [
+            "તે પહેલાં બાયઝેન્ટિયમ અને કોન્સ્ટેન્ટિનોપલ તરીકે ઓળખાતું હતું.",
+            "તે તુર્કીમાં સૌથી વધુ વસ્તી ધરાવતું શહેર છે.",
+            "તે તુર્કીમાં આર્થિક, સાંસ્કૃતિક અને historicતિહાસિક કેન્દ્ર છે.",
+            "ઇસ્તંબુલ એ યુરેશિયામાં એક ટ્રાન્સકોન્ટિનેન્ટલ શહેર છે, જે મર્મરા સમુદ્ર અને કાળા સમુદ્રની વચ્ચે બોસ્પોરસ સ્ટ્રેટ (જે યુરોપ અને એશિયાને અલગ કરે છે) ને પથરાય છે.",
+            "1923 માં, તુર્કીની સ્વતંત્રતા યુદ્ધ પછી, અંકારાને નવી તુર્કીની રાજધાની તરીકે પસંદ કરવામાં આવ્યો, અને શહેરનું નામ બદલીને ઇસ્તંબુલ કરવામાં આવ્યું.",
+            "12 મિલિયનથી વધુ વિદેશી મુલાકાતીઓ સાથે, તે વિશ્વનું પાંચમું સૌથી વધુ લોકપ્રિય પર્યટક સ્થળ છે.",
+            "શહેરનો ઉત્તર ભાગ, તેમજ બોસ્પોરસ દરિયાકિનારો, દરિયાઇ અને ભેજવાળી સબટ્રોપિકલ હવામાનની લાક્ષણિકતાઓ વ્યક્ત કરે છે.",
+            "ઉત્તર અને દક્ષિણ દરિયાકાંઠે વાર્ષિક સરેરાશ તાપમાન, બાહિકેકી 12.8 (સે (55.0 ° ફે), કર્તાલ 15.03 ° સે (59.05 ° ફે) વચ્ચે નોંધપાત્ર તફાવત છે.",
+            "તે મુખ્યત્વે તેના બાયઝેન્ટાઇન અને ઓટ્ટોમન સ્થાપત્ય માટે જાણીતું છે",
+            "ગ્રાન્ડ બઝાર એ વિશ્વના સૌથી મોટા અને સૌથી જૂના coveredંકાયેલ બજારોમાંનું એક છે.",
+            "હાજીયા સોફિયા એ લગભગ 900 વર્ષોથી વિશ્વનું સૌથી મોટું ચર્ચ હતું.",
+            "ઇસ્તંબુલનો વિશ્વનો ત્રીજો સૌથી જુનો સબવે છે, જે 1875 માં બંધાયો હતો. તે 573 મીટર લાંબો છે અને બેયોગ્લુ જિલ્લામાં સ્થિત છે."
+        ]
+    }
+}

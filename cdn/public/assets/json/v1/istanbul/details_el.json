@@ -1,0 +1,344 @@
+{
+    "basic_info": {
+        "name": "Κωνσταντινούπολη",
+        "id": "istanbul",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/%C4%B0stanbul-Ayasofya.JPG/1280px-%C4%B0stanbul-Ayasofya.JPG",
+        "place": "Αγία Σοφία, Κωνσταντινούπολη",
+        "licence": "<a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en/\">CC0 1.0</a>",
+        "photo_by": "Robster1983",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:%C4%B0stanbul-Ayasofya.JPG"
+    },
+    "airport": {
+        "name": "Αεροδρόμιο της Κωνσταντινούπολης"
+    },
+    "climate": {
+        "type": "Μεταβατική Μεσόγειος",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "Καλοκαίρι",
+                "temp": "20 ° C έως 23 ° C",
+                "duration": "Ιούνιος-Αύγ"
+            },
+            {
+                "emoji": "🍁",
+                "name": "Φθινόπωρο",
+                "temp": "11 ° C έως 19 ° C",
+                "duration": "Σεπ-Νοεμβρίου"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "Χειμώνας",
+                "temp": "5 ° C έως 8 ° C",
+                "duration": "Δεκ-Μαρ"
+            },
+            {
+                "emoji": "🌼",
+                "name": "Ανοιξη",
+                "temp": "11 ° C έως 16 ° C",
+                "duration": "Απρίλιος-Μάιος"
+            }
+        ]
+    },
+    "country": {
+        "name": "Τουρκία 🇹🇷",
+        "continent": "Ευρώπη και Ασία"
+    },
+    "currency": {
+        "name": "Τουρκική λιρέτα",
+        "symbol": "TL",
+        "code": "TRY"
+    },
+    "dance": {
+        "name": "Haley, Ciftetelli, Καλώς ήλθατε"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "περιστροφικός",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Doner_kebab%2C_Istanbul%2C_Turkey.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "(WT-shared) Shoestring",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Doner_kebab,_Istanbul,_Turkey.JPG"
+            },
+            {
+                "label": "Menemen",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2018/10/25/09/08/menemen-3771970_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "Engin_Akyurt",
+                "attribution_url": "https://pixabay.com/photos/menemen-egg-casserole-table-wood-3771970/"
+            },
+            {
+                "label": "Ψωμί ψαριών",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bal%C4%B1k-ekmek_in_Ankara.jpg/1024px-Bal%C4%B1k-ekmek_in_Ankara.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "E4024",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Bal%C4%B1k-ekmek_in_Ankara.jpg"
+            },
+            {
+                "label": "Τουρκικό τσάι",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2019/02/28/08/18/tea-4025510_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "smuldur",
+                "attribution_url": "https://pixabay.com/photos/tea-table-turkish-beverage-4025510/"
+            },
+            {
+                "label": "λουκούμι",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2017/10/27/10/00/turkish-2893751_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "itsbytespixels",
+                "attribution_url": "https://pixabay.com/photos/turkish-sweet-dessert-2893751/"
+            },
+            {
+                "label": "Ωμά κεφτεδάκια",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2017/08/10/16/13/cigkofte-2624336_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "iGlobalWeb",
+                "attribution_url": "https://pixabay.com/photos/cigkofte-turkish-food-bulgur-2624336/"
+            },
+            {
+                "label": "Lahmacun",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Lahmacun.jpg/1024px-Lahmacun.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": " Rainer Zenz (asumed)",
+                "attribution_url": "https://en.wikipedia.org/wiki/Lahmacun#/media/File:Lahmacun.jpg"
+            },
+            {
+                "label" : "Shish κεμπάπ",
+                "is_veg": false,
+                "is_non_veg" : true,
+                "photo" : "https://cdn.pixabay.com/photo/2017/09/03/07/10/shish-kebab-2709499_1280.jpg",
+                "licence" : "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by" : "nikitozawr",
+                "attribution_url" : "https://pixabay.com/photos/shish-kebab-meat-kubny-plan-tasty-2709499/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "Υφασμα",
+        "secondary": [
+            "Χαλί",
+            "Food processing"
+        ]
+    },
+    "language": {
+        "primary": "τούρκικος",
+        "secondary": [
+            "Αγγλικά"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_el_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_el_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_el_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_el_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_el_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Kis Uykusu",
+                "poster_url": "https://image.tmdb.org/t/p/w500/iHIS7FjHpj7JtBEuNzvHeTRIzEk.jpg"
+            },
+            {
+                "title": "Bir Zamanlar Anadolu'da",
+                "poster_url": "https://image.tmdb.org/t/p/w500/2V3JClFTjw4ToBIyBo2PxMdiyCS.jpg"
+            },
+            {
+                "title": "Mustang",
+                "poster_url": "https://image.tmdb.org/t/p/w500/lyoBiBKdCm4ed1yZJAo7llM3vdg.jpg"
+            },
+            {
+                "title" : "Kelebegin Rüyasi",
+                "poster_url" : "https://image.tmdb.org/t/p/w500/q3lx59mnABD1phQuSxswabamvpn.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name" : "Ρετζέπ Ταγίπ Ερντογάν",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/6/65/Recep_Tayyip_Erdo%C4%9Fan_2019_%28cropped%29.jpg",
+                "work" : "Πρόεδρος της Τουρκίας",
+                "place" : "Kasimpasa, Κωνσταντινούπολη",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by" : "Mikhail Palinchak",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Recep_Tayyip_Erdo%C4%9Fan_2019_(cropped).jpg"
+            },
+            {
+                "name"     : "Mehmed VI",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Sultan_Mehmed_VI_of_the_Ottoman_Empire.jpg/576px-Sultan_Mehmed_VI_of_the_Ottoman_Empire.jpg",
+                "place" : "Κωνσταντινούπολη",
+                "work" : "Τελευταίος Σουλτάνος της Οθωμανικής Αυτοκρατορίας"
+                
+            },
+
+            {
+                "name" : "Άρντα Τουράν",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/AUT_vs._TUR_2016-03-29_%28283%29.jpg/512px-AUT_vs._TUR_2016-03-29_%28283%29.jpg",
+                "work" : "Επαγγελματικός ποδοσφαιριστής",
+                "place" : "Φατίχ, Κωνσταντινούπολη",
+                "photo_by" : "Steindy",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url" : "https://en.wikipedia.org/wiki/File:AUT_vs._TUR_2016-03-29_(283).jpg"
+            },
+            {
+                "name" : "Halide Edib Adıvar",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/6/6c/Halide_adivar.jpg",
+                "work" : "Μυθιστορητής, εθνικιστής και πολιτικός ηγέτης για τα δικαιώματα των γυναικών",
+                "place" : "Κωνσταντινούπολη"
+            },
+
+            {
+                "name" : "Νούρι Μπιλτζ Σεϋλάν",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/1/1a/Nuribilgeceylan.jpg",
+                "work" : "Σκηνοθέτης",
+                "place" : "Κωνσταντινούπολη"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ Ποδόσφαιρο",
+        "footer": "Μπάσκετ και βόλεϊ"
+    },
+    "time_to_visit": {
+        "primary": "Απρίλιος Μάιος",
+        "secondary": "Σεπτέμβριος-Octorber"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "Μουσείο Αγίας Σοφίας",
+                "description": "Μουσείο βυζαντινής βασιλικής με ψηφιδωτά",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOuPf6PMw2jRqqdJPElxYE-wVKFyc8gWYFDpmaE=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114411208126953807978\">Wolfgang Unglaub</a>"
+                ],
+                "place_id": "ChIJJxwBkr65yhQRrk9EN29vbiM"
+            },
+            {
+                "name": "Το Μπλε Τζαμί",
+                "description": "Εικονικό Μπλε Τζαμί με 6 μιναρέδες",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPs-6o2nVgLFk0c_OQFlOo4rGUhvZfwN2vqs7He=s1600-w800",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116568261039607681002\">Mohsin Ali</a>"
+                ],
+                "place_id": "ChIJ4fRwZb25yhQRpHwVijb3LeU"
+            },
+            {
+                "name": "Μουσείο Παλάτι Τοπ Καπί",
+                "description": "Ιστορικό συγκρότημα παλατιών της Οθωμανικής εποχής",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMIB4qi5U-HFY7HhzlJsyDL-TzZf_1d-yTcRs-3=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113253188086359121984\">Alex Massari</a>"
+                ],
+                "place_id": "ChIJM_ilr7i5yhQRAFMBw0MZqhU"
+            },
+            {
+                "name": "μεγάλο παζάρι",
+                "description": "Λαβύρινθος από πολύχρωμες καλυμμένες αγορές",
+                "place_id": "ChIJJwXXYpG5yhQRq5jBWgtoyGQ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP4-n_6Fkw99eiVom0-J71N5d3XQ1dkI6EDB5Rl=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112363346142702930782\">Juan Jurado</a>"
+                ]
+            },
+            {
+                "name" : "Τζαμί Suleymaniye",
+                "description": "Οθωμανικό τζαμί του 16ου αιώνα",
+                "place_id" : "ChIJMRDAOo25yhQR7c9XIQT1zIo",
+                "photos" : "https://lh3.googleusercontent.com/p/AF1QipMdvPCASefEvJbMi_j4UC5bD75E3EkBbnhOaRKV=s1600-w900",
+                "html_attributions" : [
+                    "<a href=\"https://maps.google.com/maps/contrib/104937090589239040242\">Saleh MIL</a>"
+                ]
+            },
+            {
+                "name": "Βόσπορος",
+                "description": "Ορόσημο υδάτινη οδός και ηπειρωτικό όριο",
+                "place_id": "ChIJn5k8FGjKyhQRtd_p_WFbAGM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPFUHkaRVQiA-WSmzg2eNL0T4EPxIFOZYfT9mqq=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115855376794259556107\">Archon K</a>"
+                ]
+            },
+            {
+                "name": "Βασιλική Υδραγωγείο",
+                "description": "Αποκατεστημένα υδάτινα έργα 542 μ.Χ.",
+                "place_id": "ChIJyWrG4L25yhQRcYRt7uEvwGA",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPyn_xYhodZyegis5K7nxGGASjSjh7adG5szJfU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108614338924270739269\">Marcello Marques</a>"
+                ]
+            },
+            {
+                "name": "Παλάτι Dolmabahçe",
+                "description": "Μουσείο στο περίτεχνο οθωμανικό παλάτι του σουλτάνου",
+                "place_id": "ChIJ4307Gna3yhQRC4M7zzg-09w",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNeK0l0FchFWjap4fuZQ-hV9_WFklgrcPNib1S4=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112288080342389239027\">Dolmabahçe Sarayı</a>"
+                ]
+            },
+            {
+                "name": "Πύργος Γαλατά",
+                "description": "Βυζαντινός πύργος και εστιατόριο 67 μέτρων",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPALjJCJBqgu7MiuGzbZ_f_acwm8oRfruxd4Rwu=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105671018490792374724\">tarek radwan</a>"
+                ],
+                "place_id": "ChIJQ3x3p-e5yhQRCzOLzD3Pdkw"
+            },
+            {
+                "name": "Πλατεία Σουλταναχμέτ",
+                "description": "Δημόσια πλατεία όπου στάθηκε ο ιππόδρομος",
+                "place_id": "ChIJ2XlLfO25yhQR8Hcxg0Af5V4",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipN0g7kypDV_QVGIOPtwgWkptI62rOmavXIM3T06=s1600-w845",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106989409402974863626\">Naci Gülaçmaz</a>"
+                ]
+            },
+            {
+                "name": "Παζάρι μπαχαρικών",
+                "description": "Ιστορική καλυμμένη αγορά μπαχαρικών και υφασμάτων",
+                "place_id": "ChIJn9t8b-u5yhQRXVCwl43vu0Q",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNZPBA6-TUrZnaun7dYvlvpim0TZ086qstuaetD=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115862629829929880484\">Alberto Gozzelino</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 180,
+    "trivia": {
+        "items": [
+            "Παλαιότερα ήταν γνωστό ως Βυζάντιο και Κωνσταντινούπολη.",
+            "Είναι η πιο πυκνοκατοικημένη πόλη στην Τουρκία.",
+            "Είναι οικονομικό, πολιτιστικό και ιστορικό κέντρο στην Τουρκία.",
+            "Η Κωνσταντινούπολη είναι μια διηπειρωτική πόλη στην Ευρασία, που εκτείνεται στο στενό του Βοσπόρου (που χωρίζει την Ευρώπη και την Ασία) μεταξύ της Θάλασσας του Μαρμαρά και της Μαύρης Θάλασσας.",
+            "Το 1923, μετά τον Τουρκικό Πόλεμο της Ανεξαρτησίας, η Άγκυρα επιλέχθηκε ως η νέα τουρκική πρωτεύουσα και το όνομα της πόλης άλλαξε σε Κωνσταντινούπολη.",
+            "Με πάνω από 12 εκατομμύρια ξένους επισκέπτες, είναι η πόλη στον πέμπτο πιο δημοφιλή τουριστικό προορισμό στον κόσμο.",
+            "Το βόρειο μισό της πόλης, καθώς και η ακτογραμμή του Βοσπόρου, εκφράζουν χαρακτηριστικά ωκεάνιου και υγρού υποτροπικού κλίματος.",
+            "Υπάρχει μια σημαντική διαφορά μεταξύ των μέσων ετήσιων θερμοκρασιών και στις βόρειες και νότιες ακτές, Bahçeköy 12,8 ° C (55,0 ° F), Kartal 15,03 ° C (59,05 ° F).",
+            "Είναι κυρίως γνωστό για τη βυζαντινή και οθωμανική αρχιτεκτονική του",
+            "Το Μεγάλο Παζάρι είναι μια από τις μεγαλύτερες και παλαιότερες καλυμμένες αγορές στον κόσμο.",
+            "Η Αγία Σοφία ήταν η μεγαλύτερη εκκλησία στον κόσμο για περίπου 900 χρόνια.",
+            "Η Κωνσταντινούπολη έχει το τρίτο παλαιότερο μετρό στον κόσμο, που χτίστηκε το 1875. Έχει μήκος 573 μέτρα και βρίσκεται στην περιοχή Beyoglu."
+        ]
+    }
+}

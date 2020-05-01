@@ -1,0 +1,344 @@
+{
+    "basic_info": {
+        "name": "استنبول",
+        "id": "istanbul",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/%C4%B0stanbul-Ayasofya.JPG/1280px-%C4%B0stanbul-Ayasofya.JPG",
+        "place": "ہگیا صوفیہ ، استنبول",
+        "licence": "<a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en/\">CC0 1.0</a>",
+        "photo_by": "Robster1983",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:%C4%B0stanbul-Ayasofya.JPG"
+    },
+    "airport": {
+        "name": "استنبول ہوائی اڈ .ہ"
+    },
+    "climate": {
+        "type": "عبوری بحر روم",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "موسم گرما",
+                "temp": "20 ° C سے 23 ° C",
+                "duration": "جون اگست"
+            },
+            {
+                "emoji": "🍁",
+                "name": "خزاں",
+                "temp": "11 ° C سے 19 ° C",
+                "duration": "ستمبر نومبر"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "موسم سرما",
+                "temp": "5 ° C سے 8 ° C",
+                "duration": "دسمبر مارچ"
+            },
+            {
+                "emoji": "🌼",
+                "name": "بہار",
+                "temp": "11 ° C سے 16 ° C",
+                "duration": "اپریل - مئی"
+            }
+        ]
+    },
+    "country": {
+        "name": "ترکی 🇹🇷",
+        "continent": "یورپ اور ایشیاء"
+    },
+    "currency": {
+        "name": "ترک لیرا",
+        "symbol": "TL",
+        "code": "TRY"
+    },
+    "dance": {
+        "name": "ہیلی ، سیفٹیلی ، خوش آمدید"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "روٹری",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Doner_kebab%2C_Istanbul%2C_Turkey.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "(WT-shared) Shoestring",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Doner_kebab,_Istanbul,_Turkey.JPG"
+            },
+            {
+                "label": "Menemen",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2018/10/25/09/08/menemen-3771970_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "Engin_Akyurt",
+                "attribution_url": "https://pixabay.com/photos/menemen-egg-casserole-table-wood-3771970/"
+            },
+            {
+                "label": "مچھلی کی روٹی",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bal%C4%B1k-ekmek_in_Ankara.jpg/1024px-Bal%C4%B1k-ekmek_in_Ankara.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "E4024",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Bal%C4%B1k-ekmek_in_Ankara.jpg"
+            },
+            {
+                "label": "ترکی چائے",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2019/02/28/08/18/tea-4025510_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "smuldur",
+                "attribution_url": "https://pixabay.com/photos/tea-table-turkish-beverage-4025510/"
+            },
+            {
+                "label": "ترکی خوشی",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://cdn.pixabay.com/photo/2017/10/27/10/00/turkish-2893751_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "itsbytespixels",
+                "attribution_url": "https://pixabay.com/photos/turkish-sweet-dessert-2893751/"
+            },
+            {
+                "label": "کچے میٹ بالز",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2017/08/10/16/13/cigkofte-2624336_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "iGlobalWeb",
+                "attribution_url": "https://pixabay.com/photos/cigkofte-turkish-food-bulgur-2624336/"
+            },
+            {
+                "label": "lahmacun",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Lahmacun.jpg/1024px-Lahmacun.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": " Rainer Zenz (asumed)",
+                "attribution_url": "https://en.wikipedia.org/wiki/Lahmacun#/media/File:Lahmacun.jpg"
+            },
+            {
+                "label" : "شیش کباب",
+                "is_veg": false,
+                "is_non_veg" : true,
+                "photo" : "https://cdn.pixabay.com/photo/2017/09/03/07/10/shish-kebab-2709499_1280.jpg",
+                "licence" : "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by" : "nikitozawr",
+                "attribution_url" : "https://pixabay.com/photos/shish-kebab-meat-kubny-plan-tasty-2709499/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "ٹیکسٹائل",
+        "secondary": [
+            "قالین",
+            "Food processing"
+        ]
+    },
+    "language": {
+        "primary": "ترکی",
+        "secondary": [
+            "انگریزی"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_ur_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_ur_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_ur_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_ur_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/istanbul_map_ur_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Kis Uykusu",
+                "poster_url": "https://image.tmdb.org/t/p/w500/iHIS7FjHpj7JtBEuNzvHeTRIzEk.jpg"
+            },
+            {
+                "title": "Bir Zamanlar Anadolu'da",
+                "poster_url": "https://image.tmdb.org/t/p/w500/2V3JClFTjw4ToBIyBo2PxMdiyCS.jpg"
+            },
+            {
+                "title": "Mustang",
+                "poster_url": "https://image.tmdb.org/t/p/w500/lyoBiBKdCm4ed1yZJAo7llM3vdg.jpg"
+            },
+            {
+                "title" : "Kelebegin Rüyasi",
+                "poster_url" : "https://image.tmdb.org/t/p/w500/q3lx59mnABD1phQuSxswabamvpn.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name" : "رجب طیب اردگان",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/6/65/Recep_Tayyip_Erdo%C4%9Fan_2019_%28cropped%29.jpg",
+                "work" : "ترکی کے صدر",
+                "place" : "کسمپسا ، استنبول",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by" : "Mikhail Palinchak",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Recep_Tayyip_Erdo%C4%9Fan_2019_(cropped).jpg"
+            },
+            {
+                "name"     : "محمود ششم",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Sultan_Mehmed_VI_of_the_Ottoman_Empire.jpg/576px-Sultan_Mehmed_VI_of_the_Ottoman_Empire.jpg",
+                "place" : "استنبول",
+                "work" : "سلطنت عثمانیہ کا آخری سلطان"
+                
+            },
+
+            {
+                "name" : "اردہ توران",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/AUT_vs._TUR_2016-03-29_%28283%29.jpg/512px-AUT_vs._TUR_2016-03-29_%28283%29.jpg",
+                "work" : "پروفیشنل فٹ بالر",
+                "place" : "فتح ، استنبول",
+                "photo_by" : "Steindy",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url" : "https://en.wikipedia.org/wiki/File:AUT_vs._TUR_2016-03-29_(283).jpg"
+            },
+            {
+                "name" : "ہالیڈ اڈیب اڈوار",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/6/6c/Halide_adivar.jpg",
+                "work" : "خواتین کے حقوق کے لئے ناول نگار ، قوم پرست اور سیاسی رہنما",
+                "place" : "استنبول"
+            },
+
+            {
+                "name" : "نوری بلج سیلان",
+                "avatar_url" : "https://upload.wikimedia.org/wikipedia/commons/1/1a/Nuribilgeceylan.jpg",
+                "work" : "فلم ڈائریکٹر",
+                "place" : "استنبول"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ فٹ بال",
+        "footer": "باسکٹ بال اور والی بال"
+    },
+    "time_to_visit": {
+        "primary": "اپریل مئی",
+        "secondary": "ستمبر اکتوبر"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "ہاجیہ صوفیہ میوزیم",
+                "description": "بازنطینی باسیلیکا میوزیم موزیک کے ساتھ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOuPf6PMw2jRqqdJPElxYE-wVKFyc8gWYFDpmaE=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114411208126953807978\">Wolfgang Unglaub</a>"
+                ],
+                "place_id": "ChIJJxwBkr65yhQRrk9EN29vbiM"
+            },
+            {
+                "name": "نیلی مسجد",
+                "description": "آئکنک بلیو مسجد جس میں 6 مینار ہیں",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPs-6o2nVgLFk0c_OQFlOo4rGUhvZfwN2vqs7He=s1600-w800",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116568261039607681002\">Mohsin Ali</a>"
+                ],
+                "place_id": "ChIJ4fRwZb25yhQRpHwVijb3LeU"
+            },
+            {
+                "name": "ٹوپکاپی پیلس میوزیم",
+                "description": "تاریخی عثمانی دور کے محلات",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMIB4qi5U-HFY7HhzlJsyDL-TzZf_1d-yTcRs-3=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113253188086359121984\">Alex Massari</a>"
+                ],
+                "place_id": "ChIJM_ilr7i5yhQRAFMBw0MZqhU"
+            },
+            {
+                "name": "گرینڈ بازار",
+                "description": "رنگ برنگی احاطہ کرتا بازار",
+                "place_id": "ChIJJwXXYpG5yhQRq5jBWgtoyGQ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP4-n_6Fkw99eiVom0-J71N5d3XQ1dkI6EDB5Rl=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112363346142702930782\">Juan Jurado</a>"
+                ]
+            },
+            {
+                "name" : "سلیمانmani مسجد",
+                "description": "16 ویں صدی میں واقع عثمانی مسجد",
+                "place_id" : "ChIJMRDAOo25yhQR7c9XIQT1zIo",
+                "photos" : "https://lh3.googleusercontent.com/p/AF1QipMdvPCASefEvJbMi_j4UC5bD75E3EkBbnhOaRKV=s1600-w900",
+                "html_attributions" : [
+                    "<a href=\"https://maps.google.com/maps/contrib/104937090589239040242\">Saleh MIL</a>"
+                ]
+            },
+            {
+                "name": "باسفورس",
+                "description": "تاریخی آبی شاہراہ اور براعظم کی حد",
+                "place_id": "ChIJn5k8FGjKyhQRtd_p_WFbAGM",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPFUHkaRVQiA-WSmzg2eNL0T4EPxIFOZYfT9mqq=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115855376794259556107\">Archon K</a>"
+                ]
+            },
+            {
+                "name": "بیسیلیکا سسٹن",
+                "description": "542 اے ڈی واٹر ورکس کو بحال کیا",
+                "place_id": "ChIJyWrG4L25yhQRcYRt7uEvwGA",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPyn_xYhodZyegis5K7nxGGASjSjh7adG5szJfU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108614338924270739269\">Marcello Marques</a>"
+                ]
+            },
+            {
+                "name": "ڈولمباہی محل",
+                "description": "زینت عثمانی سلطان کے محل میں میوزیم",
+                "place_id": "ChIJ4307Gna3yhQRC4M7zzg-09w",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNeK0l0FchFWjap4fuZQ-hV9_WFklgrcPNib1S4=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112288080342389239027\">Dolmabahçe Sarayı</a>"
+                ]
+            },
+            {
+                "name": "گلٹا ٹاور",
+                "description": "67 میٹر بازنطینی ٹاور اینڈ ریسٹورنٹ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPALjJCJBqgu7MiuGzbZ_f_acwm8oRfruxd4Rwu=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105671018490792374724\">tarek radwan</a>"
+                ],
+                "place_id": "ChIJQ3x3p-e5yhQRCzOLzD3Pdkw"
+            },
+            {
+                "name": "سلطاناہیمت اسکوائر",
+                "description": "عوامی مربع جہاں ہپ پوڈوم کھڑا تھا",
+                "place_id": "ChIJ2XlLfO25yhQR8Hcxg0Af5V4",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipN0g7kypDV_QVGIOPtwgWkptI62rOmavXIM3T06=s1600-w845",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106989409402974863626\">Naci Gülaçmaz</a>"
+                ]
+            },
+            {
+                "name": "مسالا بازار",
+                "description": "تاریخی آفاقی مصالحہ اور ٹیکسٹائل مارکیٹ",
+                "place_id": "ChIJn9t8b-u5yhQRXVCwl43vu0Q",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNZPBA6-TUrZnaun7dYvlvpim0TZ086qstuaetD=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115862629829929880484\">Alberto Gozzelino</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 180,
+    "trivia": {
+        "items": [
+            "یہ پہلے بازنطیم اور قسطنطنیہ کے نام سے جانا جاتا تھا۔",
+            "یہ ترکی کا سب سے زیادہ آبادی والا شہر ہے۔",
+            "یہ ترکی میں معاشی ، ثقافتی اور تاریخی مرکز ہے۔",
+            "استنبول یوریشیا کا ایک ٹرانسکونٹینینٹل شہر ہے ، یہ بحیرہ مارمارا اور بحیرہ اسود کے درمیان باسپورس آبنائے (جو یورپ اور ایشیاء کو الگ کرتا ہے) کا سفر کرتا ہے۔",
+            "1923 میں ، ترک جنگ آزادی کے بعد ، انقرہ کو ترکی کا نیا دارالحکومت منتخب کیا گیا ، اور اس شہر کا نام تبدیل کرکے استنبول کردیا گیا۔",
+            "12 ملین غیر ملکی زائرین کے ساتھ ، یہ شہر دنیا کا پانچواں مقبول سیاحتی مقام ہے۔",
+            "شہر کا شمالی نصف حص asہ ، نیز بھوپورس ساحل ، سمندری اور مرطوب آب و ہوا کی آب و ہوا کی خصوصیات کا اظہار کرتا ہے۔",
+            "شمالی اور جنوبی ساحلوں پر سالانہ اوسط درجہ حرارت میں بھی بہت اہم فرق ہے ، بہاکی 12.8 ° C (55.0 ° F) ، کرتال 15.03 ° C (59.05 ° F).",
+            "یہ بنیادی طور پر اپنے بازنطینی اور عثمانی فن تعمیر کے لئے جانا جاتا ہے",
+            "گرینڈ بازار دنیا کی سب سے بڑی اور قدیم ترین مارکیٹوں میں سے ایک ہے۔",
+            "ہاگیا صوفیہ تقریبا 900 سالوں سے دنیا کا سب سے بڑا چرچ تھا۔",
+            "استنبول میں دنیا کا تیسرا سب سے قدیم سب وے ہے جو 1875 میں تعمیر کیا گیا تھا۔ یہ 573 میٹر لمبا ہے اور بییوغلو ضلع میں واقع ہے۔"
+        ]
+    }
+}

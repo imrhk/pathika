@@ -175,5 +175,41 @@
             204,
             0
         ]
+    },
+    {
+        "id" : "pl",
+        "msg": "Dzień dobry!",
+        "name" : "Polski",
+        "color" : [
+            255, 220, 20, 60
+        ]
+
+    },
+    {
+        "id" : "pt",
+        "msg" : "Olá!",
+        "name" : "Português",
+        "color" : [
+            255, 0, 102, 0
+        ]
+    },
+    {
+        "id" : "tr",
+        "msg" : "Merhaba!",
+        "name" : "Türkçe",
+        "color" : [
+            255,
+            227, 10, 23
+        ]
+    },
+    {
+        "id" : "ur",
+        "msg" : "ہیلو!",
+        "name" : "اُردُو",
+        "color" : [
+            255, 
+            10, 79, 227
+        ],
+        "rtl": true
     }
 ]
