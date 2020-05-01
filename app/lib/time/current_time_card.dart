@@ -40,7 +40,7 @@ class CurrentTimeCard extends StatelessWidget implements Details<int> {
             heading: BlocProvider.of<LocalizationBloc>(context)
                 .localize('current_time', 'Current Time'),
             title: formattedTime,
-            subtitle: '${getTimeFromDuration(snapshot.data)} $hours $suffix',
+            subtitle:  snapshot.data.inSeconds == 0 ? "" : '${getTimeFromDuration(snapshot.data)} $hours $suffix',
           );
         }
       },

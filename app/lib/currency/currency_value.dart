@@ -34,6 +34,9 @@ class CurrencyValue extends StatelessWidget {
           );
         } else {
           final conversionItem = snapshot.data;
+          if(conversionItem.quantity == 0) {
+            return Container();
+          }
           final symbolTo = NumberFormat.simpleCurrency(name: conversionItem.to);
           final symbolFrom =
               NumberFormat.simpleCurrency(name: conversionItem.from);

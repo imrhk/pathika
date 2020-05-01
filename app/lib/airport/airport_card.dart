@@ -18,7 +18,7 @@ class AirportCard extends StatelessWidget implements Details<AirportDetails>{
   @override
   Widget build(BuildContext context) {
     return InfoCard(
-      color: useColorsOnCard ? Colors.cyan : null,
+      color: useColorsOnCard ? Colors.green : null,
       heading: BlocProvider.of<LocalizationBloc>(context)
           .localize('airport', 'Airport'),
       title: details.name,

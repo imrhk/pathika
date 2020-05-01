@@ -6,12 +6,14 @@ class TouristAttractionDetails {
   final String description;
   final String photos;
   final List<String> htmlAttributions;
+  final String licence;
   TouristAttractionDetails({
     this.name,
     this.placeId,
     this.description,
     this.photos,
     this.htmlAttributions,
+    this.licence
   });
 
   factory TouristAttractionDetails.empty() {
@@ -20,7 +22,8 @@ class TouristAttractionDetails {
         htmlAttributions: [],
         name: "",
         photos: "",
-        placeId: "");
+        placeId: "",
+        licence: "");
   }
 
   TouristAttractionDetails copyWith({
@@ -29,6 +32,7 @@ class TouristAttractionDetails {
     String description,
     String photos,
     List<String> htmlAttributions,
+    String licence,
   }) {
     return TouristAttractionDetails(
       name: name ?? this.name,
@@ -36,6 +40,7 @@ class TouristAttractionDetails {
       description: description ?? this.description,
       photos: photos ?? this.photos,
       htmlAttributions: htmlAttributions ?? this.htmlAttributions,
+      licence: licence ?? this.licence,
     );
   }
 
@@ -46,6 +51,7 @@ class TouristAttractionDetails {
       'description': description,
       'photos': photos,
       'html_attributions': List<dynamic>.from(htmlAttributions.map((x) => x)),
+      'licence': licence,
     };
   }
 
@@ -58,6 +64,7 @@ class TouristAttractionDetails {
       description: map['description'],
       photos: map['photos'],
       htmlAttributions: List<String>.from(map['html_attributions']),
+      licence: map['licence'],
     );
   }
 
@@ -68,7 +75,7 @@ class TouristAttractionDetails {
 
   @override
   String toString() {
-    return 'TouristAttractionDetails name: $name, place_id: $placeId, description: $description, photos: $photos, html_attributions: $htmlAttributions';
+    return 'TouristAttractionDetails name: $name, place_id: $placeId, description: $description, photos: $photos, html_attributions: $htmlAttributions, licence: $licence';
   }
 
   @override
@@ -80,15 +87,20 @@ class TouristAttractionDetails {
         o.placeId == placeId &&
         o.description == description &&
         o.photos == photos &&
-        o.htmlAttributions == htmlAttributions;
+        o.htmlAttributions == htmlAttributions &&
+        o.licence == licence;
   }
 
   @override
   int get hashCode {
-    return name.hashCode ^
+    final hashCode =  name.hashCode ^
         placeId.hashCode ^
         description.hashCode ^
         photos.hashCode ^
         htmlAttributions.hashCode;
+    if(licence != null) {
+      return hashCode ^ licence.hashCode;
+    }
+    return hashCode;
   }
 }

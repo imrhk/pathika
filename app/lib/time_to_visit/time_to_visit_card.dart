@@ -17,13 +17,19 @@ class TimeToVisitCard extends StatelessWidget implements Details<TimeToVisitDeta
         super(key: key);
   @override
   Widget build(BuildContext context) {
-    final or = BlocProvider.of<LocalizationBloc>(context).localize('_or', 'or');
     return InfoCard(
       color: useColorsOnCard ? Colors.amber : null,
       heading: BlocProvider.of<LocalizationBloc>(context)
           .localize('best_time_to_visit', 'Best Time to Visit'),
       title: details.primary,
-      subtitle: '$or ${details.secondary}',
+      subtitle: getSubtitle(context),
     );
+  }
+
+  String getSubtitle(BuildContext context) {
+    if(details.secondary == null || details.secondary.isEmpty) 
+      return "";
+    return '${BlocProvider.of<LocalizationBloc>(context).localize('_or', 'or')} ${details.secondary}'; 
+
   }
 }

@@ -14,6 +14,11 @@ class AppLanguage {
     this.rtl = false,
   });
 
+  factory AppLanguage.def(){
+    return AppLanguage(
+      id: "en",
+    );
+  }
   AppLanguage copyWith({
     String id,
     String name,

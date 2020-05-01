@@ -1,6 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:universal_io/io.dart';
 
 import '../common/info_card.dart';
 import '../core/adt_details.dart';
@@ -9,7 +11,7 @@ import 'food_item_card.dart';
 import 'food_item_details.dart';
 import 'food_items_list.dart';
 
-class FoodItemsListCard extends StatelessWidget implements Details<FoodItemsList>{
+class FoodItemsListCard extends StatelessWidget implements Details<FoodItemsList> {
   final bool useColorsOnCard;
   final FoodItemsList details;
   FoodItemsListCard({
@@ -22,8 +24,7 @@ class FoodItemsListCard extends StatelessWidget implements Details<FoodItemsList
   Widget build(BuildContext context) {
     return InfoCard(
       color: useColorsOnCard ? Colors.teal : null,
-      heading:
-          BlocProvider.of<LocalizationBloc>(context).localize('food', 'Food'),
+      heading: BlocProvider.of<LocalizationBloc>(context).localize('food', 'Food'),
       body: _FoodItemsListCardInternal(
         useColorsOnCard: useColorsOnCard,
         items: details.items,
@@ -36,16 +37,13 @@ class _FoodItemsListCardInternal extends StatefulWidget {
   final List<FoodItemDetails> items;
   final bool useColorsOnCard;
 
-  const _FoodItemsListCardInternal({Key key, this.items, this.useColorsOnCard})
-      : super(key: key);
+  const _FoodItemsListCardInternal({Key key, this.items, this.useColorsOnCard}) : super(key: key);
 
   @override
-  __FoodItemsListCardInternalState createState() =>
-      __FoodItemsListCardInternalState();
+  __FoodItemsListCardInternalState createState() => __FoodItemsListCardInternalState();
 }
 
-class __FoodItemsListCardInternalState
-    extends State<_FoodItemsListCardInternal> {
+class __FoodItemsListCardInternalState extends State<_FoodItemsListCardInternal> {
   List<FoodItemDetails> _filteredItems;
   bool showVegOnly = true;
 
@@ -65,8 +63,7 @@ class __FoodItemsListCardInternalState
     setState(() {
       showVegOnly = filterValue;
       if (showVegOnly) {
-        _filteredItems =
-            widget.items.where((element) => element.isVeg).toList();
+        _filteredItems = widget.items.where((element) => element.isVeg).toList();
       } else {
         _filteredItems = []..addAll(widget.items);
       }
@@ -78,8 +75,7 @@ class __FoodItemsListCardInternalState
     setState(() {
       showVegOnly = !showVegOnly;
       if (showVegOnly) {
-        _filteredItems =
-            widget.items.where((element) => element.isVeg).toList();
+        _filteredItems = widget.items.where((element) => element.isVeg).toList();
       } else {
         _filteredItems = []..addAll(widget.items);
       }
@@ -110,11 +106,7 @@ class __FoodItemsListCardInternalState
                         licence: item.licence,
                         attributionUrl: item.attributionUrl,
                         photoBy: item.photoBy,
-                        cardColor:
-                            Theme.of(context).brightness == Brightness.dark ||
-                                    widget.useColorsOnCard
-                                ? Colors.transparent
-                                : null,
+                        cardColor: Theme.of(context).brightness == Brightness.dark || widget.useColorsOnCard ? Colors.transparent : null,
                       );
                     },
                     itemCount: _filteredItems.length,
@@ -122,18 +114,16 @@ class __FoodItemsListCardInternalState
                 : showVegOnly
                     ? Center(
                         child: Text(
-                          BlocProvider.of<LocalizationBloc>(context)
-                              .localize('no_veg_available', 'Vegetarian foods are not popular here.'),
+                          BlocProvider.of<LocalizationBloc>(context).localize('no_veg_available', 'Vegetarian foods are not popular here.'),
                         ),
                       )
                     : Center(child: Text(''))),
         ButtonBar(
           children: <Widget>[
             Text(
-              BlocProvider.of<LocalizationBloc>(context)
-                  .localize('veg_only', 'Show Veg Only'),
+              BlocProvider.of<LocalizationBloc>(context).localize('veg_only', 'Show Veg Only'),
             ),
-            Switch(
+            getPlatformSwitch(
               value: showVegOnly,
               onChanged: (_) => _toggleFilterValue(),
             ),
@@ -141,5 +131,9 @@ class __FoodItemsListCardInternalState
         ),
       ],
     );
+  }
+
+  Widget getPlatformSwitch({bool value, Function onChanged}) {
+    return Platform.isIOS ? CupertinoSwitch(value: value, onChanged: onChanged) : Switch(value: value, onChanged: onChanged);
   }
 }

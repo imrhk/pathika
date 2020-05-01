@@ -1,6 +1,5 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:pathika/common/attributions.dart';
 
 class TouristAttractionItemCard extends StatelessWidget {
   final String name;
@@ -8,14 +7,33 @@ class TouristAttractionItemCard extends StatelessWidget {
   final String description;
   final Color cardColor;
   final String attribution;
+  final String licence;
   const TouristAttractionItemCard(
-      {Key key,
-      this.name,
-      this.posterUrl,
-      this.description,
-      this.cardColor = Colors.transparent,
-      this.attribution})
+      {Key key, this.name, this.posterUrl, this.description, this.cardColor = Colors.transparent, this.attribution, this.licence})
       : super(key: key);
+
+  String get contributorName {
+    if (attribution == null || attribution.isEmpty) return null;
+    final startIndexContributor = attribution.indexOf('>') + 1;
+    final endIndexContributor = attribution.indexOf('<', startIndexContributor);
+
+    if (startIndexContributor == 0 || endIndexContributor == -1) {
+      return null;
+    }
+
+    return attribution.substring(startIndexContributor, endIndexContributor);
+  }
+
+  String get contributionUrl {
+    if (attribution == null || attribution.isEmpty) return null;
+    final startIndexUrl = attribution.indexOf('https');
+    final endIndexUrl = attribution.indexOf('"', startIndexUrl);
+    if (startIndexUrl == -1 || endIndexUrl == -1) {
+      return null;
+    }
+
+    return attribution.substring(startIndexUrl, endIndexUrl);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -66,66 +84,12 @@ class TouristAttractionItemCard extends StatelessWidget {
             ),
             if (attribution != null && attribution != "")
               Padding(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 4, horizontal: 10),
-                  child: getAttributionWidget(context, attribution)),
+                padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 10),
+                child: getAttributionWidget(context, contributorName, contributionUrl, licence),
+              ),
           ],
         ),
       ),
     );
-  }
-
-  Widget getAttributionWidget(BuildContext context, String attribution) {
-//                    "<a href=\"https://maps.google.com/maps/contrib/115635279769083588516\">André Magdalena</a>"
-
-    final startIndexUrl = attribution.indexOf('https');
-    final endIndexUrl = attribution.indexOf('"', startIndexUrl);
-    if (startIndexUrl == -1 || endIndexUrl == -1) {
-      return Container();
-    }
-
-    final url = attribution.substring(startIndexUrl, endIndexUrl);
-    final startIndexContributor = attribution.indexOf('>') + 1;
-    final endIndexContributor = attribution.indexOf('<', startIndexContributor);
-
-    if (startIndexContributor == 0 || endIndexContributor == -1) {
-      return Container();
-    }
-
-    final contributorName =
-        attribution.substring(startIndexContributor, endIndexContributor);
-    return Container(
-      width: double.infinity,
-      child: new RichText(
-        textAlign: TextAlign.end,
-        text: new TextSpan(
-          style: TextStyle(fontStyle: FontStyle.italic),
-          children: [
-            new TextSpan(
-              text: 'Photo by ',
-              style: Theme.of(context).textTheme.caption,
-            ),
-            new TextSpan(
-              text: contributorName,
-              style: Theme.of(context).textTheme.caption.apply(
-                    decoration: TextDecoration.underline,
-                  ),
-              recognizer: new TapGestureRecognizer()
-                ..onTap = () {
-                  _launchURL(url);
-                },
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  _launchURL(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
   }
 }

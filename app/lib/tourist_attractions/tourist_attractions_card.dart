@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pathika/core/utility.dart';
 
 import '../common/info_card.dart';
 import '../core/adt_details.dart';
@@ -20,7 +21,7 @@ class TouristAttractionsCard extends StatelessWidget implements Details<TouristA
   @override
   Widget build(BuildContext context) {
     return InfoCard(
-      color: useColorsOnCard ? Colors.green : null,
+      color: useColorsOnCard ? materialBlack : null,
       heading: BlocProvider.of<LocalizationBloc>(context)
           .localize('tourist_attractions', 'Tourist Attractions'),
       body: Container(
@@ -39,6 +40,7 @@ class TouristAttractionsCard extends StatelessWidget implements Details<TouristA
               attribution: item.htmlAttributions.length > 0
                   ? item.htmlAttributions[0]
                   : null,
+                  licence: item.licence,
               cardColor: Theme.of(context).brightness == Brightness.dark ||
                       useColorsOnCard
                   ? Colors.transparent
