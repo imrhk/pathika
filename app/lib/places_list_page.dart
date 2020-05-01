@@ -31,21 +31,21 @@ class PlacesListPage extends StatelessWidget {
         if (snapshot.connectionState == ConnectionState.done && snapshot.data != null) {
           List<PlaceInfo> places = snapshot.data;
           return GridView.builder(
-              gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                maxCrossAxisExtent: 500,
-                mainAxisSpacing: 10,
-                crossAxisSpacing: 10,
-                childAspectRatio: 1.5,
-              ),
-              itemBuilder: (ctx, index) {
-                final item = places[index];
-                return getItemWidget(
-                  context,
-                  item,
-                );
-              },
-              itemCount: places.length,
+            gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+              maxCrossAxisExtent: 500,
+              mainAxisSpacing: 10,
+              crossAxisSpacing: 10,
+              childAspectRatio: 1.5,
+            ),
+            itemBuilder: (ctx, index) {
+              final item = places[index];
+              return getItemWidget(
+                context,
+                item,
               );
+            },
+            itemCount: places.length,
+          );
         }
         return Container();
       },
@@ -132,6 +132,9 @@ class PlacesListPage extends StatelessWidget {
     } else {
       return Card(
         elevation: 5,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12),
+        ),
         child: InkWell(
           onTap: onTap,
           child: child,

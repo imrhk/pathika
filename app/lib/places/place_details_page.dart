@@ -311,6 +311,33 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
       floating: false,
       pinned: true,
       flexibleSpace: getBasicInfoWidget(placeDetails),
+      actions: <Widget>[
+        GestureDetector(
+          child: Icon(Icons.search),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => Theme(
+                  data: materialAppTheme,
+                  child: Scaffold(
+                    appBar: AppBar(
+                      title: Text(
+                        BlocProvider.of<LocalizationBloc>(context).localize('_discover', 'Discover'),
+                      ),
+                    ),
+                    body: PlacesListPage(
+                      httpClient: widget.httpClient,
+                      changePlace: widget.changePlace,
+                      currentLanguage: widget.language,
+                    ),
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+      ],
     );
   }
 

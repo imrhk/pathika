@@ -8,7 +8,7 @@ import 'package:pathika/common/cupertino_list_tile.dart';
 import 'package:pathika/localization/localization_bloc.dart';
 import 'package:pathika/places/place_info.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:universal_io/io.dart';
+import 'package:universal_io/io.dart' show HttpClient, Platform;
 
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
