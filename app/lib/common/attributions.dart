@@ -48,7 +48,7 @@ Widget getAttributionWidget(BuildContext context, String photoBy, String atttrib
         children: [
           if (photoBy != null)
             TextSpan(
-              text: BlocProvider.of<LocalizationBloc>(context).localize('photo_by', 'Photo by'),
+              text: BlocProvider.of<LocalizationBloc>(context).localize('_photo_by', 'Photo by'),
               style: Theme.of(context).textTheme.caption.apply(
                     decoration: TextDecoration.underline,
                     color: textColor,

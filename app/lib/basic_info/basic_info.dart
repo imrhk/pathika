@@ -1,13 +1,13 @@
 import 'dart:convert';
 
 class BasicInfo {
-  String name;
-  String id;
-  String backgroundImage;
-  String place;
-  String licence;
-  String photoBy;
-  String attributionUrl;
+  final String name;
+  final String id;
+  final String backgroundImage;
+  final String place;
+  final String licence;
+  final String photoBy;
+  final String attributionUrl;
   BasicInfo({
     this.name,
     this.id,

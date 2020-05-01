@@ -213,7 +213,7 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             GestureDetector(
-              child: Icon(CupertinoIcons.search, color: CupertinoColors.activeBlue),
+              child: Icon(IconData(0xf453, fontFamily: 'CupertinoIcons', fontPackage: 'cupertino_icons'), color: CupertinoColors.activeBlue),
               onTap: () {
                 Navigator.push(
                   context,
@@ -224,7 +224,7 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                         navigationBar: CupertinoNavigationBar(
                           middle: GestureDetector(
                             child: Text(
-                              BlocProvider.of<LocalizationBloc>(context).localize('_search', 'Search'),
+                              BlocProvider.of<LocalizationBloc>(context).localize('_discover', 'Discover'),
                             ),
                           ),
                           leading: GestureDetector(
@@ -245,6 +245,7 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                         child: PlacesListPage(
                           httpClient: widget.httpClient,
                           changePlace: widget.changePlace,
+                          currentLanguage: widget.language,
                         ),
                       ),
                     ),

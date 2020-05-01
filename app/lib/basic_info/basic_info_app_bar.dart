@@ -20,17 +20,19 @@ class BasicInfoAppBar extends StatelessWidget {
         body: Container(
           width: double.infinity,
           height: height,
-          child:Stack(
+          child: Stack(
             children: <Widget>[
-              _getBackground(),
+              CardBackgroundWidget(
+                url: basicInfo.backgroundImage,
+                boxFit: orientation == Orientation.portrait ? BoxFit.fitHeight : BoxFit.fitWidth,
+              ),
               Align(
                 alignment: Alignment.bottomRight,
-                child:  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: getCoverPhotoAttribution(context, basicInfo, Colors.white),
-                  ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: getCoverPhotoAttribution(context, basicInfo, Colors.white),
                 ),
-            
+              ),
             ],
           ),
         ),
@@ -40,7 +42,10 @@ class BasicInfoAppBar extends StatelessWidget {
     return FlexibleSpaceBar(
       centerTitle: true,
       title: _getTitle(),
-      background: _getBackground(),
+      background: CardBackgroundWidget(
+        url: basicInfo.backgroundImage,
+        boxFit: orientation == Orientation.portrait ? BoxFit.fitHeight : BoxFit.fitWidth,
+      ),
     );
   }
 
@@ -56,16 +61,23 @@ class BasicInfoAppBar extends StatelessWidget {
       ),
     );
   }
+}
 
-  Widget _getBackground() {
+class CardBackgroundWidget extends StatelessWidget {
+  final String url;
+  final BoxFit boxFit;
+  const CardBackgroundWidget({Key key, this.url, this.boxFit = BoxFit.cover}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
     return Stack(
       alignment: Alignment.topCenter,
       children: [
         Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: NetworkImage(basicInfo.backgroundImage),
-              fit: orientation == Orientation.portrait ? BoxFit.fitHeight : BoxFit.fitWidth,
+              image: NetworkImage(url),
+              fit: boxFit,
             ),
           ),
         ),
