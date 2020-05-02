@@ -79,6 +79,7 @@ class _PathikaAppState extends State<PathikaApp> with WidgetsBindingObserver {
       return CupertinoApp(
         theme: appTheme?.themeDataCupertino ?? AppTheme.light(),
         home: _getHomeWidget(),
+        debugShowCheckedModeBanner: false,
         //route
       );
     } else {

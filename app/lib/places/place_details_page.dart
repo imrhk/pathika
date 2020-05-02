@@ -231,10 +231,13 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                             child: Row(
                               children: <Widget>[
                                 Icon(CupertinoIcons.left_chevron, color: CupertinoColors.activeBlue),
-                                Text(
-                                  placeDetails.basicInfo.name,
-                                  style: TextStyle(
-                                    color: CupertinoColors.activeBlue,
+                                Flexible(
+                                  child: Text(
+                                    placeDetails.basicInfo.name,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: TextStyle(
+                                      color: CupertinoColors.activeBlue,
+                                    ),
                                   ),
                                 ),
                               ],
@@ -273,10 +276,13 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                             child: Row(
                               children: <Widget>[
                                 Icon(CupertinoIcons.left_chevron, color: CupertinoColors.activeBlue),
-                                Text(
-                                  placeDetails.basicInfo.name,
-                                  style: TextStyle(
-                                    color: CupertinoColors.activeBlue,
+                                Flexible(
+                                  child: Text(
+                                    placeDetails.basicInfo.name,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: TextStyle(
+                                      color: CupertinoColors.activeBlue,
+                                    ),
                                   ),
                                 ),
                               ],

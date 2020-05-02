@@ -26,30 +26,33 @@ class PlacesListPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<List<PlaceInfo>>(
-      builder: (ctx, snapshot) {
-        if (snapshot.connectionState == ConnectionState.done && snapshot.data != null) {
-          List<PlaceInfo> places = snapshot.data;
-          return GridView.builder(
-            gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-              maxCrossAxisExtent: 500,
-              mainAxisSpacing: 10,
-              crossAxisSpacing: 10,
-              childAspectRatio: 1.5,
-            ),
-            itemBuilder: (ctx, index) {
-              final item = places[index];
-              return getItemWidget(
-                context,
-                item,
-              );
-            },
-            itemCount: places.length,
-          );
-        }
-        return Container();
-      },
-      future: getPlaces(),
+    return Container(
+      margin: EdgeInsets.only(bottom: 70),
+      child: FutureBuilder<List<PlaceInfo>>(
+        builder: (ctx, snapshot) {
+          if (snapshot.connectionState == ConnectionState.done && snapshot.data != null) {
+            List<PlaceInfo> places = snapshot.data;
+            return GridView.builder(
+              gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+                maxCrossAxisExtent: 500,
+                mainAxisSpacing: 10,
+                crossAxisSpacing: 10,
+                childAspectRatio: 1.5,
+              ),
+              itemBuilder: (ctx, index) {
+                final item = places[index];
+                return getItemWidget(
+                  context,
+                  item,
+                );
+              },
+              itemCount: places.length,
+            );
+          }
+          return Container();
+        },
+        future: getPlaces(),
+      ),
     );
   }
 
