@@ -1,0 +1,271 @@
+{
+    "basic_info": {
+        "name": "જયપુર",
+        "id": "jaipur",
+        "background_image": "https://storage.needpix.com/rsynced_images/jaipur-4027735_1280.jpg",
+        "place": "હવા મહલ, જયપુર"
+    },
+    "airport": {
+        "name": "જયપુર આંતરરાષ્ટ્રીય હવાઇમથક"
+    },
+    "climate": {
+        "type": "ગરમ અર્ધ-શુષ્ક",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "ઉનાળો",
+                "temp": "25 ° સે થી 45. સે",
+                "duration": "Mar-Jun"
+            },
+            {
+                "emoji": "⛈️",
+                "name": "ચોમાસુ",
+                "temp": "34. સે થી 25 ડિગ્રી સે",
+                "duration": "જુલાઈથી સપ્ટેમ્બર"
+            },
+            {
+                "emoji": "🍁",
+                "name": "પાનખર",
+                "temp": "25 ° સે થી 15 ડિગ્રી સે",
+                "duration": "Octક્ટો-નવે"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "શિયાળો",
+                "temp": "20 ° સે થી 8 ડિગ્રી સે",
+                "duration": "ડિસે-ફેબ્રુ"
+            }
+        ]
+    },
+    "country": {
+        "name": "ભારત 🇮🇳",
+        "continent": "એશિયા"
+    },
+    "currency": {
+        "name": "ભારતીય રૂપિયા",
+        "symbol": "₹",
+        "code": "INR"
+    },
+    "dance": {
+        "name": "ઘૂમર, કાલબેલીયા, ભવાઈ"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "Dal Bathi Churma",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Rajasthani_Dish.jpg/640px-Rajasthani_Dish.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Niranjan.gohane",
+                "attribution_url": "https://en.wikipedia.org/wiki/Dal_baati#/media/File:Rajasthani_Dish.jpg"
+            },
+            {
+                "label": "પિયાઝ કી કચોરી",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Rajasthani_Pyaz_ki_Kachori.JPG/1024px-Rajasthani_Pyaz_ki_Kachori.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Mdsmds0",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Rajasthani_Pyaz_ki_Kachori.JPG"
+            },
+            {
+                "label": "ઘેવર",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Ghevar_with_Malai_Topping.jpg/1024px-Ghevar_with_Malai_Topping.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Pradeep717",
+                "attribution_url": "https://en.wikipedia.org/wiki/Ghevar#/media/File:Ghevar_with_Malai_Topping.jpg"
+            },
+            {
+                "label": "ગત્તે કી સબજી",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Daal_baati_and_gatte_ki_sabji.jpg/640px-Daal_baati_and_gatte_ki_sabji.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Sahil tiwarie",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Daal_baati_and_gatte_ki_sabji.jpg"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "કલા અને હસ્તકલા",
+        "secondary": [
+            "કાપડ",
+            "ધાતુના ઉત્પાદનો"
+        ]
+    },
+    "language": {
+        "primary": "ના.",
+        "secondary": [
+            "અંગ્રેજી"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_gu_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_gu_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_gu_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_gu_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_gu_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Lagaan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/yNX9lFRAFeNLNRIXdqZK9gYrYKa.jpg"
+            },
+            {
+                "title": "Pather Panchali",
+                "poster_url": "https://image.tmdb.org/t/p/w300/rOHuGsO18d8BN3hQ0kMKZ5l9caE.jpg"
+            },
+            {
+                "title": "Andhadhun",
+                "poster_url": "https://image.tmdb.org/t/p/w300/dy3K6hNvwE05siGgiLJcEiwgpdO.jpg"
+            },
+            {
+                "title": "Gully Boy",
+                "poster_url": "https://image.tmdb.org/t/p/w300/h57EzPdrDvtUkvbTj6ar5yZOPic.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "માનસિંહ II",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Man_Singh_II.jpg",
+                "work": "જયપુર રાજ્યના છેલ્લા શાસક મહારાજા",
+                "place": "જયપુર રાજ્ય"
+            },
+            {
+                "name": "ઇરફાન કહ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Irrfan_Khan_May_2015.jpg/318px-Irrfan_Khan_May_2015.jpg",
+                "place": "જયપુર",
+                "work": "મૂવી એક્ટર",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Irrfan_Khan_May_2015.jpg",
+                "photo_by": "Bollywood Hungama",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a>"
+            }
+        ]
+    },
+    "sports": {
+        "title": "🏏 ક્રિકેટ",
+        "footer": ""
+    },
+    "time_to_visit": {
+        "primary": "નવેમ્બર-ફેબ્રુઆરી",
+        "secondary": ""
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "અંબર પેલેસ",
+                "description": "16 મી સદીનો ટેકરીનો કિલ્લો અને મહેલ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMQ3loGfiDhFaybylLAesKkp56UiH9gLxXL4eTB=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104593614172683905944\">svenhartmannandrease</a>"
+                ],
+                "place_id": "ChIJ-w3Sy1qwbTkRK34UR2ffIWI"
+            },
+            {
+                "name": "હવા મહલ",
+                "description": "ગુલાબી / લાલ રેતીનો પથ્થર 'પવનનો મહેલ'",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMHRzYvttrXYvmnguxoFDdfK4ar0yl7sYMAKW8F=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110040575485667904814\">RANKIT BORAD</a>"
+                ],
+                "place_id": "ChIJpQvTG0uxbTkRDLLMHlNdDoY"
+            },
+            {
+                "name": "સિટી પેલેસ",
+                "description": "1700 દાયકાનો મહેલ સંકુલ અને સંગ્રહાલય",
+                "photos": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/City_Palace-Jaipur-India0010.JPG/1024px-City_Palace-Jaipur-India0010.JPG",
+                "html_attributions": [
+                    "<a href=\"https://commons.wikimedia.org/wiki/File:City_Palace-Jaipur-India0010.JPG\">Diego Delso, delso.photo</a>"
+                ],
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA</a>",
+                "place_id": "ChIJwbAghgu0bTkRYHt9ATEVgEQ"
+            },
+            {
+                "name": "ડિનર મંતર",
+                "description": "ખગોળીય નિરીક્ષણ માટેનાં સાધનો",
+                "place_id": "ChIJaXD1f0yxbTkRvquNoSkESuk",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP-MGzH90OGhB84Q12KRzfrSSHLmCR3uvIf0DSd=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113584951292877508204\">Kishore CM</a>"
+                ]
+            },
+            {
+                "name": "જલ મહેલ",
+                "description": "તળાવની મધ્યમાં .તિહાસિક મહેલ",
+                "place_id": "ChIJlXJ26RuxbTkR0qsToxFP05c",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMu8ofxdtbgZQIWmvcsHqZrbjI386zzIIB_KNXc=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101577237551130307623\">Richa Sharma</a>"
+                ]
+            },
+            {
+                "name": "બિરલા મંદિર",
+                "description": "સફેદ આરસનું આધુનિક હિન્દુ મંદિર",
+                "place_id": "ChIJr6cur5m2bTkRWIDcK9acl30",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOy7iRm-HID6QDOdjkOW-YykAEvQ8tVlcJ_9hJA=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101519490984330527752\">sushant saurabh</a>"
+                ]
+            },
+            {
+                "name": "નાહરગ Fort કિલ્લો",
+                "description": "હિલ્લોટોનો કિલ્લો વિશાળ દૃશ્યો આપે છે",
+                "place_id": "ChIJ0fNH81yxbTkRi56uF-amqgo",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOduNUoa17G7o0IQshrpZL-ksBfv1eBpM3kBeQL=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112125705215912116770\">Manish Nandha</a>"
+                ]
+            },
+            {
+                "name": "બાપુબજાર",
+                "description": "ધમાકેદાર ટૂરિસ્ટ માર્કેટ અને બજાર",
+                "place_id": "ChIJAQAAXbK2bTkRaExzSLpKDZ4",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOlkq_erzxkHT3n41LfewT2vAKdM03Uojf1z3DU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116901379822239569885\">Gunjan Kumar Singh</a>"
+                ]
+            },
+            {
+                "name": "આલ્બર્ટ હોલ મ્યુઝિયમ",
+                "description": "સુશોભિત સંગ્રહાલયમાં કલા અને કલાકૃતિઓ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMsYAvuigihJ2iRXcpLVpH0n-0V1cuz_WDUmySd=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105984280115104388216\">Abhi Patil</a>"
+                ],
+                "place_id": "ChIJXyn5OrC2bTkRaGk8EzNDuwU"
+            },
+            {
+                "name": "મસાલા ચોક",
+                "description": "આ બજારમાં ભારતીય સ્ટ્રીટ ફૂડ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPcZRQ7fbdgmisGta7O1VC7GaXasMXRaboTG5Ve=s1600-w900",
+                "place_id": "ChIJn-pcyea3bTkR4K-wjKseidE",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114813305781638691973\">Heidi Li</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 330,
+    "trivia": {
+        "items": [
+            "તેને પિંક સિટી કહેવામાં આવે છે.",
+            "તે ભારતનું પ્રારંભિક આયોજિત શહેર છે",
+            "તે રાજસ્થાન અને રાજસ્થાન રાજ્યનું સૌથી મોટું શહેર છે",
+            "તે મોટાભાગની ખર્ચાળ હોટલ સ્યુટ માટે જાણીતું છે.",
+            "તે ભારતનું એક લોકપ્રિય પર્યટન સ્થળ છે અને દિલ્હી અને આગ્રાની સાથે પશ્ચિમ ગોલ્ડન ત્રિકોણ પર્યટક સર્કિટનો એક ભાગ બનાવે છે.",
+            "તેમાં શાંત મંદિરો, લાંબા સમયથી forભા રહેલા કિલ્લાઓ અને મહેલો અને શાહી સ્પર્શવાળી સુંદર હાવલીઓ શામેલ છે",
+            "જયપુરથી 60 કિમીના અંતરે સંભાર ભારતનું સૌથી મોટું ખારા તળાવ હોવા માટે પ્રખ્યાત છે",
+            "તેમાં લાંબી, અત્યંત ગરમ ઉનાળો અને ટૂંકા, હળવાથી ગરમ શિયાળો છે.",
+            "દર વર્ષે હાથીનો ઉત્સવ યોજવામાં આવે છે. આ તહેવારમાં એલિફન્ટ પોલો અને એલિફન્ટ ડાન્સનો સમાવેશ થાય છે.",
+            "મહારાજા સવાઈ સિંહ દ્વારા બનાવવામાં આવેલ હવા મહેલ, શાહી મહિલાઓને નીચેની શેરીમાં રોજિંદા જીવનની દેખરેખ ન દેવા દેવાના હેતુથી કામ કરે છે."
+        ]
+    }
+}

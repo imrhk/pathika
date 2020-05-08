@@ -1,0 +1,271 @@
+{
+    "basic_info": {
+        "name": "Джайпур",
+        "id": "jaipur",
+        "background_image": "https://storage.needpix.com/rsynced_images/jaipur-4027735_1280.jpg",
+        "place": "Хава Махал, Джайпур"
+    },
+    "airport": {
+        "name": "Международный аэропорт Джайпур"
+    },
+    "climate": {
+        "type": "Горячая Полусухая",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "Летом",
+                "temp": "От 25 ° C до 45 ° C",
+                "duration": "Март-июнь"
+            },
+            {
+                "emoji": "⛈️",
+                "name": "муссон",
+                "temp": "34 ° C до 25 ° C",
+                "duration": "С июля по сентябрь"
+            },
+            {
+                "emoji": "🍁",
+                "name": "осень",
+                "temp": "От 25 ° C до 15 ° C",
+                "duration": "Октябрь-ноябрь"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "зима",
+                "temp": "20 ° C до 8 ° C",
+                "duration": "Декабрь-февраль"
+            }
+        ]
+    },
+    "country": {
+        "name": "Индия 🇮🇳",
+        "continent": "Азия"
+    },
+    "currency": {
+        "name": "Индийская рупия",
+        "symbol": "₹",
+        "code": "INR"
+    },
+    "dance": {
+        "name": "Гумар, Калбелия, Бхаваи"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "Даль Бати Чурма",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Rajasthani_Dish.jpg/640px-Rajasthani_Dish.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Niranjan.gohane",
+                "attribution_url": "https://en.wikipedia.org/wiki/Dal_baati#/media/File:Rajasthani_Dish.jpg"
+            },
+            {
+                "label": "Пяз Ки Качори",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Rajasthani_Pyaz_ki_Kachori.JPG/1024px-Rajasthani_Pyaz_ki_Kachori.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Mdsmds0",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Rajasthani_Pyaz_ki_Kachori.JPG"
+            },
+            {
+                "label": "Ghevr",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Ghevar_with_Malai_Topping.jpg/1024px-Ghevar_with_Malai_Topping.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Pradeep717",
+                "attribution_url": "https://en.wikipedia.org/wiki/Ghevar#/media/File:Ghevar_with_Malai_Topping.jpg"
+            },
+            {
+                "label": "Гатте Ки Сабджи",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Daal_baati_and_gatte_ki_sabji.jpg/640px-Daal_baati_and_gatte_ki_sabji.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Sahil tiwarie",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Daal_baati_and_gatte_ki_sabji.jpg"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "Искусства и ремесла",
+        "secondary": [
+            "Текстиль",
+            "Металлические изделия"
+        ]
+    },
+    "language": {
+        "primary": "не",
+        "secondary": [
+            "английский"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_ru_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_ru_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_ru_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_ru_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_ru_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Lagaan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/yNX9lFRAFeNLNRIXdqZK9gYrYKa.jpg"
+            },
+            {
+                "title": "Pather Panchali",
+                "poster_url": "https://image.tmdb.org/t/p/w300/rOHuGsO18d8BN3hQ0kMKZ5l9caE.jpg"
+            },
+            {
+                "title": "Andhadhun",
+                "poster_url": "https://image.tmdb.org/t/p/w300/dy3K6hNvwE05siGgiLJcEiwgpdO.jpg"
+            },
+            {
+                "title": "Gully Boy",
+                "poster_url": "https://image.tmdb.org/t/p/w300/h57EzPdrDvtUkvbTj6ar5yZOPic.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "Ман Сингх II",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Man_Singh_II.jpg",
+                "work": "Последний правящий махарадж из штата Джайпур",
+                "place": "Штат джайпур"
+            },
+            {
+                "name": "Ирфан Кан",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Irrfan_Khan_May_2015.jpg/318px-Irrfan_Khan_May_2015.jpg",
+                "place": "Джайпур",
+                "work": "Кино актер",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Irrfan_Khan_May_2015.jpg",
+                "photo_by": "Bollywood Hungama",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a>"
+            }
+        ]
+    },
+    "sports": {
+        "title": "Ric Крикет",
+        "footer": ""
+    },
+    "time_to_visit": {
+        "primary": "Ноябрь-февраль",
+        "secondary": ""
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "Янтарный дворец",
+                "description": "Форт и дворец на вершине холма 16 века",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMQ3loGfiDhFaybylLAesKkp56UiH9gLxXL4eTB=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104593614172683905944\">svenhartmannandrease</a>"
+                ],
+                "place_id": "ChIJ-w3Sy1qwbTkRK34UR2ffIWI"
+            },
+            {
+                "name": "Хава махал",
+                "description": "Розовый / Красный песчаник \"Дворец Ветров\"",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMHRzYvttrXYvmnguxoFDdfK4ar0yl7sYMAKW8F=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110040575485667904814\">RANKIT BORAD</a>"
+                ],
+                "place_id": "ChIJpQvTG0uxbTkRDLLMHlNdDoY"
+            },
+            {
+                "name": "Городской Дворец",
+                "description": "Дворцовый комплекс и музей 1700-х годов",
+                "photos": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/City_Palace-Jaipur-India0010.JPG/1024px-City_Palace-Jaipur-India0010.JPG",
+                "html_attributions": [
+                    "<a href=\"https://commons.wikimedia.org/wiki/File:City_Palace-Jaipur-India0010.JPG\">Diego Delso, delso.photo</a>"
+                ],
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA</a>",
+                "place_id": "ChIJwbAghgu0bTkRYHt9ATEVgEQ"
+            },
+            {
+                "name": "Обед Мантар",
+                "description": "Инструменты для астрономических наблюдений",
+                "place_id": "ChIJaXD1f0yxbTkRvquNoSkESuk",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP-MGzH90OGhB84Q12KRzfrSSHLmCR3uvIf0DSd=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113584951292877508204\">Kishore CM</a>"
+                ]
+            },
+            {
+                "name": "Джал Махал",
+                "description": "Исторический дворец посреди озера",
+                "place_id": "ChIJlXJ26RuxbTkR0qsToxFP05c",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMu8ofxdtbgZQIWmvcsHqZrbjI386zzIIB_KNXc=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101577237551130307623\">Richa Sharma</a>"
+                ]
+            },
+            {
+                "name": "Бирла Мандир",
+                "description": "Современный индуистский храм из белого мрамора",
+                "place_id": "ChIJr6cur5m2bTkRWIDcK9acl30",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOy7iRm-HID6QDOdjkOW-YykAEvQ8tVlcJ_9hJA=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101519490984330527752\">sushant saurabh</a>"
+                ]
+            },
+            {
+                "name": "Форт Нахаргарх",
+                "description": "Форт на вершине холма, открывающий широкие виды",
+                "place_id": "ChIJ0fNH81yxbTkRi56uF-amqgo",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOduNUoa17G7o0IQshrpZL-ksBfv1eBpM3kBeQL=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112125705215912116770\">Manish Nandha</a>"
+                ]
+            },
+            {
+                "name": "Bapu Bazar",
+                "description": "Оживленный туристический рынок и базар",
+                "place_id": "ChIJAQAAXbK2bTkRaExzSLpKDZ4",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOlkq_erzxkHT3n41LfewT2vAKdM03Uojf1z3DU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116901379822239569885\">Gunjan Kumar Singh</a>"
+                ]
+            },
+            {
+                "name": "Музей Альберт-Холла",
+                "description": "Искусство и артефакты в богато украшенном музее",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMsYAvuigihJ2iRXcpLVpH0n-0V1cuz_WDUmySd=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105984280115104388216\">Abhi Patil</a>"
+                ],
+                "place_id": "ChIJXyn5OrC2bTkRaGk8EzNDuwU"
+            },
+            {
+                "name": "Масала Чоук",
+                "description": "Индийская уличная еда на этом рынке",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPcZRQ7fbdgmisGta7O1VC7GaXasMXRaboTG5Ve=s1600-w900",
+                "place_id": "ChIJn-pcyea3bTkR4K-wjKseidE",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114813305781638691973\">Heidi Li</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 330,
+    "trivia": {
+        "items": [
+            "Это называется Розовый Город.",
+            "Это один из самых ранних запланированных городов Индии",
+            "Это столица и крупнейший город индийского штата Раджастхан",
+            "Он известен самыми дорогими гостиничными номерами.",
+            "Это популярное туристическое направление в Индии и является частью туристической цепи Западного Золотого Треугольника наряду с Дели и Агрой.",
+            "Она включает в себя безмятежные храмы, древние форты и дворцы, а также прекрасный хавелис с королевским прикосновением к ним.",
+            "Самбхар, расположенный на расстоянии 60 км от Джайпура, известен тем, что является самым большим соленым озером в Индии.",
+            "У него длинное, очень жаркое лето и короткая, мягкая или теплая зима.",
+            "Фестиваль слонов проводится каждый год. Фестиваль представляет Слоновое Поло и Танец Слонов.",
+            "Хава Махал, построенный Махараджей Савай Сингхом, позволил королевским дамам наблюдать за повседневной жизнью на улице внизу, оставаясь незамеченным."
+        ]
+    }
+}

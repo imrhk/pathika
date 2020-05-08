@@ -1,0 +1,271 @@
+{
+    "basic_info": {
+        "name": "جے پور",
+        "id": "jaipur",
+        "background_image": "https://storage.needpix.com/rsynced_images/jaipur-4027735_1280.jpg",
+        "place": "ہوا محل ، جے پور"
+    },
+    "airport": {
+        "name": "جے پور بین الاقوامی ہوائی اڈ .ہ"
+    },
+    "climate": {
+        "type": "نیم گرم ، شہوت انگیز",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "موسم گرما",
+                "temp": "25 ° C سے 45 to C",
+                "duration": "مار جون"
+            },
+            {
+                "emoji": "⛈️",
+                "name": "مون سون",
+                "temp": "34 ° C سے 25. C",
+                "duration": "ستمبر جولائی"
+            },
+            {
+                "emoji": "🍁",
+                "name": "خزاں",
+                "temp": "25 ° C سے 15 ° C",
+                "duration": "اکتوبر۔ نومبر"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "موسم سرما",
+                "temp": "20 ° C سے 8 ° C",
+                "duration": "دسمبر فروری"
+            }
+        ]
+    },
+    "country": {
+        "name": "ہندوستان 🇮🇳",
+        "continent": "ایشیا"
+    },
+    "currency": {
+        "name": "ہندوستانی روپیہ",
+        "symbol": "₹",
+        "code": "INR"
+    },
+    "dance": {
+        "name": "گھومار ، کالبیلیہ ، بھائوئی"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "دال بتی چورما",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Rajasthani_Dish.jpg/640px-Rajasthani_Dish.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Niranjan.gohane",
+                "attribution_url": "https://en.wikipedia.org/wiki/Dal_baati#/media/File:Rajasthani_Dish.jpg"
+            },
+            {
+                "label": "پیاز کی کچوری",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Rajasthani_Pyaz_ki_Kachori.JPG/1024px-Rajasthani_Pyaz_ki_Kachori.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Mdsmds0",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Rajasthani_Pyaz_ki_Kachori.JPG"
+            },
+            {
+                "label": "غیور",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Ghevar_with_Malai_Topping.jpg/1024px-Ghevar_with_Malai_Topping.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Pradeep717",
+                "attribution_url": "https://en.wikipedia.org/wiki/Ghevar#/media/File:Ghevar_with_Malai_Topping.jpg"
+            },
+            {
+                "label": "گیٹے کی سبجی",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Daal_baati_and_gatte_ki_sabji.jpg/640px-Daal_baati_and_gatte_ki_sabji.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Sahil tiwarie",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Daal_baati_and_gatte_ki_sabji.jpg"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "فنون اور دستکاری",
+        "secondary": [
+            "ٹیکسٹائل",
+            "دھاتی مصنوعات"
+        ]
+    },
+    "language": {
+        "primary": "نہیں",
+        "secondary": [
+            "انگریزی"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_ur_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_ur_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_ur_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_ur_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_ur_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Lagaan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/yNX9lFRAFeNLNRIXdqZK9gYrYKa.jpg"
+            },
+            {
+                "title": "Pather Panchali",
+                "poster_url": "https://image.tmdb.org/t/p/w300/rOHuGsO18d8BN3hQ0kMKZ5l9caE.jpg"
+            },
+            {
+                "title": "Andhadhun",
+                "poster_url": "https://image.tmdb.org/t/p/w300/dy3K6hNvwE05siGgiLJcEiwgpdO.jpg"
+            },
+            {
+                "title": "Gully Boy",
+                "poster_url": "https://image.tmdb.org/t/p/w300/h57EzPdrDvtUkvbTj6ar5yZOPic.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "مان سنگھ دوم",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Man_Singh_II.jpg",
+                "work": "ریاست جے پور کے آخری حکمران مہاراجہ",
+                "place": "جے پور اسٹیٹ"
+            },
+            {
+                "name": "عرفان کاہن",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Irrfan_Khan_May_2015.jpg/318px-Irrfan_Khan_May_2015.jpg",
+                "place": "جے پور",
+                "work": "مووی اداکار",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Irrfan_Khan_May_2015.jpg",
+                "photo_by": "Bollywood Hungama",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a>"
+            }
+        ]
+    },
+    "sports": {
+        "title": ". کرکٹ",
+        "footer": ""
+    },
+    "time_to_visit": {
+        "primary": "نومبر فروری",
+        "secondary": ""
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "امبر پیلس",
+                "description": "16 ویں صدی کا پہاڑی قلعہ اور محل",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMQ3loGfiDhFaybylLAesKkp56UiH9gLxXL4eTB=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104593614172683905944\">svenhartmannandrease</a>"
+                ],
+                "place_id": "ChIJ-w3Sy1qwbTkRK34UR2ffIWI"
+            },
+            {
+                "name": "ہوا محل",
+                "description": "گلابی / سرخ سینڈ اسٹون 'ہواؤں کا محل'",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMHRzYvttrXYvmnguxoFDdfK4ar0yl7sYMAKW8F=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110040575485667904814\">RANKIT BORAD</a>"
+                ],
+                "place_id": "ChIJpQvTG0uxbTkRDLLMHlNdDoY"
+            },
+            {
+                "name": "سٹی محل",
+                "description": "شاہی 1700 کے محلات کا پیچیدہ اور میوزیم",
+                "photos": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/City_Palace-Jaipur-India0010.JPG/1024px-City_Palace-Jaipur-India0010.JPG",
+                "html_attributions": [
+                    "<a href=\"https://commons.wikimedia.org/wiki/File:City_Palace-Jaipur-India0010.JPG\">Diego Delso, delso.photo</a>"
+                ],
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA</a>",
+                "place_id": "ChIJwbAghgu0bTkRYHt9ATEVgEQ"
+            },
+            {
+                "name": "ڈنر منتر",
+                "description": "فلکیاتی مشاہدے کے ل Inst آلے",
+                "place_id": "ChIJaXD1f0yxbTkRvquNoSkESuk",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP-MGzH90OGhB84Q12KRzfrSSHLmCR3uvIf0DSd=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113584951292877508204\">Kishore CM</a>"
+                ]
+            },
+            {
+                "name": "جل محل",
+                "description": "ایک جھیل کے وسط میں تاریخی محل",
+                "place_id": "ChIJlXJ26RuxbTkR0qsToxFP05c",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMu8ofxdtbgZQIWmvcsHqZrbjI386zzIIB_KNXc=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101577237551130307623\">Richa Sharma</a>"
+                ]
+            },
+            {
+                "name": "برلا مندر",
+                "description": "سفید سنگ مرمر کا جدید ہندو مندر",
+                "place_id": "ChIJr6cur5m2bTkRWIDcK9acl30",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOy7iRm-HID6QDOdjkOW-YykAEvQ8tVlcJ_9hJA=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101519490984330527752\">sushant saurabh</a>"
+                ]
+            },
+            {
+                "name": "نہر گڑھ قلعہ",
+                "description": "پہاڑی کا قلعہ وسیع نظریات پیش کرتا ہے",
+                "place_id": "ChIJ0fNH81yxbTkRi56uF-amqgo",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOduNUoa17G7o0IQshrpZL-ksBfv1eBpM3kBeQL=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112125705215912116770\">Manish Nandha</a>"
+                ]
+            },
+            {
+                "name": "باپو بازار",
+                "description": "ہلچل کا شکار سیاحوں کا بازار اور بازار",
+                "place_id": "ChIJAQAAXbK2bTkRaExzSLpKDZ4",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOlkq_erzxkHT3n41LfewT2vAKdM03Uojf1z3DU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116901379822239569885\">Gunjan Kumar Singh</a>"
+                ]
+            },
+            {
+                "name": "البرٹ ہال میوزیم",
+                "description": "آرائش اور فنون لطیفہ کی زینت میوزیم میں",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMsYAvuigihJ2iRXcpLVpH0n-0V1cuz_WDUmySd=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105984280115104388216\">Abhi Patil</a>"
+                ],
+                "place_id": "ChIJXyn5OrC2bTkRaGk8EzNDuwU"
+            },
+            {
+                "name": "مسالہ چوک",
+                "description": "اس مارکیٹ میں ہندوستانی اسٹریٹ فوڈ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPcZRQ7fbdgmisGta7O1VC7GaXasMXRaboTG5Ve=s1600-w900",
+                "place_id": "ChIJn-pcyea3bTkR4K-wjKseidE",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114813305781638691973\">Heidi Li</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 330,
+    "trivia": {
+        "items": [
+            "اسے پنک سٹی کہا جاتا ہے۔",
+            "یہ ہندوستان کے ابتدائی منصوبہ بند شہر میں سے ایک ہے",
+            "یہ راجستھان اور ہندوستان کی ریاست راجستھان کا سب سے بڑا شہر ہے",
+            "یہ مہنگے ترین ہوٹل سوٹ کے لئے جانا جاتا ہے۔",
+            "یہ ہندوستان میں ایک مشہور سیاحتی مقام ہے اور دہلی اور آگرہ کے ساتھ مغرب گولڈن ٹرائونل ٹورسٹ سرکٹ کا ایک حصہ تشکیل دیتا ہے۔",
+            "اس میں پُرخیر مندر ، دیرپا قلعے اور محلات ، اور شاہی رابطے والی خوبصورت حویلیاں شامل ہیں",
+            "سنبھور ، جے پور سے 60 کلومیٹر کے فاصلے پر واقع ہے جو ہندوستان کی سب سے بڑی نمکین جھیل ہونے کی وجہ سے مشہور ہے",
+            "اس میں لمبا ، انتہائی گرما گرمی اور مختصر ، ہلکی سے ہلکی سردی ہے۔",
+            "ہاتھی کا تہوار ہر سال ہوتا ہے۔ اس میلے میں ہاتھی پولو اور ہاتھی ڈانس شامل ہیں۔",
+            "مہاجا سوئی سنگھ کے ذریعہ تعمیر ہوا محل نے شاہی خواتین کو نیچے دیے گلی میں روزمرہ کی زندگی کا مشاہدہ کرنے کی اجازت دی ہے۔"
+        ]
+    }
+}

@@ -1,0 +1,271 @@
+{
+    "basic_info": {
+        "name": "ஜெய்ப்பூர்",
+        "id": "jaipur",
+        "background_image": "https://storage.needpix.com/rsynced_images/jaipur-4027735_1280.jpg",
+        "place": "ஹவா மஹால், ஜெய்ப்பூர்"
+    },
+    "airport": {
+        "name": "ஜெய்ப்பூர் சர்வதேச விமான நிலையம்"
+    },
+    "climate": {
+        "type": "சூடான அரை வறண்ட",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "கோடை",
+                "temp": "25 ° C முதல் 45. C வரை",
+                "duration": "மார்-ஜூன்"
+            },
+            {
+                "emoji": "⛈️",
+                "name": "பருவமழை",
+                "temp": "34 ° C முதல் 25. C வரை",
+                "duration": "செப்டம்பர் ஜூலை"
+            },
+            {
+                "emoji": "🍁",
+                "name": "இலையுதிர் காலம்",
+                "temp": "25 ° C முதல் 15. C வரை",
+                "duration": "அக்-நவ"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "குளிர்காலம்",
+                "temp": "20 ° C முதல் 8. C வரை",
+                "duration": "டிசம்பர்-பிப்ரவரி"
+            }
+        ]
+    },
+    "country": {
+        "name": "இந்தியா",
+        "continent": "ஆசியா"
+    },
+    "currency": {
+        "name": "இந்திய ரூபாய்",
+        "symbol": "₹",
+        "code": "INR"
+    },
+    "dance": {
+        "name": "கூமர், கல்பெலியா, பவாய்"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "தால் பாதி சுர்மா",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Rajasthani_Dish.jpg/640px-Rajasthani_Dish.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Niranjan.gohane",
+                "attribution_url": "https://en.wikipedia.org/wiki/Dal_baati#/media/File:Rajasthani_Dish.jpg"
+            },
+            {
+                "label": "பியாஸ் கி கச்சோரி",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Rajasthani_Pyaz_ki_Kachori.JPG/1024px-Rajasthani_Pyaz_ki_Kachori.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Mdsmds0",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Rajasthani_Pyaz_ki_Kachori.JPG"
+            },
+            {
+                "label": "கெவர்",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Ghevar_with_Malai_Topping.jpg/1024px-Ghevar_with_Malai_Topping.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Pradeep717",
+                "attribution_url": "https://en.wikipedia.org/wiki/Ghevar#/media/File:Ghevar_with_Malai_Topping.jpg"
+            },
+            {
+                "label": "கட்டே கி சப்ஜி",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Daal_baati_and_gatte_ki_sabji.jpg/640px-Daal_baati_and_gatte_ki_sabji.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Sahil tiwarie",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Daal_baati_and_gatte_ki_sabji.jpg"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "கலை மற்றும் கைவினை",
+        "secondary": [
+            "ஜவுளி",
+            "உலோக பொருட்கள்"
+        ]
+    },
+    "language": {
+        "primary": "இல்லை.",
+        "secondary": [
+            "ஆங்கிலம்"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_ta_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_ta_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_ta_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_ta_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_ta_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Lagaan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/yNX9lFRAFeNLNRIXdqZK9gYrYKa.jpg"
+            },
+            {
+                "title": "Pather Panchali",
+                "poster_url": "https://image.tmdb.org/t/p/w300/rOHuGsO18d8BN3hQ0kMKZ5l9caE.jpg"
+            },
+            {
+                "title": "Andhadhun",
+                "poster_url": "https://image.tmdb.org/t/p/w300/dy3K6hNvwE05siGgiLJcEiwgpdO.jpg"
+            },
+            {
+                "title": "Gully Boy",
+                "poster_url": "https://image.tmdb.org/t/p/w300/h57EzPdrDvtUkvbTj6ar5yZOPic.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "மன் சிங் II",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Man_Singh_II.jpg",
+                "work": "ஜெய்ப்பூர் மாநிலத்தின் கடைசி ஆளும் மகாராஜா",
+                "place": "ஜெய்ப்பூர் மாநிலம்"
+            },
+            {
+                "name": "இர்பான் கான்",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Irrfan_Khan_May_2015.jpg/318px-Irrfan_Khan_May_2015.jpg",
+                "place": "ஜெய்ப்பூர்",
+                "work": "திரைப்பட நடிகர்",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Irrfan_Khan_May_2015.jpg",
+                "photo_by": "Bollywood Hungama",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a>"
+            }
+        ]
+    },
+    "sports": {
+        "title": "கிரிக்கெட்",
+        "footer": ""
+    },
+    "time_to_visit": {
+        "primary": "நவம்பர்-பிப்ரவரி",
+        "secondary": ""
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "அம்பர் அரண்மனை",
+                "description": "16 ஆம் நூற்றாண்டின் மலையடிவார கோட்டை & அரண்மனை",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMQ3loGfiDhFaybylLAesKkp56UiH9gLxXL4eTB=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104593614172683905944\">svenhartmannandrease</a>"
+                ],
+                "place_id": "ChIJ-w3Sy1qwbTkRK34UR2ffIWI"
+            },
+            {
+                "name": "ஹவா மஹால்",
+                "description": "இளஞ்சிவப்பு / சிவப்பு மணற்கல் 'காற்றின் அரண்மனை'",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMHRzYvttrXYvmnguxoFDdfK4ar0yl7sYMAKW8F=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110040575485667904814\">RANKIT BORAD</a>"
+                ],
+                "place_id": "ChIJpQvTG0uxbTkRDLLMHlNdDoY"
+            },
+            {
+                "name": "நகர அரண்மனை",
+                "description": "பகட்டான 1700 களின் அரண்மனை வளாகம் & அருங்காட்சியகம்",
+                "photos": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/City_Palace-Jaipur-India0010.JPG/1024px-City_Palace-Jaipur-India0010.JPG",
+                "html_attributions": [
+                    "<a href=\"https://commons.wikimedia.org/wiki/File:City_Palace-Jaipur-India0010.JPG\">Diego Delso, delso.photo</a>"
+                ],
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA</a>",
+                "place_id": "ChIJwbAghgu0bTkRYHt9ATEVgEQ"
+            },
+            {
+                "name": "இரவு மந்தர்",
+                "description": "வானியல் கண்காணிப்புக்கான கருவிகள்",
+                "place_id": "ChIJaXD1f0yxbTkRvquNoSkESuk",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP-MGzH90OGhB84Q12KRzfrSSHLmCR3uvIf0DSd=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113584951292877508204\">Kishore CM</a>"
+                ]
+            },
+            {
+                "name": "ஜல் மஹால்",
+                "description": "ஒரு ஏரியின் நடுவில் வரலாற்று அரண்மனை",
+                "place_id": "ChIJlXJ26RuxbTkR0qsToxFP05c",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMu8ofxdtbgZQIWmvcsHqZrbjI386zzIIB_KNXc=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101577237551130307623\">Richa Sharma</a>"
+                ]
+            },
+            {
+                "name": "பிர்லா மந்திர்",
+                "description": "வெள்ளை பளிங்கு நவீன இந்து கோயில்",
+                "place_id": "ChIJr6cur5m2bTkRWIDcK9acl30",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOy7iRm-HID6QDOdjkOW-YykAEvQ8tVlcJ_9hJA=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101519490984330527752\">sushant saurabh</a>"
+                ]
+            },
+            {
+                "name": "நஹர்கர் கோட்டை",
+                "description": "மலையக கோட்டை விரிவான காட்சிகளை வழங்குகிறது",
+                "place_id": "ChIJ0fNH81yxbTkRi56uF-amqgo",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOduNUoa17G7o0IQshrpZL-ksBfv1eBpM3kBeQL=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112125705215912116770\">Manish Nandha</a>"
+                ]
+            },
+            {
+                "name": "பாபு பஜார்",
+                "description": "சலசலக்கும் சுற்றுலா சந்தை & பஜார்",
+                "place_id": "ChIJAQAAXbK2bTkRaExzSLpKDZ4",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOlkq_erzxkHT3n41LfewT2vAKdM03Uojf1z3DU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116901379822239569885\">Gunjan Kumar Singh</a>"
+                ]
+            },
+            {
+                "name": "ஆல்பர்ட் ஹால் அருங்காட்சியகம்",
+                "description": "அலங்கரிக்கப்பட்ட அருங்காட்சியகத்தில் கலை மற்றும் கலைப்பொருட்கள்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMsYAvuigihJ2iRXcpLVpH0n-0V1cuz_WDUmySd=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105984280115104388216\">Abhi Patil</a>"
+                ],
+                "place_id": "ChIJXyn5OrC2bTkRaGk8EzNDuwU"
+            },
+            {
+                "name": "மசாலா ச ow க்",
+                "description": "இந்த சந்தையில் இந்திய தெரு உணவு",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPcZRQ7fbdgmisGta7O1VC7GaXasMXRaboTG5Ve=s1600-w900",
+                "place_id": "ChIJn-pcyea3bTkR4K-wjKseidE",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114813305781638691973\">Heidi Li</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 330,
+    "trivia": {
+        "items": [
+            "இது பிங்க் சிட்டி என்று அழைக்கப்படுகிறது.",
+            "இது இந்தியாவின் ஆரம்பகால திட்டமிடப்பட்ட நகரங்களில் ஒன்றாகும்",
+            "இது இந்தியாவின் ராஜஸ்தானின் தலைநகரம் மற்றும் மிகப்பெரிய நகரமாகும்",
+            "இது மிகவும் விலையுயர்ந்த ஹோட்டல் அறைகளுக்கு அறியப்படுகிறது.",
+            "இது இந்தியாவில் பிரபலமான சுற்றுலாத் தலமாகும், இது டெல்லி மற்றும் ஆக்ராவுடன் மேற்கு கோல்டன் முக்கோண சுற்றுலா சுற்று வட்டத்தின் ஒரு பகுதியாகும்.",
+            "இது அமைதியான கோவில்கள், நீண்டகாலமாக இருக்கும் கோட்டைகள் மற்றும் அரண்மனைகள் மற்றும் அவர்களுக்கு அரச தொடுதலுடன் கூடிய அழகான ஹவேலிகள் ஆகியவை அடங்கும்",
+            "ஜெய்ப்பூரிலிருந்து 60 கி.மீ தூரத்தில் அமைந்துள்ள சம்பர், இந்தியாவின் மிகப்பெரிய உப்பு ஏரியாக புகழ் பெற்றது",
+            "இது நீண்ட, மிகவும் வெப்பமான கோடை மற்றும் குறுகிய, லேசான முதல் சூடான குளிர்காலங்களைக் கொண்டுள்ளது.",
+            "ஒவ்வொரு ஆண்டும் யானை திருவிழா நடத்தப்படுகிறது. இந்த விழாவில் யானை போலோ மற்றும் யானை நடனம் இடம்பெறுகின்றன.",
+            "மகாராஜா சவாய் சிங் கட்டிய ஹவா மஹால், அரச பெண்கள் அன்றாட வாழ்க்கையை கீழே தெருவில் காணாமல் பார்க்க அனுமதிக்கும் நோக்கத்திற்காக சேவை செய்தனர்."
+        ]
+    }
+}

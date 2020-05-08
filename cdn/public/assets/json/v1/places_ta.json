@@ -38,5 +38,12 @@
         "photo_by": "Robster1983",
         "attribution_url": "https://commons.wikimedia.org/wiki/File:%C4%B0stanbul-Ayasofya.JPG",
         "country": "துருக்கி"
+    },
+    {
+        "name": "ஜெய்ப்பூர்",
+        "id": "jaipur",
+        "background_image": "https://storage.needpix.com/rsynced_images/jaipur-4027735_1280.jpg",
+        "place": "ஹவா மஹால், ஜெய்ப்பூர்",
+        "country" : "இந்தியா"
     }
 ]

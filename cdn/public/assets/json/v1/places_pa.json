@@ -38,5 +38,12 @@
         "photo_by": "Robster1983",
         "attribution_url": "https://commons.wikimedia.org/wiki/File:%C4%B0stanbul-Ayasofya.JPG",
         "country": "ਤੁਰਕੀ 🇹🇷"
+    },
+    {
+        "name": "ਜੈਪੁਰ",
+        "id": "jaipur",
+        "background_image": "https://storage.needpix.com/rsynced_images/jaipur-4027735_1280.jpg",
+        "place": "ਹਵਾ ਮਹਿਲ, ਜੈਪੁਰ",
+        "country" : "ਭਾਰਤ"
     }
 ]

@@ -1,0 +1,271 @@
+{
+    "basic_info": {
+        "name": "জয়পুর",
+        "id": "jaipur",
+        "background_image": "https://storage.needpix.com/rsynced_images/jaipur-4027735_1280.jpg",
+        "place": "হাওয়া মহল, জয়পুর"
+    },
+    "airport": {
+        "name": "জয়পুর আন্তর্জাতিক বিমানবন্দর"
+    },
+    "climate": {
+        "type": "গরম আধা-শুষ্ক",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "গ্রীষ্ম",
+                "temp": "25 ডিগ্রি সেলসিয়াস থেকে 45 ডিগ্রি সেলসিয়াস",
+                "duration": "মার্চ-জুন"
+            },
+            {
+                "emoji": "⛈️",
+                "name": "মৌসুমি বায়ু",
+                "temp": "34 ডিগ্রি সেলসিয়াস থেকে 25 ডিগ্রি সেলসিয়াস",
+                "duration": "সেপ্টেম্বর জুলাই"
+            },
+            {
+                "emoji": "🍁",
+                "name": "শরৎ",
+                "temp": "25 ডিগ্রি সেলসিয়াস থেকে 15 ডিগ্রি সেলসিয়াস",
+                "duration": "অক্টোবর-নভেম্বর"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "শীতকালীন",
+                "temp": "20 ডিগ্রি সেলসিয়াস থেকে 8 ডিগ্রি সেলসিয়াস",
+                "duration": "ডিসেম্বর-ফেব্রুয়ারি"
+            }
+        ]
+    },
+    "country": {
+        "name": "ভারত 🇮🇳",
+        "continent": "এশিয়া"
+    },
+    "currency": {
+        "name": "ভারতীয় রুপি",
+        "symbol": "₹",
+        "code": "INR"
+    },
+    "dance": {
+        "name": "ঝুমার, কালবেলিয়া, ভাওয়াই"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "ডাল বাথী চুরমা",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Rajasthani_Dish.jpg/640px-Rajasthani_Dish.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Niranjan.gohane",
+                "attribution_url": "https://en.wikipedia.org/wiki/Dal_baati#/media/File:Rajasthani_Dish.jpg"
+            },
+            {
+                "label": "পাইজ কি কছোরি",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Rajasthani_Pyaz_ki_Kachori.JPG/1024px-Rajasthani_Pyaz_ki_Kachori.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Mdsmds0",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Rajasthani_Pyaz_ki_Kachori.JPG"
+            },
+            {
+                "label": "Ghevr",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Ghevar_with_Malai_Topping.jpg/1024px-Ghevar_with_Malai_Topping.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Pradeep717",
+                "attribution_url": "https://en.wikipedia.org/wiki/Ghevar#/media/File:Ghevar_with_Malai_Topping.jpg"
+            },
+            {
+                "label": "গাট্টে কি সবজি",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Daal_baati_and_gatte_ki_sabji.jpg/640px-Daal_baati_and_gatte_ki_sabji.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Sahil tiwarie",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Daal_baati_and_gatte_ki_sabji.jpg"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "চারু ও কারুশিল্প",
+        "secondary": [
+            "বস্ত্র",
+            "ধাতু পণ্য"
+        ]
+    },
+    "language": {
+        "primary": "না",
+        "secondary": [
+            "ইংরেজি"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_bn_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_bn_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_bn_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_bn_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_bn_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Lagaan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/yNX9lFRAFeNLNRIXdqZK9gYrYKa.jpg"
+            },
+            {
+                "title": "Pather Panchali",
+                "poster_url": "https://image.tmdb.org/t/p/w300/rOHuGsO18d8BN3hQ0kMKZ5l9caE.jpg"
+            },
+            {
+                "title": "Andhadhun",
+                "poster_url": "https://image.tmdb.org/t/p/w300/dy3K6hNvwE05siGgiLJcEiwgpdO.jpg"
+            },
+            {
+                "title": "Gully Boy",
+                "poster_url": "https://image.tmdb.org/t/p/w300/h57EzPdrDvtUkvbTj6ar5yZOPic.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "মন সিংহ দ্বিতীয়",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Man_Singh_II.jpg",
+                "work": "জয়পুর রাজ্যের সর্বশেষ শাসক মহারাজা",
+                "place": "জয়পুর রাজ্য"
+            },
+            {
+                "name": "ইরফান কাহন",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Irrfan_Khan_May_2015.jpg/318px-Irrfan_Khan_May_2015.jpg",
+                "place": "জয়পুর",
+                "work": "চলচ্চিত্র অভিনেতা",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Irrfan_Khan_May_2015.jpg",
+                "photo_by": "Bollywood Hungama",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a>"
+            }
+        ]
+    },
+    "sports": {
+        "title": "🏏 ক্রিকেট",
+        "footer": ""
+    },
+    "time_to_visit": {
+        "primary": "নভেম্বর-ফেব্রুয়ারী",
+        "secondary": ""
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "অ্যাম্বার প্রাসাদ",
+                "description": "16 শতকের পাহাড়ের চূড়া ও প্রাসাদ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMQ3loGfiDhFaybylLAesKkp56UiH9gLxXL4eTB=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104593614172683905944\">svenhartmannandrease</a>"
+                ],
+                "place_id": "ChIJ-w3Sy1qwbTkRK34UR2ffIWI"
+            },
+            {
+                "name": "হাওয়া মহল",
+                "description": "গোলাপী / লাল বেলেপাথর 'বাতাসের প্রাসাদ'",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMHRzYvttrXYvmnguxoFDdfK4ar0yl7sYMAKW8F=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110040575485667904814\">RANKIT BORAD</a>"
+                ],
+                "place_id": "ChIJpQvTG0uxbTkRDLLMHlNdDoY"
+            },
+            {
+                "name": "শহর প্রাসাদ",
+                "description": "1700 দশকের প্রাসাদ কমপ্লেক্স ও জাদুঘরটি",
+                "photos": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/City_Palace-Jaipur-India0010.JPG/1024px-City_Palace-Jaipur-India0010.JPG",
+                "html_attributions": [
+                    "<a href=\"https://commons.wikimedia.org/wiki/File:City_Palace-Jaipur-India0010.JPG\">Diego Delso, delso.photo</a>"
+                ],
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA</a>",
+                "place_id": "ChIJwbAghgu0bTkRYHt9ATEVgEQ"
+            },
+            {
+                "name": "রাতের খাবারের মন্ত্র",
+                "description": "জ্যোতির্বিদ্যা সংক্রান্ত পর্যবেক্ষণের জন্য সরঞ্জামসমূহ",
+                "place_id": "ChIJaXD1f0yxbTkRvquNoSkESuk",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP-MGzH90OGhB84Q12KRzfrSSHLmCR3uvIf0DSd=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113584951292877508204\">Kishore CM</a>"
+                ]
+            },
+            {
+                "name": "জল মহল",
+                "description": "একটি হ্রদের মাঝখানে palaceতিহাসিক প্রাসাদ",
+                "place_id": "ChIJlXJ26RuxbTkR0qsToxFP05c",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMu8ofxdtbgZQIWmvcsHqZrbjI386zzIIB_KNXc=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101577237551130307623\">Richa Sharma</a>"
+                ]
+            },
+            {
+                "name": "বিড়লা মন্দির",
+                "description": "সাদা মার্বেলের আধুনিক হিন্দু মন্দির",
+                "place_id": "ChIJr6cur5m2bTkRWIDcK9acl30",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOy7iRm-HID6QDOdjkOW-YykAEvQ8tVlcJ_9hJA=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101519490984330527752\">sushant saurabh</a>"
+                ]
+            },
+            {
+                "name": "নাহারগড় দুর্গ",
+                "description": "হিলটপের দুর্গ বিস্তৃত দর্শন সরবরাহ করে",
+                "place_id": "ChIJ0fNH81yxbTkRi56uF-amqgo",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOduNUoa17G7o0IQshrpZL-ksBfv1eBpM3kBeQL=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112125705215912116770\">Manish Nandha</a>"
+                ]
+            },
+            {
+                "name": "বাপু বাজার",
+                "description": "দৌড়ঝাঁপ পর্যটন বাজার ও বাজার",
+                "place_id": "ChIJAQAAXbK2bTkRaExzSLpKDZ4",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOlkq_erzxkHT3n41LfewT2vAKdM03Uojf1z3DU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116901379822239569885\">Gunjan Kumar Singh</a>"
+                ]
+            },
+            {
+                "name": "অ্যালবার্ট হল যাদুঘর",
+                "description": "অলঙ্কৃত যাদুঘরে শিল্প ও নিদর্শনগুলি",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMsYAvuigihJ2iRXcpLVpH0n-0V1cuz_WDUmySd=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105984280115104388216\">Abhi Patil</a>"
+                ],
+                "place_id": "ChIJXyn5OrC2bTkRaGk8EzNDuwU"
+            },
+            {
+                "name": "মাসালা চক",
+                "description": "এই বাজারে ভারতীয় স্ট্রিট ফুড",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPcZRQ7fbdgmisGta7O1VC7GaXasMXRaboTG5Ve=s1600-w900",
+                "place_id": "ChIJn-pcyea3bTkR4K-wjKseidE",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114813305781638691973\">Heidi Li</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 330,
+    "trivia": {
+        "items": [
+            "একে গোলাপী শহর বলা হয়।",
+            "এটি ভারতের অন্যতম প্রাথমিক পরিকল্পনা করা শহর",
+            "এটি রাজধানী এবং ভারতের রাজস্থান রাজ্যের বৃহত্তম শহর",
+            "এটি বেশিরভাগ ব্যয়বহুল হোটেল স্যুটগুলির জন্য পরিচিত।",
+            "এটি ভারতের একটি জনপ্রিয় পর্যটন কেন্দ্র এবং এটি দিল্লি এবং আগ্রার পাশাপাশি পশ্চিম গোল্ডেন ট্রায়াঙ্গলের পর্যটন কেন্দ্রের একটি অংশ তৈরি করে forms",
+            "এর মধ্যে রয়েছে প্রশান্ত মন্দির, দীর্ঘ স্থায়ী দুর্গ এবং প্রাসাদ এবং তাদের সাথে রাজকীয় স্পর্শ সহ সুন্দর হাভালি",
+            "জয়পুর থেকে km০ কিলোমিটার দূরে অবস্থিত সংভার ভারতের বৃহত্তম স্যালাইন হ্রদ হওয়ার জন্য বিখ্যাত",
+            "এটি দীর্ঘ, প্রচণ্ড গরম গ্রীষ্ম এবং সংক্ষিপ্ত, হালকা থেকে উষ্ণ শীতকালে রয়েছে।",
+            "প্রতিবছর হাতির উত্সব অনুষ্ঠিত হয়। উত্সবে এলিফ্যান্ট পোলো এবং এলিফ্যান্ট ডান্সের বৈশিষ্ট্য রয়েছে।",
+            "মহারাজা সাওয়াই সিংহ নির্মিত হাওয়া মহলটি রাজকন্যা মহিলাদের নীচে রাস্তায় প্রতিদিন দেখা না দিয়েই প্রতিদিনের জীবনযাপনের সুযোগ দেওয়ার উদ্দেশ্যে কাজ করেছিল।"
+        ]
+    }
+}

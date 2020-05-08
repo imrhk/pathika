@@ -1,0 +1,271 @@
+{
+    "basic_info": {
+        "name": "जयपुर",
+        "id": "jaipur",
+        "background_image": "https://storage.needpix.com/rsynced_images/jaipur-4027735_1280.jpg",
+        "place": "Hawa Mahal, Jaipur"
+    },
+    "airport": {
+        "name": "जयपुर अंतर्राष्ट्रीय हवाई अड्डा"
+    },
+    "climate": {
+        "type": "गर्म अर्ध-शुष्क",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "गर्मी",
+                "temp": "25 ° C से 45 ° C",
+                "duration": "मार्च-जून"
+            },
+            {
+                "emoji": "⛈️",
+                "name": "मानसून",
+                "temp": "34 ° C से 25 ° C",
+                "duration": "सितंबर करने के लिए जुलाई"
+            },
+            {
+                "emoji": "🍁",
+                "name": "पतझड़",
+                "temp": "25 ° C से 15 ° C",
+                "duration": "अक्तूबर-नवंबर"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "सर्दी",
+                "temp": "20 ° C से 8 ° C",
+                "duration": "दिसम्बर-फरवरी"
+            }
+        ]
+    },
+    "country": {
+        "name": "भारत 🇮🇳",
+        "continent": "एशिया"
+    },
+    "currency": {
+        "name": "भारतीय रुपया",
+        "symbol": "₹",
+        "code": "INR"
+    },
+    "dance": {
+        "name": "Ghoomar, Kalbeliya, Bhavai"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "दाल बाटी चूरमा",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Rajasthani_Dish.jpg/640px-Rajasthani_Dish.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Niranjan.gohane",
+                "attribution_url": "https://en.wikipedia.org/wiki/Dal_baati#/media/File:Rajasthani_Dish.jpg"
+            },
+            {
+                "label": "Pyaz Ki Kachori",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Rajasthani_Pyaz_ki_Kachori.JPG/1024px-Rajasthani_Pyaz_ki_Kachori.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Mdsmds0",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Rajasthani_Pyaz_ki_Kachori.JPG"
+            },
+            {
+                "label": "Ghevar",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Ghevar_with_Malai_Topping.jpg/1024px-Ghevar_with_Malai_Topping.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Pradeep717",
+                "attribution_url": "https://en.wikipedia.org/wiki/Ghevar#/media/File:Ghevar_with_Malai_Topping.jpg"
+            },
+            {
+                "label": "Gatte ki Sabji",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Daal_baati_and_gatte_ki_sabji.jpg/640px-Daal_baati_and_gatte_ki_sabji.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Sahil tiwarie",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Daal_baati_and_gatte_ki_sabji.jpg"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "कला और शिल्प",
+        "secondary": [
+            "कपड़ा",
+            "धातु उत्पाद"
+        ]
+    },
+    "language": {
+        "primary": "नहीं",
+        "secondary": [
+            "अंग्रेज़ी"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_hi_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_hi_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_hi_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_hi_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_hi_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Lagaan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/yNX9lFRAFeNLNRIXdqZK9gYrYKa.jpg"
+            },
+            {
+                "title": "Pather Panchali",
+                "poster_url": "https://image.tmdb.org/t/p/w300/rOHuGsO18d8BN3hQ0kMKZ5l9caE.jpg"
+            },
+            {
+                "title": "Andhadhun",
+                "poster_url": "https://image.tmdb.org/t/p/w300/dy3K6hNvwE05siGgiLJcEiwgpdO.jpg"
+            },
+            {
+                "title": "Gully Boy",
+                "poster_url": "https://image.tmdb.org/t/p/w300/h57EzPdrDvtUkvbTj6ar5yZOPic.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "मान सिंह II",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Man_Singh_II.jpg",
+                "work": "जयपुर राज्य के अंतिम शासक महाराजा",
+                "place": "जयपुर राज्य"
+            },
+            {
+                "name": "इरफान कहन",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Irrfan_Khan_May_2015.jpg/318px-Irrfan_Khan_May_2015.jpg",
+                "place": "जयपुर",
+                "work": "फिल्म अभिनेता",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Irrfan_Khan_May_2015.jpg",
+                "photo_by": "Bollywood Hungama",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a>"
+            }
+        ]
+    },
+    "sports": {
+        "title": "🏏 क्रिकेट",
+        "footer": ""
+    },
+    "time_to_visit": {
+        "primary": "नवंबर-फरवरी",
+        "secondary": ""
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "अंबर पैलेस",
+                "description": "16 वीं सदी के पहाड़ी किले और महल",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMQ3loGfiDhFaybylLAesKkp56UiH9gLxXL4eTB=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104593614172683905944\">svenhartmannandrease</a>"
+                ],
+                "place_id": "ChIJ-w3Sy1qwbTkRK34UR2ffIWI"
+            },
+            {
+                "name": "हवा महल",
+                "description": "गुलाबी / लाल बलुआ पत्थर 'हवाओं का महल'",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMHRzYvttrXYvmnguxoFDdfK4ar0yl7sYMAKW8F=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110040575485667904814\">RANKIT BORAD</a>"
+                ],
+                "place_id": "ChIJpQvTG0uxbTkRDLLMHlNdDoY"
+            },
+            {
+                "name": "सिटी पैलेस",
+                "description": "लैविश 1700 महल परिसर और संग्रहालय",
+                "photos": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/City_Palace-Jaipur-India0010.JPG/1024px-City_Palace-Jaipur-India0010.JPG",
+                "html_attributions": [
+                    "<a href=\"https://commons.wikimedia.org/wiki/File:City_Palace-Jaipur-India0010.JPG\">Diego Delso, delso.photo</a>"
+                ],
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA</a>",
+                "place_id": "ChIJwbAghgu0bTkRYHt9ATEVgEQ"
+            },
+            {
+                "name": "रात का खाना मंतर",
+                "description": "खगोलीय अवलोकन के लिए उपकरण",
+                "place_id": "ChIJaXD1f0yxbTkRvquNoSkESuk",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP-MGzH90OGhB84Q12KRzfrSSHLmCR3uvIf0DSd=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113584951292877508204\">Kishore CM</a>"
+                ]
+            },
+            {
+                "name": "जल महल",
+                "description": "एक झील के बीच में ऐतिहासिक महल",
+                "place_id": "ChIJlXJ26RuxbTkR0qsToxFP05c",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMu8ofxdtbgZQIWmvcsHqZrbjI386zzIIB_KNXc=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101577237551130307623\">Richa Sharma</a>"
+                ]
+            },
+            {
+                "name": "बिड़ला मंदिर",
+                "description": "सफेद संगमरमर का आधुनिक हिंदू मंदिर",
+                "place_id": "ChIJr6cur5m2bTkRWIDcK9acl30",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOy7iRm-HID6QDOdjkOW-YykAEvQ8tVlcJ_9hJA=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101519490984330527752\">sushant saurabh</a>"
+                ]
+            },
+            {
+                "name": "नाहरगढ़ का किला",
+                "description": "हिलटॉप किला विस्तारक दृश्य प्रस्तुत करता है",
+                "place_id": "ChIJ0fNH81yxbTkRi56uF-amqgo",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOduNUoa17G7o0IQshrpZL-ksBfv1eBpM3kBeQL=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112125705215912116770\">Manish Nandha</a>"
+                ]
+            },
+            {
+                "name": "Bapu Bazar",
+                "description": "पर्यटक बाजार और बाजार हलचल",
+                "place_id": "ChIJAQAAXbK2bTkRaExzSLpKDZ4",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOlkq_erzxkHT3n41LfewT2vAKdM03Uojf1z3DU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116901379822239569885\">Gunjan Kumar Singh</a>"
+                ]
+            },
+            {
+                "name": "अल्बर्ट हॉल संग्रहालय",
+                "description": "एक अलंकृत संग्रहालय में कला और कलाकृतियाँ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMsYAvuigihJ2iRXcpLVpH0n-0V1cuz_WDUmySd=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105984280115104388216\">Abhi Patil</a>"
+                ],
+                "place_id": "ChIJXyn5OrC2bTkRaGk8EzNDuwU"
+            },
+            {
+                "name": "मसाला चौक",
+                "description": "इस बाजार में भारतीय स्ट्रीट फूड",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPcZRQ7fbdgmisGta7O1VC7GaXasMXRaboTG5Ve=s1600-w900",
+                "place_id": "ChIJn-pcyea3bTkR4K-wjKseidE",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114813305781638691973\">Heidi Li</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 330,
+    "trivia": {
+        "items": [
+            "इसे पिंक सिटी कहा जाता है।",
+            "यह भारत का सबसे पहला नियोजित शहर है",
+            "यह भारत के राजस्थान राज्य की राजधानी और सबसे बड़ा शहर है",
+            "यह सबसे महंगे होटल सुइट्स के लिए जाना जाता है।",
+            "यह भारत में एक लोकप्रिय पर्यटन स्थल है और दिल्ली और आगरा के साथ-साथ पश्चिम गोल्डन ट्रायंगल टूरिस्ट सर्किट का एक हिस्सा है।",
+            "इसमें शांत मंदिर, लंबे समय तक खड़े किले और महल, और शाही स्पर्श के साथ सुंदर हवेलियां शामिल हैं",
+            "जयपुर से 60 किलोमीटर की दूरी पर स्थित सांभर भारत में सबसे बड़ी खारी झील होने के लिए प्रसिद्ध है",
+            "इसमें लंबे, बेहद गर्म ग्रीष्मकाल और छोटे, हल्के से गर्म सर्दियां होती हैं।",
+            "हाथी उत्सव हर साल आयोजित किया जाता है। इस उत्सव में एलिफेंट पोलो और एलिफेंट डांस शामिल हैं।",
+            "महाराजा सवाई सिंह द्वारा निर्मित हवा महल ने शाही महिलाओं को बिना देखे सड़क पर रोजमर्रा की जिंदगी का अवलोकन करने का उद्देश्य दिया।"
+        ]
+    }
+}

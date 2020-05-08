@@ -1,0 +1,271 @@
+{
+    "basic_info": {
+        "name": "ਜੈਪੁਰ",
+        "id": "jaipur",
+        "background_image": "https://storage.needpix.com/rsynced_images/jaipur-4027735_1280.jpg",
+        "place": "ਹਵਾ ਮਹਿਲ, ਜੈਪੁਰ"
+    },
+    "airport": {
+        "name": "ਜੈਪੁਰ ਅੰਤਰਰਾਸ਼ਟਰੀ ਹਵਾਈ ਅੱਡਾ"
+    },
+    "climate": {
+        "type": "ਗਰਮ ਅਰਧ-ਸੁੱਕੇ",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "ਗਰਮੀ",
+                "temp": "25 ਡਿਗਰੀ ਸੈਲਸੀਅਸ 45 ਡਿਗਰੀ ਸੈਲਸੀਅਸ",
+                "duration": "ਮਾਰ-ਜੂਨ"
+            },
+            {
+                "emoji": "⛈️",
+                "name": "ਮਾਨਸੂਨ",
+                "temp": "34 ਡਿਗਰੀ ਸੈਂਟੀਗਰੇਡ ਤੋਂ 25 ਡਿਗਰੀ ਸੈਲਸੀਅਸ",
+                "duration": "ਸਤੰਬਰ ਨੂੰ ਜੁਲਾਈ"
+            },
+            {
+                "emoji": "🍁",
+                "name": "ਪਤਝੜ",
+                "temp": "25 ਡਿਗਰੀ ਸੈਲਸੀਅਸ ਤੋਂ 15 ਡਿਗਰੀ ਸੈਲਸੀਅਸ",
+                "duration": "ਅਕਤੂਬਰ-ਨਵੰਬਰ"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "ਸਰਦੀਆਂ",
+                "temp": "20 ਡਿਗਰੀ ਸੈਲਸੀਅਸ 8 ਡਿਗਰੀ ਸੈਲਸੀਅਸ",
+                "duration": "ਦਸੰਬਰ-ਫਰਵਰੀ"
+            }
+        ]
+    },
+    "country": {
+        "name": "ਭਾਰਤ",
+        "continent": "ਏਸ਼ੀਆ"
+    },
+    "currency": {
+        "name": "ਭਾਰਤੀ ਰੁਪਿਆ",
+        "symbol": "₹",
+        "code": "INR"
+    },
+    "dance": {
+        "name": "ਘੁਮਾਰ, ਕਾਲਬੇਲੀਆ, ਭਾਵੈ"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "ਦਾਲ ਬਠਿ ਚੂਰਮਾ",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Rajasthani_Dish.jpg/640px-Rajasthani_Dish.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Niranjan.gohane",
+                "attribution_url": "https://en.wikipedia.org/wiki/Dal_baati#/media/File:Rajasthani_Dish.jpg"
+            },
+            {
+                "label": "ਪਿਆਜ਼ ਕੀ ਕਚੌਰੀ",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Rajasthani_Pyaz_ki_Kachori.JPG/1024px-Rajasthani_Pyaz_ki_Kachori.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Mdsmds0",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Rajasthani_Pyaz_ki_Kachori.JPG"
+            },
+            {
+                "label": "ਘੇਵਰ",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Ghevar_with_Malai_Topping.jpg/1024px-Ghevar_with_Malai_Topping.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Pradeep717",
+                "attribution_url": "https://en.wikipedia.org/wiki/Ghevar#/media/File:Ghevar_with_Malai_Topping.jpg"
+            },
+            {
+                "label": "ਗੱਟੇ ਕੀ ਸਬਜੀ",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Daal_baati_and_gatte_ki_sabji.jpg/640px-Daal_baati_and_gatte_ki_sabji.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Sahil tiwarie",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Daal_baati_and_gatte_ki_sabji.jpg"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "ਕਲਾ ਅਤੇ ਸ਼ਿਲਪਕਾਰੀ",
+        "secondary": [
+            "ਟੈਕਸਟਾਈਲ",
+            "ਧਾਤ ਉਤਪਾਦ"
+        ]
+    },
+    "language": {
+        "primary": "ਨਹੀਂ",
+        "secondary": [
+            "ਅੰਗਰੇਜ਼ੀ"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_pa_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_pa_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_pa_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_pa_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_pa_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Lagaan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/yNX9lFRAFeNLNRIXdqZK9gYrYKa.jpg"
+            },
+            {
+                "title": "Pather Panchali",
+                "poster_url": "https://image.tmdb.org/t/p/w300/rOHuGsO18d8BN3hQ0kMKZ5l9caE.jpg"
+            },
+            {
+                "title": "Andhadhun",
+                "poster_url": "https://image.tmdb.org/t/p/w300/dy3K6hNvwE05siGgiLJcEiwgpdO.jpg"
+            },
+            {
+                "title": "Gully Boy",
+                "poster_url": "https://image.tmdb.org/t/p/w300/h57EzPdrDvtUkvbTj6ar5yZOPic.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "ਮਾਨ ਸਿੰਘ II",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Man_Singh_II.jpg",
+                "work": "ਜੈਪੁਰ ਰਾਜ ਦਾ ਆਖਰੀ ਸ਼ਾਸਕ ਮਹਾਰਾਜਾ",
+                "place": "ਜੈਪੁਰ ਰਾਜ"
+            },
+            {
+                "name": "ਇਰਫਾਨ ਕਾਹਨ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Irrfan_Khan_May_2015.jpg/318px-Irrfan_Khan_May_2015.jpg",
+                "place": "ਜੈਪੁਰ",
+                "work": "ਫਿਲਮ ਅਦਾਕਾਰ",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Irrfan_Khan_May_2015.jpg",
+                "photo_by": "Bollywood Hungama",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a>"
+            }
+        ]
+    },
+    "sports": {
+        "title": "🏏 ਕ੍ਰਿਕੇਟ",
+        "footer": ""
+    },
+    "time_to_visit": {
+        "primary": "ਨਵੰਬਰ-ਫਰਵਰੀ",
+        "secondary": ""
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "ਅੰਬਰ ਪੈਲੇਸ",
+                "description": "16 ਵੀਂ ਸਦੀ ਦਾ ਪਹਾੜੀ ਕਿਲ੍ਹਾ ਅਤੇ ਮਹਿਲ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMQ3loGfiDhFaybylLAesKkp56UiH9gLxXL4eTB=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104593614172683905944\">svenhartmannandrease</a>"
+                ],
+                "place_id": "ChIJ-w3Sy1qwbTkRK34UR2ffIWI"
+            },
+            {
+                "name": "ਹਵਾ ਮਹਿਲ",
+                "description": "ਗੁਲਾਬੀ / ਲਾਲ ਰੇਤਲਾ ਪੱਥਰ 'ਹਵਾ ਦਾ ਮਹਿਲ'",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMHRzYvttrXYvmnguxoFDdfK4ar0yl7sYMAKW8F=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110040575485667904814\">RANKIT BORAD</a>"
+                ],
+                "place_id": "ChIJpQvTG0uxbTkRDLLMHlNdDoY"
+            },
+            {
+                "name": "ਸਿਟੀ ਪੈਲੇਸ",
+                "description": "ਸ਼ਾਨਦਾਰ 1700 ਦੇ ਮਹਿਲ ਕੰਪਲੈਕਸ ਅਤੇ ਅਜਾਇਬ ਘਰ",
+                "photos": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/City_Palace-Jaipur-India0010.JPG/1024px-City_Palace-Jaipur-India0010.JPG",
+                "html_attributions": [
+                    "<a href=\"https://commons.wikimedia.org/wiki/File:City_Palace-Jaipur-India0010.JPG\">Diego Delso, delso.photo</a>"
+                ],
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA</a>",
+                "place_id": "ChIJwbAghgu0bTkRYHt9ATEVgEQ"
+            },
+            {
+                "name": "ਡਿਨਰ ਮੰਤਰ",
+                "description": "ਖਗੋਲ ਵਿਗਿਆਨ ਨਿਰੀਖਣ ਲਈ ਉਪਕਰਣ",
+                "place_id": "ChIJaXD1f0yxbTkRvquNoSkESuk",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP-MGzH90OGhB84Q12KRzfrSSHLmCR3uvIf0DSd=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113584951292877508204\">Kishore CM</a>"
+                ]
+            },
+            {
+                "name": "ਜਲ ਮਹਿਲ",
+                "description": "ਝੀਲ ਦੇ ਵਿਚਕਾਰ ਇਤਿਹਾਸਕ ਮਹਿਲ",
+                "place_id": "ChIJlXJ26RuxbTkR0qsToxFP05c",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMu8ofxdtbgZQIWmvcsHqZrbjI386zzIIB_KNXc=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101577237551130307623\">Richa Sharma</a>"
+                ]
+            },
+            {
+                "name": "ਬਿਰਲਾ ਮੰਦਰ",
+                "description": "ਚਿੱਟਾ ਸੰਗਮਰਮਰ ਦਾ ਆਧੁਨਿਕ ਹਿੰਦੂ ਮੰਦਰ",
+                "place_id": "ChIJr6cur5m2bTkRWIDcK9acl30",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOy7iRm-HID6QDOdjkOW-YykAEvQ8tVlcJ_9hJA=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101519490984330527752\">sushant saurabh</a>"
+                ]
+            },
+            {
+                "name": "ਨਾਹਰਗੜ੍ਹ ਕਿਲ੍ਹਾ",
+                "description": "ਪਹਾੜੀ ਕਿਲ੍ਹਾ ਵਿਸ਼ਾਲ ਵਿਚਾਰ ਪੇਸ਼ ਕਰਦਾ ਹੈ",
+                "place_id": "ChIJ0fNH81yxbTkRi56uF-amqgo",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOduNUoa17G7o0IQshrpZL-ksBfv1eBpM3kBeQL=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112125705215912116770\">Manish Nandha</a>"
+                ]
+            },
+            {
+                "name": "ਬਾਪੂ ਬਾਜ਼ਾਰ",
+                "description": "ਭੀੜ ਭਰੀ ਟੂਰਿਸਟ ਮਾਰਕੀਟ ਅਤੇ ਬਾਜ਼ਾਰ",
+                "place_id": "ChIJAQAAXbK2bTkRaExzSLpKDZ4",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOlkq_erzxkHT3n41LfewT2vAKdM03Uojf1z3DU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116901379822239569885\">Gunjan Kumar Singh</a>"
+                ]
+            },
+            {
+                "name": "ਐਲਬਰਟ ਹਾਲ ਅਜਾਇਬ ਘਰ",
+                "description": "ਸਜਾਵਟੀ ਅਜਾਇਬ ਘਰ ਵਿਚ ਕਲਾ ਅਤੇ ਕਲਾਵਾਂ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMsYAvuigihJ2iRXcpLVpH0n-0V1cuz_WDUmySd=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105984280115104388216\">Abhi Patil</a>"
+                ],
+                "place_id": "ChIJXyn5OrC2bTkRaGk8EzNDuwU"
+            },
+            {
+                "name": "ਮਸਾਲਾ ਚੌਕ",
+                "description": "ਇਸ ਮਾਰਕੀਟ ਵਿਚ ਭਾਰਤੀ ਸਟ੍ਰੀਟ ਫੂਡ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPcZRQ7fbdgmisGta7O1VC7GaXasMXRaboTG5Ve=s1600-w900",
+                "place_id": "ChIJn-pcyea3bTkR4K-wjKseidE",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114813305781638691973\">Heidi Li</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 330,
+    "trivia": {
+        "items": [
+            "ਇਸ ਨੂੰ ਪਿੰਕ ਸਿਟੀ ਕਿਹਾ ਜਾਂਦਾ ਹੈ.",
+            "ਇਹ ਭਾਰਤ ਦਾ ਸਭ ਤੋਂ ਪਹਿਲਾਂ ਯੋਜਨਾਬੱਧ ਸ਼ਹਿਰ ਹੈ",
+            "ਇਹ ਰਾਜਸਥਾਨ ਅਤੇ ਰਾਜਸਥਾਨ ਦੇ ਰਾਜ ਰਾਜ ਦਾ ਸਭ ਤੋਂ ਵੱਡਾ ਸ਼ਹਿਰ ਹੈ",
+            "ਇਹ ਬਹੁਤ ਮਹਿੰਗੇ ਹੋਟਲ ਸੂਟ ਲਈ ਜਾਣਿਆ ਜਾਂਦਾ ਹੈ.",
+            "ਇਹ ਭਾਰਤ ਵਿਚ ਇਕ ਪ੍ਰਸਿੱਧ ਸੈਰ-ਸਪਾਟਾ ਸਥਾਨ ਹੈ ਅਤੇ ਇਹ ਦਿੱਲੀ ਅਤੇ ਆਗਰਾ ਦੇ ਨਾਲ-ਨਾਲ ਪੱਛਮੀ ਗੋਲਡਨ ਟ੍ਰਾਇੰਗਲ ਟੂਰਿਜ਼ਮ ਸਰਕਟ ਦਾ ਇਕ ਹਿੱਸਾ ਬਣਦਾ ਹੈ.",
+            "ਇਸ ਵਿੱਚ ਸਹਿਜ ਮੰਦਿਰ, ਲੰਬੇ ਸਮੇਂ ਤੋਂ ਖੜੇ ਕਿਲ੍ਹੇ ਅਤੇ ਮਹਿਲ ਅਤੇ ਉਨ੍ਹਾਂ ਨੂੰ ਸ਼ਾਹੀ ਅਹਿਸਾਸ ਵਾਲੀਆਂ ਸੁੰਦਰ ਹਵੇਲੀਆਂ ਸ਼ਾਮਲ ਹਨ",
+            "ਜੈਪੁਰ ਤੋਂ 60 ਕਿਲੋਮੀਟਰ ਦੀ ਦੂਰੀ 'ਤੇ ਸਥਿਤ ਸੰਭਰ ਭਾਰਤ ਦੀ ਸਭ ਤੋਂ ਵੱਡੀ ਖਾਰਾ ਝੀਲ ਹੋਣ ਲਈ ਮਸ਼ਹੂਰ ਹੈ",
+            "ਇਸ ਵਿਚ ਲੰਬੇ, ਬਹੁਤ ਗਰਮ ਗਰਮੀ ਅਤੇ ਥੋੜੇ, ਹਲਕੇ ਤੋਂ ਨਿੱਘੇ ਸਰਦੀਆਂ ਹਨ.",
+            "ਹਾਥੀ ਦਾ ਤਿਉਹਾਰ ਹਰ ਸਾਲ ਲਗਾਇਆ ਜਾਂਦਾ ਹੈ. ਤਿਉਹਾਰ ਵਿੱਚ ਹਾਥੀ ਪੋਲੋ ਅਤੇ ਹਾਥੀ ਡਾਂਸ ਪੇਸ਼ ਕੀਤੇ ਗਏ ਹਨ.",
+            "ਮਹਾਰਾਜਾ ਸਵਾਈ ਸਿੰਘ ਦੁਆਰਾ ਬਣਾਇਆ ਗਿਆ ਹਵਾ ਮਹਿਲ, ਸ਼ਾਹੀ ladiesਰਤਾਂ ਨੂੰ ਹੇਠਾਂ ਗਲੀ ਵਿਚ ਬਿਨਾਂ ਵੇਖੇ ਹਰ ਰੋਜ਼ ਦੀ ਜ਼ਿੰਦਗੀ ਦਾ ਪਾਲਣ ਕਰਨ ਦੇ ਉਦੇਸ਼ ਦੀ ਸੇਵਾ ਕਰਦਾ ਹੈ."
+        ]
+    }
+}

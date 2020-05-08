@@ -1,0 +1,271 @@
+{
+    "basic_info": {
+        "name": "자이푸르",
+        "id": "jaipur",
+        "background_image": "https://storage.needpix.com/rsynced_images/jaipur-4027735_1280.jpg",
+        "place": "자이푸르 하와 마할"
+    },
+    "airport": {
+        "name": "자이푸르 국제 공항"
+    },
+    "climate": {
+        "type": "반 건조",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "여름",
+                "temp": "25 ° C ~ 45 ° C",
+                "duration": "3 월"
+            },
+            {
+                "emoji": "⛈️",
+                "name": "우기",
+                "temp": "34 ° C ~ 25 ° C",
+                "duration": "9월부터 7월까지"
+            },
+            {
+                "emoji": "🍁",
+                "name": "가을",
+                "temp": "25 ° C에서 15 ° C",
+                "duration": "10 월 ~ 11 월"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "겨울",
+                "temp": "20 ° C ~ 8 ° C",
+                "duration": "12월 2 월"
+            }
+        ]
+    },
+    "country": {
+        "name": "인도 🇮🇳",
+        "continent": "아시아"
+    },
+    "currency": {
+        "name": "인도 루피",
+        "symbol": "₹",
+        "code": "INR"
+    },
+    "dance": {
+        "name": "구 마르, 칼 벨리 야, 바하이"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "달 바티 추마",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Rajasthani_Dish.jpg/640px-Rajasthani_Dish.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Niranjan.gohane",
+                "attribution_url": "https://en.wikipedia.org/wiki/Dal_baati#/media/File:Rajasthani_Dish.jpg"
+            },
+            {
+                "label": "피아 즈 키 카 초리",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Rajasthani_Pyaz_ki_Kachori.JPG/1024px-Rajasthani_Pyaz_ki_Kachori.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Mdsmds0",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Rajasthani_Pyaz_ki_Kachori.JPG"
+            },
+            {
+                "label": "게 바르",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Ghevar_with_Malai_Topping.jpg/1024px-Ghevar_with_Malai_Topping.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Pradeep717",
+                "attribution_url": "https://en.wikipedia.org/wiki/Ghevar#/media/File:Ghevar_with_Malai_Topping.jpg"
+            },
+            {
+                "label": "가테 키 사브 지",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Daal_baati_and_gatte_ki_sabji.jpg/640px-Daal_baati_and_gatte_ki_sabji.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Sahil tiwarie",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Daal_baati_and_gatte_ki_sabji.jpg"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "예술과 공예",
+        "secondary": [
+            "섬유",
+            "금속 제품"
+        ]
+    },
+    "language": {
+        "primary": "아니",
+        "secondary": [
+            "영어"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_ko_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_ko_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_ko_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_ko_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_ko_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Lagaan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/yNX9lFRAFeNLNRIXdqZK9gYrYKa.jpg"
+            },
+            {
+                "title": "Pather Panchali",
+                "poster_url": "https://image.tmdb.org/t/p/w300/rOHuGsO18d8BN3hQ0kMKZ5l9caE.jpg"
+            },
+            {
+                "title": "Andhadhun",
+                "poster_url": "https://image.tmdb.org/t/p/w300/dy3K6hNvwE05siGgiLJcEiwgpdO.jpg"
+            },
+            {
+                "title": "Gully Boy",
+                "poster_url": "https://image.tmdb.org/t/p/w300/h57EzPdrDvtUkvbTj6ar5yZOPic.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "남자 싱 II",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Man_Singh_II.jpg",
+                "work": "자이푸르주의 마지막 통치 마하라자",
+                "place": "자이푸르 주"
+            },
+            {
+                "name": "이르판 칸",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Irrfan_Khan_May_2015.jpg/318px-Irrfan_Khan_May_2015.jpg",
+                "place": "자이푸르",
+                "work": "영화 배우",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Irrfan_Khan_May_2015.jpg",
+                "photo_by": "Bollywood Hungama",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a>"
+            }
+        ]
+    },
+    "sports": {
+        "title": "rick 크리켓",
+        "footer": ""
+    },
+    "time_to_visit": {
+        "primary": "11 월 -2 월",
+        "secondary": ""
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "앰버 팰리스",
+                "description": "16 세기 언덕 요새 및 궁전",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMQ3loGfiDhFaybylLAesKkp56UiH9gLxXL4eTB=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104593614172683905944\">svenhartmannandrease</a>"
+                ],
+                "place_id": "ChIJ-w3Sy1qwbTkRK34UR2ffIWI"
+            },
+            {
+                "name": "하와 마할",
+                "description": "핑크 / 레드 사암 '바람의 궁전'",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMHRzYvttrXYvmnguxoFDdfK4ar0yl7sYMAKW8F=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110040575485667904814\">RANKIT BORAD</a>"
+                ],
+                "place_id": "ChIJpQvTG0uxbTkRDLLMHlNdDoY"
+            },
+            {
+                "name": "시티 팰리스",
+                "description": "호화로운 1700 년대 궁전 단지 및 박물관",
+                "photos": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/City_Palace-Jaipur-India0010.JPG/1024px-City_Palace-Jaipur-India0010.JPG",
+                "html_attributions": [
+                    "<a href=\"https://commons.wikimedia.org/wiki/File:City_Palace-Jaipur-India0010.JPG\">Diego Delso, delso.photo</a>"
+                ],
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA</a>",
+                "place_id": "ChIJwbAghgu0bTkRYHt9ATEVgEQ"
+            },
+            {
+                "name": "저녁 만타",
+                "description": "천문 관측 장치",
+                "place_id": "ChIJaXD1f0yxbTkRvquNoSkESuk",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP-MGzH90OGhB84Q12KRzfrSSHLmCR3uvIf0DSd=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113584951292877508204\">Kishore CM</a>"
+                ]
+            },
+            {
+                "name": "할 마할",
+                "description": "호수 한가운데있는 역사적인 궁전",
+                "place_id": "ChIJlXJ26RuxbTkR0qsToxFP05c",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMu8ofxdtbgZQIWmvcsHqZrbjI386zzIIB_KNXc=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101577237551130307623\">Richa Sharma</a>"
+                ]
+            },
+            {
+                "name": "빌라 만 디르",
+                "description": "백색 대리석의 현대 힌두교 사원",
+                "place_id": "ChIJr6cur5m2bTkRWIDcK9acl30",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOy7iRm-HID6QDOdjkOW-YykAEvQ8tVlcJ_9hJA=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101519490984330527752\">sushant saurabh</a>"
+                ]
+            },
+            {
+                "name": "나하 가르 요새",
+                "description": "광대 한 전망을 제공하는 언덕 요새",
+                "place_id": "ChIJ0fNH81yxbTkRi56uF-amqgo",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOduNUoa17G7o0IQshrpZL-ksBfv1eBpM3kBeQL=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112125705215912116770\">Manish Nandha</a>"
+                ]
+            },
+            {
+                "name": "바푸 바자르",
+                "description": "번화 한 관광 시장 및 시장",
+                "place_id": "ChIJAQAAXbK2bTkRaExzSLpKDZ4",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOlkq_erzxkHT3n41LfewT2vAKdM03Uojf1z3DU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116901379822239569885\">Gunjan Kumar Singh</a>"
+                ]
+            },
+            {
+                "name": "앨버트 홀 박물관",
+                "description": "화려한 박물관의 예술과 유물",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMsYAvuigihJ2iRXcpLVpH0n-0V1cuz_WDUmySd=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105984280115104388216\">Abhi Patil</a>"
+                ],
+                "place_id": "ChIJXyn5OrC2bTkRaGk8EzNDuwU"
+            },
+            {
+                "name": "마살라 초크",
+                "description": "이 시장에서 인도 길거리 음식",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPcZRQ7fbdgmisGta7O1VC7GaXasMXRaboTG5Ve=s1600-w900",
+                "place_id": "ChIJn-pcyea3bTkR4K-wjKseidE",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114813305781638691973\">Heidi Li</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 330,
+    "trivia": {
+        "items": [
+            "핑크 시티라고합니다.",
+            "인도 최초의 계획 도시 중 하나입니다.",
+            "인도의 라자스탄 주 수도이자 가장 큰 도시입니다.",
+            "가장 비싼 호텔 스위트로 유명합니다.",
+            "인도에서 인기있는 관광지이며 델리와 아그라와 함께 서쪽 골든 트라이앵글 관광 회로의 일부를 형성합니다.",
+            "그것은 고요한 사원, 오랫동안 서있는 요새와 궁전, 왕실과 아름다운 접촉을 포함합니다.",
+            "자이푸르에서 60km 떨어진 Sambhar는 인도에서 가장 큰 식염수 호수로 유명합니다.",
+            "여름은 길고 덥고, 겨울은 짧고 온화합니다.",
+            "코끼리 축제는 매년 개최됩니다. 이 축제에는 Elephant Polo와 Elephant Dance가 있습니다.",
+            "마하라자 사와이 싱 (Maharaja Sawai Singh)이 지은 하와 마할 (Hawa Mahal)은 왕실 여성들이 거리에서 일상 생활을 보지 않고 관찰 할 수 있도록하기 위해 노력했다."
+        ]
+    }
+}

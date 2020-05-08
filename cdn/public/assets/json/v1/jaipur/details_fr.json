@@ -1,0 +1,271 @@
+{
+    "basic_info": {
+        "name": "Jaipur",
+        "id": "jaipur",
+        "background_image": "https://storage.needpix.com/rsynced_images/jaipur-4027735_1280.jpg",
+        "place": "Hawa Mahal, Jaipur"
+    },
+    "airport": {
+        "name": "Aéroport international de Jaipur"
+    },
+    "climate": {
+        "type": "Chaud semi-aride",
+        "items": [
+            {
+                "emoji": "☀",
+                "name": "Été",
+                "temp": "25 ° C à 45 ° C",
+                "duration": "Mars-juin"
+            },
+            {
+                "emoji": "⛈️",
+                "name": "Mousson",
+                "temp": "34 ° C à 25 ° C",
+                "duration": "Juillet à Septembre"
+            },
+            {
+                "emoji": "🍁",
+                "name": "L'automne",
+                "temp": "25 ° C à 15 ° C",
+                "duration": "Oct-nov"
+            },
+            {
+                "emoji": "❄️️",
+                "name": "Hiver",
+                "temp": "20 ° C à 8 ° C",
+                "duration": "Décembre-février"
+            }
+        ]
+    },
+    "country": {
+        "name": "Inde 🇮🇳",
+        "continent": "Asie"
+    },
+    "currency": {
+        "name": "Roupie indienne",
+        "symbol": "₹",
+        "code": "INR"
+    },
+    "dance": {
+        "name": "Ghoomar, Kalbeliya, Bhavai"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "Dal Bathi Churma",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Rajasthani_Dish.jpg/640px-Rajasthani_Dish.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Niranjan.gohane",
+                "attribution_url": "https://en.wikipedia.org/wiki/Dal_baati#/media/File:Rajasthani_Dish.jpg"
+            },
+            {
+                "label": "Pyaz Ki Kachori",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Rajasthani_Pyaz_ki_Kachori.JPG/1024px-Rajasthani_Pyaz_ki_Kachori.JPG",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Mdsmds0",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Rajasthani_Pyaz_ki_Kachori.JPG"
+            },
+            {
+                "label": "Ghevar",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Ghevar_with_Malai_Topping.jpg/1024px-Ghevar_with_Malai_Topping.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Pradeep717",
+                "attribution_url": "https://en.wikipedia.org/wiki/Ghevar#/media/File:Ghevar_with_Malai_Topping.jpg"
+            },
+            {
+                "label": "Gatte ki Sabji",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Daal_baati_and_gatte_ki_sabji.jpg/640px-Daal_baati_and_gatte_ki_sabji.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "Sahil tiwarie",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Daal_baati_and_gatte_ki_sabji.jpg"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "L'artisanat",
+        "secondary": [
+            "Les textiles",
+            "Produits métalliques"
+        ]
+    },
+    "language": {
+        "primary": "Non.",
+        "secondary": [
+            "Anglais"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_fr_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_fr_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_fr_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_fr_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/jaipur_map_fr_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Lagaan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/yNX9lFRAFeNLNRIXdqZK9gYrYKa.jpg"
+            },
+            {
+                "title": "Pather Panchali",
+                "poster_url": "https://image.tmdb.org/t/p/w300/rOHuGsO18d8BN3hQ0kMKZ5l9caE.jpg"
+            },
+            {
+                "title": "Andhadhun",
+                "poster_url": "https://image.tmdb.org/t/p/w300/dy3K6hNvwE05siGgiLJcEiwgpdO.jpg"
+            },
+            {
+                "title": "Gully Boy",
+                "poster_url": "https://image.tmdb.org/t/p/w300/h57EzPdrDvtUkvbTj6ar5yZOPic.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "Man Singh II",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Man_Singh_II.jpg",
+                "work": "Dernier maharaja au pouvoir dans l'État de Jaipur",
+                "place": "État de Jaipur"
+            },
+            {
+                "name": "Irrfan Kahn",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Irrfan_Khan_May_2015.jpg/318px-Irrfan_Khan_May_2015.jpg",
+                "place": "Jaipur",
+                "work": "Acteur de cinéma",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Irrfan_Khan_May_2015.jpg",
+                "photo_by": "Bollywood Hungama",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a>"
+            }
+        ]
+    },
+    "sports": {
+        "title": "🏏 Cricket",
+        "footer": ""
+    },
+    "time_to_visit": {
+        "primary": "Novembre-février",
+        "secondary": ""
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "Palais d'ambre",
+                "description": "Fort et palais au sommet d'une colline du XVIe siècle",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMQ3loGfiDhFaybylLAesKkp56UiH9gLxXL4eTB=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104593614172683905944\">svenhartmannandrease</a>"
+                ],
+                "place_id": "ChIJ-w3Sy1qwbTkRK34UR2ffIWI"
+            },
+            {
+                "name": "Hawa Mahal",
+                "description": "Grès rose / rouge 'Palace of the Winds'",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMHRzYvttrXYvmnguxoFDdfK4ar0yl7sYMAKW8F=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110040575485667904814\">RANKIT BORAD</a>"
+                ],
+                "place_id": "ChIJpQvTG0uxbTkRDLLMHlNdDoY"
+            },
+            {
+                "name": "Palais de la ville",
+                "description": "Complexe de palais somptueux des années 1700 et musée",
+                "photos": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/City_Palace-Jaipur-India0010.JPG/1024px-City_Palace-Jaipur-India0010.JPG",
+                "html_attributions": [
+                    "<a href=\"https://commons.wikimedia.org/wiki/File:City_Palace-Jaipur-India0010.JPG\">Diego Delso, delso.photo</a>"
+                ],
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA</a>",
+                "place_id": "ChIJwbAghgu0bTkRYHt9ATEVgEQ"
+            },
+            {
+                "name": "Dîner Mantar",
+                "description": "Instruments d'observation astronomique",
+                "place_id": "ChIJaXD1f0yxbTkRvquNoSkESuk",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipP-MGzH90OGhB84Q12KRzfrSSHLmCR3uvIf0DSd=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/113584951292877508204\">Kishore CM</a>"
+                ]
+            },
+            {
+                "name": "Jal Mahal",
+                "description": "Palais historique au milieu d'un lac",
+                "place_id": "ChIJlXJ26RuxbTkR0qsToxFP05c",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMu8ofxdtbgZQIWmvcsHqZrbjI386zzIIB_KNXc=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101577237551130307623\">Richa Sharma</a>"
+                ]
+            },
+            {
+                "name": "Birla Mandir",
+                "description": "Temple hindou moderne en marbre blanc",
+                "place_id": "ChIJr6cur5m2bTkRWIDcK9acl30",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOy7iRm-HID6QDOdjkOW-YykAEvQ8tVlcJ_9hJA=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/101519490984330527752\">sushant saurabh</a>"
+                ]
+            },
+            {
+                "name": "Fort de Nahargarh",
+                "description": "Fort Hilltop offrant une vue imprenable",
+                "place_id": "ChIJ0fNH81yxbTkRi56uF-amqgo",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOduNUoa17G7o0IQshrpZL-ksBfv1eBpM3kBeQL=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112125705215912116770\">Manish Nandha</a>"
+                ]
+            },
+            {
+                "name": "Bapu bazar",
+                "description": "Marché touristique animé et bazar",
+                "place_id": "ChIJAQAAXbK2bTkRaExzSLpKDZ4",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOlkq_erzxkHT3n41LfewT2vAKdM03Uojf1z3DU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116901379822239569885\">Gunjan Kumar Singh</a>"
+                ]
+            },
+            {
+                "name": "Musée Albert Hall",
+                "description": "Art et artefacts dans un musée orné",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMsYAvuigihJ2iRXcpLVpH0n-0V1cuz_WDUmySd=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105984280115104388216\">Abhi Patil</a>"
+                ],
+                "place_id": "ChIJXyn5OrC2bTkRaGk8EzNDuwU"
+            },
+            {
+                "name": "Masala Chowk",
+                "description": "Cuisine de rue indienne sur ce marché",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPcZRQ7fbdgmisGta7O1VC7GaXasMXRaboTG5Ve=s1600-w900",
+                "place_id": "ChIJn-pcyea3bTkR4K-wjKseidE",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114813305781638691973\">Heidi Li</a>"
+                ]
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 330,
+    "trivia": {
+        "items": [
+            "Elle s'appelle la ville rose.",
+            "C'est l'une des premières villes planifiées de l'Inde",
+            "C'est la capitale et la plus grande ville de l'État indien du Rajasthan",
+            "Il est connu pour les suites d'hôtel les plus chères.",
+            "C'est une destination touristique populaire en Inde et fait partie du circuit touristique du Triangle d'or ouest avec Delhi et Agra.",
+            "Il comprend des temples sereins, des forts et des palais de longue date et de belles havelis avec une touche royale.",
+            "Sambhar, situé à une distance de 60 km de Jaipur est célèbre pour être le plus grand lac salin d'Inde",
+            "Il a des étés longs et extrêmement chauds et des hivers courts, doux à chauds.",
+            "Le festival des éléphants a lieu chaque année. Le festival présente Elephant Polo et Elephant Dance.",
+            "Hawa Mahal construit par le maharaja Sawai Singh a permis aux dames royales d'observer la vie quotidienne dans la rue ci-dessous sans être vues."
+        ]
+    }
+}
