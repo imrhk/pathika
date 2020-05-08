@@ -11,10 +11,9 @@ class TriviaListCard extends StatelessWidget implements Details<TriviaListDetail
   final TriviaListDetails details;
   TriviaListCard({
     Key key,
-    @required this.useColorsOnCard,
-    @required this.details,
-  })  : assert(useColorsOnCard != null && details != null),
-        super(key: key);
+    this.useColorsOnCard,
+    this.details,
+  })  : super(key: key);
 
   List<Widget> getChildren(BuildContext context, List<String> triviaList) {
     List list = triviaList
@@ -53,6 +52,7 @@ class TriviaListCard extends StatelessWidget implements Details<TriviaListDetail
 
   @override
   Widget build(BuildContext context) {
+    assert(useColorsOnCard != null && details != null);
     return InfoCard(
       color: useColorsOnCard ? Colors.blueGrey : null,
       heading: BlocProvider.of<LocalizationBloc>(context)

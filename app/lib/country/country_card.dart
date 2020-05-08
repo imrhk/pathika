@@ -11,12 +11,12 @@ class CountryCard extends StatelessWidget implements Details<CountryDetails>{
   final CountryDetails details;
   CountryCard({
     Key key,
-    @required this.details,
-    @required this.useColorsOnCard,
-  })  : assert(useColorsOnCard != null && details != null),
-        super(key: key);
+    this.details,
+    this.useColorsOnCard,
+  })  : super(key: key);
   @override
   Widget build(BuildContext context) {
+    assert(useColorsOnCard != null && details != null);
     return InfoCard(
       color: useColorsOnCard ? Colors.amber : null,
       heading: BlocProvider.of<LocalizationBloc>(context)

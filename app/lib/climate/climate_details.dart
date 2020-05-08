@@ -33,7 +33,7 @@ class ClimateDetails {
 
   static ClimateDetails fromMap(Map<String, dynamic> map) {
     if (map == null) return null;
-  
+
     return ClimateDetails(
       type: map['type'],
       items: List<WeatherItem>.from(map['items']?.map((x) => WeatherItem.fromMap(x))),
@@ -50,10 +50,8 @@ class ClimateDetails {
   @override
   bool operator ==(Object o) {
     if (identical(this, o)) return true;
-  
-    return o is ClimateDetails &&
-      o.type == type &&
-      o.items == items;
+
+    return o is ClimateDetails && o.type == type && o.items == items;
   }
 
   @override

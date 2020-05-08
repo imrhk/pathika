@@ -13,9 +13,7 @@ class MaterialCard extends StatelessWidget {
     this.child,
     this.semanticContainer = true,
     this.shadowColor,
-  })  : assert(elevation == null || elevation >= 0.0),
-        assert(borderOnForeground != null),
-        super(key: key);
+  }) : super(key: key);
 
   final Color color;
 
@@ -39,6 +37,8 @@ class MaterialCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    assert(elevation == null || elevation >= 0.0);
+    assert(borderOnForeground != null);
     final CardTheme cardTheme = CardTheme.of(context);
 
     return Semantics(

@@ -11,15 +11,15 @@ class CurrentTimeCard extends StatelessWidget implements Details<int> {
   final int timezoneOffsetInMinute;
   CurrentTimeCard({
     Key key,
-    @required this.useColorsOnCard,
+    this.useColorsOnCard,
     this.timezoneOffsetInMinute = 0,
-  })  : assert(useColorsOnCard != null),
-        super(key: key);
+  })  : super(key: key);
 
   int get details => timezoneOffsetInMinute;
 
   @override
   Widget build(BuildContext context) {
+    assert(useColorsOnCard != null);
     return FutureBuilder<Duration>(
       builder: (context, snapshot) {
         if (snapshot.hasError) {

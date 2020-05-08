@@ -7,22 +7,22 @@ import '../localization/localization.dart';
 import 'climate_details.dart';
 import 'weather_details.dart';
 
-class ClimateCard extends StatelessWidget implements Details<ClimateDetails>{
+class ClimateCard extends StatelessWidget implements Details<ClimateDetails> {
   final bool useColorsOnCard;
   final ClimateDetails details;
+  
   ClimateCard({
     Key key,
-    @required this.useColorsOnCard,
-    @required this.details,
-  })  : assert(useColorsOnCard != null && details != null),
-        super(key: key);
+    this.useColorsOnCard,
+    this.details,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    assert(useColorsOnCard != null && details != null);
     return InfoCard(
       color: useColorsOnCard ? Colors.indigo : null,
-      heading: BlocProvider.of<LocalizationBloc>(context)
-          .localize('climate', 'Climate'),
+      heading: BlocProvider.of<LocalizationBloc>(context).localize('climate', 'Climate'),
       title: details.type,
       footer: WeatherDetails(items: details.items),
     );

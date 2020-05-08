@@ -12,10 +12,9 @@ class PersonListCard extends StatelessWidget implements Details<PersonList>{
   final PersonList details;
   PersonListCard({
     Key key,
-    @required this.useColorsOnCard,
-    @required this.details,
-  })  : assert(useColorsOnCard != null && details != null),
-        super(key: key);
+    this.useColorsOnCard,
+    this.details,
+  })  : super(key: key);
 
   List<Widget> getChildren(PersonList personList) {
     final list = personList.items
@@ -50,6 +49,7 @@ class PersonListCard extends StatelessWidget implements Details<PersonList>{
 
   @override
   Widget build(BuildContext context) {
+    assert(useColorsOnCard != null && details != null);
     return InfoCard(
       color: useColorsOnCard ? Colors.cyan : null,
       heading: BlocProvider.of<LocalizationBloc>(context)

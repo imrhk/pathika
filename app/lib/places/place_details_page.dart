@@ -48,21 +48,23 @@ class PlaceDetailsPage extends StatefulWidget {
   final Function changePlace;
   const PlaceDetailsPage({
     Key key,
-    @required this.placeId,
+    this.placeId,
     this.language = "en",
     this.httpClient,
     this.appTheme,
     this.appLanguageChanged,
     this.changePlace,
-  })  : assert(placeId != null),
-        super(key: key);
+  }) : super(key: key);
 
   @override
-  _PlaceDetailsPageState createState() => _PlaceDetailsPageState(
-      materialAppTheme: appTheme.themeDataMaterial,
-      cupertinoThemeData: appTheme.themeDataCupertino,
-      textColor: appTheme.textColor,
-      useColorsOnCard: appTheme.useColorsOnCard);
+  _PlaceDetailsPageState createState() {
+    assert(placeId != null);
+    return _PlaceDetailsPageState(
+        materialAppTheme: appTheme.themeDataMaterial,
+        cupertinoThemeData: appTheme.themeDataCupertino,
+        textColor: appTheme.textColor,
+        useColorsOnCard: appTheme.useColorsOnCard);
+  }
 }
 
 class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
@@ -187,7 +189,7 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
       builder: (context, snapshot) {
         if (snapshot.connectionState != ConnectionState.done) {
           return Center(
-            child: CircularProgressIndicator(),
+            child: Platform.isIOS ? CupertinoActivityIndicator() : CircularProgressIndicator(),
           );
         } else if (snapshot.hasError) {
           return Center(

@@ -2,10 +2,8 @@ import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:pathika/basic_info/basic_info.dart';
 import 'package:pathika/basic_info/basic_info_app_bar.dart';
-import 'package:pathika/places/place_details_page.dart';
-import 'package:universal_io/io.dart';
+import 'package:universal_io/io.dart' show HttpClient, Platform;
 
 import 'common/attributions.dart';
 import 'common/constants.dart';
@@ -134,7 +132,7 @@ class PlacesListPage extends StatelessWidget {
       );
     } else {
       return Card(
-        elevation: 5,
+        elevation: 6,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),

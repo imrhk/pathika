@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:universal_io/io.dart';
+import 'package:universal_io/io.dart' show Platform;
 
 import '../common/info_card.dart';
 import '../core/adt_details.dart';
@@ -16,12 +16,12 @@ class FoodItemsListCard extends StatelessWidget implements Details<FoodItemsList
   final FoodItemsList details;
   FoodItemsListCard({
     Key key,
-    @required this.useColorsOnCard,
-    @required this.details,
-  })  : assert(useColorsOnCard != null && details != null),
-        super(key: key);
+    this.useColorsOnCard,
+    this.details,
+  })  : super(key: key);
   @override
   Widget build(BuildContext context) {
+    assert(useColorsOnCard != null && details != null);
     return InfoCard(
       color: useColorsOnCard ? Colors.teal : null,
       heading: BlocProvider.of<LocalizationBloc>(context).localize('food', 'Food'),

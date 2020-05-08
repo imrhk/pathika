@@ -12,7 +12,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/locale.dart';
 import 'package:pathika/ads/ad_config.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:universal_io/io.dart' show HttpClient;
+import 'package:universal_io/io.dart' show HttpClient, Platform;
 import 'app_language/app_language.dart';
 import 'app_language/select_language_page.dart';
 import 'common/constants.dart';
@@ -79,8 +79,6 @@ class _PathikaAppState extends State<PathikaApp> with WidgetsBindingObserver {
       return CupertinoApp(
         theme: appTheme?.themeDataCupertino ?? AppTheme.light(),
         home: _getHomeWidget(),
-        debugShowCheckedModeBanner: false,
-        //route
       );
     } else {
       return MaterialApp(
@@ -157,19 +155,20 @@ class _InitPageState extends State<InitPage> {
       } else {
         return;
       }
-    }
-    else {
-      final deviceLocale = await Devicelocale.currentLocale;
+    } else {
+      if (kIsWeb) {
+        final appLanguage = AppLanguage.def();
+        _appLanguageChanged({'language': appLanguage.id, 'rtl': appLanguage.rtl});
+      } else {
+        final deviceLocale = await Devicelocale.currentLocale;
 
-      final locale = Locale.parse(deviceLocale);
-      final deviceLanguage = locale.languageCode;
-      final supportedLanguagesJson = await DefaultAssetBundle.of(context).loadString('assets_remote/assets/json/v1/languages.json');
-      final supprtedLanguages = AppLanguage.fromList(json.decode(supportedLanguagesJson));
-      final appLanguage = supprtedLanguages.firstWhere((element) => element.id == deviceLanguage, orElse: () => AppLanguage.def());
-      _appLanguageChanged({
-        'language' : appLanguage.id,
-        'rtl' : appLanguage.rtl
-      });
+        final locale = Locale.parse(deviceLocale);
+        final deviceLanguage = locale.languageCode;
+        final supportedLanguagesJson = await DefaultAssetBundle.of(context).loadString('assets_remote/assets/json/v1/languages.json');
+        final supprtedLanguages = AppLanguage.fromList(json.decode(supportedLanguagesJson));
+        final appLanguage = supprtedLanguages.firstWhere((element) => element.id == deviceLanguage, orElse: () => AppLanguage.def());
+        _appLanguageChanged({'language': appLanguage.id, 'rtl': appLanguage.rtl});
+      }
     }
   }
 
@@ -253,7 +252,7 @@ class _InitPageState extends State<InitPage> {
     return Scaffold(
       body: Container(
         child: Center(
-          child: CircularProgressIndicator(),
+          child: Platform.isIOS ? CupertinoActivityIndicator() : CircularProgressIndicator(),
         ),
       ),
     );

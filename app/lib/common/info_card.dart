@@ -32,7 +32,7 @@ class InfoCard extends StatelessWidget {
       color: bgColor,
       shadowColor: color != null ? color : Color.fromARGB(255, 0, 0, 0),
       margin: EdgeInsets.fromLTRB(12, 12, 12, 6),
-      elevation: 6,
+      elevation: 8,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(20),
       ),

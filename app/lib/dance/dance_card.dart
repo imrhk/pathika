@@ -10,12 +10,12 @@ class DanceCard extends StatelessWidget{
   final DanceDetails details;
   DanceCard({
     Key key,
-    @required this.useColorsOnCard,
-    @required this.details,
-  })  : assert(useColorsOnCard != null && details != null), 
-        super(key: key);
+    this.useColorsOnCard,
+    this.details,
+  })  : super(key: key);
   @override
   Widget build(BuildContext context) {
+    assert(useColorsOnCard != null && details != null);
     return InfoCard(
       color: useColorsOnCard ? Colors.red : null,
       heading: BlocProvider.of<LocalizationBloc>(context).localize('dance', 'Dance'),

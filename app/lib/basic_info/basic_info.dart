@@ -101,12 +101,6 @@ class BasicInfo {
 
   @override
   int get hashCode {
-    return name.hashCode ^
-        id.hashCode ^
-        backgroundImage.hashCode ^
-        place.hashCode ^
-        licence.hashCode ^
-        photoBy.hashCode ^
-        attributionUrl.hashCode;
+    return name.hashCode ^ id.hashCode ^ backgroundImage.hashCode ^ place.hashCode ^ licence.hashCode ^ photoBy.hashCode ^ attributionUrl.hashCode;
   }
 }

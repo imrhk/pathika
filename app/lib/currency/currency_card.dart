@@ -14,13 +14,13 @@ class CurrencyCard extends StatelessWidget implements Details<CurrencyDetails>{
   final HttpClient httpclient;
   CurrencyCard({
     Key key,
-    @required this.useColorsOnCard,
-    @required this.details,
+    this.useColorsOnCard,
+    this.details,
     this.httpclient,
-  })  : assert(useColorsOnCard != null && details != null),
-        super(key: key);
+  })  : super(key: key);
   @override
   Widget build(BuildContext context) {
+    assert(useColorsOnCard != null && details != null);
     return InfoCard(
       color: useColorsOnCard ? Colors.pink : null,
       heading: BlocProvider.of<LocalizationBloc>(context)

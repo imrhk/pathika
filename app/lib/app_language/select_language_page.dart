@@ -7,7 +7,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pathika/places/place_details_page.dart';
 import 'package:pathika/theme/app_theme.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:universal_io/io.dart';
+import 'package:universal_io/io.dart' show HttpClient, Platform;
 
 import '../common/constants.dart';
 import '../common/material_card.dart';
@@ -21,7 +21,13 @@ class SelectLanguagePage extends StatefulWidget {
   final bool fromSettings;
   final AppTheme appTheme;
 
-  const SelectLanguagePage({Key key, this.httpClient, this.currentLanguage, this.fromSettings = false, this.appTheme}) : super(key: key);
+  const SelectLanguagePage({
+    Key key,
+    this.httpClient,
+    this.currentLanguage,
+    this.fromSettings = false,
+    this.appTheme,
+  }) : super(key: key);
   @override
   _SelectLanguagePageState createState() => _SelectLanguagePageState();
 }
@@ -69,7 +75,7 @@ class _SelectLanguagePageState extends State<SelectLanguagePage> {
     if (!appLanguageChecked) {
       return AppScaffold(
         child: Center(
-          child: CircularProgressIndicator(),
+          child: Platform.isIOS ? CupertinoActivityIndicator() : CircularProgressIndicator(),
         ),
       );
     }
@@ -133,7 +139,7 @@ class _SelectLanguagePageState extends State<SelectLanguagePage> {
           );
         } else if (snapshot.connectionState != ConnectionState.done) {
           return Center(
-            child: CircularProgressIndicator(),
+            child: Platform.isIOS ? CupertinoActivityIndicator() : CircularProgressIndicator(),
           );
         } else {
           final appLanguages = snapshot.data;

@@ -9,12 +9,12 @@ class LocationMapCard extends StatelessWidget implements Details<LocationMapDeta
   final LocationMapDetails details;
   LocationMapCard({
     Key key,
-    @required this.useColorsOnCard,
-    @required this.details,
-  })  : assert(useColorsOnCard != null && details != null),
-        super(key: key);
+    this.useColorsOnCard,
+    this.details,
+  })  : super(key: key);
   @override
   Widget build(BuildContext context) {
+    assert(useColorsOnCard != null && details != null);
     return _LocationMapStackCardInternal(
       useColorsOnCard: useColorsOnCard,
       items: details.items,

@@ -4,14 +4,15 @@ import 'package:pathika/climate/weather_item.dart';
 
 class WeatherDetails extends StatelessWidget {
   final List<WeatherItem> items;
+  
   WeatherDetails({
     Key key,
-    @required this.items,
-  })  : assert(items != null),
-        super(key: key);
+    this.items,
+  })  : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    assert(items != null);
     return ListView.separated(
       padding: EdgeInsets.all(0),
       shrinkWrap: true,

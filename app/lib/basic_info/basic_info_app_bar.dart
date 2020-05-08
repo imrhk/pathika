@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:pathika/common/info_card.dart';
 import 'package:pathika/places/place_details_page.dart';
+import 'package:universal_io/io.dart' show Platform;
 
 import 'basic_info.dart';
 
@@ -10,7 +11,12 @@ class BasicInfoAppBar extends StatelessWidget {
   final double height;
   final Orientation orientation;
   final BasicInfo basicInfo;
-  const BasicInfoAppBar({Key key, this.height, this.orientation, this.basicInfo}) : super(key: key);
+  const BasicInfoAppBar({
+    Key key,
+    this.height,
+    this.orientation,
+    this.basicInfo,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -94,7 +100,7 @@ class CardBackgroundWidget extends StatelessWidget {
               ),
             ),
           ),
-        )
+        ),
       ],
     );
   }

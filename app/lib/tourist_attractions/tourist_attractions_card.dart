@@ -8,22 +8,21 @@ import '../localization/localization.dart';
 import 'tourist_attraction_item_card.dart';
 import 'tourist_attractions.list.dart';
 
-class TouristAttractionsCard extends StatelessWidget implements Details<TouristAttractionsList>{
+class TouristAttractionsCard extends StatelessWidget implements Details<TouristAttractionsList> {
   final bool useColorsOnCard;
   final TouristAttractionsList details;
   TouristAttractionsCard({
     Key key,
-    @required this.useColorsOnCard,
-    @required this.details,
-  })  : assert(useColorsOnCard != null && details != null),
-        super(key: key);
+    this.useColorsOnCard,
+    this.details,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    assert(useColorsOnCard != null && details != null);
     return InfoCard(
       color: useColorsOnCard ? materialBlack : null,
-      heading: BlocProvider.of<LocalizationBloc>(context)
-          .localize('tourist_attractions', 'Tourist Attractions'),
+      heading: BlocProvider.of<LocalizationBloc>(context).localize('tourist_attractions', 'Tourist Attractions'),
       body: Container(
         height: 300,
         child: ListView.builder(
@@ -37,14 +36,9 @@ class TouristAttractionsCard extends StatelessWidget implements Details<TouristA
               name: item.name,
               posterUrl: item.photos,
               description: item.description,
-              attribution: item.htmlAttributions.length > 0
-                  ? item.htmlAttributions[0]
-                  : null,
-                  licence: item.licence,
-              cardColor: Theme.of(context).brightness == Brightness.dark ||
-                      useColorsOnCard
-                  ? Colors.transparent
-                  : null,
+              attribution: item.htmlAttributions.length > 0 ? item.htmlAttributions[0] : null,
+              licence: item.licence,
+              cardColor: Theme.of(context).brightness == Brightness.dark || useColorsOnCard ? Colors.transparent : null,
             );
           },
           itemCount: details.items.length,

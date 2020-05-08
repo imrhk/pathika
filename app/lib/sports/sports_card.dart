@@ -11,12 +11,12 @@ class SportsCard extends StatelessWidget implements Details<SportsDetails> {
   final SportsDetails details;
   SportsCard({
     Key key,
-    @required this.useColorsOnCard,
-    @required this.details,
-  })  : assert(useColorsOnCard != null && details != null),
-        super(key: key);
+    this.useColorsOnCard,
+    this.details,
+  })  : super(key: key);
   @override
   Widget build(BuildContext context) {
+    assert(useColorsOnCard != null && details != null);
     return InfoCard(
       color: useColorsOnCard ? Colors.lightBlue : null,
       heading: BlocProvider.of<LocalizationBloc>(context)

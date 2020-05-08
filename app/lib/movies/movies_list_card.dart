@@ -11,19 +11,18 @@ class MoviesListCard extends StatelessWidget implements Details<MovieList> {
   final bool useColorsOnCard;
   final MovieList details;
   final String countryName;
-  MoviesListCard(
-      {Key key,
-      @required this.useColorsOnCard,
-      @required this.details,
-      this.countryName})
-      : assert(useColorsOnCard != null && details != null),
-        super(key: key);
+  MoviesListCard({
+    Key key,
+    this.useColorsOnCard,
+    this.details,
+    this.countryName,
+  }) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    assert(useColorsOnCard != null && details != null);
     return InfoCard(
       color: useColorsOnCard ? Colors.indigo : null,
-      heading:
-          '${BlocProvider.of<LocalizationBloc>(context).localize('movies_from', 'Movies from')} $countryName',
+      heading: '${BlocProvider.of<LocalizationBloc>(context).localize('movies_from', 'Movies from')} $countryName',
       body: Container(
         height: 250,
         child: ListView.builder(
@@ -36,10 +35,7 @@ class MoviesListCard extends StatelessWidget implements Details<MovieList> {
             return MovieItemCard(
               name: item.title,
               posterUrl: item.posterUrl,
-              cardColor: Theme.of(context).brightness == Brightness.dark ||
-                      useColorsOnCard
-                  ? Colors.transparent
-                  : null,
+              cardColor: Theme.of(context).brightness == Brightness.dark || useColorsOnCard ? Colors.transparent : null,
             );
           },
           itemCount: details.items.length,
