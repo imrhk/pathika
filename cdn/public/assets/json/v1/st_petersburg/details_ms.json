@@ -1,0 +1,360 @@
+{
+    "basic_info": {
+        "name": "St Petersburg",
+        "id": "st_petersburg",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Auferstehungskirche_%28Sankt_Petersburg%29.JPG/791px-Auferstehungskirche_%28Sankt_Petersburg%29.JPG",
+        "place": "Gereja Penyelamat di Darah, St. Petersburg",
+        "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+        "photo_by": "Je-str",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Auferstehungskirche_(Sankt_Petersburg).JPG"
+    },
+    "airport": {
+        "name": "Lapangan Terbang Pulkovo"
+    },
+    "climate": {
+        "type": "Kontinental Lembab",
+        "items": [
+            {
+                "emoji": "❄️️",
+                "name": "Musim sejuk",
+                "temp": "-6 ° C hingga 2 ° C",
+                "duration": "Nov-Mac"
+            },
+            {
+                "emoji": "🌼",
+                "name": "Spring",
+                "temp": "2 ° C hingga 16 ° C",
+                "duration": "Apr-Mei"
+            },
+            {
+                "emoji": "☀",
+                "name": "Musim panas",
+                "temp": "12 ° C hingga 23 ° C",
+                "duration": "Jun-Ogos"
+            },
+            {
+                "emoji": "🍁",
+                "name": "Musim luruh",
+                "temp": "9 ° C hingga 15 ° C",
+                "duration": "Sep-Okt"
+            },
+            {
+                "emoji": "☃️",
+                "name": "Salji",
+                "temp": "Kedalaman Purata 19cm",
+                "duration": "Nov-Mac"
+            }
+        ]
+    },
+    "country": {
+        "name": "Rusia 🇷🇺",
+        "continent": "Eropah"
+    },
+    "currency": {
+        "name": "Rubel",
+        "symbol": "py6",
+        "code": "RUB"
+    },
+    "dance": {
+        "name": "Balet"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "Bau Goreng (Koryushka)",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Fried_smelt_food_dinner_cooked.jpg/640px-Fried_smelt_food_dinner_cooked.jpg"
+            },
+            {
+                "label": "Donat (Pyshkas)",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/7_muffins_and_2_coffee_-_the_standard_of_student_time-%29_-_panoramio.jpg/1024px-7_muffins_and_2_coffee_-_the_standard_of_student_time-%29_-_panoramio.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Igor Zvyaghin",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:7_muffins_and_2_coffee_-_the_standard_of_student_time-)_-_panoramio.jpg"
+            },
+            {
+                "label": "Pasties (Pirozhki)",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Piroshki.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Evilmonkey0013",
+                "attribution_url": "https://en.wikipedia.org/wiki/Pirozhki#/media/File:Piroshki.JPG"
+            },
+            {
+                "label": "Leningrad Rassolnik",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/%D0%A0%D0%B0%D1%81%D1%81%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%BF%D0%BE-%D0%BB%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8.JPG/1024px-%D0%A0%D0%B0%D1%81%D1%81%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%BF%D0%BE-%D0%BB%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Шнапс",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D1%81%D1%81%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%BF%D0%BE-%D0%BB%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8.JPG"
+            },
+            {
+                "label": "Shawarma",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2019/03/02/14/26/shawarma-4029889_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "PaulIstoan",
+                "attribution_url": "https://pixabay.com/photos/shawarma-food-sandwich-nutrition-4029889/"
+            },
+            {
+                "label": "Pelmeni",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Pelmeni_Russian.jpg/1024px-Pelmeni_Russian.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Eugene Kim",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Pelmeni_Russian.jpg"
+            },
+            {
+                "label": "solyanka",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Soljanka_with_olives.jpg/823px-Soljanka_with_olives.jpg"
+            },
+            {
+                "label": "Shchi",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Schi.jpg/1024px-Schi.jpg"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "Perdagangan Minyak dan Gas",
+        "secondary": [
+            "Pembinaan kapal",
+            "Aeroangkasa",
+            "Radio dan Elektronik"
+        ]
+    },
+    "language": {
+        "primary": "Orang Rusia",
+        "secondary": [
+            "Bahasa Inggeris"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_ms_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_ms_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_ms_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_ms_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_ms_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "The Return",
+                "poster_url": "https://image.tmdb.org/t/p/w300/fQ6eDfQoNqNoxb3Es7mK0qCP9bK.jpg"
+            },
+            {
+                "title": "Leviathan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/dPAvJdASE9tAtHhwlX1bFQN54aG.jpg"
+            },
+            {
+                "title": "Andrei Rublev",
+                "poster_url": "https://image.tmdb.org/t/p/w300/t950gX4EeAPgk8TCeh2NsixkBdr.jpg"
+            },
+            {
+                "title": "Solaris",
+                "poster_url": "https://image.tmdb.org/t/p/w300/1Q3hP6gdpSO0bj3rn5GuAcfmVmc.jpg"
+            },
+            {
+                "title" : "Loveless",
+                "poster_url": "https://image.tmdb.org/t/p/w300/p0o3yoJmsEMMhMPAMLl6VI7MomI.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "Vladimir Putin",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Vladimir_Putin_%282020-02-20%29.jpg/474px-Vladimir_Putin_%282020-02-20%29.jpg",
+                "work": "Presiden Rusia",
+                "place": "Saint Petersburg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY 4.0</a>",
+                "photo_by": "TASS News Agency",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Vladimir_Putin_(2020-02-20).jpg"
+            },
+            {
+                "name": "Alexander III dari Rusia",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Alexander_III%2C_Emperor_of_Russia_%281845-94%29.png/344px-Alexander_III%2C_Emperor_of_Russia_%281845-94%29.png",
+                "work": "Bekas Maharaja Seluruh Rusia",
+                "place": "Saint Petersburg"
+            },
+            {
+                "name": "Sergei Krikalev",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Sergei_Krikalev.jpg/391px-Sergei_Krikalev.jpg",
+                "work": "Angkasawan dengan enam penerbangan angkasa lepas",
+                "place": "St Petersburg"
+            },
+            {
+                "name": "Alfred Nobel",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Alfred_Nobel3.jpg/576px-Alfred_Nobel3.jpg",
+                "work": "Ahli kimia, jurutera, inovator, dan pengeluar persenjataan Sweden",
+                "place": "Dilahirkan di Stockholm, Sweden. Tinggal dan bekerja di St. Petersburg"
+            },
+            {
+                "name": "Svetlana kuznetsova",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Svetlana_Kuznetsova_at_Roland_Garros_2011.jpg/401px-Svetlana_Kuznetsova_at_Roland_Garros_2011.jpg",
+                "work": "Pemain tenis profesional",
+                "place": "Saint Petersburg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 2.0</a>",
+                "photo_by": "Carine 06",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Svetlana_Kuznetsova_at_Roland_Garros_2011.jpg"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⛸️ Luncur Gambar",
+        "footer": "Hoki Ais dan Bola Sepak"
+    },
+    "time_to_visit": {
+        "primary": "Jun-Ogos",
+        "secondary": "Tahun Baru"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "Muzium Pertapaan Negeri",
+                "description": "Muzium seni & budaya ditubuhkan pada tahun 1764",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM3HoJD9EWIFqsWog05Y5LauYsgKIoxhPFSFblg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112325880627622258637\">Kathrin Dietz</a>"
+                ],
+                "place_id": "ChIJ6eLLMgsxlkYR_F1QoCoDTgc"
+            },
+            {
+                "name": "Istana Musim Sejuk",
+                "description": "Bekas kediaman maharaja Rusia",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNDkviurztYu3KLsTuyah23y0iHjF6eQVoTGd5Y=s1600-w720",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/118159264679878765316\">《Sardorbek》 TV</a>"
+                ],
+                "place_id": "ChIJva0l6xAxlkYRdmdZESiPTyE"
+            },
+            {
+                "name": "Petergof",
+                "description": "Istana kerajaan, pinggir laut, taman & muzium",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMDBS2vu9vDl2GI0xhqpyI4ll-LyqEtd4zLz_QD=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116530877086965823592\">Никита Бор</a>"
+                ],
+                "place_id": "ChIJtSExx0pHlkYRTyP8a2OZ5QY"
+            },
+            {
+                "name": "Penyelamat di Darah yang Tumpah",
+                "description": "Gereja tahun 1880-an dengan reka bentuk yang mewah dan mewah",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOmtzhUHU1pZqXJ2Rc75qeCVwjFM51kRCnUMhBx=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117073945108422215917\">Fabio Rotondo</a>"
+                ],
+                "place_id": "ChIJbVFAKwwxlkYRt1Nx6jtvZz4"
+            },
+            {
+                "name": "Katedral St. Isaac",
+                "description": "Bangunan keagamaan yang indah dengan kubah emas",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOpWkZU1tlbRiCHtt_w0R9gyyQpH0Mito5Xb2Ew=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106217893933730903075\">Drop</a>"
+                ],
+                "place_id": "ChIJSTp6hhsxlkYR6SV9tFJytR0"
+            },
+            {
+                "name": "Benteng Peter dan Paul",
+                "description": "Tapak bandar asal ditubuhkan pada tahun 1703",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNLqeBINjLtSaI_SLTbaIs09EhrIxdtyRIOuybk=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106966955057660822516\">Наталья Шабалина</a>"
+                ],
+                "place_id": "ChIJTSR-1GoxlkYR5zLwx1pVPbo"
+            },
+            {
+                "name": "Dataran Istana",
+                "description": "Dataran yang dilapisi oleh bangunan neoklasik",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPdw4lCr9JN3-6p53k8Ygw_c7rzF36qDF8pcJHg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108683531012595666619\">Евгений Шмаков</a>"
+                ],
+                "place_id": "ChIJVXxqaBAxlkYRhOhIV7EPlaI"
+            },
+            {
+                "name": "Katedral Kazan",
+                "description": "Katedral Ortodoks Rusia Colonnaded",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPlNgyPYKT0tLlepOs7TcniofFWPdG2TGfGyZCa=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106199171833586038896\">DomoTrad mail</a>"
+                ],
+                "place_id": "ChIJf6D87AUxlkYRFUyZu2EH6hI"
+            },
+            {
+                "name": "Teater Mariinsky",
+                "description": "Kompleks besar untuk muzik, opera & balet",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMBwZD2wGqqHl5PqFg2OwDMfiIo5lJSXy_IK4Y9=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117290264136811457757\">Mister No</a>"
+                ],
+                "place_id": "ChIJ2xVZCuMwlkYR9U59zxvFL58"
+            },
+            {
+                "name": "Muzium Rusia",
+                "description": "Karya seni, ikon & patung halus",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNAb5rRYHDsqz0UP-SCq7PUqPotf9wDBUNZ0mFT=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104173649543230959838\">Michael Pohl</a>"
+                ],
+                "place_id": "ChIJhWsRwA4xlkYRVVQ7duuOte0"
+            },
+            {
+                "name": "Taman Musim Panas",
+                "description": "Taman formal yang dirancang oleh Czar Peter",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOKSFKonfsvWdKYQbFxBw5MAT-bgW-8AnNN3V_X=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116254883157322361245\">Антон Антропов</a>"
+                ],
+                "place_id": "ChIJLVpHfgwxlkYRSKIBKxed6JA"
+            },
+            {
+                "name": "Cruiser Aurora",
+                "description": "Muzium terapung di kapal perang abad ke-20",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPsMl8-Km6DmUo3OWADxRkzeLs2cjnFz7xxjj9T=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114751363659672878881\">Artiom Emelianov</a>"
+                ],
+                "place_id": "ChIJzZ8x-W8xlkYR7fxP_cP0zbA"
+            },
+            {
+                "name": "Penunggang Kuda Gangsa",
+                "description": "Patung berkuda Peter the Great",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMOh0jE72-LjFlwi6e781YLlf1IUjc9CXDstEtg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108937772715229801358\">Дмитрий Савченко</a>"
+                ],
+                "place_id": "ChIJXRSiaRkxlkYR6naWIrXNs3I"
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 180,
+    "trivia": {
+        "items": [
+            "St Petersburg dulu dipanggil Leningrad",
+            "Bandar ini telah dinamakan semula tiga kali. Kali ketiga kembali ke St. Petersburg",
+            "Dulu ibu kota Rusia",
+            "Ia menempatkan sekitar 800 jambatan. Terdapat 12 jambatan bergerak secara total,",
+            "Ia bertahan dalam pengepungan semasa Perang Dunia 2",
+            "Ia mempunyai sistem metro bawah tanah terdalam di dunia",
+            "Malam putih dapat dilihat di sini pada musim panas. Malam tidak gelap dalam tempoh itu.",
+            "Peter and Paul Fortress adalah bangunan pertama yang dibina di bandar. Tempat itu dirancang untuk menjadi benteng untuk mempertahankan kota.",
+            "Koleksi Hermitage mempunyai sekitar 3 juta pameran yang terletak di 350 bilik lima bangunan.",
+            "Bom dan peluru dari Perang Dunia II masih kerap dijumpai dan digali di kota dan kawasan di sekitarnya dan digunakan.",
+            "St Petersburg adalah ibu kota trem. Panjang trek trem di bandar lebih dari 600 km."
+        ]
+    }
+}

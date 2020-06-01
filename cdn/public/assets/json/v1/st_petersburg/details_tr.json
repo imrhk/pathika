@@ -1,0 +1,360 @@
+{
+    "basic_info": {
+        "name": "St.Petersburg",
+        "id": "st_petersburg",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Auferstehungskirche_%28Sankt_Petersburg%29.JPG/791px-Auferstehungskirche_%28Sankt_Petersburg%29.JPG",
+        "place": "Kan, St. Petersburg üzerinde kurtarıcı Kilisesi",
+        "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+        "photo_by": "Je-str",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Auferstehungskirche_(Sankt_Petersburg).JPG"
+    },
+    "airport": {
+        "name": "Pulkovo Havaalanı"
+    },
+    "climate": {
+        "type": "Nemli kıta",
+        "items": [
+            {
+                "emoji": "❄️️",
+                "name": "Kış",
+                "temp": "-6 ° C ila 2 ° C",
+                "duration": "Kasım-Mart"
+            },
+            {
+                "emoji": "🌼",
+                "name": "bahar",
+                "temp": "2 ° C ila 16 ° C",
+                "duration": "Nisan-Mayıs"
+            },
+            {
+                "emoji": "☀",
+                "name": "Yaz",
+                "temp": "12 ° C ila 23 ° C",
+                "duration": "Haziran-Ağustos"
+            },
+            {
+                "emoji": "🍁",
+                "name": "Sonbahar",
+                "temp": "9 ° C ila 15 ° C",
+                "duration": "Eylül-Ekim"
+            },
+            {
+                "emoji": "☃️",
+                "name": "Kar",
+                "temp": "Ortalama Derinlik 19cm",
+                "duration": "Kasım-Mart"
+            }
+        ]
+    },
+    "country": {
+        "name": "Rusya 🇷🇺",
+        "continent": "Avrupa"
+    },
+    "currency": {
+        "name": "Ruble",
+        "symbol": "py6",
+        "code": "RUB"
+    },
+    "dance": {
+        "name": "Bale"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "Kızarmış Kokusu (Koryushka)",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Fried_smelt_food_dinner_cooked.jpg/640px-Fried_smelt_food_dinner_cooked.jpg"
+            },
+            {
+                "label": "Donutlar (Pyshkas)",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/7_muffins_and_2_coffee_-_the_standard_of_student_time-%29_-_panoramio.jpg/1024px-7_muffins_and_2_coffee_-_the_standard_of_student_time-%29_-_panoramio.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Igor Zvyaghin",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:7_muffins_and_2_coffee_-_the_standard_of_student_time-)_-_panoramio.jpg"
+            },
+            {
+                "label": "Pasties (Pirozhki)",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Piroshki.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Evilmonkey0013",
+                "attribution_url": "https://en.wikipedia.org/wiki/Pirozhki#/media/File:Piroshki.JPG"
+            },
+            {
+                "label": "Leningrad Rassolnik",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/%D0%A0%D0%B0%D1%81%D1%81%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%BF%D0%BE-%D0%BB%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8.JPG/1024px-%D0%A0%D0%B0%D1%81%D1%81%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%BF%D0%BE-%D0%BB%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Шнапс",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D1%81%D1%81%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%BF%D0%BE-%D0%BB%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8.JPG"
+            },
+            {
+                "label": "Döner",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2019/03/02/14/26/shawarma-4029889_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "PaulIstoan",
+                "attribution_url": "https://pixabay.com/photos/shawarma-food-sandwich-nutrition-4029889/"
+            },
+            {
+                "label": "Pelmeni",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Pelmeni_Russian.jpg/1024px-Pelmeni_Russian.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Eugene Kim",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Pelmeni_Russian.jpg"
+            },
+            {
+                "label": "solyanka",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Soljanka_with_olives.jpg/823px-Soljanka_with_olives.jpg"
+            },
+            {
+                "label": "Shchi",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Schi.jpg/1024px-Schi.jpg"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "Petrol ve Gaz Ticareti",
+        "secondary": [
+            "gemi yapımı",
+            "Uzay",
+            "Radyo ve Elektronik"
+        ]
+    },
+    "language": {
+        "primary": "Rusça",
+        "secondary": [
+            "ingilizce"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_tr_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_tr_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_tr_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_tr_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_tr_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "The Return",
+                "poster_url": "https://image.tmdb.org/t/p/w300/fQ6eDfQoNqNoxb3Es7mK0qCP9bK.jpg"
+            },
+            {
+                "title": "Leviathan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/dPAvJdASE9tAtHhwlX1bFQN54aG.jpg"
+            },
+            {
+                "title": "Andrei Rublev",
+                "poster_url": "https://image.tmdb.org/t/p/w300/t950gX4EeAPgk8TCeh2NsixkBdr.jpg"
+            },
+            {
+                "title": "Solaris",
+                "poster_url": "https://image.tmdb.org/t/p/w300/1Q3hP6gdpSO0bj3rn5GuAcfmVmc.jpg"
+            },
+            {
+                "title" : "Loveless",
+                "poster_url": "https://image.tmdb.org/t/p/w300/p0o3yoJmsEMMhMPAMLl6VI7MomI.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "Vladimir Putin",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Vladimir_Putin_%282020-02-20%29.jpg/474px-Vladimir_Putin_%282020-02-20%29.jpg",
+                "work": "Rusya Devlet Başkanı",
+                "place": "Saint Petersburg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY 4.0</a>",
+                "photo_by": "TASS News Agency",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Vladimir_Putin_(2020-02-20).jpg"
+            },
+            {
+                "name": "III.Alexander",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Alexander_III%2C_Emperor_of_Russia_%281845-94%29.png/344px-Alexander_III%2C_Emperor_of_Russia_%281845-94%29.png",
+                "work": "Tüm Rusya Eski İmparatoru",
+                "place": "Saint Petersburg"
+            },
+            {
+                "name": "Sergei Krikalev",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Sergei_Krikalev.jpg/391px-Sergei_Krikalev.jpg",
+                "work": "Altı uzay uçuşu ile astronot",
+                "place": "St.Petersburg"
+            },
+            {
+                "name": "Alfred nobel",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Alfred_Nobel3.jpg/576px-Alfred_Nobel3.jpg",
+                "work": "İsveçli kimyager, mühendis, yenilikçi ve silah üreticisi",
+                "place": "Stockholm, İsveç'te doğdu. St.Petersburg'da yaşadı ve çalıştı"
+            },
+            {
+                "name": "Svetlana Kuznetsova",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Svetlana_Kuznetsova_at_Roland_Garros_2011.jpg/401px-Svetlana_Kuznetsova_at_Roland_Garros_2011.jpg",
+                "work": "Profesyonel Tenis Oyuncusu",
+                "place": "Saint Petersburg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 2.0</a>",
+                "photo_by": "Carine 06",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Svetlana_Kuznetsova_at_Roland_Garros_2011.jpg"
+            }
+        ]
+    },
+    "sports": {
+        "title": "Figure️ Artistik Patinaj",
+        "footer": "Buz Hokeyi ve Futbol"
+    },
+    "time_to_visit": {
+        "primary": "Haziran Ağustos",
+        "secondary": "Yeni yıl"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "Devlet İnziva Yeri Müzesi",
+                "description": "1764 yılında kurulan Sanat ve Kültür Müzesi",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM3HoJD9EWIFqsWog05Y5LauYsgKIoxhPFSFblg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112325880627622258637\">Kathrin Dietz</a>"
+                ],
+                "place_id": "ChIJ6eLLMgsxlkYR_F1QoCoDTgc"
+            },
+            {
+                "name": "Kış sarayı",
+                "description": "Rus imparatorlarının eski ikametgahı",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNDkviurztYu3KLsTuyah23y0iHjF6eQVoTGd5Y=s1600-w720",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/118159264679878765316\">《Sardorbek》 TV</a>"
+                ],
+                "place_id": "ChIJva0l6xAxlkYRdmdZESiPTyE"
+            },
+            {
+                "name": "Petergof",
+                "description": "Sahil Kraliyet Sarayı, Park ve Müzeler",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMDBS2vu9vDl2GI0xhqpyI4ll-LyqEtd4zLz_QD=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116530877086965823592\">Никита Бор</a>"
+                ],
+                "place_id": "ChIJtSExx0pHlkYRTyP8a2OZ5QY"
+            },
+            {
+                "name": "Dökülmüş Kan üzerinde Kurtarıcı",
+                "description": "Canlı, lüks tasarımlı 1880'ler kilisesi",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOmtzhUHU1pZqXJ2Rc75qeCVwjFM51kRCnUMhBx=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117073945108422215917\">Fabio Rotondo</a>"
+                ],
+                "place_id": "ChIJbVFAKwwxlkYRt1Nx6jtvZz4"
+            },
+            {
+                "name": "St.Isaac Katedrali",
+                "description": "Altın kubbe ile süslü dini yapı",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOpWkZU1tlbRiCHtt_w0R9gyyQpH0Mito5Xb2Ew=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106217893933730903075\">Drop</a>"
+                ],
+                "place_id": "ChIJSTp6hhsxlkYR6SV9tFJytR0"
+            },
+            {
+                "name": "Peter ve Paul Kalesi",
+                "description": "1703 yılında kurulan orijinal şehir sitesi",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNLqeBINjLtSaI_SLTbaIs09EhrIxdtyRIOuybk=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106966955057660822516\">Наталья Шабалина</a>"
+                ],
+                "place_id": "ChIJTSR-1GoxlkYR5zLwx1pVPbo"
+            },
+            {
+                "name": "Saray Meydanı",
+                "description": "Neoklasik binalarla kaplı kare",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPdw4lCr9JN3-6p53k8Ygw_c7rzF36qDF8pcJHg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108683531012595666619\">Евгений Шмаков</a>"
+                ],
+                "place_id": "ChIJVXxqaBAxlkYRhOhIV7EPlaI"
+            },
+            {
+                "name": "Kazan Katedrali",
+                "description": "Sütunlu Rus Ortodoks katedrali",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPlNgyPYKT0tLlepOs7TcniofFWPdG2TGfGyZCa=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106199171833586038896\">DomoTrad mail</a>"
+                ],
+                "place_id": "ChIJf6D87AUxlkYRFUyZu2EH6hI"
+            },
+            {
+                "name": "Mariinsky Tiyatrosu",
+                "description": "Müzik, opera ve bale için büyük kompleks",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMBwZD2wGqqHl5PqFg2OwDMfiIo5lJSXy_IK4Y9=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117290264136811457757\">Mister No</a>"
+                ],
+                "place_id": "ChIJ2xVZCuMwlkYR9U59zxvFL58"
+            },
+            {
+                "name": "Rusya Müzesi",
+                "description": "Güzel sanatlar, simgeler ve heykeller",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNAb5rRYHDsqz0UP-SCq7PUqPotf9wDBUNZ0mFT=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104173649543230959838\">Michael Pohl</a>"
+                ],
+                "place_id": "ChIJhWsRwA4xlkYRVVQ7duuOte0"
+            },
+            {
+                "name": "Yaz Bahçesi",
+                "description": "Czar Peter tarafından tasarlanan resmi bahçeler",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOKSFKonfsvWdKYQbFxBw5MAT-bgW-8AnNN3V_X=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116254883157322361245\">Антон Антропов</a>"
+                ],
+                "place_id": "ChIJLVpHfgwxlkYRSKIBKxed6JA"
+            },
+            {
+                "name": "Aurora Kruvazörü",
+                "description": "20. yüzyıl savaş gemisinde yüzen müze",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPsMl8-Km6DmUo3OWADxRkzeLs2cjnFz7xxjj9T=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114751363659672878881\">Artiom Emelianov</a>"
+                ],
+                "place_id": "ChIJzZ8x-W8xlkYR7fxP_cP0zbA"
+            },
+            {
+                "name": "Bronz Süvari",
+                "description": "Büyük Peter'in atlı heykeli",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMOh0jE72-LjFlwi6e781YLlf1IUjc9CXDstEtg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108937772715229801358\">Дмитрий Савченко</a>"
+                ],
+                "place_id": "ChIJXRSiaRkxlkYR6naWIrXNs3I"
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 180,
+    "trivia": {
+        "items": [
+            "Petersburg'un adı Leningrad'dı.",
+            "Şehir üç kez yeniden adlandırıldı. Üçüncü kez St.Petersburg'a döndü",
+            "Eskiden Rusya’nın başkenti",
+            "Yaklaşık 800 köprüye ev sahipliği yapmaktadır. Toplamda 12 adet hareketli köprü vardır,",
+            "2.Dünya Savaşı sırasında kuşatmadan kurtuldu",
+            "Dünyanın en derin yeraltı metro sistemine sahiptir",
+            "Yaz aylarında beyaz gece görülebilir. O dönemde geceler karanlık değil.",
+            "Peter ve Paul Fortress şehirde inşa edilen ilk bina. Kentin savunulması için kale olması planlandı.",
+            "Hermitage koleksiyonunda beş binanın 350 odasında yaklaşık 3 milyon sergi bulunuyor.",
+            "İkinci Dünya Savaşı'ndan gelen bombalar ve mermiler şehir ve çevresindeki bölgelerde hala düzenli olarak bulunmakta ve kazılmaktadır.",
+            "St.Petersburg tramvayların başkentidir. Şehirdeki tramvay hatlarının uzunluğu 600 km'den fazla."
+        ]
+    }
+}

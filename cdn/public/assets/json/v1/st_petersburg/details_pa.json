@@ -1,0 +1,360 @@
+{
+    "basic_info": {
+        "name": "ਸੇਂਟ ਪੀਟਰਸਬਰਗ",
+        "id": "st_petersburg",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Auferstehungskirche_%28Sankt_Petersburg%29.JPG/791px-Auferstehungskirche_%28Sankt_Petersburg%29.JPG",
+        "place": "ਸੇਂਟ ਪੀਟਰਸਬਰਗ ਵਿਖੇ ਚਰਚ ਆਫ਼ ਦਿ ਸੇਵਿਆਅਰ",
+        "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+        "photo_by": "Je-str",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Auferstehungskirche_(Sankt_Petersburg).JPG"
+    },
+    "airport": {
+        "name": "ਪਲਕੋਕੋ ਏਅਰਪੋਰਟ"
+    },
+    "climate": {
+        "type": "ਨਮੀ ਵਾਲਾ",
+        "items": [
+            {
+                "emoji": "❄️️",
+                "name": "ਸਰਦੀਆਂ",
+                "temp": "-6 ਡਿਗਰੀ ਸੈਲਸੀਅਸ 2 ਡਿਗਰੀ ਸੈਲਸੀਅਸ",
+                "duration": "ਨਵੰਬਰ-ਮਾਰਚ"
+            },
+            {
+                "emoji": "🌼",
+                "name": "ਬਸੰਤ",
+                "temp": "2 ਡਿਗਰੀ ਸੈਂਟੀਗ੍ਰੇਡ ਤੋਂ 16 ਡਿਗਰੀ ਸੈਲਸੀਅਸ",
+                "duration": "ਅਪ੍ਰੈਲ-ਮਈ"
+            },
+            {
+                "emoji": "☀",
+                "name": "ਗਰਮੀ",
+                "temp": "12 ਡਿਗਰੀ ਸੈਂਟੀਗਰੇਡ ਤੋਂ 23 ਡਿਗਰੀ ਸੈਲਸੀਅਸ",
+                "duration": "ਜੂਨ-ਅਗਸਤ"
+            },
+            {
+                "emoji": "🍁",
+                "name": "ਪਤਝੜ",
+                "temp": "9 ਡਿਗਰੀ ਸੈਂਟੀਗ੍ਰੇਡ ਤੋਂ 15 ਡਿਗਰੀ ਸੈਲਸੀਅਸ",
+                "duration": "ਸਤੰਬਰ-ਅਕਤੂਬਰ"
+            },
+            {
+                "emoji": "☃️",
+                "name": "ਬਰਫ",
+                "temp": "Depਸਤ ਦੀ ਡੂੰਘਾਈ 19 ਸੈ",
+                "duration": "ਨਵੰਬਰ-ਮਾਰਚ"
+            }
+        ]
+    },
+    "country": {
+        "name": "ਰੂਸ 🇷🇺",
+        "continent": "ਯੂਰਪ"
+    },
+    "currency": {
+        "name": "ਰੁਬਲ",
+        "symbol": "py6",
+        "code": "RUB"
+    },
+    "dance": {
+        "name": "ਬੈਲੇ"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "ਤਲੇ ਹੋਏ ਸੁਗੰਧ (ਕੋਰਯੁਸ਼ਕਾ)",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Fried_smelt_food_dinner_cooked.jpg/640px-Fried_smelt_food_dinner_cooked.jpg"
+            },
+            {
+                "label": "ਡੋਨਟਸ (ਪਾਇਸਕਾਸ)",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/7_muffins_and_2_coffee_-_the_standard_of_student_time-%29_-_panoramio.jpg/1024px-7_muffins_and_2_coffee_-_the_standard_of_student_time-%29_-_panoramio.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Igor Zvyaghin",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:7_muffins_and_2_coffee_-_the_standard_of_student_time-)_-_panoramio.jpg"
+            },
+            {
+                "label": "ਪੈਸਟਿਸ (ਪੀਰੋਜ਼ਕੀ)",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Piroshki.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Evilmonkey0013",
+                "attribution_url": "https://en.wikipedia.org/wiki/Pirozhki#/media/File:Piroshki.JPG"
+            },
+            {
+                "label": "ਲੈਨਿਨਗ੍ਰਾਡ ਰਸੋਲਨਿਕ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/%D0%A0%D0%B0%D1%81%D1%81%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%BF%D0%BE-%D0%BB%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8.JPG/1024px-%D0%A0%D0%B0%D1%81%D1%81%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%BF%D0%BE-%D0%BB%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Шнапс",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D1%81%D1%81%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%BF%D0%BE-%D0%BB%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8.JPG"
+            },
+            {
+                "label": "ਸ਼ਾਵਰਮਾ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2019/03/02/14/26/shawarma-4029889_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "PaulIstoan",
+                "attribution_url": "https://pixabay.com/photos/shawarma-food-sandwich-nutrition-4029889/"
+            },
+            {
+                "label": "ਪੇਲਮੈਨੀ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Pelmeni_Russian.jpg/1024px-Pelmeni_Russian.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Eugene Kim",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Pelmeni_Russian.jpg"
+            },
+            {
+                "label": "ਸੋਲਨਕਾ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Soljanka_with_olives.jpg/823px-Soljanka_with_olives.jpg"
+            },
+            {
+                "label": "ਸ਼ਚੀ",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Schi.jpg/1024px-Schi.jpg"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "ਤੇਲ ਅਤੇ ਗੈਸ ਦਾ ਵਪਾਰ",
+        "secondary": [
+            "ਜਹਾਜ਼ ਨਿਰਮਾਣ",
+            "ਏਅਰਸਪੇਸ",
+            "ਰੇਡੀਓ ਅਤੇ ਇਲੈਕਟ੍ਰਾਨਿਕਸ"
+        ]
+    },
+    "language": {
+        "primary": "ਰੂਸੀ",
+        "secondary": [
+            "ਅੰਗਰੇਜ਼ੀ"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_pa_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_pa_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_pa_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_pa_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_pa_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "The Return",
+                "poster_url": "https://image.tmdb.org/t/p/w300/fQ6eDfQoNqNoxb3Es7mK0qCP9bK.jpg"
+            },
+            {
+                "title": "Leviathan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/dPAvJdASE9tAtHhwlX1bFQN54aG.jpg"
+            },
+            {
+                "title": "Andrei Rublev",
+                "poster_url": "https://image.tmdb.org/t/p/w300/t950gX4EeAPgk8TCeh2NsixkBdr.jpg"
+            },
+            {
+                "title": "Solaris",
+                "poster_url": "https://image.tmdb.org/t/p/w300/1Q3hP6gdpSO0bj3rn5GuAcfmVmc.jpg"
+            },
+            {
+                "title" : "Loveless",
+                "poster_url": "https://image.tmdb.org/t/p/w300/p0o3yoJmsEMMhMPAMLl6VI7MomI.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "ਵਲਾਦੀਮੀਰ ਪੁਤਿਨ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Vladimir_Putin_%282020-02-20%29.jpg/474px-Vladimir_Putin_%282020-02-20%29.jpg",
+                "work": "ਰੂਸ ਦੇ ਰਾਸ਼ਟਰਪਤੀ",
+                "place": "ਸੇਂਟ ਪੀਟਰਸਬਰਗ",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY 4.0</a>",
+                "photo_by": "TASS News Agency",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Vladimir_Putin_(2020-02-20).jpg"
+            },
+            {
+                "name": "ਰੂਸ ਦਾ ਅਲੈਗਜ਼ੈਂਡਰ ਤੀਜਾ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Alexander_III%2C_Emperor_of_Russia_%281845-94%29.png/344px-Alexander_III%2C_Emperor_of_Russia_%281845-94%29.png",
+                "work": "ਸਾਬਕਾ ਰੂਸ ਦੇ ਸਾਰੇ ਰੂਸ",
+                "place": "ਸੇਂਟ ਪੀਟਰਸਬਰਗ"
+            },
+            {
+                "name": "ਸਰਗੇਈ ਕ੍ਰਿਕਾਲੇਵ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Sergei_Krikalev.jpg/391px-Sergei_Krikalev.jpg",
+                "work": "ਛੇ ਪੁਲਾੜ ਉਡਾਣਾਂ ਦੇ ਨਾਲ ਪੁਲਾੜ ਯਾਤਰੀ",
+                "place": "ਸੇਂਟ ਪੀਟਰਸਬਰਗ"
+            },
+            {
+                "name": "ਐਲਫਰਡ ਨੋਬਲ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Alfred_Nobel3.jpg/576px-Alfred_Nobel3.jpg",
+                "work": "ਸਵੀਡਿਸ਼ ਕੈਮਿਸਟ, ਇੰਜੀਨੀਅਰ, ਨਵੀਨਤਾਕਾਰੀ ਅਤੇ ਸ਼ਸਤ੍ਰ ਨਿਰਮਾਤਾ",
+                "place": "ਸ੍ਟਾਕਹੋਲ੍ਮ, ਸਵੀਡਨ ਵਿੱਚ ਪੈਦਾ ਹੋਇਆ. ਸੇਂਟ ਪੀਟਰਸਬਰਗ ਵਿਚ ਰਹਿੰਦਾ ਸੀ ਅਤੇ ਕੰਮ ਕਰਦਾ ਸੀ"
+            },
+            {
+                "name": "ਸਵੈਤਲਾਣਾ ਕੁਜ਼ਨੇਤਸੋਵਾ",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Svetlana_Kuznetsova_at_Roland_Garros_2011.jpg/401px-Svetlana_Kuznetsova_at_Roland_Garros_2011.jpg",
+                "work": "ਪੇਸ਼ੇਵਰ ਟੈਨਿਸ ਖਿਡਾਰੀ",
+                "place": "ਸੇਂਟ ਪੀਟਰਸਬਰਗ",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 2.0</a>",
+                "photo_by": "Carine 06",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Svetlana_Kuznetsova_at_Roland_Garros_2011.jpg"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⛸️ ਚਿੱਤਰ ਸਕੇਟਿੰਗ",
+        "footer": "ਆਈਸ ਹਾਕੀ ਅਤੇ ਫੁਟਬਾਲ"
+    },
+    "time_to_visit": {
+        "primary": "ਜੂਨ-ਅਗਸਤ",
+        "secondary": "ਨਵਾਂ ਸਾਲ"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "ਸਟੇਟ ਹਰਮੀਟੇਜ ਅਜਾਇਬ ਘਰ",
+                "description": "ਕਲਾ ਅਤੇ ਸਭਿਆਚਾਰ ਅਜਾਇਬ ਘਰ ਦੀ ਸਥਾਪਨਾ 1764 ਵਿਚ ਕੀਤੀ ਗਈ ਸੀ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM3HoJD9EWIFqsWog05Y5LauYsgKIoxhPFSFblg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112325880627622258637\">Kathrin Dietz</a>"
+                ],
+                "place_id": "ChIJ6eLLMgsxlkYR_F1QoCoDTgc"
+            },
+            {
+                "name": "ਵਿੰਟਰ ਪੈਲੇਸ",
+                "description": "ਰੂਸੀ ਸਮਰਾਟਾਂ ਦੀ ਸਾਬਕਾ ਨਿਵਾਸ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNDkviurztYu3KLsTuyah23y0iHjF6eQVoTGd5Y=s1600-w720",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/118159264679878765316\">《Sardorbek》 TV</a>"
+                ],
+                "place_id": "ChIJva0l6xAxlkYRdmdZESiPTyE"
+            },
+            {
+                "name": "ਪੀਟਰਗੋਫ",
+                "description": "ਸਮੁੰਦਰ ਦੇ ਕਿਨਾਰੇ ਸ਼ਾਹੀ ਮਹਿਲ, ਪਾਰਕ ਅਤੇ ਅਜਾਇਬ ਘਰ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMDBS2vu9vDl2GI0xhqpyI4ll-LyqEtd4zLz_QD=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116530877086965823592\">Никита Бор</a>"
+                ],
+                "place_id": "ChIJtSExx0pHlkYRTyP8a2OZ5QY"
+            },
+            {
+                "name": "ਖਿੰਡੇ ਹੋਏ ਖੂਨ ਤੇ ਮੁਕਤੀਦਾਤਾ",
+                "description": "ਸੰਜੀਵ, ਸ਼ਾਨਦਾਰ ਡਿਜ਼ਾਈਨ ਦੇ ਨਾਲ 1880 ਦਾ ਚਰਚ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOmtzhUHU1pZqXJ2Rc75qeCVwjFM51kRCnUMhBx=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117073945108422215917\">Fabio Rotondo</a>"
+                ],
+                "place_id": "ChIJbVFAKwwxlkYRt1Nx6jtvZz4"
+            },
+            {
+                "name": "ਸੇਂਟ ਆਈਜ਼ੈਕ ਦਾ ਗਿਰਜਾਘਰ",
+                "description": "ਸੋਨੇ ਦੇ ਗੁੰਬਦ ਨਾਲ ਸਜਾਵਟੀ ਧਾਰਮਿਕ ਇਮਾਰਤ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOpWkZU1tlbRiCHtt_w0R9gyyQpH0Mito5Xb2Ew=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106217893933730903075\">Drop</a>"
+                ],
+                "place_id": "ChIJSTp6hhsxlkYR6SV9tFJytR0"
+            },
+            {
+                "name": "ਪੀਟਰ ਅਤੇ ਪੌਲ ਕਿਲ੍ਹੇ",
+                "description": "1703 ਵਿਚ ਸਥਾਪਤ ਸ਼ਹਿਰ ਦੀ ਅਸਲ ਸਾਈਟ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNLqeBINjLtSaI_SLTbaIs09EhrIxdtyRIOuybk=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106966955057660822516\">Наталья Шабалина</a>"
+                ],
+                "place_id": "ChIJTSR-1GoxlkYR5zLwx1pVPbo"
+            },
+            {
+                "name": "ਪੈਲੇਸ ਵਰਗ",
+                "description": "ਨਵ ਕਲਾਸੀਕਲ ਇਮਾਰਤਾਂ ਨਾਲ ਕਤਾਰਬੱਧ ਵਰਗ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPdw4lCr9JN3-6p53k8Ygw_c7rzF36qDF8pcJHg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108683531012595666619\">Евгений Шмаков</a>"
+                ],
+                "place_id": "ChIJVXxqaBAxlkYRhOhIV7EPlaI"
+            },
+            {
+                "name": "ਕਾਜਾਨ ਗਿਰਜਾਘਰ",
+                "description": "ਬਸਤੀਵਾਦੀ ਰੂਸੀ ਆਰਥੋਡਾਕਸ ਗਿਰਜਾਘਰ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPlNgyPYKT0tLlepOs7TcniofFWPdG2TGfGyZCa=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106199171833586038896\">DomoTrad mail</a>"
+                ],
+                "place_id": "ChIJf6D87AUxlkYRFUyZu2EH6hI"
+            },
+            {
+                "name": "ਮਾਰੀਨਸਕੀ ਥੀਏਟਰ",
+                "description": "ਸੰਗੀਤ, ਓਪੇਰਾ ਅਤੇ ਬੈਲੇ ਲਈ ਵਿਸ਼ਾਲ ਕੰਪਲੈਕਸ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMBwZD2wGqqHl5PqFg2OwDMfiIo5lJSXy_IK4Y9=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117290264136811457757\">Mister No</a>"
+                ],
+                "place_id": "ChIJ2xVZCuMwlkYR9U59zxvFL58"
+            },
+            {
+                "name": "ਰਸ਼ੀਅਨ ਅਜਾਇਬ ਘਰ",
+                "description": "ਵਧੀਆ ਕਲਾਕਾਰੀ, ਆਈਕਾਨ ਅਤੇ ਮੂਰਤੀਆਂ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNAb5rRYHDsqz0UP-SCq7PUqPotf9wDBUNZ0mFT=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104173649543230959838\">Michael Pohl</a>"
+                ],
+                "place_id": "ChIJhWsRwA4xlkYRVVQ7duuOte0"
+            },
+            {
+                "name": "ਸਮਰ ਗਾਰਡਨ",
+                "description": "ਜ਼ਾਰ ਪੀਟਰ ਦੁਆਰਾ ਡਿਜ਼ਾਇਨ ਕੀਤੇ ਸਧਾਰਣ ਬਾਗ਼",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOKSFKonfsvWdKYQbFxBw5MAT-bgW-8AnNN3V_X=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116254883157322361245\">Антон Антропов</a>"
+                ],
+                "place_id": "ChIJLVpHfgwxlkYRSKIBKxed6JA"
+            },
+            {
+                "name": "ਕਰੂਜ਼ਰ ਅਰੋੜਾ",
+                "description": "20 ਵੀਂ ਸਦੀ ਦੇ ਜੰਗੀ ਸਮੁੰਦਰੀ ਕੰ onੇ 'ਤੇ ਫਲੋਟਿੰਗ ਅਜਾਇਬ ਘਰ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPsMl8-Km6DmUo3OWADxRkzeLs2cjnFz7xxjj9T=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114751363659672878881\">Artiom Emelianov</a>"
+                ],
+                "place_id": "ChIJzZ8x-W8xlkYR7fxP_cP0zbA"
+            },
+            {
+                "name": "ਕਾਂਸੀ ਦਾ ਘੋੜਾ",
+                "description": "ਮਹਾਨ ਪੀਟਰ ਦੀ ਘੋੜਸਵਾਰ ਦੀ ਮੂਰਤੀ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMOh0jE72-LjFlwi6e781YLlf1IUjc9CXDstEtg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108937772715229801358\">Дмитрий Савченко</a>"
+                ],
+                "place_id": "ChIJXRSiaRkxlkYR6naWIrXNs3I"
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 180,
+    "trivia": {
+        "items": [
+            "ਸੇਂਟ ਪੀਟਰਸਬਰਗ ਨੂੰ ਲੈਨਿਨਗ੍ਰਾਡ ਕਿਹਾ ਜਾਂਦਾ ਸੀ",
+            "ਸ਼ਹਿਰ ਦਾ ਨਾਮ ਤਿੰਨ ਵਾਰ ਰੱਖਿਆ ਗਿਆ ਹੈ. ਤੀਜੀ ਵਾਰ ਸੇਂਟ ਪੀਟਰਸਬਰਗ ਵਾਪਸ ਗਈ",
+            "ਇਹ ਰੂਸ ਦੀ ਰਾਜਧਾਨੀ ਸ਼ਹਿਰ ਹੁੰਦਾ ਸੀ",
+            "ਇਹ ਲਗਭਗ 800 ਪੁਲਾਂ ਦਾ ਘਰ ਹੈ. ਕੁੱਲ ਮਿਲਾ ਕੇ 12 ਚਲ ਰਹੇ ਪੁਲ ਹਨ,",
+            "ਵਿਸ਼ਵ ਯੁੱਧ 2 ਦੌਰਾਨ ਇਹ ਘੇਰਾਬੰਦੀ ਤੋਂ ਬਚਿਆ ਸੀ",
+            "ਇਹ ਵਿਸ਼ਵ ਵਿਚ ਸਭ ਤੋਂ ਡੂੰਘੀ ਭੂਮੀਗਤ ਮੈਟਰੋ ਪ੍ਰਣਾਲੀ ਹੈ",
+            "ਗਰਮੀਆਂ ਵਿਚ ਚਿੱਟੀ ਰਾਤ ਵੇਖੀ ਜਾ ਸਕਦੀ ਹੈ. ਉਸ ਦੌਰ ਵਿੱਚ ਰਾਤ ਹਨੇਰੀਆਂ ਨਹੀਂ ਹਨ.",
+            "ਪੀਟਰ ਅਤੇ ਪੌਲ ਫੋਰਟਰੇਸ ਸ਼ਹਿਰ ਵਿਚ ਬਣਨ ਵਾਲੀ ਪਹਿਲੀ ਇਮਾਰਤ ਹੈ. ਜਗ੍ਹਾ ਨੂੰ ਸ਼ਹਿਰ ਦੀ ਰੱਖਿਆ ਲਈ ਕਿਲ੍ਹਾ ਬਣਾਉਣ ਦੀ ਯੋਜਨਾ ਬਣਾਈ ਗਈ ਸੀ.",
+            "ਹਰਮੀਟੇਜ ਸੰਗ੍ਰਹਿ ਵਿਚ ਤਕਰੀਬਨ 3 ਮਿਲੀਅਨ ਪ੍ਰਦਰਸ਼ਨੀ ਪੰਜ ਇਮਾਰਤਾਂ ਦੇ 350 ਕਮਰਿਆਂ ਵਿਚ ਸਥਿਤ ਹੈ.",
+            "ਡਬਲਯੂਡਬਲਯੂ.ਆਈ. ਦੇ ਬੰਬ ਅਤੇ ਸ਼ੈੱਲ ਅਜੇ ਵੀ ਨਿਯਮਿਤ ਤੌਰ ਤੇ ਸ਼ਹਿਰ ਅਤੇ ਇਸਦੇ ਆਸ ਪਾਸ ਦੇ ਇਲਾਕਿਆਂ ਵਿੱਚ ਲੱਭੇ ਜਾਂਦੇ ਹਨ ਅਤੇ ਇਸਦੀ ਵਰਤੋਂ ਕੀਤੀ ਜਾਂਦੀ ਹੈ.",
+            "ਸੇਂਟ ਪੀਟਰਸਬਰਗ ਟ੍ਰਾਮਾਂ ਦੀ ਰਾਜਧਾਨੀ ਹੈ. ਸ਼ਹਿਰ ਵਿੱਚ ਟਰਾਮ ਟਰੈਕ ਦੀ ਲੰਬਾਈ 600 ਕਿਲੋਮੀਟਰ ਤੋਂ ਵੱਧ ਹੈ."
+        ]
+    }
+}

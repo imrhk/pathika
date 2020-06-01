@@ -4,7 +4,7 @@ import java.io.File
 import java.net.URL
 import java.net.URLEncoder
 
-const val DEFAULT_LANGUAGE = "en"
+const val DEFAULT_LANGUAGE = "en"   
 const val SECRET_KEY = "./data/GOOGLE_COULD_API_KEY.txt"
 const val CACHE_PREFIX = "P_"
 

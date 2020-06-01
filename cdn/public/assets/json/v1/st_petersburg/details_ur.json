@@ -1,0 +1,360 @@
+{
+    "basic_info": {
+        "name": "سینٹ پیٹرز برگ",
+        "id": "st_petersburg",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Auferstehungskirche_%28Sankt_Petersburg%29.JPG/791px-Auferstehungskirche_%28Sankt_Petersburg%29.JPG",
+        "place": "سینٹ پیٹرزبرگ کے خون کا نجات دہندہ گرجا گھر",
+        "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+        "photo_by": "Je-str",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Auferstehungskirche_(Sankt_Petersburg).JPG"
+    },
+    "airport": {
+        "name": "پلکوو ہوائی اڈ .ہ"
+    },
+    "climate": {
+        "type": "مرطوب کانٹنےنٹل",
+        "items": [
+            {
+                "emoji": "❄️️",
+                "name": "موسم سرما",
+                "temp": "-6. C سے 2 ° C",
+                "duration": "نومبر"
+            },
+            {
+                "emoji": "🌼",
+                "name": "بہار",
+                "temp": "2 ° C سے 16 ° C",
+                "duration": "اپریل - مئی"
+            },
+            {
+                "emoji": "☀",
+                "name": "موسم گرما",
+                "temp": "12 ° C سے 23 ° C",
+                "duration": "جون اگست"
+            },
+            {
+                "emoji": "🍁",
+                "name": "خزاں",
+                "temp": "9 ° C سے 15 ° C",
+                "duration": "ستمبر اکتوبر"
+            },
+            {
+                "emoji": "☃️",
+                "name": "برف",
+                "temp": "اوسط کی گہرائی 19CM",
+                "duration": "نومبر"
+            }
+        ]
+    },
+    "country": {
+        "name": "روس 🇷🇺",
+        "continent": "یورپ"
+    },
+    "currency": {
+        "name": "روبل",
+        "symbol": "py6",
+        "code": "RUB"
+    },
+    "dance": {
+        "name": "بیلے"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "تلی ہوئی خوشبو (کوریوشکا)",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Fried_smelt_food_dinner_cooked.jpg/640px-Fried_smelt_food_dinner_cooked.jpg"
+            },
+            {
+                "label": "ڈونٹس (پشکاس)",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/7_muffins_and_2_coffee_-_the_standard_of_student_time-%29_-_panoramio.jpg/1024px-7_muffins_and_2_coffee_-_the_standard_of_student_time-%29_-_panoramio.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Igor Zvyaghin",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:7_muffins_and_2_coffee_-_the_standard_of_student_time-)_-_panoramio.jpg"
+            },
+            {
+                "label": "پیسٹی (پیروزوکی)",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Piroshki.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Evilmonkey0013",
+                "attribution_url": "https://en.wikipedia.org/wiki/Pirozhki#/media/File:Piroshki.JPG"
+            },
+            {
+                "label": "لینین گراڈ راسولونک",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/%D0%A0%D0%B0%D1%81%D1%81%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%BF%D0%BE-%D0%BB%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8.JPG/1024px-%D0%A0%D0%B0%D1%81%D1%81%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%BF%D0%BE-%D0%BB%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Шнапс",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D1%81%D1%81%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%BF%D0%BE-%D0%BB%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8.JPG"
+            },
+            {
+                "label": "شاورما",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2019/03/02/14/26/shawarma-4029889_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "PaulIstoan",
+                "attribution_url": "https://pixabay.com/photos/shawarma-food-sandwich-nutrition-4029889/"
+            },
+            {
+                "label": "پیلمینی",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Pelmeni_Russian.jpg/1024px-Pelmeni_Russian.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Eugene Kim",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Pelmeni_Russian.jpg"
+            },
+            {
+                "label": "سولانکا",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Soljanka_with_olives.jpg/823px-Soljanka_with_olives.jpg"
+            },
+            {
+                "label": "شچی",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Schi.jpg/1024px-Schi.jpg"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "تیل اور گیس کی تجارت",
+        "secondary": [
+            "جہاز سازی",
+            "ایرو اسپیس",
+            "ریڈیو اور الیکٹرانکس"
+        ]
+    },
+    "language": {
+        "primary": "روسی",
+        "secondary": [
+            "انگریزی"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_ur_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_ur_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_ur_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_ur_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_ur_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "The Return",
+                "poster_url": "https://image.tmdb.org/t/p/w300/fQ6eDfQoNqNoxb3Es7mK0qCP9bK.jpg"
+            },
+            {
+                "title": "Leviathan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/dPAvJdASE9tAtHhwlX1bFQN54aG.jpg"
+            },
+            {
+                "title": "Andrei Rublev",
+                "poster_url": "https://image.tmdb.org/t/p/w300/t950gX4EeAPgk8TCeh2NsixkBdr.jpg"
+            },
+            {
+                "title": "Solaris",
+                "poster_url": "https://image.tmdb.org/t/p/w300/1Q3hP6gdpSO0bj3rn5GuAcfmVmc.jpg"
+            },
+            {
+                "title" : "Loveless",
+                "poster_url": "https://image.tmdb.org/t/p/w300/p0o3yoJmsEMMhMPAMLl6VI7MomI.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "ولادیمیر پوتن",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Vladimir_Putin_%282020-02-20%29.jpg/474px-Vladimir_Putin_%282020-02-20%29.jpg",
+                "work": "روس کے صدر",
+                "place": "سینٹ پیٹرز برگ",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY 4.0</a>",
+                "photo_by": "TASS News Agency",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Vladimir_Putin_(2020-02-20).jpg"
+            },
+            {
+                "name": "روس کا سکندر سوم",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Alexander_III%2C_Emperor_of_Russia_%281845-94%29.png/344px-Alexander_III%2C_Emperor_of_Russia_%281845-94%29.png",
+                "work": "سابقہ روس کے تمام شہنشاہ",
+                "place": "سینٹ پیٹرز برگ"
+            },
+            {
+                "name": "سیرگی کریکالیف",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Sergei_Krikalev.jpg/391px-Sergei_Krikalev.jpg",
+                "work": "خلائی جہاز کے ساتھ چھ خلائی پروازیں",
+                "place": "سینٹ پیٹرز برگ"
+            },
+            {
+                "name": "الفریڈ نوبل",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Alfred_Nobel3.jpg/576px-Alfred_Nobel3.jpg",
+                "work": "سویڈش کیمسٹ ، انجینئر ، اختراعی ، اور اسلحہ سازی کا کارخانہ",
+                "place": "سویڈن کے اسٹاک ہوم میں پیدا ہوئے۔ سینٹ پیٹرزبرگ میں رہتا تھا اور کام کرتا تھا"
+            },
+            {
+                "name": "سویٹلانا کوزنیٹسوفا",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Svetlana_Kuznetsova_at_Roland_Garros_2011.jpg/401px-Svetlana_Kuznetsova_at_Roland_Garros_2011.jpg",
+                "work": "پروفیشنل ٹینس پلیئر",
+                "place": "سینٹ پیٹرز برگ",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 2.0</a>",
+                "photo_by": "Carine 06",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Svetlana_Kuznetsova_at_Roland_Garros_2011.jpg"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⛸️ فگر سکیٹنگ",
+        "footer": "آئس ہاکی اور فٹ بال"
+    },
+    "time_to_visit": {
+        "primary": "جون اگست",
+        "secondary": "نیا سال"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "اسٹیٹ ہرمیٹیج میوزیم",
+                "description": "آرٹ اینڈ کلچر میوزیم کا قیام 1764 میں ہوا",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM3HoJD9EWIFqsWog05Y5LauYsgKIoxhPFSFblg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112325880627622258637\">Kathrin Dietz</a>"
+                ],
+                "place_id": "ChIJ6eLLMgsxlkYR_F1QoCoDTgc"
+            },
+            {
+                "name": "سرمائی محل",
+                "description": "روسی شہنشاہوں کی سابقہ رہائش گاہ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNDkviurztYu3KLsTuyah23y0iHjF6eQVoTGd5Y=s1600-w720",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/118159264679878765316\">《Sardorbek》 TV</a>"
+                ],
+                "place_id": "ChIJva0l6xAxlkYRdmdZESiPTyE"
+            },
+            {
+                "name": "پیٹرگوف",
+                "description": "سیفرنٹ شاہی محل ، پارک اور میوزیم",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMDBS2vu9vDl2GI0xhqpyI4ll-LyqEtd4zLz_QD=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116530877086965823592\">Никита Бор</a>"
+                ],
+                "place_id": "ChIJtSExx0pHlkYRTyP8a2OZ5QY"
+            },
+            {
+                "name": "چھڑا ہوا خون پر نجات دہندہ",
+                "description": "متحرک ، شاہانہ ڈیزائن کے ساتھ 1880s کا چرچ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOmtzhUHU1pZqXJ2Rc75qeCVwjFM51kRCnUMhBx=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117073945108422215917\">Fabio Rotondo</a>"
+                ],
+                "place_id": "ChIJbVFAKwwxlkYRt1Nx6jtvZz4"
+            },
+            {
+                "name": "سینٹ اسحاق کیتیڈرل",
+                "description": "سونے کے گنبد کے ساتھ سجاوٹی مذہبی عمارت",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOpWkZU1tlbRiCHtt_w0R9gyyQpH0Mito5Xb2Ew=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106217893933730903075\">Drop</a>"
+                ],
+                "place_id": "ChIJSTp6hhsxlkYR6SV9tFJytR0"
+            },
+            {
+                "name": "پیٹر اور پال فورٹریس",
+                "description": "1703 میں قائم شہر کی اصل سائٹ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNLqeBINjLtSaI_SLTbaIs09EhrIxdtyRIOuybk=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106966955057660822516\">Наталья Шабалина</a>"
+                ],
+                "place_id": "ChIJTSR-1GoxlkYR5zLwx1pVPbo"
+            },
+            {
+                "name": "محل اسکوائر",
+                "description": "نوکلاسیکل عمارات کے ساتھ کھڑا اسکوائر",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPdw4lCr9JN3-6p53k8Ygw_c7rzF36qDF8pcJHg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108683531012595666619\">Евгений Шмаков</a>"
+                ],
+                "place_id": "ChIJVXxqaBAxlkYRhOhIV7EPlaI"
+            },
+            {
+                "name": "کازان کیتیڈرل",
+                "description": "نوآبادیاتی روسی آرتھوڈوکس کیتیڈرل",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPlNgyPYKT0tLlepOs7TcniofFWPdG2TGfGyZCa=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106199171833586038896\">DomoTrad mail</a>"
+                ],
+                "place_id": "ChIJf6D87AUxlkYRFUyZu2EH6hI"
+            },
+            {
+                "name": "ماریئنسکی تھیٹر",
+                "description": "موسیقی ، اوپیرا اور بیلے کے لئے گرینڈ کمپلیکس",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMBwZD2wGqqHl5PqFg2OwDMfiIo5lJSXy_IK4Y9=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117290264136811457757\">Mister No</a>"
+                ],
+                "place_id": "ChIJ2xVZCuMwlkYR9U59zxvFL58"
+            },
+            {
+                "name": "روسی میوزیم",
+                "description": "عمدہ آرٹ ورکس ، شبیہیں اور مجسمے",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNAb5rRYHDsqz0UP-SCq7PUqPotf9wDBUNZ0mFT=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104173649543230959838\">Michael Pohl</a>"
+                ],
+                "place_id": "ChIJhWsRwA4xlkYRVVQ7duuOte0"
+            },
+            {
+                "name": "سمر گارڈن",
+                "description": "زار پیٹر کے ذریعہ تیار کردہ باقاعدہ باغات",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOKSFKonfsvWdKYQbFxBw5MAT-bgW-8AnNN3V_X=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116254883157322361245\">Антон Антропов</a>"
+                ],
+                "place_id": "ChIJLVpHfgwxlkYRSKIBKxed6JA"
+            },
+            {
+                "name": "کروزر اورورا",
+                "description": "20 ویں صدی کے جنگی جہاز پر تیرتا میوزیم",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPsMl8-Km6DmUo3OWADxRkzeLs2cjnFz7xxjj9T=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114751363659672878881\">Artiom Emelianov</a>"
+                ],
+                "place_id": "ChIJzZ8x-W8xlkYR7fxP_cP0zbA"
+            },
+            {
+                "name": "کانسی ہارس مین",
+                "description": "پیٹر دی گریٹ کا گھوڑ سواری کا مجسمہ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMOh0jE72-LjFlwi6e781YLlf1IUjc9CXDstEtg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108937772715229801358\">Дмитрий Савченко</a>"
+                ],
+                "place_id": "ChIJXRSiaRkxlkYR6naWIrXNs3I"
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 180,
+    "trivia": {
+        "items": [
+            "سینٹ پیٹرزبرگ کو لینینگراڈ کہا جاتا تھا",
+            "اس شہر کا نام تین بار رکھا گیا ہے۔ تیسری بار سینٹ پیٹرزبرگ واپس آیا",
+            "یہ روس کا دارالحکومت تھا",
+            "یہ 800 کے قریب پلوں کا گھر ہے۔ کل 12 حرکت پذیر پل ہیں ،",
+            "یہ دوسری جنگ عظیم کے دوران محاصرے سے بچ گیا تھا",
+            "اس میں دنیا کا سب سے زیادہ زیر زمین میٹرو نظام موجود ہے",
+            "یہاں گرمیوں میں سفید رات دیکھی جاسکتی ہے۔ اس عرصے میں راتیں تاریک نہیں ہوتی ہیں۔",
+            "پیٹر اور پال فورٹریس شہر میں تعمیر ہونے والی پہلی عمارت ہے۔ شہر کا دفاع کرنے کے لئے یہ مقام قلعہ بننے کا منصوبہ تھا۔",
+            "ہرمیٹیج مجموعہ میں 5 عمارتوں کے 350 کمروں میں لگ بھگ 3 ملین نمائشیں ہیں۔",
+            "WWII کے بم اور گولے اب بھی شہر اور اس کے آس پاس کے علاقوں میں باقاعدگی سے پائے جاتے ہیں اور کھدائی کرتے ہیں اور استعمال ہوتے ہیں۔",
+            "سینٹ پیٹرزبرگ ٹراموں کا دارالحکومت ہے۔ شہر میں ٹرام پٹریوں کی لمبائی 600 کلومیٹر سے زیادہ ہے۔"
+        ]
+    }
+}

@@ -1,0 +1,360 @@
+{
+    "basic_info": {
+        "name": "सेंट पीटर्सबर्ग",
+        "id": "st_petersburg",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Auferstehungskirche_%28Sankt_Petersburg%29.JPG/791px-Auferstehungskirche_%28Sankt_Petersburg%29.JPG",
+        "place": "चर्च ऑफ द सेवियर ऑन ब्लड, सेंट पीटर्सबर्ग",
+        "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+        "photo_by": "Je-str",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Auferstehungskirche_(Sankt_Petersburg).JPG"
+    },
+    "airport": {
+        "name": "पुलकोवो एयरपोर्ट"
+    },
+    "climate": {
+        "type": "महाद्वीपीय नमी",
+        "items": [
+            {
+                "emoji": "❄️️",
+                "name": "सर्दी",
+                "temp": "-6 ° C से 2 ° C",
+                "duration": "Nov-मार्च"
+            },
+            {
+                "emoji": "🌼",
+                "name": "वसंत",
+                "temp": "2 ° C से 16 ° C",
+                "duration": "अप्रैल-मई"
+            },
+            {
+                "emoji": "☀",
+                "name": "गर्मी",
+                "temp": "12 ° C से 23 ° C",
+                "duration": "जून-अगस्त"
+            },
+            {
+                "emoji": "🍁",
+                "name": "पतझड़",
+                "temp": "9 ° C से 15 ° C",
+                "duration": "सितम्बर-अक्टूबर"
+            },
+            {
+                "emoji": "☃️",
+                "name": "हिमपात",
+                "temp": "औसत गहराई 19 सेमी",
+                "duration": "Nov-मार्च"
+            }
+        ]
+    },
+    "country": {
+        "name": "रूस 🇷🇺",
+        "continent": "यूरोप"
+    },
+    "currency": {
+        "name": "रूबल",
+        "symbol": "py6",
+        "code": "RUB"
+    },
+    "dance": {
+        "name": "बैले"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "फ्राइड स्मेल्ट (कोरियुस्का)",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Fried_smelt_food_dinner_cooked.jpg/640px-Fried_smelt_food_dinner_cooked.jpg"
+            },
+            {
+                "label": "डोनट्स (Pyshkas)",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/7_muffins_and_2_coffee_-_the_standard_of_student_time-%29_-_panoramio.jpg/1024px-7_muffins_and_2_coffee_-_the_standard_of_student_time-%29_-_panoramio.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Igor Zvyaghin",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:7_muffins_and_2_coffee_-_the_standard_of_student_time-)_-_panoramio.jpg"
+            },
+            {
+                "label": "विगत (पिरोजकी)",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Piroshki.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Evilmonkey0013",
+                "attribution_url": "https://en.wikipedia.org/wiki/Pirozhki#/media/File:Piroshki.JPG"
+            },
+            {
+                "label": "लेनिनग्राद रस्कोलनिक",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/%D0%A0%D0%B0%D1%81%D1%81%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%BF%D0%BE-%D0%BB%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8.JPG/1024px-%D0%A0%D0%B0%D1%81%D1%81%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%BF%D0%BE-%D0%BB%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Шнапс",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D1%81%D1%81%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%BF%D0%BE-%D0%BB%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8.JPG"
+            },
+            {
+                "label": "Shawarma",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2019/03/02/14/26/shawarma-4029889_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "PaulIstoan",
+                "attribution_url": "https://pixabay.com/photos/shawarma-food-sandwich-nutrition-4029889/"
+            },
+            {
+                "label": "पेल्मेनी",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Pelmeni_Russian.jpg/1024px-Pelmeni_Russian.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Eugene Kim",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Pelmeni_Russian.jpg"
+            },
+            {
+                "label": "Solyanka",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Soljanka_with_olives.jpg/823px-Soljanka_with_olives.jpg"
+            },
+            {
+                "label": "Shchi",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Schi.jpg/1024px-Schi.jpg"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "तेल और गैस व्यापार",
+        "secondary": [
+            "जहाज निर्माण",
+            "एयरोस्पेस",
+            "रेडियो और इलेक्ट्रॉनिक्स"
+        ]
+    },
+    "language": {
+        "primary": "रूसी",
+        "secondary": [
+            "अंग्रेज़ी"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_hi_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_hi_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_hi_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_hi_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_hi_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "The Return",
+                "poster_url": "https://image.tmdb.org/t/p/w300/fQ6eDfQoNqNoxb3Es7mK0qCP9bK.jpg"
+            },
+            {
+                "title": "Leviathan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/dPAvJdASE9tAtHhwlX1bFQN54aG.jpg"
+            },
+            {
+                "title": "Andrei Rublev",
+                "poster_url": "https://image.tmdb.org/t/p/w300/t950gX4EeAPgk8TCeh2NsixkBdr.jpg"
+            },
+            {
+                "title": "Solaris",
+                "poster_url": "https://image.tmdb.org/t/p/w300/1Q3hP6gdpSO0bj3rn5GuAcfmVmc.jpg"
+            },
+            {
+                "title" : "Loveless",
+                "poster_url": "https://image.tmdb.org/t/p/w300/p0o3yoJmsEMMhMPAMLl6VI7MomI.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "व्लादिमीर पुतिन",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Vladimir_Putin_%282020-02-20%29.jpg/474px-Vladimir_Putin_%282020-02-20%29.jpg",
+                "work": "रूस के राष्ट्रपति",
+                "place": "सेंट पीटर्सबर्ग",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY 4.0</a>",
+                "photo_by": "TASS News Agency",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Vladimir_Putin_(2020-02-20).jpg"
+            },
+            {
+                "name": "रूस का अलेक्जेंडर III",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Alexander_III%2C_Emperor_of_Russia_%281845-94%29.png/344px-Alexander_III%2C_Emperor_of_Russia_%281845-94%29.png",
+                "work": "ऑल रशिया के पूर्व सम्राट",
+                "place": "सेंट पीटर्सबर्ग"
+            },
+            {
+                "name": "सर्गेई क्रिकेलेव",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Sergei_Krikalev.jpg/391px-Sergei_Krikalev.jpg",
+                "work": "छह अंतरिक्ष उड़ानों के साथ अंतरिक्ष यात्री",
+                "place": "सेंट पीटर्सबर्ग"
+            },
+            {
+                "name": "अल्फ्रेड नोबेल",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Alfred_Nobel3.jpg/576px-Alfred_Nobel3.jpg",
+                "work": "स्वीडिश रसायनज्ञ, इंजीनियर, प्रर्वतक और आयुध निर्माता",
+                "place": "स्वीडन के स्टॉकहोम में पैदा हुए। सेंट पीटर्सबर्ग में रहते थे और काम करते थे"
+            },
+            {
+                "name": "स्वेतलाना कुज़नेत्सोवा",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Svetlana_Kuznetsova_at_Roland_Garros_2011.jpg/401px-Svetlana_Kuznetsova_at_Roland_Garros_2011.jpg",
+                "work": "पेशेवर टेनिस खिलाड़ी",
+                "place": "सेंट पीटर्सबर्ग",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 2.0</a>",
+                "photo_by": "Carine 06",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Svetlana_Kuznetsova_at_Roland_Garros_2011.jpg"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⛸️ फिगर स्केटिंग",
+        "footer": "आइस हॉकी और सॉकर"
+    },
+    "time_to_visit": {
+        "primary": "जून से अगस्त",
+        "secondary": "नया साल"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "राजकीय हरमिटेज संग्रहालय",
+                "description": "कला और संस्कृति संग्रहालय 1764 में स्थापित किया गया",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM3HoJD9EWIFqsWog05Y5LauYsgKIoxhPFSFblg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112325880627622258637\">Kathrin Dietz</a>"
+                ],
+                "place_id": "ChIJ6eLLMgsxlkYR_F1QoCoDTgc"
+            },
+            {
+                "name": "शीत महल",
+                "description": "रूसी सम्राटों का पूर्व निवास",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNDkviurztYu3KLsTuyah23y0iHjF6eQVoTGd5Y=s1600-w720",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/118159264679878765316\">《Sardorbek》 TV</a>"
+                ],
+                "place_id": "ChIJva0l6xAxlkYRdmdZESiPTyE"
+            },
+            {
+                "name": "सेंट पीटर्सबर्ग",
+                "description": "सीफ्रंट शाही महल, पार्क और संग्रहालय",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMDBS2vu9vDl2GI0xhqpyI4ll-LyqEtd4zLz_QD=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116530877086965823592\">Никита Бор</a>"
+                ],
+                "place_id": "ChIJtSExx0pHlkYRTyP8a2OZ5QY"
+            },
+            {
+                "name": "स्पिल्ड ब्लड पर उद्धारकर्ता",
+                "description": "जीवंत, भव्य डिजाइन के साथ 1880 के दशक का चर्च",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOmtzhUHU1pZqXJ2Rc75qeCVwjFM51kRCnUMhBx=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117073945108422215917\">Fabio Rotondo</a>"
+                ],
+                "place_id": "ChIJbVFAKwwxlkYRt1Nx6jtvZz4"
+            },
+            {
+                "name": "सेंट आइजक कैथेड्रल",
+                "description": "सोने के गुंबद के साथ अलंकृत धार्मिक शोभा",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOpWkZU1tlbRiCHtt_w0R9gyyQpH0Mito5Xb2Ew=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106217893933730903075\">Drop</a>"
+                ],
+                "place_id": "ChIJSTp6hhsxlkYR6SV9tFJytR0"
+            },
+            {
+                "name": "पीटर और पॉल किले",
+                "description": "मूल शहर साइट की स्थापना 1703 में हुई थी",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNLqeBINjLtSaI_SLTbaIs09EhrIxdtyRIOuybk=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106966955057660822516\">Наталья Шабалина</a>"
+                ],
+                "place_id": "ChIJTSR-1GoxlkYR5zLwx1pVPbo"
+            },
+            {
+                "name": "पैलेस स्क्वायर",
+                "description": "नियोक्लासिकल भवनों द्वारा निर्मित वर्ग",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPdw4lCr9JN3-6p53k8Ygw_c7rzF36qDF8pcJHg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108683531012595666619\">Евгений Шмаков</a>"
+                ],
+                "place_id": "ChIJVXxqaBAxlkYRhOhIV7EPlaI"
+            },
+            {
+                "name": "कज़ान कैथेड्रल",
+                "description": "कोलोनडेड रूसी ऑर्थोडॉक्स कैथेड्रल",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPlNgyPYKT0tLlepOs7TcniofFWPdG2TGfGyZCa=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106199171833586038896\">DomoTrad mail</a>"
+                ],
+                "place_id": "ChIJf6D87AUxlkYRFUyZu2EH6hI"
+            },
+            {
+                "name": "मारींस्की थियेटर",
+                "description": "संगीत, ओपेरा और बैले के लिए भव्य परिसर",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMBwZD2wGqqHl5PqFg2OwDMfiIo5lJSXy_IK4Y9=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117290264136811457757\">Mister No</a>"
+                ],
+                "place_id": "ChIJ2xVZCuMwlkYR9U59zxvFL58"
+            },
+            {
+                "name": "रूसी संग्रहालय",
+                "description": "ललित कलाकृतियाँ, चिह्न और मूर्तियां",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNAb5rRYHDsqz0UP-SCq7PUqPotf9wDBUNZ0mFT=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104173649543230959838\">Michael Pohl</a>"
+                ],
+                "place_id": "ChIJhWsRwA4xlkYRVVQ7duuOte0"
+            },
+            {
+                "name": "समर गार्डन",
+                "description": "Czar पीटर द्वारा डिजाइन औपचारिक उद्यान",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOKSFKonfsvWdKYQbFxBw5MAT-bgW-8AnNN3V_X=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116254883157322361245\">Антон Антропов</a>"
+                ],
+                "place_id": "ChIJLVpHfgwxlkYRSKIBKxed6JA"
+            },
+            {
+                "name": "क्रूजर अरोरा",
+                "description": "20 वीं सदी के युद्धपोत पर फ्लोटिंग संग्रहालय",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPsMl8-Km6DmUo3OWADxRkzeLs2cjnFz7xxjj9T=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114751363659672878881\">Artiom Emelianov</a>"
+                ],
+                "place_id": "ChIJzZ8x-W8xlkYR7fxP_cP0zbA"
+            },
+            {
+                "name": "कांस्य घुड़सवार",
+                "description": "पीटर द ग्रेट की अश्वारोही प्रतिमा",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMOh0jE72-LjFlwi6e781YLlf1IUjc9CXDstEtg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108937772715229801358\">Дмитрий Савченко</a>"
+                ],
+                "place_id": "ChIJXRSiaRkxlkYR6naWIrXNs3I"
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 180,
+    "trivia": {
+        "items": [
+            "सेंट पीटर्सबर्ग को लेनिनग्राद कहा जाता था",
+            "शहर का तीन बार नाम बदला गया है। तीसरी बार सेंट पीटर्सबर्ग वापस आ गया था",
+            "यह रूस की राजधानी शहर हुआ करता था",
+            "यह लगभग 800 पुलों का घर है। कुल 12 चल पुल हैं,",
+            "यह विश्व युद्ध 2 के दौरान एक घेराबंदी से बच गया",
+            "इसमें दुनिया की सबसे गहरी भूमिगत मेट्रो प्रणाली है",
+            "गर्मियों में यहां सफेद रात देखी जा सकती है। उस अवधि में रातें अंधेरे नहीं होती हैं।",
+            "पीटर और पॉल किले शहर में बनने वाली पहली इमारत है। शहर की रक्षा के लिए जगह को किले की योजना बनाई गई थी।",
+            "हर्मिटेज संग्रह में पाँच भवनों के 350 कमरों में स्थित लगभग 3 मिलियन प्रदर्शनी हैं।",
+            "WWII से बम और गोले अभी भी नियमित रूप से पाए जाते हैं और शहर और इसके आसपास के क्षेत्रों में खुदाई की जाती है और उपयोग किया जाता है।",
+            "सेंट पीटर्सबर्ग ट्रामों की राजधानी है। शहर में ट्राम पटरियों की लंबाई 600 किमी से अधिक है।"
+        ]
+    }
+}

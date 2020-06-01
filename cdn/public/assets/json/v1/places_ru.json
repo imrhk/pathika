@@ -45,5 +45,15 @@
         "background_image": "https://storage.needpix.com/rsynced_images/jaipur-4027735_1280.jpg",
         "place": "Хава Махал, Джайпур",
         "country" : "Индия 🇮🇳"
+    },
+    {
+        "name": "Санкт-Петербург",
+        "id": "st_petersburg",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Auferstehungskirche_%28Sankt_Petersburg%29.JPG/791px-Auferstehungskirche_%28Sankt_Petersburg%29.JPG",
+        "place": "Храм Спаса-на-Крови, Санкт-Петербург",
+        "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+        "photo_by": "Je-str",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Auferstehungskirche_(Sankt_Petersburg).JPG",
+        "country" : "Россия 🇷🇺"
     }
 ]

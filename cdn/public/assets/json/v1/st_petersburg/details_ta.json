@@ -1,0 +1,360 @@
+{
+    "basic_info": {
+        "name": "செயின்ட் பீட்டர்ஸ்பர்க்",
+        "id": "st_petersburg",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Auferstehungskirche_%28Sankt_Petersburg%29.JPG/791px-Auferstehungskirche_%28Sankt_Petersburg%29.JPG",
+        "place": "சர்ச் ஆஃப் தி மீட்பர் ஆன் ரத்தம், செயின்ட் பீட்டர்ஸ்பர்க்",
+        "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+        "photo_by": "Je-str",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Auferstehungskirche_(Sankt_Petersburg).JPG"
+    },
+    "airport": {
+        "name": "புல்கோவோ விமான நிலையம்"
+    },
+    "climate": {
+        "type": "ஈரப்பதமான கான்டினென்டல்",
+        "items": [
+            {
+                "emoji": "❄️️",
+                "name": "குளிர்காலம்",
+                "temp": "-6 ° C முதல் 2. C வரை",
+                "duration": "நவம்பர்-மார்"
+            },
+            {
+                "emoji": "🌼",
+                "name": "வசந்த",
+                "temp": "2 ° C முதல் 16. C வரை",
+                "duration": "ஏப்ரல்-மே"
+            },
+            {
+                "emoji": "☀",
+                "name": "கோடை",
+                "temp": "12 ° C முதல் 23. C வரை",
+                "duration": "ஜூன்-ஆகஸ்ட்"
+            },
+            {
+                "emoji": "🍁",
+                "name": "இலையுதிர் காலம்",
+                "temp": "9 ° C முதல் 15. C வரை",
+                "duration": "செப்-அக்"
+            },
+            {
+                "emoji": "☃️",
+                "name": "பனி",
+                "temp": "சராசரி ஆழம் 19 செ.மீ.",
+                "duration": "நவம்பர்-மார்"
+            }
+        ]
+    },
+    "country": {
+        "name": "ரஷ்யா",
+        "continent": "ஐரோப்பா"
+    },
+    "currency": {
+        "name": "ரூபிள்",
+        "symbol": "py6",
+        "code": "RUB"
+    },
+    "dance": {
+        "name": "பாலே"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "வறுத்த ஸ்மெல்ட் (கோரியுஷ்கா)",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Fried_smelt_food_dinner_cooked.jpg/640px-Fried_smelt_food_dinner_cooked.jpg"
+            },
+            {
+                "label": "டோனட்ஸ் (பிஷ்காஸ்)",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/7_muffins_and_2_coffee_-_the_standard_of_student_time-%29_-_panoramio.jpg/1024px-7_muffins_and_2_coffee_-_the_standard_of_student_time-%29_-_panoramio.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Igor Zvyaghin",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:7_muffins_and_2_coffee_-_the_standard_of_student_time-)_-_panoramio.jpg"
+            },
+            {
+                "label": "பாஸ்டீஸ் (பைரோஸ்கி)",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Piroshki.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Evilmonkey0013",
+                "attribution_url": "https://en.wikipedia.org/wiki/Pirozhki#/media/File:Piroshki.JPG"
+            },
+            {
+                "label": "லெனின்கிராட் ராசோல்னிக்",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/%D0%A0%D0%B0%D1%81%D1%81%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%BF%D0%BE-%D0%BB%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8.JPG/1024px-%D0%A0%D0%B0%D1%81%D1%81%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%BF%D0%BE-%D0%BB%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Шнапс",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D1%81%D1%81%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%BF%D0%BE-%D0%BB%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8.JPG"
+            },
+            {
+                "label": "ஷாவர்மா",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2019/03/02/14/26/shawarma-4029889_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "PaulIstoan",
+                "attribution_url": "https://pixabay.com/photos/shawarma-food-sandwich-nutrition-4029889/"
+            },
+            {
+                "label": "பெல்மேனி",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Pelmeni_Russian.jpg/1024px-Pelmeni_Russian.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Eugene Kim",
+                "attribution_url": "https://en.wikipedia.org/wiki/File:Pelmeni_Russian.jpg"
+            },
+            {
+                "label": "solyanka",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Soljanka_with_olives.jpg/823px-Soljanka_with_olives.jpg"
+            },
+            {
+                "label": "ச்சி",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Schi.jpg/1024px-Schi.jpg"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "எண்ணெய் மற்றும் எரிவாயு வர்த்தகம்",
+        "secondary": [
+            "கப்பல் கட்டுதல்",
+            "விண்வெளி",
+            "வானொலி மற்றும் மின்னணுவியல்"
+        ]
+    },
+    "language": {
+        "primary": "ரஷ்யன்",
+        "secondary": [
+            "ஆங்கிலம்"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_ta_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_ta_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_ta_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_ta_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/st_petersburg_map_ta_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "The Return",
+                "poster_url": "https://image.tmdb.org/t/p/w300/fQ6eDfQoNqNoxb3Es7mK0qCP9bK.jpg"
+            },
+            {
+                "title": "Leviathan",
+                "poster_url": "https://image.tmdb.org/t/p/w300/dPAvJdASE9tAtHhwlX1bFQN54aG.jpg"
+            },
+            {
+                "title": "Andrei Rublev",
+                "poster_url": "https://image.tmdb.org/t/p/w300/t950gX4EeAPgk8TCeh2NsixkBdr.jpg"
+            },
+            {
+                "title": "Solaris",
+                "poster_url": "https://image.tmdb.org/t/p/w300/1Q3hP6gdpSO0bj3rn5GuAcfmVmc.jpg"
+            },
+            {
+                "title" : "Loveless",
+                "poster_url": "https://image.tmdb.org/t/p/w300/p0o3yoJmsEMMhMPAMLl6VI7MomI.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "விளாடிமிர் புடின்",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Vladimir_Putin_%282020-02-20%29.jpg/474px-Vladimir_Putin_%282020-02-20%29.jpg",
+                "work": "ரஷ்யாவின் ஜனாதிபதி",
+                "place": "செயிண்ட் பீட்டர்ஸ்பர்க்",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY 4.0</a>",
+                "photo_by": "TASS News Agency",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Vladimir_Putin_(2020-02-20).jpg"
+            },
+            {
+                "name": "ரஷ்யாவின் மூன்றாம் அலெக்சாண்டர்",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Alexander_III%2C_Emperor_of_Russia_%281845-94%29.png/344px-Alexander_III%2C_Emperor_of_Russia_%281845-94%29.png",
+                "work": "அனைத்து ரஷ்யாவின் முன்னாள் பேரரசர்",
+                "place": "செயிண்ட் பீட்டர்ஸ்பர்க்"
+            },
+            {
+                "name": "செர்ஜி கிரிகலேவ்",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Sergei_Krikalev.jpg/391px-Sergei_Krikalev.jpg",
+                "work": "ஆறு விண்வெளி விமானங்களுடன் விண்வெளி வீரர்",
+                "place": "செயின்ட் பீட்டர்ஸ்பர்க்"
+            },
+            {
+                "name": "ஆல்பிரட் நோபல்",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Alfred_Nobel3.jpg/576px-Alfred_Nobel3.jpg",
+                "work": "ஸ்வீடிஷ் வேதியியலாளர், பொறியாளர், புதுமைப்பித்தன் மற்றும் ஆயுத உற்பத்தியாளர்",
+                "place": "ஸ்வீடனின் ஸ்டாக்ஹோமில் பிறந்தார். செயின்ட் பீட்டர்ஸ்பர்க்கில் வாழ்ந்து பணியாற்றினார்"
+            },
+            {
+                "name": "ஸ்வெட்லானா குஸ்நெட்சோவா",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Svetlana_Kuznetsova_at_Roland_Garros_2011.jpg/401px-Svetlana_Kuznetsova_at_Roland_Garros_2011.jpg",
+                "work": "தொழில்முறை டென்னிஸ் வீரர்",
+                "place": "செயிண்ட் பீட்டர்ஸ்பர்க்",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 2.0</a>",
+                "photo_by": "Carine 06",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Svetlana_Kuznetsova_at_Roland_Garros_2011.jpg"
+            }
+        ]
+    },
+    "sports": {
+        "title": "Sk படம் ஸ்கேட்டிங்",
+        "footer": "ஐஸ் ஹாக்கி மற்றும் சாக்கர்"
+    },
+    "time_to_visit": {
+        "primary": "ஜூன்-ஆகஸ்ட்",
+        "secondary": "புதிய ஆண்டு"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "மாநில ஹெர்மிடேஜ் அருங்காட்சியகம்",
+                "description": "கலை மற்றும் கலாச்சார அருங்காட்சியகம் 1764 இல் நிறுவப்பட்டது",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM3HoJD9EWIFqsWog05Y5LauYsgKIoxhPFSFblg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112325880627622258637\">Kathrin Dietz</a>"
+                ],
+                "place_id": "ChIJ6eLLMgsxlkYR_F1QoCoDTgc"
+            },
+            {
+                "name": "குளிர்கால அரண்மனை",
+                "description": "ரஷ்ய பேரரசர்களின் முன்னாள் குடியிருப்பு",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNDkviurztYu3KLsTuyah23y0iHjF6eQVoTGd5Y=s1600-w720",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/118159264679878765316\">《Sardorbek》 TV</a>"
+                ],
+                "place_id": "ChIJva0l6xAxlkYRdmdZESiPTyE"
+            },
+            {
+                "name": "பீட்டர்கோஃப்",
+                "description": "கடல் முன்னணி அரச அரண்மனை, பூங்கா மற்றும் அருங்காட்சியகங்கள்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMDBS2vu9vDl2GI0xhqpyI4ll-LyqEtd4zLz_QD=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116530877086965823592\">Никита Бор</a>"
+                ],
+                "place_id": "ChIJtSExx0pHlkYRTyP8a2OZ5QY"
+            },
+            {
+                "name": "சிந்திய இரத்தத்தில் மீட்பர்",
+                "description": "துடிப்பான, பகட்டான வடிவமைப்பைக் கொண்ட 1880 களின் தேவாலயம்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOmtzhUHU1pZqXJ2Rc75qeCVwjFM51kRCnUMhBx=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117073945108422215917\">Fabio Rotondo</a>"
+                ],
+                "place_id": "ChIJbVFAKwwxlkYRt1Nx6jtvZz4"
+            },
+            {
+                "name": "செயின்ட் ஐசக் கதீட்ரல்",
+                "description": "தங்க குவிமாடம் கொண்ட அலங்கார மத மாளிகை",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOpWkZU1tlbRiCHtt_w0R9gyyQpH0Mito5Xb2Ew=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106217893933730903075\">Drop</a>"
+                ],
+                "place_id": "ChIJSTp6hhsxlkYR6SV9tFJytR0"
+            },
+            {
+                "name": "பீட்டர் மற்றும் பால் கோட்டை",
+                "description": "1703 இல் நிறுவப்பட்ட அசல் நகர தளம்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNLqeBINjLtSaI_SLTbaIs09EhrIxdtyRIOuybk=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106966955057660822516\">Наталья Шабалина</a>"
+                ],
+                "place_id": "ChIJTSR-1GoxlkYR5zLwx1pVPbo"
+            },
+            {
+                "name": "அரண்மனை சதுக்கம்",
+                "description": "நியோகிளாசிக்கல் கட்டிடங்களால் வரிசையாக சதுரம்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPdw4lCr9JN3-6p53k8Ygw_c7rzF36qDF8pcJHg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108683531012595666619\">Евгений Шмаков</a>"
+                ],
+                "place_id": "ChIJVXxqaBAxlkYRhOhIV7EPlaI"
+            },
+            {
+                "name": "கசான் கதீட்ரல்",
+                "description": "கொலோனட் ரஷ்ய ஆர்த்தடாக்ஸ் கதீட்ரல்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPlNgyPYKT0tLlepOs7TcniofFWPdG2TGfGyZCa=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106199171833586038896\">DomoTrad mail</a>"
+                ],
+                "place_id": "ChIJf6D87AUxlkYRFUyZu2EH6hI"
+            },
+            {
+                "name": "மரின்ஸ்கி தியேட்டர்",
+                "description": "இசை, ஓபரா மற்றும் பாலே ஆகியவற்றிற்கான பெரிய வளாகம்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMBwZD2wGqqHl5PqFg2OwDMfiIo5lJSXy_IK4Y9=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117290264136811457757\">Mister No</a>"
+                ],
+                "place_id": "ChIJ2xVZCuMwlkYR9U59zxvFL58"
+            },
+            {
+                "name": "ரஷ்ய அருங்காட்சியகம்",
+                "description": "சிறந்த கலைப்படைப்புகள், சின்னங்கள் மற்றும் சிற்பங்கள்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNAb5rRYHDsqz0UP-SCq7PUqPotf9wDBUNZ0mFT=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104173649543230959838\">Michael Pohl</a>"
+                ],
+                "place_id": "ChIJhWsRwA4xlkYRVVQ7duuOte0"
+            },
+            {
+                "name": "கோடைகால தோட்டம்",
+                "description": "ஜார் பீட்டர் வடிவமைத்த முறையான தோட்டங்கள்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOKSFKonfsvWdKYQbFxBw5MAT-bgW-8AnNN3V_X=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116254883157322361245\">Антон Антропов</a>"
+                ],
+                "place_id": "ChIJLVpHfgwxlkYRSKIBKxed6JA"
+            },
+            {
+                "name": "குரூசர் அரோரா",
+                "description": "20 ஆம் நூற்றாண்டின் போர்க்கப்பலில் மிதக்கும் அருங்காட்சியகம்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPsMl8-Km6DmUo3OWADxRkzeLs2cjnFz7xxjj9T=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114751363659672878881\">Artiom Emelianov</a>"
+                ],
+                "place_id": "ChIJzZ8x-W8xlkYR7fxP_cP0zbA"
+            },
+            {
+                "name": "வெண்கல குதிரைவீரன்",
+                "description": "பெரிய பீட்டர் குதிரையேற்றம் சிலை",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMOh0jE72-LjFlwi6e781YLlf1IUjc9CXDstEtg=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/108937772715229801358\">Дмитрий Савченко</a>"
+                ],
+                "place_id": "ChIJXRSiaRkxlkYR6naWIrXNs3I"
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 180,
+    "trivia": {
+        "items": [
+            "செயின்ட் பீட்டர்ஸ்பர்க் லெனின்கிராட் என்று அழைக்கப்படுகிறது",
+            "நகரம் மூன்று முறை பெயர் மாற்றப்பட்டுள்ளது. மூன்றாவது முறையாக செயின்ட் பீட்டர்ஸ்பர்க்கிற்கு திரும்பினார்",
+            "இது ரஷ்யாவின் தலைநகராக இருந்தது",
+            "சுமார் 800 பாலங்கள் உள்ளன. மொத்தம் 12 நகரக்கூடிய பாலங்கள் உள்ளன,",
+            "இது 2 ஆம் உலகப் போரின்போது முற்றுகையிலிருந்து தப்பியது",
+            "இது உலகின் மிக ஆழமான நிலத்தடி மெட்ரோ அமைப்பைக் கொண்டுள்ளது",
+            "கோடையில் வெள்ளை இரவு இங்கே காணலாம். அந்தக் காலகட்டத்தில் இரவுகள் இருட்டாக இல்லை.",
+            "நகரத்தில் கட்டப்பட்ட முதல் கட்டிடம் பீட்டர் மற்றும் பால் கோட்டை. நகரத்தை பாதுகாக்கும் கோட்டையாக இந்த இடம் திட்டமிடப்பட்டது.",
+            "ஹெர்மிடேஜ் சேகரிப்பில் ஐந்து கட்டிடங்களின் 350 அறைகளில் சுமார் 3 மில்லியன் கண்காட்சிகள் உள்ளன.",
+            "WWII இலிருந்து வெடிகுண்டுகள் மற்றும் குண்டுகள் இன்னும் தொடர்ந்து கண்டுபிடிக்கப்பட்டு நகரத்திலும் அதைச் சுற்றியுள்ள பகுதிகளிலும் தோண்டப்பட்டு பயன்படுத்தப்படுகின்றன.",
+            "செயின்ட் பீட்டர்ஸ்பர்க் டிராம்களின் தலைநகரம். நகரில் டிராம் தடங்களின் நீளம் 600 கி.மீ."
+        ]
+    }
+}
