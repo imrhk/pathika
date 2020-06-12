@@ -1,0 +1,333 @@
+{
+    "basic_info": {
+        "name": "زغرب",
+        "id": "zagreb",
+        "background_image": "https://cdn.pixabay.com/photo/2020/03/03/10/30/hnk-zagreb-4898300_1280.jpg",
+        "place": "جناح الفن في زغرب",
+        "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+        "photo_by": "FilipFilipovic",
+        "attribution_url": "https://pixabay.com/es/photos/hnk-zagreb-zagreb-estatua-monumento-4898300/"
+    },
+    "airport": {
+        "name": "مطار فرانجو تودجمان"
+    },
+    "climate": {
+        "type": "محيطات",
+        "items": [
+            {
+                "emoji": "❄️️",
+                "name": "شتاء",
+                "temp": "-4 درجة مئوية إلى -6 درجة مئوية",
+                "duration": "ديسمبر-فبراير"
+            },
+            {
+                "emoji": "🌼",
+                "name": "ربيع",
+                "temp": "1 درجة مئوية إلى 22 درجة مئوية",
+                "duration": "مارس - مايو"
+            },
+            {
+                "emoji": "☀",
+                "name": "الصيف",
+                "temp": "12 درجة مئوية إلى 27 درجة مئوية",
+                "duration": "يونيو-أغسطس"
+            },
+            {
+                "emoji": "🍁",
+                "name": "الخريف",
+                "temp": "2 درجة مئوية إلى 22 درجة مئوية",
+                "duration": "سبتمبر ونوفمبر"
+            }
+        ]
+    },
+    "country": {
+        "name": "كرواتيا 🇭🇷",
+        "continent": "أوروبا"
+    },
+    "currency": {
+        "name": "الكرواتية هناك",
+        "symbol": "kn",
+        "code": "HRK"
+    },
+    "dance": {
+        "name": "كولو دانس دانس"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "Zagorski Štrukli",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/%C5%A0trukli_iz_Okrugljaka.jpg/640px-%C5%A0trukli_iz_Okrugljaka.jpg",
+                "photo_by": "Bonč",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:%C5%A0trukli_iz_Okrugljaka.jpg"
+            },
+            {
+                "label": "Pašticada",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Pasticada.jpg/640px-Pasticada.jpg",
+                "licence": "<a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en/\">CC0 1.0</a>",
+                "photo_by": "Popo le Chien",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Pasticada.jpg"
+            },
+            {
+                "label": "شريحة زغرب",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pathika.litedevs.com/places/zagreb/zagrebački_odrezak.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY 2.0</a>",
+                "photo_by": "Bev Sykes",
+                "attribution_url": "https://www.flickr.com/photos/basykes/4788098550/in/photolist-psdHj7-6BD6uZ-6ExU78-8i7fTh-4juuc2-83xSgE/"
+            },
+            {
+                "label": "Purica I Mlinci",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://majkazmajka.com/wp-content/uploads/2018/11/purica-s-mlincima-1-1024x768.jpg",
+                "photo_by": "anelistar",
+                "attribution_url": "https://majkazmajka.com/purica-s-mlincima/"
+            },
+            {
+                "label": "جوز",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Orahnjaca_261208.jpg/640px-Orahnjaca_261208.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Roberta F.",
+                "attribution_url": "https://hr.wikipedia.org/wiki/Hrvatska_kuhinja#/media/Datoteka:Orahnjaca_261208.jpg"
+            },
+            {
+                "label": "ćevapi",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Original_Bosnian_Cevapcici.JPG/640px-Original_Bosnian_Cevapcici.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Raffaello",
+                "attribution_url": "https://en.wikipedia.org/wiki/%C4%86evapi#/media/File:Original_Bosnian_Cevapcici.JPG"
+            },
+            {
+                "label": "Cremeschnitte",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Kremna_rezina.jpg/640px-Kremna_rezina.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "UkPaolo",
+                "attribution_url": "https://en.wikipedia.org/wiki/Cremeschnitte#/media/File:Kremna_rezina.jpg"
+            },
+            {
+                "label": "أسياخ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Pilecin_raznjici_New_%2816456582880%29.jpg/640px-Pilecin_raznjici_New_%2816456582880%29.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY 2.0</a>",
+                "photo_by": "Ivana Sokolović",
+                "attribution_url": "https://en.wikipedia.org/wiki/Ra%C5%BEnji%C4%87i#/media/File:Pilecin_raznjici_New_(16456582880).jpg"
+            },
+            {
+                "label": "بروديت",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Brodet.JPG/640px-Brodet.JPG"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "التصنيع الغذائي",
+        "secondary": [
+            "السياحة",
+            "الزراعة"
+        ]
+    },
+    "language": {
+        "primary": "الكرواتية",
+        "secondary": [
+            "الإنجليزية"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_ar_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_ar_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_ar_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_ar_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_ar_5.png",
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_ar_6.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "The High Sun",
+                "poster_url": "https://image.tmdb.org/t/p/w300/lc0mVZH4TgmASz1DJRIAmvzy4vc.jpg"
+            },
+            {
+                "title": "Fine mrtve djevojke",
+                "poster_url": "https://image.tmdb.org/t/p/w300/5897WssvDwtpu3pEolua4K2DCC3.jpg"
+            },
+            {
+                "title": "H-8",
+                "poster_url": "https://image.tmdb.org/t/p/w300/omziVU25i4srpMKInaxkLNPDfBe.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "نيكولا تيسلا",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/N.Tesla.JPG/367px-N.Tesla.JPG",
+                "work": "مخترع",
+                "place": "Smiljan"
+            },
+            {
+                "name": "ميرا فورلان",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Mira_Furlan_by_Gage_Skidmore.jpg/362px-Mira_Furlan_by_Gage_Skidmore.jpg",
+                "work": "ممثلة",
+                "place": "زغرب",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url": "https://en.wikipedia.org/wiki/Mira_Furlan#/media/File:Mira_Furlan_by_Gage_Skidmore.jpg",
+                "photo_by": "Gage Skidmore"
+            },
+            {
+                "name": "ميروسلاف كرليشا",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Miroslav_Krle%C5%BEa_1953.jpg",
+                "work": "كاتب",
+                "place": "زغرب"
+            },
+            {
+                "name": "لوكا مودريتش",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/ISL-HRV_%287%29.jpg/440px-ISL-HRV_%287%29.jpg",
+                "work": "لاعب كرة القدم",
+                "place": "زادار",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url": "https://en.wikipedia.org/wiki/Luka_Modri%C4%87#/media/File:ISL-HRV_(7).jpg",
+                "photo_by": "Светлана Бекетова"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ كرة القدم",
+        "footer": "وصلت كرواتيا final لنهائي كأس العالم 2018"
+    },
+    "time_to_visit": {
+        "primary": "مايو-يونيو",
+        "secondary": "سبتمبر"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "كاتدرائية زغرب",
+                "description": "كاتدرائية قوطية جديدة من القرن الثاني عشر",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOR1CNArwskCKU4-ECWf63g3UJaA36kbAT6ysnW=s1600-w701",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117152555860261298062\">Kampüs Avrupa</a>"
+                ],
+                "place_id": "ChIJHR3v-AHXZUcR-W1_Hi9RKzE"
+            },
+            {
+                "name": "ماكسيمير",
+                "description": "حديقة مليئة بالأشجار بها بحيرات وحديقة حيوان",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMTEEiaAp9qyCruv8th-HhI9hwpkfbcjga8Oo90=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/103152148707404013039\">aldenita matic</a>"
+                ],
+                "place_id": "ChIJz7l8terXZUcR_k-oDwggPNc"
+            },
+            {
+                "name": "كنيسة القديس مرقس",
+                "description": "فرض كنيسة على طراز العصور الوسطى",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOjT6-RBrABKe4LHjiAtEsVgS2rNAvnFg388pMc=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110914183623509613336\">radoslav irgl</a>"
+                ],
+                "place_id": "ChIJpe7-NB3XZUcRhluyxHW0U9o"
+            },
+            {
+                "name": "متحف العلاقات المكسورة",
+                "description": "معروضات مخصصة لشئون الحب الفاشلة",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNOVHI7LlWGlHwALhlO64M_rXp3B_h_2gIz0l7G=s1600-w843",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102789457814258550846\">Museum of Broken Relationships</a>"
+                ],
+                "place_id": "ChIJb1qoV_3WZUcRqGE4Q3JSbwg"
+            },
+            {
+                "name": "أبر تاون",
+                "description": "زغرب للسكك الحديدية المعلقة وبرج لوتريشاك",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOmdJjyZmrxpD_eLNRUJF_-HnpRI3Td5czvWhQc=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112438425298171789142\">Flying Pilot</a>"
+                ],
+                "place_id": "ChIJN10RzQLXZUcRFMHtGjL2wKM"
+            },
+            {
+                "name": "كلمات ميسنيكا",
+                "description": "سوق كبير يعرض العديد من الأطعمة الطازجة",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOlcNvL0gFJZvUQuiF-Hgl7J01H5wns6n1iBy_U=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110848251406288610232\">문서진</a>"
+                ],
+                "place_id": "ChIJLxwBi_3WZUcR_R9fe_VXRu0"
+            },
+            {
+                "name": "معمار",
+                "description": "متحف فخم للفن الأوروبي",
+                "photos": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Museo_Mimara%2C_Zagreb%2C_Croacia%2C_2014-04-20%2C_DD_01.JPG/1024px-Museo_Mimara%2C_Zagreb%2C_Croacia%2C_2014-04-20%2C_DD_01.JPG",
+                "html_attributions": [
+                    "<a href=\"https://commons.wikimedia.org/wiki/File:Museo_Mimara,_Zagreb,_Croacia,_2014-04-20,_DD_01.JPG\">Diego Delso</a>"
+                ],
+                "place_id": "ChIJmxpBIuXWZUcRrfdWIGjO9fo"
+            },
+            {
+                "name": "جناح الفن في زغرب",
+                "description": "متحف للفنون في مبنى من القرن التاسع عشر",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPnxhInGNRjFBqe-YCHg0-JMvVdznB-lJkn0lvU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105812225319439818791\">Umjetnički paviljon u Zagrebu</a>"
+                ],
+                "place_id": "ChIJTaNU_fjWZUcRp4xqLnvVHVI"
+            },
+            {
+                "name": "متحف الأوهام",
+                "description": "الأوهام البصرية والألغاز والألعاب",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNUDK9RxtyXSwtRuCb0vKB4hN0svvRTbbb42CJD=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114877084684357404332\">Sotirios Konstantinou</a>"
+                ],
+                "place_id": "ChIJY3-8eGJ7WkcRnt0FEtg7t2A"
+            },
+            {
+                "name": "ساحة بان جوزيب Jelacic",
+                "description": "ساحة مركزية بها تمثال ونافورة",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMV_b2oD7-nrw5brt-9A3Uda_gt7aiA5B-Q-kwS=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105078911987805797425\">Cristian Gary Bufadel</a>"
+                ],
+                "place_id": "ChIJJzRSwv3WZUcRyf0U2EgFujg"
+            },
+            {
+                "name": "سطح المراقبة في زغرب 360 °",
+                "description": "سطح المراقبة في الطابق 16 مع شريط",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPJp7iSTZxObFjLoeBSSeheLIkkLr5ZtuoJz3IB=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112820823951250162760\">Zagreb 360° observation deck</a>"
+                ],
+                "place_id": "ChIJHeuqu_3WZUcRB3LKU_1qRbg"
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 120,
+    "trivia": {
+        "items": [
+            "هي العاصمة وأكبر مدينة في كرواتيا.",
+            "يقع على طول ضفاف نهر سافا في المنحدرات الجنوبية لجبل ميدفيدينيكا.",
+            "سبيكا هو تقليد يتبع كل صباح سبت حيث يذهب الجميع إلى وسط المدينة لتناول القهوة.",
+            "المدينة مليئة بالزواحف وتماثيل القرون الوسطى من الثعابين والتنين.",
+            "متحف العلاقات المكسورة تم تحويله إلى تذكارات من العلاقات بجميع أنواعها",
+            "القطار الجبلي المائل في زغرب هو الأقصر في العالم.",
+            "قطار زغرب المائل هو نظام النقل العام الأكثر أمانًا في العالم ، مع عدم وجود إصابات للركاب منذ أكثر من قرن.",
+            "هناك أنفاق تحت الأرض مخفية تحت مركز زغرب ، يعود بعضها إلى 200 عام."
+        ]
+    }
+}

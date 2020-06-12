@@ -1,0 +1,409 @@
+{
+    "basic_info": {
+        "name": "멕시코 시티",
+        "id": "mexico_city",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sobrevuelos_CDMX_IMG_5982_%2839488832615%29.jpg/1024px-Sobrevuelos_CDMX_IMG_5982_%2839488832615%29.jpg",
+        "place": "공중에서 멕시코 시티",
+        "licence": "<a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en/\">CC0 1.0</a>",
+        "photo_by": "Gobierno CDMX",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Sobrevuelos_CDMX_IMG_5982_(39488832615).jpg"
+    },
+    "airport": {
+        "name": "베니토 후아레스 국제 공항"
+    },
+    "climate": {
+        "type": "아열대 고원",
+        "items": [
+            {
+                "emoji": "❄️️",
+                "name": "겨울",
+                "temp": "8 ° C ~ 23 ° C",
+                "duration": "11 월 -2 월"
+            },
+            {
+                "emoji": "🌼",
+                "name": "봄",
+                "temp": "11 ° C ~ 27 ° C",
+                "duration": "4 월 -5 월"
+            },
+            {
+                "emoji": "☀",
+                "name": "여름",
+                "temp": "12 ° C ~ 23 ° C",
+                "duration": "6 월 9 월"
+            },
+            {
+                "emoji": "🍁",
+                "name": "가을",
+                "temp": "10 ° C ~ 22 ° C",
+                "duration": "10 월"
+            },
+            {
+                "emoji": "☔️",
+                "name": "강우",
+                "temp": "평균 100mm",
+                "duration": "6 월 9 월"
+            }
+        ]
+    },
+    "country": {
+        "name": "멕시코 🇲🇽",
+        "continent": "북아메리카"
+    },
+    "currency": {
+        "name": "멕시코 페소",
+        "symbol": "$",
+        "code": "MXN"
+    },
+    "dance": {
+        "name": "타파 티오 시럽"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "타코 알 목사",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2019/09/26/04/01/tacos-pastor-4505032_1280.jpg",
+                "photo_by": "Yezmin",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "attribution_url": "https://pixabay.com/es/photos/tacos-de-pastor-tacos-tacos-mexico-4505032/"
+            },
+            {
+                "label": "Chilaquiles",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/FOOD_Chilaquiles_1.jpg/640px-FOOD_Chilaquiles_1.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY 4.0</a>",
+                "photo_by": "Grueslayer",
+                "attribution_url": "https://en.wikipedia.org/wiki/Chilaquiles#/media/File:FOOD_Chilaquiles_1.jpg"
+            },
+            {
+                "label": "포졸",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Pozole.jpg/640px-Pozole.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.5\">CC BY 2.5</a>",
+                "photo_by": "Meutia Chaerani / Indradi Soemardjan",
+                "attribution_url": "https://en.wikipedia.org/wiki/Pozole#/media/File:Pozole.jpg"
+            },
+            {
+                "label": "토스트",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Atun_tostadas_%2843015501031%29.jpg/640px-Atun_tostadas_%2843015501031%29.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "T.Tseng - Atun tostadas",
+                "attribution_url": "https://en.wikipedia.org/wiki/Tostada_(tortilla)#/media/File:Atun_tostadas_(43015501031).jpg"
+            },
+            {
+                "label": "칠레와 노가다",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Chile_en_nogada.jpg/640px-Chile_en_nogada.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Arturo Sánchez",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Chile_en_nogada.jpg"
+            },
+            {
+                "label": "엔칠 라다",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2014/01/14/22/13/mexican-245240_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "adoproducciones",
+                "attribution_url": "https://pixabay.com/es/photos/m%C3%A9xico-enchilada-los-alimentos-245240/"
+            },
+            {
+                "label": "과카 몰리",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Guacamole_IMGP1289.jpg/640px-Guacamole_IMGP1289.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Nikodem Nijaki",
+                "attribution_url": "https://en.wikipedia.org/wiki/Guacamole#/media/File:Guacamole_IMGP1289.jpg"
+            },
+            {
+                "label": "타 말레",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2020/01/10/18/22/food-4755914_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "lawdawgmon",
+                "attribution_url": "https://pixabay.com/es/photos/los-alimentos-tamales-navidad-cena-4755914/"
+            },
+            {
+                "label": "트라 코 요스",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Mercado_de_Xochimilco_-_Tlacoyos.jpg/640px-Mercado_de_Xochimilco_-_Tlacoyos.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY 4.0</a>",
+                "photo_by": "ProtoplasmaKid",
+                "attribution_url": "https://en.wikipedia.org/wiki/Tlacoyo#/media/File:Mercado_de_Xochimilco_-_Tlacoyos.jpg"
+            },
+            {
+                "label": "케사 디야",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2016/12/06/05/15/mexican-food-1885616_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "newstx",
+                "attribution_url": "https://pixabay.com/es/photos/comida-mexicana-quesadilla-1885616/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "철강 생산",
+        "secondary": [
+            "직물",
+            "플라스틱",
+            "시멘트",
+            "가구"
+        ]
+    },
+    "language": {
+        "primary": "스페인의",
+        "secondary": [
+            "나 우아 틀",
+            "오토 미"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/mexico_city_map_ko_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/mexico_city_map_ko_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/mexico_city_map_ko_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/mexico_city_map_ko_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/mexico_city_map_ko_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Roma",
+                "poster_url": "https://image.tmdb.org/t/p/w300/mol9igUACes9yma2e7965qDBspL.jpg"
+            },
+            {
+                "title": "Y tu mamá también",
+                "poster_url": "https://image.tmdb.org/t/p/w300/hvdqoH6DMZjes6MXImW8J49l01Q.jpg"
+            },
+            {
+                "title": "Amores perros",
+                "poster_url": "https://image.tmdb.org/t/p/w300/n3QrQvLM7lZ9AGExvG89OREkCXW.jpg"
+            },
+            {
+                "title": "Sin Nombre",
+                "poster_url": "https://image.tmdb.org/t/p/w300/wncX4fshBUDvB2CaW3AYG7i3nUd.jpg"
+            },
+            {
+                "title": "Frida",
+                "poster_url": "https://image.tmdb.org/t/p/w300/12SHwwtEQ6u20gFsyxlK9SPgMk4.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "프리다 칼로",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg/512px-Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg",
+                "work": "화가",
+                "place": "코요 아칸, 멕시코 시티"
+            },
+            {
+                "name": "카를로스 슬림",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Carlos_Slim_%2845680472234%29_%28cropped%29.jpg/585px-Carlos_Slim_%2845680472234%29_%28cropped%29.jpg",
+                "work": "전 세계에서 가장 부유 한 사람",
+                "place": "멕시코 시티",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "attribution_url" : "https://en.wikipedia.org/wiki/Carlos_Slim#/media/File:Carlos_Slim_(45680472234)_(cropped).jpg",
+                "photo_by" : "Secretaría de Cultura Ciudad de México"
+                
+            },
+            {
+                "name": "디에고 루나",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Diego_Luna_Berlinale_2017.jpg/512px-Diego_Luna_Berlinale_2017.jpg",
+                "work": "배우",
+                "place": "톨 루카",
+                "photo_by" : "Maximilian Bühn",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "attribution_url" : "https://en.wikipedia.org/wiki/Diego_Luna#/media/File:Diego_Luna_Berlinale_2017.jpg"
+            },
+            {
+                "name": "알폰소 쿠아론",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Alfonso_Cuar%C3%B3n_%282013%29_cropped.jpg/576px-Alfonso_Cuar%C3%B3n_%282013%29_cropped.jpg",
+                "work": "오스카 수상자",
+                "place": "멕시코 시티",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 2.0</a>",
+                "attribution_url" : "https://commons.wikimedia.org/wiki/File:Alfonso_Cuar%C3%B3n_(2013)_cropped.jpg",
+                "photo_by" : "Gage Skidmore"
+            },
+            {
+                "name": "루이스 아르투로 빌라 수덱",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Luisito_Comunica.jpg/570px-Luisito_Comunica.jpg",
+                "work": "유 튜버",
+                "place": "푸에블라",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "LocoWiki",
+                "attribution_url": "https://en.wikipedia.org/wiki/Luisito_Comunica#/media/File:Luisito_Comunica.jpg"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ 축구",
+        "footer": "복싱과 야구"
+    },
+    "time_to_visit": {
+        "primary": "3 월 ~ 4 월",
+        "secondary": "10 월 ~ 11 월"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "차풀 테펙 숲",
+                "description": "다양한 볼거리가있는 광대 한 공원",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNiX8d8yQWbt9aD5vF7YrszZyOT-gEd7lzJSmt6=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102624289086857211059\">ANGELO VALLS</a>"
+                ],
+                "place_id": "ChIJP1dJRVf_0YURr8MZosHl4kI"
+            },
+            {
+                "name": "멕시코 시티 역사 지구",
+                "description": "버지 시티 센터 및 역사적인 랜드 마크",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNxqwVzxkS_uZcr46F7_pMoa_4DoJL8ey87YSDv=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114147572185631984481\">Chiwago Yuan</a>"
+                ],
+                "place_id": "ChIJvU0OLi350YURPYnEQKd0VZA"
+            },
+            {
+                "name": "주각",
+                "description": "잦은 이벤트가있는 유명한 광장",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPcLf1n82_yHQuys6MnUslzAw8ncInKncoWtfvL=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105142617247400066240\">Raul Contreras</a>"
+                ],
+                "place_id": "ChIJ_6pkSM3-0YURDDaRslwM_0w"
+            },
+            {
+                "name": "인류학 국립 박물관",
+                "description": "마야 유물 등이있는 박물관",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM1KhbouUUMeekNFZU2eGQmSo2Vg8wA5qKfkksx=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115684849360595650882\">Rafael Campa</a>"
+                ],
+                "place_id": "ChIJScjIILQB0oURJMVub-MaI4Q"
+            },
+            {
+                "name": "프리다 칼로 박물관",
+                "description": "유명한 예술가의 집 박물관",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOFBiANx_R0QHlUcb0s52LgjrFH-5xJey66ZGIy=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/109759390097978857129\">ALEX CHARI</a>"
+                ],
+                "place_id": "ChIJOz-6AMT_0YURofTM9_ekAWI"
+            },
+            {
+                "name": "팰리스 오브 파인 아츠",
+                "description": "미술 전용 부유 한 건물",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipO4N1LuivEPrdVrznwfbIhrNqX-lQGqpgJ3e38w=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105303505373661530610\">indoorfish</a>"
+                ],
+                "place_id": "ChIJTQGqdSv50YURz-imDdIQ2Bc"
+            },
+            {
+                "name": "템플로 시장 박물관",
+                "description": "아즈텍 박물관",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNiORRs1j8zSLO-Qa6zbrJQXmgkm6T7z1ENx3BG=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106977980988418911889\">Jeremias Wolf</a>"
+                ],
+                "place_id": "ChIJ3dGBci350YURsDYUZcq-kIw"
+            },
+            {
+                "name": "과달 루페 성모 성당",
+                "description": "상징적 가톨릭 교회 및 순례지",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOl3e7dvgt86FE6Ko-SnRqrl4DoWEPrWttXtgdS=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116051672978537733687\">LookSnice Project</a>"
+                ],
+                "place_id": "ChIJxak0Kpz50YURsGoopfnqoCE"
+            },
+            {
+                "name": "멕시코 시티 메트로폴리탄 대성당",
+                "description": "과거와 함께 그랜드 성당",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPWG9IH_cYGEQ5tT5GFTQNr2YoxC7BoD5yUr5ia=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117259414841066020164\">Justin Wiley</a>"
+                ],
+                "place_id": "ChIJ4a8nxjL50YURJ19RJ_A9T5E"
+            },
+            {
+                "name": "수 마야 박물관",
+                "description": "많은 유럽 작품이있는 미술관",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPynWVa_w0azHBhfaDRvrVwaOsgIVEZLjedncB5=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104312276687792041979\">Ramiro Jarquín Ortiz</a>"
+                ],
+                "place_id": "ChIJCT06bhoC0oURszwDTCLicpM"
+            },
+            {
+                "name": "독립의 천사",
+                "description": "아이코닉 전쟁 독립 기념비",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM2X5H7a3IAkCw4vhQU5wxr2DBJwYGFgL-9Ryqf=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110339278841892151615\">Ramon Fuentes</a>"
+                ],
+                "place_id": "ChIJYxW99TX_0YUR9y_gLQ5vNmw"
+            },
+            {
+                "name": "센트럴 몰",
+                "description": "멕시코 시티에서 가장 오래된 시립 공원",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPYvcRpQoJEJcABcSG4KdrWSdnfNd8tlTGhYEnr=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116252675598747639988\">Papu Cuevas Aguilar RCA</a>"
+                ],
+                "place_id": "ChIJS7R39Sr50YURQE6mi9UOKds"
+            },
+            {
+                "name": "혁명 기념비",
+                "description": "전망대와 박물관이있는 랜드 마크",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMgA8kEVjraSf4kaFU19y5QJ7iD3XX3hIfcIF5E=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100626866042472063445\">Vivi Delsa</a>"
+                ],
+                "place_id": "ChIJHwciRdL40YURIAzMPd3G_SA"
+            },
+            {
+                "name": "식스 플래그 멕시코",
+                "description": "놀이기구와 쇼가있는 대형 놀이 공원",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNohscorxR3CKfTB95sASt7SQhKHiMvVLU5Uk1L=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116006781809297032397\">Enrique Nava</a>"
+                ],
+                "place_id": "ChIJGZTVlcn_zYURRZxrmu06Qto"
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": -300,
+    "trivia": {
+        "items": [
+            "멕시코 시티는 CDMX (멕시코 시티)라고도합니다.",
+            "멕시코의 수도이자 가장 큰 도시입니다.",
+            "북아메리카에서 가장 인구가 많은 도시입니다 (약 9 백만).",
+            "이 도시는 텍스 코코 호수 위에 세워졌으며 지난 100 년 동안 9 미터 이상 침몰했으며 계속 가라 앉고 있습니다.",
+            "그것은 16 세기에 스페인에 의해 정복 된 아즈텍 제국의 수도였습니다.",
+            "세계 최대의 스페인어 사용 도시입니다.",
+            "해발 2.2km 떨어진 산에 위치하고 있습니다.",
+            "조 칼로 (Plaza de la Constitucìon)는 세계에서 3 번째로 큰 광장입니다 (붉은 광장과 천안문 광장은 더 큼).",
+            "조 칼로는 아즈텍 제국의 정확한 중심에 위치하고 있습니다.",
+            "6 플래그 놀이 공원은 라틴 아메리카에서 가장 큰 규모입니다.",
+            "그것은 세계에서 가장 큰 황소 반지를 가지고 있습니다.",
+            "이곳에는 2 개의 FIFA 월드컵 (1970 년 및 1986 년)과 19 번째 올림픽 (1968 년)이있었습니다.",
+            "Jarabe Tapatío는 멕시코의 국가 춤이며 멕시코 모자 춤으로도 알려져 있습니다.",
+            "메트로 시스템은 라틴 아메리카에서 가장 크며 세계에서 가장 저렴한 요금이 있습니다.",
+            "멕시코 시티에 위치한 멕시코 국립 자치 대학교 (UNAM)는 대륙에서 가장 큰 대학으로, 모든 배경에서 300,000 명 이상의 학생들이 재학 중입니다."            
+        ]
+    }
+}

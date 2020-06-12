@@ -1,0 +1,409 @@
+{
+    "basic_info": {
+        "name": "Meksyk",
+        "id": "mexico_city",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sobrevuelos_CDMX_IMG_5982_%2839488832615%29.jpg/1024px-Sobrevuelos_CDMX_IMG_5982_%2839488832615%29.jpg",
+        "place": "Mexico City z powietrza",
+        "licence": "<a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en/\">CC0 1.0</a>",
+        "photo_by": "Gobierno CDMX",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Sobrevuelos_CDMX_IMG_5982_(39488832615).jpg"
+    },
+    "airport": {
+        "name": "Międzynarodowy port lotniczy Benito Juárez"
+    },
+    "climate": {
+        "type": "Subtropikalny Highland",
+        "items": [
+            {
+                "emoji": "❄️️",
+                "name": "Zimowy",
+                "temp": "8 ° C do 23 ° C",
+                "duration": "Listopad-luty"
+            },
+            {
+                "emoji": "🌼",
+                "name": "Wiosna",
+                "temp": "11 ° C do 27 ° C",
+                "duration": "Kwiecień-maj"
+            },
+            {
+                "emoji": "☀",
+                "name": "Lato",
+                "temp": "12 ° C do 23 ° C",
+                "duration": "Czerwiec-wrzesień"
+            },
+            {
+                "emoji": "🍁",
+                "name": "Jesień",
+                "temp": "10 ° C do 22 ° C",
+                "duration": "Paź"
+            },
+            {
+                "emoji": "☔️",
+                "name": "Opad deszczu",
+                "temp": "Średnio 100 mm",
+                "duration": "Czerwiec-wrzesień"
+            }
+        ]
+    },
+    "country": {
+        "name": "Meksyk 🇲🇽",
+        "continent": "Ameryka północna"
+    },
+    "currency": {
+        "name": "Peso meksykańskie",
+        "symbol": "$",
+        "code": "MXN"
+    },
+    "dance": {
+        "name": "Syrop tapatio"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "Tacos al pastor",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2019/09/26/04/01/tacos-pastor-4505032_1280.jpg",
+                "photo_by": "Yezmin",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "attribution_url": "https://pixabay.com/es/photos/tacos-de-pastor-tacos-tacos-mexico-4505032/"
+            },
+            {
+                "label": "Chilaquiles",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/FOOD_Chilaquiles_1.jpg/640px-FOOD_Chilaquiles_1.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY 4.0</a>",
+                "photo_by": "Grueslayer",
+                "attribution_url": "https://en.wikipedia.org/wiki/Chilaquiles#/media/File:FOOD_Chilaquiles_1.jpg"
+            },
+            {
+                "label": "Pozole",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Pozole.jpg/640px-Pozole.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.5\">CC BY 2.5</a>",
+                "photo_by": "Meutia Chaerani / Indradi Soemardjan",
+                "attribution_url": "https://en.wikipedia.org/wiki/Pozole#/media/File:Pozole.jpg"
+            },
+            {
+                "label": "grzanki",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Atun_tostadas_%2843015501031%29.jpg/640px-Atun_tostadas_%2843015501031%29.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "T.Tseng - Atun tostadas",
+                "attribution_url": "https://en.wikipedia.org/wiki/Tostada_(tortilla)#/media/File:Atun_tostadas_(43015501031).jpg"
+            },
+            {
+                "label": "Chile i nogada",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Chile_en_nogada.jpg/640px-Chile_en_nogada.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Arturo Sánchez",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Chile_en_nogada.jpg"
+            },
+            {
+                "label": "Enchiladas",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2014/01/14/22/13/mexican-245240_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "adoproducciones",
+                "attribution_url": "https://pixabay.com/es/photos/m%C3%A9xico-enchilada-los-alimentos-245240/"
+            },
+            {
+                "label": "guacamole",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Guacamole_IMGP1289.jpg/640px-Guacamole_IMGP1289.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Nikodem Nijaki",
+                "attribution_url": "https://en.wikipedia.org/wiki/Guacamole#/media/File:Guacamole_IMGP1289.jpg"
+            },
+            {
+                "label": "Tamale",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2020/01/10/18/22/food-4755914_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "lawdawgmon",
+                "attribution_url": "https://pixabay.com/es/photos/los-alimentos-tamales-navidad-cena-4755914/"
+            },
+            {
+                "label": "Tlacoyos",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Mercado_de_Xochimilco_-_Tlacoyos.jpg/640px-Mercado_de_Xochimilco_-_Tlacoyos.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY 4.0</a>",
+                "photo_by": "ProtoplasmaKid",
+                "attribution_url": "https://en.wikipedia.org/wiki/Tlacoyo#/media/File:Mercado_de_Xochimilco_-_Tlacoyos.jpg"
+            },
+            {
+                "label": "Quesadilla",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2016/12/06/05/15/mexican-food-1885616_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "newstx",
+                "attribution_url": "https://pixabay.com/es/photos/comida-mexicana-quesadilla-1885616/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "Produkcja żelaza i stali",
+        "secondary": [
+            "Włókienniczy",
+            "Plastikowy",
+            "Cement",
+            "Meble"
+        ]
+    },
+    "language": {
+        "primary": "hiszpański",
+        "secondary": [
+            "Nahuatl",
+            "Otomi"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/mexico_city_map_pl_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/mexico_city_map_pl_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/mexico_city_map_pl_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/mexico_city_map_pl_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/mexico_city_map_pl_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Roma",
+                "poster_url": "https://image.tmdb.org/t/p/w300/mol9igUACes9yma2e7965qDBspL.jpg"
+            },
+            {
+                "title": "Y tu mamá también",
+                "poster_url": "https://image.tmdb.org/t/p/w300/hvdqoH6DMZjes6MXImW8J49l01Q.jpg"
+            },
+            {
+                "title": "Amores perros",
+                "poster_url": "https://image.tmdb.org/t/p/w300/n3QrQvLM7lZ9AGExvG89OREkCXW.jpg"
+            },
+            {
+                "title": "Sin Nombre",
+                "poster_url": "https://image.tmdb.org/t/p/w300/wncX4fshBUDvB2CaW3AYG7i3nUd.jpg"
+            },
+            {
+                "title": "Frida",
+                "poster_url": "https://image.tmdb.org/t/p/w300/12SHwwtEQ6u20gFsyxlK9SPgMk4.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "Frida Kahlo",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg/512px-Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg",
+                "work": "Malarz",
+                "place": "Coyoacán, Meksyk"
+            },
+            {
+                "name": "Carlos Slim",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Carlos_Slim_%2845680472234%29_%28cropped%29.jpg/585px-Carlos_Slim_%2845680472234%29_%28cropped%29.jpg",
+                "work": "Była najbogatsza osoba na świecie",
+                "place": "Meksyk",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "attribution_url" : "https://en.wikipedia.org/wiki/Carlos_Slim#/media/File:Carlos_Slim_(45680472234)_(cropped).jpg",
+                "photo_by" : "Secretaría de Cultura Ciudad de México"
+                
+            },
+            {
+                "name": "Diego Luna",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Diego_Luna_Berlinale_2017.jpg/512px-Diego_Luna_Berlinale_2017.jpg",
+                "work": "Aktor",
+                "place": "Toluca",
+                "photo_by" : "Maximilian Bühn",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "attribution_url" : "https://en.wikipedia.org/wiki/Diego_Luna#/media/File:Diego_Luna_Berlinale_2017.jpg"
+            },
+            {
+                "name": "Alfonso Cuaron",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Alfonso_Cuar%C3%B3n_%282013%29_cropped.jpg/576px-Alfonso_Cuar%C3%B3n_%282013%29_cropped.jpg",
+                "work": "Zdobywca Oscara Dyrektor",
+                "place": "Meksyk",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 2.0</a>",
+                "attribution_url" : "https://commons.wikimedia.org/wiki/File:Alfonso_Cuar%C3%B3n_(2013)_cropped.jpg",
+                "photo_by" : "Gage Skidmore"
+            },
+            {
+                "name": "Luis Arturo Villar Sudek",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Luisito_Comunica.jpg/570px-Luisito_Comunica.jpg",
+                "work": "YouTuber",
+                "place": "Puebla",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "LocoWiki",
+                "attribution_url": "https://en.wikipedia.org/wiki/Luisito_Comunica#/media/File:Luisito_Comunica.jpg"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ Piłka nożna",
+        "footer": "Boks i baseball"
+    },
+    "time_to_visit": {
+        "primary": "Marzec kwiecień",
+        "secondary": "Październik-listopad"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "Las Chapultepec",
+                "description": "Rozległy park z różnymi atrakcjami",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNiX8d8yQWbt9aD5vF7YrszZyOT-gEd7lzJSmt6=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102624289086857211059\">ANGELO VALLS</a>"
+                ],
+                "place_id": "ChIJP1dJRVf_0YURr8MZosHl4kI"
+            },
+            {
+                "name": "Historyczne centrum Meksyku",
+                "description": "Buzzy centrum miasta i zabytki",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNxqwVzxkS_uZcr46F7_pMoa_4DoJL8ey87YSDv=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114147572185631984481\">Chiwago Yuan</a>"
+                ],
+                "place_id": "ChIJvU0OLi350YURPYnEQKd0VZA"
+            },
+            {
+                "name": "Cokół",
+                "description": "Wybitny plac z częstymi wydarzeniami",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPcLf1n82_yHQuys6MnUslzAw8ncInKncoWtfvL=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105142617247400066240\">Raul Contreras</a>"
+                ],
+                "place_id": "ChIJ_6pkSM3-0YURDDaRslwM_0w"
+            },
+            {
+                "name": "Muzeum Narodowe Antropologii",
+                "description": "Muzeum z artefaktami Majów i nie tylko",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM1KhbouUUMeekNFZU2eGQmSo2Vg8wA5qKfkksx=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115684849360595650882\">Rafael Campa</a>"
+                ],
+                "place_id": "ChIJScjIILQB0oURJMVub-MaI4Q"
+            },
+            {
+                "name": "Muzeum Fridy Kahlo",
+                "description": "Dom-muzeum-słynnego artysty",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOFBiANx_R0QHlUcb0s52LgjrFH-5xJey66ZGIy=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/109759390097978857129\">ALEX CHARI</a>"
+                ],
+                "place_id": "ChIJOz-6AMT_0YURofTM9_ekAWI"
+            },
+            {
+                "name": "Pałac Sztuk Pięknych",
+                "description": "Bogaty budynek poświęcony sztukom plastycznym",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipO4N1LuivEPrdVrznwfbIhrNqX-lQGqpgJ3e38w=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105303505373661530610\">indoorfish</a>"
+                ],
+                "place_id": "ChIJTQGqdSv50YURz-imDdIQ2Bc"
+            },
+            {
+                "name": "Muzeum Burmistrza Templo",
+                "description": "Muzeum poświęcone Aztekom",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNiORRs1j8zSLO-Qa6zbrJQXmgkm6T7z1ENx3BG=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106977980988418911889\">Jeremias Wolf</a>"
+                ],
+                "place_id": "ChIJ3dGBci350YURsDYUZcq-kIw"
+            },
+            {
+                "name": "Bazylika Matki Bożej z Guadalupe",
+                "description": "Ikoniczny kościół katolicki i miejsce pielgrzymkowe",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOl3e7dvgt86FE6Ko-SnRqrl4DoWEPrWttXtgdS=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116051672978537733687\">LookSnice Project</a>"
+                ],
+                "place_id": "ChIJxak0Kpz50YURsGoopfnqoCE"
+            },
+            {
+                "name": "Katedra Metropolitalna w Meksyku",
+                "description": "Wielka katedra z historią",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPWG9IH_cYGEQ5tT5GFTQNr2YoxC7BoD5yUr5ia=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117259414841066020164\">Justin Wiley</a>"
+                ],
+                "place_id": "ChIJ4a8nxjL50YURJ19RJ_A9T5E"
+            },
+            {
+                "name": "Muzeum Soumaya",
+                "description": "Muzeum sztuki z wieloma dziełami europejskimi",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPynWVa_w0azHBhfaDRvrVwaOsgIVEZLjedncB5=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104312276687792041979\">Ramiro Jarquín Ortiz</a>"
+                ],
+                "place_id": "ChIJCT06bhoC0oURszwDTCLicpM"
+            },
+            {
+                "name": "Anioł Niepodległości",
+                "description": "Kultowy pomnik wojny o niepodległość",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM2X5H7a3IAkCw4vhQU5wxr2DBJwYGFgL-9Ryqf=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110339278841892151615\">Ramon Fuentes</a>"
+                ],
+                "place_id": "ChIJYxW99TX_0YUR9y_gLQ5vNmw"
+            },
+            {
+                "name": "Centralne centrum handlowe",
+                "description": "Najstarszy park miejski w Meksyku",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPYvcRpQoJEJcABcSG4KdrWSdnfNd8tlTGhYEnr=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116252675598747639988\">Papu Cuevas Aguilar RCA</a>"
+                ],
+                "place_id": "ChIJS7R39Sr50YURQE6mi9UOKds"
+            },
+            {
+                "name": "Pomnik rewolucji",
+                "description": "Punkt orientacyjny z tarasem widokowym i muzeum",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMgA8kEVjraSf4kaFU19y5QJ7iD3XX3hIfcIF5E=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100626866042472063445\">Vivi Delsa</a>"
+                ],
+                "place_id": "ChIJHwciRdL40YURIAzMPd3G_SA"
+            },
+            {
+                "name": "Six Flags México",
+                "description": "Duży park rozrywki z przejażdżkami i pokazami",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNohscorxR3CKfTB95sASt7SQhKHiMvVLU5Uk1L=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116006781809297032397\">Enrique Nava</a>"
+                ],
+                "place_id": "ChIJGZTVlcn_zYURRZxrmu06Qto"
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": -300,
+    "trivia": {
+        "items": [
+            "Miasto Meksyk jest również nazywane CDMX (Meksyk).",
+            "Jest stolicą i największym miastem Meksyku.",
+            "To najbardziej zaludnione miasto w Ameryce Północnej (około 9 milionów).",
+            "Miasto jest zbudowane na tym, co było jeziorem Texcoco, i zatonąło ponad 9 metrów w ciągu ostatnich 100 lat i nadal tonie.",
+            "Była stolicą imperium Azteków, które podbili Hiszpania w XVI wieku.",
+            "To największe hiszpańskojęzyczne miasto na świecie.",
+            "Położone jest w górach, 2,2 km nad poziomem morza",
+            "Zócalo (Plaza de la Constitucìon) jest trzecim co do wielkości kwadratem na świecie (Plac Czerwony i Plac Tiananmen są większe).",
+            "Zócalo znajduje się dokładnie w centrum Imperium Azteków.",
+            "Park rozrywki 6 Flags jest największy w Ameryce Łacińskiej.",
+            "Ma największy byk na świecie.",
+            "Było to miejsce dwóch Mistrzostw Świata FIFA (1970 i 1986) i 19. Igrzysk Olimpijskich (1968).",
+            "Jarabe Tapatío jest również narodowym tańcem Meksyku i jest również znany jako meksykański taniec kapeluszowy.",
+            "Jego system metra jest największy w Ameryce Łacińskiej i ma jedne z najniższych cen biletów na świecie.",
+            "National Autonomous University of Mexico (UNAM), z siedzibą w Meksyku, jest największym uniwersytetem na kontynencie, z ponad 300 000 studentów ze wszystkich środowisk."            
+        ]
+    }
+}

@@ -1,0 +1,333 @@
+{
+    "basic_info": {
+        "name": "ஜாக்ரெப்",
+        "id": "zagreb",
+        "background_image": "https://cdn.pixabay.com/photo/2020/03/03/10/30/hnk-zagreb-4898300_1280.jpg",
+        "place": "ஜாக்ரெப்பில் கலை பெவிலியன்",
+        "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+        "photo_by": "FilipFilipovic",
+        "attribution_url": "https://pixabay.com/es/photos/hnk-zagreb-zagreb-estatua-monumento-4898300/"
+    },
+    "airport": {
+        "name": "ஃபிரான்ஜோ துட்ஜ்மன் விமான நிலையம்"
+    },
+    "climate": {
+        "type": "பெருங்கடல்",
+        "items": [
+            {
+                "emoji": "❄️️",
+                "name": "குளிர்காலம்",
+                "temp": "-4 ° C முதல் -6. C வரை",
+                "duration": "டிசம்பர்-பிப்ரவரி"
+            },
+            {
+                "emoji": "🌼",
+                "name": "வசந்த",
+                "temp": "1 ° C முதல் 22. C வரை",
+                "duration": "மார்-மே"
+            },
+            {
+                "emoji": "☀",
+                "name": "கோடை",
+                "temp": "12 ° C முதல் 27. C வரை",
+                "duration": "ஜூன்-ஆகஸ்ட்"
+            },
+            {
+                "emoji": "🍁",
+                "name": "இலையுதிர் காலம்",
+                "temp": "2 ° C முதல் 22. C வரை",
+                "duration": "செப்-நவ"
+            }
+        ]
+    },
+    "country": {
+        "name": "குரோஷியா",
+        "continent": "ஐரோப்பா"
+    },
+    "currency": {
+        "name": "குரோஷியன் அங்கே",
+        "symbol": "kn",
+        "code": "HRK"
+    },
+    "dance": {
+        "name": "கோலோ சுற்று நடனம்"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "ஜாகோர்ஸ்கி Štrukli",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/%C5%A0trukli_iz_Okrugljaka.jpg/640px-%C5%A0trukli_iz_Okrugljaka.jpg",
+                "photo_by": "Bonč",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:%C5%A0trukli_iz_Okrugljaka.jpg"
+            },
+            {
+                "label": "பாஸ்டிகாடா",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Pasticada.jpg/640px-Pasticada.jpg",
+                "licence": "<a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en/\">CC0 1.0</a>",
+                "photo_by": "Popo le Chien",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Pasticada.jpg"
+            },
+            {
+                "label": "ஜாக்ரெப் ஸ்டீக்",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pathika.litedevs.com/places/zagreb/zagrebački_odrezak.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY 2.0</a>",
+                "photo_by": "Bev Sykes",
+                "attribution_url": "https://www.flickr.com/photos/basykes/4788098550/in/photolist-psdHj7-6BD6uZ-6ExU78-8i7fTh-4juuc2-83xSgE/"
+            },
+            {
+                "label": "பூரிக்கா I மிலின்சி",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://majkazmajka.com/wp-content/uploads/2018/11/purica-s-mlincima-1-1024x768.jpg",
+                "photo_by": "anelistar",
+                "attribution_url": "https://majkazmajka.com/purica-s-mlincima/"
+            },
+            {
+                "label": "வால்நட்",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Orahnjaca_261208.jpg/640px-Orahnjaca_261208.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Roberta F.",
+                "attribution_url": "https://hr.wikipedia.org/wiki/Hrvatska_kuhinja#/media/Datoteka:Orahnjaca_261208.jpg"
+            },
+            {
+                "label": "ćevapi",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Original_Bosnian_Cevapcici.JPG/640px-Original_Bosnian_Cevapcici.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Raffaello",
+                "attribution_url": "https://en.wikipedia.org/wiki/%C4%86evapi#/media/File:Original_Bosnian_Cevapcici.JPG"
+            },
+            {
+                "label": "க்ரெமேஷ்னிட்டே",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Kremna_rezina.jpg/640px-Kremna_rezina.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "UkPaolo",
+                "attribution_url": "https://en.wikipedia.org/wiki/Cremeschnitte#/media/File:Kremna_rezina.jpg"
+            },
+            {
+                "label": "Skewers",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Pilecin_raznjici_New_%2816456582880%29.jpg/640px-Pilecin_raznjici_New_%2816456582880%29.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY 2.0</a>",
+                "photo_by": "Ivana Sokolović",
+                "attribution_url": "https://en.wikipedia.org/wiki/Ra%C5%BEnji%C4%87i#/media/File:Pilecin_raznjici_New_(16456582880).jpg"
+            },
+            {
+                "label": "ப்ரோடெட்",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Brodet.JPG/640px-Brodet.JPG"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "உணவு உற்பத்தி",
+        "secondary": [
+            "சுற்றுலா",
+            "வேளாண்மை"
+        ]
+    },
+    "language": {
+        "primary": "குரோஷியன்",
+        "secondary": [
+            "ஆங்கிலம்"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_ta_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_ta_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_ta_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_ta_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_ta_5.png",
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_ta_6.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "The High Sun",
+                "poster_url": "https://image.tmdb.org/t/p/w300/lc0mVZH4TgmASz1DJRIAmvzy4vc.jpg"
+            },
+            {
+                "title": "Fine mrtve djevojke",
+                "poster_url": "https://image.tmdb.org/t/p/w300/5897WssvDwtpu3pEolua4K2DCC3.jpg"
+            },
+            {
+                "title": "H-8",
+                "poster_url": "https://image.tmdb.org/t/p/w300/omziVU25i4srpMKInaxkLNPDfBe.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "நிகோலா டெஸ்லா",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/N.Tesla.JPG/367px-N.Tesla.JPG",
+                "work": "கண்டுபிடிப்பாளர்",
+                "place": "ஸ்மில்ஜன்"
+            },
+            {
+                "name": "மீரா ஃபர்லன்",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Mira_Furlan_by_Gage_Skidmore.jpg/362px-Mira_Furlan_by_Gage_Skidmore.jpg",
+                "work": "நடிகை",
+                "place": "ஜாக்ரெப்",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url": "https://en.wikipedia.org/wiki/Mira_Furlan#/media/File:Mira_Furlan_by_Gage_Skidmore.jpg",
+                "photo_by": "Gage Skidmore"
+            },
+            {
+                "name": "மிரோஸ்லாவ் க்ர்லேனா",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Miroslav_Krle%C5%BEa_1953.jpg",
+                "work": "எழுத்தாளர்",
+                "place": "ஜாக்ரெப்"
+            },
+            {
+                "name": "லுகா மோட்ரிக்",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/ISL-HRV_%287%29.jpg/440px-ISL-HRV_%287%29.jpg",
+                "work": "கால்பந்து வீரர்",
+                "place": "ஜாதர்",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url": "https://en.wikipedia.org/wiki/Luka_Modri%C4%87#/media/File:ISL-HRV_(7).jpg",
+                "photo_by": "Светлана Бекетова"
+            }
+        ]
+    },
+    "sports": {
+        "title": "கால்பந்து",
+        "footer": "குரோஷியா 2018 2018 ஃபிஃபா உலகக் கோப்பை இறுதிப் போட்டியை எட்டியது"
+    },
+    "time_to_visit": {
+        "primary": "மே-ஜூன்",
+        "secondary": "செப்டம்பர்"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "ஜாக்ரெப்பின் கதீட்ரல்",
+                "description": "12 ஆம் நூற்றாண்டின் ஆரம்பத்தில் நியோ கோதிக் கதீட்ரல்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOR1CNArwskCKU4-ECWf63g3UJaA36kbAT6ysnW=s1600-w701",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117152555860261298062\">Kampüs Avrupa</a>"
+                ],
+                "place_id": "ChIJHR3v-AHXZUcR-W1_Hi9RKzE"
+            },
+            {
+                "name": "மக்ஸிமிர்",
+                "description": "ஏரிகள் மற்றும் ஒரு மிருகக்காட்சிசாலையுடன் கூடிய மிகப்பெரிய மரத்தாலான பூங்கா",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMTEEiaAp9qyCruv8th-HhI9hwpkfbcjga8Oo90=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/103152148707404013039\">aldenita matic</a>"
+                ],
+                "place_id": "ChIJz7l8terXZUcR_k-oDwggPNc"
+            },
+            {
+                "name": "புனித மார்க் தேவாலயம்",
+                "description": "இடைக்கால பாணி தேவாலயத்தை சுமத்துகிறது",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOjT6-RBrABKe4LHjiAtEsVgS2rNAvnFg388pMc=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110914183623509613336\">radoslav irgl</a>"
+                ],
+                "place_id": "ChIJpe7-NB3XZUcRhluyxHW0U9o"
+            },
+            {
+                "name": "உடைந்த உறவுகளின் அருங்காட்சியகம்",
+                "description": "தோல்வியுற்ற காதல் விவகாரங்களுக்கு அர்ப்பணித்த கண்காட்சிகள்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNOVHI7LlWGlHwALhlO64M_rXp3B_h_2gIz0l7G=s1600-w843",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102789457814258550846\">Museum of Broken Relationships</a>"
+                ],
+                "place_id": "ChIJb1qoV_3WZUcRqGE4Q3JSbwg"
+            },
+            {
+                "name": "மேல் நகரம்",
+                "description": "ஜாக்ரெப் ஃபியூனிகுலர் & லோட்ராக் டவர் காட்சிகள்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOmdJjyZmrxpD_eLNRUJF_-HnpRI3Td5czvWhQc=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112438425298171789142\">Flying Pilot</a>"
+                ],
+                "place_id": "ChIJN10RzQLXZUcRFMHtGjL2wKM"
+            },
+            {
+                "name": "மெஸ்னிகா வேர்ட்ஸ்",
+                "description": "பல புதிய உணவுகளை காண்பிக்கும் பெரிய சந்தை",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOlcNvL0gFJZvUQuiF-Hgl7J01H5wns6n1iBy_U=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110848251406288610232\">문서진</a>"
+                ],
+                "place_id": "ChIJLxwBi_3WZUcR_R9fe_VXRu0"
+            },
+            {
+                "name": "மீமர்",
+                "description": "ஐரோப்பிய கலைக்கான நிலையான அருங்காட்சியகம்",
+                "photos": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Museo_Mimara%2C_Zagreb%2C_Croacia%2C_2014-04-20%2C_DD_01.JPG/1024px-Museo_Mimara%2C_Zagreb%2C_Croacia%2C_2014-04-20%2C_DD_01.JPG",
+                "html_attributions": [
+                    "<a href=\"https://commons.wikimedia.org/wiki/File:Museo_Mimara,_Zagreb,_Croacia,_2014-04-20,_DD_01.JPG\">Diego Delso</a>"
+                ],
+                "place_id": "ChIJmxpBIuXWZUcRrfdWIGjO9fo"
+            },
+            {
+                "name": "ஜாக்ரெப்பில் கலை பெவிலியன்",
+                "description": "19 ஆம் நூற்றாண்டின் கட்டிடத்தில் கலை அருங்காட்சியகம்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPnxhInGNRjFBqe-YCHg0-JMvVdznB-lJkn0lvU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105812225319439818791\">Umjetnički paviljon u Zagrebu</a>"
+                ],
+                "place_id": "ChIJTaNU_fjWZUcRp4xqLnvVHVI"
+            },
+            {
+                "name": "மாயைகளின் அருங்காட்சியகம்",
+                "description": "ஆப்டிகல் மாயைகள், புதிர்கள் & விளையாட்டுகள்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNUDK9RxtyXSwtRuCb0vKB4hN0svvRTbbb42CJD=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114877084684357404332\">Sotirios Konstantinou</a>"
+                ],
+                "place_id": "ChIJY3-8eGJ7WkcRnt0FEtg7t2A"
+            },
+            {
+                "name": "பான் ஜோசிப் ஜெலசிக் சதுக்கம்",
+                "description": "சிலை மற்றும் நீரூற்றுடன் மத்திய சதுரம்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMV_b2oD7-nrw5brt-9A3Uda_gt7aiA5B-Q-kwS=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105078911987805797425\">Cristian Gary Bufadel</a>"
+                ],
+                "place_id": "ChIJJzRSwv3WZUcRyf0U2EgFujg"
+            },
+            {
+                "name": "ஜாக்ரெப் 360 ° கண்காணிப்பு தளம்",
+                "description": "ஒரு பட்டியுடன் 16 வது மாடி கண்காணிப்பு தளம்",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPJp7iSTZxObFjLoeBSSeheLIkkLr5ZtuoJz3IB=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112820823951250162760\">Zagreb 360° observation deck</a>"
+                ],
+                "place_id": "ChIJHeuqu_3WZUcRB3LKU_1qRbg"
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 120,
+    "trivia": {
+        "items": [
+            "இது குரோஷியாவின் தலைநகரம் மற்றும் மிகப்பெரிய நகரமாகும்.",
+            "இது மெட்வெட்னிகா மலையின் தெற்கு சரிவுகளில் சாவா ஆற்றின் கரையில் அமைந்துள்ளது.",
+            "ஒவ்வொரு சனிக்கிழமையும் காலையில் எல்லோரும் காபி சாப்பிடுவதற்காக நகரத்திற்குச் செல்லும் ஒரு பாரம்பரியம் ஸ்பிகா.",
+            "நகரம் ஊர்வனவற்றால் நிரம்பியுள்ளது மற்றும் இடைக்கால பாம்புகள் மற்றும் டிராகன்களின் சிலைகள் ஏராளமாக உள்ளன.",
+            "உடைந்த உறவுகளின் அருங்காட்சியகம் அனைத்து வகையான உறவுகளிலிருந்தும் நினைவுச் சின்னங்களுக்கு மாற்றப்பட்டுள்ளது",
+            "ஜாக்ரெப் ஃபனிகுலர் என்பது உலகின் மிகக் குறுகிய ஒன்றாகும்.",
+            "ஜாக்ரெப் ஃபனிகுலர் என்பது உலகின் பாதுகாப்பான பொது போக்குவரத்து அமைப்பாகும், ஒரு நூற்றாண்டுக்கும் மேலாக பயணிகள் காயமடையவில்லை.",
+            "ஜாக்ரெப் மையத்தின் அடியில் மறைக்கப்பட்ட நிலத்தடி சுரங்கங்கள் உள்ளன, சில 200 ஆண்டுகளுக்கு முந்தையவை."
+        ]
+    }
+}

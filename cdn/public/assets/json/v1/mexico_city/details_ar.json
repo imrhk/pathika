@@ -1,0 +1,409 @@
+{
+    "basic_info": {
+        "name": "مكسيكو سيتي",
+        "id": "mexico_city",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sobrevuelos_CDMX_IMG_5982_%2839488832615%29.jpg/1024px-Sobrevuelos_CDMX_IMG_5982_%2839488832615%29.jpg",
+        "place": "مكسيكو سيتي من الجو",
+        "licence": "<a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en/\">CC0 1.0</a>",
+        "photo_by": "Gobierno CDMX",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Sobrevuelos_CDMX_IMG_5982_(39488832615).jpg"
+    },
+    "airport": {
+        "name": "مطار بينيتو خواريز الدولي"
+    },
+    "climate": {
+        "type": "المرتفعات شبه الاستوائية",
+        "items": [
+            {
+                "emoji": "❄️️",
+                "name": "شتاء",
+                "temp": "8 درجة مئوية إلى 23 درجة مئوية",
+                "duration": "نوفمبر-فبراير"
+            },
+            {
+                "emoji": "🌼",
+                "name": "ربيع",
+                "temp": "11 درجة مئوية إلى 27 درجة مئوية",
+                "duration": "أبريل-مايو"
+            },
+            {
+                "emoji": "☀",
+                "name": "الصيف",
+                "temp": "12 درجة مئوية إلى 23 درجة مئوية",
+                "duration": "يونيو-سبتمبر"
+            },
+            {
+                "emoji": "🍁",
+                "name": "الخريف",
+                "temp": "10 درجة مئوية إلى 22 درجة مئوية",
+                "duration": "أكتوبر"
+            },
+            {
+                "emoji": "☔️",
+                "name": "هطول الأمطار",
+                "temp": "متوسط 100 مم",
+                "duration": "يونيو-سبتمبر"
+            }
+        ]
+    },
+    "country": {
+        "name": "المكسيك 🇲🇽",
+        "continent": "شمال امريكا"
+    },
+    "currency": {
+        "name": "بيزو مكسيكي",
+        "symbol": "$",
+        "code": "MXN"
+    },
+    "dance": {
+        "name": "شراب تاباتيو"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "تاكو القس",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2019/09/26/04/01/tacos-pastor-4505032_1280.jpg",
+                "photo_by": "Yezmin",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "attribution_url": "https://pixabay.com/es/photos/tacos-de-pastor-tacos-tacos-mexico-4505032/"
+            },
+            {
+                "label": "شيلاكيليس",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/FOOD_Chilaquiles_1.jpg/640px-FOOD_Chilaquiles_1.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY 4.0</a>",
+                "photo_by": "Grueslayer",
+                "attribution_url": "https://en.wikipedia.org/wiki/Chilaquiles#/media/File:FOOD_Chilaquiles_1.jpg"
+            },
+            {
+                "label": "بوزول",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Pozole.jpg/640px-Pozole.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.5\">CC BY 2.5</a>",
+                "photo_by": "Meutia Chaerani / Indradi Soemardjan",
+                "attribution_url": "https://en.wikipedia.org/wiki/Pozole#/media/File:Pozole.jpg"
+            },
+            {
+                "label": "نخب",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Atun_tostadas_%2843015501031%29.jpg/640px-Atun_tostadas_%2843015501031%29.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "T.Tseng - Atun tostadas",
+                "attribution_url": "https://en.wikipedia.org/wiki/Tostada_(tortilla)#/media/File:Atun_tostadas_(43015501031).jpg"
+            },
+            {
+                "label": "تشيلي ونوجادا",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Chile_en_nogada.jpg/640px-Chile_en_nogada.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Arturo Sánchez",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Chile_en_nogada.jpg"
+            },
+            {
+                "label": "إنشيلادا",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2014/01/14/22/13/mexican-245240_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "adoproducciones",
+                "attribution_url": "https://pixabay.com/es/photos/m%C3%A9xico-enchilada-los-alimentos-245240/"
+            },
+            {
+                "label": "جواكامول",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Guacamole_IMGP1289.jpg/640px-Guacamole_IMGP1289.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Nikodem Nijaki",
+                "attribution_url": "https://en.wikipedia.org/wiki/Guacamole#/media/File:Guacamole_IMGP1289.jpg"
+            },
+            {
+                "label": "تمال",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2020/01/10/18/22/food-4755914_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "lawdawgmon",
+                "attribution_url": "https://pixabay.com/es/photos/los-alimentos-tamales-navidad-cena-4755914/"
+            },
+            {
+                "label": "تلاكويوس",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Mercado_de_Xochimilco_-_Tlacoyos.jpg/640px-Mercado_de_Xochimilco_-_Tlacoyos.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY 4.0</a>",
+                "photo_by": "ProtoplasmaKid",
+                "attribution_url": "https://en.wikipedia.org/wiki/Tlacoyo#/media/File:Mercado_de_Xochimilco_-_Tlacoyos.jpg"
+            },
+            {
+                "label": "Quesadilla",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2016/12/06/05/15/mexican-food-1885616_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "newstx",
+                "attribution_url": "https://pixabay.com/es/photos/comida-mexicana-quesadilla-1885616/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "إنتاج الحديد والصلب",
+        "secondary": [
+            "الغزل والنسيج",
+            "بلاستيك",
+            "يبني",
+            "أثاث المنزل"
+        ]
+    },
+    "language": {
+        "primary": "الأسبانية",
+        "secondary": [
+            "الناهيوتل",
+            "Otomi"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/mexico_city_map_ar_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/mexico_city_map_ar_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/mexico_city_map_ar_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/mexico_city_map_ar_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/mexico_city_map_ar_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Roma",
+                "poster_url": "https://image.tmdb.org/t/p/w300/mol9igUACes9yma2e7965qDBspL.jpg"
+            },
+            {
+                "title": "Y tu mamá también",
+                "poster_url": "https://image.tmdb.org/t/p/w300/hvdqoH6DMZjes6MXImW8J49l01Q.jpg"
+            },
+            {
+                "title": "Amores perros",
+                "poster_url": "https://image.tmdb.org/t/p/w300/n3QrQvLM7lZ9AGExvG89OREkCXW.jpg"
+            },
+            {
+                "title": "Sin Nombre",
+                "poster_url": "https://image.tmdb.org/t/p/w300/wncX4fshBUDvB2CaW3AYG7i3nUd.jpg"
+            },
+            {
+                "title": "Frida",
+                "poster_url": "https://image.tmdb.org/t/p/w300/12SHwwtEQ6u20gFsyxlK9SPgMk4.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "فريدا كاهلو",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg/512px-Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg",
+                "work": "دهان",
+                "place": "كويواكان ، مكسيكو سيتي"
+            },
+            {
+                "name": "كارلوس سليم",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Carlos_Slim_%2845680472234%29_%28cropped%29.jpg/585px-Carlos_Slim_%2845680472234%29_%28cropped%29.jpg",
+                "work": "أغنى شخص سابق في العالم",
+                "place": "مكسيكو سيتي",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "attribution_url" : "https://en.wikipedia.org/wiki/Carlos_Slim#/media/File:Carlos_Slim_(45680472234)_(cropped).jpg",
+                "photo_by" : "Secretaría de Cultura Ciudad de México"
+                
+            },
+            {
+                "name": "دييغو لونا",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Diego_Luna_Berlinale_2017.jpg/512px-Diego_Luna_Berlinale_2017.jpg",
+                "work": "الممثل",
+                "place": "تولوكا",
+                "photo_by" : "Maximilian Bühn",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "attribution_url" : "https://en.wikipedia.org/wiki/Diego_Luna#/media/File:Diego_Luna_Berlinale_2017.jpg"
+            },
+            {
+                "name": "ألفونسو كوارون",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Alfonso_Cuar%C3%B3n_%282013%29_cropped.jpg/576px-Alfonso_Cuar%C3%B3n_%282013%29_cropped.jpg",
+                "work": "المخرج الفائز بجائزة الأوسكار",
+                "place": "مكسيكو سيتي",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 2.0</a>",
+                "attribution_url" : "https://commons.wikimedia.org/wiki/File:Alfonso_Cuar%C3%B3n_(2013)_cropped.jpg",
+                "photo_by" : "Gage Skidmore"
+            },
+            {
+                "name": "لويس أرتورو فيلار سودك",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Luisito_Comunica.jpg/570px-Luisito_Comunica.jpg",
+                "work": "يوتيوب",
+                "place": "بويبلا",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "LocoWiki",
+                "attribution_url": "https://en.wikipedia.org/wiki/Luisito_Comunica#/media/File:Luisito_Comunica.jpg"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ كرة القدم",
+        "footer": "الملاكمة والبيسبول"
+    },
+    "time_to_visit": {
+        "primary": "مارس - أبريل",
+        "secondary": "أكتوبر-نوفمبر"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "غابة شابولتيبيك",
+                "description": "حديقة واسعة مع مناطق جذب مختلفة",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNiX8d8yQWbt9aD5vF7YrszZyOT-gEd7lzJSmt6=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102624289086857211059\">ANGELO VALLS</a>"
+                ],
+                "place_id": "ChIJP1dJRVf_0YURr8MZosHl4kI"
+            },
+            {
+                "name": "المركز التاريخي لمكسيكو سيتي",
+                "description": "مركز مدينة مزدحم ومعالم تاريخية",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNxqwVzxkS_uZcr46F7_pMoa_4DoJL8ey87YSDv=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114147572185631984481\">Chiwago Yuan</a>"
+                ],
+                "place_id": "ChIJvU0OLi350YURPYnEQKd0VZA"
+            },
+            {
+                "name": "القاعدة",
+                "description": "ساحة بارزة مع أحداث متكررة",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPcLf1n82_yHQuys6MnUslzAw8ncInKncoWtfvL=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105142617247400066240\">Raul Contreras</a>"
+                ],
+                "place_id": "ChIJ_6pkSM3-0YURDDaRslwM_0w"
+            },
+            {
+                "name": "متحف الأنثروبولوجيا الوطني",
+                "description": "متحف يضم قطعًا من المايا والمزيد",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM1KhbouUUMeekNFZU2eGQmSo2Vg8wA5qKfkksx=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115684849360595650882\">Rafael Campa</a>"
+                ],
+                "place_id": "ChIJScjIILQB0oURJMVub-MaI4Q"
+            },
+            {
+                "name": "متحف فريدا كاهلو",
+                "description": "تحول متحف الفنان الشهير إلى منزل",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOFBiANx_R0QHlUcb0s52LgjrFH-5xJey66ZGIy=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/109759390097978857129\">ALEX CHARI</a>"
+                ],
+                "place_id": "ChIJOz-6AMT_0YURofTM9_ekAWI"
+            },
+            {
+                "name": "قصر الفنون الجميلة",
+                "description": "مبنى فخم مخصص للفنون الجميلة",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipO4N1LuivEPrdVrznwfbIhrNqX-lQGqpgJ3e38w=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105303505373661530610\">indoorfish</a>"
+                ],
+                "place_id": "ChIJTQGqdSv50YURz-imDdIQ2Bc"
+            },
+            {
+                "name": "متحف عمدة تمبلو",
+                "description": "متحف مخصص للأزتيك",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNiORRs1j8zSLO-Qa6zbrJQXmgkm6T7z1ENx3BG=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106977980988418911889\">Jeremias Wolf</a>"
+                ],
+                "place_id": "ChIJ3dGBci350YURsDYUZcq-kIw"
+            },
+            {
+                "name": "كنيسة سيدة غوادالوبي",
+                "description": "كنيسة كاثوليكية بارزة وموقع الحج",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOl3e7dvgt86FE6Ko-SnRqrl4DoWEPrWttXtgdS=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116051672978537733687\">LookSnice Project</a>"
+                ],
+                "place_id": "ChIJxak0Kpz50YURsGoopfnqoCE"
+            },
+            {
+                "name": "كاتدرائية مكسيكو سيتي متروبوليتان",
+                "description": "كاتدرائية كبيرة مع ماض طابقي",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPWG9IH_cYGEQ5tT5GFTQNr2YoxC7BoD5yUr5ia=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117259414841066020164\">Justin Wiley</a>"
+                ],
+                "place_id": "ChIJ4a8nxjL50YURJ19RJ_A9T5E"
+            },
+            {
+                "name": "متحف سمية",
+                "description": "متحف فني يضم العديد من الأعمال الأوروبية",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPynWVa_w0azHBhfaDRvrVwaOsgIVEZLjedncB5=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104312276687792041979\">Ramiro Jarquín Ortiz</a>"
+                ],
+                "place_id": "ChIJCT06bhoC0oURszwDTCLicpM"
+            },
+            {
+                "name": "ملاك الاستقلال",
+                "description": "نصب تذكاري لحرب الاستقلال",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM2X5H7a3IAkCw4vhQU5wxr2DBJwYGFgL-9Ryqf=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110339278841892151615\">Ramon Fuentes</a>"
+                ],
+                "place_id": "ChIJYxW99TX_0YUR9y_gLQ5vNmw"
+            },
+            {
+                "name": "مول مركزي",
+                "description": "أقدم منتزه بلدي في مكسيكو سيتي",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPYvcRpQoJEJcABcSG4KdrWSdnfNd8tlTGhYEnr=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116252675598747639988\">Papu Cuevas Aguilar RCA</a>"
+                ],
+                "place_id": "ChIJS7R39Sr50YURQE6mi9UOKds"
+            },
+            {
+                "name": "نصب تذكاري للثورة",
+                "description": "معلم بارز مع سطح مراقبة ومتحف",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMgA8kEVjraSf4kaFU19y5QJ7iD3XX3hIfcIF5E=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100626866042472063445\">Vivi Delsa</a>"
+                ],
+                "place_id": "ChIJHwciRdL40YURIAzMPd3G_SA"
+            },
+            {
+                "name": "ستة أعلام المكسيك",
+                "description": "مدينة ملاهي كبيرة فيها جولات وعروض",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNohscorxR3CKfTB95sASt7SQhKHiMvVLU5Uk1L=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116006781809297032397\">Enrique Nava</a>"
+                ],
+                "place_id": "ChIJGZTVlcn_zYURRZxrmu06Qto"
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": -300,
+    "trivia": {
+        "items": [
+            "تسمى مكسيكو سيتي أيضًا CDMX (مكسيكو سيتي).",
+            "هي عاصمة المكسيك وأكبر مدنها.",
+            "وهي المدينة الأكثر اكتظاظًا بالسكان في أمريكا الشمالية (حوالي 9 ملايين).",
+            "تم بناء المدينة على ما كان بحيرة تيككوكو ، وقد غرقت أكثر من 9 أمتار في المائة عام الماضية ولا تزال تغرق.",
+            "كانت عاصمة إمبراطورية الأزتك التي احتلتها إسبانيا في القرن السادس عشر.",
+            "إنها أكبر مدينة ناطقة باللغة الإسبانية في العالم.",
+            "تقع على الجبال ، 2.2 كيلومتر فوق مستوى سطح البحر",
+            "Zócalo (Plaza de la Constitucìon) هو ثالث أكبر ساحة في العالم (المربع الأحمر وميدان تيانانمن أكبر).",
+            "يقع Zócalo في مركز ما كان يُعرف بإمبراطورية الأزتك.",
+            "6 Flags Amusement Park هو الأكبر في أمريكا اللاتينية.",
+            "لديها أكبر حلقة الثور في العالم.",
+            "كانت موطنا لكأس العالم FIFA (1970 و 1986) ودورة الألعاب الأولمبية التاسعة عشرة (1968).",
+            "Jarabe Tapatío هي أيضًا رقصة وطنية في المكسيك وتُعرف أيضًا باسم رقصة القبعة المكسيكية.",
+            "نظام المترو هو الأكبر في أمريكا اللاتينية ولديه بعض أقل الأسعار في العالم.",
+            "تعد الجامعة الوطنية المستقلة في المكسيك (UNAM) ، التي تقع في مكسيكو سيتي ، أكبر جامعة في القارة ، مع أكثر من 300000 طالب من جميع الخلفيات."            
+        ]
+    }
+}

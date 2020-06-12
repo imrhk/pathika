@@ -1,0 +1,409 @@
+{
+    "basic_info": {
+        "name": "मेक्सिको सिटी",
+        "id": "mexico_city",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sobrevuelos_CDMX_IMG_5982_%2839488832615%29.jpg/1024px-Sobrevuelos_CDMX_IMG_5982_%2839488832615%29.jpg",
+        "place": "मेक्सिको सिटी हवा से",
+        "licence": "<a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en/\">CC0 1.0</a>",
+        "photo_by": "Gobierno CDMX",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Sobrevuelos_CDMX_IMG_5982_(39488832615).jpg"
+    },
+    "airport": {
+        "name": "बेनिटो जुआरेज़ अंतर्राष्ट्रीय हवाई अड्डा"
+    },
+    "climate": {
+        "type": "उपोष्णकटिबंधीय उच्चभूमि",
+        "items": [
+            {
+                "emoji": "❄️️",
+                "name": "सर्दी",
+                "temp": "8 ° C से 23 ° C",
+                "duration": "नवम्बर-फरवरी"
+            },
+            {
+                "emoji": "🌼",
+                "name": "वसंत",
+                "temp": "11 ° C से 27 ° C",
+                "duration": "अप्रैल-मई"
+            },
+            {
+                "emoji": "☀",
+                "name": "गर्मी",
+                "temp": "12 ° C से 23 ° C",
+                "duration": "जून-सितम्बर"
+            },
+            {
+                "emoji": "🍁",
+                "name": "पतझड़",
+                "temp": "10 ° C से 22 ° C",
+                "duration": "अक्टूबर"
+            },
+            {
+                "emoji": "☔️",
+                "name": "वर्षा",
+                "temp": "औसत 100 मिमी",
+                "duration": "जून-सितम्बर"
+            }
+        ]
+    },
+    "country": {
+        "name": "मेक्सिको 🇲🇽",
+        "continent": "उत्तरी अमेरिका"
+    },
+    "currency": {
+        "name": "मैक्सिकन पेसो",
+        "symbol": "$",
+        "code": "MXN"
+    },
+    "dance": {
+        "name": "टैपटियो सिरप"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "ताकोस अल पादरी",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2019/09/26/04/01/tacos-pastor-4505032_1280.jpg",
+                "photo_by": "Yezmin",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "attribution_url": "https://pixabay.com/es/photos/tacos-de-pastor-tacos-tacos-mexico-4505032/"
+            },
+            {
+                "label": "Chilaquiles",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/FOOD_Chilaquiles_1.jpg/640px-FOOD_Chilaquiles_1.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY 4.0</a>",
+                "photo_by": "Grueslayer",
+                "attribution_url": "https://en.wikipedia.org/wiki/Chilaquiles#/media/File:FOOD_Chilaquiles_1.jpg"
+            },
+            {
+                "label": "Pozole",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Pozole.jpg/640px-Pozole.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.5\">CC BY 2.5</a>",
+                "photo_by": "Meutia Chaerani / Indradi Soemardjan",
+                "attribution_url": "https://en.wikipedia.org/wiki/Pozole#/media/File:Pozole.jpg"
+            },
+            {
+                "label": "टोस्ट",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Atun_tostadas_%2843015501031%29.jpg/640px-Atun_tostadas_%2843015501031%29.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "T.Tseng - Atun tostadas",
+                "attribution_url": "https://en.wikipedia.org/wiki/Tostada_(tortilla)#/media/File:Atun_tostadas_(43015501031).jpg"
+            },
+            {
+                "label": "चिली और नोगाडा",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Chile_en_nogada.jpg/640px-Chile_en_nogada.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "photo_by": "Arturo Sánchez",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Chile_en_nogada.jpg"
+            },
+            {
+                "label": "enchiladas",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2014/01/14/22/13/mexican-245240_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "adoproducciones",
+                "attribution_url": "https://pixabay.com/es/photos/m%C3%A9xico-enchilada-los-alimentos-245240/"
+            },
+            {
+                "label": "गुआकामोल",
+                "is_veg": true,
+                "is_non_veg": false,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Guacamole_IMGP1289.jpg/640px-Guacamole_IMGP1289.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Nikodem Nijaki",
+                "attribution_url": "https://en.wikipedia.org/wiki/Guacamole#/media/File:Guacamole_IMGP1289.jpg"
+            },
+            {
+                "label": "टमाले",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2020/01/10/18/22/food-4755914_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "lawdawgmon",
+                "attribution_url": "https://pixabay.com/es/photos/los-alimentos-tamales-navidad-cena-4755914/"
+            },
+            {
+                "label": "Tlacoyos",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Mercado_de_Xochimilco_-_Tlacoyos.jpg/640px-Mercado_de_Xochimilco_-_Tlacoyos.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY 4.0</a>",
+                "photo_by": "ProtoplasmaKid",
+                "attribution_url": "https://en.wikipedia.org/wiki/Tlacoyo#/media/File:Mercado_de_Xochimilco_-_Tlacoyos.jpg"
+            },
+            {
+                "label": "केसाडिला",
+                "is_veg": true,
+                "is_non_veg": true,
+                "photo": "https://cdn.pixabay.com/photo/2016/12/06/05/15/mexican-food-1885616_1280.jpg",
+                "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+                "photo_by": "newstx",
+                "attribution_url": "https://pixabay.com/es/photos/comida-mexicana-quesadilla-1885616/"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "लोहा और इस्पात उत्पादन",
+        "secondary": [
+            "कपड़ा",
+            "प्लास्टिक",
+            "सीमेंट",
+            "फर्नीचर"
+        ]
+    },
+    "language": {
+        "primary": "स्पेनिश",
+        "secondary": [
+            "Nahuatl",
+            "Otomi"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/mexico_city_map_hi_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/mexico_city_map_hi_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/mexico_city_map_hi_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/mexico_city_map_hi_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/mexico_city_map_hi_5.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "Roma",
+                "poster_url": "https://image.tmdb.org/t/p/w300/mol9igUACes9yma2e7965qDBspL.jpg"
+            },
+            {
+                "title": "Y tu mamá también",
+                "poster_url": "https://image.tmdb.org/t/p/w300/hvdqoH6DMZjes6MXImW8J49l01Q.jpg"
+            },
+            {
+                "title": "Amores perros",
+                "poster_url": "https://image.tmdb.org/t/p/w300/n3QrQvLM7lZ9AGExvG89OREkCXW.jpg"
+            },
+            {
+                "title": "Sin Nombre",
+                "poster_url": "https://image.tmdb.org/t/p/w300/wncX4fshBUDvB2CaW3AYG7i3nUd.jpg"
+            },
+            {
+                "title": "Frida",
+                "poster_url": "https://image.tmdb.org/t/p/w300/12SHwwtEQ6u20gFsyxlK9SPgMk4.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "फ्रीडा काहलो",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg/512px-Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg",
+                "work": "चित्रकार",
+                "place": "कोयोकेन, मेक्सिको सिटी"
+            },
+            {
+                "name": "कार्लोस स्लिम",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Carlos_Slim_%2845680472234%29_%28cropped%29.jpg/585px-Carlos_Slim_%2845680472234%29_%28cropped%29.jpg",
+                "work": "दुनिया में पूर्व सबसे अमीर व्यक्ति",
+                "place": "मेक्सिको सिटी",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/deed.en\">CC BY 2.0</a>",
+                "attribution_url" : "https://en.wikipedia.org/wiki/Carlos_Slim#/media/File:Carlos_Slim_(45680472234)_(cropped).jpg",
+                "photo_by" : "Secretaría de Cultura Ciudad de México"
+                
+            },
+            {
+                "name": "डिएगो लूना",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Diego_Luna_Berlinale_2017.jpg/512px-Diego_Luna_Berlinale_2017.jpg",
+                "work": "अभिनेता",
+                "place": "Toluca",
+                "photo_by" : "Maximilian Bühn",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "attribution_url" : "https://en.wikipedia.org/wiki/Diego_Luna#/media/File:Diego_Luna_Berlinale_2017.jpg"
+            },
+            {
+                "name": "अल्फांसो क्यूरोन",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Alfonso_Cuar%C3%B3n_%282013%29_cropped.jpg/576px-Alfonso_Cuar%C3%B3n_%282013%29_cropped.jpg",
+                "work": "ऑस्कर विजेता निर्देशक",
+                "place": "मेक्सिको सिटी",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/2.0\">CC BY-SA 2.0</a>",
+                "attribution_url" : "https://commons.wikimedia.org/wiki/File:Alfonso_Cuar%C3%B3n_(2013)_cropped.jpg",
+                "photo_by" : "Gage Skidmore"
+            },
+            {
+                "name": "लुइस आर्टुरो विल्लर सुदेक",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Luisito_Comunica.jpg/570px-Luisito_Comunica.jpg",
+                "work": "YouTuber",
+                "place": "प्यूब्ला",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">CC BY-SA 4.0</a>",
+                "photo_by": "LocoWiki",
+                "attribution_url": "https://en.wikipedia.org/wiki/Luisito_Comunica#/media/File:Luisito_Comunica.jpg"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ फुटबॉल",
+        "footer": "बॉक्सिंग और बेसबॉल"
+    },
+    "time_to_visit": {
+        "primary": "मार्च अप्रैल",
+        "secondary": "अक्टूबर-नवंबर"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "चापल्टेपेक वन",
+                "description": "विभिन्न आकर्षणों के साथ विशाल पार्क",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNiX8d8yQWbt9aD5vF7YrszZyOT-gEd7lzJSmt6=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102624289086857211059\">ANGELO VALLS</a>"
+                ],
+                "place_id": "ChIJP1dJRVf_0YURr8MZosHl4kI"
+            },
+            {
+                "name": "मेक्सिको सिटी का ऐतिहासिक केंद्र",
+                "description": "बज़ी शहर का केंद्र और ऐतिहासिक स्थल",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNxqwVzxkS_uZcr46F7_pMoa_4DoJL8ey87YSDv=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114147572185631984481\">Chiwago Yuan</a>"
+                ],
+                "place_id": "ChIJvU0OLi350YURPYnEQKd0VZA"
+            },
+            {
+                "name": "इमारत का बंद",
+                "description": "लगातार घटनाओं के साथ प्रमुख प्लाजा",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPcLf1n82_yHQuys6MnUslzAw8ncInKncoWtfvL=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105142617247400066240\">Raul Contreras</a>"
+                ],
+                "place_id": "ChIJ_6pkSM3-0YURDDaRslwM_0w"
+            },
+            {
+                "name": "मानव विज्ञान राष्ट्रीय संग्रहालय",
+                "description": "मय कलाकृतियों और अधिक के साथ संग्रहालय",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM1KhbouUUMeekNFZU2eGQmSo2Vg8wA5qKfkksx=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/115684849360595650882\">Rafael Campa</a>"
+                ],
+                "place_id": "ChIJScjIILQB0oURJMVub-MaI4Q"
+            },
+            {
+                "name": "फ्रीडा काहलो संग्रहालय",
+                "description": "प्रसिद्ध कलाकार का घर-संग्रहालय",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOFBiANx_R0QHlUcb0s52LgjrFH-5xJey66ZGIy=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/109759390097978857129\">ALEX CHARI</a>"
+                ],
+                "place_id": "ChIJOz-6AMT_0YURofTM9_ekAWI"
+            },
+            {
+                "name": "ललित कला का महल",
+                "description": "ललित कला को समर्पित भव्य इमारत",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipO4N1LuivEPrdVrznwfbIhrNqX-lQGqpgJ3e38w=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105303505373661530610\">indoorfish</a>"
+                ],
+                "place_id": "ChIJTQGqdSv50YURz-imDdIQ2Bc"
+            },
+            {
+                "name": "टेम्पो मेयर संग्रहालय",
+                "description": "संग्रहालय एज़्टेक को समर्पित है",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNiORRs1j8zSLO-Qa6zbrJQXmgkm6T7z1ENx3BG=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/106977980988418911889\">Jeremias Wolf</a>"
+                ],
+                "place_id": "ChIJ3dGBci350YURsDYUZcq-kIw"
+            },
+            {
+                "name": "बेसिलिका ऑफ अवर लेडी ऑफ ग्वाडालूपे",
+                "description": "प्रतिष्ठित कैथोलिक चर्च और तीर्थ स्थल",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOl3e7dvgt86FE6Ko-SnRqrl4DoWEPrWttXtgdS=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116051672978537733687\">LookSnice Project</a>"
+                ],
+                "place_id": "ChIJxak0Kpz50YURsGoopfnqoCE"
+            },
+            {
+                "name": "मेक्सिको सिटी मेट्रोपॉलिटन कैथेड्रल",
+                "description": "एक अतीत के साथ भव्य कैथेड्रल",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPWG9IH_cYGEQ5tT5GFTQNr2YoxC7BoD5yUr5ia=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117259414841066020164\">Justin Wiley</a>"
+                ],
+                "place_id": "ChIJ4a8nxjL50YURJ19RJ_A9T5E"
+            },
+            {
+                "name": "सौम्या संग्रहालय",
+                "description": "कई यूरोपीय कार्यों के साथ कला संग्रहालय",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPynWVa_w0azHBhfaDRvrVwaOsgIVEZLjedncB5=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/104312276687792041979\">Ramiro Jarquín Ortiz</a>"
+                ],
+                "place_id": "ChIJCT06bhoC0oURszwDTCLicpM"
+            },
+            {
+                "name": "द एंजल ऑफ इंडिपेंडेंस",
+                "description": "स्वतंत्रता स्मारक का प्रतिष्ठित युद्ध",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipM2X5H7a3IAkCw4vhQU5wxr2DBJwYGFgL-9Ryqf=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110339278841892151615\">Ramon Fuentes</a>"
+                ],
+                "place_id": "ChIJYxW99TX_0YUR9y_gLQ5vNmw"
+            },
+            {
+                "name": "सेंट्रल मॉल",
+                "description": "मेक्सिको सिटी का सबसे पुराना नगरपालिका पार्क",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPYvcRpQoJEJcABcSG4KdrWSdnfNd8tlTGhYEnr=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116252675598747639988\">Papu Cuevas Aguilar RCA</a>"
+                ],
+                "place_id": "ChIJS7R39Sr50YURQE6mi9UOKds"
+            },
+            {
+                "name": "क्रांति के लिए स्मारक",
+                "description": "अवलोकन डेक और संग्रहालय के साथ मील का पत्थर",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMgA8kEVjraSf4kaFU19y5QJ7iD3XX3hIfcIF5E=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/100626866042472063445\">Vivi Delsa</a>"
+                ],
+                "place_id": "ChIJHwciRdL40YURIAzMPd3G_SA"
+            },
+            {
+                "name": "सिक्स फ्लैग्स मेक्सिको",
+                "description": "सवारी और शो के साथ बड़े मनोरंजन पार्क",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNohscorxR3CKfTB95sASt7SQhKHiMvVLU5Uk1L=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/116006781809297032397\">Enrique Nava</a>"
+                ],
+                "place_id": "ChIJGZTVlcn_zYURRZxrmu06Qto"
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": -300,
+    "trivia": {
+        "items": [
+            "मेक्सिको सिटी को सीडीएमएक्स (मेक्सिको सिटी) भी कहा जाता है।",
+            "यह मेक्सिको की राजधानी और सबसे बड़ा शहर है।",
+            "यह उत्तरी अमेरिका में सबसे अधिक आबादी वाला शहर है (लगभग 9 मिलियन)।",
+            "शहर टेक्सकोको झील पर बना है और पिछले 100 वर्षों में 9 मीटर से अधिक डूब गया है और डूबना जारी है।",
+            "यह एज़्टेक साम्राज्य की राजधानी थी जिसे 16 वीं शताब्दी में स्पेन ने जीत लिया था।",
+            "यह दुनिया का सबसे बड़ा स्पेनिश बोलने वाला शहर है।",
+            "यह समुद्र तल से 2.2 किलोमीटर ऊपर पहाड़ों पर स्थित है",
+            "Zócalo (Plaza de la Constituc )on) दुनिया का तीसरा सबसे बड़ा वर्ग है (Red Square & Tiananmen Square बड़ा है)।",
+            "Zócalo एज़्टेक साम्राज्य के सटीक केंद्र में स्थित है।",
+            "6 झंडे मनोरंजन पार्क लैटिन अमेरिका में सबसे बड़ा है।",
+            "इसमें दुनिया की सबसे बड़ी बुल रिंग है।",
+            "यह दो फीफा विश्व कप (1970 और 1986) और 19 वें ओलंपिक खेलों (1968) का घर था।",
+            "जाराबे ताप्तीओ भी मेक्सिको का राष्ट्रीय नृत्य है और इसे मैक्सिकन टोपी नृत्य के रूप में भी जाना जाता है।",
+            "यह मेट्रो सिस्टम लैटिन अमेरिका में सबसे बड़ा है और इसमें दुनिया के सबसे कम किराए हैं।",
+            "मेक्सिको सिटी में स्थित नेशनल ऑटोनॉमस यूनिवर्सिटी ऑफ मेक्सिको (UNAM), सभी पृष्ठभूमि के 300,000 से अधिक छात्रों के साथ, महाद्वीप का सबसे बड़ा विश्वविद्यालय है।"            
+        ]
+    }
+}

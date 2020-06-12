@@ -1,0 +1,333 @@
+{
+    "basic_info": {
+        "name": "জাগরেব",
+        "id": "zagreb",
+        "background_image": "https://cdn.pixabay.com/photo/2020/03/03/10/30/hnk-zagreb-4898300_1280.jpg",
+        "place": "জাগ্রেবে আর্ট প্যাভিলিয়ন",
+        "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+        "photo_by": "FilipFilipovic",
+        "attribution_url": "https://pixabay.com/es/photos/hnk-zagreb-zagreb-estatua-monumento-4898300/"
+    },
+    "airport": {
+        "name": "ফ্রেঞ্জো টুডজমান বিমানবন্দর"
+    },
+    "climate": {
+        "type": "মহাসাগরীয়",
+        "items": [
+            {
+                "emoji": "❄️️",
+                "name": "শীতকালীন",
+                "temp": "-4 ডিগ্রি সেলসিয়াস থেকে -6। সে",
+                "duration": "ডিসেম্বর-ফেব্রুয়ারি"
+            },
+            {
+                "emoji": "🌼",
+                "name": "বসন্ত",
+                "temp": "1 ডিগ্রি সেলসিয়াস থেকে 22 ডিগ্রি সেলসিয়াস",
+                "duration": "মার্চ-মে"
+            },
+            {
+                "emoji": "☀",
+                "name": "গ্রীষ্ম",
+                "temp": "12 ডিগ্রি সেলসিয়াস থেকে 27 ডিগ্রি সেলসিয়াস",
+                "duration": "জুন আগস্ট"
+            },
+            {
+                "emoji": "🍁",
+                "name": "শরৎ",
+                "temp": "2 ডিগ্রি সেলসিয়াস থেকে 22 ডিগ্রি সেলসিয়াস",
+                "duration": "সেপ্টেম্বর-নভেম্বর"
+            }
+        ]
+    },
+    "country": {
+        "name": "ক্রোয়েশিয়া 🇭🇷",
+        "continent": "ইউরোপ"
+    },
+    "currency": {
+        "name": "ক্রোয়েশিয়ান",
+        "symbol": "kn",
+        "code": "HRK"
+    },
+    "dance": {
+        "name": "কোলো রাউন্ড ডান্স"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "জাগারস্কি rutrukli",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/%C5%A0trukli_iz_Okrugljaka.jpg/640px-%C5%A0trukli_iz_Okrugljaka.jpg",
+                "photo_by": "Bonč",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:%C5%A0trukli_iz_Okrugljaka.jpg"
+            },
+            {
+                "label": "Pašticada",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Pasticada.jpg/640px-Pasticada.jpg",
+                "licence": "<a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en/\">CC0 1.0</a>",
+                "photo_by": "Popo le Chien",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Pasticada.jpg"
+            },
+            {
+                "label": "জাগ্রেব স্টেক",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pathika.litedevs.com/places/zagreb/zagrebački_odrezak.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY 2.0</a>",
+                "photo_by": "Bev Sykes",
+                "attribution_url": "https://www.flickr.com/photos/basykes/4788098550/in/photolist-psdHj7-6BD6uZ-6ExU78-8i7fTh-4juuc2-83xSgE/"
+            },
+            {
+                "label": "পুরিকা I Mlinci",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://majkazmajka.com/wp-content/uploads/2018/11/purica-s-mlincima-1-1024x768.jpg",
+                "photo_by": "anelistar",
+                "attribution_url": "https://majkazmajka.com/purica-s-mlincima/"
+            },
+            {
+                "label": "আখরোট",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Orahnjaca_261208.jpg/640px-Orahnjaca_261208.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Roberta F.",
+                "attribution_url": "https://hr.wikipedia.org/wiki/Hrvatska_kuhinja#/media/Datoteka:Orahnjaca_261208.jpg"
+            },
+            {
+                "label": "ćevapi",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Original_Bosnian_Cevapcici.JPG/640px-Original_Bosnian_Cevapcici.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Raffaello",
+                "attribution_url": "https://en.wikipedia.org/wiki/%C4%86evapi#/media/File:Original_Bosnian_Cevapcici.JPG"
+            },
+            {
+                "label": "Cremeschnitte",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Kremna_rezina.jpg/640px-Kremna_rezina.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "UkPaolo",
+                "attribution_url": "https://en.wikipedia.org/wiki/Cremeschnitte#/media/File:Kremna_rezina.jpg"
+            },
+            {
+                "label": "শঙ্কু",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Pilecin_raznjici_New_%2816456582880%29.jpg/640px-Pilecin_raznjici_New_%2816456582880%29.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY 2.0</a>",
+                "photo_by": "Ivana Sokolović",
+                "attribution_url": "https://en.wikipedia.org/wiki/Ra%C5%BEnji%C4%87i#/media/File:Pilecin_raznjici_New_(16456582880).jpg"
+            },
+            {
+                "label": "Brodet",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Brodet.JPG/640px-Brodet.JPG"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "খাদ্য উত্পাদন",
+        "secondary": [
+            "ভ্রমণব্যবস্থা",
+            "কৃষি"
+        ]
+    },
+    "language": {
+        "primary": "ক্রোয়েশীয়",
+        "secondary": [
+            "ইংরেজি"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_bn_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_bn_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_bn_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_bn_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_bn_5.png",
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_bn_6.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "The High Sun",
+                "poster_url": "https://image.tmdb.org/t/p/w300/lc0mVZH4TgmASz1DJRIAmvzy4vc.jpg"
+            },
+            {
+                "title": "Fine mrtve djevojke",
+                "poster_url": "https://image.tmdb.org/t/p/w300/5897WssvDwtpu3pEolua4K2DCC3.jpg"
+            },
+            {
+                "title": "H-8",
+                "poster_url": "https://image.tmdb.org/t/p/w300/omziVU25i4srpMKInaxkLNPDfBe.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "নিকোলা টেসলা",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/N.Tesla.JPG/367px-N.Tesla.JPG",
+                "work": "উদ্ভাবক",
+                "place": "Smiljan"
+            },
+            {
+                "name": "মীরা ফুর্লান",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Mira_Furlan_by_Gage_Skidmore.jpg/362px-Mira_Furlan_by_Gage_Skidmore.jpg",
+                "work": "অভিনেত্রী",
+                "place": "জাগরেব",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url": "https://en.wikipedia.org/wiki/Mira_Furlan#/media/File:Mira_Furlan_by_Gage_Skidmore.jpg",
+                "photo_by": "Gage Skidmore"
+            },
+            {
+                "name": "মিরোস্লাভ ক্র্লিয়া",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Miroslav_Krle%C5%BEa_1953.jpg",
+                "work": "লেখক",
+                "place": "জাগরেব"
+            },
+            {
+                "name": "লুকা মড্রিক",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/ISL-HRV_%287%29.jpg/440px-ISL-HRV_%287%29.jpg",
+                "work": "ফুটবলার",
+                "place": "জ়েডার",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url": "https://en.wikipedia.org/wiki/Luka_Modri%C4%87#/media/File:ISL-HRV_(7).jpg",
+                "photo_by": "Светлана Бекетова"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ ফুটবল",
+        "footer": "ক্রোয়েশিয়া 2018 2018 ফিফা বিশ্বকাপ ফাইনালে পৌঁছেছে"
+    },
+    "time_to_visit": {
+        "primary": "মে, জুন",
+        "secondary": "সেপ্টেম্বর"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "জাগ্রেবের ক্যাথেড্রাল",
+                "description": "দ্বাদশ শতাব্দীর গোড়ার দিকে নিও গোথিক ক্যাথেড্রাল",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOR1CNArwskCKU4-ECWf63g3UJaA36kbAT6ysnW=s1600-w701",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117152555860261298062\">Kampüs Avrupa</a>"
+                ],
+                "place_id": "ChIJHR3v-AHXZUcR-W1_Hi9RKzE"
+            },
+            {
+                "name": "Maksimir",
+                "description": "হ্রদ এবং একটি চিড়িয়াখানা সহ ভারী কাঠের পার্ক",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMTEEiaAp9qyCruv8th-HhI9hwpkfbcjga8Oo90=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/103152148707404013039\">aldenita matic</a>"
+                ],
+                "place_id": "ChIJz7l8terXZUcR_k-oDwggPNc"
+            },
+            {
+                "name": "সেন্ট মার্ক চার্চ",
+                "description": "মধ্যযুগীয় ধাঁচের চার্চ চাপিয়ে দেওয়া",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOjT6-RBrABKe4LHjiAtEsVgS2rNAvnFg388pMc=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110914183623509613336\">radoslav irgl</a>"
+                ],
+                "place_id": "ChIJpe7-NB3XZUcRhluyxHW0U9o"
+            },
+            {
+                "name": "ভাঙা সম্পর্কের জাদুঘর",
+                "description": "ব্যর্থ প্রেমের বিষয়গুলিতে নিবেদিত প্রদর্শন করে",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNOVHI7LlWGlHwALhlO64M_rXp3B_h_2gIz0l7G=s1600-w843",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102789457814258550846\">Museum of Broken Relationships</a>"
+                ],
+                "place_id": "ChIJb1qoV_3WZUcRqGE4Q3JSbwg"
+            },
+            {
+                "name": "আপার টাউন",
+                "description": "জাগ্রেব ফানিকুলার এবং লটারিক টাওয়ারের দর্শন",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOmdJjyZmrxpD_eLNRUJF_-HnpRI3Td5czvWhQc=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112438425298171789142\">Flying Pilot</a>"
+                ],
+                "place_id": "ChIJN10RzQLXZUcRFMHtGjL2wKM"
+            },
+            {
+                "name": "মেসনিকা ওয়ার্ডস",
+                "description": "বড় বাজার অনেক তাজা খাবার প্রদর্শন করে",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOlcNvL0gFJZvUQuiF-Hgl7J01H5wns6n1iBy_U=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110848251406288610232\">문서진</a>"
+                ],
+                "place_id": "ChIJLxwBi_3WZUcR_R9fe_VXRu0"
+            },
+            {
+                "name": "Mimar",
+                "description": "ইউরোপীয় শিল্পের জন্য রাষ্ট্রীয় জাদুঘর",
+                "photos": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Museo_Mimara%2C_Zagreb%2C_Croacia%2C_2014-04-20%2C_DD_01.JPG/1024px-Museo_Mimara%2C_Zagreb%2C_Croacia%2C_2014-04-20%2C_DD_01.JPG",
+                "html_attributions": [
+                    "<a href=\"https://commons.wikimedia.org/wiki/File:Museo_Mimara,_Zagreb,_Croacia,_2014-04-20,_DD_01.JPG\">Diego Delso</a>"
+                ],
+                "place_id": "ChIJmxpBIuXWZUcRrfdWIGjO9fo"
+            },
+            {
+                "name": "জাগ্রেবে আর্ট প্যাভিলিয়ন",
+                "description": "19 শতকের ভবনে আর্ট মিউজিয়াম",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPnxhInGNRjFBqe-YCHg0-JMvVdznB-lJkn0lvU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105812225319439818791\">Umjetnički paviljon u Zagrebu</a>"
+                ],
+                "place_id": "ChIJTaNU_fjWZUcRp4xqLnvVHVI"
+            },
+            {
+                "name": "বিভ্রম জাদুঘর",
+                "description": "অপটিক্যাল বিভ্রম, ধাঁধা এবং গেমস",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNUDK9RxtyXSwtRuCb0vKB4hN0svvRTbbb42CJD=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114877084684357404332\">Sotirios Konstantinou</a>"
+                ],
+                "place_id": "ChIJY3-8eGJ7WkcRnt0FEtg7t2A"
+            },
+            {
+                "name": "বান জোসিপ জেলাসিক স্কয়ার are",
+                "description": "একটি মূর্তি এবং ঝর্ণা সহ কেন্দ্রীয় স্কোয়ার",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMV_b2oD7-nrw5brt-9A3Uda_gt7aiA5B-Q-kwS=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105078911987805797425\">Cristian Gary Bufadel</a>"
+                ],
+                "place_id": "ChIJJzRSwv3WZUcRyf0U2EgFujg"
+            },
+            {
+                "name": "জাগ্রেব 360 ° পর্যবেক্ষণ ডেক",
+                "description": "একটি বার সহ 16 তল পর্যবেক্ষণ ডেক",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPJp7iSTZxObFjLoeBSSeheLIkkLr5ZtuoJz3IB=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112820823951250162760\">Zagreb 360° observation deck</a>"
+                ],
+                "place_id": "ChIJHeuqu_3WZUcRB3LKU_1qRbg"
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 120,
+    "trivia": {
+        "items": [
+            "এটি ক্রোয়েশিয়ার রাজধানী এবং বৃহত্তম শহর।",
+            "এটি মেদভেদেনিকা পর্বতের দক্ষিণ opালুতে সাভা নদীর তীরে অবস্থিত।",
+            "স্পিকা প্রতি শনিবার সকালে একটি traditionতিহ্য অনুসরণ করা হয় যেখানে কফি খাওয়ার জন্য প্রত্যেকে শহরে শহরে যায়।",
+            "শহরটি সরীসৃপের এবং প্রচুর সাপের এবং ড্রাগনের মধ্যযুগীয় মূর্তিতে পূর্ণ।",
+            "ভাঙা সম্পর্কের যাদুঘরটি সকল প্রকারের সম্পর্ক থেকে স্মৃতিসৌধে আবদ্ধ",
+            "জাগ্রেব ফানিকুলার বিশ্বের সবচেয়ে সংক্ষিপ্ততম একটি।",
+            "জাগ্রেব ফানিকুলার হ'ল বিশ্বের নিরাপদ গণপরিবহন ব্যবস্থা, এক শতাব্দীরও বেশি সময় ধরে কোনও যাত্রী আহত হয়নি।",
+            "জাগ্রেব কেন্দ্রের নীচে লুকিয়ে রয়েছে ভূগর্ভস্থ টানেলগুলি, যার কয়েকটি 200 বছর আগের ডেট।"
+        ]
+    }
+}

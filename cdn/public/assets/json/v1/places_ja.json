@@ -44,7 +44,7 @@
         "id": "jaipur",
         "background_image": "https://storage.needpix.com/rsynced_images/jaipur-4027735_1280.jpg",
         "place": "ハジャマハル、ジャイプール",
-        "country" : "インド🇮🇳"
+        "country": "インド🇮🇳"
     },
     {
         "name": "サンクトペテルブルク",
@@ -54,6 +54,26 @@
         "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
         "photo_by": "Je-str",
         "attribution_url": "https://commons.wikimedia.org/wiki/File:Auferstehungskirche_(Sankt_Petersburg).JPG",
-        "country" : "ロシア🇷🇺"
+        "country": "ロシア🇷🇺"
+    },
+    {
+        "name": "メキシコシティ",
+        "id": "mexico_city",
+        "background_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/20150716_Mexico_City_at_Night_IMG_6614_by_sebaso.jpg/1024px-20150716_Mexico_City_at_Night_IMG_6614_by_sebaso.jpg",
+        "place": "Mexico City at Night",
+        "licence": "<a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en/\">CC0 1.0</a>",
+        "photo_by": "Sebaso",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:20150716_Mexico_City_at_Night_IMG_6614_by_sebaso.jpg",
+        "country": "メキシコ🇲🇽"
+    },
+    {
+        "name": "ザグレブ",
+        "id": "zagreb",
+        "background_image": "https://cdn.pixabay.com/photo/2020/03/03/10/30/hnk-zagreb-4898300_1280.jpg",
+        "place": "ザグレブのアートパビリオン",
+        "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+        "photo_by": "FilipFilipovic",
+        "attribution_url": "https://pixabay.com/es/photos/hnk-zagreb-zagreb-estatua-monumento-4898300/",
+        "country": "クロアチア🇭🇷"
     }
 ]

@@ -1,0 +1,333 @@
+{
+    "basic_info": {
+        "name": "ઝગ્રેબ",
+        "id": "zagreb",
+        "background_image": "https://cdn.pixabay.com/photo/2020/03/03/10/30/hnk-zagreb-4898300_1280.jpg",
+        "place": "ઝગ્રેબમાં આર્ટ પેવેલિયન",
+        "licence": "<a href=\"https://pixabay.com/service/license/\">Pixabay License</a>",
+        "photo_by": "FilipFilipovic",
+        "attribution_url": "https://pixabay.com/es/photos/hnk-zagreb-zagreb-estatua-monumento-4898300/"
+    },
+    "airport": {
+        "name": "ફ્રાંજો તુડજમાન એરપોર્ટ"
+    },
+    "climate": {
+        "type": "મહાસાગર",
+        "items": [
+            {
+                "emoji": "❄️️",
+                "name": "શિયાળો",
+                "temp": "-4. સે થી -6. સે",
+                "duration": "ડિસે-ફેબ્રુ"
+            },
+            {
+                "emoji": "🌼",
+                "name": "વસંત",
+                "temp": "1 22 સે થી 22. સે",
+                "duration": "માર્-મે"
+            },
+            {
+                "emoji": "☀",
+                "name": "ઉનાળો",
+                "temp": "12 ° સે થી 27. સે",
+                "duration": "Jun-Aug"
+            },
+            {
+                "emoji": "🍁",
+                "name": "પાનખર",
+                "temp": "2 22 સે થી 22. સે",
+                "duration": "સપ્ટે-નવે"
+            }
+        ]
+    },
+    "country": {
+        "name": "ક્રોએશિયા 🇭🇷",
+        "continent": "યુરોપ"
+    },
+    "currency": {
+        "name": "ક્રોએશિયન",
+        "symbol": "kn",
+        "code": "HRK"
+    },
+    "dance": {
+        "name": "કોલો રાઉન્ડ ડાન્સ"
+    },
+    "food": {
+        "items": [
+            {
+                "label": "ઝેગોર્સ્કી ઇટ્રુકલી",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/%C5%A0trukli_iz_Okrugljaka.jpg/640px-%C5%A0trukli_iz_Okrugljaka.jpg",
+                "photo_by": "Bonč",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:%C5%A0trukli_iz_Okrugljaka.jpg"
+            },
+            {
+                "label": "પેટીકડા",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Pasticada.jpg/640px-Pasticada.jpg",
+                "licence": "<a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en/\">CC0 1.0</a>",
+                "photo_by": "Popo le Chien",
+                "attribution_url": "https://commons.wikimedia.org/wiki/File:Pasticada.jpg"
+            },
+            {
+                "label": "ઝગ્રેબ ટુકડો",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://cdn.pathika.litedevs.com/places/zagreb/zagrebački_odrezak.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY 2.0</a>",
+                "photo_by": "Bev Sykes",
+                "attribution_url": "https://www.flickr.com/photos/basykes/4788098550/in/photolist-psdHj7-6BD6uZ-6ExU78-8i7fTh-4juuc2-83xSgE/"
+            },
+            {
+                "label": "પુરીકા I Mlinci",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://majkazmajka.com/wp-content/uploads/2018/11/purica-s-mlincima-1-1024x768.jpg",
+                "photo_by": "anelistar",
+                "attribution_url": "https://majkazmajka.com/purica-s-mlincima/"
+            },
+            {
+                "label": "અખરોટ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Orahnjaca_261208.jpg/640px-Orahnjaca_261208.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Roberta F.",
+                "attribution_url": "https://hr.wikipedia.org/wiki/Hrvatska_kuhinja#/media/Datoteka:Orahnjaca_261208.jpg"
+            },
+            {
+                "label": "ઇવાપી",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Original_Bosnian_Cevapcici.JPG/640px-Original_Bosnian_Cevapcici.JPG",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "Raffaello",
+                "attribution_url": "https://en.wikipedia.org/wiki/%C4%86evapi#/media/File:Original_Bosnian_Cevapcici.JPG"
+            },
+            {
+                "label": "ક્રેમેસ્નિટી",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Kremna_rezina.jpg/640px-Kremna_rezina.jpg",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "photo_by": "UkPaolo",
+                "attribution_url": "https://en.wikipedia.org/wiki/Cremeschnitte#/media/File:Kremna_rezina.jpg"
+            },
+            {
+                "label": "સ્કેવર્સ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Pilecin_raznjici_New_%2816456582880%29.jpg/640px-Pilecin_raznjici_New_%2816456582880%29.jpg",
+                "licence": "<a href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY 2.0</a>",
+                "photo_by": "Ivana Sokolović",
+                "attribution_url": "https://en.wikipedia.org/wiki/Ra%C5%BEnji%C4%87i#/media/File:Pilecin_raznjici_New_(16456582880).jpg"
+            },
+            {
+                "label": "બ્રોડેટ",
+                "is_veg": false,
+                "is_non_veg": true,
+                "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Brodet.JPG/640px-Brodet.JPG"
+            }
+        ]
+    },
+    "industries": {
+        "primary": "ફૂડ મેન્યુફેક્ચરિંગ",
+        "secondary": [
+            "પ્રવાસન",
+            "કૃષિ"
+        ]
+    },
+    "language": {
+        "primary": "ક્રોએશિયન",
+        "secondary": [
+            "અંગ્રેજી"
+        ]
+    },
+    "location_map": {
+        "items": [
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_gu_1.png",
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_gu_2.png",
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_gu_3.png",
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_gu_4.png",
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_gu_5.png",
+            "https://cdn.pathika.litedevs.com/assets/images/zagreb_map_gu_6.png"
+        ]
+    },
+    "movies": {
+        "items": [
+            {
+                "title": "The High Sun",
+                "poster_url": "https://image.tmdb.org/t/p/w300/lc0mVZH4TgmASz1DJRIAmvzy4vc.jpg"
+            },
+            {
+                "title": "Fine mrtve djevojke",
+                "poster_url": "https://image.tmdb.org/t/p/w300/5897WssvDwtpu3pEolua4K2DCC3.jpg"
+            },
+            {
+                "title": "H-8",
+                "poster_url": "https://image.tmdb.org/t/p/w300/omziVU25i4srpMKInaxkLNPDfBe.jpg"
+            }
+        ]
+    },
+    "persons": {
+        "items": [
+            {
+                "name": "નિકોલા ટેસ્લા",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/N.Tesla.JPG/367px-N.Tesla.JPG",
+                "work": "શોધક",
+                "place": "સ્મિલજન"
+            },
+            {
+                "name": "મીરા ફુરલાન",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Mira_Furlan_by_Gage_Skidmore.jpg/362px-Mira_Furlan_by_Gage_Skidmore.jpg",
+                "work": "અભિનેત્રી",
+                "place": "ઝગ્રેબ",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url": "https://en.wikipedia.org/wiki/Mira_Furlan#/media/File:Mira_Furlan_by_Gage_Skidmore.jpg",
+                "photo_by": "Gage Skidmore"
+            },
+            {
+                "name": "મીરોસ્લાવ ક્રિલેના",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Miroslav_Krle%C5%BEa_1953.jpg",
+                "work": "લેખક",
+                "place": "ઝગ્રેબ"
+            },
+            {
+                "name": "લુકા મોડ્રિક",
+                "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/ISL-HRV_%287%29.jpg/440px-ISL-HRV_%287%29.jpg",
+                "work": "ફુટબોલર",
+                "place": "ઝદર",
+                "licence": "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>",
+                "attribution_url": "https://en.wikipedia.org/wiki/Luka_Modri%C4%87#/media/File:ISL-HRV_(7).jpg",
+                "photo_by": "Светлана Бекетова"
+            }
+        ]
+    },
+    "sports": {
+        "title": "⚽ ફૂટબ .લ",
+        "footer": "ક્રોએશિયા 2018 2018 ફિફા વર્લ્ડ કપ ફાઇનલમાં પહોંચી"
+    },
+    "time_to_visit": {
+        "primary": "મે-જૂન",
+        "secondary": "સપ્ટેમ્બર"
+    },
+    "tourist_places": {
+        "items": [
+            {
+                "name": "ઝગ્રેબનું કેથેડ્રલ",
+                "description": "12 મી સદીની શરૂઆતમાં નીઓ ગોથિક કેથેડ્રલ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOR1CNArwskCKU4-ECWf63g3UJaA36kbAT6ysnW=s1600-w701",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/117152555860261298062\">Kampüs Avrupa</a>"
+                ],
+                "place_id": "ChIJHR3v-AHXZUcR-W1_Hi9RKzE"
+            },
+            {
+                "name": "માકસિમીર",
+                "description": "તળાવો અને ઝૂ સાથે ભારે લાકડાવાળું ઉદ્યાન",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMTEEiaAp9qyCruv8th-HhI9hwpkfbcjga8Oo90=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/103152148707404013039\">aldenita matic</a>"
+                ],
+                "place_id": "ChIJz7l8terXZUcR_k-oDwggPNc"
+            },
+            {
+                "name": "સેન્ટ માર્કસ ચર્ચ",
+                "description": "મધ્યયુગીન-શૈલીની ચર્ચ લાદી",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOjT6-RBrABKe4LHjiAtEsVgS2rNAvnFg388pMc=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110914183623509613336\">radoslav irgl</a>"
+                ],
+                "place_id": "ChIJpe7-NB3XZUcRhluyxHW0U9o"
+            },
+            {
+                "name": "તૂટેલા સંબંધોનું સંગ્રહાલય",
+                "description": "નિષ્ફળ પ્રેમ બાબતો માટે સમર્પિત પ્રદર્શનો",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNOVHI7LlWGlHwALhlO64M_rXp3B_h_2gIz0l7G=s1600-w843",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/102789457814258550846\">Museum of Broken Relationships</a>"
+                ],
+                "place_id": "ChIJb1qoV_3WZUcRqGE4Q3JSbwg"
+            },
+            {
+                "name": "અપર ટાઉન",
+                "description": "ઝગ્રેબ ફ્યુનિક્યુલર અને લોટ્રિક ટાવર જોવાઈ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOmdJjyZmrxpD_eLNRUJF_-HnpRI3Td5czvWhQc=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112438425298171789142\">Flying Pilot</a>"
+                ],
+                "place_id": "ChIJN10RzQLXZUcRFMHtGjL2wKM"
+            },
+            {
+                "name": "મેસ્નીકા શબ્દો",
+                "description": "મોટું બજાર ઘણાં તાજા ખોરાકનું પ્રદર્શન કરે છે",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipOlcNvL0gFJZvUQuiF-Hgl7J01H5wns6n1iBy_U=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/110848251406288610232\">문서진</a>"
+                ],
+                "place_id": "ChIJLxwBi_3WZUcR_R9fe_VXRu0"
+            },
+            {
+                "name": "મીમર",
+                "description": "યુરોપિયન કલા માટે રાજ્ય મ્યુઝિયમ",
+                "photos": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Museo_Mimara%2C_Zagreb%2C_Croacia%2C_2014-04-20%2C_DD_01.JPG/1024px-Museo_Mimara%2C_Zagreb%2C_Croacia%2C_2014-04-20%2C_DD_01.JPG",
+                "html_attributions": [
+                    "<a href=\"https://commons.wikimedia.org/wiki/File:Museo_Mimara,_Zagreb,_Croacia,_2014-04-20,_DD_01.JPG\">Diego Delso</a>"
+                ],
+                "place_id": "ChIJmxpBIuXWZUcRrfdWIGjO9fo"
+            },
+            {
+                "name": "ઝગ્રેબમાં આર્ટ પેવેલિયન",
+                "description": "19 મી સદીના મકાનમાં આર્ટ મ્યુઝિયમ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPnxhInGNRjFBqe-YCHg0-JMvVdznB-lJkn0lvU=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105812225319439818791\">Umjetnički paviljon u Zagrebu</a>"
+                ],
+                "place_id": "ChIJTaNU_fjWZUcRp4xqLnvVHVI"
+            },
+            {
+                "name": "ભ્રાંતિનું મ્યુઝિયમ",
+                "description": "ઓપ્ટિકલ ભ્રમણાઓ, કોયડા અને રમતો",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipNUDK9RxtyXSwtRuCb0vKB4hN0svvRTbbb42CJD=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/114877084684357404332\">Sotirios Konstantinou</a>"
+                ],
+                "place_id": "ChIJY3-8eGJ7WkcRnt0FEtg7t2A"
+            },
+            {
+                "name": "બ Josન જોસિપ જેલાકિક સ્ક્વેર",
+                "description": "પ્રતિમા અને ફુવારો સાથેનું કેન્દ્રિય ચોરસ",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipMV_b2oD7-nrw5brt-9A3Uda_gt7aiA5B-Q-kwS=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/105078911987805797425\">Cristian Gary Bufadel</a>"
+                ],
+                "place_id": "ChIJJzRSwv3WZUcRyf0U2EgFujg"
+            },
+            {
+                "name": "ઝગ્રેબ 360. અવલોકન ડેક",
+                "description": "બાર સાથે 16 મી માળનું નિરીક્ષણ ડેક",
+                "photos": "https://lh3.googleusercontent.com/p/AF1QipPJp7iSTZxObFjLoeBSSeheLIkkLr5ZtuoJz3IB=s1600-w900",
+                "html_attributions": [
+                    "<a href=\"https://maps.google.com/maps/contrib/112820823951250162760\">Zagreb 360° observation deck</a>"
+                ],
+                "place_id": "ChIJHeuqu_3WZUcRB3LKU_1qRbg"
+            }
+        ]
+    },
+    "timezone_offset_in_minutes": 120,
+    "trivia": {
+        "items": [
+            "તે ક્રોએશિયાનું પાટનગર અને સૌથી મોટું શહેર છે.",
+            "તે મેદવેદનીકા પર્વતની દક્ષિણ opોળાવ પર સાવા નદીના કાંઠે સ્થિત છે.",
+            "સ્પિકા એ એક પરંપરા છે જે દર શનિવારે સવારે અનુસરવામાં આવે છે જ્યાં દરેક વ્યક્તિ કોફી પીવા માટે ડાઉનટાઉન જાય છે.",
+            "આ શહેર સરિસૃપોથી ભરપૂર છે અને સાપ અને ડ્રેગનની મધ્યયુગીન પ્રતિમાઓ ભરપૂર છે.",
+            "તૂટેલા સંબંધોનું મ્યુઝિયમ, તમામ પ્રકારના સંબંધોથી સ્મૃતિચિત્રો માટે સમર્પિત છે",
+            "ઝગ્રેબ ફ્યુનિક્યુલર એ વિશ્વમાં સૌથી ટૂંકી છે.",
+            "ઝગ્રેબ ફ્યુનિક્યુલર વિશ્વની સલામત જાહેર પરિવહન પ્રણાલી છે, જેમાં એક સદીથી વધુ મુસાફરોને કોઈ ઇજા પહોંચી નથી.",
+            "ઝગ્રેબ સેન્ટરની નીચે છુપાયેલા ભૂગર્ભ ટનલ છે, જે કેટલીક 200 વર્ષ પહેલાંની છે."
+        ]
+    }
+}
