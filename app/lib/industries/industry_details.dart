@@ -2,9 +2,9 @@ import 'dart:convert';
 
 class IndustryDetails {
   String primary;
-  List<String> secondary;
+  List<String>? secondary;
   IndustryDetails({
-    this.primary,
+    required this.primary,
     this.secondary,
   });
 
@@ -13,8 +13,8 @@ class IndustryDetails {
   }
 
   IndustryDetails copyWith({
-    String primary,
-    List<String> secondary,
+    String? primary,
+    List<String>? secondary,
   }) {
     return IndustryDetails(
       primary: primary ?? this.primary,
@@ -25,11 +25,11 @@ class IndustryDetails {
   Map<String, dynamic> toMap() {
     return {
       'primary': primary,
-      'secondary': List<dynamic>.from(secondary.map((x) => x)),
+      'secondary': List<dynamic>.from(secondary?.map((x) => x) ?? []),
     };
   }
 
-  static IndustryDetails fromMap(Map<String, dynamic> map) {
+  static IndustryDetails? fromMap(Map<String, dynamic>? map) {
     if (map == null) return null;
 
     return IndustryDetails(
@@ -40,7 +40,7 @@ class IndustryDetails {
 
   String toJson() => json.encode(toMap());
 
-  static IndustryDetails fromJson(String source) =>
+  static IndustryDetails? fromJson(String source) =>
       fromMap(json.decode(source));
 
   @override
@@ -48,12 +48,12 @@ class IndustryDetails {
       'LanguageDetails primary: $primary, secondary: $secondary';
 
   @override
-  bool operator ==(Object o) {
-    if (identical(this, o)) return true;
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
 
-    return o is IndustryDetails &&
-        o.primary == primary &&
-        o.secondary == secondary;
+    return other is IndustryDetails &&
+        other.primary == primary &&
+        other.secondary == secondary;
   }
 
   @override

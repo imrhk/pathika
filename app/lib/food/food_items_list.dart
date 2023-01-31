@@ -5,7 +5,7 @@ import 'package:pathika/food/food_item_details.dart';
 class FoodItemsList {
   List<FoodItemDetails> items;
   FoodItemsList({
-    this.items,
+    this.items = const [],
   });
 
   factory FoodItemsList.empty() {
@@ -13,7 +13,7 @@ class FoodItemsList {
   }
 
   FoodItemsList copyWith({
-    List<FoodItemDetails> items,
+    List<FoodItemDetails>? items,
   }) {
     return FoodItemsList(
       items: items ?? this.items,
@@ -26,7 +26,7 @@ class FoodItemsList {
     };
   }
 
-  static FoodItemsList fromMap(Map<String, dynamic> map) {
+  static FoodItemsList? fromMap(Map<String, dynamic>? map) {
     if (map == null) return null;
 
     return FoodItemsList(
@@ -37,16 +37,16 @@ class FoodItemsList {
 
   String toJson() => json.encode(toMap());
 
-  static FoodItemsList fromJson(String source) => fromMap(json.decode(source));
+  static FoodItemsList? fromJson(String source) => fromMap(json.decode(source));
 
   @override
   String toString() => 'FoodItemsList items: $items';
 
   @override
-  bool operator ==(Object o) {
-    if (identical(this, o)) return true;
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
 
-    return o is FoodItemsList && o.items == items;
+    return other is FoodItemsList && other.items == items;
   }
 
   @override

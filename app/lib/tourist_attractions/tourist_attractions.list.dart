@@ -5,15 +5,15 @@ import 'tourist_attraction_details.dart';
 class TouristAttractionsList {
   List<TouristAttractionDetails> items;
   TouristAttractionsList({
-    this.items,
+    this.items = const [],
   });
-  
+
   factory TouristAttractionsList.empty() {
     return TouristAttractionsList(items: []);
-  } 
+  }
 
   TouristAttractionsList copyWith({
-    List<TouristAttractionDetails> items,
+    List<TouristAttractionDetails>? items,
   }) {
     return TouristAttractionsList(
       items: items ?? this.items,
@@ -26,27 +26,28 @@ class TouristAttractionsList {
     };
   }
 
-  static TouristAttractionsList fromMap(Map<String, dynamic> map) {
+  static TouristAttractionsList? fromMap(Map<String, dynamic>? map) {
     if (map == null) return null;
-  
+
     return TouristAttractionsList(
-      items: List<TouristAttractionDetails>.from(map['items']?.map((x) => TouristAttractionDetails.fromMap(x))),
+      items: List<TouristAttractionDetails>.from(
+          map['items']?.map((x) => TouristAttractionDetails.fromMap(x))),
     );
   }
 
   String toJson() => json.encode(toMap());
 
-  static TouristAttractionsList fromJson(String source) => fromMap(json.decode(source));
+  static TouristAttractionsList? fromJson(String source) =>
+      fromMap(json.decode(source));
 
   @override
   String toString() => 'TouristAttractionsList items: $items';
 
   @override
-  bool operator ==(Object o) {
-    if (identical(this, o)) return true;
-  
-    return o is TouristAttractionsList &&
-      o.items == items;
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+
+    return other is TouristAttractionsList && other.items == items;
   }
 
   @override

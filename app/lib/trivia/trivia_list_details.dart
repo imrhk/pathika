@@ -3,7 +3,7 @@ import 'dart:convert';
 class TriviaListDetails {
   final List<String> items;
   TriviaListDetails({
-    this.items,
+    required this.items,
   });
 
   factory TriviaListDetails.empty() {
@@ -11,7 +11,7 @@ class TriviaListDetails {
   }
 
   TriviaListDetails copyWith({
-    List<String> items,
+    List<String>? items,
   }) {
     return TriviaListDetails(
       items: items ?? this.items,
@@ -24,9 +24,9 @@ class TriviaListDetails {
     };
   }
 
-  static TriviaListDetails fromMap(Map<String, dynamic> map) {
+  static TriviaListDetails? fromMap(Map<String, dynamic>? map) {
     if (map == null) return null;
-  
+
     return TriviaListDetails(
       items: List<String>.from(map['items']),
     );
@@ -34,17 +34,17 @@ class TriviaListDetails {
 
   String toJson() => json.encode(toMap());
 
-  static TriviaListDetails fromJson(String source) => fromMap(json.decode(source));
+  static TriviaListDetails? fromJson(String source) =>
+      fromMap(json.decode(source));
 
   @override
   String toString() => 'TriviaListDetails(items: $items)';
 
   @override
-  bool operator ==(Object o) {
-    if (identical(this, o)) return true;
-  
-    return o is TriviaListDetails &&
-      o.items == items;
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+
+    return other is TriviaListDetails && other.items == items;
   }
 
   @override

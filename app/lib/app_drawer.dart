@@ -4,10 +4,8 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_cupertino_settings/flutter_cupertino_settings.dart';
-import 'package:pathika/common/cupertino_list_tile.dart';
 import 'package:pathika/localization/localization_bloc.dart';
 import 'package:pathika/places/place_info.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:universal_io/io.dart' show HttpClient, Platform;
 
 import 'package:flutter/material.dart';
@@ -17,129 +15,138 @@ import 'app_language/select_language_page.dart';
 import 'common/constants.dart';
 import 'core/repository.dart';
 import 'theme/app_theme.dart';
+import 'theme/app_theme_bloc.dart';
+import 'theme/app_theme_event.dart';
 
 class AppSettings extends StatelessWidget {
-  final Function changeAppTheme;
-  final Function appLanguageChanged;
+  final Function? appLanguageChanged;
   final HttpClient httpClient;
-  final String currentLanguge;
-  final Function changePlace;
+  final String? currentLanguge;
+  final Function? changePlace;
 
   const AppSettings({
-    Key key,
-    this.changeAppTheme,
+    super.key,
     this.appLanguageChanged,
-    this.httpClient,
+    required this.httpClient,
     this.currentLanguge,
     this.changePlace,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<AppTheme>(
-      builder: (context, snapshot) {
-        if (snapshot.hasData) {
-          print(snapshot.data);
-          return getSettingsContainer(
-            widgets: [
-              getSettingsSectionHeader(
-                BlocProvider.of<LocalizationBloc>(context).localize('theme', 'Theme'),
-              ),
-              getRadioGroupWidget(
-                  items: LinkedHashMap.from(
-                    {
-                      BlocProvider.of<LocalizationBloc>(context).localize('light', 'Light'): AppTheme.light(),
-                      BlocProvider.of<LocalizationBloc>(context).localize('colorful_light', 'Colorful Light'): AppTheme.colorfulLight(),
-                      BlocProvider.of<LocalizationBloc>(context).localize('dark', 'Dark'): AppTheme.dark(),
-                      BlocProvider.of<LocalizationBloc>(context).localize('colorful_dark', 'Colorful Dark'): AppTheme.colorfulDark(),
-                      BlocProvider.of<LocalizationBloc>(context).localize('gold_dark', 'Gold Dark'): AppTheme.goldDark(),
-                    },
+    final appTheme = BlocProvider.of<AppThemeBloc>(context).state.appThemeData;
+    return getSettingsContainer(
+      widgets: [
+        getSettingsSectionHeader(
+          BlocProvider.of<LocalizationBloc>(context).localize('theme', 'Theme'),
+        ),
+        getRadioGroupWidget(
+            items: LinkedHashMap.from(
+              {
+                BlocProvider.of<LocalizationBloc>(context)
+                    .localize('light', 'Light'): AppTheme.light(),
+                BlocProvider.of<LocalizationBloc>(context)
+                        .localize('colorful_light', 'Colorful Light'):
+                    AppTheme.colorfulLight(),
+                BlocProvider.of<LocalizationBloc>(context)
+                    .localize('dark', 'Dark'): AppTheme.dark(),
+                BlocProvider.of<LocalizationBloc>(context).localize(
+                    'colorful_dark', 'Colorful Dark'): AppTheme.colorfulDark(),
+                BlocProvider.of<LocalizationBloc>(context)
+                    .localize('gold_dark', 'Gold Dark'): AppTheme.goldDark(),
+              },
+            ),
+            currentSelection: appTheme,
+            onSelected: (appTheme) {
+              BlocProvider.of<AppThemeBloc>(context)
+                  .add(ChangeAppTheme(appTheme));
+              Navigator.pop(context);
+            }),
+        getSettingsSectionHeader(''),
+        getSettingsWidgets(GestureDetector(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Expanded(
+                child: Text(
+                  BlocProvider.of<LocalizationBloc>(context)
+                      .localize('change_langauge', 'Change Language'),
+                  style: TextStyle(
+                    color: getThemeTextColor(context),
                   ),
-                  currentSelection: snapshot.data,
-                  onSelected: changeAppTheme),
-              getSettingsSectionHeader(''),
-              getSettingsWidgets(GestureDetector(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    Expanded(
-                      child: Text(
-                        BlocProvider.of<LocalizationBloc>(context).localize('change_langauge', 'Change Language'),
-                        style: TextStyle(
-                          color: getThemeTextColor(context),
-                        ),
-                      ),
-                    ),
-                    Icon(
-                      Platform.isIOS ? CupertinoIcons.right_chevron : Icons.keyboard_arrow_right,
-                      color: Platform.isIOS ? CupertinoColors.activeBlue : null,
-                    ),
-                  ],
                 ),
-                onTap: () async {
-                  final response = await Navigator.of(context).push(
-                    getPageRoute(
-                        builder: (ctx) => getThemeWidget(
-                            SelectLanguagePage(
-                              httpClient: httpClient,
-                              currentLanguage: currentLanguge,
-                              fromSettings: true,
-                              appTheme: snapshot.data,
-                            ),
-                            snapshot.data)),
-                  );
-                  if (appLanguageChanged != null && response != null) {
-                    appLanguageChanged(response);
-                    Navigator.of(context).pop();
-                  } else {
-                    if (!Platform.isIOS) Navigator.of(context).pop();
-                  }
-                },
-              )),
-              getSettingsSectionHeader(''),
-              getSettingsButton(
-                text: BlocProvider.of<LocalizationBloc>(context).localize('privacy_policy', 'Privacy Policy'),
-                onPress: () {
-                  launch(PRIVACY_POLICY_URL);
-                },
+              ),
+              Icon(
+                Platform.isIOS
+                    ? CupertinoIcons.right_chevron
+                    : Icons.keyboard_arrow_right,
+                color: Platform.isIOS ? CupertinoColors.activeBlue : null,
               ),
             ],
-          );
-        } else {
-          return Center(child: CircularProgressIndicator());
-        }
-      },
-      future: _getCurrentTheme(context),
+          ),
+          onTap: () async {
+            final response = await Navigator.of(context).push(
+              getPageRoute(
+                builder: (ctx) => getThemeWidget(
+                    SelectLanguagePage(
+                      httpClient: httpClient,
+                      currentLanguage: currentLanguge,
+                      fromSettings: true,
+                    ),
+                    appTheme),
+              ),
+            );
+            if (response != null) {
+              appLanguageChanged?.call(response);
+              if (context.mounted) {
+                Navigator.of(context).pop();
+              }
+            } else {
+              if (!Platform.isIOS) {
+                if (context.mounted) {
+                  Navigator.of(context).pop();
+                }
+              }
+            }
+          },
+        )),
+        getSettingsSectionHeader(''),
+        getSettingsButton(
+          text: BlocProvider.of<LocalizationBloc>(context)
+              .localize('privacy_policy', 'Privacy Policy'),
+          onPress: () {
+            launchUrl(Uri.parse(privaryPolicyUrl));
+          },
+        ),
+      ],
     );
   }
 
-  Color getThemeTextColor(BuildContext context) {
+  Color? getThemeTextColor(BuildContext context) {
     if (Platform.isIOS) {
       return CupertinoColors.label.resolveFrom(context);
     } else {
-      return Theme.of(context).textTheme.bodyText1.color;
+      return Theme.of(context).textTheme.bodyLarge?.color;
     }
   }
 
   Widget getThemeWidget(Widget child, AppTheme appTheme) {
     if (Platform.isIOS) {
-      return CupertinoTheme(data: appTheme.themeDataCupertino, child: child);
+      final theme = appTheme.themeDataCupertino;
+      if (theme != null) {
+        return CupertinoTheme(data: theme, child: child);
+      }
     } else {
-      return Theme(data: appTheme.themeDataMaterial, child: child);
+      final theme = appTheme.themeDataMaterial;
+      if (theme != null) {
+        return Theme(data: theme, child: child);
+      }
     }
-  }
-
-  Future<AppTheme> _getCurrentTheme(BuildContext context) async {
-    SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
-    if (sharedPreferences.containsKey('APP_THEME')) {
-      final appThemeValue = sharedPreferences.getString('APP_THEME');
-      return appThemeMap[appThemeValue]();
-    }
-    return AppTheme.light();
+    return Theme(data: ThemeData.light(), child: child);
   }
 
   Widget getSettingsContainer({
-    List<Widget> widgets,
+    required List<Widget> widgets,
   }) {
     if (Platform.isIOS) {
       return CupertinoSettings(items: widgets);
@@ -155,20 +162,27 @@ class AppSettings extends StatelessWidget {
     if (Platform.isIOS) {
       return CSHeader(text);
     } else {
-      if (text == null || text.isEmpty) return Container();
+      if (text.isEmpty) return Container();
       return ListTile(
         title: Text(
           text,
-          style: TextStyle(fontSize: 16),
+          style: const TextStyle(fontSize: 16),
         ),
       );
     }
   }
 
-  Widget getRadioGroupWidget<T>({LinkedHashMap<String, T> items, Function onSelected, T currentSelection}) {
+  Widget getRadioGroupWidget<T>({
+    required LinkedHashMap<String, T> items,
+    required Function(T?) onSelected,
+    required T currentSelection,
+  }) {
     if (Platform.isIOS) {
       return CSSelection<T>(
-        items: items.entries.map((entry) => CSSelectionItem<T>(text: entry.key, value: entry.value)).toList(),
+        items: items.entries
+            .map((entry) =>
+                CSSelectionItem<T>(text: entry.key, value: entry.value))
+            .toList(),
         onSelected: (value) => onSelected(value),
         currentSelection: currentSelection,
       );
@@ -180,7 +194,7 @@ class AppSettings extends StatelessWidget {
                   value: entry.value,
                   title: Text(entry.key),
                   groupValue: currentSelection,
-                  onChanged: (value) => onSelected(value),
+                  onChanged: onSelected,
                 ))
             .toList(),
       );
@@ -196,7 +210,7 @@ class AppSettings extends StatelessWidget {
     );
   }
 
-  PageRoute getPageRoute({WidgetBuilder builder}) {
+  PageRoute getPageRoute({required WidgetBuilder builder}) {
     if (Platform.isIOS) {
       return CupertinoPageRoute(builder: builder);
     } else {
@@ -204,7 +218,8 @@ class AppSettings extends StatelessWidget {
     }
   }
 
-  Widget getSettingsButton({String text, Function onPress}) {
+  Widget getSettingsButton(
+      {required String text, required VoidCallback onPress}) {
     if (Platform.isIOS) {
       return CSButton(CSButtonType.DEFAULT, text, onPress);
     } else {
@@ -222,29 +237,31 @@ class PlacesList extends StatelessWidget {
   final Function changePlace;
 
   const PlacesList({
-    Key key,
-    this.httpClient,
-    this.currentLanguage,
-    this.changePlace,
-  }) : super(key: key);
+    super.key,
+    required this.httpClient,
+    required this.currentLanguage,
+    required this.changePlace,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<List<PlaceInfo>>(
+    return FutureBuilder<List<PlaceInfo>?>(
       builder: (ctx, snapshot) {
-        if (snapshot.connectionState == ConnectionState.done && snapshot.data != null) {
-          List<PlaceInfo> places = snapshot.data;
+        if (snapshot.connectionState == ConnectionState.done &&
+            snapshot.data != null) {
+          List<PlaceInfo> places = snapshot.data!;
           return ExpansionTile(
-              leading: Icon(Icons.history),
+              leading: const Icon(Icons.history),
               title: Text(
-                BlocProvider.of<LocalizationBloc>(context).localize('_archive', 'Archive'),
+                BlocProvider.of<LocalizationBloc>(context)
+                    .localize('_archive', 'Archive'),
               ),
               children: places
                   .map((item) => [
-                        Divider(),
+                        const Divider(),
                         Platform.isIOS
                             ? CupertinoListTile(
-                                title: item.name,
+                                title: Text(item.name),
                                 onTap: () {
                                   changePlace(item.id);
                                   Navigator.of(context).pop();
@@ -267,12 +284,21 @@ class PlacesList extends StatelessWidget {
     );
   }
 
-  Future<List<PlaceInfo>> getPlaces() async {
-    String data = await Repository.getResponse(
+  Future<List<PlaceInfo>?> getPlaces() async {
+    String? data = await Repository.getResponse(
       httpClient: httpClient,
-      url: '$BASE_URL/assets/json/$API_VERSION/places_$currentLanguage.json',
+      url: '$baseUrl/assets/json/$apiVersion/places_$currentLanguage.json',
     );
-    List<PlaceInfo> places = (json.decode(data) as List).map<PlaceInfo>((item) => PlaceInfo.fromMap(item)).toList().reversed.toList();
+    if (data == null) {
+      return null;
+    }
+    List<PlaceInfo> places = (json.decode(data) as List)
+        .map<PlaceInfo?>((item) => PlaceInfo.fromMap(item))
+        .where((element) => element != null)
+        .map((e) => e!)
+        .toList()
+        .reversed
+        .toList();
     return places;
   }
 }

@@ -5,9 +5,9 @@ class CurrencyDetails {
   final String name;
   final String code;
   CurrencyDetails({
-    this.symbol,
-    this.name,
-    this.code,
+    required this.symbol,
+    required this.name,
+    required this.code,
   });
 
   factory CurrencyDetails.empty() {
@@ -15,9 +15,9 @@ class CurrencyDetails {
   }
 
   CurrencyDetails copyWith({
-    String symbol,
-    String name,
-    String code,
+    String? symbol,
+    String? name,
+    String? code,
   }) {
     return CurrencyDetails(
       symbol: symbol ?? this.symbol,
@@ -34,7 +34,7 @@ class CurrencyDetails {
     };
   }
 
-  static CurrencyDetails fromMap(Map<String, dynamic> map) {
+  static CurrencyDetails? fromMap(Map<String, dynamic>? map) {
     if (map == null) return null;
 
     return CurrencyDetails(
@@ -46,7 +46,7 @@ class CurrencyDetails {
 
   String toJson() => json.encode(toMap());
 
-  static CurrencyDetails fromJson(String source) =>
+  static CurrencyDetails? fromJson(String source) =>
       fromMap(json.decode(source));
 
   @override
@@ -54,13 +54,13 @@ class CurrencyDetails {
       'CurrencyDetails symbol: $symbol, name: $name, code: $code';
 
   @override
-  bool operator ==(Object o) {
-    if (identical(this, o)) return true;
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
 
-    return o is CurrencyDetails &&
-        o.symbol == symbol &&
-        o.name == name &&
-        o.code == code;
+    return other is CurrencyDetails &&
+        other.symbol == symbol &&
+        other.name == name &&
+        other.code == code;
   }
 
   @override

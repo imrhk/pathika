@@ -3,15 +3,15 @@ import 'dart:convert';
 class PlaceInfo {
   final String name;
   final String id;
-  final String backgroundImage;
-  final String place;
-  final String licence;
-  final String photoBy;
-  final String attributionUrl;
-  final String country;
+  final String? backgroundImage;
+  final String? place;
+  final String? licence;
+  final String? photoBy;
+  final String? attributionUrl;
+  final String? country;
   PlaceInfo({
-    this.name,
-    this.id,
+    required this.name,
+    required this.id,
     this.backgroundImage,
     this.place,
     this.licence,
@@ -34,14 +34,14 @@ class PlaceInfo {
   }
 
   PlaceInfo copyWith({
-    String name,
-    String id,
-    String backgroundImage,
-    String place,
-    String licence,
-    String photoBy,
-    String attributionUrl,
-    String country,
+    String? name,
+    String? id,
+    String? backgroundImage,
+    String? place,
+    String? licence,
+    String? photoBy,
+    String? attributionUrl,
+    String? country,
   }) {
     return PlaceInfo(
       name: name ?? this.name,
@@ -64,11 +64,11 @@ class PlaceInfo {
       'licence': licence,
       'photo_by': photoBy,
       'attribution_url': attributionUrl,
-      'country' : country,
+      'country': country,
     };
   }
 
-  static PlaceInfo fromMap(Map<String, dynamic> map) {
+  static PlaceInfo? fromMap(Map<String, dynamic>? map) {
     if (map == null) return null;
 
     return PlaceInfo(
@@ -85,7 +85,7 @@ class PlaceInfo {
 
   String toJson() => json.encode(toMap());
 
-  static PlaceInfo fromJson(String source) => fromMap(json.decode(source));
+  static PlaceInfo? fromJson(String source) => fromMap(json.decode(source));
 
   @override
   String toString() {
@@ -93,18 +93,18 @@ class PlaceInfo {
   }
 
   @override
-  bool operator ==(Object o) {
-    if (identical(this, o)) return true;
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
 
-    return o is PlaceInfo &&
-        o.name == name &&
-        o.id == id &&
-        o.backgroundImage == backgroundImage &&
-        o.place == place &&
-        o.licence == licence &&
-        o.photoBy == photoBy &&
-        o.attributionUrl == attributionUrl &&
-        o.country == country;
+    return other is PlaceInfo &&
+        other.name == name &&
+        other.id == id &&
+        other.backgroundImage == backgroundImage &&
+        other.place == place &&
+        other.licence == licence &&
+        other.photoBy == photoBy &&
+        other.attributionUrl == attributionUrl &&
+        other.country == country;
   }
 
   @override

@@ -2,29 +2,29 @@ import 'dart:convert';
 
 class AppLanguage {
   final String id;
-  final String name;
-  final String msg;
+  final String? name;
+  final String? msg;
   final List<int> color;
   final bool rtl;
   AppLanguage({
-    this.id,
+    required this.id,
     this.name,
     this.msg,
-    this.color = const [0,0,0,0],
+    this.color = const [0, 0, 0, 0],
     this.rtl = false,
   });
 
-  factory AppLanguage.def(){
+  factory AppLanguage.def() {
     return AppLanguage(
       id: "en",
     );
   }
   AppLanguage copyWith({
-    String id,
-    String name,
-    String msg,
-    List<int> color,
-    bool rtl,
+    String? id,
+    String? name,
+    String? msg,
+    List<int>? color,
+    bool? rtl,
   }) {
     return AppLanguage(
       id: id ?? this.id,
@@ -41,29 +41,33 @@ class AppLanguage {
       'name': name,
       'msg': msg,
       'color': List<dynamic>.from(color.map((x) => x)),
-      'rtl' : rtl
+      'rtl': rtl
     };
   }
 
   static List<AppLanguage> fromList(List<dynamic> list) {
-    return list.map((item) => fromMap(item)).toList();
+    return list
+        .map((item) => fromMap(item))
+        .where((element) => element != null)
+        .map((e) => e!)
+        .toList();
   }
 
-  static AppLanguage fromMap(Map<String, dynamic> map) {
+  static AppLanguage? fromMap(Map<String, dynamic>? map) {
     if (map == null) return null;
-  
+
     return AppLanguage(
       id: map['id'],
       name: map['name'],
       msg: map['msg'],
-      color: map['color'] != null ? List<int>.from(map['color']) : [0,0,0,0],
-      rtl : map['rtl'] ,
+      color: map['color'] != null ? List<int>.from(map['color']) : [0, 0, 0, 0],
+      rtl: map['rtl'],
     );
   }
 
   String toJson() => json.encode(toMap());
 
-  static AppLanguage fromJson(String source) => fromMap(json.decode(source));
+  static AppLanguage? fromJson(String source) => fromMap(json.decode(source));
 
   @override
   String toString() {
@@ -71,23 +75,23 @@ class AppLanguage {
   }
 
   @override
-  bool operator ==(Object o) {
-    if (identical(this, o)) return true;
-  
-    return o is AppLanguage &&
-      o.id == id &&
-      o.name == name &&
-      o.msg == msg &&
-      o.color == color &&
-      o.rtl == rtl;
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+
+    return other is AppLanguage &&
+        other.id == id &&
+        other.name == name &&
+        other.msg == msg &&
+        other.color == color &&
+        other.rtl == rtl;
   }
 
   @override
   int get hashCode {
     return id.hashCode ^
-      name.hashCode ^
-      msg.hashCode ^
-      color.hashCode ^
-      rtl.hashCode;
+        name.hashCode ^
+        msg.hashCode ^
+        color.hashCode ^
+        rtl.hashCode;
   }
 }

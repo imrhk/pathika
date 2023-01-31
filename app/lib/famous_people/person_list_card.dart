@@ -4,23 +4,22 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../common/info_card.dart';
 import '../core/adt_details.dart';
 import '../localization/localization.dart';
-import 'person_list.dart';
-import 'person_tile.dart';
+import './person_list.dart';
+import './person_tile.dart';
 
-class PersonListCard extends StatelessWidget implements Details<PersonList>{
-  final bool useColorsOnCard;
+class PersonListCard extends StatelessWidget implements Details<PersonList> {
+  @override
   final PersonList details;
-  PersonListCard({
-    Key key,
-    this.useColorsOnCard,
-    this.details,
-  })  : super(key: key);
+  const PersonListCard({
+    super.key,
+    required this.details,
+  });
 
   List<Widget> getChildren(PersonList personList) {
     final list = personList.items
         .map<Widget>(
           (item) => Padding(
-            padding: EdgeInsets.symmetric(vertical: 5),
+            padding: const EdgeInsets.symmetric(vertical: 5),
             child: PersonTile(
               name: item.name,
               avatarUrl: item.avatarUrl,
@@ -34,14 +33,14 @@ class PersonListCard extends StatelessWidget implements Details<PersonList>{
         )
         .map<List<Widget>>((item) => [
               item,
-              Divider(
+              const Divider(
                 thickness: 2,
               )
             ])
         .toList()
         .expand((element) => element)
         .toList();
-    if (list.length > 0) {
+    if (list.isNotEmpty) {
       list.removeLast();
     }
     return list;
@@ -49,9 +48,8 @@ class PersonListCard extends StatelessWidget implements Details<PersonList>{
 
   @override
   Widget build(BuildContext context) {
-    assert(useColorsOnCard != null && details != null);
     return InfoCard(
-      color: useColorsOnCard ? Colors.cyan : null,
+      color: Colors.cyan,
       heading: BlocProvider.of<LocalizationBloc>(context)
           .localize('famous_people', 'Famous People'),
       body: Column(

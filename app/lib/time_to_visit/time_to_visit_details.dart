@@ -4,17 +4,17 @@ class TimeToVisitDetails {
   String primary;
   String secondary;
   TimeToVisitDetails({
-    this.primary,
-    this.secondary,
+    required this.primary,
+    required this.secondary,
   });
 
   factory TimeToVisitDetails.empty() {
-    return TimeToVisitDetails(primary: "",secondary: "");
+    return TimeToVisitDetails(primary: "", secondary: "");
   }
 
   TimeToVisitDetails copyWith({
-    String primary,
-    String secondary,
+    String? primary,
+    String? secondary,
   }) {
     return TimeToVisitDetails(
       primary: primary ?? this.primary,
@@ -29,9 +29,9 @@ class TimeToVisitDetails {
     };
   }
 
-  static TimeToVisitDetails fromMap(Map<String, dynamic> map) {
+  static TimeToVisitDetails? fromMap(Map<String, dynamic>? map) {
     if (map == null) return null;
-  
+
     return TimeToVisitDetails(
       primary: map['primary'],
       secondary: map['secondary'],
@@ -40,18 +40,20 @@ class TimeToVisitDetails {
 
   String toJson() => json.encode(toMap());
 
-  static TimeToVisitDetails fromJson(String source) => fromMap(json.decode(source));
+  static TimeToVisitDetails? fromJson(String source) =>
+      fromMap(json.decode(source));
 
   @override
-  String toString() => 'TimeToVisitDetails primary: $primary, secondary: $secondary';
+  String toString() =>
+      'TimeToVisitDetails primary: $primary, secondary: $secondary';
 
   @override
-  bool operator ==(Object o) {
-    if (identical(this, o)) return true;
-  
-    return o is TimeToVisitDetails &&
-      o.primary == primary &&
-      o.secondary == secondary;
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+
+    return other is TimeToVisitDetails &&
+        other.primary == primary &&
+        other.secondary == secondary;
   }
 
   @override

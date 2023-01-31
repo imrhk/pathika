@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class MaterialCard extends StatelessWidget {
   const MaterialCard({
-    Key key,
+    super.key,
     this.color,
     this.elevation,
     this.shape,
@@ -13,32 +12,30 @@ class MaterialCard extends StatelessWidget {
     this.child,
     this.semanticContainer = true,
     this.shadowColor,
-  }) : super(key: key);
+  }) : assert(elevation == null || elevation >= 0.0);
 
-  final Color color;
+  final Color? color;
 
-  final double elevation;
+  final double? elevation;
 
-  final ShapeBorder shape;
+  final ShapeBorder? shape;
 
   final bool borderOnForeground;
 
-  final Clip clipBehavior;
+  final Clip? clipBehavior;
 
-  final EdgeInsetsGeometry margin;
+  final EdgeInsetsGeometry? margin;
 
   final bool semanticContainer;
 
-  final Widget child;
+  final Widget? child;
 
-  final Color shadowColor;
+  final Color? shadowColor;
 
   static const double _defaultElevation = 1.0;
 
   @override
   Widget build(BuildContext context) {
-    assert(elevation == null || elevation >= 0.0);
-    assert(borderOnForeground != null);
     final CardTheme cardTheme = CardTheme.of(context);
 
     return Semantics(

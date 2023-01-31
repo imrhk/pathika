@@ -2,15 +2,15 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:devicelocale/devicelocale.dart';
-import 'package:firebase_admob/firebase_admob.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:intl/locale.dart';
-import 'package:pathika/ads/ad_config.dart';
+import 'package:pathika/theme/app_theme_bloc.dart';
+import 'package:pathika/theme/app_theme_state.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:universal_io/io.dart' show HttpClient, Platform;
 import 'app_language/app_language.dart';
@@ -20,71 +20,73 @@ import 'core/flutter_assets_client.dart';
 import 'core/repository.dart';
 
 import 'localization/localization.dart';
-import 'localization/localization_bloc.dart';
-import 'localization/localization_event.dart';
 import 'places/place_details_page.dart';
 import 'theme/app_theme.dart';
+import 'theme/app_theme_event.dart';
 
-void main() => runApp(PathikaApp(
-      httpClient: HttpClient(),
-    ));
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  MobileAds.instance.initialize();
+  runApp(
+    MultiBlocProvider(
+      providers: [
+        BlocProvider<LocalizationBloc>(
+          create: (context) => LocalizationBloc(
+            httpClient: HttpClient(),
+            assetsClient: FlutterAssetsClient(
+              assetBundle: DefaultAssetBundle.of(context),
+            ),
+          )..add(
+              const FetchLocalization(localeDefault),
+            ),
+        ),
+      ],
+      child: PathikaApp(
+        httpClient: HttpClient(),
+      ),
+    ),
+  );
+}
 
 class PathikaApp extends StatefulWidget {
   final HttpClient httpClient;
-  const PathikaApp({Key key, this.httpClient}) : super(key: key);
+  const PathikaApp({super.key, required this.httpClient});
 
   @override
-  _PathikaAppState createState() => _PathikaAppState();
+  State createState() => _PathikaAppState();
 }
 
 class _PathikaAppState extends State<PathikaApp> with WidgetsBindingObserver {
-  AppTheme appTheme;
-
   @override
   void initState() {
     super.initState();
-    appTheme = WidgetsBinding.instance.window.platformBrightness == Brightness.light ? AppTheme.light() : AppTheme.dark();
-    final adConfig = getAdConfig();
-    if (adConfig != null) FirebaseAdMob.instance.initialize(appId: getAdConfig().appId);
-    _loadUserTheme();
-  }
-
-  _loadUserTheme() async {
-    SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
-    if (sharedPreferences.containsKey('APP_THEME')) {
-      final appThemeValue = sharedPreferences.getString('APP_THEME');
-      setState(() {
-        appTheme = appThemeMap[appThemeValue]();
-      });
-    }
+    MobileAds.instance.initialize();
   }
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider<LocalizationBloc>(
-      create: (context) => LocalizationBloc(
-        httpClient: widget.httpClient,
-        assetsClient: FlutterAssetsClient(
-          assetBundle: DefaultAssetBundle.of(context),
-        ),
-      )..add(
-          FetchLocalization(LOCALE_DEFAULT),
-        ),
-      child: _getPlateformApp(),
+    return BlocProvider<AppThemeBloc>(
+      create: (BuildContext ctx) => AppThemeBloc()..add(AppThemeInitialize()),
+      child: BlocBuilder<AppThemeBloc, AppThemeState>(
+        builder: (ctx, state) {
+          if (kDebugMode) {
+            print('state: $state');
+          }
+          return _getPlateformApp(context, state.appThemeData);
+        },
+      ),
     );
   }
 
-  Widget _getPlateformApp() {
+  Widget _getPlateformApp(BuildContext context, AppTheme appTheme) {
     if (Platform.isIOS) {
       return CupertinoApp(
-        theme: appTheme?.themeDataCupertino ?? AppTheme.light(),
+        theme: appTheme.themeDataCupertino,
         home: _getHomeWidget(),
       );
     } else {
       return MaterialApp(
-        theme:
-            appTheme?.themeDataMaterial ?? ThemeData(accentColor: Colors.white, primaryColor: Colors.black, textTheme: Theme.of(context).textTheme),
-        // theme: ThemeData.dark(),
+        theme: appTheme.themeDataMaterial,
         home: _getHomeWidget(),
       );
     }
@@ -93,32 +95,25 @@ class _PathikaAppState extends State<PathikaApp> with WidgetsBindingObserver {
   Widget _getHomeWidget() {
     return InitPage(
       httpClient: widget.httpClient,
-      appTheme: appTheme ?? AppTheme.light(),
     );
-  }
-
-  @override
-  void didChangePlatformBrightness() {
-    super.didChangePlatformBrightness();
   }
 }
 
 class InitPage extends StatefulWidget {
   final HttpClient httpClient;
-  final AppTheme appTheme;
 
-  const InitPage({Key key, this.httpClient, this.appTheme}) : super(key: key);
+  const InitPage({super.key, required this.httpClient});
 
   @override
-  _InitPageState createState() => _InitPageState();
+  State createState() => _InitPageState();
 }
 
 class _InitPageState extends State<InitPage> {
-  String _language;
-  bool _isRtl;
-  String _placeId;
+  String? _language;
+  bool _isRtl = false;
+  String? _placeId;
 
-  FirebaseMessaging _firebaseMessaging = FirebaseMessaging();
+  FirebaseMessaging get _firebaseMessaging => FirebaseMessaging.instance;
 
   @override
   void initState() {
@@ -128,46 +123,57 @@ class _InitPageState extends State<InitPage> {
     _getLanguage(context);
   }
 
-  _initFirebaseMessaging() {
-    _firebaseMessaging.configure(
-      onMessage: (Map<String, dynamic> message) async {},
-    );
+  _initFirebaseMessaging() async {
+    FirebaseMessaging.onMessage.listen((RemoteMessage message) {});
 
-    _firebaseMessaging.requestNotificationPermissions(const IosNotificationSettings(
-      alert: true,
-      badge: true,
-      sound: true,
-    ));
-    _firebaseMessaging.onIosSettingsRegistered.listen((event) {});
+    if (Platform.isIOS || kIsWeb) {
+      NotificationSettings settings =
+          await _firebaseMessaging.requestPermission(
+        alert: true,
+        badge: true,
+        sound: true,
+      );
+
+      if (kDebugMode) {
+        print('User granted permission: ${settings.authorizationStatus}');
+      }
+    }
   }
 
   _getLanguage(BuildContext context) async {
+    final localizationBloc = context.read<LocalizationBloc>();
+    final assetBundle = DefaultAssetBundle.of(context);
     final sharedPref = await SharedPreferences.getInstance();
-    if (sharedPref.containsKey(APP_LANGUAGE)) {
-      String language = sharedPref.getString(APP_LANGUAGE);
-      _isRtl = false;
-      if (sharedPref.containsKey('APP_LANGUAGE_IS_RTL')) _isRtl = sharedPref.getBool('APP_LANGUAGE_IS_RTL');
+    if (sharedPref.containsKey(appLanguage)) {
+      String? language = sharedPref.getString(appLanguage);
+      _isRtl = sharedPref.getBool('APP_LANGUAGE_IS_RTL') ?? false;
 
       if (language != null && language.trim() != "") {
         _language = language;
-        _getLatestPlace(context);
-        BlocProvider.of<LocalizationBloc>(context).add(FetchLocalization(_language));
+        _getLatestPlace();
+        localizationBloc.add(FetchLocalization(language));
       } else {
         return;
       }
     } else {
       if (kIsWeb) {
         final appLanguage = AppLanguage.def();
-        _appLanguageChanged({'language': appLanguage.id, 'rtl': appLanguage.rtl});
+        _appLanguageChanged(
+            {'language': appLanguage.id, 'rtl': appLanguage.rtl});
       } else {
-        final deviceLocale = await Devicelocale.currentLocale;
+        final deviceLocale = (await Devicelocale.currentLocale) ?? 'en';
 
         final locale = Locale.parse(deviceLocale);
         final deviceLanguage = locale.languageCode;
-        final supportedLanguagesJson = await DefaultAssetBundle.of(context).loadString('assets_remote/assets/json/v1/languages.json');
-        final supprtedLanguages = AppLanguage.fromList(json.decode(supportedLanguagesJson));
-        final appLanguage = supprtedLanguages.firstWhere((element) => element.id == deviceLanguage, orElse: () => AppLanguage.def());
-        _appLanguageChanged({'language': appLanguage.id, 'rtl': appLanguage.rtl});
+        final supportedLanguagesJson = await assetBundle
+            .loadString('assets_remote/assets/json/v1/languages.json');
+        final supprtedLanguages =
+            AppLanguage.fromList(json.decode(supportedLanguagesJson));
+        final appLanguage = supprtedLanguages.firstWhere(
+            (element) => element.id == deviceLanguage,
+            orElse: () => AppLanguage.def());
+        _appLanguageChanged(
+            {'language': appLanguage.id, 'rtl': appLanguage.rtl});
       }
     }
   }
@@ -177,66 +183,83 @@ class _InitPageState extends State<InitPage> {
   }
 
   void _appLanguageChanged(Map<String, dynamic> map) async {
+    final localizationBloc = context.read<LocalizationBloc>();
+
     final previousLanguage = _language;
+    if (previousLanguage == null) {
+      return;
+    }
     final sharedPref = await SharedPreferences.getInstance();
     final language = map['language'];
     final isRTL = map['rtl'] ?? false;
     if (language != null && language.trim() != "") {
-      sharedPref.setString(APP_LANGUAGE, language);
+      sharedPref.setString(appLanguage, language);
       sharedPref.setBool('APP_LANGUAGE_IS_RTL', isRTL);
       _language = language;
       _isRtl = isRTL;
-      _getLatestPlace(context);
+      _getLatestPlace();
       if (Platform.isAndroid || Platform.isIOS) {
-        if (previousLanguage != null && previousLanguage.trim() != "")
-          _firebaseMessaging.unsubscribeFromTopic('$notificationTopicPrefix$previousLanguage');
-        _firebaseMessaging.subscribeToTopic('$notificationTopicPrefix$language');
+        if (previousLanguage.trim() != "") {
+          _firebaseMessaging.unsubscribeFromTopic(
+              '$notificationTopicPrefix$previousLanguage');
+        }
+        _firebaseMessaging
+            .subscribeToTopic('$notificationTopicPrefix$language');
       }
-      BlocProvider.of<LocalizationBloc>(context).add(ChangeLocalization(_language));
+      localizationBloc.add(ChangeLocalization(language));
     } else {
-      _getLanguage(context);
+      if (context.mounted) {
+        _getLanguage(context);
+      }
     }
   }
 
-  _getLatestPlace(BuildContext context) async {
+  _getLatestPlace() async {
     try {
-      String data = await Repository.getResponse(
+      String? data = await Repository.getResponse(
         httpClient: widget.httpClient,
-        url: '$BASE_URL/assets/json/$API_VERSION/places.json',
+        url: '$baseUrl/assets/json/$apiVersion/places.json',
       );
-      List<String> places = (json.decode(data) as List).map((e) => e.toString()).toList();
-      if (places.length > 0) {
+      if (data == null) {
+        return;
+      }
+      List<String> places =
+          (json.decode(data) as List).map((e) => e.toString()).toList();
+      if (places.isNotEmpty) {
         setState(() {
           _placeId = places[places.length - 1];
         });
       }
-    } catch (onError) {}
+    } catch (_) {}
   }
 
   void changePlace(String placeId) {
-    if (placeId != _placeId)
+    if (placeId != _placeId) {
       setState(() {
         _placeId = placeId;
       });
+    }
   }
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<LocalizationBloc, LocalizationState>(builder: (ctx, state) {
+    return BlocBuilder<LocalizationBloc, LocalizationState>(
+        builder: (ctx, state) {
       if (state is LocalizationError) {
-        BlocProvider.of<LocalizationBloc>(context).add(FetchLocalization(LOCALE_DEFAULT));
+        BlocProvider.of<LocalizationBloc>(context)
+            .add(const FetchLocalization(localeDefault));
         return _buildLoadingScaffold();
       } else if (state is LocalizationLoaded) {
-        if (_placeId == null) {
+        final placeId = _placeId;
+        if (placeId == null) {
           return _buildLoadingScaffold();
         } else {
           return Directionality(
             textDirection: _isRtl ? TextDirection.rtl : TextDirection.ltr,
             child: PlaceDetailsPage(
-              placeId: _placeId,
-              language: _language,
+              placeId: placeId,
+              language: _language ?? 'en',
               httpClient: widget.httpClient,
-              appTheme: widget.appTheme,
               appLanguageChanged: _appLanguageChanged,
               changePlace: changePlace,
             ),
@@ -250,10 +273,10 @@ class _InitPageState extends State<InitPage> {
 
   Widget _buildLoadingScaffold() {
     return Scaffold(
-      body: Container(
-        child: Center(
-          child: Platform.isIOS ? CupertinoActivityIndicator() : CircularProgressIndicator(),
-        ),
+      body: Center(
+        child: Platform.isIOS
+            ? const CupertinoActivityIndicator()
+            : const CircularProgressIndicator(),
       ),
     );
   }

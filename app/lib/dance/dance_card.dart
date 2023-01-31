@@ -5,20 +5,18 @@ import '../common/info_card.dart';
 import '../localization/localization.dart';
 import 'dance_details.dart';
 
-class DanceCard extends StatelessWidget{
-  final bool useColorsOnCard;
+class DanceCard extends StatelessWidget {
   final DanceDetails details;
-  DanceCard({
-    Key key,
-    this.useColorsOnCard,
-    this.details,
-  })  : super(key: key);
+  const DanceCard({
+    super.key,
+    required this.details,
+  });
   @override
   Widget build(BuildContext context) {
-    assert(useColorsOnCard != null && details != null);
     return InfoCard(
-      color: useColorsOnCard ? Colors.red : null,
-      heading: BlocProvider.of<LocalizationBloc>(context).localize('dance', 'Dance'),
+      color: Colors.red,
+      heading:
+          BlocProvider.of<LocalizationBloc>(context).localize('dance', 'Dance'),
       title: details.title,
     );
   }

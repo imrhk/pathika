@@ -5,19 +5,19 @@ class CupertinoListTile extends StatefulWidget {
   final String title;
   final String subtitle;
   final Widget trailing;
-  final Function onTap;
+  final VoidCallback? onTap;
 
-  const CupertinoListTile(
-      {Key key,
-      this.leading,
-      this.title,
-      this.subtitle,
-      this.trailing,
-      this.onTap})
-      : super(key: key);
+  const CupertinoListTile({
+    super.key,
+    this.leading = const SizedBox.shrink(),
+    this.title = '',
+    this.subtitle = '',
+    this.trailing = const SizedBox.shrink(),
+    this.onTap,
+  });
 
   @override
-  _StatefulStateCupertino createState() => _StatefulStateCupertino();
+  State createState() => _StatefulStateCupertino();
 }
 
 class _StatefulStateCupertino extends State<CupertinoListTile> {
@@ -25,34 +25,32 @@ class _StatefulStateCupertino extends State<CupertinoListTile> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: widget.onTap,
-      child: Container(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: <Widget>[
-            Row(
-              children: <Widget>[
-                widget.leading,
-                SizedBox(width: 20),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(widget.title,
-                        style: TextStyle(
-                          color: CupertinoColors.white,
-                          fontSize: 25,
-                        )),
-                    Text(widget.subtitle,
-                        style: TextStyle(
-                          color: CupertinoColors.systemGrey,
-                          fontSize: 20,
-                        )),
-                  ],
-                ),
-              ],
-            ),
-            widget.trailing,
-          ],
-        ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: <Widget>[
+          Row(
+            children: <Widget>[
+              widget.leading,
+              const SizedBox(width: 20),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(widget.title,
+                      style: const TextStyle(
+                        color: CupertinoColors.white,
+                        fontSize: 25,
+                      )),
+                  Text(widget.subtitle,
+                      style: const TextStyle(
+                        color: CupertinoColors.systemGrey,
+                        fontSize: 20,
+                      )),
+                ],
+              ),
+            ],
+          ),
+          widget.trailing,
+        ],
       ),
     );
   }

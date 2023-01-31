@@ -2,9 +2,9 @@ import 'dart:convert';
 
 class MovieDetails {
   String title;
-  String posterUrl;
+  String? posterUrl;
   MovieDetails({
-    this.title,
+    required this.title,
     this.posterUrl,
   });
 
@@ -13,8 +13,8 @@ class MovieDetails {
   }
 
   MovieDetails copyWith({
-    String title,
-    String posterUrl,
+    String? title,
+    String? posterUrl,
   }) {
     return MovieDetails(
       title: title ?? this.title,
@@ -29,9 +29,9 @@ class MovieDetails {
     };
   }
 
-  static MovieDetails fromMap(Map<String, dynamic> map) {
+  static MovieDetails? fromMap(Map<String, dynamic>? map) {
     if (map == null) return null;
-  
+
     return MovieDetails(
       title: map['title'],
       posterUrl: map['poster_url'],
@@ -40,18 +40,18 @@ class MovieDetails {
 
   String toJson() => json.encode(toMap());
 
-  static MovieDetails fromJson(String source) => fromMap(json.decode(source));
+  static MovieDetails? fromJson(String source) => fromMap(json.decode(source));
 
   @override
   String toString() => 'MovieDetails title: $title, poster_url: $posterUrl';
 
   @override
-  bool operator ==(Object o) {
-    if (identical(this, o)) return true;
-  
-    return o is MovieDetails &&
-      o.title == title &&
-      o.posterUrl == posterUrl;
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+
+    return other is MovieDetails &&
+        other.title == title &&
+        other.posterUrl == posterUrl;
   }
 
   @override

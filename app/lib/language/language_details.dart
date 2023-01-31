@@ -1,11 +1,11 @@
 import 'dart:convert';
 
 class LanguageDetails {
-  String primary;
-  List<String> secondary;
+  final String primary;
+  final List<String> secondary;
   LanguageDetails({
-    this.primary,
-    this.secondary,
+    required this.primary,
+    this.secondary = const [],
   });
 
   factory LanguageDetails.empty() {
@@ -13,8 +13,8 @@ class LanguageDetails {
   }
 
   LanguageDetails copyWith({
-    String primary,
-    List<String> secondary,
+    String? primary,
+    List<String>? secondary,
   }) {
     return LanguageDetails(
       primary: primary ?? this.primary,
@@ -29,7 +29,7 @@ class LanguageDetails {
     };
   }
 
-  static LanguageDetails fromMap(Map<String, dynamic> map) {
+  static LanguageDetails? fromMap(Map<String, dynamic>? map) {
     if (map == null) return null;
 
     return LanguageDetails(
@@ -40,7 +40,7 @@ class LanguageDetails {
 
   String toJson() => json.encode(toMap());
 
-  static LanguageDetails fromJson(String source) =>
+  static LanguageDetails? fromJson(String source) =>
       fromMap(json.decode(source));
 
   @override
@@ -48,12 +48,12 @@ class LanguageDetails {
       'LanguageDetails primary: $primary, secondary: $secondary';
 
   @override
-  bool operator ==(Object o) {
-    if (identical(this, o)) return true;
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
 
-    return o is LanguageDetails &&
-        o.primary == primary &&
-        o.secondary == secondary;
+    return other is LanguageDetails &&
+        other.primary == primary &&
+        other.secondary == secondary;
   }
 
   @override

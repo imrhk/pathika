@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 class SportsDetails {
-  final String title;
-  final String footer;
+  final String? title;
+  final String? footer;
   SportsDetails({
     this.title,
     this.footer,
@@ -11,10 +11,10 @@ class SportsDetails {
   factory SportsDetails.empty() {
     return SportsDetails(title: "", footer: "");
   }
-  
+
   SportsDetails copyWith({
-    String title,
-    String footer,
+    String? title,
+    String? footer,
   }) {
     return SportsDetails(
       title: title ?? this.title,
@@ -29,9 +29,9 @@ class SportsDetails {
     };
   }
 
-  static SportsDetails fromMap(Map<String, dynamic> map) {
+  static SportsDetails? fromMap(Map<String, dynamic>? map) {
     if (map == null) return null;
-  
+
     return SportsDetails(
       title: map['title'],
       footer: map['footer'],
@@ -40,18 +40,18 @@ class SportsDetails {
 
   String toJson() => json.encode(toMap());
 
-  static SportsDetails fromJson(String source) => fromMap(json.decode(source));
+  static SportsDetails? fromJson(String source) => fromMap(json.decode(source));
 
   @override
   String toString() => 'SportsDetails title: $title, footer: $footer';
 
   @override
-  bool operator ==(Object o) {
-    if (identical(this, o)) return true;
-  
-    return o is SportsDetails &&
-      o.title == title &&
-      o.footer == footer;
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+
+    return other is SportsDetails &&
+        other.title == title &&
+        other.footer == footer;
   }
 
   @override

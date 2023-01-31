@@ -1,20 +1,25 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:pathika/common/constants.dart';
+
 import './material_card.dart';
+import '../core/utility.dart';
+import 'shimmer_text.dart';
 
 class InfoCard extends StatelessWidget {
-  final MaterialColor color;
-  final Color bgColor;
-  final String heading;
+  final MaterialColor? color;
+  final Color? bgColor;
+  final String? heading;
   final String title;
   final String subtitle;
   final String symbol;
-  final Widget footer;
-  final Widget body;
-  final EdgeInsets padding;
+  final Widget? footer;
+  final Widget? body;
+  final EdgeInsets? padding;
   final bool isAudiable;
   const InfoCard({
-    Key key,
-    this.color,
+    super.key,
+    required this.color,
     this.bgColor,
     this.heading,
     this.title = '',
@@ -24,30 +29,31 @@ class InfoCard extends StatelessWidget {
     this.body,
     this.padding,
     this.isAudiable = false,
-  }) : super(key: key);
+  });
   @override
   Widget build(BuildContext context) {
+    final shimmerGradient = getShimmerGradient(context);
     return MaterialCard(
       clipBehavior: Clip.antiAlias,
-      color: bgColor,
-      shadowColor: color != null ? color : Color.fromARGB(255, 0, 0, 0),
-      margin: EdgeInsets.fromLTRB(12, 12, 12, 6),
+      color: getColorsOnCard(context) ? color : null,
+      shadowColor:
+          getColorsOnCard(context) ? color : const Color.fromARGB(255, 0, 0, 0),
+      margin: const EdgeInsets.fromLTRB(12, 12, 12, 6),
       elevation: 8,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(20),
       ),
       child: Container(
         width: double.infinity,
-        padding: padding == null
-            ? EdgeInsets.symmetric(vertical: 16, horizontal: 16)
-            : padding,
+        padding:
+            padding ?? const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          gradient: bgColor == null && color != null
+          gradient: bgColor == null && getColorsOnCard(context) && color != null
               ? LinearGradient(
                   colors: [
-                    color.shade500.withOpacity(1),
-                    color.shade500.withOpacity(0.67),
+                    color!.shade500.withOpacity(1),
+                    color!.shade500.withOpacity(0.67),
                   ],
                   end: FractionalOffset.topCenter,
                   begin: FractionalOffset.bottomCenter,
@@ -62,27 +68,29 @@ class InfoCard extends StatelessWidget {
                 child: Material(
                   color: Colors.transparent,
                   child: InkWell(
-                    customBorder: CircleBorder(),
+                    customBorder: const CircleBorder(),
                     hoverColor: bgColor ?? color,
                     splashColor: bgColor ?? color,
                     focusColor: bgColor ?? color,
                     child: Container(
-                      padding: EdgeInsets.all(5),
-                      child: Icon(Icons.volume_up),
+                      padding: const EdgeInsets.all(5),
+                      child: const Icon(Icons.volume_up),
                     ),
                     onTap: () {
-                      print('tapped');
+                      if (kDebugMode) {
+                        print('tapped');
+                      }
                     },
                   ),
                 ),
               ),
-            if (symbol != null && symbol != "")
+            if (symbol != "")
               Align(
                 heightFactor: 1.5,
                 alignment: Alignment.bottomLeft,
                 child: Text(
                   symbol,
-                  style: Theme.of(context).textTheme.headline2,
+                  style: Theme.of(context).textTheme.displayMedium,
                 ),
               ),
             Column(
@@ -91,8 +99,8 @@ class InfoCard extends StatelessWidget {
               children: <Widget>[
                 heading != null
                     ? Text(
-                        heading,
-                        style: TextStyle(
+                        heading ?? '',
+                        style: const TextStyle(
                           fontSize: 20,
                         ),
                       )
@@ -100,24 +108,29 @@ class InfoCard extends StatelessWidget {
                 SizedBox(
                     height: heading == null ? 0 : (body == null ? 30 : 10)),
                 if (body == null)
-                  Text(
-                    title,
-                    textAlign: TextAlign.end,
-                    style: Theme.of(context).textTheme.headline4,
+                  OptionalShimmer(
+                    gradient: shimmerGradient,
+                    child: Text(
+                      shimmerGradient == null
+                          ? title
+                          : title.replaceAll(regexEmojies, ''),
+                      textAlign: TextAlign.end,
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
                   ),
                 if (body == null)
                   Text(
                     subtitle,
                     textAlign: TextAlign.end,
-                    style: Theme.of(context).textTheme.subtitle1,
+                    style: Theme.of(context).textTheme.titleMedium,
                   ),
-                if (body != null) body,
+                if (body != null) body!,
                 footer == null
                     ? Container()
-                    : Divider(
+                    : const Divider(
                         thickness: 2,
                       ),
-                footer == null ? Container() : footer,
+                footer ?? Container(),
               ],
             )
           ],

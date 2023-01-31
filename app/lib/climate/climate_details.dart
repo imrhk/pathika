@@ -6,8 +6,8 @@ class ClimateDetails {
   String type;
   List<WeatherItem> items;
   ClimateDetails({
-    this.type,
-    this.items,
+    required this.type,
+    required this.items,
   });
 
   factory ClimateDetails.empty() {
@@ -15,8 +15,8 @@ class ClimateDetails {
   }
 
   ClimateDetails copyWith({
-    String type,
-    List<WeatherItem> items,
+    String? type,
+    List<WeatherItem>? items,
   }) {
     return ClimateDetails(
       type: type ?? this.type,
@@ -31,27 +31,31 @@ class ClimateDetails {
     };
   }
 
-  static ClimateDetails fromMap(Map<String, dynamic> map) {
+  static ClimateDetails? fromMap(Map<String, dynamic>? map) {
     if (map == null) return null;
 
     return ClimateDetails(
       type: map['type'],
-      items: List<WeatherItem>.from(map['items']?.map((x) => WeatherItem.fromMap(x))),
+      items: List<WeatherItem>.from(
+          map['items']?.map((x) => WeatherItem.fromMap(x))),
     );
   }
 
   String toJson() => json.encode(toMap());
 
-  static ClimateDetails fromJson(String source) => fromMap(json.decode(source));
+  static ClimateDetails? fromJson(String source) =>
+      fromMap(json.decode(source));
 
   @override
   String toString() => 'ClimateDetails type: $type, items: $items';
 
   @override
-  bool operator ==(Object o) {
-    if (identical(this, o)) return true;
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
 
-    return o is ClimateDetails && o.type == type && o.items == items;
+    return other is ClimateDetails &&
+        other.type == type &&
+        other.items == items;
   }
 
   @override

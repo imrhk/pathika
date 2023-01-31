@@ -1,3 +1,3 @@
-abstract class Details <T>{
- T get details;
+abstract class Details<T> {
+  T get details;
 }

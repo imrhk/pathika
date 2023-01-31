@@ -1,12 +1,12 @@
-import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:pathika/basic_info/basic_info.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:pathika/theme/app_theme_bloc.dart';
 import 'package:universal_io/io.dart' show HttpClient, Platform;
 import 'package:url_launcher/url_launcher.dart';
 
@@ -31,7 +31,6 @@ import '../location_map/location_map_card.dart';
 import '../movies/movies_list_card.dart';
 import '../places_list_page.dart';
 import '../sports/sports_card.dart';
-import '../theme/app_theme.dart';
 import '../time/current_time_card.dart';
 import '../time_to_visit/time_to_visit_card.dart';
 import '../tourist_attractions/tourist_attractions_card.dart';
@@ -43,57 +42,44 @@ class PlaceDetailsPage extends StatefulWidget {
   final String placeId;
   final String language;
   final HttpClient httpClient;
-  final AppTheme appTheme;
-  final Function appLanguageChanged;
-  final Function changePlace;
+  final void Function(Map<String, dynamic>)? appLanguageChanged;
+  final void Function(String)? changePlace;
   const PlaceDetailsPage({
-    Key key,
-    this.placeId,
+    super.key,
+    required this.placeId,
     this.language = "en",
-    this.httpClient,
-    this.appTheme,
+    required this.httpClient,
     this.appLanguageChanged,
     this.changePlace,
-  }) : super(key: key);
+  });
 
   @override
-  _PlaceDetailsPageState createState() {
-    assert(placeId != null);
-    return _PlaceDetailsPageState(
-        materialAppTheme: appTheme.themeDataMaterial,
-        cupertinoThemeData: appTheme.themeDataCupertino,
-        textColor: appTheme.textColor,
-        useColorsOnCard: appTheme.useColorsOnCard);
+  State createState() {
+    return _PlaceDetailsPageState();
   }
 }
 
 class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
-  ThemeData materialAppTheme;
-  CupertinoThemeData cupertinoThemeData;
-  Color textColor;
-  bool useColorsOnCard;
   bool isFirst = false;
   bool showVeg = true;
 
-  String climateValue;
+  String? climateValue;
 
   double _previousOffset = -1;
-  ScrollController _scrollController = ScrollController();
+  final ScrollController _scrollController = ScrollController();
   ScrollDirection _verticalScrollDirection = ScrollDirection.idle;
 
   final adConfig = getAdConfig();
-  BannerAd bottomBarPromoAd;
-  _PlaceDetailsPageState({this.materialAppTheme, this.cupertinoThemeData, this.textColor, this.useColorsOnCard = false}) {
-    bottomBarPromoAd = adConfig == null
-        ? null
-        : BannerAd(
-            adUnitId: getAdConfig().adsId[PLACES_BOTTOM_BAR_PROMO],
+  BannerAd? bottomBarPromoAd;
+
+  _PlaceDetailsPageState() {
+    bottomBarPromoAd = adConfig != null
+        ? BannerAd(
             size: AdSize.banner,
-            targetingInfo: targetingInfo,
-            listener: (MobileAdEvent event) {
-              print("BannerAd event is $event");
-            },
-          );
+            adUnitId: adConfig!.adsId[placesBottomBarPromo]!,
+            listener: const BannerAdListener(),
+            request: adRequest)
+        : null;
   }
 
   @override
@@ -121,39 +107,7 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
       }
       _previousOffset = currentOffset;
     });
-    if (bottomBarPromoAd != null) {
-      bottomBarPromoAd
-        ..load()
-        ..show();
-    }
-  }
-
-  changeAppTheme(AppTheme appTheme) async {
-    Navigator.pop(context);
-    setState(() {
-      this.materialAppTheme = appTheme.themeDataMaterial;
-      this.cupertinoThemeData = appTheme.themeDataCupertino;
-      this.textColor = appTheme.textColor;
-      this.useColorsOnCard = appTheme.useColorsOnCard;
-    });
-
-    SharedPreferences.getInstance().then((sharedPref) => sharedPref.setString('APP_THEME', appTheme.label));
-    //todo save theme
-  }
-
-  Widget _getThemeWidget() {
-    return Theme(
-      key: ValueKey<String>("$useColorsOnCard$textColor$materialAppTheme"),
-      data: textColor == null
-          ? materialAppTheme
-          : materialAppTheme.copyWith(
-              textTheme: materialAppTheme.textTheme.apply(bodyColor: textColor, displayColor: textColor),
-            ),
-      child: AppScaffold(
-        child: getPlacesDetailsWidget(),
-        getAppDrawer: _buildMaterialAppDrawer,
-      ),
-    );
+    bottomBarPromoAd?.load();
   }
 
   Widget _buildMaterialAppDrawer(BuildContext context) {
@@ -162,7 +116,6 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
         child: AppSettings(
           httpClient: widget.httpClient,
           appLanguageChanged: widget.appLanguageChanged,
-          changeAppTheme: changeAppTheme,
           currentLanguge: widget.language,
           changePlace: widget.changePlace,
         ),
@@ -178,135 +131,145 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
         milliseconds: 1000,
       ),
       transitionBuilder: (Widget child, Animation<double> animation) {
-        return FadeTransition(child: child, opacity: animation);
+        return FadeTransition(opacity: animation, child: child);
       },
-      child: _getThemeWidget(),
+      child: AppScaffold(
+        getAppDrawer: _buildMaterialAppDrawer,
+        body: getPlacesDetailsWidget(),
+      ),
     );
   }
 
   Widget getPlacesDetailsWidget() {
-    return FutureBuilder<PlaceDetails>(
+    return FutureBuilder<PlaceDetails?>(
       builder: (context, snapshot) {
         if (snapshot.connectionState != ConnectionState.done) {
           return Center(
-            child: Platform.isIOS ? CupertinoActivityIndicator() : CircularProgressIndicator(),
+            child: Platform.isIOS
+                ? const CupertinoActivityIndicator()
+                : const CircularProgressIndicator(),
           );
         } else if (snapshot.hasError) {
           return Center(
-            child: Text('${BlocProvider.of<LocalizationBloc>(context).localize('error_occured', 'Error occured')}\n ${snapshot.error.toString()}'),
+            child: Text(
+                '${BlocProvider.of<LocalizationBloc>(context).localize('error_occured', 'Error occured')}\n ${snapshot.error.toString()}'),
           );
         } else {
-          return mapPlaceDetailsDataToUI(context, snapshot.data);
+          return mapPlaceDetailsDataToUI(context, snapshot.data!);
         }
       },
       initialData: PlaceDetails.empty(),
-      future: _getData(context),
+      future: _getData(),
     );
   }
 
   Widget getCupertinoAppBar(PlaceDetails placeDetails) {
-    return CupertinoTheme(
-      data: cupertinoThemeData,
-      child: CupertinoSliverNavigationBar(
-        automaticallyImplyLeading: false,
-        largeTitle: Text(placeDetails.basicInfo.name),
-        trailing: Row(
-          mainAxisAlignment: MainAxisAlignment.end,
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
+    return CupertinoSliverNavigationBar(
+      automaticallyImplyLeading: false,
+      largeTitle: Text(placeDetails.basicInfo?.name ?? ''),
+      trailing: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+          if (kDebugMode)
             GestureDetector(
-              child: Icon(IconData(0xf453, fontFamily: 'CupertinoIcons', fontPackage: 'cupertino_icons'), color: CupertinoColors.activeBlue),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  CupertinoPageRoute(
-                    builder: (context) => CupertinoTheme(
-                      data: cupertinoThemeData,
-                      child: CupertinoPageScaffold(
-                        navigationBar: CupertinoNavigationBar(
-                          middle: GestureDetector(
-                            child: Text(
-                              BlocProvider.of<LocalizationBloc>(context).localize('_discover', 'Discover'),
-                            ),
-                          ),
-                          leading: GestureDetector(
-                            child: Row(
-                              children: <Widget>[
-                                Icon(CupertinoIcons.left_chevron, color: CupertinoColors.activeBlue),
-                                Flexible(
-                                  child: Text(
-                                    placeDetails.basicInfo.name,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: TextStyle(
-                                      color: CupertinoColors.activeBlue,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            onTap: () => Navigator.of(context).pop(),
-                          ),
-                        ),
-                        child: PlacesListPage(
-                          httpClient: widget.httpClient,
-                          changePlace: widget.changePlace,
-                          currentLanguage: widget.language,
+                child: const Icon(CupertinoIcons.refresh_bold,
+                    color: CupertinoColors.activeBlue),
+                onTap: () {
+                  setState(() {});
+                }),
+          if (kDebugMode) const SizedBox(width: 10),
+          GestureDetector(
+            child: const Icon(CupertinoIcons.placemark,
+                color: CupertinoColors.activeBlue),
+            onTap: () {
+              Navigator.push(
+                context,
+                CupertinoPageRoute(
+                  builder: (context) => CupertinoPageScaffold(
+                    navigationBar: CupertinoNavigationBar(
+                      middle: GestureDetector(
+                        child: Text(
+                          BlocProvider.of<LocalizationBloc>(context)
+                              .localize('_discover', 'Discover'),
                         ),
                       ),
-                    ),
-                  ),
-                );
-              },
-            ),
-            SizedBox(width: 10),
-            GestureDetector(
-              child: Icon(CupertinoIcons.settings, color: CupertinoColors.activeBlue),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  CupertinoPageRoute(
-                    builder: (context) => CupertinoTheme(
-                      data: cupertinoThemeData,
-                      child: CupertinoPageScaffold(
-                        navigationBar: CupertinoNavigationBar(
-                          middle: GestureDetector(
-                            child: Text(
-                              BlocProvider.of<LocalizationBloc>(context).localize('_settings', 'Settings'),
-                            ),
-                          ),
-                          leading: GestureDetector(
-                            child: Row(
-                              children: <Widget>[
-                                Icon(CupertinoIcons.left_chevron, color: CupertinoColors.activeBlue),
-                                Flexible(
-                                  child: Text(
-                                    placeDetails.basicInfo.name,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: TextStyle(
-                                      color: CupertinoColors.activeBlue,
-                                    ),
-                                  ),
+                      leading: GestureDetector(
+                        child: Row(
+                          children: <Widget>[
+                            const Icon(CupertinoIcons.left_chevron,
+                                color: CupertinoColors.activeBlue),
+                            Flexible(
+                              child: Text(
+                                placeDetails.basicInfo?.name ?? '',
+                                overflow: TextOverflow.ellipsis,
+                                style: const TextStyle(
+                                  color: CupertinoColors.activeBlue,
                                 ),
-                              ],
+                              ),
                             ),
-                            onTap: () => Navigator.of(context).pop(),
-                          ),
+                          ],
                         ),
-                        child: AppSettings(
-                          httpClient: widget.httpClient,
-                          appLanguageChanged: widget.appLanguageChanged,
-                          changeAppTheme: changeAppTheme,
-                          currentLanguge: widget.language,
-                          changePlace: widget.changePlace,
-                        ),
+                        onTap: () => Navigator.of(context).pop(),
                       ),
                     ),
+                    child: PlacesListPage(
+                      httpClient: widget.httpClient,
+                      changePlace: widget.changePlace,
+                      currentLanguage: widget.language,
+                    ),
                   ),
-                );
-              },
-            ),
-          ],
-        ),
+                ),
+              );
+            },
+          ),
+          const SizedBox(width: 10),
+          GestureDetector(
+            child: const Icon(CupertinoIcons.settings,
+                color: CupertinoColors.activeBlue),
+            onTap: () {
+              Navigator.push(
+                context,
+                CupertinoPageRoute(
+                  builder: (context) => CupertinoPageScaffold(
+                    navigationBar: CupertinoNavigationBar(
+                      middle: GestureDetector(
+                        child: Text(
+                          BlocProvider.of<LocalizationBloc>(context)
+                              .localize('_settings', 'Settings'),
+                        ),
+                      ),
+                      leading: GestureDetector(
+                        child: Row(
+                          children: <Widget>[
+                            const Icon(CupertinoIcons.left_chevron,
+                                color: CupertinoColors.activeBlue),
+                            Flexible(
+                              child: Text(
+                                placeDetails.basicInfo?.name ?? '',
+                                overflow: TextOverflow.ellipsis,
+                                style: const TextStyle(
+                                  color: CupertinoColors.activeBlue,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        onTap: () => Navigator.of(context).pop(),
+                      ),
+                    ),
+                    child: AppSettings(
+                      httpClient: widget.httpClient,
+                      appLanguageChanged: widget.appLanguageChanged,
+                      currentLanguge: widget.language,
+                      changePlace: widget.changePlace,
+                    ),
+                  ),
+                ),
+              );
+            },
+          ),
+        ],
       ),
     );
   }
@@ -320,25 +283,32 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
       pinned: true,
       flexibleSpace: getBasicInfoWidget(placeDetails),
       actions: <Widget>[
+        if (kDebugMode)
+          GestureDetector(
+              child: const Icon(
+                Icons.refresh,
+              ),
+              onTap: () {
+                setState(() {});
+              }),
+        if (kDebugMode) const SizedBox(width: 10),
         GestureDetector(
-          child: Icon(Icons.search),
+          child: const Icon(Icons.search),
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => Theme(
-                  data: materialAppTheme,
-                  child: Scaffold(
-                    appBar: AppBar(
-                      title: Text(
-                        BlocProvider.of<LocalizationBloc>(context).localize('_discover', 'Discover'),
-                      ),
+                builder: (context) => Scaffold(
+                  appBar: AppBar(
+                    title: Text(
+                      BlocProvider.of<LocalizationBloc>(context)
+                          .localize('_discover', 'Discover'),
                     ),
-                    body: PlacesListPage(
-                      httpClient: widget.httpClient,
-                      changePlace: widget.changePlace,
-                      currentLanguage: widget.language,
-                    ),
+                  ),
+                  body: PlacesListPage(
+                    httpClient: widget.httpClient,
+                    changePlace: widget.changePlace,
+                    currentLanguage: widget.language,
                   ),
                 ),
               ),
@@ -354,14 +324,18 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
     final orientation = mQuery.orientation;
     final height = mQuery.size.height;
 
-    return BasicInfoAppBar(
-      height: height * 0.5,
-      orientation: orientation,
-      basicInfo: placeDetails.basicInfo,
-    );
+    if (placeDetails.basicInfo != null) {
+      return BasicInfoAppBar(
+        height: height * 0.5,
+        orientation: orientation,
+        basicInfo: placeDetails.basicInfo!,
+      );
+    } else {
+      return const SizedBox.shrink();
+    }
   }
 
-  Widget getSliverAppBar(PlaceDetails placeDetails) {
+  Widget getSliverAppBar(BuildContext context, PlaceDetails placeDetails) {
     if (Platform.isIOS) {
       return getCupertinoAppBar(placeDetails);
     } else {
@@ -369,12 +343,32 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
     }
   }
 
-  Widget mapPlaceDetailsDataToUI(BuildContext context, PlaceDetails placeDetails) {
+  Widget mapPlaceDetailsDataToUI(
+      BuildContext context, PlaceDetails placeDetails) {
+    ThemeData? materialThemeData = BlocProvider.of<AppThemeBloc>(context)
+        .state
+        .appThemeData
+        .themeDataMaterial;
+    Color? captionColor = BlocProvider.of<AppThemeBloc>(context)
+        .state
+        .appThemeData
+        .themeDataMaterial
+        ?.textTheme
+        .bodySmall
+        ?.color;
+    Color? subtitleColor = BlocProvider.of<AppThemeBloc>(context)
+        .state
+        .appThemeData
+        .themeDataMaterial
+        ?.textTheme
+        .bodySmall
+        ?.color;
+
     return CustomScrollView(
       controller: _scrollController,
-      physics: BouncingScrollPhysics(),
+      physics: const BouncingScrollPhysics(),
       slivers: <Widget>[
-        getSliverAppBar(placeDetails),
+        getSliverAppBar(context, placeDetails),
         if (Platform.isIOS)
           SliverToBoxAdapter(
             child: getBasicInfoWidget(placeDetails),
@@ -382,93 +376,92 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
         SliverList(
           delegate: SliverChildListDelegate.fixed(
             (<Widget>[
-              CountryCard(
-                details: placeDetails.countryDetails,
-                useColorsOnCard: useColorsOnCard,
-              ),
-              LanguageCard(
-                details: placeDetails.languageDetails,
-                useColorsOnCard: useColorsOnCard,
-              ),
-              CurrencyCard(
-                details: placeDetails.currencyDetails,
-                useColorsOnCard: useColorsOnCard,
-                httpclient: widget.httpClient,
-              ),
-              CurrentTimeCard(
-                useColorsOnCard: useColorsOnCard,
-                timezoneOffsetInMinute: placeDetails.timezoneOffsetInMinutes,
-              ),
-              ClimateCard(
-                details: placeDetails.climateDetails,
-                useColorsOnCard: useColorsOnCard,
-              ),
-              TimeToVisitCard(
-                details: placeDetails.timeToVisitDetails,
-                useColorsOnCard: useColorsOnCard,
-              ),
-              TouristAttractionsCard(
-                details: placeDetails.touristPlacesList,
-                useColorsOnCard: useColorsOnCard,
-              ),
-              FoodItemsListCard(
-                details: placeDetails.foodItemsList,
-                useColorsOnCard: useColorsOnCard,
-              ),
-              PersonListCard(
-                details: placeDetails.personsList,
-                useColorsOnCard: useColorsOnCard,
-              ),
-              MoviesListCard(
-                details: placeDetails.moviesList,
-                useColorsOnCard: useColorsOnCard,
-                countryName: placeDetails.countryDetails.name,
-              ),
-              DanceCard(
-                details: placeDetails.danceDetails,
-                useColorsOnCard: useColorsOnCard,
-              ),
-              SportsCard(
-                details: placeDetails.sportsDetails,
-                useColorsOnCard: useColorsOnCard,
-              ),
-              IndustriesCard(
-                details: placeDetails.industriesDetails,
-                useColorsOnCard: useColorsOnCard,
-              ),
-              AirportCard(
-                details: placeDetails.airport,
-                useColorsOnCard: useColorsOnCard,
-              ),
-              LocationMapCard(
-                details: placeDetails.locationMapList,
-                useColorsOnCard: useColorsOnCard,
-              ),
-              TriviaListCard(
-                details: placeDetails.triviaListDetails,
-                useColorsOnCard: useColorsOnCard,
-              ),
-            ]..removeWhere((element) => element is Details && (element as Details).details == null))
-                .map((widget) => Platform.isIOS
-                    ? widget
-                    : TranslateListItem(
-                        traslateHeight: 600,
-                        child: widget,
-                        duration: Duration(seconds: 1),
-                        axis: Axis.vertical,
-                        getScrollDirection: getVerticalScrollDirection))
-                // .map(
-                //   (widget) => Theme(
-                //     data: materialAppTheme,
-                //     child: widget,
-                //   ),
-                // )
+              if (placeDetails.countryDetails != null)
+                CountryCard(
+                  details: placeDetails.countryDetails!,
+                ),
+              if (placeDetails.languageDetails != null)
+                LanguageCard(
+                  details: placeDetails.languageDetails!,
+                ),
+              if (placeDetails.currencyDetails != null)
+                CurrencyCard(
+                  details: placeDetails.currencyDetails!,
+                  httpclient: widget.httpClient,
+                ),
+              if (placeDetails.timezoneOffsetInMinutes != null)
+                CurrentTimeCard(
+                  timezoneOffsetInMinute: placeDetails.timezoneOffsetInMinutes!,
+                ),
+              if (placeDetails.climateDetails != null)
+                ClimateCard(
+                  details: placeDetails.climateDetails!,
+                ),
+              if (placeDetails.timeToVisitDetails != null)
+                TimeToVisitCard(
+                  details: placeDetails.timeToVisitDetails!,
+                ),
+              if (placeDetails.touristPlacesList != null)
+                TouristAttractionsCard(
+                  details: placeDetails.touristPlacesList!,
+                ),
+              if (placeDetails.foodItemsList != null)
+                FoodItemsListCard(
+                  details: placeDetails.foodItemsList!,
+                ),
+              if (placeDetails.personsList != null)
+                PersonListCard(
+                  details: placeDetails.personsList!,
+                ),
+              if (placeDetails.moviesList != null)
+                MoviesListCard(
+                  details: placeDetails.moviesList!,
+                  countryName: placeDetails.countryDetails!.name,
+                ),
+              if (placeDetails.danceDetails != null)
+                DanceCard(
+                  details: placeDetails.danceDetails!,
+                ),
+              if (placeDetails.sportsDetails != null)
+                SportsCard(
+                  details: placeDetails.sportsDetails!,
+                ),
+              if (placeDetails.industriesDetails != null)
+                IndustriesCard(
+                  details: placeDetails.industriesDetails!,
+                ),
+              if (placeDetails.airport != null)
+                AirportCard(
+                  details: placeDetails.airport!,
+                ),
+              if (placeDetails.locationMapList != null)
+                LocationMapCard(
+                  details: placeDetails.locationMapList!,
+                ),
+              if (placeDetails.triviaListDetails != null)
+                TriviaListCard(
+                  details: placeDetails.triviaListDetails!,
+                ),
+            ]..removeWhere((element) =>
+                    element is Details && (element as Details).details == null))
+                .map(
+                  (widget) => Platform.isIOS
+                      ? Theme(
+                          data: materialThemeData ?? ThemeData.light(),
+                          child: widget)
+                      : TranslateListItem(
+                          traslateHeight: 600,
+                          duration: const Duration(seconds: 1),
+                          axis: Axis.vertical,
+                          getScrollDirection: getVerticalScrollDirection,
+                          child: widget),
+                )
                 .toList(),
           ),
         ),
         SliverToBoxAdapter(
           child: Container(
-            padding: EdgeInsets.only(
+            padding: const EdgeInsets.only(
               bottom: 4,
               right: 10,
               left: 10,
@@ -478,30 +471,33 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                SizedBox(height: 4),
-                Divider(
+                const SizedBox(height: 4),
+                const Divider(
                   thickness: 2,
                 ),
-                if (!Platform.isIOS) getCoverPhotoAttribution(context, placeDetails.basicInfo, Theme.of(context).textTheme.caption.color),
-                SizedBox(height: 4),
+                if (!Platform.isIOS)
+                  getCoverPhotoAttribution(context, placeDetails.basicInfo),
+                const SizedBox(height: 4),
                 RichText(
                   text: TextSpan(
-                    style: TextStyle(fontStyle: FontStyle.italic),
+                    style: const TextStyle(fontStyle: FontStyle.italic),
                     children: [
                       if (!kIsWeb) //web not working for widget span
                         WidgetSpan(
-                          child: Icon(Icons.info_outline, size: 14, color: Theme.of(context).textTheme.caption.color),
+                          child: Icon(Icons.info_outline,
+                              size: 14, color: captionColor),
                         ),
                       TextSpan(
-                        text: BlocProvider.of<LocalizationBloc>(context).localize(
-                            'report_issue', ' If you believe there is translation issue or any other issue with the content, please report '),
-                        style: Theme.of(context).textTheme.caption,
-                      ),
+                          text: BlocProvider.of<LocalizationBloc>(context).localize(
+                              'report_issue',
+                              ' If you believe there is translation issue or any other issue with the content, please report '),
+                          style: TextStyle(color: captionColor)),
                       TextSpan(
-                        text: ' ${BlocProvider.of<LocalizationBloc>(context).localize('_here', ' here')} ',
-                        style: Theme.of(context).textTheme.caption.apply(
-                              decoration: TextDecoration.underline,
-                            ),
+                        text:
+                            ' ${BlocProvider.of<LocalizationBloc>(context).localize('_here', ' here')} ',
+                        style: TextStyle(
+                            color: captionColor,
+                            decoration: TextDecoration.underline),
                         recognizer: TapGestureRecognizer()
                           ..onTap = () {
                             _openForm();
@@ -510,30 +506,31 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                       if (!kIsWeb)
                         WidgetSpan(
                           child: GestureDetector(
+                            onTap: _openForm,
                             child: Icon(
                               Icons.open_in_new,
                               size: 14,
-                              color: Theme.of(context).textTheme.caption.color,
+                              color: captionColor,
                             ),
-                            onTap: _openForm,
                           ),
                         ),
                     ],
                   ),
                 ),
-                SizedBox(height: 4),
-                Divider(
+                const SizedBox(height: 4),
+                const Divider(
                   thickness: 2,
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Center(
                   child: Text(
-                    BlocProvider.of<LocalizationBloc>(context).localize('made_in_india', 'Made with ❤️ in India'),
-                    style: TextStyle(fontSize: 16, color: Theme.of(context).textTheme.subtitle1.color),
+                    BlocProvider.of<LocalizationBloc>(context)
+                        .localize('made_in_india', 'Made with ❤️ in India'),
+                    style: TextStyle(fontSize: 16, color: subtitleColor),
                     textAlign: TextAlign.center,
                   ),
                 ),
-                SizedBox(height: 70),
+                const SizedBox(height: 70),
               ],
             ),
           ),
@@ -543,44 +540,59 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
   }
 
   _openForm() async {
-    launch('https://forms.gle/bb3LZhreSfeHHy1f6');
+    launchUrl(Uri.parse('https://forms.gle/bb3LZhreSfeHHy1f6'));
   }
 
-  Future<PlaceDetails> _getData(BuildContext context) async {
+  Future<PlaceDetails?> _getData() async {
     getResponse(String language) {
       return Repository.getResponse(
           httpClient: widget.httpClient,
-          url: '$BASE_URL/assets/json/$API_VERSION/${widget.placeId}/details_$language.json',
-          cacheTime: Duration(days: 7));
+          url:
+              '$baseUrl/assets/json/$apiVersion/${widget.placeId}/details_$language.json',
+          cacheTime: const Duration(days: 7));
     }
 
-    String response = await getResponse(widget.language);
-    if (response == null) {
-      response = await getResponse('en');
+    String? response = await getResponse(widget.language);
+    response ??= await getResponse('en');
+    if (response != null) {
+      return Future.value(PlaceDetails.fromJson(response));
+    } else {
+      return Future.value(null);
     }
-    return Future.value(PlaceDetails.fromJson(response));
   }
 }
 
-Widget getCoverPhotoAttribution(BuildContext context, BasicInfo basicInfo, Color textColor) {
-  final text = Platform.isIOS
-      ? basicInfo.place
-      : '${BlocProvider.of<LocalizationBloc>(context).localize('cover_photo_location', 'Cover photo location')}: ${basicInfo.place}';
+Widget getCoverPhotoAttribution(BuildContext context, BasicInfo? basicInfo) {
+  Color? highlightTextColor = BlocProvider.of<AppThemeBloc>(context)
+      .state
+      .appThemeData
+      .highlightTextColor;
+
+  final String? text;
+  if (basicInfo != null) {
+    text = Platform.isIOS
+        ? basicInfo.place
+        : '${BlocProvider.of<LocalizationBloc>(context).localize('cover_photo_location', 'Cover photo location')}: ${basicInfo.place}';
+  } else {
+    text = null;
+  }
 
   return Column(
     mainAxisSize: MainAxisSize.min,
     children: <Widget>[
-      Container(
-        width: double.infinity,
-        child: Text(
-          text,
-          textAlign: TextAlign.end,
-          style: TextStyle(color: textColor),
+      if (text != null)
+        SizedBox(
+          width: double.infinity,
+          child: Text(
+            text,
+            textAlign: TextAlign.end,
+            style: TextStyle(color: highlightTextColor),
+          ),
         ),
-      ),
-      getAttributionWidget(context, basicInfo.photoBy, basicInfo.attributionUrl, basicInfo.licence, textColor),
-      SizedBox(height: 4),
-      Divider(
+      getAttributionWidget(context, basicInfo?.photoBy,
+          basicInfo?.attributionUrl, basicInfo?.licence, highlightTextColor),
+      const SizedBox(height: 4),
+      const Divider(
         thickness: 2,
       )
     ],
@@ -588,28 +600,28 @@ Widget getCoverPhotoAttribution(BuildContext context, BasicInfo basicInfo, Color
 }
 
 class AppScaffold extends StatelessWidget {
-  final Widget child;
-  final Function getAppBar;
-  final Function getAppDrawer;
-  final Function getNavigationbar;
+  final Widget body;
+  final Function? getAppBar;
+  final Function? getAppDrawer;
+  final Function? getNavigationbar;
 
   const AppScaffold({
-    Key key,
-    this.child,
+    super.key,
+    required this.body,
     this.getAppDrawer,
     this.getAppBar,
     this.getNavigationbar,
-  }) : super(key: key);
+  });
   @override
   Widget build(BuildContext context) {
     if (Platform.isIOS) {
       return CupertinoPageScaffold(
-        child: child,
         navigationBar: getNavigationbar?.call(),
+        child: body,
       );
     } else {
       return Scaffold(
-        body: child,
+        body: body,
         appBar: getAppBar?.call(),
         drawer: getAppDrawer?.call(context),
       );

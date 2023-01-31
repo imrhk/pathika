@@ -6,22 +6,22 @@ import '../core/adt_details.dart';
 import '../localization/localization.dart';
 import 'industry_details.dart';
 
-class IndustriesCard extends StatelessWidget implements Details<IndustryDetails> {
-  final bool useColorsOnCard;
+class IndustriesCard extends StatelessWidget
+    implements Details<IndustryDetails> {
+  @override
   final IndustryDetails details;
-  IndustriesCard({
-    Key key,
-    this.useColorsOnCard,
-    this.details,
-  }) : super(key: key);
+  const IndustriesCard({
+    super.key,
+    required this.details,
+  });
   @override
   Widget build(BuildContext context) {
-    assert(useColorsOnCard != null && details != null);
     return InfoCard(
-      color: useColorsOnCard ? Colors.yellow : null,
-      heading: BlocProvider.of<LocalizationBloc>(context).localize('industries', 'Industries'),
+      color: Colors.yellow,
+      heading: BlocProvider.of<LocalizationBloc>(context)
+          .localize('industries', 'Industries'),
       title: details.primary,
-      subtitle: details.secondary.join(','),
+      subtitle: details.secondary?.join(',') ?? '',
     );
   }
 }

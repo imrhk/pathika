@@ -18,23 +18,23 @@ import '../tourist_attractions/tourist_attractions.list.dart';
 import '../trivia/trivia_list_details.dart';
 
 class PlaceDetails {
-  AirportDetails airport;
-  BasicInfo basicInfo;
-  ClimateDetails climateDetails;
-  CountryDetails countryDetails;
-  CurrencyDetails currencyDetails;
-  DanceDetails danceDetails;
-  FoodItemsList foodItemsList;
-  IndustryDetails industriesDetails;
-  LanguageDetails languageDetails;
-  LocationMapDetails locationMapList;
-  MovieList moviesList;
-  PersonList personsList;
-  SportsDetails sportsDetails;
-  TimeToVisitDetails timeToVisitDetails;
-  int timezoneOffsetInMinutes;
-  TouristAttractionsList touristPlacesList;
-  TriviaListDetails triviaListDetails;
+  AirportDetails? airport;
+  BasicInfo? basicInfo;
+  ClimateDetails? climateDetails;
+  CountryDetails? countryDetails;
+  CurrencyDetails? currencyDetails;
+  DanceDetails? danceDetails;
+  FoodItemsList? foodItemsList;
+  IndustryDetails? industriesDetails;
+  LanguageDetails? languageDetails;
+  LocationMapDetails? locationMapList;
+  MovieList? moviesList;
+  PersonList? personsList;
+  SportsDetails? sportsDetails;
+  TimeToVisitDetails? timeToVisitDetails;
+  int? timezoneOffsetInMinutes;
+  TouristAttractionsList? touristPlacesList;
+  TriviaListDetails? triviaListDetails;
   PlaceDetails({
     this.airport,
     this.basicInfo,
@@ -78,69 +78,69 @@ class PlaceDetails {
   }
 
   PlaceDetails copyWith({
-    AirportDetails airport,
-    BasicInfo basicInfo,
-    ClimateDetails climate,
-    CountryDetails country,
-    CurrencyDetails currency,
-    DanceDetails dance,
-    FoodItemsList food,
-    IndustryDetails industries,
-    LanguageDetails language,
-    LocationMapDetails locationMap,
-    MovieList movies,
-    PersonList persons,
-    SportsDetails sports,
-    TimeToVisitDetails timeToVisit,
-    int timezoneOffsetInMunites,
-    TouristAttractionsList touristPlaces,
-    TriviaListDetails triviaList,
+    AirportDetails? airport,
+    BasicInfo? basicInfo,
+    ClimateDetails? climate,
+    CountryDetails? country,
+    CurrencyDetails? currency,
+    DanceDetails? dance,
+    FoodItemsList? food,
+    IndustryDetails? industries,
+    LanguageDetails? language,
+    LocationMapDetails? locationMap,
+    MovieList? movies,
+    PersonList? persons,
+    SportsDetails? sports,
+    TimeToVisitDetails? timeToVisit,
+    int? timezoneOffsetInMunites,
+    TouristAttractionsList? touristPlaces,
+    TriviaListDetails? triviaList,
   }) {
     return PlaceDetails(
       airport: airport ?? this.airport,
       basicInfo: basicInfo ?? this.basicInfo,
-      climateDetails: climate ?? this.climateDetails,
-      countryDetails: country ?? this.countryDetails,
-      currencyDetails: currency ?? this.currencyDetails,
-      danceDetails: dance ?? this.danceDetails,
-      foodItemsList: food ?? this.foodItemsList,
-      industriesDetails: industries ?? this.industriesDetails,
-      languageDetails: language ?? this.languageDetails,
-      locationMapList: locationMap ?? this.locationMapList,
-      moviesList: movies ?? this.moviesList,
-      personsList: persons ?? this.personsList,
-      sportsDetails: sports ?? this.sportsDetails,
-      timeToVisitDetails: timeToVisit ?? this.timeToVisitDetails,
+      climateDetails: climate ?? climateDetails,
+      countryDetails: country ?? countryDetails,
+      currencyDetails: currency ?? currencyDetails,
+      danceDetails: dance ?? danceDetails,
+      foodItemsList: food ?? foodItemsList,
+      industriesDetails: industries ?? industriesDetails,
+      languageDetails: language ?? languageDetails,
+      locationMapList: locationMap ?? locationMapList,
+      moviesList: movies ?? moviesList,
+      personsList: persons ?? personsList,
+      sportsDetails: sports ?? sportsDetails,
+      timeToVisitDetails: timeToVisit ?? timeToVisitDetails,
       timezoneOffsetInMinutes:
-          timezoneOffsetInMunites ?? this.timezoneOffsetInMinutes,
-      touristPlacesList: touristPlaces ?? this.touristPlacesList,
-      triviaListDetails: triviaList ?? this.triviaListDetails,
+          timezoneOffsetInMunites ?? timezoneOffsetInMinutes,
+      touristPlacesList: touristPlaces ?? touristPlacesList,
+      triviaListDetails: triviaList ?? triviaListDetails,
     );
   }
 
   Map<String, dynamic> toMap() {
     return {
-      'airport': airport.toMap(),
-      'basic_info': basicInfo.toMap(),
-      'climate': climateDetails.toMap(),
-      'country': countryDetails.toMap(),
-      'currency': currencyDetails.toMap(),
-      'dance': danceDetails.toMap(),
-      'food': foodItemsList.toMap(),
-      'industries': industriesDetails.toMap(),
-      'language': languageDetails.toMap(),
-      'location_map': locationMapList.toMap(),
-      'movies': moviesList.toMap(),
-      'persons': personsList.toMap(),
-      'sports': sportsDetails.toMap(),
-      'time_to_visit': timeToVisitDetails.toMap(),
+      'airport': airport?.toMap(),
+      'basic_info': basicInfo?.toMap(),
+      'climate': climateDetails?.toMap(),
+      'country': countryDetails?.toMap(),
+      'currency': currencyDetails?.toMap(),
+      'dance': danceDetails?.toMap(),
+      'food': foodItemsList?.toMap(),
+      'industries': industriesDetails?.toMap(),
+      'language': languageDetails?.toMap(),
+      'location_map': locationMapList?.toMap(),
+      'movies': moviesList?.toMap(),
+      'persons': personsList?.toMap(),
+      'sports': sportsDetails?.toMap(),
+      'time_to_visit': timeToVisitDetails?.toMap(),
       'timezone_offset_in_minutes': timezoneOffsetInMinutes,
-      'tourist_places': touristPlacesList.toMap(),
-      'trivia': triviaListDetails.toMap(),
+      'tourist_places': touristPlacesList?.toMap(),
+      'trivia': triviaListDetails?.toMap(),
     };
   }
 
-  static PlaceDetails fromMap(Map<String, dynamic> map) {
+  static PlaceDetails? fromMap(Map<String, dynamic>? map) {
     if (map == null) return null;
 
     return PlaceDetails(
@@ -166,7 +166,7 @@ class PlaceDetails {
 
   String toJson() => json.encode(toMap());
 
-  static PlaceDetails fromJson(String source) => fromMap(json.decode(source));
+  static PlaceDetails? fromJson(String source) => fromMap(json.decode(source));
 
   @override
   String toString() {
@@ -174,27 +174,27 @@ class PlaceDetails {
   }
 
   @override
-  bool operator ==(Object o) {
-    if (identical(this, o)) return true;
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
 
-    return o is PlaceDetails &&
-        o.airport == airport &&
-        o.basicInfo == basicInfo &&
-        o.climateDetails == climateDetails &&
-        o.countryDetails == countryDetails &&
-        o.currencyDetails == currencyDetails &&
-        o.danceDetails == danceDetails &&
-        o.foodItemsList == foodItemsList &&
-        o.industriesDetails == industriesDetails &&
-        o.languageDetails == languageDetails &&
-        o.locationMapList == locationMapList &&
-        o.moviesList == moviesList &&
-        o.personsList == personsList &&
-        o.sportsDetails == sportsDetails &&
-        o.timeToVisitDetails == timeToVisitDetails &&
-        o.timezoneOffsetInMinutes == timezoneOffsetInMinutes &&
-        o.touristPlacesList == touristPlacesList &&
-        o.triviaListDetails == triviaListDetails;
+    return other is PlaceDetails &&
+        other.airport == airport &&
+        other.basicInfo == basicInfo &&
+        other.climateDetails == climateDetails &&
+        other.countryDetails == countryDetails &&
+        other.currencyDetails == currencyDetails &&
+        other.danceDetails == danceDetails &&
+        other.foodItemsList == foodItemsList &&
+        other.industriesDetails == industriesDetails &&
+        other.languageDetails == languageDetails &&
+        other.locationMapList == locationMapList &&
+        other.moviesList == moviesList &&
+        other.personsList == personsList &&
+        other.sportsDetails == sportsDetails &&
+        other.timeToVisitDetails == timeToVisitDetails &&
+        other.timezoneOffsetInMinutes == timezoneOffsetInMinutes &&
+        other.touristPlacesList == touristPlacesList &&
+        other.triviaListDetails == triviaListDetails;
   }
 
   @override

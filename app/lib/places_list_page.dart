@@ -2,7 +2,9 @@ import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pathika/basic_info/basic_info_app_bar.dart';
+import 'package:pathika/theme/app_theme_bloc.dart';
 import 'package:universal_io/io.dart' show HttpClient, Platform;
 
 import 'common/attributions.dart';
@@ -13,25 +15,26 @@ import 'places/place_info.dart';
 class PlacesListPage extends StatelessWidget {
   final HttpClient httpClient;
   final String currentLanguage;
-  final Function changePlace;
+  final void Function(String)? changePlace;
 
   const PlacesListPage({
-    Key key,
-    this.httpClient,
-    this.currentLanguage,
+    super.key,
+    required this.httpClient,
+    required this.currentLanguage,
     this.changePlace,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 70),
-      child: FutureBuilder<List<PlaceInfo>>(
+      margin: const EdgeInsets.only(bottom: 70),
+      child: FutureBuilder<List<PlaceInfo>?>(
         builder: (ctx, snapshot) {
-          if (snapshot.connectionState == ConnectionState.done && snapshot.data != null) {
-            List<PlaceInfo> places = snapshot.data;
+          if (snapshot.connectionState == ConnectionState.done &&
+              snapshot.data != null) {
+            List<PlaceInfo> places = snapshot.data!;
             return GridView.builder(
-              gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+              gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
                 maxCrossAxisExtent: 500,
                 mainAxisSpacing: 10,
                 crossAxisSpacing: 10,
@@ -55,10 +58,15 @@ class PlacesListPage extends StatelessWidget {
   }
 
   Widget getItemWidget(BuildContext context, PlaceInfo info) {
-    Function onTap = () {
-      changePlace(info.id);
+    onTap() {
+      changePlace?.call(info.id);
       Navigator.of(context).pop();
-    };
+    }
+
+    Color? highlightTextColor = BlocProvider.of<AppThemeBloc>(context)
+        .state
+        .appThemeData
+        .highlightTextColor;
 
     Widget child = Stack(
       children: <Widget>[
@@ -87,19 +95,26 @@ class PlacesListPage extends StatelessWidget {
                   info.name,
                   textAlign: TextAlign.start,
                   style: TextStyle(
-                    color: Colors.white,
+                    color: highlightTextColor,
                     fontSize: 28.0,
                   ),
                 ),
-                Text(
-                  info.country,
-                  textAlign: TextAlign.start,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 18.0,
+                if (info.country != null)
+                  Text(
+                    info.country!,
+                    textAlign: TextAlign.start,
+                    style: TextStyle(
+                      color: highlightTextColor,
+                      fontSize: 18.0,
+                    ),
                   ),
+                getAttributionWidget(
+                  context,
+                  info.photoBy,
+                  info.attributionUrl,
+                  info.licence,
+                  highlightTextColor,
                 ),
-                getAttributionWidget(context, info.photoBy, info.attributionUrl, info.licence, Colors.white),
               ],
             ),
           ),
@@ -111,24 +126,27 @@ class PlacesListPage extends StatelessWidget {
       width: double.infinity,
       height: double.infinity,
       decoration: BoxDecoration(
-        image: DecorationImage(
-          image: NetworkImage(info.backgroundImage),
-          fit: BoxFit.cover,
-        ),
+        image: info.backgroundImage != null
+            ? DecorationImage(
+                image: NetworkImage(info.backgroundImage!),
+                fit: BoxFit.cover,
+              )
+            : null,
         borderRadius: BorderRadius.circular(12),
       ),
       child: Container(
-        margin: EdgeInsets.fromLTRB(15, 15, 0, 0),
+        margin: const EdgeInsets.fromLTRB(15, 15, 0, 0),
         child: Text(
           info.name,
-          style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w600),
+          style: const TextStyle(
+              color: Colors.white, fontSize: 20, fontWeight: FontWeight.w600),
         ),
       ),
     );
     if (Platform.isIOS) {
       return CupertinoButton(
-        child: child,
         onPressed: onTap,
+        child: child,
       );
     } else {
       return Card(
@@ -144,12 +162,21 @@ class PlacesListPage extends StatelessWidget {
     }
   }
 
-  Future<List<PlaceInfo>> getPlaces() async {
-    String data = await Repository.getResponse(
+  Future<List<PlaceInfo>?> getPlaces() async {
+    String? data = await Repository.getResponse(
       httpClient: httpClient,
-      url: '$BASE_URL/assets/json/$API_VERSION/places_$currentLanguage.json',
+      url: '$baseUrl/assets/json/$apiVersion/places_$currentLanguage.json',
     );
-    List<PlaceInfo> places = (json.decode(data) as List).map<PlaceInfo>((item) => PlaceInfo.fromMap(item)).toList().reversed.toList();
+    if (data == null) {
+      return null;
+    }
+    List<PlaceInfo> places = (json.decode(data) as List)
+        .map<PlaceInfo?>((item) => PlaceInfo.fromMap(item))
+        .where((element) => element != null)
+        .map((e) => e!)
+        .toList()
+        .reversed
+        .toList();
     return places;
   }
 }

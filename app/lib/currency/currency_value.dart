@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:pathika/common/constants.dart';
 import 'package:universal_io/io.dart' show HttpClient;
 
@@ -15,26 +16,31 @@ class CurrencyValue extends StatelessWidget {
   final String symbol;
   final HttpClient httpClient;
 
-  const CurrencyValue({Key key, this.from, this.symbol, this.httpClient})
-      : super(key: key);
+  const CurrencyValue(
+      {super.key,
+      required this.from,
+      required this.symbol,
+      required this.httpClient});
 
   //'TO' is left , 'From' is right.
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<ConversionItem>(
+    return FutureBuilder<ConversionItem?>(
       builder: (context, snapshot) {
         if (snapshot.hasError) {
-          print(snapshot.error.toString());
-          return Text(
+          if (kDebugMode) {
+            print(snapshot.error.toString());
+          }
+          return const Text(
             ' ',
-            style : TextStyle(
+            style: TextStyle(
               fontSize: 20,
             ),
             textAlign: TextAlign.end,
           );
         } else {
           final conversionItem = snapshot.data;
-          if(conversionItem.quantity == 0) {
+          if (conversionItem == null || conversionItem.quantity == 0) {
             return Container();
           }
           final symbolTo = NumberFormat.simpleCurrency(name: conversionItem.to);
@@ -54,7 +60,7 @@ class CurrencyValue extends StatelessWidget {
 
           return Text(
             '$currencySymbolTextFrom ${valueFrom.toStringAsFixed(2)} = $currencySymbolTextTo ${valueTo.toStringAsFixed(2)}',
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 20,
             ),
             textAlign: TextAlign.end,
@@ -66,58 +72,64 @@ class CurrencyValue extends StatelessWidget {
     );
   }
 
-  Future<Locale> getAppLocale() async {
-    Future<String> countryCode = Repository.getResponse(
+  Future<Locale?> getAppLocale() async {
+    Future<String?> countryCode = Repository.getResponse(
       httpClient: httpClient,
       url: 'https://freegeoip.live/json/',
-      cacheTime: Duration(days: 7),
+      cacheTime: const Duration(days: 7),
     )
-        .then((response) => json.decode(response))
-        .then((map) => map['country_code']);
-    Future<String> languageCode = SharedPreferences.getInstance()
-        .then((sharedPref) => sharedPref.getString(APP_LANGUAGE));
+        .then((response) => json.decode(response ?? '{}'))
+        .then((map) => map['country_code'] as String?)
+        .onError<String>((error, stackTrace) => null);
+    Future<String?> languageCode = SharedPreferences.getInstance()
+        .then((sharedPref) => sharedPref.getString(appLanguage));
 
-    return Future.wait<String>([
+    return Future.wait<String?>([
       languageCode,
       countryCode,
-    ]).then((value) => Locale(value[0], value[1]));
+    ]).then((value) {
+      if (value.length == 2 && value[0] != null && value[1] != null) {
+        return Locale(value[0]!, value[1]!);
+      }
+      return null;
+    });
   }
 
-  Future<ConversionItem> _getData(BuildContext context) async {
-    Future numberFormatForUserCurrency = getAppLocale().then((locale) =>
-        NumberFormat.simpleCurrency(
-            locale: locale.toString(), decimalDigits: 2));
-    Future value = numberFormatForUserCurrency
-        .then(
-          (numberFormat) => Repository.getResponse(
-            httpClient: httpClient,
-            url:
-                '$API_URL/convertCurrency?from=$from&to=${numberFormat.currencyName}',
-            cacheTime: Duration(days: 1),
-          ),
-        )
-        .then((response) => json.decode(response))
-        .then((jsonResponse) => (jsonResponse as Map))
-        .then((map) => map.values.first as double);
+  Future<ConversionItem?> _getData(BuildContext context) async {
+    final locale = await getAppLocale();
+    if (locale == null) {
+      return null;
+    }
 
-    Future userCurrency =
-        numberFormatForUserCurrency.then((value) => value.currencyName);
+    final numberFormat = NumberFormat.simpleCurrency(
+        locale: locale.toString(), decimalDigits: 2);
+    final response = await Repository.getResponse(
+      httpClient: httpClient,
+      url: '$apiUrl/convertCurrency?from=$from&to=${numberFormat.currencyName}',
+      cacheTime: const Duration(days: 1),
+    );
+    if (response == null) {
+      return null;
+    }
 
-    return Future.wait([value, userCurrency]).then(
-      (value) {
-        int quantity = 1;
-        double v = value[0];
-        while (v < 1.0) {
-          quantity *= 10;
-          v *= 10;
-        }
-        return ConversionItem(
-          from: this.from,
-          to: value[1],
-          value: value[0],
-          quantity: quantity,
-        );
-      },
+    final Map jsonResponse = json.decode(response);
+    var value = jsonResponse.values.first as double;
+
+    final userCurrency = numberFormat.currencyName;
+    if (userCurrency == null) {
+      return null;
+    }
+
+    int quantity = 1;
+    while (value < 1.0) {
+      quantity *= 10;
+      value *= 10;
+    }
+    return ConversionItem(
+      from: from,
+      to: userCurrency,
+      value: value,
+      quantity: quantity,
     );
   }
 }

@@ -1,42 +1,46 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:pathika/common/info_card.dart';
-import 'package:pathika/places/place_details_page.dart';
 import 'package:universal_io/io.dart' show Platform;
 
-import 'basic_info.dart';
+import '../common/info_card.dart';
+import '../core/utility.dart';
+import '../places/place_details_page.dart';
+import './basic_info.dart';
 
 class BasicInfoAppBar extends StatelessWidget {
-  final double height;
-  final Orientation orientation;
+  final double? height;
+  final Orientation? orientation;
   final BasicInfo basicInfo;
   const BasicInfoAppBar({
-    Key key,
+    super.key,
     this.height,
     this.orientation,
-    this.basicInfo,
-  }) : super(key: key);
+    required this.basicInfo,
+  });
 
   @override
   Widget build(BuildContext context) {
     if (Platform.isIOS) {
       return InfoCard(
-        padding: EdgeInsets.all(0.0),
-        body: Container(
+        padding: const EdgeInsets.all(0.0),
+        color: materialTransparent,
+        body: SizedBox(
           width: double.infinity,
           height: height,
           child: Stack(
             children: <Widget>[
               CardBackgroundWidget(
                 url: basicInfo.backgroundImage,
-                boxFit: orientation == Orientation.portrait ? BoxFit.fitHeight : BoxFit.fitWidth,
+                boxFit: orientation == Orientation.portrait
+                    ? BoxFit.fitHeight
+                    : BoxFit.fitWidth,
               ),
               Align(
                 alignment: Alignment.bottomRight,
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: getCoverPhotoAttribution(context, basicInfo, Colors.white),
+                  child: getCoverPhotoAttribution(context, basicInfo),
                 ),
               ),
             ],
@@ -50,43 +54,44 @@ class BasicInfoAppBar extends StatelessWidget {
       title: _getTitle(),
       background: CardBackgroundWidget(
         url: basicInfo.backgroundImage,
-        boxFit: orientation == Orientation.portrait ? BoxFit.fitHeight : BoxFit.fitWidth,
+        boxFit: orientation == Orientation.portrait
+            ? BoxFit.fitHeight
+            : BoxFit.fitWidth,
       ),
     );
   }
 
   Widget _getTitle() {
-    return Container(
-      child: Text(
-        basicInfo.name,
-        textAlign: TextAlign.center,
-        style: TextStyle(
-          color: Colors.white,
-          fontSize: 20.0,
-        ),
+    return Text(
+      basicInfo.name,
+      textAlign: TextAlign.center,
+      style: const TextStyle(
+        color: Colors.white,
+        fontSize: 20.0,
       ),
     );
   }
 }
 
 class CardBackgroundWidget extends StatelessWidget {
-  final String url;
+  final String? url;
   final BoxFit boxFit;
-  const CardBackgroundWidget({Key key, this.url, this.boxFit = BoxFit.cover}) : super(key: key);
+  const CardBackgroundWidget({super.key, this.url, this.boxFit = BoxFit.cover});
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       alignment: Alignment.topCenter,
       children: [
-        Container(
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage(url),
-              fit: boxFit,
+        if (url != null)
+          Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: NetworkImage(url!),
+                fit: boxFit,
+              ),
             ),
           ),
-        ),
         Align(
           alignment: Alignment.bottomCenter,
           child: Container(
@@ -94,7 +99,10 @@ class CardBackgroundWidget extends StatelessWidget {
             height: 150,
             decoration: BoxDecoration(
               gradient: LinearGradient(
-                colors: [Colors.black.withOpacity(0.9), Colors.black.withOpacity(0.0)],
+                colors: [
+                  Colors.black.withOpacity(0.9),
+                  Colors.black.withOpacity(0.0)
+                ],
                 end: FractionalOffset.topCenter,
                 begin: FractionalOffset.bottomCenter,
               ),

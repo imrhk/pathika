@@ -4,25 +4,24 @@ import 'package:pathika/climate/weather_item.dart';
 
 class WeatherDetails extends StatelessWidget {
   final List<WeatherItem> items;
-  
-  WeatherDetails({
-    Key key,
-    this.items,
-  })  : super(key: key);
+
+  const WeatherDetails({
+    super.key,
+    required this.items,
+  });
 
   @override
   Widget build(BuildContext context) {
-    assert(items != null);
     return ListView.separated(
-      padding: EdgeInsets.all(0),
-      shrinkWrap: true,
-      physics: NeverScrollableScrollPhysics(),
+        padding: const EdgeInsets.all(0),
+        shrinkWrap: true,
+        physics: const NeverScrollableScrollPhysics(),
         itemBuilder: (ctx, index) {
           final item = items[index];
           return ListTile(
             leading: Text(
               item.emoji,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 32,
               ),
             ),
@@ -32,7 +31,7 @@ class WeatherDetails extends StatelessWidget {
           );
         },
         separatorBuilder: (ctx, index) {
-          return Container(child: Divider(),);
+          return const Divider();
         },
         itemCount: items.length);
   }

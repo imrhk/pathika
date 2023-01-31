@@ -6,23 +6,23 @@ import '../core/adt_details.dart';
 import '../localization/localization.dart';
 import 'trivia_list_details.dart';
 
-class TriviaListCard extends StatelessWidget implements Details<TriviaListDetails>{
-  final bool useColorsOnCard;
+class TriviaListCard extends StatelessWidget
+    implements Details<TriviaListDetails> {
+  @override
   final TriviaListDetails details;
-  TriviaListCard({
-    Key key,
-    this.useColorsOnCard,
-    this.details,
-  })  : super(key: key);
+  const TriviaListCard({
+    super.key,
+    required this.details,
+  });
 
   List<Widget> getChildren(BuildContext context, List<String> triviaList) {
-    List list = triviaList
+    List<Widget> list = triviaList
         .map<Widget>(
           (item) => ListTile(
             title: Text(item),
             leading: CircleAvatar(
               backgroundColor: Colors.black.withOpacity(0.05),
-              foregroundColor: Theme.of(context).textTheme.subtitle1.color,
+              foregroundColor: Theme.of(context).textTheme.titleMedium?.color,
               radius: 20,
               child: FittedBox(
                 fit: BoxFit.fitWidth,
@@ -32,19 +32,19 @@ class TriviaListCard extends StatelessWidget implements Details<TriviaListDetail
                 ),
               ),
             ),
-            contentPadding: EdgeInsets.all(0),
+            contentPadding: const EdgeInsets.all(0),
           ),
         )
         .map<List<Widget>>((item) => [
               item,
-              Divider(
+              const Divider(
                 thickness: 2,
               )
             ])
         .toList()
         .expand((element) => element)
         .toList();
-    if (list.length > 0) {
+    if (list.isNotEmpty) {
       list.removeLast();
     }
     return list;
@@ -52,9 +52,8 @@ class TriviaListCard extends StatelessWidget implements Details<TriviaListDetail
 
   @override
   Widget build(BuildContext context) {
-    assert(useColorsOnCard != null && details != null);
     return InfoCard(
-      color: useColorsOnCard ? Colors.blueGrey : null,
+      color: Colors.blueGrey,
       heading: BlocProvider.of<LocalizationBloc>(context)
           .localize('trivia', 'Trivia'),
       body: Column(

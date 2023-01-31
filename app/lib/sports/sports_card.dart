@@ -7,22 +7,20 @@ import '../localization/localization.dart';
 import 'sports_details.dart';
 
 class SportsCard extends StatelessWidget implements Details<SportsDetails> {
-  final bool useColorsOnCard;
+  @override
   final SportsDetails details;
-  SportsCard({
-    Key key,
-    this.useColorsOnCard,
-    this.details,
-  })  : super(key: key);
+  const SportsCard({
+    super.key,
+    required this.details,
+  });
   @override
   Widget build(BuildContext context) {
-    assert(useColorsOnCard != null && details != null);
     return InfoCard(
-      color: useColorsOnCard ? Colors.lightBlue : null,
+      color: Colors.lightBlue,
       heading: BlocProvider.of<LocalizationBloc>(context)
           .localize('most_popular_sports', 'Most Popular Sports'),
-      title: details.title,
-      footer: Text(details.footer),
+      title: details.title ?? '',
+      footer: Text(details.footer ?? ''),
     );
   }
 }

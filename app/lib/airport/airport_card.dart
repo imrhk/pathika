@@ -7,21 +7,20 @@ import '../localization/localization.dart';
 import 'airport_details.dart';
 
 class AirportCard extends StatelessWidget implements Details<AirportDetails> {
-  final bool useColorsOnCard;
+  @override
   final AirportDetails details;
 
-  AirportCard({
-    Key key,
-    this.useColorsOnCard,
-    this.details,
-  }) : super(key: key);
+  const AirportCard({
+    super.key,
+    required this.details,
+  });
 
   @override
   Widget build(BuildContext context) {
-    assert(useColorsOnCard != null && details != null);
     return InfoCard(
-      color: useColorsOnCard ? Colors.green : null,
-      heading: BlocProvider.of<LocalizationBloc>(context).localize('airport', 'Airport'),
+      color: Colors.green,
+      heading: BlocProvider.of<LocalizationBloc>(context)
+          .localize('airport', 'Airport'),
       title: details.name,
     );
   }

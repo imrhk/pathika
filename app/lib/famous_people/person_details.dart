@@ -2,14 +2,14 @@ import 'dart:convert';
 
 class PersonDetails {
   final String name;
-  final String avatarUrl;
-  final String work;
-  final String place;
-  final String licence;
-  final String photoBy;
-  final String attributionUrl;
+  final String? avatarUrl;
+  final String? work;
+  final String? place;
+  final String? licence;
+  final String? photoBy;
+  final String? attributionUrl;
   PersonDetails({
-    this.name,
+    required this.name,
     this.avatarUrl,
     this.work,
     this.place,
@@ -30,13 +30,13 @@ class PersonDetails {
   }
 
   PersonDetails copyWith({
-    String name,
-    String avatarUrl,
-    String work,
-    String place,
-    String licence,
-    String photoBy,
-    String attributionUrl,
+    String? name,
+    String? avatarUrl,
+    String? work,
+    String? place,
+    String? licence,
+    String? photoBy,
+    String? attributionUrl,
   }) {
     return PersonDetails(
       name: name ?? this.name,
@@ -61,7 +61,7 @@ class PersonDetails {
     };
   }
 
-  static PersonDetails fromMap(Map<String, dynamic> map) {
+  static PersonDetails? fromMap(Map<String, dynamic>? map) {
     if (map == null) return null;
 
     return PersonDetails(
@@ -77,7 +77,7 @@ class PersonDetails {
 
   String toJson() => json.encode(toMap());
 
-  static PersonDetails fromJson(String source) => fromMap(json.decode(source));
+  static PersonDetails? fromJson(String source) => fromMap(json.decode(source));
 
   @override
   String toString() {
@@ -85,17 +85,17 @@ class PersonDetails {
   }
 
   @override
-  bool operator ==(Object o) {
-    if (identical(this, o)) return true;
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
 
-    return o is PersonDetails &&
-        o.name == name &&
-        o.avatarUrl == avatarUrl &&
-        o.work == work &&
-        o.place == place &&
-        o.licence == licence &&
-        o.photoBy == photoBy &&
-        o.attributionUrl == attributionUrl;
+    return other is PersonDetails &&
+        other.name == name &&
+        other.avatarUrl == avatarUrl &&
+        other.work == work &&
+        other.place == place &&
+        other.licence == licence &&
+        other.photoBy == photoBy &&
+        other.attributionUrl == attributionUrl;
   }
 
   @override

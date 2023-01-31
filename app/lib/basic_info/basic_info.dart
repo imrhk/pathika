@@ -3,14 +3,14 @@ import 'dart:convert';
 class BasicInfo {
   final String name;
   final String id;
-  final String backgroundImage;
-  final String place;
-  final String licence;
-  final String photoBy;
-  final String attributionUrl;
+  final String? backgroundImage;
+  final String? place;
+  final String? licence;
+  final String? photoBy;
+  final String? attributionUrl;
   BasicInfo({
-    this.name,
-    this.id,
+    required this.name,
+    required this.id,
     this.backgroundImage,
     this.place,
     this.licence,
@@ -31,13 +31,13 @@ class BasicInfo {
   }
 
   BasicInfo copyWith({
-    String name,
-    String id,
-    String backgroundImage,
-    String place,
-    String licence,
-    String photoBy,
-    String attributionUrl,
+    String? name,
+    String? id,
+    String? backgroundImage,
+    String? place,
+    String? licence,
+    String? photoBy,
+    String? attributionUrl,
   }) {
     return BasicInfo(
       name: name ?? this.name,
@@ -62,7 +62,7 @@ class BasicInfo {
     };
   }
 
-  static BasicInfo fromMap(Map<String, dynamic> map) {
+  static BasicInfo? fromMap(Map<String, dynamic>? map) {
     if (map == null) return null;
 
     return BasicInfo(
@@ -78,7 +78,7 @@ class BasicInfo {
 
   String toJson() => json.encode(toMap());
 
-  static BasicInfo fromJson(String source) => fromMap(json.decode(source));
+  static BasicInfo? fromJson(String source) => fromMap(json.decode(source));
 
   @override
   String toString() {
@@ -86,21 +86,27 @@ class BasicInfo {
   }
 
   @override
-  bool operator ==(Object o) {
-    if (identical(this, o)) return true;
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
 
-    return o is BasicInfo &&
-        o.name == name &&
-        o.id == id &&
-        o.backgroundImage == backgroundImage &&
-        o.place == place &&
-        o.licence == licence &&
-        o.photoBy == photoBy &&
-        o.attributionUrl == attributionUrl;
+    return other is BasicInfo &&
+        other.name == name &&
+        other.id == id &&
+        other.backgroundImage == backgroundImage &&
+        other.place == place &&
+        other.licence == licence &&
+        other.photoBy == photoBy &&
+        other.attributionUrl == attributionUrl;
   }
 
   @override
   int get hashCode {
-    return name.hashCode ^ id.hashCode ^ backgroundImage.hashCode ^ place.hashCode ^ licence.hashCode ^ photoBy.hashCode ^ attributionUrl.hashCode;
+    return name.hashCode ^
+        id.hashCode ^
+        backgroundImage.hashCode ^
+        place.hashCode ^
+        licence.hashCode ^
+        photoBy.hashCode ^
+        attributionUrl.hashCode;
   }
 }

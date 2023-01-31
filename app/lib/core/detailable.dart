@@ -1,3 +1,3 @@
 mixin Detailable<T> {
-  T details;
+  late T details;
 }

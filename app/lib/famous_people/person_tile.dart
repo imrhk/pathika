@@ -5,23 +5,23 @@ import '../common/attributions.dart';
 
 class PersonTile extends StatelessWidget {
   final String name;
-  final String avatarUrl;
-  final String work;
-  final String place;
-  final String photoBy;
-  final String licence;
-  final String attributionUrl;
+  final String? avatarUrl;
+  final String? work;
+  final String? place;
+  final String? photoBy;
+  final String? licence;
+  final String? attributionUrl;
 
-  PersonTile({
-    Key key,
-    this.name,
+  const PersonTile({
+    super.key,
+    required this.name,
     this.avatarUrl,
     this.work,
     this.place,
     this.photoBy,
     this.licence,
     this.attributionUrl,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -29,21 +29,28 @@ class PersonTile extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Container(
-          width: 80,
-          height: 100,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              fit: BoxFit.cover,
-              alignment: Alignment.topCenter,
-              image: NetworkImage(
-                avatarUrl,
+        Visibility(
+          visible: avatarUrl != null,
+          replacement: const SizedBox(
+            width: 80,
+            height: 100,
+          ),
+          child: Container(
+            width: 80,
+            height: 100,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                alignment: Alignment.topCenter,
+                image: NetworkImage(
+                  avatarUrl!,
+                ),
               ),
+              borderRadius: BorderRadius.circular(8),
             ),
-            borderRadius: BorderRadius.circular(8),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 10,
         ),
         Flexible(
@@ -54,18 +61,18 @@ class PersonTile extends StatelessWidget {
             children: <Widget>[
               Text(
                 name,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 18,
                 ),
                 softWrap: true,
               ),
-              SizedBox(height: 5),
+              const SizedBox(height: 5),
               Text(
-                work,
+                work ?? '',
                 softWrap: true,
               ),
-              if (place != null && place.isNotEmpty) SizedBox(height: 5),
-              if (place != null && place.isNotEmpty)
+              if (place?.isNotEmpty ?? false) const SizedBox(height: 5),
+              if (place?.isNotEmpty ?? false)
                 RichText(
                   softWrap: true,
                   text: TextSpan(
@@ -74,26 +81,27 @@ class PersonTile extends StatelessWidget {
                         WidgetSpan(
                           child: Icon(Icons.place,
                               size: 14,
-                              color: Theme.of(context).textTheme.caption.color),
+                              color:
+                                  Theme.of(context).textTheme.bodySmall?.color),
                         ),
-                      TextSpan(
+                      const TextSpan(
                         text: ' ',
                       ),
                       TextSpan(
                         text: place,
                         style: Theme.of(context)
                             .textTheme
-                            .bodyText2
-                            .copyWith(textBaseline: TextBaseline.ideographic),
+                            .bodyMedium
+                            ?.copyWith(textBaseline: TextBaseline.ideographic),
                       ),
                     ],
                   ),
                 ),
-              if (photoBy != null && photoBy != "")
-                SizedBox(
+              if (photoBy != "")
+                const SizedBox(
                   height: 5,
                 ),
-              if (photoBy != null && photoBy != "")
+              if (photoBy != "")
                 Padding(
                   padding: const EdgeInsets.symmetric(
                     vertical: 4,

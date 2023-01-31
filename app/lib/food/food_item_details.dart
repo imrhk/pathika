@@ -2,34 +2,41 @@ import 'dart:convert';
 
 class FoodItemDetails {
   final String label;
-  final String photo;
+  final String? photo;
   final bool isVeg;
   final bool isNonVeg;
-  final String photoBy;
-  final String licence;
-  final String attributionUrl;
+  final String? photoBy;
+  final String? licence;
+  final String? attributionUrl;
   FoodItemDetails({
-    this.label,
+    required this.label,
     this.photo,
-    this.isVeg,
-    this.isNonVeg,
+    this.isVeg = false,
+    this.isNonVeg = false,
     this.photoBy,
     this.licence,
     this.attributionUrl,
   });
 
   factory FoodItemDetails.empty() {
-    return FoodItemDetails(label: "", isVeg: false, isNonVeg: false, licence: "", photo: "", photoBy: "", attributionUrl: "");
+    return FoodItemDetails(
+        label: "",
+        isVeg: false,
+        isNonVeg: false,
+        licence: "",
+        photo: "",
+        photoBy: "",
+        attributionUrl: "");
   }
 
   FoodItemDetails copyWith({
-    String label,
-    String photo,
-    bool isVeg,
-    bool isNonVeg,
-    String photoBy,
-    String licence,
-    String attributionurl,
+    String? label,
+    String? photo,
+    bool? isVeg,
+    bool? isNonVeg,
+    String? photoBy,
+    String? licence,
+    String? attributionurl,
   }) {
     return FoodItemDetails(
       label: label ?? this.label,
@@ -38,7 +45,7 @@ class FoodItemDetails {
       isNonVeg: isNonVeg ?? this.isNonVeg,
       photoBy: photoBy ?? this.photoBy,
       licence: licence ?? this.licence,
-      attributionUrl: attributionurl ?? this.attributionUrl,
+      attributionUrl: attributionurl ?? attributionUrl,
     );
   }
 
@@ -54,9 +61,9 @@ class FoodItemDetails {
     };
   }
 
-  static FoodItemDetails fromMap(Map<String, dynamic> map) {
+  static FoodItemDetails? fromMap(Map<String, dynamic>? map) {
     if (map == null) return null;
-  
+
     return FoodItemDetails(
       label: map['label'],
       photo: map['photo'],
@@ -70,7 +77,8 @@ class FoodItemDetails {
 
   String toJson() => json.encode(toMap());
 
-  static FoodItemDetails fromJson(String source) => fromMap(json.decode(source));
+  static FoodItemDetails? fromJson(String source) =>
+      fromMap(json.decode(source));
 
   @override
   String toString() {
@@ -78,27 +86,27 @@ class FoodItemDetails {
   }
 
   @override
-  bool operator ==(Object o) {
-    if (identical(this, o)) return true;
-  
-    return o is FoodItemDetails &&
-      o.label == label &&
-      o.photo == photo &&
-      o.isVeg == isVeg &&
-      o.isNonVeg == isNonVeg &&
-      o.photoBy == photoBy &&
-      o.licence == licence &&
-      o.attributionUrl == attributionUrl;
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+
+    return other is FoodItemDetails &&
+        other.label == label &&
+        other.photo == photo &&
+        other.isVeg == isVeg &&
+        other.isNonVeg == isNonVeg &&
+        other.photoBy == photoBy &&
+        other.licence == licence &&
+        other.attributionUrl == attributionUrl;
   }
 
   @override
   int get hashCode {
     return label.hashCode ^
-      photo.hashCode ^
-      isVeg.hashCode ^
-      isNonVeg.hashCode ^
-      photoBy.hashCode ^
-      licence.hashCode ^
-      attributionUrl.hashCode;
+        photo.hashCode ^
+        isVeg.hashCode ^
+        isNonVeg.hashCode ^
+        photoBy.hashCode ^
+        licence.hashCode ^
+        attributionUrl.hashCode;
   }
 }

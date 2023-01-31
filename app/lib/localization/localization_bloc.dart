@@ -1,9 +1,10 @@
+import 'dart:async';
 import 'dart:collection';
 import 'dart:convert';
 
 import 'package:bloc/bloc.dart';
-import 'package:meta/meta.dart';
-import 'package:universal_io/io.dart' as UIO;
+import 'package:flutter/foundation.dart';
+import 'package:universal_io/io.dart' as uio;
 
 import './localization.dart';
 import '../common/constants.dart';
@@ -11,80 +12,98 @@ import '../core/assets_client.dart';
 import '../core/repository.dart';
 
 class LocalizationBloc extends Bloc<LocalizationEvent, LocalizationState> {
-  final UIO.HttpClient httpClient;
+  final uio.HttpClient httpClient;
   final AssetsClient assetsClient;
 
-  LocalizationBloc({@required this.httpClient, @required this.assetsClient})
-      : assert(httpClient != null),
-        assert(assetsClient != null);
-
-  @override
-  LocalizationState get initialState => LocalizationUnintialized();
-
-  @override
-  Stream<LocalizationState> mapEventToState(LocalizationEvent event) async* {
-    if (event is FetchLocalization || event is ChangeLocalization) {
-      yield LocalizationLoading();
-
-      yield* _getLocalization(event.locale);
-    } else {
-      yield LocalizationError();
-    }
+  LocalizationBloc({required this.httpClient, required this.assetsClient})
+      : super(LocalizationUnintialized()) {
+    on<LocalizationEvent>((event, emit) {
+      if (event is FetchLocalization) {
+        _onFetchLocalizationEvent(event, emit);
+      } else {
+        emit(LocalizationError());
+      }
+    });
   }
 
-  Stream<LocalizationState> _getLocalization(String language) async* {
+  FutureOr<void> _onFetchLocalizationEvent(
+    LocalizationEvent event,
+    Emitter<LocalizationState> emit,
+  ) async {
+    if (event is FetchLocalization || event is ChangeLocalization) {
+      emit(LocalizationLoading());
+    }
+    _getLocalization(event.locale, emit);
+  }
+
+  FutureOr<void> _getLocalization(
+      String language, Emitter<LocalizationState> emit) async {
     Map<String, String> items = HashMap();
     int eventsYield = 0;
 
     //Load default locale
     try {
-      String data = await assetsClient.loadStringAsset(
-          '$BASE_LOCALIZATION_ASSET_PATH/$LOCALE_DEFAULT.json');
+      String? data = await assetsClient
+          .loadStringAsset('$baseLocalizationAssetPath/$localeDefault.json');
+      if (data == null) {
+        throw Exception();
+      }
       items.addAll((json.decode(data) as Map).map<String, String>(
           (key, value) => MapEntry<String, String>(key, value.toString())));
-      yield LocalizationLoaded(items: HashMap.from(items));
+      emit(LocalizationLoaded(items: HashMap.from(items)));
       eventsYield++;
     } catch (_) {
-      print('Could not load default locale resources');
+      if (kDebugMode) {
+        print('Could not load default locale resources');
+      }
     }
 
     //Load actual locale from assets
     try {
-      String data = await assetsClient
-          .loadStringAsset('$BASE_LOCALIZATION_ASSET_PATH/$language.json');
-      Map map = (json.decode(data) as Map).map<String, String>(
+      String? data = await assetsClient
+          .loadStringAsset('$baseLocalizationAssetPath/$language.json');
+      if (data == null) {
+        throw Exception();
+      }
+      Map<String, String>? map = (json.decode(data) as Map).map<String, String>(
           (key, value) => MapEntry<String, String>(key, value.toString()));
       if (!_isSame(items, map)) {
         items.addAll(map);
-        yield LocalizationLoaded(items: HashMap.from(items));
+        emit(LocalizationLoaded(items: HashMap.from(items)));
         eventsYield++;
       }
     } catch (_) {
-      print('Could not load selected locale $language resources');
+      if (kDebugMode) {
+        print('Could not load selected locale $language resources');
+      }
     }
 
     //Load remote locale
     try {
-      String data = await Repository.getResponse(
+      String? data = await Repository.getResponse(
           httpClient: httpClient,
-          cacheTime: Duration(
+          cacheTime: const Duration(
             days: 1,
           ),
-          url:
-              '$BASE_URL/assets/json/$API_VERSION/localization_$language.json');
-      Map map = (json.decode(data) as Map).map<String, String>(
-          (key, value) => MapEntry(key, value.toString()));
+          url: '$baseUrl/assets/json/$apiVersion/localization_$language.json');
+      if (data == null) {
+        throw Exception();
+      }
+      Map<String, String> map = (json.decode(data) as Map)
+          .map<String, String>((key, value) => MapEntry(key, value.toString()));
       if (!_isSame(items, map)) {
         items.addAll(map);
-        yield LocalizationLoaded(items: HashMap.from(items));
+        emit(LocalizationLoaded(items: HashMap.from(items)));
         eventsYield++;
       }
     } catch (_) {
-      print('Could not load selected locale $language resources');
+      if (kDebugMode) {
+        print('Could not load selected locale $language resources');
+      }
     }
 
     if (eventsYield == 0) {
-      yield LocalizationError();
+      emit(LocalizationError());
     }
   }
 
@@ -96,9 +115,10 @@ class LocalizationBloc extends Bloc<LocalizationEvent, LocalizationState> {
     return defaultValue;
   }
 
-  bool _isSame(Map<String, String> map1, Map<String, String> map2) {
+  bool _isSame(Map<String, String>? map1, Map<String, String>? map2) {
     if (map1 == null && map2 == null) return true;
-    if (map1 == null || map2 == null) return false;
+    if (map2 == null || map1 == null) return false;
+
     if (map1.length != map2.length) return false;
     final iterator1 = (HashMap()..addEntries(map1.entries)).entries.iterator;
     final iterator2 = (HashMap()..addEntries(map2.entries)).entries.iterator;

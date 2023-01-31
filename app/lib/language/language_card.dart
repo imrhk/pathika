@@ -6,19 +6,18 @@ import '../core/adt_details.dart';
 import '../localization/localization.dart';
 import 'language_details.dart';
 
-class LanguageCard extends StatelessWidget implements Details<LanguageDetails>{
-  final bool useColorsOnCard;
+class LanguageCard extends StatelessWidget implements Details<LanguageDetails> {
+  @override
   final LanguageDetails details;
-  LanguageCard({
-    Key key,
-    this.useColorsOnCard,
-    this.details,
-  })  : super(key: key);
+  const LanguageCard({
+    super.key,
+    required this.details,
+  });
+
   @override
   Widget build(BuildContext context) {
-    assert(useColorsOnCard != null && details != null);
     return InfoCard(
-      color: useColorsOnCard ? Colors.lightBlue : null,
+      color: Colors.lightBlue,
       heading: BlocProvider.of<LocalizationBloc>(context)
           .localize('language', 'Language'),
       title: details.primary,

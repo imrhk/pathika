@@ -5,7 +5,7 @@ import 'package:pathika/movies/movie_details.dart';
 class MovieList {
   List<MovieDetails> items;
   MovieList({
-    this.items,
+    required this.items,
   });
 
   factory MovieList.empty() {
@@ -13,7 +13,7 @@ class MovieList {
   }
 
   MovieList copyWith({
-    List<MovieDetails> items,
+    List<MovieDetails>? items,
   }) {
     return MovieList(
       items: items ?? this.items,
@@ -26,27 +26,27 @@ class MovieList {
     };
   }
 
-  static MovieList fromMap(Map<String, dynamic> map) {
+  static MovieList? fromMap(Map<String, dynamic>? map) {
     if (map == null) return null;
-  
+
     return MovieList(
-      items: List<MovieDetails>.from(map['items']?.map((x) => MovieDetails.fromMap(x))),
+      items: List<MovieDetails>.from(
+          map['items']?.map((x) => MovieDetails.fromMap(x))),
     );
   }
 
   String toJson() => json.encode(toMap());
 
-  static MovieList fromJson(String source) => fromMap(json.decode(source));
+  static MovieList? fromJson(String source) => fromMap(json.decode(source));
 
   @override
   String toString() => 'MovieList items: $items';
 
   @override
-  bool operator ==(Object o) {
-    if (identical(this, o)) return true;
-  
-    return o is MovieList &&
-      o.items == items;
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+
+    return other is MovieList && other.items == items;
   }
 
   @override

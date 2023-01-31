@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
@@ -7,44 +8,49 @@ import '../core/adt_details.dart';
 import '../localization/localization.dart';
 
 class CurrentTimeCard extends StatelessWidget implements Details<int> {
-  final bool useColorsOnCard;
   final int timezoneOffsetInMinute;
-  CurrentTimeCard({
-    Key key,
-    this.useColorsOnCard,
+  const CurrentTimeCard({
+    super.key,
     this.timezoneOffsetInMinute = 0,
-  })  : super(key: key);
+  });
 
+  @override
   int get details => timezoneOffsetInMinute;
 
   @override
   Widget build(BuildContext context) {
-    assert(useColorsOnCard != null);
     return FutureBuilder<Duration>(
       builder: (context, snapshot) {
         if (snapshot.hasError) {
-          print(snapshot.error.toString());
+          if (kDebugMode) {
+            print(snapshot.error.toString());
+          }
           return Container();
         } else {
-          final time = DateTime.now().subtract(snapshot.data);
+          if (snapshot.data == null) {
+            return const SizedBox.shrink();
+          }
+          final time = DateTime.now().subtract(snapshot.data!);
           final formattedTime = DateFormat.jm().format(time);
-          final suffix = snapshot.data.isNegative
+          final suffix = snapshot.data!.isNegative
               ? BlocProvider.of<LocalizationBloc>(context)
                   .localize('_ahead', 'ahead')
               : BlocProvider.of<LocalizationBloc>(context)
                   .localize('_behind', 'behind');
           final hours = BlocProvider.of<LocalizationBloc>(context)
-                .localize('_hours', 'hours');
+              .localize('_hours', 'hours');
           return InfoCard(
-            color: useColorsOnCard ? Colors.lightGreen : null,
+            color: Colors.lightGreen,
             heading: BlocProvider.of<LocalizationBloc>(context)
                 .localize('current_time', 'Current Time'),
             title: formattedTime,
-            subtitle:  snapshot.data.inSeconds == 0 ? "" : '${getTimeFromDuration(snapshot.data)} $hours $suffix',
+            subtitle: snapshot.data!.inSeconds == 0
+                ? ""
+                : '${getTimeFromDuration(snapshot.data!)} $hours $suffix',
           );
         }
       },
-      initialData: Duration(),
+      initialData: const Duration(),
       future: _getData(context),
     );
   }
@@ -62,10 +68,16 @@ class CurrentTimeCard extends StatelessWidget implements Details<int> {
   }
 
   String twoDigits(int n) {
-    print(n);
+    if (kDebugMode) {
+      print(n);
+    }
     if (n >= 10 || n <= -10) return "${n.abs()}";
-    if(n > 0) return "0$n";
-    else if(n == 0) return "00";
-    else return "0${n.abs()}";
+    if (n > 0) {
+      return "0$n";
+    } else if (n == 0) {
+      return "00";
+    } else {
+      return "0${n.abs()}";
+    }
   }
 }

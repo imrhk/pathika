@@ -3,15 +3,15 @@ import 'dart:convert';
 class LocationMapDetails {
   List<String> items;
   LocationMapDetails({
-    this.items,
+    this.items = const [],
   });
 
   factory LocationMapDetails.empty() {
     return LocationMapDetails(items: []);
   }
-  
+
   LocationMapDetails copyWith({
-    List<String> items,
+    List<String>? items,
   }) {
     return LocationMapDetails(
       items: items ?? this.items,
@@ -24,7 +24,7 @@ class LocationMapDetails {
     };
   }
 
-  static LocationMapDetails fromMap(Map<String, dynamic> map) {
+  static LocationMapDetails? fromMap(Map<String, dynamic>? map) {
     if (map == null) return null;
 
     return LocationMapDetails(
@@ -34,17 +34,17 @@ class LocationMapDetails {
 
   String toJson() => json.encode(toMap());
 
-  static LocationMapDetails fromJson(String source) =>
+  static LocationMapDetails? fromJson(String source) =>
       fromMap(json.decode(source));
 
   @override
   String toString() => 'LocationMapDetails items: $items';
 
   @override
-  bool operator ==(Object o) {
-    if (identical(this, o)) return true;
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
 
-    return o is LocationMapDetails && o.items == items;
+    return other is LocationMapDetails && other.items == items;
   }
 
   @override

@@ -1,73 +1,89 @@
 import 'package:flutter/material.dart';
-import 'package:pathika/common/attributions.dart';
+
+import '../common/attributions.dart';
+import '../core/utility.dart';
 
 class TouristAttractionItemCard extends StatelessWidget {
   final String name;
-  final String posterUrl;
-  final String description;
-  final Color cardColor;
-  final String attribution;
-  final String licence;
-  const TouristAttractionItemCard(
-      {Key key, this.name, this.posterUrl, this.description, this.cardColor = Colors.transparent, this.attribution, this.licence})
-      : super(key: key);
+  final String? posterUrl;
+  final String? description;
+  final String? attribution;
+  final String? licence;
+  const TouristAttractionItemCard({
+    super.key,
+    required this.name,
+    this.posterUrl,
+    this.description,
+    this.attribution,
+    this.licence,
+  });
 
-  String get contributorName {
-    if (attribution == null || attribution.isEmpty) return null;
-    final startIndexContributor = attribution.indexOf('>') + 1;
-    final endIndexContributor = attribution.indexOf('<', startIndexContributor);
+  String? get contributorName {
+    if (attribution?.isEmpty ?? true) return null;
+    final startIndexContributor = attribution!.indexOf('>') + 1;
+    final endIndexContributor =
+        attribution!.indexOf('<', startIndexContributor);
 
     if (startIndexContributor == 0 || endIndexContributor == -1) {
       return null;
     }
 
-    return attribution.substring(startIndexContributor, endIndexContributor);
+    return attribution!.substring(startIndexContributor, endIndexContributor);
   }
 
-  String get contributionUrl {
-    if (attribution == null || attribution.isEmpty) return null;
-    final startIndexUrl = attribution.indexOf('https');
-    final endIndexUrl = attribution.indexOf('"', startIndexUrl);
+  String? get contributionUrl {
+    if (attribution?.isEmpty ?? true) return null;
+    final startIndexUrl = attribution!.indexOf('https');
+    final endIndexUrl = attribution!.indexOf('"', startIndexUrl);
     if (startIndexUrl == -1 || endIndexUrl == -1) {
       return null;
     }
 
-    return attribution.substring(startIndexUrl, endIndexUrl);
+    return attribution!.substring(startIndexUrl, endIndexUrl);
   }
 
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: cardColor,
+      color: Theme.of(context).brightness == Brightness.dark ||
+              getColorsOnCard(context)
+          ? Colors.transparent
+          : null,
       clipBehavior: Clip.antiAlias,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10),
       ),
-      child: Container(
+      child: SizedBox(
         width: 300,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Container(
-              height: 200,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  fit: BoxFit.cover,
-                  alignment: Alignment.topCenter,
-                  image: NetworkImage(
-                    posterUrl,
+            Visibility(
+              visible: posterUrl != null,
+              replacement: Container(
+                height: 200,
+              ),
+              child: Container(
+                height: 200,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    fit: BoxFit.cover,
+                    alignment: Alignment.topCenter,
+                    image: NetworkImage(
+                      posterUrl!,
+                    ),
                   ),
                 ),
               ),
             ),
-            SizedBox(height: 5),
+            const SizedBox(height: 5),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 10),
               child: FittedBox(
                 fit: BoxFit.fitWidth,
                 child: Text(name,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 18,
                     )),
               ),
@@ -76,16 +92,18 @@ class TouristAttractionItemCard extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 10),
               child: FittedBox(
                 fit: BoxFit.fitWidth,
-                child: Text(description ?? "",
-                    style: TextStyle(
+                child: Text(description ?? '',
+                    style: const TextStyle(
                       fontSize: 14,
                     )),
               ),
             ),
-            if (attribution != null && attribution != "")
+            if (attribution != "")
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 10),
-                child: getAttributionWidget(context, contributorName, contributionUrl, licence),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 4, horizontal: 10),
+                child: getAttributionWidget(
+                    context, contributorName, contributionUrl, licence),
               ),
           ],
         ),

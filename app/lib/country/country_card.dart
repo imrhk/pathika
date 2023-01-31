@@ -4,21 +4,19 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../common/info_card.dart';
 import '../core/adt_details.dart';
 import '../localization/localization.dart';
-import 'country_details.dart';
+import './country_details.dart';
 
-class CountryCard extends StatelessWidget implements Details<CountryDetails>{
-  final bool useColorsOnCard;
+class CountryCard extends StatelessWidget implements Details<CountryDetails> {
+  @override
   final CountryDetails details;
-  CountryCard({
-    Key key,
-    this.details,
-    this.useColorsOnCard,
-  })  : super(key: key);
+  const CountryCard({
+    super.key,
+    required this.details,
+  });
   @override
   Widget build(BuildContext context) {
-    assert(useColorsOnCard != null && details != null);
     return InfoCard(
-      color: useColorsOnCard ? Colors.amber : null,
+      color: Colors.amber,
       heading: BlocProvider.of<LocalizationBloc>(context)
           .localize('country', 'Country'),
       title: details.name,

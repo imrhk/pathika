@@ -7,26 +7,25 @@ import 'package:universal_io/io.dart' show Platform;
 import '../common/info_card.dart';
 import '../core/adt_details.dart';
 import '../localization/localization.dart';
-import 'food_item_card.dart';
-import 'food_item_details.dart';
-import 'food_items_list.dart';
+import './food_item_card.dart';
+import './food_item_details.dart';
+import './food_items_list.dart';
 
-class FoodItemsListCard extends StatelessWidget implements Details<FoodItemsList> {
-  final bool useColorsOnCard;
+class FoodItemsListCard extends StatelessWidget
+    implements Details<FoodItemsList> {
+  @override
   final FoodItemsList details;
-  FoodItemsListCard({
-    Key key,
-    this.useColorsOnCard,
-    this.details,
-  })  : super(key: key);
+  const FoodItemsListCard({
+    super.key,
+    required this.details,
+  });
   @override
   Widget build(BuildContext context) {
-    assert(useColorsOnCard != null && details != null);
     return InfoCard(
-      color: useColorsOnCard ? Colors.teal : null,
-      heading: BlocProvider.of<LocalizationBloc>(context).localize('food', 'Food'),
+      color: Colors.teal,
+      heading:
+          BlocProvider.of<LocalizationBloc>(context).localize('food', 'Food'),
       body: _FoodItemsListCardInternal(
-        useColorsOnCard: useColorsOnCard,
         items: details.items,
       ),
     );
@@ -35,37 +34,38 @@ class FoodItemsListCard extends StatelessWidget implements Details<FoodItemsList
 
 class _FoodItemsListCardInternal extends StatefulWidget {
   final List<FoodItemDetails> items;
-  final bool useColorsOnCard;
 
-  const _FoodItemsListCardInternal({Key key, this.items, this.useColorsOnCard}) : super(key: key);
+  const _FoodItemsListCardInternal({
+    this.items = const [],
+  });
 
   @override
-  __FoodItemsListCardInternalState createState() => __FoodItemsListCardInternalState();
+  __FoodItemsListCardInternalState createState() =>
+      __FoodItemsListCardInternalState();
 }
 
-class __FoodItemsListCardInternalState extends State<_FoodItemsListCardInternal> {
-  List<FoodItemDetails> _filteredItems;
+class __FoodItemsListCardInternalState
+    extends State<_FoodItemsListCardInternal> {
+  late List<FoodItemDetails> _filteredItems;
   bool showVegOnly = true;
 
   @override
   void initState() {
-    _filteredItems = []..addAll(widget.items);
+    _filteredItems = [...widget.items];
     _setFilteredItems();
     super.initState();
   }
 
   Future _setFilteredItems() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    bool filterValue = true;
-    if (prefs.containsKey('FOOD_VEG_NON_VEG_FILTER')) {
-      filterValue = prefs.getBool('FOOD_VEG_NON_VEG_FILTER');
-    }
+    bool filterValue = prefs.getBool('FOOD_VEG_NON_VEG_FILTER') ?? false;
     setState(() {
       showVegOnly = filterValue;
       if (showVegOnly) {
-        _filteredItems = widget.items.where((element) => element.isVeg).toList();
+        _filteredItems =
+            widget.items.where((element) => element.isVeg).toList();
       } else {
-        _filteredItems = []..addAll(widget.items);
+        _filteredItems = [...widget.items];
       }
     });
     return Future.value();
@@ -75,9 +75,10 @@ class __FoodItemsListCardInternalState extends State<_FoodItemsListCardInternal>
     setState(() {
       showVegOnly = !showVegOnly;
       if (showVegOnly) {
-        _filteredItems = widget.items.where((element) => element.isVeg).toList();
+        _filteredItems =
+            widget.items.where((element) => element.isVeg).toList();
       } else {
-        _filteredItems = []..addAll(widget.items);
+        _filteredItems = [...widget.items];
       }
     });
     SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -88,12 +89,12 @@ class __FoodItemsListCardInternalState extends State<_FoodItemsListCardInternal>
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Container(
+        SizedBox(
             width: double.infinity,
             height: 250,
-            child: _filteredItems.length != 0
+            child: _filteredItems.isNotEmpty
                 ? ListView.builder(
-                    physics: BouncingScrollPhysics(),
+                    physics: const BouncingScrollPhysics(),
                     scrollDirection: Axis.horizontal,
                     shrinkWrap: false,
                     itemBuilder: (context, index) {
@@ -106,7 +107,6 @@ class __FoodItemsListCardInternalState extends State<_FoodItemsListCardInternal>
                         licence: item.licence,
                         attributionUrl: item.attributionUrl,
                         photoBy: item.photoBy,
-                        cardColor: Theme.of(context).brightness == Brightness.dark || widget.useColorsOnCard ? Colors.transparent : null,
                       );
                     },
                     itemCount: _filteredItems.length,
@@ -114,14 +114,17 @@ class __FoodItemsListCardInternalState extends State<_FoodItemsListCardInternal>
                 : showVegOnly
                     ? Center(
                         child: Text(
-                          BlocProvider.of<LocalizationBloc>(context).localize('no_veg_available', 'Vegetarian foods are not popular here.'),
+                          BlocProvider.of<LocalizationBloc>(context).localize(
+                              'no_veg_available',
+                              'Vegetarian foods are not popular here.'),
                         ),
                       )
-                    : Center(child: Text(''))),
+                    : const Center(child: Text(''))),
         ButtonBar(
           children: <Widget>[
             Text(
-              BlocProvider.of<LocalizationBloc>(context).localize('veg_only', 'Show Veg Only'),
+              BlocProvider.of<LocalizationBloc>(context)
+                  .localize('veg_only', 'Show Veg Only'),
             ),
             getPlatformSwitch(
               value: showVegOnly,
@@ -133,7 +136,10 @@ class __FoodItemsListCardInternalState extends State<_FoodItemsListCardInternal>
     );
   }
 
-  Widget getPlatformSwitch({bool value, Function onChanged}) {
-    return Platform.isIOS ? CupertinoSwitch(value: value, onChanged: onChanged) : Switch(value: value, onChanged: onChanged);
+  Widget getPlatformSwitch(
+      {required bool value, ValueChanged<bool>? onChanged}) {
+    return Platform.isIOS
+        ? CupertinoSwitch(value: value, onChanged: onChanged)
+        : Switch(value: value, onChanged: onChanged);
   }
 }

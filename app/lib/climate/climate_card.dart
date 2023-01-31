@@ -8,21 +8,20 @@ import 'climate_details.dart';
 import 'weather_details.dart';
 
 class ClimateCard extends StatelessWidget implements Details<ClimateDetails> {
-  final bool useColorsOnCard;
+  @override
   final ClimateDetails details;
-  
-  ClimateCard({
-    Key key,
-    this.useColorsOnCard,
-    this.details,
-  }) : super(key: key);
+
+  const ClimateCard({
+    super.key,
+    required this.details,
+  });
 
   @override
   Widget build(BuildContext context) {
-    assert(useColorsOnCard != null && details != null);
     return InfoCard(
-      color: useColorsOnCard ? Colors.indigo : null,
-      heading: BlocProvider.of<LocalizationBloc>(context).localize('climate', 'Climate'),
+      color: Colors.indigo,
+      heading: BlocProvider.of<LocalizationBloc>(context)
+          .localize('climate', 'Climate'),
       title: details.type,
       footer: WeatherDetails(items: details.items),
     );

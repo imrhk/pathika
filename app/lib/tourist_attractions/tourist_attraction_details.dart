@@ -3,17 +3,17 @@ import 'dart:convert';
 class TouristAttractionDetails {
   final String name;
   final String placeId;
-  final String description;
-  final String photos;
-  final List<String> htmlAttributions;
-  final String licence;
+  final String? description;
+  final String? photos;
+  final List<String>? htmlAttributions;
+  final String? licence;
   TouristAttractionDetails({
-    this.name,
-    this.placeId,
+    required this.name,
+    required this.placeId,
     this.description,
     this.photos,
     this.htmlAttributions,
-    this.licence
+    this.licence,
   });
 
   factory TouristAttractionDetails.empty() {
@@ -27,12 +27,12 @@ class TouristAttractionDetails {
   }
 
   TouristAttractionDetails copyWith({
-    String name,
-    String placeId,
-    String description,
-    String photos,
-    List<String> htmlAttributions,
-    String licence,
+    String? name,
+    String? placeId,
+    String? description,
+    String? photos,
+    List<String>? htmlAttributions,
+    String? licence,
   }) {
     return TouristAttractionDetails(
       name: name ?? this.name,
@@ -50,12 +50,13 @@ class TouristAttractionDetails {
       'place_id': placeId,
       'description': description,
       'photos': photos,
-      'html_attributions': List<dynamic>.from(htmlAttributions.map((x) => x)),
+      'html_attributions':
+          List<dynamic>.from(htmlAttributions?.map((x) => x) ?? []),
       'licence': licence,
     };
   }
 
-  static TouristAttractionDetails fromMap(Map<String, dynamic> map) {
+  static TouristAttractionDetails? fromMap(Map<String, dynamic>? map) {
     if (map == null) return null;
 
     return TouristAttractionDetails(
@@ -70,7 +71,7 @@ class TouristAttractionDetails {
 
   String toJson() => json.encode(toMap());
 
-  static TouristAttractionDetails fromJson(String source) =>
+  static TouristAttractionDetails? fromJson(String source) =>
       fromMap(json.decode(source));
 
   @override
@@ -79,28 +80,25 @@ class TouristAttractionDetails {
   }
 
   @override
-  bool operator ==(Object o) {
-    if (identical(this, o)) return true;
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
 
-    return o is TouristAttractionDetails &&
-        o.name == name &&
-        o.placeId == placeId &&
-        o.description == description &&
-        o.photos == photos &&
-        o.htmlAttributions == htmlAttributions &&
-        o.licence == licence;
+    return other is TouristAttractionDetails &&
+        other.name == name &&
+        other.placeId == placeId &&
+        other.description == description &&
+        other.photos == photos &&
+        other.htmlAttributions == htmlAttributions &&
+        other.licence == licence;
   }
 
   @override
   int get hashCode {
-    final hashCode =  name.hashCode ^
+    return name.hashCode ^
         placeId.hashCode ^
         description.hashCode ^
         photos.hashCode ^
-        htmlAttributions.hashCode;
-    if(licence != null) {
-      return hashCode ^ licence.hashCode;
-    }
-    return hashCode;
+        htmlAttributions.hashCode ^
+        licence.hashCode;
   }
 }

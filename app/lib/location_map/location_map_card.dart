@@ -2,21 +2,20 @@ import 'package:flutter/material.dart';
 
 import '../common/info_card.dart';
 import '../core/adt_details.dart';
+import '../core/utility.dart';
 import 'location_map_details.dart';
 
-class LocationMapCard extends StatelessWidget implements Details<LocationMapDetails>{
-  final bool useColorsOnCard;
+class LocationMapCard extends StatelessWidget
+    implements Details<LocationMapDetails> {
+  @override
   final LocationMapDetails details;
-  LocationMapCard({
-    Key key,
-    this.useColorsOnCard,
-    this.details,
-  })  : super(key: key);
+  const LocationMapCard({
+    super.key,
+    required this.details,
+  });
   @override
   Widget build(BuildContext context) {
-    assert(useColorsOnCard != null && details != null);
     return _LocationMapStackCardInternal(
-      useColorsOnCard: useColorsOnCard,
       items: details.items,
     );
   }
@@ -24,22 +23,24 @@ class LocationMapCard extends StatelessWidget implements Details<LocationMapDeta
 
 class _LocationMapStackCardInternal extends StatefulWidget {
   final List<String> items;
-  final bool useColorsOnCard;
 
-  const _LocationMapStackCardInternal(
-      {Key key, this.items, this.useColorsOnCard})
-      : super(key: key);
+  const _LocationMapStackCardInternal({
+    this.items = const [],
+  });
 
   @override
-  __LocationMapItemsStackCardInternalState createState() =>
-      __LocationMapItemsStackCardInternalState(items);
+  State createState() => __LocationMapItemsStackCardInternalState();
 }
 
 class __LocationMapItemsStackCardInternalState
     extends State<_LocationMapStackCardInternal> {
-  List<String> items;
-  __LocationMapItemsStackCardInternalState(List<String> items)
-      : this.items = []..addAll(items);
+  late List<String> items;
+
+  @override
+  void initState() {
+    super.initState();
+    items = [...widget.items];
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -51,8 +52,8 @@ class __LocationMapItemsStackCardInternalState
         });
       },
       child: InfoCard(
-        color: widget.useColorsOnCard ? Colors.lightBlue : null,
-        padding: EdgeInsets.all(0.0),
+        color: widget.getColorsOnCard(context) ? Colors.lightBlue : null,
+        padding: const EdgeInsets.all(0.0),
         body: AspectRatio(
           aspectRatio: 1.72,
           child: Image.network(
