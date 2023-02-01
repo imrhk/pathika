@@ -9,18 +9,18 @@ abstract class PageFetchBloc<S extends PageFetchEvent, T>
     extends Bloc<S, PageFetchState<T>> {
   final Logger? logger;
 
-  PageFetchBloc([this.logger]) : super(Uninitialized()) {
+  PageFetchBloc([this.logger]) : super(const PageFetchState.uninitialized()) {
     on<S>(
       (event, emit) async {
-        emit(Loading());
+        emit(const PageFetchState.loading());
         try {
           final result = await fetchPage(event);
-          emit(Loaded(result));
+          emit(PageFetchState.loaded(result));
         } catch (e) {
           if (e is Error) {
-            emit(LoadFailure(e));
+            emit(PageFetchState.error(e));
           } else {
-            emit(LoadFailure(AppError(e.toString())));
+            emit(PageFetchState.error(AppError(e.toString())));
           }
         }
       },

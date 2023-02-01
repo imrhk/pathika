@@ -27,20 +27,14 @@ class PlacesListPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider<PlacesPageFetchBloc>(
       create: (context) {
-        final repository = context.read<RemoteRepository>();
-        return PlacesPageFetchBloc(repository)
+        return PlacesPageFetchBloc(context.read<RemoteRepository>())
           ..add(PlacesPageFetchEvent(currentLanguage));
       },
       child: BlocBuilder<PlacesPageFetchBloc, PageFetchState<List<PlaceInfo>>>(
           builder: (context, state) {
-        if (state is Uninitialized || state is Loading) {
+        return state.when(uninitialized: () {
           return const Center(child: AdaptiveCircularLoader());
-        } else if (state is LoadFailure) {
-          return const Center(
-            child: Text('Error while fetching data'),
-          );
-        } else if (state is Loaded<List<PlaceInfo>>) {
-          final places = state.data;
+        }, loaded: (places) {
           return GridView.builder(
             gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
               maxCrossAxisExtent: 500,
@@ -57,10 +51,13 @@ class PlacesListPage extends StatelessWidget {
             },
             itemCount: places.length,
           );
-        } else {
-          assert(false, '${state.runtimeType} not mapped to widget ');
-          return const SizedBox.shrink();
-        }
+        }, loading: () {
+          return const Center(child: AdaptiveCircularLoader());
+        }, error: (_) {
+          return const Center(
+            child: Text('Error while fetching data'),
+          );
+        });
       }),
     );
   }

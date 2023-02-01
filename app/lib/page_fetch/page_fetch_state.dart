@@ -1,35 +1,11 @@
-import 'package:equatable/equatable.dart';
-import 'package:meta/meta.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-@immutable
-abstract class PageFetchState<T> extends Equatable {
-  @override
-  List<Object?> get props => [];
-  @override
-  bool? get stringify => true;
-}
+part 'page_fetch_state.freezed.dart';
 
-class Uninitialized<T> extends PageFetchState<T> {}
-
-class Loaded<T> extends PageFetchState<T> {
-  final T data;
-
-  Loaded(this.data);
-
-  @override
-  List<Object?> get props => [data];
-
-  @override
-  bool? get stringify => true;
-}
-
-class Loading<T> extends PageFetchState<T> {}
-
-class LoadFailure<T> extends PageFetchState<T> {
-  final Error error;
-
-  LoadFailure(this.error);
-
-  @override
-  List<Object?> get props => [error];
+@freezed
+abstract class PageFetchState<T> with _$PageFetchState<T> {
+  const factory PageFetchState.uninitialized() = _Uninitialized;
+  const factory PageFetchState.loaded(T data) = _Loaded;
+  const factory PageFetchState.loading() = _Loading;
+  const factory PageFetchState.error(Error error) = _LoadFailure;
 }

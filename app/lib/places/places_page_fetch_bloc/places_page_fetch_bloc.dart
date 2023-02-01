@@ -13,6 +13,8 @@ class PlacesPageFetchBloc
 
   @override
   Future<List<PlaceInfo>> fetchPage(PlacesPageFetchEvent event) {
-    return remoteRepository.getPlaces(event.appLanguage);
+    return remoteRepository
+        .getPlaces(event.appLanguage)
+        .then((value) => value.reversed.toList());
   }
 }
