@@ -1,4 +1,5 @@
 import 'package:flutter/services.dart';
+
 import 'assets_client.dart';
 
 class FlutterAssetsClient extends AssetsClient {

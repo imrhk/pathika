@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:pathika/common/constants.dart';
+import '../common/constants.dart';
 import 'package:retrofit/retrofit.dart';
 
 import '../places/model/place_info.dart';

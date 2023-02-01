@@ -4,9 +4,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../places/place_details_page.dart';
-import '../theme/app_theme.dart';
-import '../theme/app_theme_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:universal_io/io.dart' show HttpClient, Platform;
 
@@ -14,6 +11,9 @@ import '../common/constants.dart';
 import '../common/material_card.dart';
 import '../core/repository.dart';
 import '../localization/localization.dart';
+import '../places/place_details_page.dart';
+import '../theme/app_theme.dart';
+import '../theme/app_theme_bloc.dart';
 import 'app_language.dart';
 
 class SelectLanguagePage extends StatefulWidget {

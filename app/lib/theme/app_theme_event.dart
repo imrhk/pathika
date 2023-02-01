@@ -1,4 +1,5 @@
 import 'package:equatable/equatable.dart';
+
 import 'app_theme.dart';
 
 abstract class AppThemeEvent extends Equatable {

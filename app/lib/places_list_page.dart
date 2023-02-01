@@ -1,17 +1,17 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:universal_io/io.dart' show Platform;
+
+import 'basic_info/basic_info_app_bar.dart';
 import 'common/adaptive_circular_loader.dart';
+import 'common/attributions.dart';
 import 'page_fetch/page_fetch_state.dart';
+import 'places/model/place_info.dart';
 import 'places/places_page_fetch_bloc/places_page_fetch_bloc.dart';
 import 'places/places_page_fetch_bloc/places_page_fetch_event.dart';
 import 'remote/remote_repository.dart';
-import 'basic_info/basic_info_app_bar.dart';
-import 'places/model/place_info.dart';
 import 'theme/app_theme_bloc.dart';
-import 'package:universal_io/io.dart' show Platform;
-
-import 'common/attributions.dart';
 
 class PlacesListPage extends StatelessWidget {
   final String currentLanguage;
