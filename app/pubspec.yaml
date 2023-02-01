@@ -10,6 +10,7 @@ dependencies:
   bloc: ^8.1.0
   cupertino_icons: ^1.0.5
   devicelocale: ^0.5.5
+  dio: ^4.0.6
   equatable: ^2.0.5
   firebase_core: ^2.4.1
   firebase_messaging: ^14.2.1
@@ -22,17 +23,24 @@ dependencies:
   google_mobile_ads: ^2.3.0
   http: ^0.13.5
   intl: ^0.17.0
+  json_annotation: ^4.8.0
+  logger: ^1.1.0
   meta: ^1.8.0
   path_provider: ^2.0.12
+  platform_widget_mixin: ^0.0.1
+  retrofit: ^3.3.1
   shared_preferences: ^2.0.17
   shimmer: ^2.0.0
   universal_io: ^2.0.4
   url_launcher: ^6.1.8
 
 dev_dependencies:
+  build_runner: ">2.3.0 <4.0.0"
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
+  json_serializable: ">4.4.0"
+  retrofit_generator: ">=4.0.0 <5.0.0"
 
 flutter:
   uses-material-design: true

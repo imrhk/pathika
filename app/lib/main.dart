@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:devicelocale/devicelocale.dart';
+import 'package:dio/dio.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/cupertino.dart';
@@ -10,6 +11,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:intl/locale.dart';
+import 'package:logger/logger.dart';
+import 'package:pathika/remote/remote_repository.dart';
+import 'package:pathika/remote/rest_client.dart';
+import 'package:platform_widget_mixin/platform_widget_mixin.dart' as pwm;
 import 'firebase_options.dart';
 import 'theme/app_theme_bloc.dart';
 import 'theme/app_theme_state.dart';
@@ -28,8 +33,11 @@ import 'theme/app_theme_event.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await pwm.initialize();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   MobileAds.instance.initialize();
+
+  Bloc.observer = AppBlocObserver(Logger());
 
   runApp(
     MultiBlocProvider(
@@ -45,8 +53,15 @@ void main() async {
             ),
         ),
       ],
-      child: PathikaApp(
-        httpClient: HttpClient(),
+      child: RepositoryProvider(
+        create: (_) => RemoteRepository(
+          RestClient(
+            Dio(),
+          ),
+        ),
+        child: PathikaApp(
+          httpClient: HttpClient(),
+        ),
       ),
     ),
   );
@@ -301,5 +316,30 @@ class _InitPageState extends State<InitPage> {
             : const CircularProgressIndicator(),
       ),
     );
+  }
+}
+
+class AppBlocObserver extends BlocObserver {
+  final Logger? logger;
+
+  AppBlocObserver(this.logger);
+
+  @override
+  void onEvent(Bloc bloc, Object? event) {
+    super.onEvent(bloc, event);
+    logger?.i('${bloc.runtimeType}: OnEvent >>> $event');
+  }
+
+  @override
+  void onChange(BlocBase bloc, Change change) {
+    super.onChange(bloc, change);
+    logger?.i(
+        '${bloc.runtimeType}: OnChange >>> ${change.currentState} => ${change.nextState}');
+  }
+
+  @override
+  void onError(BlocBase bloc, Object error, StackTrace stackTrace) {
+    super.onError(bloc, error, stackTrace);
+    logger?.e('${bloc.runtimeType}: OnError', error, stackTrace);
   }
 }

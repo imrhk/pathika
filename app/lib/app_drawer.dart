@@ -1,11 +1,9 @@
 import 'dart:collection';
-import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_cupertino_settings/flutter_cupertino_settings.dart';
 import 'localization/localization_bloc.dart';
-import 'places/place_info.dart';
 import 'package:universal_io/io.dart' show HttpClient, Platform;
 
 import 'package:flutter/material.dart';
@@ -13,7 +11,6 @@ import 'package:url_launcher/url_launcher.dart';
 
 import 'app_language/select_language_page.dart';
 import 'common/constants.dart';
-import 'core/repository.dart';
 import 'theme/app_theme.dart';
 import 'theme/app_theme_bloc.dart';
 import 'theme/app_theme_event.dart';
@@ -231,74 +228,74 @@ class AppSettings extends StatelessWidget {
   }
 }
 
-class PlacesList extends StatelessWidget {
-  final HttpClient httpClient;
-  final String currentLanguage;
-  final Function changePlace;
+// class PlacesList extends StatelessWidget {
+//   final HttpClient httpClient;
+//   final String currentLanguage;
+//   final Function changePlace;
 
-  const PlacesList({
-    super.key,
-    required this.httpClient,
-    required this.currentLanguage,
-    required this.changePlace,
-  });
+//   const PlacesList({
+//     super.key,
+//     required this.httpClient,
+//     required this.currentLanguage,
+//     required this.changePlace,
+//   });
 
-  @override
-  Widget build(BuildContext context) {
-    return FutureBuilder<List<PlaceInfo>?>(
-      builder: (ctx, snapshot) {
-        if (snapshot.connectionState == ConnectionState.done &&
-            snapshot.data != null) {
-          List<PlaceInfo> places = snapshot.data!;
-          return ExpansionTile(
-              leading: const Icon(Icons.history),
-              title: Text(
-                BlocProvider.of<LocalizationBloc>(context)
-                    .localize('_archive', 'Archive'),
-              ),
-              children: places
-                  .map((item) => [
-                        const Divider(),
-                        Platform.isIOS
-                            ? CupertinoListTile(
-                                title: Text(item.name),
-                                onTap: () {
-                                  changePlace(item.id);
-                                  Navigator.of(context).pop();
-                                },
-                              )
-                            : ListTile(
-                                title: Text(item.name),
-                                onTap: () {
-                                  changePlace(item.id);
-                                  Navigator.of(context).pop();
-                                },
-                              )
-                      ])
-                  .expand((element) => element)
-                  .toList());
-        }
-        return const SizedBox.shrink();
-      },
-      future: getPlaces(),
-    );
-  }
+//   @override
+//   Widget build(BuildContext context) {
+//     return FutureBuilder<List<PlaceInfo>?>(
+//       builder: (ctx, snapshot) {
+//         if (snapshot.connectionState == ConnectionState.done &&
+//             snapshot.data != null) {
+//           List<PlaceInfo> places = snapshot.data!;
+//           return ExpansionTile(
+//               leading: const Icon(Icons.history),
+//               title: Text(
+//                 BlocProvider.of<LocalizationBloc>(context)
+//                     .localize('_archive', 'Archive'),
+//               ),
+//               children: places
+//                   .map((item) => [
+//                         const Divider(),
+//                         Platform.isIOS
+//                             ? CupertinoListTile(
+//                                 title: Text(item.name),
+//                                 onTap: () {
+//                                   changePlace(item.id);
+//                                   Navigator.of(context).pop();
+//                                 },
+//                               )
+//                             : ListTile(
+//                                 title: Text(item.name),
+//                                 onTap: () {
+//                                   changePlace(item.id);
+//                                   Navigator.of(context).pop();
+//                                 },
+//                               )
+//                       ])
+//                   .expand((element) => element)
+//                   .toList());
+//         }
+//         return const SizedBox.shrink();
+//       },
+//       future: getPlaces(),
+//     );
+//   }
 
-  Future<List<PlaceInfo>?> getPlaces() async {
-    String? data = await Repository.getResponse(
-      httpClient: httpClient,
-      url: '$baseUrl/assets/json/$apiVersion/places_$currentLanguage.json',
-    );
-    if (data == null) {
-      return null;
-    }
-    List<PlaceInfo> places = (json.decode(data) as List)
-        .map<PlaceInfo?>((item) => PlaceInfo.fromMap(item))
-        .where((element) => element != null)
-        .map((e) => e!)
-        .toList()
-        .reversed
-        .toList();
-    return places;
-  }
-}
+//   Future<List<PlaceInfo>?> getPlaces() async {
+//     String? data = await Repository.getResponse(
+//       httpClient: httpClient,
+//       url: '$baseUrl/assets/json/$apiVersion/places_$currentLanguage.json',
+//     );
+//     if (data == null) {
+//       return null;
+//     }
+//     List<PlaceInfo> places = (json.decode(data) as List)
+//         .map<PlaceInfo?>((item) => PlaceInfo.fromMap(item))
+//         .where((element) => element != null)
+//         .map((e) => e!)
+//         .toList()
+//         .reversed
+//         .toList();
+//     return places;
+//   }
+// }

@@ -1,21 +1,21 @@
 import 'dart:convert';
 
-import '../airport/airport_details.dart';
-import '../basic_info/basic_info.dart';
-import '../climate/climate_details.dart';
-import '../country/country_details.dart';
-import '../currency/currency_details.dart';
-import '../dance/dance_details.dart';
-import '../famous_people/person_list.dart';
-import '../food/food_items_list.dart';
-import '../industries/industry_details.dart';
-import '../language/language_details.dart';
-import '../location_map/location_map_details.dart';
-import '../movies/movie_list.dart';
-import '../sports/sports_details.dart';
-import '../time_to_visit/time_to_visit_details.dart';
-import '../tourist_attractions/tourist_attractions.list.dart';
-import '../trivia/trivia_list_details.dart';
+import '../../airport/airport_details.dart';
+import '../../basic_info/basic_info.dart';
+import '../../climate/climate_details.dart';
+import '../../country/country_details.dart';
+import '../../currency/currency_details.dart';
+import '../../dance/dance_details.dart';
+import '../../famous_people/person_list.dart';
+import '../../food/food_items_list.dart';
+import '../../industries/industry_details.dart';
+import '../../language/language_details.dart';
+import '../../location_map/location_map_details.dart';
+import '../../movies/movie_list.dart';
+import '../../sports/sports_details.dart';
+import '../../time_to_visit/time_to_visit_details.dart';
+import '../../tourist_attractions/tourist_attractions.list.dart';
+import '../../trivia/trivia_list_details.dart';
 
 class PlaceDetails {
   AirportDetails? airport;

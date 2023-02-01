@@ -36,7 +36,7 @@ import '../time_to_visit/time_to_visit_card.dart';
 import '../tourist_attractions/tourist_attractions_card.dart';
 import '../trivia/trivia_card.dart';
 import '../widgets/translate_list_item.dart';
-import 'place_details.dart';
+import 'model/place_details.dart';
 
 class PlaceDetailsPage extends StatefulWidget {
   final String placeId;
@@ -211,7 +211,6 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                       ),
                     ),
                     child: PlacesListPage(
-                      httpClient: widget.httpClient,
                       changePlace: widget.changePlace,
                       currentLanguage: widget.language,
                     ),
@@ -303,7 +302,6 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                     ),
                   ),
                   body: PlacesListPage(
-                    httpClient: widget.httpClient,
                     changePlace: widget.changePlace,
                     currentLanguage: widget.language,
                   ),

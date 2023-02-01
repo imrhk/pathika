@@ -1,59 +1,67 @@
-import 'dart:convert';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'common/adaptive_circular_loader.dart';
+import 'page_fetch/page_fetch_state.dart';
+import 'places/places_page_fetch_bloc/places_page_fetch_bloc.dart';
+import 'places/places_page_fetch_bloc/places_page_fetch_event.dart';
+import 'remote/remote_repository.dart';
 import 'basic_info/basic_info_app_bar.dart';
+import 'places/model/place_info.dart';
 import 'theme/app_theme_bloc.dart';
-import 'package:universal_io/io.dart' show HttpClient, Platform;
+import 'package:universal_io/io.dart' show Platform;
 
 import 'common/attributions.dart';
-import 'common/constants.dart';
-import 'core/repository.dart';
-import 'places/place_info.dart';
 
 class PlacesListPage extends StatelessWidget {
-  final HttpClient httpClient;
   final String currentLanguage;
   final void Function(String)? changePlace;
 
   const PlacesListPage({
     super.key,
-    required this.httpClient,
     required this.currentLanguage,
     this.changePlace,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(bottom: 70),
-      child: FutureBuilder<List<PlaceInfo>?>(
-        builder: (ctx, snapshot) {
-          if (snapshot.connectionState == ConnectionState.done &&
-              snapshot.data != null) {
-            List<PlaceInfo> places = snapshot.data!;
-            return GridView.builder(
-              gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-                maxCrossAxisExtent: 500,
-                mainAxisSpacing: 10,
-                crossAxisSpacing: 10,
-                childAspectRatio: 1.5,
-              ),
-              itemBuilder: (ctx, index) {
-                final item = places[index];
-                return getItemWidget(
-                  context,
-                  item,
-                );
-              },
-              itemCount: places.length,
-            );
-          }
+    return BlocProvider<PlacesPageFetchBloc>(
+      create: (context) {
+        final repository = context.read<RemoteRepository>();
+        return PlacesPageFetchBloc(repository)
+          ..add(PlacesPageFetchEvent(currentLanguage));
+      },
+      child: BlocBuilder<PlacesPageFetchBloc, PageFetchState<List<PlaceInfo>>>(
+          builder: (context, state) {
+        if (state is Uninitialized || state is Loading) {
+          return const Center(child: AdaptiveCircularLoader());
+        } else if (state is LoadFailure) {
+          return const Center(
+            child: Text('Error while fetching data'),
+          );
+        } else if (state is Loaded<List<PlaceInfo>>) {
+          final places = state.data;
+          return GridView.builder(
+            gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+              maxCrossAxisExtent: 500,
+              mainAxisSpacing: 10,
+              crossAxisSpacing: 10,
+              childAspectRatio: 1.5,
+            ),
+            itemBuilder: (ctx, index) {
+              final item = places[index];
+              return getItemWidget(
+                context,
+                item,
+              );
+            },
+            itemCount: places.length,
+          );
+        } else {
+          assert(false, '${state.runtimeType} not mapped to widget ');
           return const SizedBox.shrink();
-        },
-        future: getPlaces(),
-      ),
+        }
+      }),
     );
   }
 
@@ -160,23 +168,5 @@ class PlacesListPage extends StatelessWidget {
         ),
       );
     }
-  }
-
-  Future<List<PlaceInfo>?> getPlaces() async {
-    String? data = await Repository.getResponse(
-      httpClient: httpClient,
-      url: '$baseUrl/assets/json/$apiVersion/places_$currentLanguage.json',
-    );
-    if (data == null) {
-      return null;
-    }
-    List<PlaceInfo> places = (json.decode(data) as List)
-        .map<PlaceInfo?>((item) => PlaceInfo.fromMap(item))
-        .where((element) => element != null)
-        .map((e) => e!)
-        .toList()
-        .reversed
-        .toList();
-    return places;
   }
 }
