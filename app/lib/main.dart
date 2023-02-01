@@ -183,6 +183,7 @@ class _InitPageState extends State<InitPage> {
 
     final previousLanguage = _language;
     if (previousLanguage == null) {
+      _getLatestPlace();
       return;
     }
     final sharedPref = await SharedPreferences.getInstance();

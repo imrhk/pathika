@@ -72,16 +72,6 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
   final adConfig = getAdConfig();
   BannerAd? bottomBarPromoAd;
 
-  _PlaceDetailsPageState() {
-    bottomBarPromoAd = adConfig != null
-        ? BannerAd(
-            size: AdSize.banner,
-            adUnitId: adConfig!.adsId[placesBottomBarPromo]!,
-            listener: const BannerAdListener(),
-            request: adRequest)
-        : null;
-  }
-
   @override
   void dispose() {
     _scrollController.dispose();
@@ -96,6 +86,13 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
   @override
   void initState() {
     super.initState();
+    bottomBarPromoAd = adConfig != null
+        ? BannerAd(
+            size: AdSize.banner,
+            adUnitId: adConfig!.adsId[placesBottomBarPromo]!,
+            listener: const BannerAdListener(),
+            request: adRequest)
+        : null;
     _scrollController.addListener(() {
       double currentOffset = _scrollController.offset;
       if (currentOffset > _previousOffset) {
@@ -180,7 +177,7 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                 }),
           if (kDebugMode) const SizedBox(width: 10),
           GestureDetector(
-            child: const Icon(CupertinoIcons.placemark,
+            child: const Icon(CupertinoIcons.square_list,
                 color: CupertinoColors.activeBlue),
             onTap: () {
               Navigator.push(
@@ -530,7 +527,14 @@ class _PlaceDetailsPageState extends State<PlaceDetailsPage> {
                     textAlign: TextAlign.center,
                   ),
                 ),
-                const SizedBox(height: 70),
+                const SizedBox(height: 20),
+                if (bottomBarPromoAd != null)
+                  Container(
+                    alignment: Alignment.center,
+                    width: bottomBarPromoAd!.size.width.toDouble(),
+                    height: bottomBarPromoAd!.size.height.toDouble(),
+                    child: AdWidget(ad: bottomBarPromoAd!),
+                  ),
               ],
             ),
           ),
