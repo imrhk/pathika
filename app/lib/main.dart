@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:devicelocale/devicelocale.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
@@ -9,8 +10,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:intl/locale.dart';
-import 'package:pathika/theme/app_theme_bloc.dart';
-import 'package:pathika/theme/app_theme_state.dart';
+import 'firebase_options.dart';
+import 'theme/app_theme_bloc.dart';
+import 'theme/app_theme_state.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:universal_io/io.dart' show HttpClient, Platform;
 import 'app_language/app_language.dart';
@@ -24,9 +26,11 @@ import 'places/place_details_page.dart';
 import 'theme/app_theme.dart';
 import 'theme/app_theme_event.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   MobileAds.instance.initialize();
+
   runApp(
     MultiBlocProvider(
       providers: [
@@ -69,9 +73,6 @@ class _PathikaAppState extends State<PathikaApp> with WidgetsBindingObserver {
       create: (BuildContext ctx) => AppThemeBloc()..add(AppThemeInitialize()),
       child: BlocBuilder<AppThemeBloc, AppThemeState>(
         builder: (ctx, state) {
-          if (kDebugMode) {
-            print('state: $state');
-          }
           return _getPlateformApp(context, state.appThemeData);
         },
       ),
@@ -127,20 +128,15 @@ class _InitPageState extends State<InitPage> {
     FirebaseMessaging.onMessage.listen((RemoteMessage message) {});
 
     if (Platform.isIOS || kIsWeb) {
-      NotificationSettings settings =
-          await _firebaseMessaging.requestPermission(
+      await _firebaseMessaging.requestPermission(
         alert: true,
         badge: true,
         sound: true,
       );
-
-      if (kDebugMode) {
-        print('User granted permission: ${settings.authorizationStatus}');
-      }
     }
   }
 
-  _getLanguage(BuildContext context) async {
+  void _getLanguage(BuildContext context) async {
     final localizationBloc = context.read<LocalizationBloc>();
     final assetBundle = DefaultAssetBundle.of(context);
     final sharedPref = await SharedPreferences.getInstance();
@@ -246,13 +242,38 @@ class _InitPageState extends State<InitPage> {
     return BlocBuilder<LocalizationBloc, LocalizationState>(
         builder: (ctx, state) {
       if (state is LocalizationError) {
-        BlocProvider.of<LocalizationBloc>(context)
-            .add(const FetchLocalization(localeDefault));
-        return _buildLoadingScaffold();
+        return Center(
+          child: Column(
+            children: [
+              const Text('Error while loading l10n'),
+              TextButton(
+                onPressed: () {
+                  BlocProvider.of<LocalizationBloc>(context)
+                      .add(const FetchLocalization(localeDefault));
+                },
+                child: const Text('Retry'),
+              )
+            ],
+          ),
+        );
       } else if (state is LocalizationLoaded) {
         final placeId = _placeId;
         if (placeId == null) {
-          return _buildLoadingScaffold();
+          return AppScaffold(
+            body: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  const Text('Could not fetch latest place'),
+                  TextButton(
+                    onPressed: _getLatestPlace,
+                    child: const Text('Retry'),
+                  )
+                ],
+              ),
+            ),
+          );
         } else {
           return Directionality(
             textDirection: _isRtl ? TextDirection.rtl : TextDirection.ltr,

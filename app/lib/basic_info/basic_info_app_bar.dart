@@ -6,7 +6,7 @@ import 'package:universal_io/io.dart' show Platform;
 import '../common/info_card.dart';
 import '../core/utility.dart';
 import '../places/place_details_page.dart';
-import './basic_info.dart';
+import 'basic_info.dart';
 
 class BasicInfoAppBar extends StatelessWidget {
   final double? height;

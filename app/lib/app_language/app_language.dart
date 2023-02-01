@@ -61,7 +61,7 @@ class AppLanguage {
       name: map['name'],
       msg: map['msg'],
       color: map['color'] != null ? List<int>.from(map['color']) : [0, 0, 0, 0],
-      rtl: map['rtl'],
+      rtl: map['rtl'] ?? false,
     );
   }
 

@@ -1,26 +1,27 @@
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
-import 'package:pathika/common/constants.dart';
+import '../common/constants.dart';
 import 'package:universal_io/io.dart' show HttpClient;
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:pathika/currency/conversion_item.dart';
+import 'conversion_item.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:pathika/app_language/select_language_page.dart';
-import 'package:pathika/core/repository.dart';
+import '../app_language/select_language_page.dart';
+import '../core/repository.dart';
 
 class CurrencyValue extends StatelessWidget {
   final String from;
   final String symbol;
   final HttpClient httpClient;
 
-  const CurrencyValue(
-      {super.key,
-      required this.from,
-      required this.symbol,
-      required this.httpClient});
+  const CurrencyValue({
+    super.key,
+    required this.from,
+    required this.symbol,
+    required this.httpClient,
+  });
 
   //'TO' is left , 'From' is right.
   @override
@@ -41,7 +42,7 @@ class CurrencyValue extends StatelessWidget {
         } else {
           final conversionItem = snapshot.data;
           if (conversionItem == null || conversionItem.quantity == 0) {
-            return Container();
+            return const SizedBox.shrink();
           }
           final symbolTo = NumberFormat.simpleCurrency(name: conversionItem.to);
           final symbolFrom =
@@ -75,14 +76,14 @@ class CurrencyValue extends StatelessWidget {
   Future<Locale?> getAppLocale() async {
     Future<String?> countryCode = Repository.getResponse(
       httpClient: httpClient,
-      url: 'https://freegeoip.live/json/',
+      url: 'http://ip-api.com/json/',
       cacheTime: const Duration(days: 7),
     )
         .then((response) => json.decode(response ?? '{}'))
-        .then((map) => map['country_code'] as String?)
+        .then((map) => map['countryCode'] as String?)
         .onError<String>((error, stackTrace) => null);
     Future<String?> languageCode = SharedPreferences.getInstance()
-        .then((sharedPref) => sharedPref.getString(appLanguage));
+        .then((sharedPref) => sharedPref.getString(appLanguage) ?? "en");
 
     return Future.wait<String?>([
       languageCode,

@@ -4,8 +4,8 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_cupertino_settings/flutter_cupertino_settings.dart';
-import 'package:pathika/localization/localization_bloc.dart';
-import 'package:pathika/places/place_info.dart';
+import 'localization/localization_bloc.dart';
+import 'places/place_info.dart';
 import 'package:universal_io/io.dart' show HttpClient, Platform;
 
 import 'package:flutter/material.dart';
@@ -162,7 +162,7 @@ class AppSettings extends StatelessWidget {
     if (Platform.isIOS) {
       return CSHeader(text);
     } else {
-      if (text.isEmpty) return Container();
+      if (text.isEmpty) return const SizedBox.shrink();
       return ListTile(
         title: Text(
           text,
@@ -278,7 +278,7 @@ class PlacesList extends StatelessWidget {
                   .expand((element) => element)
                   .toList());
         }
-        return Container();
+        return const SizedBox.shrink();
       },
       future: getPlaces(),
     );

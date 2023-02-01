@@ -1,9 +1,8 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:pathika/common/constants.dart';
 
-import './material_card.dart';
 import '../core/utility.dart';
+import 'constants.dart';
+import 'material_card.dart';
 import 'shimmer_text.dart';
 
 class InfoCard extends StatelessWidget {
@@ -76,11 +75,7 @@ class InfoCard extends StatelessWidget {
                       padding: const EdgeInsets.all(5),
                       child: const Icon(Icons.volume_up),
                     ),
-                    onTap: () {
-                      if (kDebugMode) {
-                        print('tapped');
-                      }
-                    },
+                    onTap: () {},
                   ),
                 ),
               ),
@@ -104,7 +99,7 @@ class InfoCard extends StatelessWidget {
                           fontSize: 20,
                         ),
                       )
-                    : Container(),
+                    : const SizedBox.shrink(),
                 SizedBox(
                     height: heading == null ? 0 : (body == null ? 30 : 10)),
                 if (body == null)
@@ -126,11 +121,11 @@ class InfoCard extends StatelessWidget {
                   ),
                 if (body != null) body!,
                 footer == null
-                    ? Container()
+                    ? const SizedBox.shrink()
                     : const Divider(
                         thickness: 2,
                       ),
-                footer ?? Container(),
+                footer ?? const SizedBox.shrink(),
               ],
             )
           ],

@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:pathika/basic_info/basic_info.dart';
-import 'package:pathika/theme/app_theme_bloc.dart';
+import '../basic_info/basic_info.dart';
+import '../theme/app_theme_bloc.dart';
 import 'package:universal_io/io.dart' show HttpClient, Platform;
 import 'package:url_launcher/url_launcher.dart';
 

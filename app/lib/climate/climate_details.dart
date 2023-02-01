@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:pathika/climate/weather_item.dart';
+import 'weather_item.dart';
 
 class ClimateDetails {
   String type;

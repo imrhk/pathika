@@ -1,14 +1,7 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../theme/app_theme_bloc.dart';
-
-printInDebug(String msg) {
-  if (kDebugMode) {
-    print(msg);
-  }
-}
 
 const MaterialColor materialBlack = MaterialColor(
   _blackPrimaryValue,

@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:pathika/food/food_item_details.dart';
+import 'food_item_details.dart';
 
 class FoodItemsList {
   List<FoodItemDetails> items;

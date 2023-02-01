@@ -10,7 +10,7 @@ abstract class LocalizationEvent extends Equatable {
 }
 
 class FetchLocalization extends LocalizationEvent {
-  const FetchLocalization(String locale) : super(locale); 
+  const FetchLocalization(String locale) : super(locale);
 }
 
 class ChangeLocalization extends LocalizationEvent {

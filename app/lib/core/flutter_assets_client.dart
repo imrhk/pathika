@@ -1,5 +1,5 @@
 import 'package:flutter/services.dart';
-import 'package:pathika/core/assets_client.dart';
+import 'assets_client.dart';
 
 class FlutterAssetsClient extends AssetsClient {
   final AssetBundle _assetBundle;

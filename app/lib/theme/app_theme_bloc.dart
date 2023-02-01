@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/foundation.dart';
-import 'package:pathika/theme/app_theme_event.dart';
-import 'package:pathika/theme/app_theme_state.dart';
+import 'app_theme_event.dart';
+import 'app_theme_state.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'app_theme.dart';
@@ -19,6 +19,8 @@ class AppThemeBloc extends Bloc<AppThemeEvent, AppThemeState> {
             print('loading $appTheme}');
           }
         }
+      } else {
+        add(ChangeAppTheme(AppTheme.light()));
       }
     });
 

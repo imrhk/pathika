@@ -25,7 +25,7 @@ class CurrentTimeCard extends StatelessWidget implements Details<int> {
           if (kDebugMode) {
             print(snapshot.error.toString());
           }
-          return Container();
+          return const SizedBox.shrink();
         } else {
           if (snapshot.data == null) {
             return const SizedBox.shrink();
@@ -68,9 +68,6 @@ class CurrentTimeCard extends StatelessWidget implements Details<int> {
   }
 
   String twoDigits(int n) {
-    if (kDebugMode) {
-      print(n);
-    }
     if (n >= 10 || n <= -10) return "${n.abs()}";
     if (n > 0) {
       return "0$n";

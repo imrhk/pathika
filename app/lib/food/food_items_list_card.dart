@@ -7,9 +7,9 @@ import 'package:universal_io/io.dart' show Platform;
 import '../common/info_card.dart';
 import '../core/adt_details.dart';
 import '../localization/localization.dart';
-import './food_item_card.dart';
-import './food_item_details.dart';
-import './food_items_list.dart';
+import 'food_item_card.dart';
+import 'food_item_details.dart';
+import 'food_items_list.dart';
 
 class FoodItemsListCard extends StatelessWidget
     implements Details<FoodItemsList> {

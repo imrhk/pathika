@@ -1,7 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pathika/localization/localization.dart';
+import '../localization/localization.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 bool isNullOrEmpty(String? str) {
@@ -16,7 +16,7 @@ Widget getAttributionWidget(BuildContext context, String? photoBy,
   if (isNullOrEmpty(photoBy) &&
       isNullOrEmpty(atttributionUrl) &&
       isNullOrEmpty(licence)) {
-    return Container();
+    return const SizedBox.shrink();
   }
 
   getLicenceUrl() {

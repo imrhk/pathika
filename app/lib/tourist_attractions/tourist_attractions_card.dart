@@ -5,8 +5,8 @@ import '../common/info_card.dart';
 import '../core/adt_details.dart';
 import '../core/utility.dart';
 import '../localization/localization.dart';
-import './tourist_attraction_item_card.dart';
-import './tourist_attractions.list.dart';
+import 'tourist_attraction_item_card.dart';
+import 'tourist_attractions.list.dart';
 
 class TouristAttractionsCard extends StatelessWidget
     implements Details<TouristAttractionsList> {

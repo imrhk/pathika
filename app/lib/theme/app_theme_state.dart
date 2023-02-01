@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
-import 'package:pathika/theme/app_theme.dart';
+import 'app_theme.dart';
 
 abstract class AppThemeState extends Equatable {
   final AppTheme appThemeData;

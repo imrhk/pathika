@@ -6,10 +6,10 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter/foundation.dart';
 import 'package:universal_io/io.dart' as uio;
 
-import './localization.dart';
 import '../common/constants.dart';
 import '../core/assets_client.dart';
 import '../core/repository.dart';
+import 'localization.dart';
 
 class LocalizationBloc extends Bloc<LocalizationEvent, LocalizationState> {
   final uio.HttpClient httpClient;
@@ -17,13 +17,8 @@ class LocalizationBloc extends Bloc<LocalizationEvent, LocalizationState> {
 
   LocalizationBloc({required this.httpClient, required this.assetsClient})
       : super(LocalizationUnintialized()) {
-    on<LocalizationEvent>((event, emit) {
-      if (event is FetchLocalization) {
-        _onFetchLocalizationEvent(event, emit);
-      } else {
-        emit(LocalizationError());
-      }
-    });
+    on<FetchLocalization>(_onFetchLocalizationEvent);
+    on<ChangeLocalization>(_onFetchLocalizationEvent);
   }
 
   FutureOr<void> _onFetchLocalizationEvent(
@@ -33,7 +28,7 @@ class LocalizationBloc extends Bloc<LocalizationEvent, LocalizationState> {
     if (event is FetchLocalization || event is ChangeLocalization) {
       emit(LocalizationLoading());
     }
-    _getLocalization(event.locale, emit);
+    await _getLocalization(event.locale, emit);
   }
 
   FutureOr<void> _getLocalization(

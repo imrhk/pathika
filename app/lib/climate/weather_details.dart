@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:pathika/climate/weather_item.dart';
+import 'weather_item.dart';
 
 class WeatherDetails extends StatelessWidget {
   final List<WeatherItem> items;

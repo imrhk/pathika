@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:pathika/theme/app_theme.dart';
+import 'app_theme.dart';
 
 abstract class AppThemeEvent extends Equatable {
   const AppThemeEvent();

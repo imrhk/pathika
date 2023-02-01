@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:pathika/movies/movie_details.dart';
+import 'movie_details.dart';
 
 class MovieList {
   List<MovieDetails> items;

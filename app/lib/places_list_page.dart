@@ -3,8 +3,8 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pathika/basic_info/basic_info_app_bar.dart';
-import 'package:pathika/theme/app_theme_bloc.dart';
+import 'basic_info/basic_info_app_bar.dart';
+import 'theme/app_theme_bloc.dart';
 import 'package:universal_io/io.dart' show HttpClient, Platform;
 
 import 'common/attributions.dart';
@@ -50,7 +50,7 @@ class PlacesListPage extends StatelessWidget {
               itemCount: places.length,
             );
           }
-          return Container();
+          return const SizedBox.shrink();
         },
         future: getPlaces(),
       ),

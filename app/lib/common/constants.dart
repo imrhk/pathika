@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 
 const baseUrl = kDebugMode
-    ? "http://192.168.1.24:32132"
+    ? "http://10.0.167.137:5003"
     : "https://cdn.pathika.litedevs.com";
 const apiUrl = "https://pathika.litedevs.com/api";
 const apiVersion = 'v1';

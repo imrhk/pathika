@@ -1,9 +1,9 @@
 import 'dart:convert';
 import 'dart:io' as io;
-import 'package:flutter/foundation.dart';
-import 'package:universal_io/io.dart' as uio;
 
+import 'package:flutter/foundation.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:universal_io/io.dart' as uio;
 
 const int defaultCacheDurationInMinutes = 0;
 
