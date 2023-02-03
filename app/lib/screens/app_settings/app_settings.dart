@@ -1,37 +1,34 @@
 import 'dart:collection';
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_cupertino_settings/flutter_cupertino_settings.dart';
-import 'localization/localization_bloc.dart';
-import 'package:universal_io/io.dart' show HttpClient, Platform;
-
-import 'package:flutter/material.dart';
+import 'package:universal_io/io.dart' show Platform;
 import 'package:url_launcher/url_launcher.dart';
 
-import 'app_language/select_language_page.dart';
-import 'common/constants.dart';
-import 'theme/app_theme.dart';
-import 'theme/app_theme_bloc.dart';
-import 'theme/app_theme_event.dart';
+import '../../app_language/select_language_page.dart';
+import '../../common/constants.dart';
+import '../../localization/localization_bloc.dart';
+import '../../theme/app_theme.dart';
+import '../../theme/app_theme_bloc.dart';
+import '../../theme/app_theme_event.dart';
 
 class AppSettings extends StatelessWidget {
   final Function? appLanguageChanged;
-  final HttpClient httpClient;
   final String? currentLanguge;
   final Function? changePlace;
 
   const AppSettings({
     super.key,
     this.appLanguageChanged,
-    required this.httpClient,
     this.currentLanguge,
     this.changePlace,
   });
 
   @override
   Widget build(BuildContext context) {
-    final appTheme = BlocProvider.of<AppThemeBloc>(context).state.appThemeData;
+    final appTheme = BlocProvider.of<AppThemeBloc>(context).state.appTheme;
     return getSettingsContainer(
       widgets: [
         getSettingsSectionHeader(
@@ -84,13 +81,8 @@ class AppSettings extends StatelessWidget {
           onTap: () async {
             final response = await Navigator.of(context).push(
               getPageRoute(
-                builder: (ctx) => getThemeWidget(
-                    SelectLanguagePage(
-                      httpClient: httpClient,
-                      currentLanguage: currentLanguge,
-                      fromSettings: true,
-                    ),
-                    appTheme),
+                builder: (ctx) =>
+                    getThemeWidget(const SelectLanguagePage(), appTheme),
               ),
             );
             if (response != null) {

@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 import 'app_theme.dart';
 
 abstract class AppThemeState extends Equatable {
-  final AppTheme appThemeData;
+  final AppTheme appTheme;
 
-  const AppThemeState(this.appThemeData);
+  const AppThemeState(this.appTheme);
 
   @override
-  List<Object> get props => [appThemeData];
+  List<Object> get props => [appTheme];
 }
 
 class AppThemeUninitalized extends AppThemeState {
@@ -20,15 +20,15 @@ class AppThemeUninitalized extends AppThemeState {
             : AppTheme.dark());
 
   @override
-  String toString() => 'AppThemeUninitalized {appThemeData: $appThemeData}';
+  String toString() => 'AppThemeUninitalized {appThemeData: $appTheme}';
 }
 
 class AppThemeLoaded extends AppThemeState {
-  const AppThemeLoaded(super.appThemeData);
+  const AppThemeLoaded(super.appTheme);
 
   @override
-  List<Object> get props => [appThemeData];
+  List<Object> get props => [appTheme];
 
   @override
-  String toString() => 'AppThemeLoaded {appThemeData: $appThemeData}';
+  String toString() => 'AppThemeLoaded {appThemeData: $appTheme}';
 }

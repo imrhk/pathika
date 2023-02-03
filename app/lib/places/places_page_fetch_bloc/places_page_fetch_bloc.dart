@@ -1,8 +1,8 @@
 import 'package:logger/logger.dart';
 
+import '../../models/place_models.dart';
 import '../../page_fetch/page_fetch_bloc.dart';
 import '../../remote/remote_repository.dart';
-import '../model/place_info.dart';
 import 'places_page_fetch_event.dart';
 
 class PlacesPageFetchBloc

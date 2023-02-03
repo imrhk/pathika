@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../common/info_card.dart';
 import '../core/adt_details.dart';
 import '../localization/localization.dart';
-import 'time_to_visit_details.dart';
+import '../models/place_models.dart';
 
 class TimeToVisitCard extends StatelessWidget
     implements Details<TimeToVisitDetails> {
@@ -26,7 +26,7 @@ class TimeToVisitCard extends StatelessWidget
   }
 
   String getSubtitle(BuildContext context) {
-    if (details.secondary.isEmpty) return "";
+    if (details.secondary?.isEmpty ?? true) return "";
     return '${BlocProvider.of<LocalizationBloc>(context).localize('_or', 'or')} ${details.secondary}';
   }
 }

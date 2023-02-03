@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../common/info_card.dart';
 import '../core/adt_details.dart';
 import '../localization/localization.dart';
-import 'country_details.dart';
+import '../models/place_models.dart';
 
 class CountryCard extends StatelessWidget implements Details<CountryDetails> {
   @override

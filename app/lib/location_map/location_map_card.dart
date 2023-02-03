@@ -3,12 +3,10 @@ import 'package:flutter/material.dart';
 import '../common/info_card.dart';
 import '../core/adt_details.dart';
 import '../core/utility.dart';
-import 'location_map_details.dart';
 
-class LocationMapCard extends StatelessWidget
-    implements Details<LocationMapDetails> {
+class LocationMapCard extends StatelessWidget implements Details<List<String>> {
   @override
-  final LocationMapDetails details;
+  final List<String> details;
   const LocationMapCard({
     super.key,
     required this.details,
@@ -16,7 +14,7 @@ class LocationMapCard extends StatelessWidget
   @override
   Widget build(BuildContext context) {
     return _LocationMapStackCardInternal(
-      items: details.items,
+      items: details,
     );
   }
 }

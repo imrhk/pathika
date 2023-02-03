@@ -3,7 +3,7 @@ import '../../page_fetch/page_fetch_event.dart';
 class PlacesPageFetchEvent extends PageFetchEvent {
   final String appLanguage;
 
-  PlacesPageFetchEvent(this.appLanguage);
+  const PlacesPageFetchEvent(this.appLanguage);
 
   @override
   List<Object?> get props => [appLanguage];

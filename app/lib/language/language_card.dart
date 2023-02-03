@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../common/info_card.dart';
 import '../core/adt_details.dart';
 import '../localization/localization.dart';
-import 'language_details.dart';
+import '../models/place_models.dart';
 
 class LanguageCard extends StatelessWidget implements Details<LanguageDetails> {
   @override
@@ -18,8 +18,8 @@ class LanguageCard extends StatelessWidget implements Details<LanguageDetails> {
   Widget build(BuildContext context) {
     return InfoCard(
       color: Colors.lightBlue,
-      heading: BlocProvider.of<LocalizationBloc>(context)
-          .localize('language', 'Language'),
+      heading:
+          context.read<LocalizationBloc>().localize('language', 'Language'),
       title: details.primary,
       subtitle: details.secondary.join(','),
     );

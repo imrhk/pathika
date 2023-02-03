@@ -38,12 +38,9 @@ const MaterialColor materialTransparent = MaterialColor(
 
 extension AppThemeWidget on Widget {
   bool getColorsOnCard(BuildContext context) =>
-      BlocProvider.of<AppThemeBloc>(context)
-          .state
-          .appThemeData
-          .useColorsOnCard ??
+      BlocProvider.of<AppThemeBloc>(context).state.appTheme.useColorsOnCard ??
       false;
 
   Gradient? getShimmerGradient(BuildContext context) =>
-      BlocProvider.of<AppThemeBloc>(context).state.appThemeData.textGradient;
+      BlocProvider.of<AppThemeBloc>(context).state.appTheme.textGradient;
 }

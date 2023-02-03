@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'weather_item.dart';
+import '../models/place_models.dart';
 
 class WeatherDetails extends StatelessWidget {
   final List<WeatherItem> items;

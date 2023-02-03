@@ -4,19 +4,20 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../common/info_card.dart';
 import '../core/adt_details.dart';
 import '../localization/localization.dart';
-import 'person_list.dart';
+import '../models/place_models.dart';
 import 'person_tile.dart';
 
-class PersonListCard extends StatelessWidget implements Details<PersonList> {
+class PersonListCard extends StatelessWidget
+    implements Details<List<PersonDetails>> {
   @override
-  final PersonList details;
+  final List<PersonDetails> details;
   const PersonListCard({
     super.key,
     required this.details,
   });
 
-  List<Widget> getChildren(PersonList personList) {
-    final list = personList.items
+  List<Widget> getChildren(List<PersonDetails> personList) {
+    final list = personList
         .map<Widget>(
           (item) => Padding(
             padding: const EdgeInsets.symmetric(vertical: 5),

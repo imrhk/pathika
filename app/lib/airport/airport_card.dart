@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../common/info_card.dart';
 import '../core/adt_details.dart';
 import '../localization/localization.dart';
-import 'airport_details.dart';
+import '../models/place_models.dart';
 
 class AirportCard extends StatelessWidget implements Details<AirportDetails> {
   @override
@@ -19,8 +19,7 @@ class AirportCard extends StatelessWidget implements Details<AirportDetails> {
   Widget build(BuildContext context) {
     return InfoCard(
       color: Colors.green,
-      heading: BlocProvider.of<LocalizationBloc>(context)
-          .localize('airport', 'Airport'),
+      heading: context.read<LocalizationBloc>().localize('airport', 'Airport'),
       title: details.name,
     );
   }

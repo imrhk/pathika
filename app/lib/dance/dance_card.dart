@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../common/info_card.dart';
 import '../localization/localization.dart';
-import 'dance_details.dart';
+import '../models/place_models.dart';
 
 class DanceCard extends StatelessWidget {
   final DanceDetails details;

@@ -5,18 +5,18 @@ import 'package:universal_io/io.dart' show Platform;
 
 import '../common/info_card.dart';
 import '../core/utility.dart';
+import '../models/place_models.dart';
 import '../places/place_details_page.dart';
-import 'basic_info.dart';
 
 class BasicInfoAppBar extends StatelessWidget {
   final double? height;
   final Orientation? orientation;
-  final BasicInfo basicInfo;
+  final PlaceInfo placeInfo;
   const BasicInfoAppBar({
     super.key,
     this.height,
     this.orientation,
-    required this.basicInfo,
+    required this.placeInfo,
   });
 
   @override
@@ -31,7 +31,7 @@ class BasicInfoAppBar extends StatelessWidget {
           child: Stack(
             children: <Widget>[
               CardBackgroundWidget(
-                url: basicInfo.backgroundImage,
+                url: placeInfo.backgroundImage,
                 boxFit: orientation == Orientation.portrait
                     ? BoxFit.fitHeight
                     : BoxFit.fitWidth,
@@ -40,7 +40,7 @@ class BasicInfoAppBar extends StatelessWidget {
                 alignment: Alignment.bottomRight,
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: getCoverPhotoAttribution(context, basicInfo),
+                  child: getCoverPhotoAttribution(context, placeInfo),
                 ),
               ),
             ],
@@ -53,7 +53,7 @@ class BasicInfoAppBar extends StatelessWidget {
       centerTitle: true,
       title: _getTitle(),
       background: CardBackgroundWidget(
-        url: basicInfo.backgroundImage,
+        url: placeInfo.backgroundImage,
         boxFit: orientation == Orientation.portrait
             ? BoxFit.fitHeight
             : BoxFit.fitWidth,
@@ -63,7 +63,7 @@ class BasicInfoAppBar extends StatelessWidget {
 
   Widget _getTitle() {
     return Text(
-      basicInfo.name,
+      placeInfo.name,
       textAlign: TextAlign.center,
       style: const TextStyle(
         color: Colors.white,

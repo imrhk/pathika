@@ -2,7 +2,8 @@ import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 
 @immutable
-class PageFetchEvent extends Equatable {
+abstract class PageFetchEvent extends Equatable {
+  const PageFetchEvent();
   @override
   List<Object?> get props => [];
   @override
