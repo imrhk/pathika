@@ -13,18 +13,18 @@ class PlaceDetails with _$PlaceDetails {
     @JsonKey(name: 'country') CountryDetails? countryDetails,
     @JsonKey(name: 'currency') CurrencyDetails? currencyDetails,
     @JsonKey(name: 'dance') DanceDetails? danceDetails,
-    @JsonKey(name: 'food') List<FoodItemDetails>? foodItemsList,
+    @JsonKey(name: 'food') ItemList<FoodItemDetails>? foodItemsList,
     @JsonKey(name: 'industries') IndustryDetails? industriesDetails,
     @JsonKey(name: 'language') LanguageDetails? languageDetails,
-    @JsonKey(name: 'location_map') List<String>? locationMapList,
-    @JsonKey(name: 'movies') List<MovieDetails>? moviesList,
-    @JsonKey(name: 'persons') List<PersonDetails>? personsList,
+    @JsonKey(name: 'location_map') ItemList<String>? locationMapList,
+    @JsonKey(name: 'movies') ItemList<MovieDetails>? moviesList,
+    @JsonKey(name: 'persons') ItemList<PersonDetails>? personsList,
     @JsonKey(name: 'sports') SportsDetails? sportsDetails,
     @JsonKey(name: 'time_to_visit') TimeToVisitDetails? timeToVisitDetails,
     @JsonKey(name: 'timezone_offset_in_minutes') int? timezoneOffsetInMinutes,
     @JsonKey(name: 'tourist_places')
-        List<TouristAttractionDetails>? touristPlacesList,
-    @JsonKey(name: 'trivia') List<String>? triviaListDetails,
+        ItemList<TouristAttractionDetails>? touristPlacesList,
+    @JsonKey(name: 'trivia') ItemList<String>? triviaListDetails,
   }) = _PlaceDetails;
 
   factory PlaceDetails.fromJson(Map<String, dynamic> json) =>
@@ -95,11 +95,29 @@ class CurrencyDetails with _$CurrencyDetails {
 @freezed
 class DanceDetails with _$DanceDetails {
   const factory DanceDetails({
-    required String title,
+    @JsonKey(name: 'name') required String title,
   }) = _DanceDetails;
 
   factory DanceDetails.fromJson(Map<String, dynamic> json) =>
       _$DanceDetailsFromJson(json);
+}
+
+@freezed
+@JsonSerializable(genericArgumentFactories: true)
+class ItemList<T> with _$ItemList<T> {
+  const ItemList._();
+  const factory ItemList({
+    @JsonKey(name: 'items') required List<T> items,
+  }) = _ItemList<T>;
+
+  factory ItemList.fromJson(
+      Map<String, dynamic> json, T Function(Object? json) fromJsonT) {
+    return _$ItemListFromJson<T>(json, fromJsonT);
+  }
+
+  Map<String, dynamic> toJson(Object Function(T value) toJsonT) {
+    return _$ItemListToJson<T>(this, toJsonT);
+  }
 }
 
 @freezed
@@ -193,9 +211,9 @@ class TimeToVisitDetails with _$TimeToVisitDetails {
 class TouristAttractionDetails with _$TouristAttractionDetails {
   const factory TouristAttractionDetails({
     required String name,
-    required String placeId,
+    @JsonKey(name: 'place_id') required String placeId,
     String? description,
-    List<String>? photos,
+    String? photos,
     @JsonKey(name: 'html_attributions') List<String>? attributionUrl,
     String? licence,
   }) = _TouristAttractionDetails;

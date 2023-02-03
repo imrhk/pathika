@@ -247,19 +247,18 @@ class _PlaceDetailsWidgetState extends State<PlaceDetailsWidget> {
                 ),
               if (widget.details.touristPlacesList != null)
                 TouristAttractionsCard(
-                  details: widget.details.touristPlacesList!,
-                ),
+                    details: widget.details.touristPlacesList!.items),
               if (widget.details.foodItemsList != null)
                 FoodItemsListCard(
-                  details: widget.details.foodItemsList!,
+                  details: widget.details.foodItemsList!.items,
                 ),
               if (widget.details.personsList != null)
                 PersonListCard(
-                  details: widget.details.personsList!,
+                  details: widget.details.personsList!.items,
                 ),
               if (widget.details.moviesList != null)
                 MoviesListCard(
-                  details: widget.details.moviesList!,
+                  details: widget.details.moviesList!.items,
                   countryName: widget.details.countryDetails!.name,
                 ),
               if (widget.details.danceDetails != null)
@@ -280,11 +279,11 @@ class _PlaceDetailsWidgetState extends State<PlaceDetailsWidget> {
                 ),
               if (widget.details.locationMapList != null)
                 LocationMapCard(
-                  details: widget.details.locationMapList!,
+                  details: widget.details.locationMapList!.items,
                 ),
               if (widget.details.triviaListDetails != null)
                 TriviaListCard(
-                  details: widget.details.triviaListDetails!,
+                  details: widget.details.triviaListDetails!.items,
                 ),
             ]..removeWhere((element) =>
                     element is Details && (element as Details).details == null))

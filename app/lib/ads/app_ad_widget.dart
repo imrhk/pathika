@@ -21,7 +21,11 @@ class _AppAdWidgetState extends State<AppAdWidget> {
         ? BannerAd(
             size: AdSize.banner,
             adUnitId: adConfig!.adsId[placesBottomBarPromo]!,
-            listener: const BannerAdListener(),
+            listener: BannerAdListener(
+              onAdLoaded: (_) {
+                setState(() {});
+              },
+            ),
             request: adRequest)
         : null;
 
@@ -30,16 +34,16 @@ class _AppAdWidgetState extends State<AppAdWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Visibility(
-      visible: bottomBarPromoAd != null,
-      replacement: const SizedBox.shrink(),
-      child: Container(
+    if (bottomBarPromoAd == null) {
+      return const SizedBox.shrink();
+    } else {
+      return Container(
         alignment: Alignment.center,
         width: bottomBarPromoAd!.size.width.toDouble(),
         height: bottomBarPromoAd!.size.height.toDouble(),
         child: AdWidget(ad: bottomBarPromoAd!),
-      ),
-    );
+      );
+    }
   }
 
   @override

@@ -25,7 +25,7 @@ mixin _$FLutterAssetsClient {
   Future<List<AppLanguage>> getAppLanguages() async {
     final appLanguages = await _assetBundle
         .loadString('assets_remote/assets/json/v1/languages.json')
-        .then((value) => value as List<dynamic>?)
+        .then((value) => json.decode(value) as List<dynamic>?)
         .then((value) => value
             ?.map((e) => AppLanguage.fromJson(e as Map<String, dynamic>))
             .toList());

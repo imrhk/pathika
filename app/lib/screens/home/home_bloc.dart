@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
+import 'package:dio/dio.dart';
 
 import '../../core/app_error.dart';
 import '../../remote/remote_repository.dart';
@@ -30,7 +31,11 @@ class HomeBloc extends Bloc<HomeBlocEvent, HomeBlocState> {
         emit(HomeBlocState.error(AppError('No places')));
       }
     } catch (e) {
-      emit(HomeBlocState.error(AppError(e.toString())));
+      if (e is DioError) {
+        emit(HomeBlocState.error(AppError("${e.message}: ${e.type}")));
+      } else {
+        emit(HomeBlocState.error(AppError(e.runtimeType.toString())));
+      }
     }
   }
 

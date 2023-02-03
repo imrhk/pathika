@@ -43,7 +43,7 @@ class TouristAttractionsCard extends StatelessWidget
 
             return TouristAttractionItemCard(
               name: item.name,
-              posterUrl: item.photos?.first,
+              posterUrl: item.photos,
               description: item.description,
               attribution: firstAttribution(),
               licence: item.licence,

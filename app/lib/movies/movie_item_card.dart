@@ -25,12 +25,8 @@ class MovieItemCard extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            Visibility(
-              visible: posterUrl != null,
-              replacement: const SizedBox(
-                height: 200,
-              ),
-              child: Container(
+            if (posterUrl != null)
+              Container(
                 height: 200,
                 decoration: BoxDecoration(
                   image: DecorationImage(
@@ -42,7 +38,10 @@ class MovieItemCard extends StatelessWidget {
                   ),
                 ),
               ),
-            ),
+            if (posterUrl == null)
+              const SizedBox(
+                height: 200,
+              ),
             const SizedBox(height: 5),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 10),
