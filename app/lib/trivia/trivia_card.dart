@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../common/info_card.dart';
 import '../core/adt_details.dart';
-import '../localization/localization.dart';
+import '../extensions/context_extensions.dart';
 
 class TriviaListCard extends StatelessWidget implements Details<List<String>> {
   @override
@@ -17,7 +16,7 @@ class TriviaListCard extends StatelessWidget implements Details<List<String>> {
   Widget build(BuildContext context) {
     return InfoCard(
       color: Colors.blueGrey,
-      heading: context.read<LocalizationBloc>().localize('trivia', 'Trivia'),
+      heading: context.localize('trivia', 'Trivia'),
       body: ListView.separated(
         shrinkWrap: true,
         physics: const NeverScrollableScrollPhysics(),
@@ -47,13 +46,13 @@ class _TriviaListTile extends StatelessWidget {
       title: Text(trivia),
       leading: CircleAvatar(
         backgroundColor: Colors.black.withOpacity(0.05),
-        foregroundColor: Theme.of(context).textTheme.titleMedium?.color,
         radius: 20,
         child: FittedBox(
           fit: BoxFit.fitWidth,
           child: Text(
             leading,
             textAlign: TextAlign.justify,
+            style: context.theme.textTheme.bodyMedium,
           ),
         ),
       ),

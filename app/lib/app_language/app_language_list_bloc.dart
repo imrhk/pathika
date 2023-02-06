@@ -1,4 +1,5 @@
 import '../assets/assets_repository.dart';
+import '../localization/constants.dart';
 import '../models/app_language.dart';
 import '../page_fetch/page_fetch_bloc.dart';
 import '../remote/remote_repository.dart';
@@ -25,7 +26,8 @@ class AppLanguageListBloc
       }
     }).then((value) {
       //put english at top
-      final indexOfEnglish = value.indexWhere((element) => element.id == "en");
+      final indexOfEnglish =
+          value.indexWhere((element) => element.id == localeDefault);
       if (indexOfEnglish != -1) {
         final en = value[indexOfEnglish];
         value.removeAt(indexOfEnglish);

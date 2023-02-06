@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../common/info_card.dart';
 import '../core/adt_details.dart';
-import '../localization/localization.dart';
+import '../extensions/context_extensions.dart';
 import '../models/place_models.dart';
 import 'weather_details.dart';
 
@@ -20,8 +19,7 @@ class ClimateCard extends StatelessWidget implements Details<ClimateDetails> {
   Widget build(BuildContext context) {
     return InfoCard(
       color: Colors.indigo,
-      heading: BlocProvider.of<LocalizationBloc>(context)
-          .localize('climate', 'Climate'),
+      heading: context.localize('climate', 'Climate'),
       title: details.type,
       footer: WeatherDetails(items: details.items),
     );

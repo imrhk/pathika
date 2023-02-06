@@ -4,22 +4,23 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_cupertino_settings/flutter_cupertino_settings.dart';
+import 'package:go_router/go_router.dart';
 import 'package:universal_io/io.dart' show Platform;
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../app_language/select_language_page.dart';
 import '../../common/constants.dart';
-import '../../localization/localization_bloc.dart';
+import '../../extensions/context_extensions.dart';
 import '../../theme/app_theme.dart';
-import '../../theme/app_theme_bloc.dart';
-import '../../theme/app_theme_event.dart';
+import 'app_settings_bloc.dart';
+import 'app_settings_event.dart';
 
-class AppSettings extends StatelessWidget {
+class AppSettingsWidget extends StatelessWidget {
   final Function? appLanguageChanged;
   final String? currentLanguge;
   final Function? changePlace;
 
-  const AppSettings({
+  const AppSettingsWidget({
     super.key,
     this.appLanguageChanged,
     this.currentLanguge,
@@ -28,33 +29,34 @@ class AppSettings extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final appTheme = BlocProvider.of<AppThemeBloc>(context).state.appTheme;
+    final appTheme = context.currentTheme;
     return getSettingsContainer(
       widgets: [
         getSettingsSectionHeader(
-          BlocProvider.of<LocalizationBloc>(context).localize('theme', 'Theme'),
+          context.localize('theme', 'Theme'),
         ),
-        getRadioGroupWidget(
+        getRadioGroupWidget<String>(
             items: LinkedHashMap.from(
               {
-                BlocProvider.of<LocalizationBloc>(context)
-                    .localize('light', 'Light'): AppTheme.light(),
-                BlocProvider.of<LocalizationBloc>(context)
-                        .localize('colorful_light', 'Colorful Light'):
-                    AppTheme.colorfulLight(),
-                BlocProvider.of<LocalizationBloc>(context)
-                    .localize('dark', 'Dark'): AppTheme.dark(),
-                BlocProvider.of<LocalizationBloc>(context).localize(
-                    'colorful_dark', 'Colorful Dark'): AppTheme.colorfulDark(),
-                BlocProvider.of<LocalizationBloc>(context)
-                    .localize('gold_dark', 'Gold Dark'): AppTheme.goldDark(),
+                context.localize('light', 'Light'): 'light',
+                context.localize('colorful_light', 'Colorful Light'):
+                    'colorful_light',
+                context.localize('dark', 'Dark'): 'dark',
+                context.localize('colorful_dark', 'Colorful Dark'):
+                    'colorful_dark',
+                context.localize('gold_dark', 'Gold Dark'): 'gold_dark',
               },
             ),
-            currentSelection: appTheme,
-            onSelected: (appTheme) {
-              BlocProvider.of<AppThemeBloc>(context)
-                  .add(ChangeAppTheme(appTheme));
-              Navigator.pop(context);
+            currentSelection: appTheme.label,
+            onSelected: (String? str) {
+              if (str == null) {
+                context.pop();
+                return str;
+              }
+              context
+                ..read<AppSettingsBloc>().add(AppSettingsEvent.changeTheme(str))
+                ..pop();
+              return str;
             }),
         getSettingsSectionHeader(''),
         getSettingsWidgets(GestureDetector(
@@ -63,8 +65,7 @@ class AppSettings extends StatelessWidget {
             children: <Widget>[
               Expanded(
                 child: Text(
-                  BlocProvider.of<LocalizationBloc>(context)
-                      .localize('change_langauge', 'Change Language'),
+                  context.localize('change_langauge', 'Change Language'),
                   style: TextStyle(
                     color: getThemeTextColor(context),
                   ),
@@ -101,8 +102,7 @@ class AppSettings extends StatelessWidget {
         )),
         getSettingsSectionHeader(''),
         getSettingsButton(
-          text: BlocProvider.of<LocalizationBloc>(context)
-              .localize('privacy_policy', 'Privacy Policy'),
+          text: context.localize('privacy_policy', 'Privacy Policy'),
           onPress: () {
             launchUrl(Uri.parse(privaryPolicyUrl));
           },

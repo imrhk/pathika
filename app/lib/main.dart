@@ -1,5 +1,7 @@
 import 'package:devicelocale/devicelocale.dart';
 import 'package:dio/dio.dart';
+import 'package:dio_cache_interceptor/dio_cache_interceptor.dart';
+import 'package:dio_cache_interceptor_hive_store/dio_cache_interceptor_hive_store.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -14,17 +16,19 @@ import 'assets/assets_repository.dart';
 import 'assets/flutter_assets_client.dart';
 import 'cache/cache_client.dart';
 import 'cache/cache_repository.dart';
+import 'extensions/context_extensions.dart';
 import 'firebase_options.dart';
 import 'localization/localization.dart';
 import 'remote/remote_repository.dart';
 import 'remote/rest_client.dart';
+import 'routes.dart';
 import 'screens/app_settings/app_settings_bloc.dart';
 import 'screens/app_settings/app_settings_event.dart';
+import 'screens/app_settings/app_settings_state.dart';
 import 'screens/home/home.dart';
+import 'screens/home/home_bloc.dart';
+import 'screens/home/home_bloc_event.dart';
 import 'theme/app_theme.dart';
-import 'theme/app_theme_bloc.dart';
-import 'theme/app_theme_event.dart';
-import 'theme/app_theme_state.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -46,7 +50,6 @@ Future<void> _initializeApp() async {
     ),
   );
   await Hive.initFlutter();
-  Bloc.observer = AppBlocObserver(Logger());
 }
 
 class _ProviderApp extends StatefulWidget {
@@ -60,11 +63,34 @@ class _ProviderApp extends StatefulWidget {
 
 class _ProviderAppState extends State<_ProviderApp> {
   late Dio _dio;
+  late Logger _logger;
 
   @override
   void initState() {
     super.initState();
-    _dio = Dio();
+
+    // Dio Cache Global options
+    final options = CacheOptions(
+      store: HiveCacheStore(
+        null,
+      ),
+      policy: CachePolicy.forceCache,
+      hitCacheOnErrorExcept: [401, 403],
+      maxStale: const Duration(days: 7),
+      priority: CachePriority.normal,
+      // Default. Body and headers encryption with your own algorithm.
+      cipher: null,
+      keyBuilder: CacheOptions.defaultCacheKeyBuilder,
+      // Default. Allows to cache POST requests.
+      // Overriding [keyBuilder] is strongly recommended when [true].
+      allowPostMethod: false,
+    );
+    _dio = Dio()..interceptors.add(DioCacheInterceptor(options: options));
+
+    _logger = Logger(
+      printer: SimplePrinter(colors: true),
+    );
+    Bloc.observer = AppBlocObserver(_logger);
   }
 
   @override
@@ -81,6 +107,7 @@ class _ProviderAppState extends State<_ProviderApp> {
         RepositoryProvider(
           create: (context) => CacheRepository(const CacheClient()),
         ),
+        RepositoryProvider.value(value: _logger),
       ],
       child: MultiBlocProvider(
         providers: [
@@ -88,26 +115,24 @@ class _ProviderAppState extends State<_ProviderApp> {
             create: (context) => LocalizationBloc(
               remoteRepository: context.read<RemoteRepository>(),
               assetsRepository: context.read<AssetsRepository>(),
-            )..add(
-                const FetchLocalization(localeDefault),
-              ),
-          ),
-          BlocProvider<AppThemeBloc>(
-            create: (BuildContext ctx) => AppThemeBloc()
-              ..add(
-                AppThemeInitialize(),
-              ),
+            ),
           ),
           BlocProvider<AppSettingsBloc>(
-              create: (BuildContext context) => AppSettingsBloc(
-                    cacheRepository: context.read<CacheRepository>(),
-                    assetsRepository: context.read<AssetsRepository>(),
-                    getDeviceLocale: () {
-                      return Devicelocale.currentLocale
-                          .then((value) => value ?? 'en')
-                          .onError((error, stackTrace) => 'en');
-                    },
-                  )..add(const AppSettingsEvent.initialize())),
+            create: (BuildContext context) => AppSettingsBloc(
+              cacheRepository: context.read<CacheRepository>(),
+              assetsRepository: context.read<AssetsRepository>(),
+              logger: context.read<Logger>(),
+              getDeviceLocale: () {
+                return Devicelocale.currentLocale
+                    .then((value) => value ?? localeDefault)
+                    .onError((error, stackTrace) => localeDefault);
+              },
+            )..add(const AppSettingsEvent.initialize()),
+          ),
+          BlocProvider<HomeBloc>(
+            create: (context) => HomeBloc(context.read<RemoteRepository>())
+              ..add(const HomeBlocEvent.initialize()),
+          ),
         ],
         child: widget.child,
       ),
@@ -117,6 +142,7 @@ class _ProviderAppState extends State<_ProviderApp> {
   @override
   void dispose() {
     _dio.close(force: true);
+    _logger.close();
     super.dispose();
   }
 }
@@ -126,13 +152,29 @@ class _PathikaApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<AppThemeBloc, AppThemeState>(
-      builder: (ctx, state) {
+    return BlocConsumer<AppSettingsBloc, AppSettingsState>(
+      builder: (_, state) {
         return _AdaptiveApp(
-          appTheme: state.appTheme,
+          key: ValueKey(state.maybeWhen(
+            orElse: () => null,
+            loaded: (appSetting) => appSetting,
+          )),
+          appTheme: context.currentTheme,
           child: const HomeScreen(),
         );
       },
+      listener: (context, _) {
+        context
+            .read<LocalizationBloc>()
+            .add(ChangeLocalization(context.currentLanguage));
+      },
+      listenWhen: (previous, current) =>
+          previous.whenOrNull(
+            loaded: (appSetting) => appSetting.language,
+          ) !=
+          current.whenOrNull(
+            loaded: (appSetting) => appSetting.language,
+          ),
     );
   }
 }
@@ -142,20 +184,21 @@ class _AdaptiveApp extends StatelessWidget with pwm.PlatformWidgetMixin {
   @override
   final Widget child;
 
-  const _AdaptiveApp({required this.appTheme, required this.child});
+  const _AdaptiveApp({super.key, required this.appTheme, required this.child});
   @override
   Widget buildAndroid(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       theme: appTheme.themeDataMaterial,
-      home: child,
+      routerConfig: router,
     );
   }
 
   @override
   Widget buildIOS(BuildContext context) {
-    return CupertinoApp(
+    return CupertinoApp.router(
       theme: appTheme.themeDataCupertino,
-      home: child,
+      routeInformationParser: router.routeInformationParser,
+      routerDelegate: router.routerDelegate,
     );
   }
 }

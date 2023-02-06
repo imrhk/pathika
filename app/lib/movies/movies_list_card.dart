@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../common/info_card.dart';
 import '../core/adt_details.dart';
-import '../localization/localization.dart';
+import '../extensions/context_extensions.dart';
 import '../models/place_models.dart';
 import 'movie_item_card.dart';
 
@@ -21,8 +20,7 @@ class MoviesListCard extends StatelessWidget
   Widget build(BuildContext context) {
     return InfoCard(
       color: Colors.indigo,
-      heading:
-          '${BlocProvider.of<LocalizationBloc>(context).localize('movies_from', 'Movies from')} $countryName',
+      heading: '${context.localize('movies_from', 'Movies from')} $countryName',
       body: SizedBox(
         height: 250,
         child: ListView.builder(
@@ -35,6 +33,7 @@ class MoviesListCard extends StatelessWidget
             return MovieItemCard(
               name: item.title,
               posterUrl: item.posterUrl,
+              
             );
           },
           itemCount: details.length,

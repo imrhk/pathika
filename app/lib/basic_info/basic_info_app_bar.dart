@@ -1,14 +1,14 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
-import 'package:universal_io/io.dart' show Platform;
+import 'package:platform_widget_mixin/platform_widget_mixin.dart';
 
 import '../common/info_card.dart';
+import '../common/shimmer_text.dart';
 import '../core/utility.dart';
+import '../extensions/context_extensions.dart';
 import '../models/place_models.dart';
-import '../places/place_details_page.dart';
+import '../widgets/conver_photo_attribution_widget.dart';
 
-class BasicInfoAppBar extends StatelessWidget {
+class BasicInfoAppBar extends StatelessWidget with PlatformWidgetMixin {
   final double? height;
   final Orientation? orientation;
   final PlaceInfo placeInfo;
@@ -20,38 +20,10 @@ class BasicInfoAppBar extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
-    if (Platform.isIOS) {
-      return InfoCard(
-        padding: const EdgeInsets.all(0.0),
-        color: materialTransparent,
-        body: SizedBox(
-          width: double.infinity,
-          height: height,
-          child: Stack(
-            children: <Widget>[
-              CardBackgroundWidget(
-                url: placeInfo.backgroundImage,
-                boxFit: orientation == Orientation.portrait
-                    ? BoxFit.fitHeight
-                    : BoxFit.fitWidth,
-              ),
-              Align(
-                alignment: Alignment.bottomRight,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: getCoverPhotoAttribution(context, placeInfo),
-                ),
-              ),
-            ],
-          ),
-        ),
-        isAudiable: false,
-      );
-    }
+  Widget buildAndroid(BuildContext context) {
     return FlexibleSpaceBar(
       centerTitle: true,
-      title: _getTitle(),
+      title: _getTitle(context),
       background: CardBackgroundWidget(
         url: placeInfo.backgroundImage,
         boxFit: orientation == Orientation.portrait
@@ -61,13 +33,45 @@ class BasicInfoAppBar extends StatelessWidget {
     );
   }
 
-  Widget _getTitle() {
-    return Text(
-      placeInfo.name,
-      textAlign: TextAlign.center,
-      style: const TextStyle(
-        color: Colors.white,
-        fontSize: 20.0,
+  @override
+  Widget buildIOS(BuildContext context) {
+    return InfoCard(
+      padding: const EdgeInsets.all(0.0),
+      color: materialTransparent,
+      body: SizedBox(
+        width: double.infinity,
+        height: height,
+        child: Stack(
+          children: <Widget>[
+            CardBackgroundWidget(
+              url: placeInfo.backgroundImage,
+              boxFit: orientation == Orientation.portrait
+                  ? BoxFit.fitHeight
+                  : BoxFit.fitWidth,
+            ),
+            Align(
+              alignment: Alignment.bottomRight,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: CoverPhotoAttributionWidget(placeInfo: placeInfo),
+              ),
+            ),
+          ],
+        ),
+      ),
+      isAudiable: false,
+    );
+  }
+
+  Widget _getTitle(BuildContext context) {
+    final style = context.currentTheme.textGradient != null
+        ? context.theme.textTheme.headlineSmall
+        : null;
+    return OptionalShimmer(
+      child: Text(
+        placeInfo.name,
+        textAlign: TextAlign.center,
+        style: style,
       ),
     );
   }

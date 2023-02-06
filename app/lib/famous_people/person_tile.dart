@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-import '../common/attributions.dart';
+import '../widgets/attribution_widget.dart';
 
 class PersonTile extends StatelessWidget {
   final String name;
@@ -106,8 +106,11 @@ class PersonTile extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(
                     vertical: 4,
                   ),
-                  child: getAttributionWidget(
-                      context, photoBy, attributionUrl, licence),
+                  child: AttributionWidget(
+                    photoBy: photoBy,
+                    attributionUrl: attributionUrl,
+                    licence: licence,
+                  ),
                 ),
             ],
           ),

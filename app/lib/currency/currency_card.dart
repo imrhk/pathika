@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../common/info_card.dart';
 import '../core/adt_details.dart';
-import '../localization/localization.dart';
+import '../extensions/context_extensions.dart';
 import '../models/place_models.dart';
 import 'currency_value.dart';
 
@@ -18,8 +17,7 @@ class CurrencyCard extends StatelessWidget implements Details<CurrencyDetails> {
   Widget build(BuildContext context) {
     return InfoCard(
       color: Colors.pink,
-      heading: BlocProvider.of<LocalizationBloc>(context)
-          .localize('currency', 'Currency'),
+      heading: context.localize('currency', 'Currency'),
       title: details.name,
       symbol: details.symbol,
       footer: CurrencyValue(

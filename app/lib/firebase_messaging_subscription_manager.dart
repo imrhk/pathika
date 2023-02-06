@@ -1,17 +1,20 @@
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
 import 'package:hive/hive.dart';
+import 'package:logger/logger.dart';
 import 'package:universal_io/io.dart';
 
 class FirebaseMessagingSubscriptionManager {
-  static final FirebaseMessagingSubscriptionManager _singleton =
-      FirebaseMessagingSubscriptionManager._internal();
+  static FirebaseMessagingSubscriptionManager? _singleton;
 
-  factory FirebaseMessagingSubscriptionManager() {
-    return _singleton;
+  factory FirebaseMessagingSubscriptionManager(Logger logger) {
+    return _singleton ??=
+        FirebaseMessagingSubscriptionManager._internal(logger);
   }
 
-  FirebaseMessagingSubscriptionManager._internal();
+  FirebaseMessagingSubscriptionManager._internal(Logger logger) {
+    _logger = logger;
+  }
 
   static const _fcmTopics = 'fcm_topics';
   static const _keyLanguageTopic = 'language_topic';
@@ -21,6 +24,8 @@ class FirebaseMessagingSubscriptionManager {
   }
 
   FirebaseMessaging get _firebaseMessaging => FirebaseMessaging.instance;
+
+  late final Logger _logger;
 
   Future<void> requestPermission() async {
     if (Platform.isAndroid || Platform.isIOS) {
@@ -45,12 +50,18 @@ class FirebaseMessagingSubscriptionManager {
     final String previousLanguage =
         box.get(_keyLanguageTopic, defaultValue: '');
     if (previousLanguage.isNotEmpty && previousLanguage != newLanguage) {
+      _logger.i(
+          'unsubscribing from $notificationTopicPrefix$previousLanguage topic ');
       _firebaseMessaging
           .unsubscribeFromTopic('$notificationTopicPrefix$previousLanguage');
     }
     if (previousLanguage != newLanguage) {
+      _logger
+          .i('subscribing to $notificationTopicPrefix$previousLanguage topic ');
       _firebaseMessaging
           .subscribeToTopic('$notificationTopicPrefix$newLanguage');
+      await box.put(_keyLanguageTopic, newLanguage);
+      await box.flush();
     }
   }
 }

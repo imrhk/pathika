@@ -35,14 +35,16 @@ mixin _$CacheClient {
         value.put(keyLanguage, appSettings.language);
         value.put(keyTheme, appSettings.theme);
         value.put(keyRtl, appSettings.isRtl);
+        value.flush();
       });
 
   Future<void> clearAppSettings() => _appSettingsBox.then((value) {
         value.delete(keyLanguage);
         value.delete(keyTheme);
         value.delete(keyRtl);
+        value.flush();
       });
 
   Future<bool> appSettingsExists() =>
-      _appSettingsBox.then((value) => value.isEmpty);
+      _appSettingsBox.then((value) => value.isNotEmpty);
 }

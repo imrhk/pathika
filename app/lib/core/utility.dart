@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../theme/app_theme_bloc.dart';
+import '../extensions/context_extensions.dart';
 
 const MaterialColor materialBlack = MaterialColor(
   _blackPrimaryValue,
@@ -38,9 +37,8 @@ const MaterialColor materialTransparent = MaterialColor(
 
 extension AppThemeWidget on Widget {
   bool getColorsOnCard(BuildContext context) =>
-      BlocProvider.of<AppThemeBloc>(context).state.appTheme.useColorsOnCard ??
-      false;
+      context.currentTheme.useColorsOnCard ?? false;
 
   Gradient? getShimmerGradient(BuildContext context) =>
-      BlocProvider.of<AppThemeBloc>(context).state.appTheme.textGradient;
+      context.currentTheme.textGradient;
 }

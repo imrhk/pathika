@@ -1,12 +1,14 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
+import '../localization/localization.dart';
+
 part 'app_settings.freezed.dart';
 part 'app_settings.g.dart';
 
 @freezed
 class AppSettings with _$AppSettings {
   const factory AppSettings({
-    @Default("en") String language,
+    @Default(localeDefault) String language,
     @Default("light") String theme,
     @Default(false) bool isRtl,
   }) = _AppSettings;

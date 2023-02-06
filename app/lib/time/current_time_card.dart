@@ -1,11 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 
 import '../common/info_card.dart';
 import '../core/adt_details.dart';
-import '../localization/localization.dart';
+import '../extensions/context_extensions.dart';
 
 class CurrentTimeCard extends StatelessWidget implements Details<int> {
   final int timezoneOffsetInMinute;
@@ -33,16 +32,12 @@ class CurrentTimeCard extends StatelessWidget implements Details<int> {
           final time = DateTime.now().subtract(snapshot.data!);
           final formattedTime = DateFormat.jm().format(time);
           final suffix = snapshot.data!.isNegative
-              ? BlocProvider.of<LocalizationBloc>(context)
-                  .localize('_ahead', 'ahead')
-              : BlocProvider.of<LocalizationBloc>(context)
-                  .localize('_behind', 'behind');
-          final hours = BlocProvider.of<LocalizationBloc>(context)
-              .localize('_hours', 'hours');
+              ? context.localize('_ahead', 'ahead')
+              : context.localize('_behind', 'behind');
+          final hours = context.localize('_hours', 'hours');
           return InfoCard(
             color: Colors.lightGreen,
-            heading: BlocProvider.of<LocalizationBloc>(context)
-                .localize('current_time', 'Current Time'),
+            heading: context.localize('current_time', 'Current Time'),
             title: formattedTime,
             subtitle: snapshot.data!.inSeconds == 0
                 ? ""

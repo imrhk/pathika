@@ -10,6 +10,8 @@ const Map<String, AppTheme Function()> appThemeMap = {
   'gold_dark': AppTheme.goldDark,
 };
 
+final defaultAppTheme = AppTheme.light();
+
 class AppTheme implements Equatable {
   final ThemeData? themeDataMaterial;
   final CupertinoThemeData? themeDataCupertino;
@@ -30,10 +32,9 @@ class AppTheme implements Equatable {
   static AppTheme light() {
     const cupertinoThemeData = CupertinoThemeData();
     return AppTheme(
-        themeDataMaterial: ThemeData.light().copyWith(
-            primaryColor: Colors.black,
-            colorScheme:
-                ColorScheme.fromSwatch().copyWith(secondary: Colors.lightBlue)),
+        themeDataMaterial: ThemeData(
+          colorScheme: const ColorScheme.light(primary: Colors.black),
+        ),
         themeDataCupertino: cupertinoThemeData.copyWith(
           primaryColor: Colors.black,
           textTheme: cupertinoThemeData.textTheme.copyWith(
@@ -49,10 +50,9 @@ class AppTheme implements Equatable {
   static AppTheme colorfulLight() {
     const cupertinoThemeData = CupertinoThemeData();
     return AppTheme(
-        themeDataMaterial: ThemeData.light().copyWith(
-            primaryColor: Colors.black,
-            colorScheme: ColorScheme.fromSwatch()
-                .copyWith(secondary: Colors.pinkAccent)),
+        themeDataMaterial: ThemeData(
+          colorScheme: const ColorScheme.light(primary: Colors.black),
+        ),
         themeDataCupertino: cupertinoThemeData.copyWith(
           primaryColor: Colors.black,
           textTheme: cupertinoThemeData.textTheme.copyWith(
@@ -112,58 +112,95 @@ class AppTheme implements Equatable {
   }
 
   static AppTheme goldDark() {
-    const goldTextColor = Color.fromARGB(255, 255, 215, 0);
-    final darkThemeMaterial = ThemeData.dark();
+    const colorGold = Color.fromARGB(255, 255, 215, 0);
+    const linearGradient = LinearGradient(
+      colors: [
+        Color.fromARGB(255, 252, 193, 0),
+        Color.fromARGB(255, 224, 170, 62),
+        Color.fromARGB(255, 184, 138, 68),
+        Color.fromARGB(255, 184, 138, 68),
+        Color.fromARGB(255, 224, 170, 62),
+        Color.fromARGB(255, 252, 193, 0),
+      ],
+      tileMode: TileMode.clamp,
+      begin: Alignment.topLeft,
+      end: Alignment.bottomRight,
+      stops: [0.25, 0.375, 0.5, 0.625, 0.75, 0.875],
+    );
+
+    TextStyle goldTextStyle = TextStyle(
+        decorationColor: colorGold,
+        foreground: Paint()
+          ..shader = linearGradient
+              .createShader(const Rect.fromLTWH(0.0, 0.0, 250.0, 60.0))
+          // ..color = const Color.fromARGB(255, 255, 215, 0)
+          ..maskFilter = const MaskFilter.blur(BlurStyle.solid, 2));
+    // const goldTextColor = Color.fromARGB(255, 255, 215, 0);
+
+    final textTheme = TextTheme(
+      displayLarge: goldTextStyle,
+      bodyLarge: goldTextStyle,
+      bodyMedium: goldTextStyle,
+      bodySmall: goldTextStyle,
+      displayMedium: goldTextStyle,
+      displaySmall: goldTextStyle,
+      headlineLarge: goldTextStyle,
+      headlineMedium: goldTextStyle,
+      headlineSmall: goldTextStyle,
+      labelLarge: goldTextStyle,
+      labelMedium: goldTextStyle,
+      labelSmall: goldTextStyle,
+      titleLarge: goldTextStyle,
+      titleMedium: goldTextStyle,
+      titleSmall: goldTextStyle,
+    );
+
+    final darkThemeMaterial = ThemeData.dark().copyWith();
     const darkThemeCupertino = CupertinoThemeData(brightness: Brightness.dark);
     return AppTheme(
       themeDataMaterial: darkThemeMaterial.copyWith(
-        primaryColor: Colors.black,
-        textTheme: darkThemeMaterial.textTheme.apply(
-          bodyColor: const Color.fromARGB(255, 255, 215, 0),
-          displayColor: const Color.fromARGB(255, 255, 215, 0),
-        ),
-        colorScheme: ColorScheme.fromSwatch()
-            .copyWith(secondary: const Color.fromARGB(255, 255, 215, 0)),
-      ),
+          primaryColor: Colors.black,
+          appBarTheme: darkThemeMaterial.appBarTheme.copyWith(
+            titleTextStyle: goldTextStyle,
+            toolbarTextStyle: goldTextStyle,
+          ),
+          textTheme: darkThemeMaterial.textTheme.merge(textTheme),
+          unselectedWidgetColor: colorGold,
+          iconTheme: const IconThemeData(color: colorGold),
+          colorScheme: const ColorScheme.dark(
+            onSurface: colorGold,
+            secondary: colorGold,
+          )),
       themeDataCupertino: CupertinoThemeData(
         brightness: Brightness.dark,
         primaryColor: Colors.black,
         textTheme: CupertinoTextThemeData(
-          navTitleTextStyle: darkThemeCupertino.textTheme.navTitleTextStyle
-              .copyWith(color: goldTextColor),
-          textStyle: darkThemeCupertino.textTheme.textStyle
-              .copyWith(color: goldTextColor),
-          actionTextStyle: darkThemeCupertino.textTheme.actionTextStyle
-              .copyWith(color: goldTextColor),
-          pickerTextStyle: darkThemeCupertino.textTheme.pickerTextStyle
-              .copyWith(color: goldTextColor),
-          tabLabelTextStyle: darkThemeCupertino.textTheme.tabLabelTextStyle
-              .copyWith(color: goldTextColor),
-          navActionTextStyle: darkThemeCupertino.textTheme.navActionTextStyle
-              .copyWith(color: goldTextColor),
-          dateTimePickerTextStyle: darkThemeCupertino
-              .textTheme.dateTimePickerTextStyle
-              .copyWith(color: goldTextColor),
-          navLargeTitleTextStyle: darkThemeCupertino
-              .textTheme.navLargeTitleTextStyle
-              .copyWith(color: goldTextColor),
+          navTitleTextStyle: darkThemeCupertino.textTheme.navTitleTextStyle,
+          textStyle: darkThemeCupertino.textTheme.textStyle,
+          actionTextStyle: darkThemeCupertino.textTheme.actionTextStyle,
+          pickerTextStyle: darkThemeCupertino.textTheme.pickerTextStyle,
+          tabLabelTextStyle: darkThemeCupertino.textTheme.tabLabelTextStyle,
+          navActionTextStyle: darkThemeCupertino.textTheme.navActionTextStyle,
+          dateTimePickerTextStyle:
+              darkThemeCupertino.textTheme.dateTimePickerTextStyle,
+          navLargeTitleTextStyle:
+              darkThemeCupertino.textTheme.navLargeTitleTextStyle,
           primaryColor: const Color.fromARGB(255, 255, 215, 0),
+        ).copyWith(
+          actionTextStyle: goldTextStyle,
+          dateTimePickerTextStyle: goldTextStyle,
+          navActionTextStyle: goldTextStyle,
+          navLargeTitleTextStyle: goldTextStyle,
+          navTitleTextStyle: goldTextStyle,
+          pickerTextStyle: goldTextStyle,
+          tabLabelTextStyle: goldTextStyle,
+          textStyle: goldTextStyle,
         ),
       ),
       useColorsOnCard: false,
       highlightTextColor: const Color.fromARGB(255, 255, 215, 0),
       label: 'gold_dark',
-      textGradient: const LinearGradient(
-        colors: [
-          Color.fromARGB(255, 249, 242, 149),
-          Color.fromARGB(255, 224, 170, 62),
-          Color.fromARGB(255, 252, 193, 0),
-          Color.fromARGB(255, 184, 138, 68),
-        ],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-        stops: [0.25, 0.5, 0.75, 1.0],
-      ),
+      textGradient: linearGradient,
     );
   }
 

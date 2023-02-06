@@ -1,12 +1,14 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
+import '../localization/localization.dart';
+
 part 'app_language.freezed.dart';
 part 'app_language.g.dart';
 
 @freezed
 class AppLanguage with _$AppLanguage {
   const factory AppLanguage({
-    @Default("en") String id,
+    @Default(localeDefault) String id,
     String? name,
     String? msg,
     @Default([0, 0, 0, 0]) List<int> color,

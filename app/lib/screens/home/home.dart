@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:logger/logger.dart';
 
 import '../../common/widgets/adaptive_app_bar.dart';
 import '../../common/widgets/adaptive_circular_loader.dart';
@@ -11,10 +12,6 @@ import '../../localization/localization_event.dart';
 import '../../localization/localization_state.dart';
 import '../../models/app_settings.dart';
 import '../../places/place_details_page.dart';
-import '../../remote/remote_repository.dart';
-import '../../theme/app_theme.dart';
-import '../../theme/app_theme_bloc.dart';
-import '../../theme/app_theme_event.dart';
 import '../app_settings/app_settings_bloc.dart';
 import '../app_settings/app_settings_state.dart';
 import 'home_bloc.dart';
@@ -34,37 +31,26 @@ class HomeScreenState extends State<HomeScreen> {
     super.initState();
 
     // TODO: Defer it to 30 seconds post usage
-    FirebaseMessagingSubscriptionManager().requestPermission();
+    FirebaseMessagingSubscriptionManager(context.read<Logger>())
+        .requestPermission();
   }
 
   void _appLanguageChanged(String language) async {
-    final localizationBloc = context.read<LocalizationBloc>();
-    localizationBloc.add(ChangeLocalization(language));
-    await FirebaseMessagingSubscriptionManager().onLanguageChanged(language);
-  }
-
-  void _appThemeChanged(String theme) async {
-    final appThemeBloc = context.read<AppThemeBloc>();
-    final newAppThemeData = appThemeMap[theme]?.call();
-    if (newAppThemeData != null) {
-      appThemeBloc.add(ChangeAppTheme(newAppThemeData));
-    }
+    //context.read<LocalizationBloc>().add(ChangeLocalization(language));
+    await FirebaseMessagingSubscriptionManager(context.read<Logger>())
+        .onLanguageChanged(language);
   }
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => HomeBloc(context.read<RemoteRepository>())
-        ..add(const HomeBlocEvent.initialize()),
-      child: BlocBuilder<HomeBloc, HomeBlocState>(builder: (context, state) {
-        return state.when(
-          uninitialized: _homeLoading,
-          loading: _homeLoading,
-          error: _homeError,
-          loaded: _homeLoaded,
-        );
-      }),
-    );
+    return BlocBuilder<HomeBloc, HomeBlocState>(builder: (context, state) {
+      return state.when(
+        uninitialized: _homeLoading,
+        loading: _homeLoading,
+        error: _homeError,
+        loaded: _homeLoaded,
+      );
+    });
   }
 
   Widget _homeLoaded(String placeId) {
@@ -72,7 +58,8 @@ class HomeScreenState extends State<HomeScreen> {
       builder: (context, state) {
         return state.when(
           uninitialized: _appSettingsloadingBuilder,
-          loaded: _appSettingsLoadedBuilder,
+          loaded: (appSettings) =>
+              _appSettingsLoadedBuilder(appSettings, placeId),
           loading: _appSettingsloadingBuilder,
         );
       },
@@ -81,7 +68,6 @@ class HomeScreenState extends State<HomeScreen> {
           orElse: () {},
           loaded: (appSetting) {
             _appLanguageChanged(appSetting.language);
-            _appThemeChanged(appSetting.theme);
           },
         );
       },
@@ -117,7 +103,7 @@ class HomeScreenState extends State<HomeScreen> {
     return const Center(child: AdaptiveCircularLoader());
   }
 
-  Widget _appSettingsLoadedBuilder(AppSettings appSetting) {
+  Widget _appSettingsLoadedBuilder(AppSettings appSetting, String placeId) {
     return BlocBuilder<LocalizationBloc, LocalizationState>(
         builder: (ctx, state) {
       if (state is LocalizationError) {
@@ -128,7 +114,8 @@ class HomeScreenState extends State<HomeScreen> {
                 const Text('Error while loading l10n'),
                 TextButton(
                   onPressed: () {
-                    BlocProvider.of<LocalizationBloc>(context)
+                    context
+                        .read<LocalizationBloc>()
                         .add(const FetchLocalization(localeDefault));
                   },
                   child: const Text('Retry'),
@@ -141,7 +128,9 @@ class HomeScreenState extends State<HomeScreen> {
         return Directionality(
           textDirection:
               appSetting.isRtl ? TextDirection.rtl : TextDirection.ltr,
-          child: const PlaceDetailsPage(),
+          child: PlaceDetailsPage(
+            key: ValueKey(placeId),
+          ),
         );
       } else {
         return const AdaptiveScaffold(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../common/attributions.dart';
+import '../widgets/attribution_widget.dart';
 
 class FoodItemCard extends StatelessWidget {
   final String label;
@@ -10,7 +10,6 @@ class FoodItemCard extends StatelessWidget {
   final String? photoBy;
   final String? licence;
   final String? attributionUrl;
-  final Color cardColor;
   const FoodItemCard({
     super.key,
     required this.label,
@@ -20,13 +19,11 @@ class FoodItemCard extends StatelessWidget {
     required this.photoBy,
     required this.licence,
     required this.attributionUrl,
-    this.cardColor = Colors.transparent,
   });
 
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: cardColor,
       clipBehavior: Clip.antiAlias,
       child: SizedBox(
         width: 250,
@@ -57,10 +54,14 @@ class FoodItemCard extends StatelessWidget {
                   ),
                   if (photoBy != "")
                     Padding(
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 4, horizontal: 10),
-                        child: getAttributionWidget(
-                            context, photoBy, attributionUrl, licence)),
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 4, horizontal: 10),
+                      child: AttributionWidget(
+                        photoBy: photoBy,
+                        attributionUrl: attributionUrl,
+                        licence: licence,
+                      ),
+                    ),
                 ]),
             Container(
               alignment: Alignment.bottomRight,

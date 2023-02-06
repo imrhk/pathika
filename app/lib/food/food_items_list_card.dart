@@ -1,12 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:universal_io/io.dart' show Platform;
 
 import '../common/info_card.dart';
 import '../core/adt_details.dart';
-import '../localization/localization.dart';
+import '../extensions/context_extensions.dart';
 import '../models/place_models.dart';
 import 'food_item_card.dart';
 
@@ -22,8 +21,7 @@ class FoodItemsListCard extends StatelessWidget
   Widget build(BuildContext context) {
     return InfoCard(
       color: Colors.teal,
-      heading:
-          BlocProvider.of<LocalizationBloc>(context).localize('food', 'Food'),
+      heading: context.localize('food', 'Food'),
       body: _FoodItemsListCardInternal(
         items: details,
       ),
@@ -113,8 +111,7 @@ class __FoodItemsListCardInternalState
                 : showVegOnly
                     ? Center(
                         child: Text(
-                          BlocProvider.of<LocalizationBloc>(context).localize(
-                              'no_veg_available',
+                          context.localize('no_veg_available',
                               'Vegetarian foods are not popular here.'),
                         ),
                       )
@@ -122,8 +119,7 @@ class __FoodItemsListCardInternalState
         ButtonBar(
           children: <Widget>[
             Text(
-              BlocProvider.of<LocalizationBloc>(context)
-                  .localize('veg_only', 'Show Veg Only'),
+              context.localize('veg_only', 'Show Veg Only'),
             ),
             getPlatformSwitch(
               value: showVegOnly,

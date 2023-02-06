@@ -3,6 +3,7 @@ import 'dart:ui';
 
 import 'package:intl/intl.dart';
 
+import '../localization/constants.dart';
 import '../page_fetch/page_fetch_bloc.dart';
 import '../remote/remote_repository.dart';
 import 'conversion_item.dart';
@@ -20,7 +21,7 @@ class CurrencyConverterBloc
     if (from == null || from.isEmpty) {
       final country = await _remoteRepository.getUserCountry();
       final countryCode = country.code;
-      final locale = Locale(event.language ?? 'en', countryCode);
+      final locale = Locale(event.language ?? localeDefault, countryCode);
       final numberFormat = NumberFormat.simpleCurrency(
           locale: locale.toString(), decimalDigits: 2);
       from = numberFormat.currencyName;

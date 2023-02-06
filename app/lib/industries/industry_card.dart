@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../common/info_card.dart';
 import '../core/adt_details.dart';
-import '../localization/localization.dart';
+import '../extensions/context_extensions.dart';
 import '../models/place_models.dart';
 
 class IndustriesCard extends StatelessWidget
@@ -18,8 +17,7 @@ class IndustriesCard extends StatelessWidget
   Widget build(BuildContext context) {
     return InfoCard(
       color: Colors.yellow,
-      heading: BlocProvider.of<LocalizationBloc>(context)
-          .localize('industries', 'Industries'),
+      heading: context.localize('industries', 'Industries'),
       title: details.primary,
       subtitle: details.secondary?.join(',') ?? '',
     );

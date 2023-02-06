@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:bloc/bloc.dart';
 import 'package:intl/locale.dart';
+import 'package:logger/logger.dart';
 
 import '../../assets/assets_repository.dart';
 import '../../cache/cache_repository.dart';
@@ -14,14 +15,17 @@ class AppSettingsBloc extends Bloc<AppSettingsEvent, AppSettingsState> {
   final CacheRepository _cacheRepository;
   final AssetsRepository _assetsRepository;
   final Future<String> Function() _getDeviceLocale;
+  final Logger? _logger;
 
   AppSettingsBloc({
     required CacheRepository cacheRepository,
     required AssetsRepository assetsRepository,
     required Future<String> Function() getDeviceLocale,
+    Logger? logger,
   })  : _cacheRepository = cacheRepository,
         _assetsRepository = assetsRepository,
         _getDeviceLocale = getDeviceLocale,
+        _logger = logger,
         super(const AppSettingsState.uninitialized()) {
     on<AppSettingsEvent>(
       (event, emit) async {
@@ -43,6 +47,7 @@ class AppSettingsBloc extends Bloc<AppSettingsEvent, AppSettingsState> {
     try {
       final appSettingsExists = await _cacheRepository.appSettingsExists();
       if (appSettingsExists == false) {
+        _logger?.i("app settings does not exist");
         final deviceLocale = await _getDeviceLocale();
         final locale = Locale.parse(deviceLocale);
         final deviceLanguage = locale.languageCode;
@@ -63,10 +68,13 @@ class AppSettingsBloc extends Bloc<AppSettingsEvent, AppSettingsState> {
         _cacheRepository.setAppSettings(AppSettings(language: language.id));
       } else {
         final appSettings = await _cacheRepository.getAppSettings();
+        _logger?.i("app settings exist. Emitting $appSettings");
         emit(AppSettingsState.loaded(appSettings));
       }
-    } catch (_) {
+    } catch (e) {
       // default settings in case of error
+      _logger?.e(
+          "error while loading app settings. $e", e as Error, e.stackTrace);
       emit(const AppSettingsState.loaded(AppSettings()));
     }
     return null;
@@ -97,12 +105,8 @@ class AppSettingsBloc extends Bloc<AppSettingsEvent, AppSettingsState> {
   ) async {
     try {
       final appSettings = state.when<AppSettings>(
-        uninitialized: () => AppSettings(
-          theme: newTheme,
-        ),
-        loading: () => AppSettings(
-          theme: newTheme,
-        ),
+        uninitialized: () => AppSettings(theme: newTheme),
+        loading: () => AppSettings(theme: newTheme),
         loaded: (settings) => settings.copyWith(theme: newTheme),
       );
       await _cacheRepository.setAppSettings(appSettings);

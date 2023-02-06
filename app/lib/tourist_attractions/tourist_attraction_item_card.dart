@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../common/attributions.dart';
 import '../core/utility.dart';
+import '../widgets/attribution_widget.dart';
 
 class TouristAttractionItemCard extends StatelessWidget {
   final String name;
@@ -102,8 +102,11 @@ class TouristAttractionItemCard extends StatelessWidget {
               Padding(
                 padding:
                     const EdgeInsets.symmetric(vertical: 4, horizontal: 10),
-                child: getAttributionWidget(
-                    context, contributorName, contributionUrl, licence),
+                child: AttributionWidget(
+                  photoBy: contributorName,
+                  attributionUrl: contributionUrl,
+                  licence: licence,
+                ),
               ),
           ],
         ),

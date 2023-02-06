@@ -18,6 +18,7 @@ class OptionalShimmer extends StatelessWidget {
     return Shimmer(
       gradient: gradient,
       direction: shimmerDirection,
+      loop: -1,
       child: child,
     );
   }

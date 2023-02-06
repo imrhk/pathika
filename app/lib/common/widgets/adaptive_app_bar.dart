@@ -4,31 +4,31 @@ import 'package:platform_widget_mixin/platform_widget_mixin.dart';
 
 class AdaptiveScaffold extends StatelessWidget with PlatformWidgetMixin {
   final Widget body;
-  final Function? getAppBar;
-  final Function? getAppDrawer;
-  final Function? getNavigationbar;
+  final PreferredSizeWidget? appbar;
+  final Widget? appDrawer;
+  final ObstructingPreferredSizeWidget? navigationBar;
 
   const AdaptiveScaffold({
     super.key,
     required this.body,
-    this.getAppDrawer,
-    this.getAppBar,
-    this.getNavigationbar,
+    this.appbar,
+    this.appDrawer,
+    this.navigationBar,
   });
 
   @override
   Widget buildAndroid(BuildContext context) {
     return Scaffold(
       body: body,
-      appBar: getAppBar?.call(),
-      drawer: getAppDrawer?.call(context),
+      appBar: appbar,
+      drawer: appDrawer,
     );
   }
 
   @override
   Widget buildIOS(BuildContext context) {
     return CupertinoPageScaffold(
-      navigationBar: getNavigationbar?.call(),
+      navigationBar: navigationBar,
       child: body,
     );
   }

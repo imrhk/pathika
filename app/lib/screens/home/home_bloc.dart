@@ -26,7 +26,7 @@ class HomeBloc extends Bloc<HomeBlocEvent, HomeBlocState> {
     try {
       final places = await _repository.getPlacesId();
       if (places.isNotEmpty) {
-        emit(HomeBlocState.loaded(places.first));
+        emit(HomeBlocState.loaded(places.last));
       } else {
         emit(HomeBlocState.error(AppError('No places')));
       }

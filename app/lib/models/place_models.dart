@@ -162,7 +162,7 @@ class LanguageDetails with _$LanguageDetails {
 class MovieDetails with _$MovieDetails {
   const factory MovieDetails({
     required String title,
-    String? posterUrl,
+    @JsonKey(name: 'poster_url') String? posterUrl,
   }) = _MovieDetails;
 
   factory MovieDetails.fromJson(Map<String, dynamic> json) =>
