@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../common/info_card.dart';
 import '../core/adt_details.dart';
 import '../extensions/context_extensions.dart';
+import '../widgets/info_card.dart';
 
 class TriviaListCard extends StatelessWidget implements Details<List<String>> {
   @override

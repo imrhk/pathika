@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../common/info_card.dart';
 import '../core/adt_details.dart';
 import '../extensions/context_extensions.dart';
 import '../models/place_models.dart';
+import '../widgets/info_card.dart';
 
 class LanguageCard extends StatelessWidget implements Details<LanguageDetails> {
   @override

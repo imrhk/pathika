@@ -5,8 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import '../screens/app_settings/app_settings_bloc.dart';
-import '../screens/app_settings/app_settings_state.dart';
 import 'package:universal_io/io.dart' show Platform;
 import 'package:url_launcher/url_launcher.dart';
 
@@ -14,8 +12,6 @@ import '../ads/app_ad_widget.dart';
 import '../airport/airport_card.dart';
 import '../basic_info/basic_info_app_bar.dart';
 import '../climate/climate_card.dart';
-import '../common/widgets/adaptive_app_bar.dart';
-import '../common/widgets/adaptive_circular_loader.dart';
 import '../core/adt_details.dart';
 import '../country/country_card.dart';
 import '../currency/currency_card.dart';
@@ -30,12 +26,16 @@ import '../models/place_models.dart';
 import '../movies/movies_list_card.dart';
 import '../page_fetch/page_fetch_state.dart';
 import '../remote/remote_repository.dart';
+import '../screens/app_settings/app_settings_bloc.dart';
+import '../screens/app_settings/app_settings_state.dart';
 import '../screens/app_settings/app_settings_widget.dart';
 import '../sports/sports_card.dart';
 import '../time/current_time_card.dart';
 import '../time_to_visit/time_to_visit_card.dart';
 import '../tourist_attractions/tourist_attractions_card.dart';
 import '../trivia/trivia_card.dart';
+import '../widgets/adaptive_circular_loader.dart';
+import '../widgets/adaptive_scaffold.dart';
 import '../widgets/conver_photo_attribution_widget.dart';
 import '../widgets/translate_list_item.dart';
 import 'place_details_fetch_bloc/place_details_fetch_bloc.dart';
@@ -69,12 +69,10 @@ class PlaceDetailsPage extends StatelessWidget {
           },
           child: BlocListener<AppSettingsBloc, AppSettingsState>(
             listenWhen: (previous, current) =>
-                previous.maybeWhen<String?>(
-                  orElse: () => null,
+                previous.whenOrNull<String?>(
                   loaded: (appSetting) => appSetting.language,
                 ) !=
-                current.maybeWhen<String?>(
-                  orElse: () => null,
+                current.whenOrNull<String?>(
                   loaded: (appSetting) => appSetting.language,
                 ),
             listener: (context, state) {

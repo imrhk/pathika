@@ -1,10 +1,9 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-import '../common/info_card.dart';
 import '../core/adt_details.dart';
 import '../extensions/context_extensions.dart';
+import '../widgets/info_card.dart';
 
 class CurrentTimeCard extends StatelessWidget implements Details<int> {
   final int timezoneOffsetInMinute;
@@ -18,51 +17,36 @@ class CurrentTimeCard extends StatelessWidget implements Details<int> {
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<Duration>(
-      builder: (context, snapshot) {
-        if (snapshot.hasError) {
-          if (kDebugMode) {
-            print(snapshot.error.toString());
-          }
-          return const SizedBox.shrink();
-        } else {
-          if (snapshot.data == null) {
-            return const SizedBox.shrink();
-          }
-          final time = DateTime.now().subtract(snapshot.data!);
-          final formattedTime = DateFormat.jm().format(time);
-          final suffix = snapshot.data!.isNegative
-              ? context.localize('_ahead', 'ahead')
-              : context.localize('_behind', 'behind');
-          final hours = context.localize('_hours', 'hours');
-          return InfoCard(
-            color: Colors.lightGreen,
-            heading: context.localize('current_time', 'Current Time'),
-            title: formattedTime,
-            subtitle: snapshot.data!.inSeconds == 0
-                ? ""
-                : '${getTimeFromDuration(snapshot.data!)} $hours $suffix',
-          );
-        }
-      },
-      initialData: const Duration(),
-      future: _getData(context),
+    final difference = _getDifference();
+    final time = DateTime.now().subtract(difference);
+    final formattedTime = DateFormat.jm().format(time);
+    final suffix = difference.isNegative
+        ? context.localize('_ahead', 'ahead')
+        : context.localize('_behind', 'behind');
+    final hours = context.localize('_hours', 'hours');
+    return InfoCard(
+      color: Colors.lightGreen,
+      heading: context.localize('current_time', 'Current Time'),
+      title: formattedTime,
+      subtitle: difference.inSeconds == 0
+          ? ""
+          : '${_getTimeFromDuration(difference)} $hours $suffix',
     );
   }
 
-  Future<Duration> _getData(BuildContext context) async {
+  Duration _getDifference() {
     final currentTimeZoneOffset = DateTime.now().timeZoneOffset;
     final Duration targetTimeZoneOffset =
         Duration(minutes: timezoneOffsetInMinute);
     final difference = currentTimeZoneOffset - targetTimeZoneOffset;
-    return Future.value(difference);
+    return difference;
   }
 
-  String getTimeFromDuration(Duration duration) {
-    return '${twoDigits(duration.inHours)}:${twoDigits(duration.inMinutes.remainder(60).abs())}';
+  String _getTimeFromDuration(Duration duration) {
+    return '${_twoDigits(duration.inHours)}:${_twoDigits(duration.inMinutes.remainder(60).abs())}';
   }
 
-  String twoDigits(int n) {
+  String _twoDigits(int n) {
     if (n >= 10 || n <= -10) return "${n.abs()}";
     if (n > 0) {
       return "0$n";

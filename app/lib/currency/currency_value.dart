@@ -3,9 +3,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 
 import '../extensions/context_extensions.dart';
+import '../models/currency_conversion_item.dart';
 import '../page_fetch/page_fetch_state.dart';
 import '../remote/remote_repository.dart';
-import 'conversion_item.dart';
 import 'convert_currency_event.dart';
 import 'currency_converter_bloc.dart';
 

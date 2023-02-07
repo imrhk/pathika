@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../core/utility.dart';
+import '../extensions/context_extensions.dart';
 import '../widgets/attribution_widget.dart';
 
 class TouristAttractionItemCard extends StatelessWidget {
@@ -45,8 +45,8 @@ class TouristAttractionItemCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Theme.of(context).brightness == Brightness.dark ||
-              getColorsOnCard(context)
+      color: context.theme.brightness == Brightness.dark ||
+              context.showColorsOnCards
           ? Colors.transparent
           : null,
       clipBehavior: Clip.antiAlias,

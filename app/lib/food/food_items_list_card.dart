@@ -1,12 +1,13 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:universal_io/io.dart' show Platform;
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../common/info_card.dart';
 import '../core/adt_details.dart';
 import '../extensions/context_extensions.dart';
 import '../models/place_models.dart';
+import '../screens/app_settings/app_settings_bloc.dart';
+import '../screens/app_settings/app_settings_event.dart';
+import '../screens/app_settings/app_settings_state.dart';
+import '../widgets/info_card.dart';
 import 'food_item_card.dart';
 
 class FoodItemsListCard extends StatelessWidget
@@ -22,64 +23,56 @@ class FoodItemsListCard extends StatelessWidget
     return InfoCard(
       color: Colors.teal,
       heading: context.localize('food', 'Food'),
-      body: _FoodItemsListCardInternal(
+      body: _FilteredFoodItemsList(
         items: details,
       ),
     );
   }
 }
 
-class _FoodItemsListCardInternal extends StatefulWidget {
+class _FilteredFoodItemsList extends StatelessWidget {
   final List<FoodItemDetails> items;
 
-  const _FoodItemsListCardInternal({
+  const _FilteredFoodItemsList({
     this.items = const [],
   });
 
   @override
-  __FoodItemsListCardInternalState createState() =>
-      __FoodItemsListCardInternalState();
+  Widget build(BuildContext context) {
+    return BlocBuilder<AppSettingsBloc, AppSettingsState>(
+      builder: (context, state) {
+        return state.maybeWhen(
+          orElse: () => const SizedBox.shrink(),
+          loaded: (value) {
+            final onlyVeg = value.onlyVeg;
+            final filteredItems = onlyVeg
+                ? items.where((e) => e.isVeg).toList(growable: false)
+                : items;
+
+            return _FoodItemList(
+              items: filteredItems,
+              onlyVeg: onlyVeg,
+            );
+          },
+        );
+      },
+    );
+  }
 }
 
-class __FoodItemsListCardInternalState
-    extends State<_FoodItemsListCardInternal> {
-  late List<FoodItemDetails> _filteredItems;
-  bool showVegOnly = true;
+class _FoodItemList extends StatelessWidget {
+  const _FoodItemList({
+    required this.items,
+    required this.onlyVeg,
+  });
 
-  @override
-  void initState() {
-    _filteredItems = [...widget.items];
-    _setFilteredItems();
-    super.initState();
-  }
+  final List<FoodItemDetails> items;
+  final bool onlyVeg;
 
-  Future _setFilteredItems() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    bool filterValue = prefs.getBool('FOOD_VEG_NON_VEG_FILTER') ?? false;
-    setState(() {
-      showVegOnly = filterValue;
-      if (showVegOnly) {
-        _filteredItems =
-            widget.items.where((element) => element.isVeg).toList();
-      } else {
-        _filteredItems = [...widget.items];
-      }
-    });
-    return Future.value();
-  }
-
-  Future _toggleFilterValue() async {
-    setState(() {
-      showVegOnly = !showVegOnly;
-      if (showVegOnly) {
-        _filteredItems =
-            widget.items.where((element) => element.isVeg).toList();
-      } else {
-        _filteredItems = [...widget.items];
-      }
-    });
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.setBool('FOOD_VEG_NON_VEG_FILTER', showVegOnly);
+  Future _toggleFilterValue(BuildContext context) async {
+    context
+        .read<AppSettingsBloc>()
+        .add(const AppSettingsEvent.toggleVegPreference());
   }
 
   @override
@@ -89,14 +82,15 @@ class __FoodItemsListCardInternalState
         SizedBox(
             width: double.infinity,
             height: 250,
-            child: _filteredItems.isNotEmpty
+            child: items.isNotEmpty
                 ? ListView.builder(
                     physics: const BouncingScrollPhysics(),
                     scrollDirection: Axis.horizontal,
                     shrinkWrap: false,
                     itemBuilder: (context, index) {
-                      final item = _filteredItems[index];
+                      final item = items[index];
                       return FoodItemCard(
+                        key: ValueKey(item.label),
                         label: item.label,
                         photoUrl: item.photo,
                         isVeg: item.isVeg,
@@ -106,9 +100,9 @@ class __FoodItemsListCardInternalState
                         photoBy: item.photoBy,
                       );
                     },
-                    itemCount: _filteredItems.length,
+                    itemCount: items.length,
                   )
-                : showVegOnly
+                : onlyVeg
                     ? Center(
                         child: Text(
                           context.localize('no_veg_available',
@@ -121,20 +115,13 @@ class __FoodItemsListCardInternalState
             Text(
               context.localize('veg_only', 'Show Veg Only'),
             ),
-            getPlatformSwitch(
-              value: showVegOnly,
-              onChanged: (_) => _toggleFilterValue(),
+            Switch.adaptive(
+              value: onlyVeg,
+              onChanged: (_) => _toggleFilterValue(context),
             ),
           ],
         ),
       ],
     );
-  }
-
-  Widget getPlatformSwitch(
-      {required bool value, ValueChanged<bool>? onChanged}) {
-    return Platform.isIOS
-        ? CupertinoSwitch(value: value, onChanged: onChanged)
-        : Switch(value: value, onChanged: onChanged);
   }
 }

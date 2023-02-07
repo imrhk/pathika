@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:logger/logger.dart';
 
-import '../../common/widgets/adaptive_app_bar.dart';
-import '../../common/widgets/adaptive_circular_loader.dart';
 import '../../core/app_error.dart';
 import '../../firebase_messaging_subscription_manager.dart';
 import '../../localization/constants.dart';
@@ -12,6 +10,8 @@ import '../../localization/localization_event.dart';
 import '../../localization/localization_state.dart';
 import '../../models/app_settings.dart';
 import '../../places/place_details_page.dart';
+import '../../widgets/adaptive_circular_loader.dart';
+import '../../widgets/adaptive_scaffold.dart';
 import '../app_settings/app_settings_bloc.dart';
 import '../app_settings/app_settings_state.dart';
 import 'home_bloc.dart';

@@ -2,6 +2,8 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'theme_extensions.dart';
+
 const Map<String, AppTheme Function()> appThemeMap = {
   'light': AppTheme.light,
   'colorful_light': AppTheme.colorfulLight,
@@ -15,18 +17,12 @@ final defaultAppTheme = AppTheme.light();
 class AppTheme implements Equatable {
   final ThemeData? themeDataMaterial;
   final CupertinoThemeData? themeDataCupertino;
-  final bool? useColorsOnCard;
-  final Color? highlightTextColor;
   final String label;
-  final Gradient? textGradient;
 
   AppTheme({
     this.themeDataMaterial,
     this.themeDataCupertino,
-    this.useColorsOnCard = false,
-    this.highlightTextColor,
     required this.label,
-    this.textGradient,
   }) : assert(label.trim().isNotEmpty);
 
   static AppTheme light() {
@@ -34,6 +30,9 @@ class AppTheme implements Equatable {
     return AppTheme(
         themeDataMaterial: ThemeData(
           colorScheme: const ColorScheme.light(primary: Colors.black),
+          extensions: [
+            AppThemeExtension(highlightTextColor: Colors.white),
+          ],
         ),
         themeDataCupertino: cupertinoThemeData.copyWith(
           primaryColor: Colors.black,
@@ -42,8 +41,6 @@ class AppTheme implements Equatable {
                 .copyWith(color: Colors.black),
           ),
         ),
-        useColorsOnCard: false,
-        highlightTextColor: Colors.white,
         label: 'light');
   }
 
@@ -52,6 +49,12 @@ class AppTheme implements Equatable {
     return AppTheme(
         themeDataMaterial: ThemeData(
           colorScheme: const ColorScheme.light(primary: Colors.black),
+          extensions: [
+            AppThemeExtension(
+              highlightTextColor: Colors.white,
+              useColorsOnCard: true,
+            ),
+          ],
         ),
         themeDataCupertino: cupertinoThemeData.copyWith(
           primaryColor: Colors.black,
@@ -60,16 +63,18 @@ class AppTheme implements Equatable {
                 .copyWith(color: Colors.black),
           ),
         ),
-        useColorsOnCard: true,
-        highlightTextColor: Colors.white,
         label: 'colorful_light');
   }
 
   static AppTheme dark() {
     const cupertinoThemeData = CupertinoThemeData();
     return AppTheme(
-        themeDataMaterial:
-            ThemeData.dark().copyWith(primaryColor: Colors.black),
+        themeDataMaterial: ThemeData.dark().copyWith(
+          primaryColor: Colors.black,
+          extensions: [
+            AppThemeExtension(highlightTextColor: Colors.white),
+          ],
+        ),
         themeDataCupertino: cupertinoThemeData.copyWith(
           brightness: Brightness.dark,
           primaryColor: Colors.black,
@@ -83,16 +88,21 @@ class AppTheme implements Equatable {
                 .copyWith(color: Colors.white),
           ),
         ),
-        useColorsOnCard: false,
-        highlightTextColor: Colors.white,
         label: 'dark');
   }
 
   static AppTheme colorfulDark() {
     const cupertinoThemeData = CupertinoThemeData();
     return AppTheme(
-        themeDataMaterial:
-            ThemeData.dark().copyWith(primaryColor: Colors.black),
+        themeDataMaterial: ThemeData.dark().copyWith(
+          primaryColor: Colors.black,
+          extensions: [
+            AppThemeExtension(
+              highlightTextColor: Colors.white,
+              useColorsOnCard: true,
+            ),
+          ],
+        ),
         themeDataCupertino: cupertinoThemeData.copyWith(
           brightness: Brightness.dark,
           primaryColor: Colors.black,
@@ -106,8 +116,6 @@ class AppTheme implements Equatable {
                 .copyWith(color: Colors.white),
           ),
         ),
-        useColorsOnCard: true,
-        highlightTextColor: Colors.white,
         label: 'colorful_dark');
   }
 
@@ -159,18 +167,25 @@ class AppTheme implements Equatable {
     const darkThemeCupertino = CupertinoThemeData(brightness: Brightness.dark);
     return AppTheme(
       themeDataMaterial: darkThemeMaterial.copyWith(
-          primaryColor: Colors.black,
-          appBarTheme: darkThemeMaterial.appBarTheme.copyWith(
-            titleTextStyle: goldTextStyle,
-            toolbarTextStyle: goldTextStyle,
+        primaryColor: Colors.black,
+        appBarTheme: darkThemeMaterial.appBarTheme.copyWith(
+          titleTextStyle: goldTextStyle,
+          toolbarTextStyle: goldTextStyle,
+        ),
+        textTheme: darkThemeMaterial.textTheme.merge(textTheme),
+        unselectedWidgetColor: colorGold,
+        iconTheme: const IconThemeData(color: colorGold),
+        colorScheme: const ColorScheme.dark(
+          onSurface: colorGold,
+          secondary: colorGold,
+        ),
+        extensions: [
+          AppThemeExtension(
+            highlightTextColor: colorGold,
+            textGradient: linearGradient,
           ),
-          textTheme: darkThemeMaterial.textTheme.merge(textTheme),
-          unselectedWidgetColor: colorGold,
-          iconTheme: const IconThemeData(color: colorGold),
-          colorScheme: const ColorScheme.dark(
-            onSurface: colorGold,
-            secondary: colorGold,
-          )),
+        ],
+      ),
       themeDataCupertino: CupertinoThemeData(
         brightness: Brightness.dark,
         primaryColor: Colors.black,
@@ -197,10 +212,7 @@ class AppTheme implements Equatable {
           textStyle: goldTextStyle,
         ),
       ),
-      useColorsOnCard: false,
-      highlightTextColor: const Color.fromARGB(255, 255, 215, 0),
       label: 'gold_dark',
-      textGradient: linearGradient,
     );
   }
 
@@ -213,13 +225,5 @@ class AppTheme implements Equatable {
   }
 
   @override
-  int get hashCode => label.hashCode;
-
-  @override
-  bool get stringify => false;
-
-  @override
-  bool operator ==(dynamic other) {
-    return other is AppTheme && other.label == label;
-  }
+  bool? get stringify => true;
 }

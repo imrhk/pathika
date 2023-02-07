@@ -2,9 +2,9 @@ import 'package:dio/dio.dart';
 import 'package:retrofit/retrofit.dart';
 
 import '../common/constants.dart';
-import '../currency/user_country.dart';
 import '../models/app_language.dart';
 import '../models/place_models.dart';
+import '../models/user_country.dart';
 
 part 'rest_client.g.dart';
 

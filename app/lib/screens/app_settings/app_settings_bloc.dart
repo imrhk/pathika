@@ -35,6 +35,8 @@ class AppSettingsBloc extends Bloc<AppSettingsEvent, AppSettingsState> {
                 await _mapChangeLanguageEventToState(emit, newLanguage, isRtl),
             changeTheme: (newTheme) async =>
                 await _mapChangeThemeEventToState(emit, newTheme),
+            toggleVegPreference: () async =>
+                await _mapSetOnlyVegEventToState(emit),
             clear: () async => await _mapClearSettingsEventToState(emit));
       },
     );
@@ -111,6 +113,20 @@ class AppSettingsBloc extends Bloc<AppSettingsEvent, AppSettingsState> {
       );
       await _cacheRepository.setAppSettings(appSettings);
       emit(AppSettingsState.loaded(appSettings));
+    } catch (_) {}
+  }
+
+  Future<void> _mapSetOnlyVegEventToState(
+    Emitter<AppSettingsState> emit,
+  ) async {
+    try {
+      final appSettings = state.whenOrNull<AppSettings>(
+        loaded: (settings) => settings.copyWith(onlyVeg: !settings.onlyVeg),
+      );
+      if (appSettings != null) {
+        await _cacheRepository.setAppSettings(appSettings);
+        emit(AppSettingsState.loaded(appSettings));
+      }
     } catch (_) {}
   }
 

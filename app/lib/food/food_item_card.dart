@@ -35,11 +35,12 @@ class FoodItemCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   if (photoUrl != null)
-                    Image.network(
-                      photoUrl!,
-                      fit: BoxFit.fitWidth,
-                      width: 250,
-                      height: 150,
+                    AspectRatio(
+                      aspectRatio: 5 / 3,
+                      child: Image.network(
+                        photoUrl!,
+                        fit: BoxFit.fitWidth,
+                      ),
                     ),
                   const SizedBox(height: 4),
                   Padding(
@@ -84,7 +85,7 @@ class FoodItemCard extends StatelessWidget {
                     ),
                   if (isNonVeg)
                     const CircleAvatar(
-                      backgroundColor: Colors.red,
+                      backgroundColor: Colors.brown,
                       radius: 5,
                     ),
                 ],

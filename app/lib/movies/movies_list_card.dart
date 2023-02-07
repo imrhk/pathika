@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../common/info_card.dart';
 import '../core/adt_details.dart';
 import '../extensions/context_extensions.dart';
 import '../models/place_models.dart';
+import '../widgets/info_card.dart';
 import 'movie_item_card.dart';
 
 class MoviesListCard extends StatelessWidget
@@ -33,7 +33,6 @@ class MoviesListCard extends StatelessWidget
             return MovieItemCard(
               name: item.title,
               posterUrl: item.posterUrl,
-              
             );
           },
           itemCount: details.length,

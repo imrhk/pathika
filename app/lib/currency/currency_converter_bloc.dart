@@ -4,9 +4,9 @@ import 'dart:ui';
 import 'package:intl/intl.dart';
 
 import '../localization/constants.dart';
+import '../models/currency_conversion_item.dart';
 import '../page_fetch/page_fetch_bloc.dart';
 import '../remote/remote_repository.dart';
-import 'conversion_item.dart';
 import 'convert_currency_event.dart';
 
 class CurrencyConverterBloc

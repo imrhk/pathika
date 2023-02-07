@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:logger/logger.dart';
+import '../extensions/context_extensions.dart';
 
-import '../common/info_card.dart';
 import '../core/adt_details.dart';
-import '../core/utility.dart';
+import '../widgets/info_card.dart';
 
 class LocationMapCard extends StatelessWidget implements Details<List<String>> {
   @override
@@ -32,12 +34,22 @@ class _LocationMapStackCardInternal extends StatefulWidget {
 
 class __LocationMapItemsStackCardInternalState
     extends State<_LocationMapStackCardInternal> {
-  late List<String> items;
+  int index = 0;
 
   @override
-  void initState() {
-    super.initState();
-    items = [...widget.items];
+  void didChangeDependencies() {
+    for (var item in widget.items) {
+      precacheImage(
+        NetworkImage(item),
+        context,
+        onError: (exception, stackTrace) {
+          context
+              .read<Logger>()
+              .e('could not load $item', exception, stackTrace);
+        },
+      );
+    }
+    super.didChangeDependencies();
   }
 
   @override
@@ -45,18 +57,22 @@ class __LocationMapItemsStackCardInternalState
     return GestureDetector(
       onTap: () {
         setState(() {
-          final removed = items.removeAt(0);
-          items.add(removed);
+          index++;
         });
       },
       child: InfoCard(
-        color: widget.getColorsOnCard(context) ? Colors.lightBlue : null,
+        color: context.showColorsOnCards ? Colors.lightBlue : null,
         padding: const EdgeInsets.all(0.0),
         body: AspectRatio(
           aspectRatio: 1.72,
-          child: Image.network(
-            items[0],
-            fit: BoxFit.fitWidth,
+          child: AnimatedSwitcher(
+            duration: const Duration(seconds: 1),
+            child: Image.network(
+              widget.items.elementAt(index % widget.items.length),
+              key:
+                  ValueKey(widget.items.elementAt(index % widget.items.length)),
+              fit: BoxFit.fitWidth,
+            ),
           ),
         ),
         isAudiable: false,

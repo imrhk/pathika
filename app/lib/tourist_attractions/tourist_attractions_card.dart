@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-import '../common/info_card.dart';
+import '../common/constants.dart';
 import '../core/adt_details.dart';
-import '../core/utility.dart';
 import '../extensions/context_extensions.dart';
 import '../models/place_models.dart';
+import '../widgets/info_card.dart';
 import 'tourist_attraction_item_card.dart';
 
 class TouristAttractionsCard extends StatelessWidget

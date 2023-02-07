@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../core/utility.dart';
-import 'constants.dart';
+import '../common/constants.dart';
+import '../extensions/context_extensions.dart';
 import 'material_card.dart';
-import 'shimmer_text.dart';
+import 'optional_shimmer.dart';
 
 class InfoCard extends StatelessWidget {
   final MaterialColor? color;
@@ -31,12 +31,13 @@ class InfoCard extends StatelessWidget {
   });
   @override
   Widget build(BuildContext context) {
-    final shimmerGradient = getShimmerGradient(context);
+    final shimmerGradient = context.textGradient;
     return MaterialCard(
       clipBehavior: Clip.antiAlias,
-      color: getColorsOnCard(context) ? color : null,
-      shadowColor:
-          getColorsOnCard(context) ? color : const Color.fromARGB(255, 0, 0, 0),
+      color: context.showColorsOnCards ? color : null,
+      shadowColor: context.showColorsOnCards
+          ? color
+          : const Color.fromARGB(255, 0, 0, 0),
       margin: const EdgeInsets.fromLTRB(12, 12, 12, 6),
       elevation: 8,
       shape: RoundedRectangleBorder(
@@ -48,16 +49,17 @@ class InfoCard extends StatelessWidget {
             padding ?? const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          gradient: bgColor == null && getColorsOnCard(context) && color != null
-              ? LinearGradient(
-                  colors: [
-                    color!.shade500.withOpacity(1),
-                    color!.shade500.withOpacity(0.67),
-                  ],
-                  end: FractionalOffset.topCenter,
-                  begin: FractionalOffset.bottomCenter,
-                )
-              : null,
+          gradient:
+              bgColor == null && context.showColorsOnCards && color != null
+                  ? LinearGradient(
+                      colors: [
+                        color!.shade500.withOpacity(1),
+                        color!.shade500.withOpacity(0.67),
+                      ],
+                      end: FractionalOffset.topCenter,
+                      begin: FractionalOffset.bottomCenter,
+                    )
+                  : null,
         ),
         child: Stack(
           children: [

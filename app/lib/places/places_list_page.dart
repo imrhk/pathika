@@ -5,13 +5,13 @@ import 'package:go_router/go_router.dart';
 import 'package:platform_widget_mixin/platform_widget_mixin.dart';
 
 import '../basic_info/basic_info_app_bar.dart';
-import '../common/widgets/adaptive_circular_loader.dart';
 import '../extensions/context_extensions.dart';
 import '../models/place_models.dart';
 import '../page_fetch/page_fetch_state.dart';
 import '../remote/remote_repository.dart';
 import '../screens/home/home_bloc.dart';
 import '../screens/home/home_bloc_event.dart';
+import '../widgets/adaptive_circular_loader.dart';
 import '../widgets/attribution_widget.dart';
 import 'places_page_fetch_bloc/places_page_fetch_bloc.dart';
 import 'places_page_fetch_bloc/places_page_fetch_event.dart';
@@ -161,7 +161,7 @@ class _PlaceInfoTileFooter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Color? highlightTextColor = context.currentTheme.highlightTextColor;
+    Color? highlightTextColor = context.hightlightColor;
 
     return Align(
       alignment: Alignment.bottomLeft,

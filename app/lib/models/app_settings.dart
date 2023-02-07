@@ -11,6 +11,7 @@ class AppSettings with _$AppSettings {
     @Default(localeDefault) String language,
     @Default("light") String theme,
     @Default(false) bool isRtl,
+    @Default(false) bool onlyVeg,
   }) = _AppSettings;
 
   factory AppSettings.fromJson(Map<String, dynamic> json) =>

@@ -1,0 +1,42 @@
+- Flutter Upgrade ✅
+- Android upgrade ✅
+- Bloc based architecture ✅
+- Freezed Model classes ✅
+- Retrofit ✅
+- Gold theme ✅
+- Caching ✅
+- Context extensions ✅
+- Hive ✅
+- Go Router ✅
+- Adaptive Widgets ✅
+- Logging ✅
+- Widgets composition
+- Theme Extensions
+- Navigation
+- Cupertino Page
+- Cupertino (iOS Related)
+- Folder Structure
+- Localization
+- Neon Theme
+- Custom Theme
+- Theme for Icons and other widgets
+- Transition
+- Analytics
+- Crashlytics 
+- Unit Tests
+- Widget Tests
+- Integration Tests
+- Notifications
+- Launch Animation
+- Web Support 
+- iPad Support
+- Windows Support
+- Mac Support
+- Linux Support
+- WatchOS Support
+- WearOS Support
+- TvOS Support
+- AndroidTv Support
+- Material3
+- WidgetBook.io
+- Tappable 

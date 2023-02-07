@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../common/info_card.dart';
 import '../extensions/context_extensions.dart';
 import '../models/place_models.dart';
+import '../widgets/info_card.dart';
 
 class DanceCard extends StatelessWidget {
   final DanceDetails details;

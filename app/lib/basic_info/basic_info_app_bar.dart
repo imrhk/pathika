@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:platform_widget_mixin/platform_widget_mixin.dart';
 
-import '../common/info_card.dart';
-import '../common/shimmer_text.dart';
-import '../core/utility.dart';
+import '../common/constants.dart';
 import '../extensions/context_extensions.dart';
 import '../models/place_models.dart';
 import '../widgets/conver_photo_attribution_widget.dart';
+import '../widgets/info_card.dart';
+import '../widgets/optional_shimmer.dart';
 
 class BasicInfoAppBar extends StatelessWidget with PlatformWidgetMixin {
   final double? height;
@@ -64,7 +64,7 @@ class BasicInfoAppBar extends StatelessWidget with PlatformWidgetMixin {
   }
 
   Widget _getTitle(BuildContext context) {
-    final style = context.currentTheme.textGradient != null
+    final style = context.textGradient != null
         ? context.theme.textTheme.headlineSmall
         : null;
     return OptionalShimmer(

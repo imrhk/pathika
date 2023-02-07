@@ -25,13 +25,13 @@ class AppLanguageListBloc
         return value;
       }
     }).then((value) {
-      //put english at top
-      final indexOfEnglish =
+      //put default language at top
+      final indexOfDefaultLanguage =
           value.indexWhere((element) => element.id == localeDefault);
-      if (indexOfEnglish != -1) {
-        final en = value[indexOfEnglish];
-        value.removeAt(indexOfEnglish);
-        value.insert(0, en);
+      if (indexOfDefaultLanguage != -1) {
+        final defaultLanguage = value[indexOfDefaultLanguage];
+        value.removeAt(indexOfDefaultLanguage);
+        value.insert(0, defaultLanguage);
       }
       return value.toList(growable: false);
     });

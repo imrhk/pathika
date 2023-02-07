@@ -1,6 +1,6 @@
-import '../currency/user_country.dart';
 import '../models/app_language.dart';
 import '../models/place_models.dart';
+import '../models/user_country.dart';
 import 'rest_client.dart';
 
 class RemoteRepository extends RemoteService {
