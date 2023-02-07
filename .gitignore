@@ -44,3 +44,4 @@ app/android/.settings/org.eclipse.buildship.core.prefs
 app/android/app/.classpath
 app/android/app/.project
 *.aab
+app/lib/firebase_options.dart
