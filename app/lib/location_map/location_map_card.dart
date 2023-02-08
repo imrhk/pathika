@@ -1,9 +1,11 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:logger/logger.dart';
-import '../extensions/context_extensions.dart';
 
 import '../core/adt_details.dart';
+import '../extensions/context_extensions.dart';
 import '../widgets/info_card.dart';
 
 class LocationMapCard extends StatelessWidget implements Details<List<String>> {
@@ -32,33 +34,41 @@ class _LocationMapStackCardInternal extends StatefulWidget {
   State createState() => __LocationMapItemsStackCardInternalState();
 }
 
+// Precaching 2 images in advance so that the transition would be smooth.
 class __LocationMapItemsStackCardInternalState
     extends State<_LocationMapStackCardInternal> {
   int index = 0;
 
   @override
   void didChangeDependencies() {
-    for (var item in widget.items) {
-      precacheImage(
-        NetworkImage(item),
-        context,
-        onError: (exception, stackTrace) {
-          context
-              .read<Logger>()
-              .e('could not load $item', exception, stackTrace);
-        },
-      );
+    for (var item in widget.items.sublist(0, min(widget.items.length, 3))) {
+      _precacheMapImage(item);
     }
     super.didChangeDependencies();
+  }
+
+  void _precacheMapImage(String item) {
+    precacheImage(
+      NetworkImage(item),
+      context,
+      onError: (exception, stackTrace) {
+        context.read<Logger>().e('could not load $item', exception, stackTrace);
+      },
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        setState(() {
-          index++;
-        });
+        index++;
+        if (index < index % widget.items.length) {
+          for (var i in [1, 2]) {
+            _precacheMapImage(
+                widget.items.elementAt((index + i) % widget.items.length));
+          }
+        }
+        setState(() {});
       },
       child: InfoCard(
         color: context.showColorsOnCards ? Colors.lightBlue : null,

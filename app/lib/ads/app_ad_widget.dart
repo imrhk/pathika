@@ -37,11 +37,13 @@ class _AppAdWidgetState extends State<AppAdWidget> {
     if (bottomBarPromoAd == null) {
       return const SizedBox.shrink();
     } else {
-      return Container(
-        alignment: Alignment.center,
-        width: bottomBarPromoAd!.size.width.toDouble(),
-        height: bottomBarPromoAd!.size.height.toDouble(),
-        child: AdWidget(ad: bottomBarPromoAd!),
+      return Center(
+        child: Container(
+          alignment: Alignment.center,
+          width: bottomBarPromoAd!.size.width.toDouble(),
+          height: bottomBarPromoAd!.size.height.toDouble(),
+          child: AdWidget(ad: bottomBarPromoAd!),
+        ),
       );
     }
   }

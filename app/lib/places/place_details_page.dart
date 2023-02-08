@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
+import 'package:platform_widget_mixin/platform_widget_mixin.dart';
 import 'package:universal_io/io.dart' show Platform;
 import 'package:url_launcher/url_launcher.dart';
 
@@ -29,6 +30,8 @@ import '../remote/remote_repository.dart';
 import '../screens/app_settings/app_settings_bloc.dart';
 import '../screens/app_settings/app_settings_state.dart';
 import '../screens/app_settings/app_settings_widget.dart';
+import '../screens/home/home_bloc.dart';
+import '../screens/home/home_bloc_event.dart';
 import '../sports/sports_card.dart';
 import '../time/current_time_card.dart';
 import '../time_to_visit/time_to_visit_card.dart';
@@ -175,10 +178,10 @@ class _PlaceDetailsWidgetState extends State<PlaceDetailsWidget> {
       controller: _scrollController,
       physics: const BouncingScrollPhysics(),
       slivers: <Widget>[
-        getSliverAppBar(context, widget.details),
+        _PlacesDetailsScreenAppBar(details: widget.details),
         if (Platform.isIOS)
           SliverToBoxAdapter(
-            child: getBasicInfoWidget(widget.details),
+            child: _getBasicInfoWidget(context, widget.details),
           ),
         SliverList(
           delegate: SliverChildListDelegate.fixed(
@@ -347,73 +350,19 @@ class _PlaceDetailsWidgetState extends State<PlaceDetailsWidget> {
     );
   }
 
-  Widget getCupertinoAppBar(PlaceDetails placeDetails) {
-    return CupertinoSliverNavigationBar(
-      automaticallyImplyLeading: false,
-      largeTitle: Text(placeDetails.basicInfo?.name ?? ''),
-      trailing: Row(
-        mainAxisAlignment: MainAxisAlignment.end,
-        mainAxisSize: MainAxisSize.min,
-        children: <Widget>[
-          if (kDebugMode)
-            GestureDetector(
-                child: const Icon(CupertinoIcons.refresh_bold,
-                    color: CupertinoColors.activeBlue),
-                onTap: () {
-                  setState(() {});
-                }),
-          if (kDebugMode) const SizedBox(width: 10),
-          GestureDetector(
-            child: const Icon(CupertinoIcons.square_list,
-                color: CupertinoColors.activeBlue),
-            onTap: () => context.push('/places_list'),
-          ),
-          const SizedBox(width: 10),
-          GestureDetector(
-            child: const Icon(CupertinoIcons.settings,
-                color: CupertinoColors.activeBlue),
-            onTap: () {
-              Navigator.push(
-                context,
-                CupertinoPageRoute(
-                  builder: (context) => CupertinoPageScaffold(
-                    navigationBar: CupertinoNavigationBar(
-                      middle: GestureDetector(
-                        child: Text(
-                          context.localize('_settings', 'Settings'),
-                        ),
-                      ),
-                      leading: GestureDetector(
-                        child: Row(
-                          children: <Widget>[
-                            const Icon(CupertinoIcons.left_chevron,
-                                color: CupertinoColors.activeBlue),
-                            Flexible(
-                              child: Text(
-                                placeDetails.basicInfo?.name ?? '',
-                                overflow: TextOverflow.ellipsis,
-                                style: const TextStyle(
-                                  color: CupertinoColors.activeBlue,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                        onTap: () => Navigator.of(context).pop(),
-                      ),
-                    ),
-                    child: const AppSettingsWidget(),
-                  ),
-                ),
-              );
-            },
-          ),
-        ],
-      ),
-    );
+  _openForm() async {
+    launchUrl(Uri.parse('https://forms.gle/bb3LZhreSfeHHy1f6'));
   }
+}
 
-  Widget getMaterialAppBar(PlaceDetails placeDetails) {
+class _PlacesDetailsScreenAppBar extends StatelessWidget
+    with PlatformWidgetMixin {
+  final PlaceDetails details;
+
+  const _PlacesDetailsScreenAppBar({required this.details});
+
+  @override
+  Widget buildAndroid(BuildContext context) {
     final mQuery = MediaQuery.of(context);
     final height = mQuery.size.height;
 
@@ -421,7 +370,7 @@ class _PlaceDetailsWidgetState extends State<PlaceDetailsWidget> {
       expandedHeight: height * 0.5,
       floating: false,
       pinned: true,
-      flexibleSpace: getBasicInfoWidget(placeDetails),
+      flexibleSpace: _getBasicInfoWidget(context, details),
       actions: <Widget>[
         IconButton(
             tooltip: context.localize('browse', 'Browse'),
@@ -433,31 +382,67 @@ class _PlaceDetailsWidgetState extends State<PlaceDetailsWidget> {
     );
   }
 
-  Widget getBasicInfoWidget(PlaceDetails placeDetails) {
-    final mQuery = MediaQuery.of(context);
-    final orientation = mQuery.orientation;
-    final height = mQuery.size.height;
-
-    if (placeDetails.basicInfo != null) {
-      return BasicInfoAppBar(
-        height: height * 0.5,
-        orientation: orientation,
-        placeInfo: placeDetails.basicInfo!,
-      );
-    } else {
-      return const SizedBox.shrink();
-    }
+  @override
+  Widget buildIOS(BuildContext context) {
+    return CupertinoSliverNavigationBar(
+      automaticallyImplyLeading: false,
+      largeTitle: Text(details.basicInfo?.name ?? ''),
+      trailing: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+          if (kDebugMode)
+            IconButton(
+                icon: const Icon(CupertinoIcons.refresh_bold,
+                    color: CupertinoColors.activeBlue),
+                onPressed: () => _onRefreshButtonTap(context)),
+          if (kDebugMode) const SizedBox(width: 10),
+          IconButton(
+            icon: const Icon(CupertinoIcons.square_list,
+                color: CupertinoColors.activeBlue),
+            onPressed: () => context.push('/places_list'),
+          ),
+          const SizedBox(width: 10),
+          IconButton(
+            icon: const Icon(CupertinoIcons.settings,
+                color: CupertinoColors.activeBlue),
+            onPressed: () => context.push('/app_settings'),
+          ),
+        ],
+      ),
+    );
   }
 
-  Widget getSliverAppBar(BuildContext context, PlaceDetails placeDetails) {
-    if (Platform.isIOS) {
-      return getCupertinoAppBar(placeDetails);
+  void _onRefreshButtonTap(BuildContext context) {
+    final currentPlaceId = context.currentPlace;
+    if (currentPlaceId != null) {
+      context.read<PlaceDetailsFetchBloc>().add(
+            PlaceDetailsFetchEvent(
+              currentPlaceId,
+              context.currentLanguage,
+            ),
+          );
     } else {
-      return getMaterialAppBar(placeDetails);
+      context.read<HomeBloc>().add(const HomeBlocEvent.refresh());
     }
   }
+}
 
-  _openForm() async {
-    launchUrl(Uri.parse('https://forms.gle/bb3LZhreSfeHHy1f6'));
+Widget _getBasicInfoWidget(
+  BuildContext context,
+  PlaceDetails placeDetails,
+) {
+  final mQuery = MediaQuery.of(context);
+  final orientation = mQuery.orientation;
+  final height = mQuery.size.height;
+
+  if (placeDetails.basicInfo != null) {
+    return BasicInfoAppBar(
+      height: height * 0.5,
+      orientation: orientation,
+      placeInfo: placeDetails.basicInfo!,
+    );
+  } else {
+    return const SizedBox.shrink();
   }
 }

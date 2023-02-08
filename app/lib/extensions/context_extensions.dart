@@ -23,8 +23,7 @@ extension ContextExtension on BuildContext {
       loaded: (appSettings) =>
           appSettings.isRtl ? TextDirection.rtl : TextDirection.ltr);
 
-  String? get currentPlace => read<HomeBloc>().state.maybeWhen(
-        orElse: () => null,
+  String? get currentPlace => read<HomeBloc>().state.whenOrNull(
         loaded: (placeId) => placeId,
       );
 
