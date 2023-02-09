@@ -1,5 +1,21 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-         <uses-permission android:name="android.permission.INTERNET" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+>
+  <uses-permission android:name="android.permission.INTERNET" />
+
+  <!-- permissions override for plugins-->
+    <uses-feature android:name="android.hardware.type.watch" 
+      android:required="false"
+      tools:node="remove"
+     />
+
+  <!-- Not required for non-wear devices -->
+	<uses-permission android:name="android.permission.WAKE_LOCK" 
+  tools:node="remove" tools:overrideLibrary="com.mjohnsullivan.flutterwear.wear"/>
+
+  <uses-sdk android:targetSdkVersion="33" android:minSdkVersion="19"
+    tools:overrideLibrary="com.mjohnsullivan.flutterwear.wear, com.litedevs.is_wear, com.litedevs.is_tv, androidx.wear"/>
+
     <application
         android:name="${applicationName}"
         android:label="@string/app_name"

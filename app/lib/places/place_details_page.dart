@@ -341,7 +341,7 @@ class _PlaceDetailsWidgetState extends State<PlaceDetailsWidget> {
                   ),
                 ),
                 const SizedBox(height: 20),
-                const AppAdWidget(),
+                if (Platform.isAndroid || Platform.isIOS) const AppAdWidget(),
               ],
             ),
           ),

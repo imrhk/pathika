@@ -10,6 +10,7 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:logger/logger.dart';
 import 'package:platform_widget_mixin/platform_widget_mixin.dart' as pwm;
+import 'package:universal_io/io.dart';
 
 import 'ads/ad_config.dart';
 import 'assets/assets_repository.dart';
@@ -43,12 +44,14 @@ void main() async {
 Future<void> _initializeApp() async {
   await pwm.initialize();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  await MobileAds.instance.initialize();
-  await MobileAds.instance.updateRequestConfiguration(
-    RequestConfiguration(
-      testDeviceIds: testDevices,
-    ),
-  );
+  if (Platform.isAndroid || Platform.isIOS) {
+    await MobileAds.instance.initialize();
+    await MobileAds.instance.updateRequestConfiguration(
+      RequestConfiguration(
+        testDeviceIds: testDevices,
+      ),
+    );
+  }
   await Hive.initFlutter();
 }
 
