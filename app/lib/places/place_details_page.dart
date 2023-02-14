@@ -38,6 +38,7 @@ import '../time_to_visit/time_to_visit_card.dart';
 import '../tourist_attractions/tourist_attractions_card.dart';
 import '../trivia/trivia_card.dart';
 import '../widgets/adaptive_circular_loader.dart';
+import '../widgets/adaptive_icon_button.dart';
 import '../widgets/adaptive_scaffold.dart';
 import '../widgets/conver_photo_attribution_widget.dart';
 import '../widgets/translate_list_item.dart';
@@ -392,18 +393,18 @@ class _PlacesDetailsScreenAppBar extends StatelessWidget
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
           if (kDebugMode)
-            IconButton(
+            AdaptiveIconButton(
                 icon: const Icon(CupertinoIcons.refresh_bold,
                     color: CupertinoColors.activeBlue),
                 onPressed: () => _onRefreshButtonTap(context)),
           if (kDebugMode) const SizedBox(width: 10),
-          IconButton(
+          AdaptiveIconButton(
             icon: const Icon(CupertinoIcons.square_list,
                 color: CupertinoColors.activeBlue),
             onPressed: () => context.push('/places_list'),
           ),
           const SizedBox(width: 10),
-          IconButton(
+          AdaptiveIconButton(
             icon: const Icon(CupertinoIcons.settings,
                 color: CupertinoColors.activeBlue),
             onPressed: () => context.push('/app_settings'),

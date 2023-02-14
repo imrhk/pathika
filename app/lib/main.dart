@@ -2,8 +2,11 @@ import 'package:devicelocale/devicelocale.dart';
 import 'package:dio/dio.dart';
 import 'package:dio_cache_interceptor/dio_cache_interceptor.dart';
 import 'package:dio_cache_interceptor_hive_store/dio_cache_interceptor_hive_store.dart';
+import 'package:dio_logging_interceptor/dio_logging_interceptor.dart'
+    as dio_logging_interceptor;
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -88,7 +91,17 @@ class _ProviderAppState extends State<_ProviderApp> {
       // Overriding [keyBuilder] is strongly recommended when [true].
       allowPostMethod: false,
     );
-    _dio = Dio()..interceptors.add(DioCacheInterceptor(options: options));
+    _dio = Dio();
+    _dio.interceptors
+      ..add(DioCacheInterceptor(options: options))
+      ..add(
+        dio_logging_interceptor.DioLoggingInterceptor(
+          level: kDebugMode
+              ? dio_logging_interceptor.Level.body
+              : dio_logging_interceptor.Level.none,
+          compact: false,
+        ),
+      );
 
     _logger = Logger(
       printer: SimplePrinter(colors: true),

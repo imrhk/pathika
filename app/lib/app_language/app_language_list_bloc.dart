@@ -20,7 +20,7 @@ class AppLanguageListBloc
             local: () => _assetsRepository.getAppLanguages())
         .then((value) {
       if (event.sorted) {
-        return <AppLanguage>[...value]..sort(appLanguageComparator);
+        return <AppLanguage>[...value]..sort();
       } else {
         return value;
       }
