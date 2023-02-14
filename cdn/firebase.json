@@ -1,26 +1,29 @@
 {
-    "hosting": {
-        "site": "pathika-cdn",
-        "public": "public",
-        "ignore": [
-            "firebase.json",
-            "**/.*",
-            "**/node_modules/**"
-        ],
+  "hosting": {
+    "site": "pathika-cdn",
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+
+    "headers": [
+      {
+        "source": "**",
         "headers": [
-            {
-                "source": "**",
-                "headers": [
-                    {
-                        "key": "Access-Control-Allow-Origin",
-                        "value": "https://pathika.litedevs.com"
-                    },
-                    {
-                        "key": "Access-Control-Allow-Credentials",
-                        "value": "true"
-                    }
-                ]
-            }
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "https://pathika.litedevs.com"
+          },
+          {
+            "key": "Access-Control-Allow-Credentials",
+            "value": "true"
+          }
         ]
+      }
+    ]
+  },
+  "emulators": {
+    "hosting": {
+      "port": 5003,
+      "host": "0.0.0.0"
     }
+  }
 }
