@@ -9,6 +9,7 @@ import '../extensions/context_extensions.dart';
 import '../models/place_models.dart';
 import '../page_fetch/page_fetch_state.dart';
 import '../remote/remote_repository.dart';
+import '../routes/routes_extra.dart';
 import '../screens/home/home_bloc.dart';
 import '../screens/home/home_bloc_event.dart';
 import '../widgets/adaptive_circular_loader.dart';
@@ -16,7 +17,8 @@ import '../widgets/attribution_widget.dart';
 import 'places_page_fetch_bloc/places_page_fetch_bloc.dart';
 import 'places_page_fetch_bloc/places_page_fetch_event.dart';
 
-class PlacesListPage extends StatelessWidget with PlatformWidgetMixin {
+class PlacesListPage extends StatelessWidget
+    with PlatformWidgetMixin, TitledPageMixin {
   const PlacesListPage({
     super.key,
   });
@@ -25,7 +27,7 @@ class PlacesListPage extends StatelessWidget with PlatformWidgetMixin {
   Widget buildAndroid(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(context.localize('_discover', 'Discover')),
+        title: Text(pageTitle(context) ?? ''),
       ),
       body: child,
     );
@@ -35,9 +37,8 @@ class PlacesListPage extends StatelessWidget with PlatformWidgetMixin {
   Widget buildIOS(BuildContext context) {
     return CupertinoPageScaffold(
       navigationBar: CupertinoNavigationBar(
-        middle: Text(
-          context.localize('_discover', 'Discover'),
-        ),
+        middle: Text(pageTitle(context) ?? ''),
+        previousPageTitle: previousPageTitle(context),
       ),
       child: child,
     );
@@ -86,8 +87,9 @@ class PlacesListPage extends StatelessWidget with PlatformWidgetMixin {
           key: ValueKey(item.id),
           placeInfo: item,
           onTap: () {
-            ctx.read<HomeBloc>().add(HomeBlocEvent.changePlace(item.id));
-            ctx.pop();
+            ctx
+              ..read<HomeBloc>().add(HomeBlocEvent.changePlace(item.id))
+              ..pop();
           },
         );
       },

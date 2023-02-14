@@ -35,5 +35,7 @@
     "_here" : "here",
     "no_veg_available" : "Vegetarian foods are not popular here.",
     "_photo_by" : "Photo by",
-    "browse": "Browse"
+    "browse": "Browse",
+    "_settings": "Settings",
+    "_discover": "Settings"
 }

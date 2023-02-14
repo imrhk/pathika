@@ -25,7 +25,7 @@ import 'firebase_options.dart';
 import 'localization/localization.dart';
 import 'remote/remote_repository.dart';
 import 'remote/rest_client.dart';
-import 'routes.dart';
+import 'routes/routes.dart';
 import 'screens/app_settings/app_settings_bloc.dart';
 import 'screens/app_settings/app_settings_event.dart';
 import 'screens/app_settings/app_settings_state.dart';

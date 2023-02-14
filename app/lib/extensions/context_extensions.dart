@@ -27,8 +27,10 @@ extension ContextExtension on BuildContext {
         loaded: (placeId) => placeId,
       );
 
-  String localize(String text, String defaultValue) =>
-      watch<LocalizationBloc>().localize(text, defaultValue);
+  String localize(String text, String defaultValue, [bool listen = false]) =>
+      listen
+          ? watch<LocalizationBloc>().localize(text, defaultValue)
+          : read<LocalizationBloc>().localize(text, defaultValue);
 
   ThemeData get theme => Theme.of(this);
 }

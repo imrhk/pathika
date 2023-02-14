@@ -27,6 +27,7 @@ import '../models/place_models.dart';
 import '../movies/movies_list_card.dart';
 import '../page_fetch/page_fetch_state.dart';
 import '../remote/remote_repository.dart';
+import '../routes/routes_extra.dart';
 import '../screens/app_settings/app_settings_bloc.dart';
 import '../screens/app_settings/app_settings_state.dart';
 import '../screens/app_settings/app_settings_widget.dart';
@@ -375,12 +376,24 @@ class _PlacesDetailsScreenAppBar extends StatelessWidget
       actions: <Widget>[
         IconButton(
             tooltip: context.localize('browse', 'Browse'),
-            onPressed: () => context.push('/places_list'),
+            onPressed: () => _onPressedDiscoverIcon(context),
             icon: const Icon(
               Icons.list_alt,
             ))
       ],
     );
+  }
+
+  void _onPressedDiscoverIcon(BuildContext context) {
+    context.push('/places_list',
+        extra: PlacesListPageData(
+            defaultPreviousTitle: details.basicInfo?.name ?? ''));
+  }
+
+  void _onPressedAppSettingsIcon(BuildContext context) {
+    context.push('/app_settings',
+        extra: AppSettingsPageData(
+            defaultPreviousTitle: details.basicInfo?.name ?? ''));
   }
 
   @override
@@ -401,13 +414,13 @@ class _PlacesDetailsScreenAppBar extends StatelessWidget
           AdaptiveIconButton(
             icon: const Icon(CupertinoIcons.square_list,
                 color: CupertinoColors.activeBlue),
-            onPressed: () => context.push('/places_list'),
+            onPressed: () => _onPressedDiscoverIcon(context),
           ),
           const SizedBox(width: 10),
           AdaptiveIconButton(
             icon: const Icon(CupertinoIcons.settings,
                 color: CupertinoColors.activeBlue),
-            onPressed: () => context.push('/app_settings'),
+            onPressed: () => _onPressedAppSettingsIcon(context),
           ),
         ],
       ),

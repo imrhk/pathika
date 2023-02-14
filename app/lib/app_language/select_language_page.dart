@@ -10,6 +10,7 @@ import '../extensions/context_extensions.dart';
 import '../models/app_language.dart';
 import '../page_fetch/page_fetch_state.dart';
 import '../remote/remote_repository.dart';
+import '../routes/routes_extra.dart';
 import '../screens/app_settings/app_settings_bloc.dart';
 import '../screens/app_settings/app_settings_event.dart';
 import '../widgets/adaptive_circular_loader.dart';
@@ -18,7 +19,7 @@ import '../widgets/material_card.dart';
 import 'app_language_list_bloc.dart';
 import 'app_language_list_event.dart';
 
-class SelectLanguagePage extends StatelessWidget {
+class SelectLanguagePage extends StatelessWidget with TitledPageMixin {
   const SelectLanguagePage({
     super.key,
   });
@@ -82,8 +83,9 @@ class SelectLanguagePage extends StatelessWidget {
           ),
           navigationBar: CupertinoNavigationBar(
             middle: Text(
-              context.localize('select_language', 'Select Language'),
+              pageTitle(context) ?? '',
             ),
+            previousPageTitle: previousPageTitle(context),
           ),
           body: child,
         );

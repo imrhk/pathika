@@ -8,9 +8,9 @@ import 'package:go_router/go_router.dart';
 import 'package:universal_io/io.dart' show Platform;
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../app_language/select_language_page.dart';
 import '../../common/constants.dart';
 import '../../extensions/context_extensions.dart';
+import '../../routes/routes_extra.dart';
 import '../../theme/app_theme.dart';
 import 'app_settings_bloc.dart';
 import 'app_settings_event.dart';
@@ -80,24 +80,13 @@ class AppSettingsWidget extends StatelessWidget {
             ],
           ),
           onTap: () async {
-            final response = await Navigator.of(context).push(
-              getPageRoute(
-                builder: (ctx) =>
-                    getThemeWidget(const SelectLanguagePage(), appTheme),
+            context.push(
+              '/select_language',
+              extra: const SelectLanguagePageData(
+                defaultPreviousTitle: 'Settings',
+                previousTitleKey: '_settings',
               ),
             );
-            if (response != null) {
-              appLanguageChanged?.call(response);
-              if (context.mounted) {
-                Navigator.of(context).pop();
-              }
-            } else {
-              if (!Platform.isIOS) {
-                if (context.mounted) {
-                  Navigator.of(context).pop();
-                }
-              }
-            }
           },
         )),
         getSettingsSectionHeader(''),
