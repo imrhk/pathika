@@ -21,9 +21,9 @@ class CurrentTimeCard extends StatelessWidget implements Details<int> {
     final time = DateTime.now().subtract(difference);
     final formattedTime = DateFormat.jm().format(time);
     final suffix = difference.isNegative
-        ? context.localize('_ahead', 'ahead')
-        : context.localize('_behind', 'behind');
-    final hours = context.localize('_hours', 'hours');
+        ? context.localize('ahead', 'ahead')
+        : context.localize('behind', 'behind');
+    final hours = context.localize('hours', 'hours');
     return InfoCard(
       color: Colors.lightGreen,
       heading: context.localize('current_time', 'Current Time'),

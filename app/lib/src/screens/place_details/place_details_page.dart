@@ -310,7 +310,7 @@ class _PlaceDetailsWidgetState extends State<PlaceDetailsWidget> {
                             ' If you believe there is translation issue or any other issue with the content, please report '),
                       ),
                       TextSpan(
-                        text: ' ${context.localize('_here', ' here')} ',
+                        text: ' ${context.localize('here', ' here')} ',
                         style: const TextStyle(
                             decoration: TextDecoration.underline),
                         recognizer: TapGestureRecognizer()

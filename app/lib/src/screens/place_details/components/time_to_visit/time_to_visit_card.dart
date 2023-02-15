@@ -25,6 +25,6 @@ class TimeToVisitCard extends StatelessWidget
 
   String _getSubtitle(BuildContext context) {
     if (details.secondary?.isEmpty ?? true) return "";
-    return '${context.localize('_or', 'or')} ${details.secondary}';
+    return '${context.localize('or', 'or')} ${details.secondary}';
   }
 }
