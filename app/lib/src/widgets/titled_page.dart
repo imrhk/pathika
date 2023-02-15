@@ -5,20 +5,14 @@ import '../routes/routes_extra.dart';
 
 class TitledPage extends InheritedWidget with PageTitleData {
   @override
-  final String? titleKey;
+  final String title;
   @override
-  final String? previousTitleKey;
-  @override
-  final String defaultTitle;
-  @override
-  final String defaultPreviousTitle;
+  final String previousTitle;
 
   TitledPage({
     super.key,
-    this.titleKey,
-    this.previousTitleKey,
-    required this.defaultTitle,
-    required this.defaultPreviousTitle,
+    required this.title,
+    required this.previousTitle,
     required super.child,
   });
 
@@ -33,10 +27,8 @@ class TitledPage extends InheritedWidget with PageTitleData {
     final data = state.extra as PageTitleData;
     return TitledPage(
       key: key,
-      titleKey: data.titleKey,
-      defaultTitle: data.defaultTitle,
-      previousTitleKey: data.previousTitleKey,
-      defaultPreviousTitle: data.defaultPreviousTitle,
+      title: data.title,
+      previousTitle: data.previousTitle,
       child: child,
     );
   }
@@ -47,9 +39,6 @@ class TitledPage extends InheritedWidget with PageTitleData {
 
   @override
   bool updateShouldNotify(TitledPage oldWidget) {
-    return titleKey != oldWidget.titleKey ||
-        previousTitleKey != oldWidget.previousTitleKey ||
-        defaultTitle != oldWidget.defaultTitle ||
-        defaultPreviousTitle != oldWidget.defaultPreviousTitle;
+    return title != oldWidget.title || previousTitle != oldWidget.previousTitle;
   }
 }

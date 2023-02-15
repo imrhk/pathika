@@ -17,7 +17,7 @@ class LanguageCard extends StatelessWidget implements Details<LanguageDetails> {
   Widget build(BuildContext context) {
     return InfoCard(
       color: Colors.lightBlue,
-      heading: context.localize('language', 'Language'),
+      heading: context.l10n.language,
       title: details.primary,
       subtitle: details.secondary.join(','),
     );

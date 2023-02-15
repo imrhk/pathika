@@ -49,3 +49,4 @@ app/ios/firebase_app_id_file.json
 secrets.*
 app/android/app/google-services.json
 app/ios/Runner/GoogleService-Info.plist
+app/untranslated.txt

@@ -15,7 +15,7 @@ class DanceCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InfoCard(
       color: Colors.red,
-      heading: context.localize('dance', 'Dance'),
+      heading: context.l10n.dance,
       title: details.title,
     );
   }

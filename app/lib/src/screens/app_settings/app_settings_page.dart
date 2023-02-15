@@ -5,12 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_cupertino_settings/flutter_cupertino_settings.dart';
 import 'package:go_router/go_router.dart';
-import '../../constants/route_constants.dart';
 import 'package:platform_widget_mixin/platform_widget_mixin.dart';
 import 'package:universal_io/io.dart' show Platform;
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../constants/remote_constants.dart';
+import '../../constants/route_constants.dart';
 import '../../extensions/context_extensions.dart';
 import '../../routes/routes_extra.dart';
 import '../../theme/app_theme.dart';
@@ -33,17 +33,17 @@ class AppSettingsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final appTheme = context.currentTheme;
     return _SettingsContainer(widgets: [
-      _SettingsSectionHeader(text: context.localize('theme', 'Theme')),
+      _SettingsSectionHeader(
+        text: context.l10n.theme,
+      ),
       _RadioGroupWidget<String>(
           items: LinkedHashMap.from(
             {
-              context.localize('light', 'Light'): 'light',
-              context.localize('colorful_light', 'Colorful Light'):
-                  'colorful_light',
-              context.localize('dark', 'Dark'): 'dark',
-              context.localize('colorful_dark', 'Colorful Dark'):
-                  'colorful_dark',
-              context.localize('gold_dark', 'Gold Dark'): 'gold_dark',
+              context.l10n.light: 'light',
+              context.l10n.colorful_light: 'colorful_light',
+              context.l10n.dark: 'dark',
+              context.l10n.colorful_dark: 'colorful_dark',
+              context.l10n.gold_dark: 'gold_dark',
             },
           ),
           currentSelection: appTheme.label,
@@ -64,7 +64,7 @@ class AppSettingsPage extends StatelessWidget {
           children: <Widget>[
             Expanded(
               child: Text(
-                context.localize('change_langauge', 'Change Language'),
+                context.l10n.change_langauge,
                 style: TextStyle(
                   color: getThemeTextColor(context),
                 ),
@@ -81,16 +81,15 @@ class AppSettingsPage extends StatelessWidget {
         onTap: () async {
           context.push(
             '/$selectLanguagePath',
-            extra: const SelectLanguagePageData(
-              defaultPreviousTitle: 'Settings',
-              previousTitleKey: '_settings',
+            extra: SelectLanguagePageData(
+              previousTitle: context.l10n.settings,
             ),
           );
         },
       )),
       const _SettingsSectionHeader(text: ''),
       _SettingsButton(
-        text: context.localize('privacy_policy', 'Privacy Policy'),
+        text: context.l10n.privacy_policy,
         onPress: () {
           final uri = Uri.tryParse(privaryPolicyUrl);
           if (uri != null) {

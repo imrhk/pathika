@@ -16,7 +16,7 @@ class CountryCard extends StatelessWidget implements Details<CountryDetails> {
   Widget build(BuildContext context) {
     return InfoCard(
       color: Colors.amber,
-      heading: context.localize('country', 'Country'),
+      heading: context.l10n.country,
       title: details.name,
       subtitle: details.continent,
     );

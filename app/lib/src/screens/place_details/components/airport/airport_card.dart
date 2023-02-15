@@ -18,7 +18,7 @@ class AirportCard extends StatelessWidget implements Details<AirportDetails> {
   Widget build(BuildContext context) {
     return InfoCard(
       color: Colors.green,
-      heading: context.localize('airport', 'Airport'),
+      heading: context.l10n.airport,
       title: details.name,
     );
   }

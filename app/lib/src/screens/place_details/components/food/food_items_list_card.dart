@@ -22,7 +22,7 @@ class FoodItemsListCard extends StatelessWidget
   Widget build(BuildContext context) {
     return InfoCard(
       color: Colors.teal,
-      heading: context.localize('food', 'Food'),
+      heading: context.l10n.food,
       body: _FilteredFoodItemsList(
         items: details,
       ),
@@ -105,16 +105,13 @@ class _FoodItemList extends StatelessWidget {
                 : onlyVeg
                     ? Center(
                         child: Text(
-                          context.localize('no_veg_available',
-                              'Vegetarian foods are not popular here.'),
+                          context.l10n.no_veg_available,
                         ),
                       )
                     : const Center(child: Text(''))),
         ButtonBar(
           children: <Widget>[
-            Text(
-              context.localize('veg_only', 'Show Veg Only'),
-            ),
+            Text(context.l10n.veg_only),
             Switch.adaptive(
               value: onlyVeg,
               onChanged: (_) => _toggleFilterValue(context),

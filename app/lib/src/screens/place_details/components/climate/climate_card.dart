@@ -19,7 +19,7 @@ class ClimateCard extends StatelessWidget implements Details<ClimateDetails> {
   Widget build(BuildContext context) {
     return InfoCard(
       color: Colors.indigo,
-      heading: context.localize('climate', 'Climate'),
+      heading: context.l10n.climate,
       title: details.type,
       footer: WeatherDetails(items: details.items),
     );

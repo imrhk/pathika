@@ -17,7 +17,7 @@ class IndustriesCard extends StatelessWidget
   Widget build(BuildContext context) {
     return InfoCard(
       color: Colors.yellow,
-      heading: context.localize('industries', 'Industries'),
+      heading: context.l10n.industries,
       title: details.primary,
       subtitle: details.secondary?.join(',') ?? '',
     );

@@ -17,7 +17,7 @@ class TimeToVisitCard extends StatelessWidget
   Widget build(BuildContext context) {
     return InfoCard(
       color: Colors.amber,
-      heading: context.localize('best_time_to_visit', 'Best Time to Visit'),
+      heading: context.l10n.best_time_to_visit,
       title: details.primary,
       subtitle: _getSubtitle(context),
     );
@@ -25,6 +25,6 @@ class TimeToVisitCard extends StatelessWidget
 
   String _getSubtitle(BuildContext context) {
     if (details.secondary?.isEmpty ?? true) return "";
-    return '${context.localize('or', 'or')} ${details.secondary}';
+    return '${context.l10n.or} ${details.secondary}';
   }
 }

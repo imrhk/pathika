@@ -16,7 +16,7 @@ class SportsCard extends StatelessWidget implements Details<SportsDetails> {
   Widget build(BuildContext context) {
     return InfoCard(
       color: Colors.lightBlue,
-      heading: context.localize('most_popular_sports', 'Most Popular Sports'),
+      heading: context.l10n.most_popular_sports,
       title: details.title ?? '',
       footer: Text(details.footer ?? ''),
     );

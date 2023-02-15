@@ -57,4 +57,3 @@ flutter:
 
   assets:
     - assets_remote/assets/json/v1/languages.json
-    - resources/localization/

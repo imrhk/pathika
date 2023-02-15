@@ -5,13 +5,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import '../../constants/route_constants.dart';
 import 'package:platform_widget_mixin/platform_widget_mixin.dart';
 import 'package:universal_io/io.dart' show Platform;
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../ads/app_ad_widget.dart';
 import '../../blocs/page_fetch/page_fetch_state.dart';
+import '../../constants/route_constants.dart';
 import '../../core/adt_details.dart';
 import '../../data/remote/remote_repository.dart';
 import '../../extensions/context_extensions.dart';
@@ -122,7 +122,7 @@ class PlaceDetailsPage extends StatelessWidget {
 
   Widget _errorBuilder(Error error) {
     return Builder(builder: (context) {
-      final errorOccured = context.localize('error_occured', 'Error occured');
+      final errorOccured = context.l10n.error_occured;
       final msg = '$errorOccured\n${error.toString()}';
       return Center(child: Text(msg));
     });
@@ -306,11 +306,10 @@ class _PlaceDetailsWidgetState extends State<PlaceDetailsWidget> {
                           ),
                         ),
                       TextSpan(
-                        text: context.localize('report_issue',
-                            ' If you believe there is translation issue or any other issue with the content, please report '),
+                        text: context.l10n.report_issue,
                       ),
                       TextSpan(
-                        text: ' ${context.localize('here', ' here')} ',
+                        text: ' ${context.l10n.here} ',
                         style: const TextStyle(
                             decoration: TextDecoration.underline),
                         recognizer: TapGestureRecognizer()
@@ -338,7 +337,7 @@ class _PlaceDetailsWidgetState extends State<PlaceDetailsWidget> {
                 const SizedBox(height: 20),
                 Center(
                   child: Text(
-                    context.localize('made_in_india', 'Made with ❤️ in India'),
+                    context.l10n.made_in_india,
                     style: context.theme.textTheme.bodyLarge,
                     textAlign: TextAlign.center,
                   ),
@@ -376,7 +375,7 @@ class _PlacesDetailsScreenAppBar extends StatelessWidget
       flexibleSpace: _getBasicInfoWidget(context, details),
       actions: <Widget>[
         IconButton(
-            tooltip: context.localize('browse', 'Browse'),
+            tooltip: context.l10n.browse,
             onPressed: () => _onPressedDiscoverIcon(context),
             icon: const Icon(
               Icons.list_alt,
@@ -387,14 +386,14 @@ class _PlacesDetailsScreenAppBar extends StatelessWidget
 
   void _onPressedDiscoverIcon(BuildContext context) {
     context.push('/$placesListPath',
-        extra: PlacesListPageData(
-            defaultPreviousTitle: details.basicInfo?.name ?? ''));
+        extra:
+            PlacesListPageData(previousTitle: details.basicInfo?.name ?? ''));
   }
 
   void _onPressedAppSettingsIcon(BuildContext context) {
     context.push('/$appSettingsPath',
-        extra: AppSettingsPageData(
-            defaultPreviousTitle: details.basicInfo?.name ?? ''));
+        extra:
+            AppSettingsPageData(previousTitle: details.basicInfo?.name ?? ''));
   }
 
   @override

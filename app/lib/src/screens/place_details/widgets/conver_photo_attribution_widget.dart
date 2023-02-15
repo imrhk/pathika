@@ -16,7 +16,7 @@ class CoverPhotoAttributionWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final String? text = Platform.isIOS
         ? placeInfo.place
-        : '${context.localize('cover_photo_location', 'Cover photo location')}: ${placeInfo.place}';
+        : '${context.l10n.cover_photo_location}: ${placeInfo.place}';
 
     return Column(
       mainAxisSize: MainAxisSize.min,

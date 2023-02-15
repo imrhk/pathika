@@ -19,7 +19,7 @@ class PersonListCard extends StatelessWidget
   Widget build(BuildContext context) {
     return InfoCard(
       color: Colors.cyan,
-      heading: context.localize('famous_people', 'Famous People'),
+      heading: context.l10n.famous_people,
       body: ListView.separated(
         physics: const NeverScrollableScrollPhysics(),
         itemBuilder: (context, index) {

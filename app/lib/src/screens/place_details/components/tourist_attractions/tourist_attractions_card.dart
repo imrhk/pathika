@@ -20,7 +20,7 @@ class TouristAttractionsCard extends StatelessWidget
   Widget build(BuildContext context) {
     return InfoCard(
       color: materialBlack,
-      heading: context.localize('tourist_attractions', 'Tourist Attractions'),
+      heading: context.l10n.tourist_attractions,
       body: SizedBox(
         height: 300,
         child: ListView.builder(

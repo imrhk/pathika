@@ -57,7 +57,7 @@ The project was build in Jan 2020 when I started learning flutter. I have migrat
 - Firebase functions migration ✅
 - Cupertino (iOS Related) ✅
 - Folder Structure ✅
-- Localization
+- Localization ✅
 - Neon Theme
 - Custom Theme
 - Theme for Icons and other widgets

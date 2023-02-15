@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_gen/gen_l10n/l10n.dart';
 
-import '../blocs/localization/localization_bloc.dart';
 import '../models/app_settings/app_settings.dart';
 import '../screens/app_settings/bloc/app_settings_bloc.dart';
 import '../screens/home/bloc/home_bloc.dart';
@@ -27,10 +27,7 @@ extension ContextExtension on BuildContext {
         loaded: (placeId) => placeId,
       );
 
-  String localize(String text, String defaultValue, [bool listen = false]) =>
-      listen
-          ? watch<LocalizationBloc>().localize(text, defaultValue)
-          : read<LocalizationBloc>().localize(text, defaultValue);
+  AppLocalizations get l10n => AppLocalizations.of(this);
 
   ThemeData get theme => Theme.of(this);
 }

@@ -2,12 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:logger/logger.dart';
 
-import '../../blocs/localization/localization_bloc.dart';
-import '../../blocs/localization/localization_event.dart';
-import '../../blocs/localization/localization_state.dart';
-import '../../constants/localization_constants.dart';
 import '../../core/app_error.dart';
-import '../../models/app_settings/app_settings.dart';
 import '../../utils/firebase_messaging_subscription_manager.dart';
 import '../../widgets/adaptive_circular_loader.dart';
 import '../../widgets/adaptive_scaffold.dart';
@@ -58,8 +53,7 @@ class HomeScreenState extends State<HomeScreen> {
       builder: (context, state) {
         return state.when(
           uninitialized: _appSettingsloadingBuilder,
-          loaded: (appSettings) =>
-              _appSettingsLoadedBuilder(appSettings, placeId),
+          loaded: (_) => _appSettingsLoadedBuilder(placeId),
           loading: _appSettingsloadingBuilder,
         );
       },
@@ -103,42 +97,9 @@ class HomeScreenState extends State<HomeScreen> {
     return const Center(child: AdaptiveCircularLoader());
   }
 
-  Widget _appSettingsLoadedBuilder(AppSettings appSetting, String placeId) {
-    return BlocBuilder<LocalizationBloc, LocalizationState>(
-        builder: (ctx, state) {
-      if (state is LocalizationError) {
-        return AdaptiveScaffold(
-          body: Center(
-            child: Column(
-              children: [
-                const Text('Error while loading l10n'),
-                TextButton(
-                  onPressed: () {
-                    context
-                        .read<LocalizationBloc>()
-                        .add(const FetchLocalization(localeDefault));
-                  },
-                  child: const Text('Retry'),
-                )
-              ],
-            ),
-          ),
-        );
-      } else if (state is LocalizationLoaded) {
-        return Directionality(
-          textDirection:
-              appSetting.isRtl ? TextDirection.rtl : TextDirection.ltr,
-          child: PlaceDetailsPage(
-            key: ValueKey(placeId),
-          ),
-        );
-      } else {
-        return const AdaptiveScaffold(
-          body: Center(
-            child: AdaptiveCircularLoader(),
-          ),
-        );
-      }
-    });
+  Widget _appSettingsLoadedBuilder(String placeId) {
+    return PlaceDetailsPage(
+      key: ValueKey(placeId),
+    );
   }
 }

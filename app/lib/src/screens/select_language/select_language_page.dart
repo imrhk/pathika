@@ -59,7 +59,7 @@ class SelectLanguagePage extends StatelessWidget with TitledPageMixin {
 
   Widget _errorBuilder(Error error) {
     return Builder(builder: (context) {
-      final errorOccured = context.localize('error_occured', 'Error occured');
+      final errorOccured = context.l10n.error_occured;
       final msg = '$errorOccured\n${error.toString()}';
       return Center(child: Text(msg));
     });
@@ -79,7 +79,7 @@ class SelectLanguagePage extends StatelessWidget with TitledPageMixin {
         return AdaptiveScaffold(
           appbar: AppBar(
             title: Text(
-              context.localize('select_language', 'Select Language'),
+              context.l10n.select_language,
             ),
           ),
           navigationBar: CupertinoNavigationBar(

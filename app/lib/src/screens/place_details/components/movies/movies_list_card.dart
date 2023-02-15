@@ -20,7 +20,7 @@ class MoviesListCard extends StatelessWidget
   Widget build(BuildContext context) {
     return InfoCard(
       color: Colors.indigo,
-      heading: '${context.localize('movies_from', 'Movies from')} $countryName',
+      heading: '${context.l10n.movies_from} $countryName',
       body: SizedBox(
         height: 250,
         child: ListView.builder(

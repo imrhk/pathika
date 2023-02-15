@@ -17,7 +17,7 @@ class CurrencyCard extends StatelessWidget implements Details<CurrencyDetails> {
   Widget build(BuildContext context) {
     return InfoCard(
       color: Colors.pink,
-      heading: context.localize('currency', 'Currency'),
+      heading: context.l10n.currency,
       title: details.name,
       symbol: details.symbol,
       footer: CurrencyValue(

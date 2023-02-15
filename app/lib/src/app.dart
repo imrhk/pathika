@@ -8,11 +8,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_gen/gen_l10n/l10n.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:logger/logger.dart';
 import 'package:platform_widget_mixin/platform_widget_mixin.dart' as pwm;
 
-import 'blocs/localization/localization_bloc.dart';
-import 'blocs/localization/localization_event.dart';
 import 'constants/localization_constants.dart';
 import 'data/assets/assets_repository.dart';
 import 'data/assets/flutter_assets_client.dart';
@@ -27,7 +27,6 @@ import 'screens/app_settings/bloc/app_settings_event.dart';
 import 'screens/app_settings/bloc/app_settings_state.dart';
 import 'screens/home/bloc/home_bloc.dart';
 import 'screens/home/bloc/home_bloc_event.dart';
-import 'screens/home/home_screen.dart';
 import 'theme/app_theme.dart';
 
 class ProviderApp extends StatefulWidget {
@@ -99,12 +98,6 @@ class _ProviderAppState extends State<ProviderApp> {
       ],
       child: MultiBlocProvider(
         providers: [
-          BlocProvider<LocalizationBloc>(
-            create: (context) => LocalizationBloc(
-              remoteRepository: context.read<RemoteRepository>(),
-              assetsRepository: context.read<AssetsRepository>(),
-            ),
-          ),
           BlocProvider<AppSettingsBloc>(
             create: (BuildContext context) => AppSettingsBloc(
               cacheRepository: context.read<CacheRepository>(),
@@ -140,7 +133,7 @@ class PathikaApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocConsumer<AppSettingsBloc, AppSettingsState>(
+    return BlocBuilder<AppSettingsBloc, AppSettingsState>(
       builder: (_, state) {
         return _AdaptiveApp(
           key: ValueKey(state.maybeWhen(
@@ -148,36 +141,36 @@ class PathikaApp extends StatelessWidget {
             loaded: (appSetting) => appSetting,
           )),
           appTheme: context.currentTheme,
-          child: const HomeScreen(),
+          locale: Locale(
+            state.maybeWhen(
+              orElse: () => localeDefault,
+              loaded: (appSetting) => appSetting.language,
+            ),
+          ),
         );
       },
-      listener: (context, _) {
-        context
-            .read<LocalizationBloc>()
-            .add(ChangeLocalization(context.currentLanguage));
-      },
-      listenWhen: (previous, current) =>
-          previous.whenOrNull(
-            loaded: (appSetting) => appSetting.language,
-          ) !=
-          current.whenOrNull(
-            loaded: (appSetting) => appSetting.language,
-          ),
     );
   }
 }
 
 class _AdaptiveApp extends StatelessWidget with pwm.PlatformWidgetMixin {
   final AppTheme appTheme;
-  @override
-  final Widget child;
+  final Locale locale;
 
-  const _AdaptiveApp({super.key, required this.appTheme, required this.child});
+  const _AdaptiveApp({
+    super.key,
+    required this.appTheme,
+    required this.locale,
+  });
   @override
   Widget buildAndroid(BuildContext context) {
     return MaterialApp.router(
       theme: appTheme.themeDataMaterial,
       routerConfig: router,
+      locale: locale,
+      localizationsDelegates: _localizationsDelegate,
+      supportedLocales: AppLocalizations.supportedLocales,
+      localeResolutionCallback: _localeResolutionCallback,
     );
   }
 
@@ -187,7 +180,34 @@ class _AdaptiveApp extends StatelessWidget with pwm.PlatformWidgetMixin {
       theme: appTheme.themeDataCupertino,
       routeInformationParser: router.routeInformationParser,
       routerDelegate: router.routerDelegate,
+      locale: locale,
+      localizationsDelegates: _localizationsDelegate,
+      supportedLocales: AppLocalizations.supportedLocales,
+      localeResolutionCallback: _localeResolutionCallback,
     );
+  }
+
+  List<LocalizationsDelegate<dynamic>> get _localizationsDelegate {
+    return const [
+      AppLocalizations.delegate,
+      GlobalMaterialLocalizations.delegate,
+      GlobalWidgetsLocalizations.delegate,
+      GlobalCupertinoLocalizations.delegate,
+    ];
+  }
+
+  Locale get _defaultLocale => const Locale('en', 'US');
+
+  Locale? _localeResolutionCallback(
+      Locale? locale, Iterable<Locale> supportedLocales) {
+    if (locale == null) {
+      return _defaultLocale;
+    }
+    if (supportedLocales.contains(Locale(locale.languageCode))) {
+      return locale;
+    } else {
+      return _defaultLocale;
+    }
   }
 }
 

@@ -63,7 +63,7 @@ class AttributionWidget extends StatelessWidget {
           children: [
             if (photoBy != null)
               TextSpan(
-                text: context.localize('photo_by', 'Photo by'),
+                text: context.l10n.photo_by,
                 style: context.theme.textTheme.bodySmall?.apply(
                   decoration: TextDecoration.underline,
                   color: textColor,
