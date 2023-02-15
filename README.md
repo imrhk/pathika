@@ -52,9 +52,10 @@ The project was build in Jan 2020 when I started learning flutter. I have migrat
 - Logging ✅
 - Widgets composition ✅
 - Theme Extensions ✅
-- Navigation
-- Cupertino Page
-- Cupertino (iOS Related)
+- Navigation ✅
+- Cupertino Page ✅
+- Firebase functions migration ✅
+- Cupertino (iOS Related) ✅
 - Folder Structure
 - Localization
 - Neon Theme

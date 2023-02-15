@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
+import 'package:platform_widget_mixin/platform_widget_mixin.dart';
 import 'package:universal_io/io.dart' show Platform;
 
 import '../assets/assets_repository.dart';
@@ -141,56 +142,41 @@ class _LanguageListTile extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
-        child: _getLanguageItem(
-          onTap: () => _saveAppLanguage(context, item),
-          child: Stack(
-            children: <Widget>[
-              Container(
-                  width: double.infinity,
-                  height: double.infinity,
-                  color: Colors.black.withAlpha(16)),
-              Align(
-                alignment: Alignment.center,
-                child: Text(
-                  item.name ?? '',
-                  style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                        color: _getThemeTextColor(context),
-                      ),
-                ),
-              ),
-              Align(
-                alignment: Alignment.bottomCenter,
-                child: Container(
-                  margin: const EdgeInsets.only(
-                    bottom: 10,
-                  ),
+        child: _LanguageItem(
+            onTap: () => _saveAppLanguage(context, item),
+            child: Stack(
+              children: <Widget>[
+                Container(
+                    width: double.infinity,
+                    height: double.infinity,
+                    color: Colors.black.withAlpha(16)),
+                Align(
+                  alignment: Alignment.center,
                   child: Text(
-                    item.msg ?? '',
-                    style: const TextStyle(
-                      fontSize: 20,
+                    item.name ?? '',
+                    style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                          color: _getThemeTextColor(context),
+                        ),
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.bottomCenter,
+                  child: Container(
+                    margin: const EdgeInsets.only(
+                      bottom: 10,
+                    ),
+                    child: Text(
+                      item.msg ?? '',
+                      style: const TextStyle(
+                        fontSize: 20,
+                      ),
                     ),
                   ),
                 ),
-              ),
-            ],
-          ),
-        ),
+              ],
+            )),
       ),
     );
-  }
-
-  Widget _getLanguageItem({Widget? child, VoidCallback? onTap}) {
-    if (Platform.isIOS) {
-      return GestureDetector(
-        onTap: onTap,
-        child: child,
-      );
-    } else {
-      return InkWell(
-        onTap: onTap,
-        child: child,
-      );
-    }
   }
 
   Color? _getThemeTextColor(BuildContext context) {
@@ -217,5 +203,32 @@ class _LanguageListTile extends StatelessWidget {
     } else {
       return color;
     }
+  }
+}
+
+class _LanguageItem extends StatelessWidget with PlatformWidgetMixin {
+  @override
+  final Widget? child;
+  final VoidCallback? onTap;
+
+  const _LanguageItem({
+    required this.child,
+    required this.onTap,
+  });
+
+  @override
+  Widget buildAndroid(BuildContext context) {
+    return InkWell(
+      onTap: onTap,
+      child: child,
+    );
+  }
+
+  @override
+  Widget buildIOS(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: child,
+    );
   }
 }
