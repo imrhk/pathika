@@ -56,7 +56,7 @@ The project was build in Jan 2020 when I started learning flutter. I have migrat
 - Cupertino Page ✅
 - Firebase functions migration ✅
 - Cupertino (iOS Related) ✅
-- Folder Structure
+- Folder Structure ✅
 - Localization
 - Neon Theme
 - Custom Theme
@@ -77,6 +77,7 @@ The project was build in Jan 2020 when I started learning flutter. I have migrat
 - Material3
 - WidgetBook.io
 - Tappable (read out loud content of cards)
+- Zoned
 
 # Licence
 Apache License 2.0

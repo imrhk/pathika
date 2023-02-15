@@ -44,7 +44,7 @@ app/android/.settings/org.eclipse.buildship.core.prefs
 app/android/app/.classpath
 app/android/app/.project
 *.aab
-app/lib/firebase_options.dart
+firebase_options.dart
 app/ios/firebase_app_id_file.json
 secrets.*
 app/android/app/google-services.json
