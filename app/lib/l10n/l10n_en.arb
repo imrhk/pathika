@@ -39,5 +39,7 @@
   "photo_by": "Photo by",
   "browse": "Browse",
   "settings": "Settings",
-  "discover": "Discover"
+  "discover": "Discover",
+  "could_not_launch_url": "Could not launch URL",
+  "error_while_fetching_data":"Error while fetching data"
 }

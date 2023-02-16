@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/adt_details.dart';
 import '../../../../extensions/context_extensions.dart';
 import '../../../../models/place_models/place_models.dart';
 import '../../widgets/info_card.dart';
 
-// FIXME: detailable?
-class DanceCard extends StatelessWidget {
+class DanceCard extends StatelessWidget implements Details<DanceDetails> {
+  @override
   final DanceDetails details;
   const DanceCard({
     super.key,

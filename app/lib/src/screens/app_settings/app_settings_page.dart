@@ -95,7 +95,26 @@ class AppSettingsPage extends StatelessWidget {
           if (uri != null) {
             launchUrl(Uri.parse(privaryPolicyUrl));
           } else {
-            // TODO: alert dialog / snackbar based on platform
+            if (context.findAncestorWidgetOfExactType<Scaffold>() != null) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text(context.l10n.could_not_launch_url)));
+            } else {
+              showCupertinoDialog(
+                context: context,
+                builder: (context) => CupertinoAlertDialog(
+                  title: Text(context.l10n.error_occured),
+                  content: Text(context.l10n.could_not_launch_url),
+                  actions: <Widget>[
+                    CupertinoDialogAction(
+                      child: Text(
+                        MaterialLocalizations.of(context).okButtonLabel,
+                      ),
+                      onPressed: () => Navigator.of(context).pop(),
+                    ),
+                  ],
+                ),
+              );
+            }
           }
         },
       ),

@@ -63,10 +63,11 @@ class PlacesListPage extends StatelessWidget
       );
 
   Widget _errorBuilder(_) {
-    // TODO: localize
-    return const Center(
-      child: Text('Error while fetching data'),
-    );
+    return Builder(builder: (context) {
+      return Center(
+        child: Text(context.l10n.error_while_fetching_data),
+      );
+    });
   }
 
   Widget _loadingBuilder() {

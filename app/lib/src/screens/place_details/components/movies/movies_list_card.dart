@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../constants/regex_constants.dart';
 import '../../../../core/adt_details.dart';
 import '../../../../extensions/context_extensions.dart';
 import '../../../../models/place_models/place_models.dart';
@@ -18,9 +19,15 @@ class MoviesListCard extends StatelessWidget
   });
   @override
   Widget build(BuildContext context) {
+    final shimmerGradient = context.textGradient;
+
+    final countryName = shimmerGradient == null
+        ? this.countryName
+        : this.countryName?.replaceAll(regexEmojies, '');
+
     return InfoCard(
       color: Colors.indigo,
-      heading: '${context.l10n.movies_from} $countryName',
+      heading: '${context.l10n.movies_from} ${countryName ?? ''}',
       body: SizedBox(
         height: 250,
         child: ListView.builder(
