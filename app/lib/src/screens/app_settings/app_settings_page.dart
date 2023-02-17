@@ -44,10 +44,15 @@ class AppSettingsPage extends StatelessWidget {
               context.l10n.dark: 'dark',
               context.l10n.colorful_dark: 'colorful_dark',
               context.l10n.gold_dark: 'gold_dark',
+              context.l10n.neon: 'neon',
             },
           ),
           currentSelection: appTheme.label,
           onSelected: (String? str) {
+            if(str == context.l10n.neon) {
+              
+            }
+            
             if (str == null) {
               context.pop();
               return;

@@ -33,8 +33,8 @@ class AppSettingsBloc extends Bloc<AppSettingsEvent, AppSettingsState> {
             initialize: () async => await _mapInitializeEventToState(emit),
             changeLanguage: (newLanguage, isRtl) async =>
                 await _mapChangeLanguageEventToState(emit, newLanguage, isRtl),
-            changeTheme: (newTheme) async =>
-                await _mapChangeThemeEventToState(emit, newTheme),
+            changeTheme: (newTheme, color) async =>
+                await _mapChangeThemeEventToState(emit, newTheme, color),
             toggleVegPreference: () async =>
                 await _mapSetOnlyVegEventToState(emit),
             clear: () async => await _mapClearSettingsEventToState(emit));
@@ -104,12 +104,16 @@ class AppSettingsBloc extends Bloc<AppSettingsEvent, AppSettingsState> {
   Future<void> _mapChangeThemeEventToState(
     Emitter<AppSettingsState> emit,
     String newTheme,
+    int? color,
   ) async {
     try {
       final appSettings = state.when<AppSettings>(
-        uninitialized: () => AppSettings(theme: newTheme),
-        loading: () => AppSettings(theme: newTheme),
-        loaded: (settings) => settings.copyWith(theme: newTheme),
+        uninitialized: () => AppSettings(theme: newTheme, themeColor: color),
+        loading: () => AppSettings(theme: newTheme, themeColor: color),
+        loaded: (settings) => settings.copyWith(
+          theme: newTheme,
+          themeColor: color,
+        ),
       );
       await _cacheRepository.setAppSettings(appSettings);
       emit(AppSettingsState.loaded(appSettings));

@@ -136,10 +136,10 @@ class PathikaApp extends StatelessWidget {
     return BlocBuilder<AppSettingsBloc, AppSettingsState>(
       builder: (_, state) {
         return _AdaptiveApp(
-          key: ValueKey(state.maybeWhen(
-            orElse: () => null,
-            loaded: (appSetting) => appSetting,
-          )),
+          // key: ValueKey(state.maybeWhen(
+          //   orElse: () => null,
+          //   loaded: (appSetting) => appSetting,
+          // )),
           appTheme: context.currentTheme,
           locale: Locale(
             state.maybeWhen(
@@ -158,7 +158,6 @@ class _AdaptiveApp extends StatelessWidget with pwm.PlatformWidgetMixin {
   final Locale locale;
 
   const _AdaptiveApp({
-    super.key,
     required this.appTheme,
     required this.locale,
   });

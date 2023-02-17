@@ -9,6 +9,7 @@ part 'app_settings.g.dart';
 class AppSettings with _$AppSettings {
   const factory AppSettings({
     @Default(localeDefault) String language,
+    int? themeColor,
     @Default("light") String theme,
     @Default(false) bool isRtl,
     @Default(false) bool onlyVeg,

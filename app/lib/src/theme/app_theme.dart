@@ -4,12 +4,13 @@ import 'package:flutter/material.dart';
 
 import 'theme_extensions.dart';
 
-const Map<String, AppTheme Function()> appThemeMap = {
+const Map<String, AppTheme Function([Color?])> appThemeMap = {
   'light': AppTheme.light,
   'colorful_light': AppTheme.colorfulLight,
   'dark': AppTheme.dark,
   'colorful_dark': AppTheme.colorfulDark,
   'gold_dark': AppTheme.goldDark,
+  'neon': AppTheme.neon,
 };
 
 final defaultAppTheme = AppTheme.light();
@@ -25,7 +26,7 @@ class AppTheme implements Equatable {
     required this.label,
   }) : assert(label.trim().isNotEmpty);
 
-  static AppTheme light() {
+  factory AppTheme.light([Color? color]) {
     const cupertinoThemeData = CupertinoThemeData();
     return AppTheme(
         themeDataMaterial: ThemeData(
@@ -44,7 +45,7 @@ class AppTheme implements Equatable {
         label: 'light');
   }
 
-  static AppTheme colorfulLight() {
+  factory AppTheme.colorfulLight([Color? color]) {
     const cupertinoThemeData = CupertinoThemeData();
     return AppTheme(
         themeDataMaterial: ThemeData(
@@ -66,7 +67,7 @@ class AppTheme implements Equatable {
         label: 'colorful_light');
   }
 
-  static AppTheme dark() {
+  factory AppTheme.dark([Color? color]) {
     const cupertinoThemeData = CupertinoThemeData();
     return AppTheme(
         themeDataMaterial: ThemeData.dark().copyWith(
@@ -91,7 +92,7 @@ class AppTheme implements Equatable {
         label: 'dark');
   }
 
-  static AppTheme colorfulDark() {
+  factory AppTheme.colorfulDark([Color? color]) {
     const cupertinoThemeData = CupertinoThemeData();
     return AppTheme(
         themeDataMaterial: ThemeData.dark().copyWith(
@@ -119,8 +120,8 @@ class AppTheme implements Equatable {
         label: 'colorful_dark');
   }
 
-  static AppTheme goldDark() {
-    const colorGold = Color.fromARGB(255, 255, 215, 0);
+  factory AppTheme.goldDark([Color? color]) {
+    const textColor = Color.fromARGB(255, 255, 215, 0);
     const linearGradient = LinearGradient(
       colors: [
         Color.fromARGB(255, 252, 193, 0),
@@ -136,13 +137,16 @@ class AppTheme implements Equatable {
       stops: [0.25, 0.375, 0.5, 0.625, 0.75, 0.875],
     );
 
+    final foregoundPaint = Paint()
+      ..shader = linearGradient
+          .createShader(const Rect.fromLTWH(0.0, 0.0, 250.0, 60.0))
+      ..maskFilter = const MaskFilter.blur(BlurStyle.solid, 2);
+
     TextStyle goldTextStyle = TextStyle(
-        decorationColor: colorGold,
-        foreground: Paint()
-          ..shader = linearGradient
-              .createShader(const Rect.fromLTWH(0.0, 0.0, 250.0, 60.0))
-          // ..color = const Color.fromARGB(255, 255, 215, 0)
-          ..maskFilter = const MaskFilter.blur(BlurStyle.solid, 2));
+      decorationColor: textColor,
+      foreground: foregoundPaint,
+    );
+
     // const goldTextColor = Color.fromARGB(255, 255, 215, 0);
 
     final textTheme = TextTheme(
@@ -173,15 +177,15 @@ class AppTheme implements Equatable {
           toolbarTextStyle: goldTextStyle,
         ),
         textTheme: darkThemeMaterial.textTheme.merge(textTheme),
-        unselectedWidgetColor: colorGold,
-        iconTheme: const IconThemeData(color: colorGold),
+        unselectedWidgetColor: textColor,
+        iconTheme: const IconThemeData(color: textColor),
         colorScheme: const ColorScheme.dark(
-          onSurface: colorGold,
-          secondary: colorGold,
+          onSurface: textColor,
+          secondary: textColor,
         ),
         extensions: [
           AppThemeExtension(
-            highlightTextColor: colorGold,
+            highlightTextColor: textColor,
             textGradient: linearGradient,
           ),
         ],
@@ -189,30 +193,165 @@ class AppTheme implements Equatable {
       themeDataCupertino: CupertinoThemeData(
         brightness: Brightness.dark,
         primaryColor: Colors.black,
-        textTheme: CupertinoTextThemeData(
-          navTitleTextStyle: darkThemeCupertino.textTheme.navTitleTextStyle,
-          textStyle: darkThemeCupertino.textTheme.textStyle,
-          actionTextStyle: darkThemeCupertino.textTheme.actionTextStyle,
-          pickerTextStyle: darkThemeCupertino.textTheme.pickerTextStyle,
-          tabLabelTextStyle: darkThemeCupertino.textTheme.tabLabelTextStyle,
-          navActionTextStyle: darkThemeCupertino.textTheme.navActionTextStyle,
+        textTheme: darkThemeCupertino.textTheme.copyWith(
+          actionTextStyle:
+              darkThemeCupertino.textTheme.actionTextStyle.copyWith(
+            foreground: foregoundPaint,
+            decorationColor: textColor,
+          ),
           dateTimePickerTextStyle:
-              darkThemeCupertino.textTheme.dateTimePickerTextStyle,
+              darkThemeCupertino.textTheme.dateTimePickerTextStyle.copyWith(
+            foreground: foregoundPaint,
+            decorationColor: textColor,
+          ),
+          navActionTextStyle:
+              darkThemeCupertino.textTheme.navActionTextStyle.copyWith(
+            foreground: foregoundPaint,
+            decorationColor: textColor,
+          ),
           navLargeTitleTextStyle:
-              darkThemeCupertino.textTheme.navLargeTitleTextStyle,
-          primaryColor: const Color.fromARGB(255, 255, 215, 0),
-        ).copyWith(
-          actionTextStyle: goldTextStyle,
-          dateTimePickerTextStyle: goldTextStyle,
-          navActionTextStyle: goldTextStyle,
-          navLargeTitleTextStyle: goldTextStyle,
-          navTitleTextStyle: goldTextStyle,
-          pickerTextStyle: goldTextStyle,
-          tabLabelTextStyle: goldTextStyle,
-          textStyle: goldTextStyle,
+              darkThemeCupertino.textTheme.navLargeTitleTextStyle.copyWith(
+            foreground: foregoundPaint,
+            decorationColor: textColor,
+          ),
+          navTitleTextStyle:
+              darkThemeCupertino.textTheme.navTitleTextStyle.copyWith(
+            foreground: foregoundPaint,
+            decorationColor: textColor,
+          ),
+          pickerTextStyle:
+              darkThemeCupertino.textTheme.pickerTextStyle.copyWith(
+            foreground: foregoundPaint,
+            decorationColor: textColor,
+          ),
+          primaryColor: textColor,
+          tabLabelTextStyle:
+              darkThemeCupertino.textTheme.tabLabelTextStyle.copyWith(
+            foreground: foregoundPaint,
+            decorationColor: textColor,
+          ),
+          textStyle: darkThemeCupertino.textTheme.textStyle.copyWith(
+            foreground: foregoundPaint,
+            decorationColor: textColor,
+          ),
         ),
       ),
       label: 'gold_dark',
+    );
+  }
+
+  factory AppTheme.neon([Color? color]) {
+    final textColor = color ?? Colors.pink[300]!;
+    final shader = LinearGradient(
+      colors: [
+        textColor,
+        textColor,
+      ],
+      tileMode: TileMode.clamp,
+      begin: Alignment.topLeft,
+      end: Alignment.bottomRight,
+      stops: const [0.5, 1.0],
+    ).createShader(const Rect.fromLTWH(0.0, 0.0, 250.0, 60.0));
+
+    final foregoundPaint = Paint()
+      ..color = Colors.white
+      ..shader = shader
+      ..maskFilter = const MaskFilter.blur(BlurStyle.solid, 10);
+
+    TextStyle neonTextStyle = TextStyle(
+      decorationColor: textColor,
+      foreground: foregoundPaint,
+    );
+
+    // const goldTextColor = Color.fromARGB(255, 255, 215, 0);
+
+    final textTheme = TextTheme(
+      displayLarge: neonTextStyle,
+      bodyLarge: neonTextStyle,
+      bodyMedium: neonTextStyle,
+      bodySmall: neonTextStyle,
+      displayMedium: neonTextStyle,
+      displaySmall: neonTextStyle,
+      headlineLarge: neonTextStyle,
+      headlineMedium: neonTextStyle,
+      headlineSmall: neonTextStyle,
+      labelLarge: neonTextStyle,
+      labelMedium: neonTextStyle,
+      labelSmall: neonTextStyle,
+      titleLarge: neonTextStyle,
+      titleMedium: neonTextStyle,
+      titleSmall: neonTextStyle,
+    );
+
+    final darkThemeMaterial = ThemeData.dark().copyWith();
+    const darkThemeCupertino = CupertinoThemeData(brightness: Brightness.dark);
+    return AppTheme(
+      themeDataMaterial: darkThemeMaterial.copyWith(
+        primaryColor: Colors.black,
+        appBarTheme: darkThemeMaterial.appBarTheme.copyWith(
+          titleTextStyle: neonTextStyle,
+          toolbarTextStyle: neonTextStyle,
+        ),
+        textTheme: darkThemeMaterial.textTheme.merge(textTheme),
+        unselectedWidgetColor: textColor,
+        iconTheme: IconThemeData(color: textColor),
+        colorScheme: ColorScheme.dark(
+          onSurface: textColor,
+          secondary: textColor,
+        ),
+        extensions: [
+          AppThemeExtension(
+            highlightTextColor: textColor,
+          ),
+        ],
+      ),
+      themeDataCupertino: CupertinoThemeData(
+        brightness: Brightness.dark,
+        primaryColor: Colors.black,
+        textTheme: darkThemeCupertino.textTheme.copyWith(
+          actionTextStyle:
+              darkThemeCupertino.textTheme.actionTextStyle.copyWith(
+            foreground: foregoundPaint,
+            decorationColor: textColor,
+          ),
+          dateTimePickerTextStyle:
+              darkThemeCupertino.textTheme.dateTimePickerTextStyle.copyWith(
+            foreground: foregoundPaint,
+            decorationColor: textColor,
+          ),
+          navActionTextStyle:
+              darkThemeCupertino.textTheme.navActionTextStyle.copyWith(
+            foreground: foregoundPaint,
+            decorationColor: textColor,
+          ),
+          navLargeTitleTextStyle:
+              darkThemeCupertino.textTheme.navLargeTitleTextStyle.copyWith(
+            foreground: foregoundPaint,
+            decorationColor: textColor,
+          ),
+          navTitleTextStyle:
+              darkThemeCupertino.textTheme.navTitleTextStyle.copyWith(
+            foreground: foregoundPaint,
+            decorationColor: textColor,
+          ),
+          pickerTextStyle:
+              darkThemeCupertino.textTheme.pickerTextStyle.copyWith(
+            foreground: foregoundPaint,
+            decorationColor: textColor,
+          ),
+          primaryColor: textColor,
+          tabLabelTextStyle:
+              darkThemeCupertino.textTheme.tabLabelTextStyle.copyWith(
+            foreground: foregoundPaint,
+            decorationColor: textColor,
+          ),
+          textStyle: darkThemeCupertino.textTheme.textStyle.copyWith(
+            foreground: foregoundPaint,
+            decorationColor: textColor,
+          ),
+        ),
+      ),
+      label: 'neon',
     );
   }
 

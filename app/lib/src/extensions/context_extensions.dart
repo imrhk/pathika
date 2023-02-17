@@ -16,7 +16,10 @@ extension ContextExtension on BuildContext {
 
   AppTheme get currentTheme => read<AppSettingsBloc>().state.maybeWhen(
       orElse: () => AppTheme.light(),
-      loaded: (appSettings) => appThemeMap[appSettings.theme]!.call());
+      loaded: (appSettings) => appThemeMap[appSettings.theme]!.call(
+          appSettings.themeColor != null
+              ? Color(appSettings.themeColor!)
+              : null));
 
   TextDirection get textDirection => read<AppSettingsBloc>().state.maybeWhen(
       orElse: () => TextDirection.ltr,

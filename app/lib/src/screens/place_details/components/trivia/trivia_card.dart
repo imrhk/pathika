@@ -17,7 +17,8 @@ class TriviaListCard extends StatelessWidget implements Details<List<String>> {
     return InfoCard(
       color: Colors.blueGrey,
       heading: context.l10n.trivia,
-      body: ListView.separated(
+      body: ListView.separated( 
+        padding: EdgeInsets.zero,
         shrinkWrap: true,
         physics: const NeverScrollableScrollPhysics(),
         itemBuilder: (context, index) => _TriviaListTile(
