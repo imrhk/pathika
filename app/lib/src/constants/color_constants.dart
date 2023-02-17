@@ -32,3 +32,25 @@ const MaterialColor materialTransparent = MaterialColor(
     900: Color(0x00000000),
   },
 );
+
+const colors = [
+  Colors.deepPurple,
+  Colors.purple,
+  Colors.indigo,
+  Colors.blue,
+  Colors.lightBlue,
+  Colors.cyan,
+  Colors.green,
+  Colors.lightGreen,
+  Colors.lime,
+  Colors.yellow,
+  Colors.amber,
+  Colors.orange,
+  Colors.deepOrange,
+  Colors.pink,
+  Colors.red,
+  Colors.blueGrey,
+  Colors.brown,
+  Colors.grey,
+  Colors.teal,
+];

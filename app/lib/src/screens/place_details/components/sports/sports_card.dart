@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pathika/src/constants/regex_constants.dart';
 
 import '../../../../core/adt_details.dart';
 import '../../../../extensions/context_extensions.dart';
@@ -14,11 +15,14 @@ class SportsCard extends StatelessWidget implements Details<SportsDetails> {
   });
   @override
   Widget build(BuildContext context) {
+    final footer = context.keepEmojiInText
+        ? details.footer
+        : details.footer?.replaceAll(regexEmojies, '');
     return InfoCard(
       color: Colors.lightBlue,
       heading: context.l10n.most_popular_sports,
       title: details.title ?? '',
-      footer: Text(details.footer ?? ''),
+      footer: Text(footer ?? ''),
     );
   }
 }

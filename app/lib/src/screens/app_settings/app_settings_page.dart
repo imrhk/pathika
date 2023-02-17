@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_cupertino_settings/flutter_cupertino_settings.dart';
 import 'package:go_router/go_router.dart';
+import 'package:pathika/src/constants/color_constants.dart';
 import 'package:platform_widget_mixin/platform_widget_mixin.dart';
 import 'package:universal_io/io.dart' show Platform;
 import 'package:url_launcher/url_launcher.dart';
@@ -48,17 +49,70 @@ class AppSettingsPage extends StatelessWidget {
             },
           ),
           currentSelection: appTheme.label,
-          onSelected: (String? str) {
-            if(str == context.l10n.neon) {
-              
-            }
-            
+          onSelected: (String? str) async {
             if (str == null) {
               context.pop();
               return;
             }
+
+            Color? color;
+            if (str == 'neon') {
+              color = await showCupertinoModalPopup(
+                context: context,
+                builder: (context) {
+                  return CupertinoPopupSurface(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Center(
+                          child: Text(
+                            'Select color',
+                            style: context.currentTheme.themeDataCupertino
+                                ?.textTheme.navTitleTextStyle,
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Wrap(
+                          alignment: WrapAlignment.center,
+                          runSpacing: 10,
+                          spacing: 10,
+                          direction: Axis.horizontal,
+                          children: colors
+                              .map(
+                                (e) => GestureDetector(
+                                  onTap: () => Navigator.of(context).pop(e),
+                                  child: SizedBox.square(
+                                    dimension: 25,
+                                    child: Container(
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: BoxDecoration(
+                                        color: e,
+                                        borderRadius: const BorderRadius.all(
+                                            Radius.circular(5.0)),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              )
+                              .toList(),
+                        ),
+                        const SizedBox(
+                          height: 100,
+                        ),
+                      ],
+                    ),
+                  );
+                },
+              );
+            }
             context
-              ..read<AppSettingsBloc>().add(AppSettingsEvent.changeTheme(str))
+              ..read<AppSettingsBloc>()
+                  .add(AppSettingsEvent.changeTheme(str, color?.value))
               ..pop();
           }),
       const _SettingsSectionHeader(text: ''),

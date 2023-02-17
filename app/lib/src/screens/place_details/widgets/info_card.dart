@@ -40,9 +40,7 @@ class InfoCard extends StatelessWidget {
           : const Color.fromARGB(255, 0, 0, 0),
       margin: const EdgeInsets.fromLTRB(12, 12, 12, 6),
       elevation: 8,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(20),
-      ),
+      shape: context.theme.cardTheme.shape,
       child: Container(
         width: double.infinity,
         padding:
@@ -108,7 +106,7 @@ class InfoCard extends StatelessWidget {
                   OptionalShimmer(
                     gradient: shimmerGradient,
                     child: Text(
-                      shimmerGradient == null
+                      context.keepEmojiInText
                           ? title
                           : title.replaceAll(regexEmojies, ''),
                       textAlign: TextAlign.end,

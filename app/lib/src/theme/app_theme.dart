@@ -187,6 +187,7 @@ class AppTheme implements Equatable {
           AppThemeExtension(
             highlightTextColor: textColor,
             textGradient: linearGradient,
+            useEmojiChars: false,
           ),
         ],
       ),
@@ -258,6 +259,11 @@ class AppTheme implements Equatable {
       ..shader = shader
       ..maskFilter = const MaskFilter.blur(BlurStyle.solid, 10);
 
+    final shadowForegoundPaint = Paint()
+      ..color = Colors.white
+      ..shader = shader
+      ..maskFilter = const MaskFilter.blur(BlurStyle.outer, 10);
+
     TextStyle neonTextStyle = TextStyle(
       decorationColor: textColor,
       foreground: foregoundPaint,
@@ -292,6 +298,14 @@ class AppTheme implements Equatable {
           titleTextStyle: neonTextStyle,
           toolbarTextStyle: neonTextStyle,
         ),
+        cardTheme: darkThemeMaterial.cardTheme.copyWith(
+          color: Colors.black,
+          shadowColor: textColor,
+          shape: RoundedRectangleBorder(
+            side: BorderSide(color: textColor, width: 1),
+            borderRadius: BorderRadius.circular(10),
+          ),
+        ),
         textTheme: darkThemeMaterial.textTheme.merge(textTheme),
         unselectedWidgetColor: textColor,
         iconTheme: IconThemeData(color: textColor),
@@ -302,6 +316,8 @@ class AppTheme implements Equatable {
         extensions: [
           AppThemeExtension(
             highlightTextColor: textColor,
+            shadowTextPaint: shadowForegoundPaint,
+            useEmojiChars: false,
           ),
         ],
       ),

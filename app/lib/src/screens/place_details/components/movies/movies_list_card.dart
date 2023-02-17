@@ -19,9 +19,7 @@ class MoviesListCard extends StatelessWidget
   });
   @override
   Widget build(BuildContext context) {
-    final shimmerGradient = context.textGradient;
-
-    final countryName = shimmerGradient == null
+    final countryName = context.keepEmojiInText
         ? this.countryName
         : this.countryName?.replaceAll(regexEmojies, '');
 

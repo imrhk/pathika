@@ -39,6 +39,8 @@ extension AppThemeExtensionExtension on BuildContext {
       currentTheme.themeDataMaterial?.extension<AppThemeExtension>();
   bool get showColorsOnCards => _appThemeExtension()?.useColorsOnCard ?? false;
 
+  bool get keepEmojiInText => _appThemeExtension()?.useEmojiChars ?? true;
+
   Gradient? get textGradient => _appThemeExtension()?.textGradient;
 
   Color? get hightlightColor => _appThemeExtension()?.highlightTextColor;

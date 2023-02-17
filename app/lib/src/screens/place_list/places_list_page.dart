@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
+import 'package:pathika/src/constants/regex_constants.dart';
 import 'package:platform_widget_mixin/platform_widget_mixin.dart';
 
 import '../../blocs/page_fetch/page_fetch_state.dart';
@@ -165,7 +166,10 @@ class _PlaceInfoTileFooter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Color? highlightTextColor = context.hightlightColor;
-
+    var country = placeInfo.country;
+    if (context.keepEmojiInText == false) {
+      country = country?.replaceAll(regexEmojies, '');
+    }
     return Align(
       alignment: Alignment.bottomLeft,
       child: Padding(
@@ -183,9 +187,9 @@ class _PlaceInfoTileFooter extends StatelessWidget {
                 fontSize: 28.0,
               ),
             ),
-            if (placeInfo.country != null)
+            if (country != null)
               Text(
-                placeInfo.country!,
+                country,
                 textAlign: TextAlign.start,
                 style: TextStyle(
                   color: highlightTextColor,
