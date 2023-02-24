@@ -9,14 +9,12 @@ class AttributionWidget extends StatelessWidget {
   final String? photoBy;
   final String? attributionUrl;
   final String? licence;
-  final Color? textColor;
 
   const AttributionWidget({
     super.key,
     this.photoBy,
     this.attributionUrl,
     this.licence,
-    this.textColor,
   });
 
   String? get _licenceUrl {
@@ -43,9 +41,6 @@ class AttributionWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textColor =
-        this.textColor ?? context.theme.textTheme.bodySmall?.color;
-
     if (isNullOrEmpty(photoBy) &&
         isNullOrEmpty(attributionUrl) &&
         isNullOrEmpty(licence)) {
@@ -66,7 +61,6 @@ class AttributionWidget extends StatelessWidget {
                 text: context.l10n.photo_by,
                 style: context.theme.textTheme.bodySmall?.apply(
                   decoration: TextDecoration.underline,
-                  color: textColor,
                 ),
                 recognizer: TapGestureRecognizer()
                   ..onTap = () {
@@ -75,24 +69,14 @@ class AttributionWidget extends StatelessWidget {
               ),
             if (photoBy != null)
               TextSpan(
-                text: ' $photoBy',
-                style: context.theme.textTheme.bodySmall?.apply(
-                  color: textColor,
-                ),
-              ),
+                  text: ' $photoBy', style: context.theme.textTheme.bodySmall),
             if (licence != "")
-              TextSpan(
-                text: ' / ',
-                style: context.theme.textTheme.bodySmall?.apply(
-                  color: textColor,
-                ),
-              ),
+              TextSpan(text: ' / ', style: context.theme.textTheme.bodySmall),
             if (licence != "")
               TextSpan(
                 text: _licenceLabel,
                 style: context.theme.textTheme.bodySmall?.apply(
                   decoration: TextDecoration.underline,
-                  color: textColor,
                 ),
                 recognizer: TapGestureRecognizer()
                   ..onTap = () {

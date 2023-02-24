@@ -200,7 +200,6 @@ class _PlaceInfoTileFooter extends StatelessWidget {
               photoBy: placeInfo.photoBy,
               attributionUrl: placeInfo.attributionUrl,
               licence: placeInfo.licence,
-              textColor: highlightTextColor,
             ),
           ],
         ),

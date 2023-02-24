@@ -310,8 +310,8 @@ class _PlaceDetailsWidgetState extends State<PlaceDetailsWidget> {
                       ),
                       TextSpan(
                         text: ' ${context.l10n.here} ',
-                        style: const TextStyle(
-                            decoration: TextDecoration.underline),
+                        style: context.theme.textTheme.bodySmall
+                            ?.copyWith(decoration: TextDecoration.underline),
                         recognizer: TapGestureRecognizer()
                           ..onTap = () {
                             _openForm();

@@ -110,7 +110,7 @@ class InfoCard extends StatelessWidget {
                           ? title
                           : title.replaceAll(regexEmojies, ''),
                       textAlign: TextAlign.end,
-                      style: Theme.of(context).textTheme.headlineMedium,
+                      style: context.theme.textTheme.headlineMedium,
                     ),
                   ),
                 if (body == null)

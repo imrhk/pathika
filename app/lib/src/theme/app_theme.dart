@@ -31,6 +31,12 @@ class AppTheme implements Equatable {
     return AppTheme(
         themeDataMaterial: ThemeData(
           colorScheme: const ColorScheme.light(primary: Colors.black),
+          cardTheme: ThemeData.light().cardTheme.copyWith(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                elevation: 8,
+              ),
           extensions: [
             AppThemeExtension(highlightTextColor: Colors.white),
           ],
@@ -50,6 +56,12 @@ class AppTheme implements Equatable {
     return AppTheme(
         themeDataMaterial: ThemeData(
           colorScheme: const ColorScheme.light(primary: Colors.black),
+          cardTheme: ThemeData.light().cardTheme.copyWith(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                elevation: 8,
+              ),
           extensions: [
             AppThemeExtension(
               highlightTextColor: Colors.white,
@@ -72,6 +84,12 @@ class AppTheme implements Equatable {
     return AppTheme(
         themeDataMaterial: ThemeData.dark().copyWith(
           primaryColor: Colors.black,
+          cardTheme: ThemeData.dark().cardTheme.copyWith(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                elevation: 8,
+              ),
           extensions: [
             AppThemeExtension(highlightTextColor: Colors.white),
           ],
@@ -97,6 +115,12 @@ class AppTheme implements Equatable {
     return AppTheme(
         themeDataMaterial: ThemeData.dark().copyWith(
           primaryColor: Colors.black,
+          cardTheme: ThemeData.dark().cardTheme.copyWith(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                elevation: 8,
+              ),
           extensions: [
             AppThemeExtension(
               highlightTextColor: Colors.white,
@@ -172,6 +196,12 @@ class AppTheme implements Equatable {
     return AppTheme(
       themeDataMaterial: darkThemeMaterial.copyWith(
         primaryColor: Colors.black,
+        cardTheme: ThemeData.dark().cardTheme.copyWith(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20),
+              ),
+              elevation: 8,
+            ),
         appBarTheme: darkThemeMaterial.appBarTheme.copyWith(
           titleTextStyle: goldTextStyle,
           toolbarTextStyle: goldTextStyle,
@@ -267,6 +297,7 @@ class AppTheme implements Equatable {
     TextStyle neonTextStyle = TextStyle(
       decorationColor: textColor,
       foreground: foregoundPaint,
+      inherit: true,
     );
 
     // const goldTextColor = Color.fromARGB(255, 255, 215, 0);
@@ -301,6 +332,7 @@ class AppTheme implements Equatable {
         cardTheme: darkThemeMaterial.cardTheme.copyWith(
           color: Colors.black,
           shadowColor: textColor,
+          elevation: 8,
           shape: RoundedRectangleBorder(
             side: BorderSide(color: textColor, width: 1),
             borderRadius: BorderRadius.circular(10),
