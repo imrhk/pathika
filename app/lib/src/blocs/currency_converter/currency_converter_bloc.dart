@@ -17,33 +17,36 @@ class CurrencyConverterBloc
 
   @override
   Future<ConversionItem?> fetchPage(ConvertCurrencyEvent event) async {
-    var from = event.from;
-    if (from == null || from.isEmpty) {
+    var from = await _fromCurrency(event.from, event.language);
+    final response =
+        await _remoteRepository.getCurrencyConversionRate(from, event.to);
+    final Map jsonResponse = json.decode(response);
+    var value = jsonResponse.values.first as double;
+
+    int quantity = 1;
+    while (value < 1.0) {
+      quantity *= 10;
+      value *= 10;
+    }
+    return ConversionItem(
+      from: from,
+      to: event.to,
+      value: value,
+      quantity: quantity,
+    );
+  }
+
+  Future<String> _fromCurrency(String? fromCurrency, String? language) async {
+    if (fromCurrency == null || fromCurrency.isEmpty) {
       final country = await _remoteRepository.getUserCountry();
       final countryCode = country.code;
-      final locale = Locale(event.language ?? localeDefault, countryCode);
+      final locale = Locale(language ?? localeDefault, countryCode);
+      print(locale);
       final numberFormat = NumberFormat.simpleCurrency(
           locale: locale.toString(), decimalDigits: 2);
-      from = numberFormat.currencyName;
+      return Future.value(numberFormat.currencyName);
+    } else {
+      return Future.value(fromCurrency);
     }
-    if (from != null && from.isNotEmpty) {
-      final response =
-          await _remoteRepository.getCurrencyConversionRate(from, event.to);
-      final Map jsonResponse = json.decode(response);
-      var value = jsonResponse.values.first as double;
-
-      int quantity = 1;
-      while (value < 1.0) {
-        quantity *= 10;
-        value *= 10;
-      }
-      return ConversionItem(
-        from: from,
-        to: event.to,
-        value: value,
-        quantity: quantity,
-      );
-    }
-    throw Exception("Couldn't fetch conversion");
   }
 }
