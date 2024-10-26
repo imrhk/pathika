@@ -75,8 +75,8 @@ class AppSettingsBloc extends Bloc<AppSettingsEvent, AppSettingsState> {
       }
     } catch (e) {
       // default settings in case of error
-      _logger?.e(
-          "error while loading app settings. $e", e as Error, e.stackTrace);
+      _logger?.e("error while loading app settings. $e",
+          error: e as Error, stackTrace: e.stackTrace);
       emit(const AppSettingsState.loaded(AppSettings()));
     }
     return null;

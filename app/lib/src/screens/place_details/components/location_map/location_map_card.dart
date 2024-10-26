@@ -52,7 +52,11 @@ class __LocationMapItemsStackCardInternalState
       NetworkImage(item),
       context,
       onError: (exception, stackTrace) {
-        context.read<Logger>().e('could not load $item', exception, stackTrace);
+        context.read<Logger>().e(
+              'could not load $item',
+              error: exception,
+              stackTrace: stackTrace,
+            );
       },
     );
   }
